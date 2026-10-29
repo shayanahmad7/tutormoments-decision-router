@@ -1,0 +1,39 @@
+{
+  "moment_index": 59,
+  "candidate": "A - Current learner evidence",
+  "request_sha256": "07cbcd5cbadebd071428f34845cd4f1a2ef99dbd9d6aa7a2fecb4258bf13fcc0",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE: Opens whiteboard] A blank whiteboard is shown.\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'What are the goal(s) you can work towards this semester?' (start)] The whiteboard now displays text.\nTitle: \"What are the goal(s) you can work towards this semester?\"\nBody text:\n\"Here are some starter examples:\nTutoring goals: I want to attend X tutoring sessions, I want to never miss a session\nAcademic skills: I want to learn how to multiply two-digit numbers, I want to read 6 books\nLife Goals: I want to learn how to skateboard, I want to score X goals in soccer\nWrite your goals below:\nMultiplication and Division, Story problems, getting ready for 5th grade\nGeometry\"\nTurn 1. TUTOR: [PAUSE: 80 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE: Tutor joins the room] A notification \"Aiden has joined\" appears and the screen layout changes.\nTurn 1. TUTOR: [PAUSE: 7 seconds]\nTurn 1. TUTOR: Hi Aiden.\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: Hey Aiden.\nTurn 4. STUDENT: Hi.\nTurn 5. TUTOR: Hi.\nTurn 6. TUTOR: How are you feeling today?\nTurn 7. STUDENT: Um, good.\nTurn 8. TUTOR: Did you enjoy your tournament yesterday?\nTurn 9. STUDENT: Uh, yeah.\nTurn 10. TUTOR: Nice.\nTurn 11. TUTOR: Okay.\nTurn 12. TUTOR: [SCREEN_UPDATE: Whiteboard changes] The whiteboard changes to a new, blank page with the formulas for Triangle, Rectangle, Parallelogram, and Trapezoid.\nText on screen:\nTriangle: B x H x 1/2\nRectangle: L x W\nParallelogram: B x H\nTrapezoid:\nTurn 12. TUTOR: Remember, um, on Tuesday we learned about the area of a trapezoid, right?\nTurn 13. STUDENT: Yeah.\nTurn 14. TUTOR: Do you still remember what the formula is?\nTurn 15. STUDENT: Hold on.\nTurn 16. TUTOR: [PAUSE: 15 seconds]\nTurn 16. STUDENT: The area of a trapezoid.\nTurn 17. TUTOR: Mhm.\nTurn 18. TUTOR: [PAUSE: 16 seconds]\nTurn 18. STUDENT: It was it, um, I forgot what the thing, uh, was it, um,\nTurn 19. TUTOR: It's okay. Let me give you a hint.\nTurn 20. TUTOR: Do you want to first draw the shape of a trapezoid?\nTurn 21. STUDENT: Yeah.\nTurn 22. TUTOR: [SCREEN_INTERACTION: student - drawing] Student draws a trapezoid shape on the whiteboard.\nTurn 22. TUTOR: Yeah, perfect.\nTurn 23. TUTOR: So, you see the top part of this trapezoid, right? It's shorter than the bottom part.\nTurn 24. TUTOR: So, do you remember what we called them?\nTurn 25. STUDENT: I forgot what we call them.\nTurn 26. TUTOR: It's okay, but remember we expressed it in two different ways, right? So let's say base one and base two.\nTurn 27. STUDENT: Uh.\nTurn 28. STUDENT: Right? B one and B two.\nTurn 29. TUTOR: Yeah.\nTurn 30. TUTOR: Now that we know this, do you still remember the area?\nTurn 31. STUDENT: Um, base one plus B two times the width? Or the\nTurn 32. TUTOR: The height, right?\nTurn 33. STUDENT: Height, yeah.\nTurn 34. TUTOR: Mhm.\nTurn 35. TUTOR: But you're missing something.\nTurn 36. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor writes \"(b1+b2)x H\" next to \"Trapezoid:\".\nTurn 36. STUDENT: One half.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which next tutoring move best fits what the learner has demonstrated on the current math task? Read the sequence of student work, tutor help, and described screen actions. Give greatest weight to the current task and the most recent substantive student contribution, using earlier turns to interpret it. A correct answer supplied by the tutor, or a student saying yes, does not by itself demonstrate understanding. An earlier error does not require more help after the learner has independently corrected and explained it.",
+        "criteria": {
+          "scaffolding": "The learner needs targeted support to access or complete the current mathematical step: unresolved confusion, an uncorrected error, inability to begin, or difficulty understanding the required concept or representation. Help with the specific obstacle while leaving meaningful participation.",
+          "rigor": "The learner is ready to attempt the next step independently, explain or justify a successful step, connect ideas, or transfer a method. Build on demonstrated understanding or self-correction instead of repeating mastered work or supplying the next operation."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.52,
+        "probabilities": {
+          "scaffolding": 0.24,
+          "rigor": 0.76
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1483,
+      "output_tokens": 37
+    }
+  },
+  "latency_ms": 149.16416600000025,
+  "reused_from_development": true
+}

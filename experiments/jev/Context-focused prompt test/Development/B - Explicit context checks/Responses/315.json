@@ -1,0 +1,38 @@
+{
+  "moment_index": 315,
+  "candidate": "B - Explicit context checks",
+  "request_sha256": "ebcef3db7c09596593d50084e3acd4e6c59ec3801cd286146f5201b0a6e98ea7",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] The screen loads to show a turquoise background with the \"Bright Path Tutoring\" logo and the text \"First Session Guide\". A notification \"Lily has joined\" appears.\nTurn 1. TUTOR: [PAUSE: 201 seconds] The student's video feed appears at 00:16 but is muted. The screen remains static.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears. A \"Bright Path Tutoring\" widget with a bookshelf, a timer, and a table appears in the top right corner.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Lily has left\" appears.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Lily has joined\" appears.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Lily has left\" appears.\nTurn 1. TUTOR: [PAUSE: 96 seconds]\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'First Session Guide' (start)] The screen has a teal background with the \"Bright Path Tutoring\" logo and the text \"First Session Guide\" in large white font.\nTurn 1. TUTOR: [PAUSE: 300 seconds] Tutor's cursor moves to the top of the screen and clicks on the \"Whiteboard 3\" tab. The screen changes to a new whiteboard.\nTurn 1. TUTOR: [PAUSE: 1 second]\nTurn 1. TUTOR: Hi, Lily.\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: How are you?\nTurn 4. STUDENT: Good.\nTurn 5. TUTOR: Good. I'm so excited to be your tutor today. My name is Rachel.\nTurn 6. STUDENT: Okay.\nTurn 7. TUTOR: And we're gonna have so much fun doing some math.\nTurn 8. STUDENT: Okay.\nTurn 9. TUTOR: So, first, what we're gonna do is we're gonna do a little get to know you activity.\nTurn 10. TUTOR: [PROBLEM_CHANGE: p2 - 'Get to Know You' (start)] The whiteboard is titled \"Get to Know You\". Below the title are two columns, one for the tutor and one for the student. Each column has rows for \"Favorite Color:\", \"Favorite Food:\", and \"Favorite Animal:\". The tutor's column is pre-filled with \"Blue\", \"Pizza\", and \"Dog\".\nTutor types \"Pink\" in the \"Favorite Color:\" row under the student's column.\nTutor types \"Pizza\" in the \"Favorite Food:\" row under the student's column.\nTutor types \"Dog\" in the \"Favorite Animal:\" row under the student's column.\nTurn 10. TUTOR: So, I'm gonna go first.\nTurn 11. STUDENT: Okay.\nTurn 12. TUTOR: So, my favorite color is blue. My favorite food is pizza.\nTurn 13. STUDENT: Me too.\nTurn 14. TUTOR: And my favorite animal is a dog.\nTurn 15. TUTOR: So, now it's your turn. What's your favorite color?\nTurn 16. STUDENT: Pink.\nTurn 17. TUTOR: Pink. Okay. I'm gonna write that down.\nTurn 18. TUTOR: What about your favorite food?\nTurn 19. STUDENT: Pizza.\nTurn 20. TUTOR: Pizza. We have the same favorite food. That's awesome.\nTurn 21. TUTOR: And what's your favorite animal?\nTurn 22. STUDENT: A dog.\nTurn 23. TUTOR: A dog. We have the same favorite animal too.\nTurn 24. TUTOR: That's so cool. We have so much in common.\nTurn 25. TUTOR: [PAUSE: 1 second] Tutor's cursor moves to the top of the screen and clicks on the \"Whiteboard 4\" tab. The screen changes to a new, blank whiteboard.\nTurn 25. TUTOR: Okay. So, now we're gonna move on to our next activity.\nTurn 26. TUTOR: [PROBLEM_CHANGE: p3 - '10 + 10 = ?' (start)] Tutor writes \"1. 10 + 10 =\" on the whiteboard.\nTutor writes \"20\" after the equals sign.\nTurn 26. TUTOR: So, what is ten plus ten?\nTurn 27. STUDENT: Twenty.\nTurn 28. TUTOR: Twenty. Good job.\nTurn 29. TUTOR: [PROBLEM_CHANGE: p4 - '100 + 100 = ?' (start)] Tutor writes \"2. 100 + 100 =\" on the whiteboard.\nTutor writes \"200\" after the equals sign.\nTurn 29. TUTOR: What about one hundred plus one hundred?\nTurn 30. STUDENT: Two hundred.\nTurn 31. TUTOR: Two hundred. Perfect.\nTurn 32. TUTOR: [PROBLEM_CHANGE: p5 - '5 + 4 = ?' (start)] Tutor writes \"3. 5 + 4 =\" on the whiteboard.\nTutor writes \"9\" after the equals sign.\nTurn 32. TUTOR: What is five plus four?\nTurn 33. STUDENT: Nine.\nTurn 34. TUTOR: Nine. Good job.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "At the stopping point of this math tutoring conversation, should the next move provide scaffolding or push for rigor? Ground the choice in the full dialogue, including described student writing and actions. Identify the current problem and the mathematical step now at issue. Check what the student has actually done or explained, which parts the tutor already supplied, and whether a specific difficulty remains unresolved. Choose for this point in the conversation, not for an earlier task. Do not treat agreement with a tutor explanation as independent mastery. Do not treat hesitation, an old mistake, or a new problem alone as proof that the tutor should explain more. A student who corrects their own error can be ready for justification or a new challenge. Select the instructional opportunity; do not write a tutor reply.",
+        "criteria": {
+          "scaffolding": "Support is needed now. The learner lacks access to the current mathematical idea or step, remains stuck or confused, or has a mathematical error they have not resolved. The appropriate move reduces that specific obstacle through a hint, representation, worked substep, or clarification.",
+          "rigor": "The learner can take more responsibility now. They have succeeded on the relevant step, demonstrated a usable method or relationship, self-corrected, or can productively attempt the next step without being given its solution. Ask for reasoning, justification, connections, an independent attempt, or transfer instead of unnecessary reteaching."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.8,
+        "probabilities": {
+          "scaffolding": 0.1,
+          "rigor": 0.9
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1813,
+      "output_tokens": 37
+    }
+  },
+  "latency_ms": 149.0034579999957
+}

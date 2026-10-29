@@ -1,0 +1,46 @@
+{
+  "A - Current learner evidence": {
+    "instructions": "Which next tutoring move best fits what the learner has demonstrated on the current math task? Read the sequence of student work, tutor help, and described screen actions. Give greatest weight to the current task and the most recent substantive student contribution, using earlier turns to interpret it. A correct answer supplied by the tutor, or a student saying yes, does not by itself demonstrate understanding. An earlier error does not require more help after the learner has independently corrected and explained it.",
+    "criteria": {
+      "scaffolding": "The learner needs targeted support to access or complete the current mathematical step: unresolved confusion, an uncorrected error, inability to begin, or difficulty understanding the required concept or representation. Help with the specific obstacle while leaving meaningful participation.",
+      "rigor": "The learner is ready to attempt the next step independently, explain or justify a successful step, connect ideas, or transfer a method. Build on demonstrated understanding or self-correction instead of repeating mastered work or supplying the next operation."
+    }
+  },
+  "B - Explicit context checks": {
+    "instructions": "At the stopping point of this math tutoring conversation, should the next move provide scaffolding or push for rigor? Ground the choice in the full dialogue, including described student writing and actions. Identify the current problem and the mathematical step now at issue. Check what the student has actually done or explained, which parts the tutor already supplied, and whether a specific difficulty remains unresolved. Choose for this point in the conversation, not for an earlier task. Do not treat agreement with a tutor explanation as independent mastery. Do not treat hesitation, an old mistake, or a new problem alone as proof that the tutor should explain more. A student who corrects their own error can be ready for justification or a new challenge. Select the instructional opportunity; do not write a tutor reply.",
+    "criteria": {
+      "scaffolding": "Support is needed now. The learner lacks access to the current mathematical idea or step, remains stuck or confused, or has a mathematical error they have not resolved. The appropriate move reduces that specific obstacle through a hint, representation, worked substep, or clarification.",
+      "rigor": "The learner can take more responsibility now. They have succeeded on the relevant step, demonstrated a usable method or relationship, self-corrected, or can productively attempt the next step without being given its solution. Ask for reasoning, justification, connections, an independent attempt, or transfer instead of unnecessary reteaching."
+    }
+  },
+  "C - Observable evidence criteria": {
+    "instructions": "Which instructional opportunity is supported by the learner evidence at the end of this conversation? Use the current mathematical problem, student utterances and student screen actions. Interpret the last utterance in its preceding exchange. Distinguish the learner doing the thinking from the tutor doing it. Choose the move that fits the learner now.",
+    "criteria": {
+      "scaffolding": {
+        "meaning": "Give targeted support for a mathematical obstacle that is still unresolved.",
+        "evidence": [
+          "Student cannot start or continue the relevant step.",
+          "Student shows an uncorrected misunderstanding or cannot access the representation.",
+          "Student explicitly needs help with the current mathematical idea."
+        ],
+        "boundary": "Support is not automatically needed because the topic is new, the student once made an error, or the tutor has an explanation available."
+      },
+      "rigor": {
+        "meaning": "Increase independent mathematical work, explanation, connection, or challenge.",
+        "evidence": [
+          "Student completes the relevant work or gives a coherent method.",
+          "Student identifies and corrects their own mistake.",
+          "Student is ready for an independent attempt or a why/how question rather than further explanation."
+        ],
+        "boundary": "A correct option or yes/no agreement immediately after the tutor supplied the answer is not enough, by itself, to infer mastery."
+      }
+    }
+  },
+  "D - Support versus demonstrated readiness": {
+    "instructions": "Does the learner at this moment primarily need support to access the mathematics, or further challenge to deepen understanding they have demonstrated? Read the chronological conversation around the current task and the earlier work needed to interpret it. Track who supplied the mathematical ideas. If the learner made an error and the tutor then supplied the solution, a final yes or correct repetition does not show that the learner has resolved the difficulty. If the learner independently explains, successfully applies an idea, or corrects their own reasoning, do not keep helping merely because they struggled earlier. Distinguish support for access from increasing mathematical demand; the fact that a tutor could ask a question or request an explanation does not by itself make the moment a rigor opportunity. Use student speech and described student actions, not tutor claims that the student understands.",
+    "criteria": {
+      "scaffolding": "The current mathematics is still challenging for the learner. A targeted hint, representation, guided substep, or focused check is needed to help them access it. The learner may give a short correct answer after heavy prompting while still needing this support. The aim is to bridge the present conceptual or procedural gap, not add difficulty yet.",
+      "rigor": "The learner has demonstrated enough understanding of the relevant mathematics to take on greater independence, justification, a connection, transfer, or a harder version. Build on their own successful work or self-correction. The aim is to deepen or extend demonstrated understanding rather than reteach the same step."
+    }
+  }
+}

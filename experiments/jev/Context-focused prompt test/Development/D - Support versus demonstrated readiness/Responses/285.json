@@ -1,0 +1,38 @@
+{
+  "moment_index": 285,
+  "candidate": "D - Support versus demonstrated readiness",
+  "request_sha256": "6d61c46a5374bd8bdec0577911db848d4c9ce4ef8da3b14ae82dd393d74947fb",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top center of the screen: \"Victoria has joined\".\nTurn 1. TUTOR: [PAUSE: 2 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A video feed tile for the tutor appears on the left side of the screen. It is a red circle with a white \"V\" in the center. The name \"Victoria\" is displayed below the tile.\nTurn 1. TUTOR: [PAUSE: 291 seconds]\nTurn 1. TUTOR: [PAUSE: 231 seconds] The tutor is alone in the main room, waiting for the student to join.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Kayla has joined\". A second participant tile appears for the student.\nTurn 1. TUTOR: [PAUSE: 87 seconds]\nTurn 1. TUTOR: [PAUSE: 1 second]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Kayla has left\". The student's video feed disappears.\nTurn 1. TUTOR: [PAUSE: 31 seconds]\nTurn 1. TUTOR: Hi Kayla.\nTurn 2. TUTOR: [PAUSE: 5 seconds]\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: How are you?\nTurn 4. STUDENT: Good. And you?\nTurn 5. TUTOR: I'm good. How's school been? Your first, what, three days?\nTurn 6. STUDENT: Um, it's been good.\nTurn 7. TUTOR: Are you liking your school so far?\nTurn 8. STUDENT: Um, yeah.\nTurn 9. TUTOR: Or is it just like, all right?\nTurn 10. STUDENT: I like it.\nTurn 11. TUTOR: Oh, that's good.\nTurn 12. TUTOR: Well, we can get started right away. Um, so, you're going to do, remember we're going to be practicing on your quick, uh, what's it called? Your multiplication, division, just like solving them quick at the end.\nTurn 13. TUTOR: Um, first, I'm going to show you 15 problems. They're pretty easy, okay? Like, they're, you should get most of them done. And what I'm going to do is I'm going to put on a 20-minute timer and see how many you can get done.\nTurn 14. TUTOR: The minimum you should get done is 10 questions, okay?\nTurn 15. STUDENT: Okay.\nTurn 16. TUTOR: So as soon as, um, you see them on your screen, get started right away, okay? And remember, you can always ask questions too.\nTurn 17. STUDENT: Okay.\nTurn 18. TUTOR: All right, here they are.\nTurn 19. TUTOR: [SCREEN_UPDATE] The tutor's video feed is replaced by a black screen.\nTurn 19. TUTOR: I'll check back in at 3:25.\nTurn 20. TUTOR: [PAUSE: 17 seconds]\nTurn 20. TUTOR: [PROBLEM_CHANGE: p1-15 - Math Problems (start)] A list of 15 math problems appears on the left side of the screen. The problems are:\n1. What is 6 x 4?\n2. Multiply: 12 x 3\n3. Add: 7 + 82\n4. What is the value of x if x + 8 = 12?\n5. What is the perimeter of a rectangle with length 8 cm and width 3 cm?\n6. Add: 1/2 + 1/2\n7. What is 9 x 2?\n8. Divide: 24 / 6\n9. What is 3/3 equal to?\n10. What is the value of x if 2x = 10?\n11. Subtract: 15 - 9\n12. What is the perimeter of a square with sides of 6 inches?\n13. Multiply: -8 x 7\n14. What is the value of x if x - 3 = 4?\n15. Add: 1M + 1M\nTutor's cursor moves to the right of the problem list, and a name tag \"Kayla\" appears.\nTurn 20. TUTOR: You have about 10, 12 minutes left, all right? Just a reminder.\nTurn 21. STUDENT: Okay.\nTurn 22. TUTOR: [PAUSE: 3 seconds]\nTurn 22. TUTOR: [SCREEN_INTERACTION: tutor - moves cursor] Tutor's cursor moves away, and the \"Kayla\" name tag disappears.\nTurn 22. TUTOR: [PAUSE: 356 seconds]\nTurn 22. TUTOR: Hi Kayla. You still have some time, but I was wondering which question are you on?\nTurn 23. STUDENT: I'm on eight.\nTurn 24. TUTOR: [SCREEN_INTERACTION: tutor - pointing] The tutor's cursor moves to point at question 8.\nTurn 24. TUTOR: All right. All right. Remember, try to go as fast as you can. Um, you should, I think you should be a little farther than eight, but just keep going. Also for number 10, um, go ahead and skip number 10, okay?\nTurn 25. STUDENT: Okay.\nTurn 26. TUTOR: Just keep going with the rest. Keep going, real fast.\nTurn 27. TUTOR: [PAUSE: 3 seconds]\nTurn 27. STUDENT: I need help on nine.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Does the learner at this moment primarily need support to access the mathematics, or further challenge to deepen understanding they have demonstrated? Read the chronological conversation around the current task and the earlier work needed to interpret it. Track who supplied the mathematical ideas. If the learner made an error and the tutor then supplied the solution, a final yes or correct repetition does not show that the learner has resolved the difficulty. If the learner independently explains, successfully applies an idea, or corrects their own reasoning, do not keep helping merely because they struggled earlier. Distinguish support for access from increasing mathematical demand; the fact that a tutor could ask a question or request an explanation does not by itself make the moment a rigor opportunity. Use student speech and described student actions, not tutor claims that the student understands.",
+        "criteria": {
+          "scaffolding": "The current mathematics is still challenging for the learner. A targeted hint, representation, guided substep, or focused check is needed to help them access it. The learner may give a short correct answer after heavy prompting while still needing this support. The aim is to bridge the present conceptual or procedural gap, not add difficulty yet.",
+          "rigor": "The learner has demonstrated enough understanding of the relevant mathematics to take on greater independence, justification, a connection, transfer, or a harder version. Build on their own successful work or self-correction. The aim is to deepen or extend demonstrated understanding rather than reteach the same step."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.96,
+        "probabilities": {
+          "scaffolding": 0.98,
+          "rigor": 0.02
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1898,
+      "output_tokens": 39
+    }
+  },
+  "latency_ms": 137.9781249999965
+}

@@ -1,0 +1,38 @@
+{
+  "moment_index": 265,
+  "candidate": "A - Current learner evidence",
+  "request_sha256": "f7d557016cc4f53794c139368483cd0df3b0de7c18fcba00746018cf15314dd7",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PAUSE: 39 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE: Opens ReadWorks website] The tutor shares their screen, showing the LearnText website. A pop-up is visible that says \"See your current, future, and past assignments to grade, reassign, or change the due date!\" with \"Previous\" and \"Done\" buttons. The main page shows \"Explore by Topic\" with categories: \"Sports, Health & Safety\", \"Geography, Societies & Culture\", \"Music & Performing Arts\", and \"Social & Emotional Learning\".\nTurn 1. TUTOR: [PAUSE: 26 seconds]\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - clicking] Tutor clicks the \"Answer\" button for question 3. The correct answer, \"B. The band was creative and tried new ways to play jazz,\" is highlighted in green.\nTurn 1. TUTOR: [PAUSE: 85 seconds] The tutor scrolls down the page, showing questions 4 and 5.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - clicking] Tutor clicks the \"Answer\" button for question 5. The correct answer, \"A. Machito and his band helped create Afro-Cuban jazz and make it popular,\" is highlighted in green.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - navigating] Tutor scrolls to the top of the page and clicks on the \"Content\" tab.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - navigating] The \"Content\" page loads. The tutor scrolls down, past grade levels, to the \"3rd Grade\" section and clicks on \"Amazing Animals Week 1: Animals\".\nTurn 1. TUTOR: [SCREEN_UPDATE] The \"Amazing Animals\" article set page loads.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - navigating] Tutor clicks on the article titled \"Ready for Cold Weather\".\nTurn 1. TUTOR: [PAUSE: 81 seconds] Tutor scrolls through the \"Ready for Cold Weather\" article. The tutor's cursor hovers over an image of a hedgehog eating a worm, causing it to zoom in.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - navigating] Tutor scrolls back to the top of the page and clicks on \"Amazing Animals\" in the list of articles on the left.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - navigating] Tutor clicks back on \"Ready for Cold Weather\".\nTurn 1. TUTOR: [PAUSE: 131 seconds] Tutor scrolls down the article and hovers the cursor over an image of a hedgehog in a tree trunk, causing it to zoom in. The tutor then scrolls back to the top of the page and clicks on the \"Content\" tab again. The screen shows the \"LearnText\" website. The page is titled \"Amazing Animals\" and is part of an \"Article-A-Day Set\". A unique identifier `<RoomID>` is visible in a text box. The tutor's name, `Ms. Rivera`, is visible in the top right corner of the website interface. There is no dialogue or significant interaction for the duration.\nTurn 1. TUTOR: [SCREEN_UPDATE: ReadWorks tab is closed] The screen changes to a dark background with the text \"No pages created\".\nTurn 1. TUTOR: [PAUSE: 23 seconds]\nTurn 1. TUTOR: Hi.\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: [PAUSE: 2 seconds]\nTurn 3. TUTOR: Okay. Choose a topic you wanna do.\nTurn 4. STUDENT: Um.\nTurn 5. STUDENT: Maybe, sports, health, and safety.\nTurn 6. TUTOR: [SCREEN_INTERACTION: tutor - clicks \"Done\"] The tutor closes the pop-up on the screen.\nTurn 6. TUTOR: [PAUSE: 14 seconds]\nTurn 6. TUTOR: [SCREEN_INTERACTION: tutor - clicks \"Sports, Health & Safety\"] The page updates to show a list of articles under the \"Sports, Health & Safety\" category.\nTurn 6. STUDENT: Um, Surgery Without Borders.\nTurn 7. TUTOR: [PAUSE: 9 seconds] The tutor clicks on the article titled \"Surgery Without Borders: The Power of Augmented Reality\".\nTurn 7. TUTOR: Let's start with this.\nTurn 8. STUDENT: So, digital.\nTurn 9. STUDENT: Digital.\nTurn 10. TUTOR: [PAUSE: 2 seconds]\nTurn 10. TUTOR: [SCREEN_INTERACTION: tutor - clicks \"Vocabulary Activity\"] The screen switches to the \"Vocabulary Activity\" tab for the article. It shows a list of words (digital, expert, practice, precise) with sliders next to them. The sliders can be moved to indicate knowledge level from \"Don't know it\" to \"Know it well\".\nTurn 10. STUDENT: I've heard of it, but I don't know its meaning.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which next tutoring move best fits what the learner has demonstrated on the current math task? Read the sequence of student work, tutor help, and described screen actions. Give greatest weight to the current task and the most recent substantive student contribution, using earlier turns to interpret it. A correct answer supplied by the tutor, or a student saying yes, does not by itself demonstrate understanding. An earlier error does not require more help after the learner has independently corrected and explained it.",
+        "criteria": {
+          "scaffolding": "The learner needs targeted support to access or complete the current mathematical step: unresolved confusion, an uncorrected error, inability to begin, or difficulty understanding the required concept or representation. Help with the specific obstacle while leaving meaningful participation.",
+          "rigor": "The learner is ready to attempt the next step independently, explain or justify a successful step, connect ideas, or transfer a method. Build on demonstrated understanding or self-correction instead of repeating mastered work or supplying the next operation."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.84,
+        "probabilities": {
+          "scaffolding": 0.92,
+          "rigor": 0.08
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1632,
+      "output_tokens": 39
+    }
+  },
+  "latency_ms": 157.1737090000056
+}

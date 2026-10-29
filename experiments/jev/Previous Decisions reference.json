@@ -1,0 +1,93 @@
+{
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "initial_decisions": {
+    "scope": "First step=0 decision versus initial publisher category; proxy agreement, not validity.",
+    "eligible_first_decisions": 49,
+    "agreements": 37,
+    "agreement_rate": 0.7551020408163265,
+    "coverage": {
+      "cases_with_initial_record": 49,
+      "duplicate_initial_records_ignored": 7,
+      "eligible_first_decisions": 49,
+      "agreements": 37
+    },
+    "confusion": [
+      {
+        "initial_category": "rigor",
+        "first_choice": "rigor",
+        "n": 10
+      },
+      {
+        "initial_category": "rigor",
+        "first_choice": "scaffolding",
+        "n": 10
+      },
+      {
+        "initial_category": "scaffolding",
+        "first_choice": "rigor",
+        "n": 2
+      },
+      {
+        "initial_category": "scaffolding",
+        "first_choice": "scaffolding",
+        "n": 27
+      }
+    ],
+    "later_decisions_not_scored_against_initial_category": 98,
+    "later_choice_counts_descriptive_only": {
+      "rigor": 50,
+      "scaffolding": 48
+    }
+  },
+  "comparison_limitation": "The earlier OpenAI Decisions classifier used a different question prompt. Comparing against new Jev results does not isolate a model effect."
+}

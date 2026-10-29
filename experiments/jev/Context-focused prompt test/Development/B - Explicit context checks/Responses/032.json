@@ -1,0 +1,38 @@
+{
+  "moment_index": 32,
+  "candidate": "B - Explicit context checks",
+  "request_sha256": "214d3a9eca8cb967dc1c756245e5a88a066af6b1d8ddb8685fbef9e1a3e852bc",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \"What are the goal(s) you can work towards this semester?\"\nTurn 1. TUTOR: [PAUSE: 12 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Diane has left\" appears on the screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Kayla has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 8 seconds]\nTurn 1. STUDENT: All right. You can go ahead and make it big.\nTurn 2. STUDENT: And then you just hit exit, and then you go to this one. Bye. All right.\nTurn 3. STUDENT: All right.\nTurn 4. STUDENT: So you can make it big right there. Bye.\nTurn 5. TUTOR: [PAUSE: 24 seconds]\nTurn 5. TUTOR: [PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\nTurn 5. TUTOR: Hello?\nTurn 6. STUDENT: Hi.\nTurn 7. TUTOR: Hi, Kayla. How's your weekend?\nTurn 8. STUDENT: What?\nTurn 9. TUTOR: How was your weekend?\nTurn 10. STUDENT: It was good.\nTurn 11. TUTOR: Nice.\nTurn 12. TUTOR: [PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \"What is the remainder when you work out the answer to this division? 2143 ÷ 4\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\nTurn 12. TUTOR: Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\nTurn 13. STUDENT: All right.\nTurn 14. TUTOR: Do you wanna write on the whiteboard or?\nTurn 15. TUTOR: [PAUSE: 7 seconds]\nTurn 15. STUDENT: I'll write on the whiteboard.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "At the stopping point of this math tutoring conversation, should the next move provide scaffolding or push for rigor? Ground the choice in the full dialogue, including described student writing and actions. Identify the current problem and the mathematical step now at issue. Check what the student has actually done or explained, which parts the tutor already supplied, and whether a specific difficulty remains unresolved. Choose for this point in the conversation, not for an earlier task. Do not treat agreement with a tutor explanation as independent mastery. Do not treat hesitation, an old mistake, or a new problem alone as proof that the tutor should explain more. A student who corrects their own error can be ready for justification or a new challenge. Select the instructional opportunity; do not write a tutor reply.",
+        "criteria": {
+          "scaffolding": "Support is needed now. The learner lacks access to the current mathematical idea or step, remains stuck or confused, or has a mathematical error they have not resolved. The appropriate move reduces that specific obstacle through a hint, representation, worked substep, or clarification.",
+          "rigor": "The learner can take more responsibility now. They have succeeded on the relevant step, demonstrated a usable method or relationship, self-corrected, or can productively attempt the next step without being given its solution. Ask for reasoning, justification, connections, an independent attempt, or transfer instead of unnecessary reteaching."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.44,
+        "probabilities": {
+          "scaffolding": 0.72,
+          "rigor": 0.28
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1151,
+      "output_tokens": 39
+    }
+  },
+  "latency_ms": 242.91558399999502
+}

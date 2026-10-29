@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Hidden label, rubric, metadata, future reference, and persona cannot affect request",
+    "Injected hidden-field canary absent from serialized request",
+    "All 520 payloads have only documented API fields",
+    "Exactly one two-option decision question per moment",
+    "Exact same instructions across all 520 moments",
+    "Publisher prompt preserved exactly after original metadata substitution",
+    "Full released context retained for all moments; no truncation",
+    "Documented Choice response parses correctly",
+    "Wrong model, invalid option, and inconsistent probabilities rejected",
+    "Synthetic two-case metric fixture correctly computes accuracy and confusion matrix"
+  ],
+  "live_jev_calls": 0,
+  "synthetic_fixtures_are_not_experiment_results": true
+}

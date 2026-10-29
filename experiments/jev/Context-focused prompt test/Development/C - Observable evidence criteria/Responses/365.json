@@ -1,0 +1,54 @@
+{
+  "moment_index": 365,
+  "candidate": "C - Observable evidence criteria",
+  "request_sha256": "f18753f80f826879c96dcc5d27a8754ebd32c08648ff3c777c6fc4b1c9b985ca",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Nadia has joined\" appears over a whiteboard with \"REVIEW OF FRACTIONS\" and some fraction calculations.\nTurn 1. TUTOR: [SCREEN_UPDATE] The whiteboard is briefly visible before the screen goes dark.\nTurn 1. TUTOR: [PAUSE: 125 seconds] The screen is mostly dark, then the tutor's camera feed appears. He is waiting.\nTurn 1. TUTOR: [PAUSE: 102 seconds] The whiteboard becomes the main view. It is filled with handwritten fraction problems. The tutor is visible in a smaller window, still waiting and eating.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Mateo has joined\" appears.\nTurn 1. TUTOR: [PAUSE: 12 seconds] The student's camera feed appears, initially black.\nTurn 1. TUTOR: [SCREEN_INTERACTION: student - cursor] The student's cursor appears on the whiteboard.\nTurn 1. TUTOR: [PAUSE: 41 seconds] The student's camera feed shows her. She adjusts her headset and eats. The tutor waits.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears on screen: \"Mateo has left\". The student's video feed disappears.\nTurn 1. TUTOR: [PAUSE: 32 seconds] The tutor remains in the session, looking at the whiteboard.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears on screen: \"Nadia has left\". The tutor's video feed disappears.\nTurn 1. TUTOR: [PAUSE: 61 seconds]\nTurn 1. TUTOR: Okay, good morning. Uh, actually, good afternoon, Mateo. And I'm really glad to see you back, um, right after knowing that you were hospitalized for, for an accident. So hopefully you're getting well.\nTurn 2. TUTOR: Um, are you feeling good right now?\nTurn 3. STUDENT: Yeah.\nTurn 4. STUDENT: Yeah.\nTurn 5. TUTOR: Okay, great. Uh, feel free to set up yourself. Meanwhile, I'm gonna um, set up the lessons for today. We're going to go over a really um, interesting, yes, complicated, um, operations in terms of fractions. So we call that addition and subtraction.\nTurn 6. TUTOR: [SCREEN_INTERACTION: tutor - erasing] Tutor erases some writing on the board, revealing the text \"Dividing and multiplying fractions\" with a green checkmark next to it.\nTurn 6. TUTOR: So once again, I've been went through this several times, but today is going to be a really great review about those concepts because I'm, I believe that those are the one who um, intimidate the student the most.\nTurn 7. TUTOR: So that's why I'm hoping to create an environment where you can feel more confident in dealing with these operations.\nTurn 8. TUTOR: [SCREEN_INTERACTION: tutor - erasing] Tutor erases the entire whiteboard.\nTurn 8. TUTOR: [PAUSE: 7 seconds] Tutor types \"Adding and subtracting fractions\" on the whiteboard.\nTurn 8. TUTOR: So, let's put it right next to the um, dividing and multiplying fractions, right next to it. We have, we have, on the same column. Okay. Um, I can't look totally create. Let's go and write here.\nTurn 9. TUTOR: Adding and subtracting fractions.\nTurn 10. STUDENT: Okay.\nTurn 11. TUTOR: And once again, we have been studying this many times, but I would like to throw you out a review on these operations because these are, as I believe, the hardest um, sections where most students will will face when they learn fractions. So that's why I'm hoping that you're going to learn the most as you can about these two tricky operations, adding and subtracting. We're going to go a video where everything going to explain explicit, I mean, explain clearly and then we're going to go over everything once again.\nTurn 12. TUTOR: [SCREEN_INTERACTION: tutor - underlining] Tutor underlines the text \"Adding and subtracting fractions\".\nTutor types \"1. cases: for like fractions\" on the whiteboard.\nTurn 12. TUTOR: So first, I'm going to introduce you what's the technique. We're going to watch a video to review the method and then we're going to go over the the practical exercises. Okay, so first let's go over the easiest case that we can see when you want to add or subtract fractions.\nTurn 13. TUTOR: So the first scenario is, let me type for fast. So a first case is for like fractions.\nTurn 14. TUTOR: Like fractions, once again, let me call back the definitions for those. Those are the fractions that have the same denominators. So for example, I could say that we have the fraction three over five. And, uh, hello Nadia.\nTurn 15. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor writes \"3/5\" on the whiteboard.\nTutor writes \"4/5\" next to \"3/5\". He then circles the \"5\" in both fractions.\nTurn 15. TUTOR: Um, another fraction. Okay, hopefully you're doing well. Um, another fraction is four over five. So these two particularly are like fractions because once again, the denominator of these fractions are the same, which is five.\nTurn 16. TUTOR: So let's comes to the operation that we can do for this. So for example, is that these two are like fractions. So for example, I want to add these two fractions, okay? So the thing we need to do is really simple. Hopefully you have you still remember because this is the easiest case that we can learn.\nTurn 17. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor writes a plus sign between \"3/5\" and \"4/5\".\nTurn 17. STUDENT: Okay.\nTurn 18. TUTOR: For this case, you just barely need to add the numerator or the above numbers.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which instructional opportunity is supported by the learner evidence at the end of this conversation? Use the current mathematical problem, student utterances and student screen actions. Interpret the last utterance in its preceding exchange. Distinguish the learner doing the thinking from the tutor doing it. Choose the move that fits the learner now.",
+        "criteria": {
+          "scaffolding": {
+            "meaning": "Give targeted support for a mathematical obstacle that is still unresolved.",
+            "evidence": [
+              "Student cannot start or continue the relevant step.",
+              "Student shows an uncorrected misunderstanding or cannot access the representation.",
+              "Student explicitly needs help with the current mathematical idea."
+            ],
+            "boundary": "Support is not automatically needed because the topic is new, the student once made an error, or the tutor has an explanation available."
+          },
+          "rigor": {
+            "meaning": "Increase independent mathematical work, explanation, connection, or challenge.",
+            "evidence": [
+              "Student completes the relevant work or gives a coherent method.",
+              "Student identifies and corrects their own mistake.",
+              "Student is ready for an independent attempt or a why/how question rather than further explanation."
+            ],
+            "boundary": "A correct option or yes/no agreement immediately after the tutor supplied the answer is not enough, by itself, to infer mastery."
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.3,
+        "probabilities": {
+          "scaffolding": 0.65,
+          "rigor": 0.35
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1975,
+      "output_tokens": 39
+    }
+  },
+  "latency_ms": 177.19508300000086
+}

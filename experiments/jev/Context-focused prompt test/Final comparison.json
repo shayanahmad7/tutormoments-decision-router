@@ -1,0 +1,322 @@
+{
+  "status": "complete",
+  "selection": {
+    "selected_candidate": "A - Current learner evidence",
+    "ranking": [
+      "A - Current learner evidence",
+      "C - Observable evidence criteria",
+      "B - Explicit context checks",
+      "D - Support versus demonstrated readiness"
+    ],
+    "rule": "development balanced accuracy, macro F1, accuracy, shorter prompt, name",
+    "selected_prompt_sha256": "9c107090d75ce52175b340eb9529d7f0f246b480e7e71f063c12ca94198344f9",
+    "development_scores": {
+      "baseline": {
+        "n": 138,
+        "correct": 90,
+        "accuracy": 0.6521739130434783,
+        "balanced_accuracy": 0.6511156186612577,
+        "macro_f1": 0.6413255360623782,
+        "per_label": {
+          "scaffolding": {
+            "n": 51,
+            "correct": 33,
+            "recall": 0.6470588235294118,
+            "f1": 0.5789473684210527
+          },
+          "rigor": {
+            "n": 87,
+            "correct": 57,
+            "recall": 0.6551724137931034,
+            "f1": 0.7037037037037037
+          }
+        },
+        "confusion_matrix": {
+          "scaffolding": {
+            "scaffolding": 33,
+            "rigor": 18
+          },
+          "rigor": {
+            "scaffolding": 30,
+            "rigor": 57
+          }
+        }
+      },
+      "A - Current learner evidence": {
+        "n": 138,
+        "correct": 95,
+        "accuracy": 0.6884057971014492,
+        "balanced_accuracy": 0.671737660581474,
+        "macro_f1": 0.6695071010860484,
+        "per_label": {
+          "scaffolding": {
+            "n": 51,
+            "correct": 31,
+            "recall": 0.6078431372549019,
+            "f1": 0.5904761904761905
+          },
+          "rigor": {
+            "n": 87,
+            "correct": 64,
+            "recall": 0.735632183908046,
+            "f1": 0.7485380116959063
+          }
+        },
+        "confusion_matrix": {
+          "scaffolding": {
+            "scaffolding": 31,
+            "rigor": 20
+          },
+          "rigor": {
+            "scaffolding": 23,
+            "rigor": 64
+          }
+        }
+      },
+      "B - Explicit context checks": {
+        "n": 138,
+        "correct": 92,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6342123056118999,
+        "macro_f1": 0.636092639302912,
+        "per_label": {
+          "scaffolding": {
+            "n": 51,
+            "correct": 26,
+            "recall": 0.5098039215686274,
+            "f1": 0.5306122448979591
+          },
+          "rigor": {
+            "n": 87,
+            "correct": 66,
+            "recall": 0.7586206896551724,
+            "f1": 0.7415730337078651
+          }
+        },
+        "confusion_matrix": {
+          "scaffolding": {
+            "scaffolding": 26,
+            "rigor": 25
+          },
+          "rigor": {
+            "scaffolding": 21,
+            "rigor": 66
+          }
+        }
+      },
+      "C - Observable evidence criteria": {
+        "n": 138,
+        "correct": 96,
+        "accuracy": 0.6956521739130435,
+        "balanced_accuracy": 0.6693711967545639,
+        "macro_f1": 0.6706818181818182,
+        "per_label": {
+          "scaffolding": {
+            "n": 51,
+            "correct": 29,
+            "recall": 0.5686274509803921,
+            "f1": 0.58
+          },
+          "rigor": {
+            "n": 87,
+            "correct": 67,
+            "recall": 0.7701149425287356,
+            "f1": 0.7613636363636362
+          }
+        },
+        "confusion_matrix": {
+          "scaffolding": {
+            "scaffolding": 29,
+            "rigor": 22
+          },
+          "rigor": {
+            "scaffolding": 20,
+            "rigor": 67
+          }
+        }
+      },
+      "D - Support versus demonstrated readiness": {
+        "n": 138,
+        "correct": 75,
+        "accuracy": 0.5434782608695652,
+        "balanced_accuracy": 0.6217038539553752,
+        "macro_f1": 0.5346571749718996,
+        "per_label": {
+          "scaffolding": {
+            "n": 51,
+            "correct": 47,
+            "recall": 0.9215686274509803,
+            "f1": 0.5987261146496815
+          },
+          "rigor": {
+            "n": 87,
+            "correct": 28,
+            "recall": 0.3218390804597701,
+            "f1": 0.4705882352941176
+          }
+        },
+        "confusion_matrix": {
+          "scaffolding": {
+            "scaffolding": 47,
+            "rigor": 4
+          },
+          "rigor": {
+            "scaffolding": 59,
+            "rigor": 28
+          }
+        }
+      }
+    },
+    "frozen_before_heldout_predictions": true,
+    "split_sha256": "0a8763ae13a9cfba87dec4cb05b16211c1ef1cf74afb5a37cffa208f2616ae9a",
+    "frozen_at_utc": "2026-10-29T14:44:06.647871+00:00",
+    "new_heldout_predictions_at_freeze": 0
+  },
+  "all_520": {
+    "baseline": {
+      "n": 520,
+      "correct": 367,
+      "accuracy": 0.7057692307692308,
+      "balanced_accuracy": 0.7057692307692308,
+      "macro_f1": 0.7045794638911891,
+      "per_label": {
+        "scaffolding": {
+          "n": 260,
+          "correct": 200,
+          "recall": 0.7692307692307693,
+          "f1": 0.7233273056057866
+        },
+        "rigor": {
+          "n": 260,
+          "correct": 167,
+          "recall": 0.6423076923076924,
+          "f1": 0.6858316221765914
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 200,
+          "rigor": 60
+        },
+        "rigor": {
+          "scaffolding": 93,
+          "rigor": 167
+        }
+      }
+    },
+    "optimized": {
+      "n": 520,
+      "correct": 375,
+      "accuracy": 0.7211538461538461,
+      "balanced_accuracy": 0.7211538461538461,
+      "macro_f1": 0.7208555001462362,
+      "per_label": {
+        "scaffolding": {
+          "n": 260,
+          "correct": 196,
+          "recall": 0.7538461538461538,
+          "f1": 0.7299813780260708
+        },
+        "rigor": {
+          "n": 260,
+          "correct": 179,
+          "recall": 0.6884615384615385,
+          "f1": 0.7117296222664016
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 196,
+          "rigor": 64
+        },
+        "rigor": {
+          "scaffolding": 81,
+          "rigor": 179
+        }
+      }
+    },
+    "paired": {
+      "improved": 49,
+      "harmed": 41,
+      "correct_both": 326,
+      "wrong_both": 104,
+      "net_correct_change": 8,
+      "accuracy_change": 0.015384615384615385
+    }
+  },
+  "evaluation_382": {
+    "baseline": {
+      "n": 382,
+      "correct": 277,
+      "accuracy": 0.725130890052356,
+      "balanced_accuracy": 0.7174406062449872,
+      "macro_f1": 0.7188715612405817,
+      "per_label": {
+        "scaffolding": {
+          "n": 209,
+          "correct": 167,
+          "recall": 0.7990430622009569,
+          "f1": 0.7608200455580865
+        },
+        "rigor": {
+          "n": 173,
+          "correct": 110,
+          "recall": 0.6358381502890174,
+          "f1": 0.676923076923077
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 167,
+          "rigor": 42
+        },
+        "rigor": {
+          "scaffolding": 63,
+          "rigor": 110
+        }
+      }
+    },
+    "optimized": {
+      "n": 382,
+      "correct": 280,
+      "accuracy": 0.7329842931937173,
+      "balanced_accuracy": 0.7271067843017949,
+      "macro_f1": 0.7283299866131192,
+      "per_label": {
+        "scaffolding": {
+          "n": 209,
+          "correct": 165,
+          "recall": 0.7894736842105263,
+          "f1": 0.763888888888889
+        },
+        "rigor": {
+          "n": 173,
+          "correct": 115,
+          "recall": 0.6647398843930635,
+          "f1": 0.6927710843373494
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 165,
+          "rigor": 44
+        },
+        "rigor": {
+          "scaffolding": 58,
+          "rigor": 115
+        }
+      }
+    },
+    "paired": {
+      "improved": 33,
+      "harmed": 30,
+      "correct_both": 247,
+      "wrong_both": 72,
+      "net_correct_change": 3,
+      "accuracy_change": 0.007853403141361256
+    }
+  },
+  "combined_original_and_optimization_cost_estimate_usd": 0.4476939179999995,
+  "median_latency_ms": 195.282541500001,
+  "scope_note": "The full dataset and baseline outputs were previously reviewed. Evaluation is held out from this optimization rounds prompt selection, not a pristine unseen external dataset."
+}

@@ -1,0 +1,54 @@
+{
+  "moment_index": 36,
+  "candidate": "C - Observable evidence criteria",
+  "request_sha256": "ff7f129918b65e56bb56506e3e9c9394acc16479c3f8853b66c3d0789b8f4bf0",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \"What are the goal(s) you can work towards this semester?\"\nTurn 1. TUTOR: [PAUSE: 12 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Diane has left\" appears on the screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Kayla has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 8 seconds]\nTurn 1. STUDENT: All right. You can go ahead and make it big.\nTurn 2. STUDENT: And then you just hit exit, and then you go to this one. Bye. All right.\nTurn 3. STUDENT: All right.\nTurn 4. STUDENT: So you can make it big right there. Bye.\nTurn 5. TUTOR: [PAUSE: 24 seconds]\nTurn 5. TUTOR: [PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\nTurn 5. TUTOR: Hello?\nTurn 6. STUDENT: Hi.\nTurn 7. TUTOR: Hi, Kayla. How's your weekend?\nTurn 8. STUDENT: What?\nTurn 9. TUTOR: How was your weekend?\nTurn 10. STUDENT: It was good.\nTurn 11. TUTOR: Nice.\nTurn 12. TUTOR: [PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \"What is the remainder when you work out the answer to this division? 2143 ÷ 4\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\nTurn 12. TUTOR: Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\nTurn 13. STUDENT: All right.\nTurn 14. TUTOR: Do you wanna write on the whiteboard or?\nTurn 15. TUTOR: [PAUSE: 7 seconds]\nTurn 15. STUDENT: I'll write on the whiteboard.\nTurn 16. TUTOR: Okay.\nTurn 17. TUTOR: [PAUSE: 13 seconds]\nTurn 17. TUTOR: [SCREEN_INTERACTION: student - writing] Student uses the pen tool to write out the long division problem \"2143 ÷ 4\". He writes 4 outside the division symbol and 2143 inside. He then solves the problem:\n1. Writes 5 above the 1 in 2143.\n2. Writes 20 below 21.\n3. Subtracts to get 1.\n4. Brings down the 4 to make 14.\n5. Writes 3 above the 4 in 2143.\n6. Writes 12 below 14.\n7. Subtracts to get 2.\n8. Brings down the 3 to make 23.\n9. Writes 5 above the 3 in 2143.\n10. Writes 20 below 23.\n11. Subtracts to get a remainder of 3.\nTurn 17. STUDENT: The remainder's three.\nTurn 18. TUTOR: Yes, good job.\nTurn 19. TUTOR: [PROBLEM_CHANGE: p3 - 'Perimeter and Area' (start)] Tutor navigates to a new whiteboard showing a worksheet with various perimeter and area problems that were worked on previously.\nTutor clears the current whiteboard and pastes a new problem.\nTurn 19. TUTOR: Okay, thank you. I have a hundred percent you get it. Um, uh, I think I assigned you four quizzes last week, right?\nTurn 20. STUDENT: Yeah.\nTurn 21. TUTOR: And for the last one, I think you were struggling a little bit.\nTurn 22. STUDENT: Yeah.\nTurn 23. TUTOR: Okay, let's see. Let me put it on this whiteboard.\nTurn 24. TUTOR: [PROBLEM_CHANGE: p4 - 'Pizza Problem' (start)] The new problem shows a picture of a rectangular pizza with dimensions 26cm by 45cm. The text reads: \"Helena is making pizzas with the dimensions shown. How many pizzas of this size will she need to make for 15 people if each person will eat approximately 300cm² of pizza?\". The options are A: 4500, B: 32, C: 3, D: 4.\nTurn 24. TUTOR: It's this one, right? This question.\nTurn 25. STUDENT: Yeah.\nTurn 26. TUTOR: Can you tell me why you thought the answer was B?\nTurn 27. STUDENT: B? Um...\nTurn 28. TUTOR: Mhm.\nTurn 29. STUDENT: I forgot what I did. Um...",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which instructional opportunity is supported by the learner evidence at the end of this conversation? Use the current mathematical problem, student utterances and student screen actions. Interpret the last utterance in its preceding exchange. Distinguish the learner doing the thinking from the tutor doing it. Choose the move that fits the learner now.",
+        "criteria": {
+          "scaffolding": {
+            "meaning": "Give targeted support for a mathematical obstacle that is still unresolved.",
+            "evidence": [
+              "Student cannot start or continue the relevant step.",
+              "Student shows an uncorrected misunderstanding or cannot access the representation.",
+              "Student explicitly needs help with the current mathematical idea."
+            ],
+            "boundary": "Support is not automatically needed because the topic is new, the student once made an error, or the tutor has an explanation available."
+          },
+          "rigor": {
+            "meaning": "Increase independent mathematical work, explanation, connection, or challenge.",
+            "evidence": [
+              "Student completes the relevant work or gives a coherent method.",
+              "Student identifies and corrects their own mistake.",
+              "Student is ready for an independent attempt or a why/how question rather than further explanation."
+            ],
+            "boundary": "A correct option or yes/no agreement immediately after the tutor supplied the answer is not enough, by itself, to infer mastery."
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.98,
+        "probabilities": {
+          "scaffolding": 0.99,
+          "rigor": 0.01
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1795,
+      "output_tokens": 39
+    }
+  },
+  "latency_ms": 150.38387500000283
+}

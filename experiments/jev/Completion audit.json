@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "requirements": {
+    "all_520_live_classifications": "520 raw API responses and CSV rows verified",
+    "exact_original_evaluation_aware_prompt": "Publisher template hash matches; same rendered instructions across all 520 requests, plus only the decision task",
+    "label_blind_pre_cut_input": "All 520 exact serialized requests reconstructed from released pre-cut context and allowlisted constant platform metadata",
+    "overall_and_per_label_results": "367/520 overall; 200/260 scaffolding; 167/260 rigor",
+    "confidence_and_errors": "Threshold summaries, Brier score, and four contextualized examples in readable report",
+    "previous_49_comparison": "36/49 Jev versus 37/49 prior Decisions; prompt difference disclosed",
+    "source_preservation": "Original source hash unchanged; all new files confined to experiment folder; no submitted-material edit operations",
+    "budget": "3,853,182 input tokens; usage-based cost estimate $0.161833644; no purchase by agent",
+    "run_terminal": "Full execution returned exit code 0; no experiment worker remains active"
+  },
+  "report_sha256": "2019402de044e9e6fd82c47708639128d1cb2235cee3d8fae0fcee877791ab14",
+  "csv_sha256": "d59ca88fde6f5128af0b523c70cf6611a3e4323882c7aa8f58da094711b45255"
+}

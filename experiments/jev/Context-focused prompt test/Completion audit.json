@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "requirements": {
+    "more_explicit_context_focused_prompt": "Four candidates tested on 138 development records; selected wording retained in Selected prompt.txt",
+    "fair_prompt_selection": "18 development students and 71 evaluation students, no overlap; frozen selection before 382 new evaluation calls; prior corpus exposure disclosed",
+    "all_520_rerun": "520 selected-prompt predictions and exact payloads verified; 138 same-round development predictions reused and 382 fresh evaluation predictions",
+    "improvement_comparison": "375 versus 367 of 520; evaluation 280 versus 277 of 382; per-label tradeoff and paired corrections/regressions reported",
+    "uncertainty": "10,000 student-cluster bootstrap replicates; interval includes no change; no substantial-improvement claim",
+    "budget": "$0.285860274 new usage estimate, $0.447693918 combined; no purchase or top-up",
+    "preservation": "All 524 original output file hashes match; original dataset hash unchanged; submitted documents not edited",
+    "terminal_runs": "Development and full-run processes returned exit code 0; no remaining required API calls",
+    "readable_deliverables": "Prompt test - Results.md, Selected prompt.txt, All 520 - Original versus optimized.csv"
+  },
+  "report_sha256": "ae2f6be3eebac8339300809a5fe98ef7953a4506f3acc343a603c33874e13871",
+  "paired_csv_sha256": "a6930e656d001ce2e29bd1bcc460f961b9aee96291ac9436ad17646cb91c0f21",
+  "selected_prompt_sha256": "9c107090d75ce52175b340eb9529d7f0f246b480e7e71f063c12ca94198344f9"
+}

@@ -1,0 +1,38 @@
+{
+  "moment_index": 32,
+  "candidate": "D - Support versus demonstrated readiness",
+  "request_sha256": "a65eb9c9990f99e8809348785c0a160d7327fa9d222f5b5144988220c95cf5f9",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \"What are the goal(s) you can work towards this semester?\"\nTurn 1. TUTOR: [PAUSE: 12 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Diane has left\" appears on the screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Kayla has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 8 seconds]\nTurn 1. STUDENT: All right. You can go ahead and make it big.\nTurn 2. STUDENT: And then you just hit exit, and then you go to this one. Bye. All right.\nTurn 3. STUDENT: All right.\nTurn 4. STUDENT: So you can make it big right there. Bye.\nTurn 5. TUTOR: [PAUSE: 24 seconds]\nTurn 5. TUTOR: [PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\nTurn 5. TUTOR: Hello?\nTurn 6. STUDENT: Hi.\nTurn 7. TUTOR: Hi, Kayla. How's your weekend?\nTurn 8. STUDENT: What?\nTurn 9. TUTOR: How was your weekend?\nTurn 10. STUDENT: It was good.\nTurn 11. TUTOR: Nice.\nTurn 12. TUTOR: [PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \"What is the remainder when you work out the answer to this division? 2143 ÷ 4\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\nTurn 12. TUTOR: Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\nTurn 13. STUDENT: All right.\nTurn 14. TUTOR: Do you wanna write on the whiteboard or?\nTurn 15. TUTOR: [PAUSE: 7 seconds]\nTurn 15. STUDENT: I'll write on the whiteboard.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Does the learner at this moment primarily need support to access the mathematics, or further challenge to deepen understanding they have demonstrated? Read the chronological conversation around the current task and the earlier work needed to interpret it. Track who supplied the mathematical ideas. If the learner made an error and the tutor then supplied the solution, a final yes or correct repetition does not show that the learner has resolved the difficulty. If the learner independently explains, successfully applies an idea, or corrects their own reasoning, do not keep helping merely because they struggled earlier. Distinguish support for access from increasing mathematical demand; the fact that a tutor could ask a question or request an explanation does not by itself make the moment a rigor opportunity. Use student speech and described student actions, not tutor claims that the student understands.",
+        "criteria": {
+          "scaffolding": "The current mathematics is still challenging for the learner. A targeted hint, representation, guided substep, or focused check is needed to help them access it. The learner may give a short correct answer after heavy prompting while still needing this support. The aim is to bridge the present conceptual or procedural gap, not add difficulty yet.",
+          "rigor": "The learner has demonstrated enough understanding of the relevant mathematics to take on greater independence, justification, a connection, transfer, or a harder version. Build on their own successful work or self-correction. The aim is to deepen or extend demonstrated understanding rather than reteach the same step."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.98,
+        "probabilities": {
+          "scaffolding": 0.99,
+          "rigor": 0.01
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1160,
+      "output_tokens": 39
+    }
+  },
+  "latency_ms": 179.1451250000007
+}

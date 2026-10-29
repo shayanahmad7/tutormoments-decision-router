@@ -1,0 +1,54 @@
+{
+  "moment_index": 107,
+  "candidate": "C - Observable evidence criteria",
+  "request_sha256": "fa7b113dab14e3dd77a1c1175ce4766451ffafa78984c1b9585b738804922797",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears: \"Nathan has joined\".\nTurn 1. TUTOR: [PAUSE: 33 seconds]\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - video on] The tutor's video feed appears, showing a red circle with the letter 'N' inside.\nTurn 1. TUTOR: [PAUSE: 71 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears: \"Emily has joined\".\nTurn 1. TUTOR: [PAUSE: 17 seconds]\nTurn 1. TUTOR: [SCREEN_INTERACTION: student - video on] The student's video feed appears, showing a green circle with the letter 'E' inside.\nTurn 1. TUTOR: [PAUSE: 106 seconds]\nTurn 1. TUTOR: [PAUSE: 27 seconds]\nTurn 1. TUTOR: Hello?\nTurn 2. TUTOR: [PAUSE: 3 seconds]\nTurn 2. STUDENT: Hello.\nTurn 3. TUTOR: Hey, how's it going?\nTurn 4. STUDENT: Good.\nTurn 5. TUTOR: How was your weekend?\nTurn 6. TUTOR: [PAUSE: 3 seconds]\nTurn 6. STUDENT: Good.\nTurn 7. TUTOR: Only good?\nTurn 8. STUDENT: Yeah.\nTurn 9. TUTOR: Didn't- didn't do anything special?\nTurn 10. STUDENT: Uh, not really.\nTurn 11. TUTOR: Why not?\nTurn 12. STUDENT: Um, maybe just got a new laptop.\nTurn 13. TUTOR: [PAUSE: 2 seconds]\nTurn 13. TUTOR: Oh.\nTurn 14. TUTOR: You got a new laptop?\nTurn 15. STUDENT: Uh, yeah.\nTurn 16. TUTOR: Which one?\nTurn 17. STUDENT: Um, let me just show you.\nTurn 18. STUDENT: Wait. Let me turn off so I can... background.\nTurn 19. TUTOR: [SCREEN_INTERACTION: student - video off] Student's video feed turns black.\nTurn 19. TUTOR: [PAUSE: 14 seconds]\nTurn 19. TUTOR: [SCREEN_UPDATE] A loud, continuous beep sounds.\nTurn 19. TUTOR: [PAUSE: 23 seconds]\nTurn 19. STUDENT: Okay. Um, it is, this one.\nTurn 20. TUTOR: Nice. What are you gonna do with it?\nTurn 21. STUDENT: Uh, probably watch videos and play Roblox.\nTurn 22. TUTOR: Play Roblox. What do you, do you play the, one of my other students does this event on Saturdays at six a.m. It's like, I think it's dress to impress, I'm not sure.\nTurn 23. STUDENT: Yes. You do that?\nTurn 24. STUDENT: Uh, not really.\nTurn 25. TUTOR: What do you do on Roblox then?\nTurn 26. STUDENT: Uh, probably just do like obbies.\nTurn 27. TUTOR: Hobbies?\nTurn 28. STUDENT: Obbies.\nTurn 29. TUTOR: How do you spell that?\nTurn 30. STUDENT: O B B Y.\nTurn 31. TUTOR: Okay. What what is that? I don't know what that is.\nTurn 32. STUDENT: It's where like pretty much a course that you go through.\nTurn 33. TUTOR: Like an obstacle course?\nTurn 34. STUDENT: Yeah.\nTurn 35. TUTOR: Oh. Nice.\nTurn 36. TUTOR: Like a, like a horse obstacle course or a human obstacle course?\nTurn 37. STUDENT: Human.\nTurn 38. TUTOR: Human. Got it.\nTurn 39. TUTOR: Oh, that sounds like fun.\nTurn 40. TUTOR: [PAUSE: 6 seconds]\nTurn 40. TUTOR: I'm gonna, you wanna dive right in to math or do you wanna play like a game first?\nTurn 41. STUDENT: Dive in.\nTurn 42. TUTOR: Diving in. Okay. Let me, let's do our,\nTurn 43. TUTOR: do we have a bonus question?\nTurn 44. STUDENT: Maybe.\nTurn 45. TUTOR: Question of the day. Question of the day. Let's do this. Warm up.\nTurn 46. TUTOR: [PAUSE: 2 seconds]\nTurn 46. TUTOR: Okay. This is like pattern recognition. If you know that six times seven is forty-two, which of the following is true?\nTurn 47. TUTOR: [PROBLEM_CHANGE: p1 - 'If you know that 7 x 6 = 42, which of the following is true?' (start)] The screen shows a multiple-choice question. \"If you know that 7 x 6 = 42, which of the following is true?\" The options are: A) 70 x 60 = 42 x 10, B) 70 x 6 = 4200, C) 70 x 60 = 4200, D) 70 x 60 = 420.\nTurn 47. TUTOR: [PAUSE: 5 seconds] Student selects option C.\nTurn 47. STUDENT: Seven times sixty equals forty-two, uh, not minus. Seventy, wait. Seventy times sixty equals forty-two times ten. Then seventy times six equals four thousand two hundred. Seventy times sixty equals forty-two thousand. Seventy times sixty equals four hundred and twenty. Um,\nTurn 48. TUTOR: Mhm.\nTurn 49. STUDENT: Okay, so it's gonna be, um, so seventy times sixty equals, I'm gonna go with C, it equals four thousand two hundred.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which instructional opportunity is supported by the learner evidence at the end of this conversation? Use the current mathematical problem, student utterances and student screen actions. Interpret the last utterance in its preceding exchange. Distinguish the learner doing the thinking from the tutor doing it. Choose the move that fits the learner now.",
+        "criteria": {
+          "scaffolding": {
+            "meaning": "Give targeted support for a mathematical obstacle that is still unresolved.",
+            "evidence": [
+              "Student cannot start or continue the relevant step.",
+              "Student shows an uncorrected misunderstanding or cannot access the representation.",
+              "Student explicitly needs help with the current mathematical idea."
+            ],
+            "boundary": "Support is not automatically needed because the topic is new, the student once made an error, or the tutor has an explanation available."
+          },
+          "rigor": {
+            "meaning": "Increase independent mathematical work, explanation, connection, or challenge.",
+            "evidence": [
+              "Student completes the relevant work or gives a coherent method.",
+              "Student identifies and corrects their own mistake.",
+              "Student is ready for an independent attempt or a why/how question rather than further explanation."
+            ],
+            "boundary": "A correct option or yes/no agreement immediately after the tutor supplied the answer is not enough, by itself, to infer mastery."
+          }
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.5,
+        "probabilities": {
+          "scaffolding": 0.25,
+          "rigor": 0.75
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1960,
+      "output_tokens": 37
+    }
+  },
+  "latency_ms": 131.76337500000557
+}

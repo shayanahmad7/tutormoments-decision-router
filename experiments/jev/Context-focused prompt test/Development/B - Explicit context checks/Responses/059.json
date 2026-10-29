@@ -1,0 +1,38 @@
+{
+  "moment_index": 59,
+  "candidate": "B - Explicit context checks",
+  "request_sha256": "57b6be7a6af5a196ed4effa77f0608cd4f1e40d96567ed67f0e05cdf1c45f76c",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE: Opens whiteboard] A blank whiteboard is shown.\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'What are the goal(s) you can work towards this semester?' (start)] The whiteboard now displays text.\nTitle: \"What are the goal(s) you can work towards this semester?\"\nBody text:\n\"Here are some starter examples:\nTutoring goals: I want to attend X tutoring sessions, I want to never miss a session\nAcademic skills: I want to learn how to multiply two-digit numbers, I want to read 6 books\nLife Goals: I want to learn how to skateboard, I want to score X goals in soccer\nWrite your goals below:\nMultiplication and Division, Story problems, getting ready for 5th grade\nGeometry\"\nTurn 1. TUTOR: [PAUSE: 80 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE: Tutor joins the room] A notification \"Aiden has joined\" appears and the screen layout changes.\nTurn 1. TUTOR: [PAUSE: 7 seconds]\nTurn 1. TUTOR: Hi Aiden.\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: Hey Aiden.\nTurn 4. STUDENT: Hi.\nTurn 5. TUTOR: Hi.\nTurn 6. TUTOR: How are you feeling today?\nTurn 7. STUDENT: Um, good.\nTurn 8. TUTOR: Did you enjoy your tournament yesterday?\nTurn 9. STUDENT: Uh, yeah.\nTurn 10. TUTOR: Nice.\nTurn 11. TUTOR: Okay.\nTurn 12. TUTOR: [SCREEN_UPDATE: Whiteboard changes] The whiteboard changes to a new, blank page with the formulas for Triangle, Rectangle, Parallelogram, and Trapezoid.\nText on screen:\nTriangle: B x H x 1/2\nRectangle: L x W\nParallelogram: B x H\nTrapezoid:\nTurn 12. TUTOR: Remember, um, on Tuesday we learned about the area of a trapezoid, right?\nTurn 13. STUDENT: Yeah.\nTurn 14. TUTOR: Do you still remember what the formula is?\nTurn 15. STUDENT: Hold on.\nTurn 16. TUTOR: [PAUSE: 15 seconds]\nTurn 16. STUDENT: The area of a trapezoid.\nTurn 17. TUTOR: Mhm.\nTurn 18. TUTOR: [PAUSE: 16 seconds]\nTurn 18. STUDENT: It was it, um, I forgot what the thing, uh, was it, um,\nTurn 19. TUTOR: It's okay. Let me give you a hint.\nTurn 20. TUTOR: Do you want to first draw the shape of a trapezoid?\nTurn 21. STUDENT: Yeah.\nTurn 22. TUTOR: [SCREEN_INTERACTION: student - drawing] Student draws a trapezoid shape on the whiteboard.\nTurn 22. TUTOR: Yeah, perfect.\nTurn 23. TUTOR: So, you see the top part of this trapezoid, right? It's shorter than the bottom part.\nTurn 24. TUTOR: So, do you remember what we called them?\nTurn 25. STUDENT: I forgot what we call them.\nTurn 26. TUTOR: It's okay, but remember we expressed it in two different ways, right? So let's say base one and base two.\nTurn 27. STUDENT: Uh.\nTurn 28. STUDENT: Right? B one and B two.\nTurn 29. TUTOR: Yeah.\nTurn 30. TUTOR: Now that we know this, do you still remember the area?\nTurn 31. STUDENT: Um, base one plus B two times the width? Or the\nTurn 32. TUTOR: The height, right?\nTurn 33. STUDENT: Height, yeah.\nTurn 34. TUTOR: Mhm.\nTurn 35. TUTOR: But you're missing something.\nTurn 36. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor writes \"(b1+b2)x H\" next to \"Trapezoid:\".\nTurn 36. STUDENT: One half.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "At the stopping point of this math tutoring conversation, should the next move provide scaffolding or push for rigor? Ground the choice in the full dialogue, including described student writing and actions. Identify the current problem and the mathematical step now at issue. Check what the student has actually done or explained, which parts the tutor already supplied, and whether a specific difficulty remains unresolved. Choose for this point in the conversation, not for an earlier task. Do not treat agreement with a tutor explanation as independent mastery. Do not treat hesitation, an old mistake, or a new problem alone as proof that the tutor should explain more. A student who corrects their own error can be ready for justification or a new challenge. Select the instructional opportunity; do not write a tutor reply.",
+        "criteria": {
+          "scaffolding": "Support is needed now. The learner lacks access to the current mathematical idea or step, remains stuck or confused, or has a mathematical error they have not resolved. The appropriate move reduces that specific obstacle through a hint, representation, worked substep, or clarification.",
+          "rigor": "The learner can take more responsibility now. They have succeeded on the relevant step, demonstrated a usable method or relationship, self-corrected, or can productively attempt the next step without being given its solution. Ask for reasoning, justification, connections, an independent attempt, or transfer instead of unnecessary reteaching."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.3,
+        "probabilities": {
+          "scaffolding": 0.35,
+          "rigor": 0.65
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1569,
+      "output_tokens": 37
+    }
+  },
+  "latency_ms": 161.3456249999956
+}

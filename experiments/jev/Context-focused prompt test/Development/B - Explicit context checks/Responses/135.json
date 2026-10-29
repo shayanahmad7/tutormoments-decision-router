@@ -1,0 +1,38 @@
+{
+  "moment_index": 135,
+  "candidate": "B - Explicit context checks",
+  "request_sha256": "c64243072e4889078a1a67b071c95c15efdc467718ddceda0d948bf486b95a7c",
+  "request_payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PAUSE: 7 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The whiteboard shows a previous session's work. It is titled \"7/9/2025 Warm Up Practice:\" and has five math problems with handwritten notes and calculations scattered around them.\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Warm Up Problems' (start)] The screen changes to a new set of problems titled \"Warm Up Problems\". The problems are:\n1. Which of these does NOT have 4 angles? (Four shapes are shown: a rectangle, a hexagon, a square, and a trapezoid).\n2. Each box contains 7 chocolates. How many chocolates will be in 6 boxes?\n3. What fraction is shaded? (A rectangle is divided into 4 parts, with the first part shaded red).\n4. Which of these show symmetry? (Four purple hearts are shown with different dashed lines through them).\n5. What number is 10,000 more than 298,603?\nTurn 1. TUTOR: [PAUSE: 21 seconds] A notification appears on screen: \"Tyler has joined\".\nTutor uses the highlighter tool to draw a small red circle next to the number 6 in problem 2. She then uses the highlighter tool to draw a small red circle next to the word \"Which\" in problem 4.\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Rachel has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 2 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Tyler has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 117 seconds]\nTurn 1. TUTOR: Hi.\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: How are you? I haven't seen you in so long.\nTurn 4. STUDENT: Good.\nTurn 5. TUTOR: Good? How's your summer been so far?\nTurn 6. STUDENT: Good.\nTurn 7. TUTOR: When do you start school?\nTurn 8. STUDENT: Um, I don't know.\nTurn 9. TUTOR: You don't know? That's okay. You still got a couple weeks of summer, I'm sure.\nTurn 10. TUTOR: Did you do anything fun in the past couple weeks?\nTurn 11. STUDENT: I went to the movie theater.\nTurn 12. TUTOR: Ooh, you went to the movie theater? What movie did you see?\nTurn 13. STUDENT: Uh, the dinosaurs.\nTurn 14. TUTOR: The dino- Oh, Jurassic Park? Was it good?\nTurn 15. TUTOR: I have to go watch it. I haven't been to the movie theater in a while.\nTurn 16. TUTOR: Okay. Did you meet with your substitute last week?\nTurn 17. TUTOR: What did you guys go over?\nTurn 18. STUDENT: Like subtracting.\nTurn 19. TUTOR: You guys did subtracting? And was it hard for you or easy or in between?\nTurn 20. STUDENT: In between.\nTurn 21. TUTOR: In between? Did you do two-digit subtracting or one-digit subtracting?\nTurn 22. TUTOR: Or three-digit?\nTurn 23. TUTOR: If you can't remember, that's okay.\nTurn 24. STUDENT: Mmm.\nTurn 25. TUTOR: You can't remember?\nTurn 26. TUTOR: No, that's okay. Don't worry about it.\nTurn 27. TUTOR: Okay, we're gonna do a bunch of random things today just to catch up, okay?\nTurn 28. TUTOR: So I have these warm-up problems. We're gonna spend five minutes and I want you to, um, answer them. But I'm gonna go one by one to tell you how I want you to answer them, okay?\nTurn 29. TUTOR: So for number one, I want you to circle the answer. For number two, I want you to write the answer right here. For number three, you can write the answer right here.\nTurn 30. TUTOR: For number four, I want you to circle or highlight. When I say highlight, I mean like this. Like you can highlight it like this. Or, and then for number five, I want you to write the answer right here.\nTurn 31. TUTOR: That sound good?\nTurn 32. TUTOR: Okay, we're gonna spend five minutes starting now.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "At the stopping point of this math tutoring conversation, should the next move provide scaffolding or push for rigor? Ground the choice in the full dialogue, including described student writing and actions. Identify the current problem and the mathematical step now at issue. Check what the student has actually done or explained, which parts the tutor already supplied, and whether a specific difficulty remains unresolved. Choose for this point in the conversation, not for an earlier task. Do not treat agreement with a tutor explanation as independent mastery. Do not treat hesitation, an old mistake, or a new problem alone as proof that the tutor should explain more. A student who corrects their own error can be ready for justification or a new challenge. Select the instructional opportunity; do not write a tutor reply.",
+        "criteria": {
+          "scaffolding": "Support is needed now. The learner lacks access to the current mathematical idea or step, remains stuck or confused, or has a mathematical error they have not resolved. The appropriate move reduces that specific obstacle through a hint, representation, worked substep, or clarification.",
+          "rigor": "The learner can take more responsibility now. They have succeeded on the relevant step, demonstrated a usable method or relationship, self-corrected, or can productively attempt the next step without being given its solution. Ask for reasoning, justification, connections, an independent attempt, or transfer instead of unnecessary reteaching."
+        }
+      }
+    }
+  },
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.38,
+        "probabilities": {
+          "scaffolding": 0.69,
+          "rigor": 0.31
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1650,
+      "output_tokens": 39
+    }
+  },
+  "latency_ms": 180.5057499999947
+}

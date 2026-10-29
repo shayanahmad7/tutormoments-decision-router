@@ -1,34 +1,71 @@
-# TutorMoments Decision Router
+# TutorMoments: Choosing When to Help and When to Challenge
 
-A private, exploratory comparison of the same tutor model with and without an explicit teaching-decision layer. The current plan replays every record in the pinned 520-moment TutorMoments release under two conditions:
+This project asks a practical question about AI math tutoring: **can a small decision model recognize when a student needs support and when they are ready for more independent thinking?** We use TutorMoments, which provides real math tutoring conversations stopped at teacher-identified decision points.
 
-- `original_evaluation_aware`: the original publisher evaluation-aware tutor prompt.
-- `evaluation_aware_plus_decisions`: the same prompt plus a separate next-reply instruction selected by Decisions at each tutor opportunity.
+There are two related experiments here:
 
-The tutor is `gpt-5.5-2026-04-23` with high reasoning; the router is `gpt-6-luna`. GPT-5.5 substitutes for the publisher's Claude oracle student and scorer. This is a prompt/protocol adaptation, not a direct leaderboard replication or evidence of real student learning. Final paper focus remains subject to user approval.
+1. **Jev decision classification, completed:** give Jev the conversation available at the stopping point and ask it to choose `scaffolding` or `rigor`. Compare its choice with the dataset label. No tutor response is generated.
+2. **OpenAI decision-router pilot, earlier work:** use a separate decision model to instruct a tutor LLM's next reply. This tests a different question. Its [runner and method guide](docs/openai-router-guide.md) remain available.
 
-## Reproducibility
+## Jev results
 
-See [the method and provenance note](docs/full520_method_and_provenance.md), [publisher protocol details](docs/publisher_protocol.md), and the [exact prompt/source manifest](docs/publisher_protocol_manifest.json). [configs/full520.json](configs/full520.json) fixes the ordered 520 cases and two conditions; older 8-case configurations are separate pilots.
+We tested **Jev 1.14.0** on all **520 moments**, evenly split between scaffolding and rigor. The first version used the publisher's evaluation-aware instructions with a short addition asking for a decision. We then compared four context-focused prompts on development cases and evaluated the selected version on the remaining students.
 
-Python 3.11 or newer is required. Set `PYTHONPATH=src` or install the local package. Offline tests make no model calls:
+| Cases | Original prompt | Revised prompt |
+|---|---:|---:|
+| All 520 moments | 367 / 520, **70.6%** | 375 / 520, **72.1%** |
+| Scaffolding moments | 200 / 260, 76.9% | 196 / 260, 75.4% |
+| Rigor moments | 167 / 260, 64.2% | 179 / 260, 68.8% |
+| Evaluation cases reserved for this round | 277 / 382, 72.5% | 280 / 382, 73.3% |
+
+The revision recognized more rigor opportunities but lost a few scaffolding matches. It gained eight matches overall and three on the separate evaluation cases. The student-cluster bootstrap interval for the evaluation accuracy change was **−3.5 to +5.4 percentage points**. This is a small observed improvement, not evidence of better student learning.
+
+## Start here
+
+- [Jev experiment guide](experiments/jev/README.md): question, inputs, method, prompts and reproduction.
+- [Original 520 decisions](experiments/jev/Jev%20decisions.csv): labels, choices, probabilities and timing.
+- [Original versus revised decisions](experiments/jev/Context-focused%20prompt%20test/All%20520%20-%20Original%20versus%20optimized.csv): all paired results and development/evaluation membership.
+- [Detailed prompt-comparison results](experiments/jev/Context-focused%20prompt%20test/Prompt%20test%20-%20Results.md): every candidate, examples, uncertainty, confidence, cost and timing.
+- [Aggregate results](experiments/jev/Context-focused%20prompt%20test/Final%20comparison.json): machine-readable counts and confusion matrices.
+
+## What is included
+
+`experiments/jev/` contains the scripts, exact prompts, all four development candidates, frozen selection and split, request payloads and saved response JSON. There are 520 original responses, 552 development responses and 520 selected-prompt records. Of those selected-prompt records, 138 reuse development predictions. There were **1,454 unique successful classification requests**, rather than 1,592 new requests.
+
+Unmodified experiment scripts are preserved under `experiments/jev/provenance/original_source/`. The runnable copies only adapt source-data locations to this repository. Predictions and result files retain their original bytes. A publication manifest records their hashes.
+
+The repository remains private. API keys, console screenshots and billing/access records are excluded. The Jev request payloads contain excerpts from the public, de-identified TutorMoments corpus. The full upstream source is fetched separately. The older pipeline's local run directories are not part of this Jev update.
+
+## Verify without an API key
+
+Python 3.11 or newer. The Jev check uses only the standard library:
+
+```sh
+python3 tools/verify_jev_archive.py
+```
+
+This independently recomputes the headline counts, checks every paired CSV row and validates request hashes. It makes no network or model calls.
+
+To check against the original source and student grouping:
+
+```sh
+python3 tools/fetch_jev_data.py
+python3 "experiments/jev/Context-focused prompt test/verify_comparison.py"
+```
+
+The second command recomputes local verification summaries and the bootstrap interval. It makes no paid API calls. Source data defaults to `data/jev/`; set `TM_MOMENTS` and `TM_TRANSCRIPTS` to use existing copies. See the experiment guide before intentionally rerunning a paid experiment.
+
+The earlier pipeline's offline tests remain:
 
 ```sh
 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -B -m unittest discover -s tests -v
 ```
 
-The source-parity regression test expects the hash-matching publisher archive at `../02 - Original Data/002 - TutorMoments-Preview/Publisher Repository.zip`. That external archive and the corpus are not bundled in this repository.
+Its source-parity test expects the original publisher ZIP at the workspace location recorded in the manifest. The Jev archive check does not require that ZIP.
 
-The runner requires `OPENAI_API_KEY` in the local environment and a separately acquired, hash-verified `moments.jsonl`. An authorized live run can use:
+## Sources and attribution
 
-```sh
-python3 run_pilot.py --source "$MOMENTS" --config configs/full520.json --workers 4 --stage all --retry-failed
-```
+- Zhang et al. (2026), [When Help is Unhelpful: Evaluating AI Tutors for Productive Struggle](https://tutormoments.allen.ai/static/paper/tutormoments-preview.pdf). [Website](https://tutormoments.allen.ai/), [dataset](https://huggingface.co/datasets/allenai/tutormoments-preview), [code](https://github.com/allenai/tutormoments).
+- TypeSafe: [Jev introduction](https://typesafe.ai/blog/introducing-system-one-models-and-jev), [quick start](https://docs.typesafe.ai/introduction/quickstart), [Choice primitive](https://docs.typesafe.ai/primitives/choice), [models](https://docs.typesafe.ai/models).
 
-Five speaking calls mean tutor,student,tutor,student,tutor, with earlier terminal stopping. Split messages do not add speaking calls. The 128000 output cap and source prompt text remain unchanged. Successful request traces support resume; terminal checkpoints and empty terminal rollouts follow publisher semantics. Report coverage and the common-scored-case comparison rather than treating partial unequal subsets as matched results. Initial route agreement is evaluated only at step 0; later choices can legitimately change.
-
-## Private artifacts
-
-Local `data/`, `raw_responses/`, and `results/` contain private run states, corpus-bearing request/response traces, and outputs. None is committed. Credentials, environment files, local controller logs, and external source data also stay local. Use an explicit reviewed file allowlist when publishing; `results/` is not currently ignored by Git.
-
-Public upstream sources are [AllenAI TutorMoments](https://github.com/allenai/tutormoments) and the [TutorMoments preview release](https://huggingface.co/datasets/allenai/tutormoments-preview). Public publisher prompt/code excerpts retain their Apache2.0 attribution under `third_party/tutormoments/`.
+TutorMoments supplies the upstream prompts and conversation excerpts. Its Apache 2.0 license and notice remain under [third_party/tutormoments](third_party/tutormoments/). This is an independent course research project, not an official AllenAI or TypeSafe evaluation.

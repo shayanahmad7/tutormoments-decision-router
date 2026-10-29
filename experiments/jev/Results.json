@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "n_completed": 520,
+  "n_planned": 520,
+  "correct": 367,
+  "accuracy": 0.7057692307692308,
+  "reference": "Publisher dimension labels; agreement is not proof of pedagogical correctness or learning gains.",
+  "per_label": {
+    "scaffolding": {
+      "n": 260,
+      "correct": 200,
+      "recall": 0.7692307692307693,
+      "precision": 0.6825938566552902,
+      "f1": 0.7233273056057866
+    },
+    "rigor": {
+      "n": 260,
+      "correct": 167,
+      "recall": 0.6423076923076924,
+      "precision": 0.73568281938326,
+      "f1": 0.6858316221765914
+    }
+  },
+  "confusion_matrix_reference_rows_prediction_columns": {
+    "scaffolding": {
+      "scaffolding": 200,
+      "rigor": 60
+    },
+    "rigor": {
+      "scaffolding": 93,
+      "rigor": 167
+    }
+  },
+  "balanced_accuracy": 0.7057692307692308,
+  "macro_f1": 0.7045794638911891,
+  "brier_score_rigor": 0.20359365384615385,
+  "latency_ms_median": 208.99739550000263,
+  "input_tokens": 3853182,
+  "actual_usage_cost_estimate_usd": 0.161833644,
+  "confidence_groups": [
+    {
+      "min_top_probability": 0.75,
+      "n": 145,
+      "coverage": 0.27884615384615385,
+      "accuracy": 0.8
+    },
+    {
+      "min_top_probability": 0.9,
+      "n": 31,
+      "coverage": 0.05961538461538462,
+      "accuracy": 0.8387096774193549
+    },
+    {
+      "min_top_probability": 0.95,
+      "n": 11,
+      "coverage": 0.021153846153846155,
+      "accuracy": 1.0
+    }
+  ],
+  "unique_consistent_cut_sensitivity": {
+    "n": 488,
+    "correct": 341,
+    "accuracy": 0.6987704918032787,
+    "conflicting_label_cut_groups_excluded": 3
+  },
+  "previous_49_comparison_subset": {
+    "n": 49,
+    "correct": 36,
+    "accuracy": 0.7346938775510204,
+    "previous_openai_decisions_agreement": "37/49; different prompt, descriptive comparison only"
+  }
+}
