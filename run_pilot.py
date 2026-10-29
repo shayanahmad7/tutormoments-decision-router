@@ -20,8 +20,9 @@ def main():
     config=json.loads(args.config.read_text());source=args.source.read_bytes()
     if hashlib.sha256(source).hexdigest()!=config['source_moments_sha256']:raise RuntimeError('Source hash differs from fixed plan.')
     moments=[json.loads(l) for l in source.decode().splitlines() if l.strip()]
-    run_dir=ROOT/'data/pilot8';run_dir.mkdir(parents=True,exist_ok=True)
-    client=OpenAIClient(ROOT/'raw_responses/pilot8')
+    run_tag=args.config.stem
+    run_dir=ROOT/'data'/run_tag;run_dir.mkdir(parents=True,exist_ok=True)
+    client=OpenAIClient(ROOT/'raw_responses'/run_tag)
     # Only the tutor and structured router are original requested models. Auxiliaries
     # use the same GPT-5.5 proxy because an Anthropic key is unavailable.
     proxy=config['tutor_model']
@@ -40,11 +41,14 @@ def main():
                 tag=f'{idx}:{condition}:{step}'
                 if step%2==0:
                     route=None;router_ms=0
-                    if condition=='evaluation_aware_plus_decisions':
+                    if condition.endswith('_plus_decisions'):
                         route,rr=client.decide(protocol.router_messages(moment,generated),tag+':router',model=config['decision_model']);state['calls'].append(call_summary(rr,'router',step));router_ms=rr['elapsed_ms'];state['routes'].append({'step':step,'answer':route,'fallback_to_original_prompt':route is None})
                     directive=protocol.route_instruction(route['choice']) if route else None
-                    msgs=protocol.tutor_messages(moment,mode=condition,generated_turns=generated,route_instruction=directive)
-                    text,record=client.chat(config['tutor_model'],msgs,tag+':tutor',**protocol.TUTOR_KWARGS)
+                    mode='scaffolding_rigor' if condition.startswith('aware_low_reasoning') else condition
+                    msgs=protocol.tutor_messages(moment,mode=mode,generated_turns=generated,route_instruction=directive)
+                    tutor_kwargs=dict(protocol.TUTOR_KWARGS)
+                    if condition.startswith('aware_low_reasoning'):tutor_kwargs['reasoning_effort']='low'
+                    text,record=client.chat(config['tutor_model'],msgs,tag+':tutor',**tutor_kwargs)
                     c=call_summary(record,'tutor',step);c['reply_end_to_end_ms']=router_ms+record['elapsed_ms'];state['calls'].append(c)
                     cleaned,ended,changed=protocol.parse_tutor_output(text)
                     pieces=protocol.split_messages(cleaned)
@@ -92,7 +96,7 @@ def main():
         if c['moment_id']!=m['id']:raise RuntimeError('Fixed moment ID changed')
     jobs=[]
     for i,m in enumerate(selected):
-        order=config['conditions'][i%3:]+config['conditions'][:i%3]
+        order=config['conditions'][i%len(config['conditions']):]+config['conditions'][:i%len(config['conditions'])]
         jobs.extend((m,c) for c in order)
     if args.stage in ['rollouts','all']:
         with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:list(pool.map(lambda job:rollout(*job),jobs))
@@ -109,9 +113,9 @@ def main():
         for s in states:
             if s.get('status')=='failed' or s.get('scoring_error'):summary['failures'].append({'moment_index':s['moment_index'],'condition':condition,'error':s.get('error') or s.get('scoring_error')})
             if s.get('annotation'):case_rows.append({'moment_index':s['moment_index'],'condition':condition,'publisher_category':moments[s['moment_index']]['dimension'],'proxy_action_label':s['annotation']['action_label'],'proxy_overscaffold_facets':len(s['annotation']['overscaffold_decomposed']),'generated_messages':len(s['generated_turns']),'stop_reason':s['stop_reason']})
-    save(ROOT/'results/pilot8_summary.json',summary)
+    save(ROOT/'results'/f'{run_tag}_summary.json',summary)
     if case_rows:
-        with (ROOT/'results/pilot8_case_results.csv').open('w') as f:w=csv.DictWriter(f,fieldnames=list(case_rows[0]));w.writeheader();w.writerows(case_rows)
-    print(json.dumps({'event':'summary_saved','path':str(ROOT/'results/pilot8_summary.json'),'conditions':{k:{'rollouts':v['rollouts_completed'],'scored':v['scored_cases']} for k,v in summary['conditions'].items()}}),flush=True)
+        with (ROOT/'results'/f'{run_tag}_case_results.csv').open('w') as f:w=csv.DictWriter(f,fieldnames=list(case_rows[0]));w.writeheader();w.writerows(case_rows)
+    print(json.dumps({'event':'summary_saved','path':str(ROOT/'results'/f'{run_tag}_summary.json'),'conditions':{k:{'rollouts':v['rollouts_completed'],'scored':v['scored_cases']} for k,v in summary['conditions'].items()}}),flush=True)
 
 if __name__=='__main__':main()
