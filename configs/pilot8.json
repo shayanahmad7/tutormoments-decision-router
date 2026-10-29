@@ -14,7 +14,7 @@
   "decision_model": "gpt-6-luna",
   "decision_endpoint": "/v1/decisions",
   "planned_routing": "At each tutor opportunity. Decisions receives only dialogue available then. Separate next-reply-only instruction; original baseline prompts untouched.",
-  "student_and_scorer": "Use publisher protocol/models if accessible; any necessary deviation must be reported, never silent.",
+  "student_and_scorer": "GPT-5.5 proxy auxiliaries use original prompt text. Publisher uses Claude Opus4.6; Anthropic key unavailable. This is explicitly not an official-score replication.",
   "primary_comparison": "Original evaluation-aware versus same prompt plus decision layer. Original plain provides an additional benchmark anchor.",
   "outcomes": [
     "official publisher score and rubric outputs",
@@ -90,5 +90,16 @@
       "student_id": "38d93a42-475e-51a5-b69a-24da2040f34d",
       "publisher_category_for_sampling_only": "rigor"
     }
-  ]
+  ],
+  "original_maximum_speaking_calls": 5,
+  "maximum_tutor_opportunities": 3,
+  "live_auxiliary_models": {
+    "student": "gpt-5.5-2026-04-23",
+    "scorer": "gpt-5.5-2026-04-23"
+  },
+  "proxy_auxiliary_settings": {
+    "student_reasoning_effort": "low",
+    "judge_reasoning_effort": "high",
+    "judge_response_format": "json_object"
+  }
 }

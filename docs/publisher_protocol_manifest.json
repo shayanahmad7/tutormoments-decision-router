@@ -1,0 +1,448 @@
+{
+  "source_archive": "02 - Original Data/002 - TutorMoments-Preview/Publisher Repository.zip",
+  "archive_sha256": "231b617b9589e07c6af0225ce3491fb4eed4720019333d2fb6d400958c577835",
+  "archive_root": "tutormoments-main/",
+  "source_files": {
+    "tutor.py": {
+      "archive_member": "tutormoments-main/src/tutormoments/tutor.py",
+      "sha256": "0ff3486cccc5be9cdc381dd78c0f12a3c8f81f0c2c7c8d6eab122a644eef3148"
+    },
+    "student.py": {
+      "archive_member": "tutormoments-main/src/tutormoments/student.py",
+      "sha256": "0c7d97aa1ccca4b0f6c7866c33fd67990623df29a752ddfa49899ace2ed0aab0"
+    },
+    "conversation.py": {
+      "archive_member": "tutormoments-main/src/tutormoments/conversation.py",
+      "sha256": "2c7ca525ee261ef3d78e904551f01262c530dbb43b0c29b95b54d53fc4da7faf"
+    },
+    "scoring.py": {
+      "archive_member": "tutormoments-main/src/tutormoments/scoring.py",
+      "sha256": "9e741906d01e36e6eb54238c303ced10e7e23ff1f248078c4b090b816d23aea9"
+    },
+    "report.py": {
+      "archive_member": "tutormoments-main/src/tutormoments/report.py",
+      "sha256": "6412f0ce050fb39bb1ef440bdfc85d10402c5079b2b738fa759697abf7048d2e"
+    },
+    "default_config.yaml": {
+      "archive_member": "tutormoments-main/src/tutormoments/default_config.yaml",
+      "sha256": "7e66d581881652f808ce8f8650c162032afffcba40aba1cb05f59cffe98aa11a"
+    },
+    "client.py": {
+      "archive_member": "tutormoments-main/src/tutormoments/client.py",
+      "sha256": "97b64162a9047511fb71413f87d72f0f83c8e44483e543c3974d3b4ad32e8f64"
+    }
+  },
+  "prompts": [
+    {
+      "path": "src/tm_router/publisher_prompts/tutor/plain.txt",
+      "archive_member": "tutormoments-main/src/tutormoments/prompts/tutor/plain.txt",
+      "raw_sha256": "3834a05f65488fa652aa80b1ff04ce0c02d806e046be3df9c1411548377b67bf",
+      "raw_bytes": 438,
+      "stripped_sha256": "d54d3527f6349f3820fc2f824cea84298d9dbaba06d906da29f1a66ca9614caf"
+    },
+    {
+      "path": "src/tm_router/publisher_prompts/tutor/scaffolding_rigor.txt",
+      "archive_member": "tutormoments-main/src/tutormoments/prompts/tutor/scaffolding_rigor.txt",
+      "raw_sha256": "db8be72a82126753be213c8cc25d57c696e495675a709c9ca527d84428d95e49",
+      "raw_bytes": 1373,
+      "stripped_sha256": "03c7ef6114759e6039fa3509fd450df53273516b78fc22a993dec4414a78830b"
+    },
+    {
+      "path": "src/tm_router/publisher_prompts/student/oracle.txt",
+      "archive_member": "tutormoments-main/src/tutormoments/prompts/student/oracle.txt",
+      "raw_sha256": "e721d758cea9d590422bb4ea231df3f4c8ea804a24deacb8f877559eedf3f528",
+      "raw_bytes": 2468,
+      "stripped_sha256": "a205453e88c9f75bf41a5123df2a90471fc5d45928767651e2419280206a48f1"
+    },
+    {
+      "path": "src/tm_router/publisher_prompts/scorer/annotate/scaffolding.md",
+      "archive_member": "tutormoments-main/src/tutormoments/prompts/scorer/annotate/scaffolding.md",
+      "raw_sha256": "2962eb3ace86e6a0371aafdf805163d77505c4eb2c2c695deaf0b3be87fb9ac1",
+      "raw_bytes": 10388,
+      "stripped_sha256": "2962eb3ace86e6a0371aafdf805163d77505c4eb2c2c695deaf0b3be87fb9ac1"
+    },
+    {
+      "path": "src/tm_router/publisher_prompts/scorer/decompose/decompose_action.md",
+      "archive_member": "tutormoments-main/src/tutormoments/prompts/scorer/decompose/decompose_action.md",
+      "raw_sha256": "6f4b063a604a6d131e542011c96b8a29adf39331007109590f4bd6302db3cc88",
+      "raw_bytes": 1917,
+      "stripped_sha256": "6f4b063a604a6d131e542011c96b8a29adf39331007109590f4bd6302db3cc88"
+    },
+    {
+      "path": "src/tm_router/publisher_prompts/scorer/decompose/decompose_overscaffold.md",
+      "archive_member": "tutormoments-main/src/tutormoments/prompts/scorer/decompose/decompose_overscaffold.md",
+      "raw_sha256": "bad58e224941e81ab4a0441e6455ceb8307640b94805c9f07630460739278385",
+      "raw_bytes": 1534,
+      "stripped_sha256": "bad58e224941e81ab4a0441e6455ceb8307640b94805c9f07630460739278385"
+    },
+    {
+      "path": "src/tm_router/publisher_prompts/scorer/structure/classify_action.md",
+      "archive_member": "tutormoments-main/src/tutormoments/prompts/scorer/structure/classify_action.md",
+      "raw_sha256": "53b8312176f3293031d7121bb88688b244944258c5f3bf0b33c9b67d1ddbe926",
+      "raw_bytes": 2887,
+      "stripped_sha256": "53b8312176f3293031d7121bb88688b244944258c5f3bf0b33c9b67d1ddbe926"
+    }
+  ],
+  "extracted_symbols": [
+    {
+      "symbol": "_load_template",
+      "source": "tutor.py",
+      "lines": [
+        23,
+        25
+      ],
+      "snippet_sha256": "ac2eed3903b45533911a1a13b28485547f36e049211e1fcb449b7ad3b190f83e"
+    },
+    {
+      "symbol": "build_tutor_system_prompt",
+      "source": "tutor.py",
+      "lines": [
+        28,
+        66
+      ],
+      "snippet_sha256": "eb12a4a814d787d7c0d81b3ff4efd29dd53521f1f59569283202cd4377168b80"
+    },
+    {
+      "symbol": "_STUDENT_PROMPTS_DIR",
+      "source": "student.py",
+      "lines": [
+        25,
+        25
+      ],
+      "snippet_sha256": "04c37f07fd7a4692cfa34bc2012dff5c9282f2cc1992d62ced0a85871ac263fb"
+    },
+    {
+      "symbol": "_EMPTY_REFERENCE_FALLBACK",
+      "source": "student.py",
+      "lines": [
+        27,
+        31
+      ],
+      "snippet_sha256": "71f28ed3f36ddac6fdb3d59a5eeeb4d1b30ccd24be3987dc0a8529a73bfe4e0a"
+    },
+    {
+      "symbol": "_get_shared_generation_instructions",
+      "source": "student.py",
+      "lines": [
+        34,
+        41
+      ],
+      "snippet_sha256": "c57e92b3fc7031d4395716cfb3e61c865ae116a55e0f3861bfab095a3a0d7cd3"
+    },
+    {
+      "symbol": "_render_oracle_template",
+      "source": "student.py",
+      "lines": [
+        44,
+        48
+      ],
+      "snippet_sha256": "cad587b24ca5f279d58039c695407e1a07cb8042bb35ad7d0dc08275ab406644"
+    },
+    {
+      "symbol": "build_student_system_prompt",
+      "source": "student.py",
+      "lines": [
+        51,
+        84
+      ],
+      "snippet_sha256": "9f0605205e20e56e04f4099d0d93de566d8d630c3461cb190702c14609baf04a"
+    },
+    {
+      "symbol": "NEXT_DELIMITER",
+      "source": "conversation.py",
+      "lines": [
+        22,
+        22
+      ],
+      "snippet_sha256": "134d8d3acbfd0ddc9f057d59c0998c751951d5c59330da02e421b36b3b115acb"
+    },
+    {
+      "symbol": "NEW_MESSAGE_DELIMITER",
+      "source": "conversation.py",
+      "lines": [
+        23,
+        23
+      ],
+      "snippet_sha256": "52b6b398d2992f103dde2a290bb26e99eeedc1866bb3e9013fed241aa51452c3"
+    },
+    {
+      "symbol": "END_TOKEN",
+      "source": "conversation.py",
+      "lines": [
+        24,
+        24
+      ],
+      "snippet_sha256": "202d50a5389d6fca4220ea2a00d5944e60cc62a8e8873ce727f69754711c79b4"
+    },
+    {
+      "symbol": "PROBLEM_CHANGE_TOKEN",
+      "source": "conversation.py",
+      "lines": [
+        25,
+        25
+      ],
+      "snippet_sha256": "bf4ab583f4211600d60de7b857f6b2f3c23d0a46be25a3910fb8d335b61ee794"
+    },
+    {
+      "symbol": "NEXT_PROBLEM_TOKEN",
+      "source": "conversation.py",
+      "lines": [
+        26,
+        26
+      ],
+      "snippet_sha256": "e83dd6aa25fc7ff0066bbb2303ecc16720646064bd1f828a0d91c30278be99f9"
+    },
+    {
+      "symbol": "_parse_tutor_tokens",
+      "source": "conversation.py",
+      "lines": [
+        76,
+        93
+      ],
+      "snippet_sha256": "ba8bf1b8aec901b2e23e23a47656f2ad96c0764b3c4be012dd2d7854d82deabd"
+    },
+    {
+      "symbol": "_split_messages",
+      "source": "conversation.py",
+      "lines": [
+        96,
+        105
+      ],
+      "snippet_sha256": "76dc62a9c3baa036ba716a9f75c29b99728d3bd45a2795c09e96a25e2c46dea9"
+    },
+    {
+      "symbol": "_format_transcript_prefix",
+      "source": "conversation.py",
+      "lines": [
+        166,
+        179
+      ],
+      "snippet_sha256": "d21486b578ef640a8864ab81397161ed31e47f47a384efebddf20a417a518cea"
+    },
+    {
+      "symbol": "_build_role_prompt",
+      "source": "conversation.py",
+      "lines": [
+        187,
+        229
+      ],
+      "snippet_sha256": "09c440d39327e7c1b696271fee3778a9a4caf1163be8f4c33f556fb7e2c9fd27"
+    },
+    {
+      "symbol": "_SCORER_PROMPTS_DIR",
+      "source": "scoring.py",
+      "lines": [
+        26,
+        26
+      ],
+      "snippet_sha256": "58a09340caaf08198811d95a917ce2b35d40beb1fffc60873cc9745423f6600f"
+    },
+    {
+      "symbol": "_SITUATION_LABEL_AGG_TO_SUGGESTION",
+      "source": "scoring.py",
+      "lines": [
+        107,
+        113
+      ],
+      "snippet_sha256": "9bd202dadc01f5ba38c58064a8b0c013cbce76a769877370ed809af261f3eb18"
+    },
+    {
+      "symbol": "_SUGGESTION_UNKNOWN",
+      "source": "scoring.py",
+      "lines": [
+        114,
+        114
+      ],
+      "snippet_sha256": "b9f3b60e01ac94dff594d35feb04288aec531be8a01f71ab6a63f79ff9ba3d03"
+    },
+    {
+      "symbol": "_format_excerpt",
+      "source": "scoring.py",
+      "lines": [
+        38,
+        100
+      ],
+      "snippet_sha256": "afbf6e46a4d6f4628f3cca60766f99dd9be501a227bc9b896c0d523e35f6dd7d"
+    },
+    {
+      "symbol": "_suggestion_text",
+      "source": "scoring.py",
+      "lines": [
+        117,
+        121
+      ],
+      "snippet_sha256": "4eda7db75a54da5b5f9f3491685af0f75a7a950c6382aec84438139417969db4"
+    },
+    {
+      "symbol": "_build_synthetic_conversation",
+      "source": "scoring.py",
+      "lines": [
+        349,
+        442
+      ],
+      "snippet_sha256": "2bc1dac47763f760181948fcc3373daeba33a18440d84e64a60785a08042fdb5"
+    },
+    {
+      "symbol": "JUNK_TEXTS",
+      "source": "scoring.py",
+      "lines": [
+        458,
+        458
+      ],
+      "snippet_sha256": "7a63954e34da65e8383dec5ad582b0cd1d8d57af0b61ebb214af3580b679ae26"
+    },
+    {
+      "symbol": "_YES_NO_TO_ACTION_LABEL",
+      "source": "scoring.py",
+      "lines": [
+        639,
+        644
+      ],
+      "snippet_sha256": "934470187484a6b4565e148e405a9853a62ba0255e6337ea10833696887e951e"
+    },
+    {
+      "symbol": "_format_facet_list",
+      "source": "scoring.py",
+      "lines": [
+        663,
+        665
+      ],
+      "snippet_sha256": "31891a1d6cfb49265fd0c531254ef3e125a385081d0121528f7c160ff674e3db"
+    },
+    {
+      "symbol": "_coerce_facets",
+      "source": "scoring.py",
+      "lines": [
+        468,
+        501
+      ],
+      "snippet_sha256": "8e140c498a968c4b3ec68fd07bf0eb525cfc9c4bc66e57d9a037a6fac6ef6d32"
+    },
+    {
+      "symbol": "_parse_action_label",
+      "source": "scoring.py",
+      "lines": [
+        668,
+        712
+      ],
+      "snippet_sha256": "27f35e2e040b9fd21b303cbd9a76a8524b0c014edbab0a1a811e992c18242947"
+    },
+    {
+      "symbol": "_ACTION_LABEL_TO_DIMENSIONS",
+      "source": "report.py",
+      "lines": [
+        30,
+        35
+      ],
+      "snippet_sha256": "eb18b73064d3f1733ca3f049dadc88586e975578690d97792c73f2f105b838e8"
+    },
+    {
+      "symbol": "_to_dims",
+      "source": "report.py",
+      "lines": [
+        38,
+        39
+      ],
+      "snippet_sha256": "e6a6cb138b10aa47e1e5ddac0571a492056e6e100d22f50c941f263ab89a1423"
+    },
+    {
+      "symbol": "aggregate",
+      "source": "report.py",
+      "lines": [
+        47,
+        166
+      ],
+      "snippet_sha256": "5d101b410ab82ecdbc0a906f74b7c199bf466785f6759e37c5cf6450c3acc710"
+    }
+  ],
+  "license": "Apache-2.0; unchanged LICENSE and NOTICE in third_party/tutormoments",
+  "scope": "Public publisher code/prompts only; no corpus or credentials included.",
+  "protocol": {
+    "tutor": {
+      "model": "gpt-5.5-2026-04-23",
+      "arm_condition": "high",
+      "reasoning_effort": "high",
+      "max_completion_tokens": 128000,
+      "temperature": "not sent",
+      "wire": "one user message: rendered tutor template + two newlines + conversation heading + formatted fixed prefix + generated suffix + two newlines + role instruction",
+      "baseline_templates": [
+        "tutor/plain.txt",
+        "tutor/scaffolding_rigor.txt"
+      ],
+      "template_whitespace": "strip() before substitution"
+    },
+    "student": {
+      "model": "claude-opus-4-6",
+      "thinking": {
+        "type": "disabled"
+      },
+      "mode": "oracle",
+      "persona": "released frozen student.trait.persona; missing is hard error",
+      "reference": "released post-cut student.reference, empty-reference fallback in student.py",
+      "metadata": "student.context",
+      "template_whitespace": "rstrip(newline) before substitution",
+      "max_tokens": 128000
+    },
+    "rollout": {
+      "max_speaking_calls": 5,
+      "sequence": [
+        "TUTOR",
+        "STUDENT",
+        "TUTOR",
+        "STUDENT",
+        "TUTOR"
+      ],
+      "count_unit": "one LLM call, regardless of split messages",
+      "next_turn_number": "cut_turn+1; increment for every split message",
+      "split_tokens": [
+        "[NEXT]",
+        "[NEW_MESSAGE]"
+      ],
+      "tutor_stop_tokens": [
+        "[END]",
+        "[PROBLEM_CHANGE]",
+        "[NEXT_PROBLEM]"
+      ],
+      "stop_precedence": "END over problem change; checked before next student",
+      "blank_response": "tutor ... unless stop token; student ...",
+      "student_control_tokens": "no stopping parse; only split messages"
+    },
+    "scorer": {
+      "model": "claude-opus-4-6",
+      "thinking": {
+        "type": "adaptive"
+      },
+      "execution": "three pooled batch passes; pass2 has two prompts",
+      "annotate": "scaffolding lens; generated range only, context_before=context_after=0; gold category translated into teacher suggestion",
+      "annotate_schema": {
+        "situation": "string",
+        "action": "string",
+        "result": "string"
+      },
+      "decompose_action": "JSON array of strings; JSON object wrapping also coerced by publisher",
+      "decompose_overscaffold": "JSON array of quoted spans indicating excess support; nonempty means over-scaffold detected",
+      "structure_schema": {
+        "scaffolding": "yes|no",
+        "rigor": "yes|no"
+      },
+      "structure_mapping": {
+        "yes,yes": "both",
+        "yes,no": "scaffolding",
+        "no,yes": "rigor",
+        "no,no": "neither",
+        "parse failure": "unclear",
+        "no action facets": "neither"
+      },
+      "student_outcome_classifier": "inactive in current scorer; do not run as official score"
+    },
+    "metrics": {
+      "appropriate_scaffolding": "category=scaffolding and action_label in [scaffolding,both] and empty over-scaffold spans, divided by all scaffolding category cases",
+      "appropriate_rigor": "category=rigor and action_label in [rigor,both] and empty over-scaffold spans, divided by all rigor category cases",
+      "avoids_overscaffolding": "1 - fraction with nonempty over-scaffold spans"
+    },
+    "experimental_change": {
+      "router": "new Decisions call per tutor opportunity; context dialogue + generated dialogue only; no label/rubric/reference/persona/future",
+      "intervention": "additional developer message for next tutor reply only; original user payload unchanged; excluded from student/scorer/history"
+    }
+  }
+}
