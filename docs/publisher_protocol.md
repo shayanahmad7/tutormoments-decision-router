@@ -30,4 +30,9 @@ The authorized account currently has only OpenAI access. The runner therefore su
 
 `tools/verify_publisher_protocol.py` independently executes source functions from the original archive and compares adapter outputs for all eight frozen pilot cases. The saved verification checks seven unchanged prompt byte sequences, 48 tutor prompts, 24 student prompts, 8 annotate prompts, 16 decomposition prompts, 8 structure prompts and 24 router leakage canaries. No corpus text is written to its result file. It also checks that adding routing leaves the original user payload unchanged.
 
-Full archive close reading is temporarily checkpointed after transcript 99; the next unread raw turn is transcript 102/T1. This pipeline work does not mark remaining archive reading complete.
+Current full520 conditions, source hashes, proxy auxiliaries, canonical facets, terminal/default recovery, initial-only route agreement, coverage denominators, and private-artifact boundaries are recorded in [the full520 method and provenance note](full520_method_and_provenance.md). Corpus close-reading coverage is tracked separately outside this repository; replay completion is not human validation.
+
+
+## Current reliability and output contract
+
+The OpenAI decomposition adapter now requires a canonical strict facets-array wrapper while retaining the original prompt text. A bare terminal reply creates no dialogue message; an entirely empty rollout receives the publisher's minimal neither Annotation without judge calls and remains in the denominator. Terminal checkpoints are atomic and legacy last_tutor_control terminal checkpoints are recovered before another speaking call. Matched comparisons use the explicitly reported common scored set. Initial route/category agreement uses step 0 only; later choices are descriptive. See the linked method note for exact boundaries and known cache/annotation limitations.
