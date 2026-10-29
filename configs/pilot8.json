@@ -1,0 +1,94 @@
+{
+  "status": "Predeclared exploratory pipeline pilot, not final paper study. No live outcome used for selection.",
+  "seed": 20261029,
+  "dataset_revision": "3bb0c104d65e29facffca7ba864ef10fa22d0e78",
+  "source_moments_sha256": "c447459f80cf6b138512171a015879aaeab09cef7857e9c03655ad64a75c230f",
+  "selection_rule": "Distinct session/cut and oneperstudent,4perpublisher category. Candidates pass prior mathematical+strict structural eligibility. These inherited screens do not establish error-free context; current source review required. No response outcome used.",
+  "candidates_n": 343,
+  "conditions": [
+    "original_plain",
+    "original_evaluation_aware",
+    "evaluation_aware_plus_decisions"
+  ],
+  "tutor_model": "gpt-5.5-2026-04-23",
+  "decision_model": "gpt-6-luna",
+  "decision_endpoint": "/v1/decisions",
+  "planned_routing": "At each tutor opportunity. Decisions receives only dialogue available then. Separate next-reply-only instruction; original baseline prompts untouched.",
+  "student_and_scorer": "Use publisher protocol/models if accessible; any necessary deviation must be reported, never silent.",
+  "primary_comparison": "Original evaluation-aware versus same prompt plus decision layer. Original plain provides an additional benchmark anchor.",
+  "outcomes": [
+    "official publisher score and rubric outputs",
+    "routing prediction vs source opportunity category as proxy only",
+    "route+generator end-to-end latency, router and generator latency separately",
+    "input/output/cache tokens and actual request counts",
+    "case-level failures and context caveats"
+  ],
+  "timing_control": "Rotate condition execution order by case; same concurrency; report samples and warm-cache variation. Small pilot does not establish stable production latency or learning efficacy.",
+  "final_paper_focus": "Await user approval after comparison of human-only, paired-response and technical options.",
+  "cases": [
+    {
+      "moment_index": 145,
+      "moment_id": "balanced_520:37d27316-e821-5d4b-a8d1-a6ae5651d67d_700fa4a6-c10c-5261-b3fb-09a7106ec149_9cb35661-9bd0-5792-8a7d-6675a1dcf0a0__hum_175_184",
+      "transcript_id": "9cb35661-9bd0-5792-8a7d-6675a1dcf0a0",
+      "cut_turn": 182,
+      "student_id": "700fa4a6-c10c-5261-b3fb-09a7106ec149",
+      "publisher_category_for_sampling_only": "scaffolding"
+    },
+    {
+      "moment_index": 480,
+      "moment_id": "balanced_520:fb5ba1d4-bc48-5f4e-8b37-69eb67671729_ae5728d1-9609-5dbb-a528-ea97c5dc5d5d_da6dcba7-e106-501a-8098-435091861d14__hum_317_322",
+      "transcript_id": "da6dcba7-e106-501a-8098-435091861d14",
+      "cut_turn": 318,
+      "student_id": "ae5728d1-9609-5dbb-a528-ea97c5dc5d5d",
+      "publisher_category_for_sampling_only": "scaffolding"
+    },
+    {
+      "moment_index": 409,
+      "moment_id": "balanced_520:e42eef82-14f6-5362-87e0-bd364eb28f79_371f40a8-9d3a-5c25-b8e2-12ec0c9f923e_3c20e347-38d3-5547-981a-a2aa95a969c6__hum_248_255",
+      "transcript_id": "3c20e347-38d3-5547-981a-a2aa95a969c6",
+      "cut_turn": 251,
+      "student_id": "371f40a8-9d3a-5c25-b8e2-12ec0c9f923e",
+      "publisher_category_for_sampling_only": "scaffolding"
+    },
+    {
+      "moment_index": 393,
+      "moment_id": "balanced_520:db46772f-cb47-5ca1-8f0f-90e6f67b45c4_ac29d076-88b2-5238-bb1c-c51c414e5029_9d66ec13-35fd-5c4a-ad2d-1b1b1659e35d__hum_106_139",
+      "transcript_id": "9d66ec13-35fd-5c4a-ad2d-1b1b1659e35d",
+      "cut_turn": 110,
+      "student_id": "ac29d076-88b2-5238-bb1c-c51c414e5029",
+      "publisher_category_for_sampling_only": "scaffolding"
+    },
+    {
+      "moment_index": 128,
+      "moment_id": "balanced_520:32a43770-3255-5473-b4c1-dcd1772404c8_9487ffeb-f1b1-5ddc-a5b2-a33ee2cf08af_a696f009-66d6-5051-abb6-6ade42342095__hum_608_634",
+      "transcript_id": "a696f009-66d6-5051-abb6-6ade42342095",
+      "cut_turn": 627,
+      "student_id": "9487ffeb-f1b1-5ddc-a5b2-a33ee2cf08af",
+      "publisher_category_for_sampling_only": "rigor"
+    },
+    {
+      "moment_index": 182,
+      "moment_id": "balanced_520:58c94ad4-6cdc-5f5b-bf07-ca368cdb8dbf_eae181aa-099e-5972-9815-989b2b8dca94_be5d2f61-c006-5e95-b6c5-714c00ec598f__hum_163_171",
+      "transcript_id": "be5d2f61-c006-5e95-b6c5-714c00ec598f",
+      "cut_turn": 164,
+      "student_id": "eae181aa-099e-5972-9815-989b2b8dca94",
+      "publisher_category_for_sampling_only": "rigor"
+    },
+    {
+      "moment_index": 404,
+      "moment_id": "balanced_520:e1c0ee42-4db2-558d-adf0-557bcb20d715_92058906-7c85-5f08-aba9-adbece587c38_4b416254-d002-5c8f-ae73-a3dc0ab29dbb__hum_92_93",
+      "transcript_id": "4b416254-d002-5c8f-ae73-a3dc0ab29dbb",
+      "cut_turn": 93,
+      "student_id": "92058906-7c85-5f08-aba9-adbece587c38",
+      "publisher_category_for_sampling_only": "rigor"
+    },
+    {
+      "moment_index": 451,
+      "moment_id": "balanced_520:f2fcc679-0694-5615-9acb-871584d8ccd2_38d93a42-475e-51a5-b69a-24da2040f34d_ff918db4-ce8a-5c0c-a5eb-999f94f8ab05__hum_60_78",
+      "transcript_id": "ff918db4-ce8a-5c0c-a5eb-999f94f8ab05",
+      "cut_turn": 60,
+      "student_id": "38d93a42-475e-51a5-b69a-24da2040f34d",
+      "publisher_category_for_sampling_only": "rigor"
+    }
+  ]
+}
