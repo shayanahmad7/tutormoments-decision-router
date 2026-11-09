@@ -2,6 +2,8 @@ import copy, importlib.util, json, pathlib, tempfile, unittest
 
 P=pathlib.Path(__file__).resolve().parents[1]/'experiments/routing-pilot/run.py'
 spec=importlib.util.spec_from_file_location('routing_ablation',P);r=importlib.util.module_from_spec(spec);spec.loader.exec_module(r)
+spec2=importlib.util.spec_from_file_location('routing_analysis',P.parent/'analyze.py');a=importlib.util.module_from_spec(spec2);spec2.loader.exec_module(a)
+spec3=importlib.util.spec_from_file_location('pipeline',P.parent/'pipeline.py');pipe=importlib.util.module_from_spec(spec3);spec3.loader.exec_module(pipe)
 
 class RoutingAblation(unittest.TestCase):
  def setUp(self):
@@ -32,5 +34,32 @@ class RoutingAblation(unittest.TestCase):
    c=r.Client(pathlib.Path(d),cap=0)
    with self.assertRaisesRegex(RuntimeError,'Budget guard'):c.request('openrouter',r.chat_payload(r.MODELS[0],[{'role':'user','content':'hello'}]),'test')
    self.assertEqual(list(pathlib.Path(d).glob('*.json')),[])
+ def test_derived_policies_use_actual_selected_reply(self):
+  self.assertEqual(a.selected_arm('jev_detailed','rigor','scaffolding',.9),'force_rigor')
+  self.assertEqual(a.selected_arm('teacher_detailed','rigor','scaffolding',.9),'force_scaffolding')
+  self.assertEqual(a.selected_arm('opposite_teacher','rigor','scaffolding',.9),'force_rigor')
+  self.assertEqual(a.selected_arm('confidence_fallback','rigor','scaffolding',.79),'self_detailed')
+  self.assertEqual(a.selected_arm('confidence_fallback','rigor','scaffolding',.8),'force_rigor')
+ def test_paired_test_counts_discordance(self):
+  v=a.paired([1,1,1,0],[0,0,0,0],['rigor','rigor','scaffolding','scaffolding'])
+  self.assertEqual(v['wins'],3);self.assertEqual(v['losses'],0)
+  self.assertEqual(v['mcnemar_exact_p'],.25);self.assertEqual(v['difference_pp'],75)
+ def test_streaming_non_thinking_control_is_uniform(self):
+  for arm in r.ARMS:
+   q=r.chat_payload(r.MODELS[0],r.tutor_messages(self.m,arm,'scaffolding'))
+   self.assertTrue(q['messages'][-1]['content'].endswith('/no_think'))
+   self.assertEqual(q['max_tokens'],384);self.assertFalse(q['provider']['allow_fallbacks'])
+ def test_live_pipeline_uses_jev_choice_not_teacher_label(self):
+  class FakeClient:
+   def __init__(self):self.calls=[]
+   def request(self,service,payload,tag):
+    self.calls.append((service,payload))
+    if service=='typesafe':return {'response':{'model':'jev-1.14.0','answers':{'next_move':{'type':'choice','choice':'scaffolding','probabilities':{'scaffolding':.9,'rigor':.1},'confidence':.8}}},'cost_usd':.001,'elapsed_ms':100}
+    return {'text':'Try one part.','payload_sha256':r.sha(r.enc(payload)),'cost_usd':.002,'first_answer_ms':200}
+  client=FakeClient();result=pipe.route_then_reply(self.m,client,r.MODELS[0],'test')
+  self.assertEqual(len(client.calls),2);self.assertEqual(result['decision'],'scaffolding')
+  self.assertIn(r.POLICIES['scaffolding'],client.calls[1][1]['messages'][0]['content'])
+  self.assertNotIn(r.POLICIES['rigor'],client.calls[1][1]['messages'][0]['content'])
+  self.assertEqual(result['recorded_serial_first_answer_ms'],300)
 
 if __name__=='__main__':unittest.main()

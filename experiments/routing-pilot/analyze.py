@@ -3,7 +3,7 @@ import collections, csv, importlib.util, json, math, random, statistics
 from pathlib import Path
 HERE=Path(__file__).resolve().parent
 s=importlib.util.spec_from_file_location('pilot',HERE/'run.py');p=importlib.util.module_from_spec(s);s.loader.exec_module(p)
-CONDITIONS=['original','self_detailed','jev_label','jev_detailed','teacher_detailed','opposite_teacher','always_scaffolding','always_rigor','confidence_fallback']
+CONDITIONS=['original','self_detailed','jev_label','jev_detailed','teacher_detailed','opposite_teacher','always_scaffolding','always_rigor','confidence_fallback','llm_detailed']
 
 def selected_arm(condition,route,gold,prob):
  if condition in p.ARMS:return condition
@@ -33,6 +33,8 @@ def main():
  cfg=p.load(HERE/'frozen.json');source=p.source();out=[];raw=[];judge_comparison=[];bad_evidence=[]
  for c in cfg['cases']:
   idx=c['index'];rt=p.load(HERE/'traces'/f'route-{idx}.json');ans=rt['response']['answers']['next_move'];route=ans['choice'];prob=max(ans['probabilities'].values())
+  lrpath=HERE/'traces'/f'llmroute-{idx}.json';lr=p.load(lrpath) if lrpath.exists() else None
+  lrchoice=json.loads(lr['text'])['decision'] if lr and lr.get('status')=='complete' else None
   for model in cfg['models']:
    short=model.split('/')[-1];jp=HERE/'ratings'/f'judge1-{idx}-{short}.json'
    if not jp.exists():continue
@@ -51,13 +53,15 @@ def main():
                 'response':g['text'],**{k:v for k,v in rating.items() if k!='id'},'evidence_exact':evidence_ok,'valid_generation':valid,
                 'strict_pass':strict,'direction_no_overhelp':loose,'provider':g['provider'],'finish_reason':g['finish_reason']})
    for cond in CONDITIONS:
-    arm=selected_arm(cond,route,c['reference'],prob);g=gen[arm];r=rr[arm]
+    if cond=='llm_detailed' and lrchoice is None:continue
+    arm='force_'+lrchoice if cond=='llm_detailed' else selected_arm(cond,route,c['reference'],prob);g=gen[arm];r=rr[arm]
     uses_router=cond in ['jev_label','jev_detailed','confidence_fallback']
     route_cost=rt['cost_usd'] if uses_router else 0;route_time=rt['elapsed_ms'] if uses_router else 0
+    if cond=='llm_detailed':route_cost=lr['cost_usd'];route_time=lr['elapsed_ms']
     out.append({'index':idx,'student_id':c['student_id'],'reference':c['reference'],'model':model,'condition':cond,'selected_arm':arm,
-                'route':route,'route_matches_teacher':route==c['reference'],'route_probability':prob,
+                'route':lrchoice if cond=='llm_detailed' else route,'route_matches_teacher':(lrchoice if cond=='llm_detailed' else route)==c['reference'],'route_probability':None if cond=='llm_detailed' else prob,
                 'strict_pass':scores[arm][0],'direction_no_overhelp':scores[arm][1],
-                'overhelp':r['overhelp'],'math_error':r['math_error'],'uncertain':r['uncertain'],'context_fit':r['context_fit'],
+                'overhelp':r['overhelp'],'math_error':r['math_error'],'uncertain':r['uncertain'],'context_fit':r['context_fit'],'reply_words':len(g['text'].split()),
                 'first_answer_ms_serial_estimate':(g['first_answer_ms']+route_time) if g['first_answer_ms'] is not None else None,
                 'full_reply_ms_serial_estimate':g['elapsed_ms']+route_time,'deployment_cost_usd':g['cost_usd']+route_cost})
    second=HERE/'ratings'/f'judge2-{idx}-{short}.json'
@@ -78,7 +82,7 @@ def main():
       'math_error':sum(r['math_error'] for r in rr),'uncertain':sum(r['uncertain'] for r in rr),
       'by_reference':{g:{'n':sum(r['reference']==g for r in rr),'strict_pass':sum(r['reference']==g and r['strict_pass'] for r in rr)} for g in ['scaffolding','rigor']},
       'first_answer_ms_serial_estimate':dist([r['first_answer_ms_serial_estimate'] for r in rr if r['first_answer_ms_serial_estimate'] is not None]),
-      'cost_per_1000_replies_usd':statistics.mean(r['deployment_cost_usd'] for r in rr)*1000}
+      'cost_per_1000_replies_usd':statistics.mean(r['deployment_cost_usd'] for r in rr)*1000,'reply_words':dist([r['reply_words'] for r in rr])}
   a=[r for r in rows if r['condition']=='jev_detailed'];b=[r for r in rows if r['condition']=='self_detailed']
   if a:results['primary_comparisons'][model]=paired([int(r['strict_pass']) for r in a],[int(r['strict_pass']) for r in b],[r['reference'] for r in a])
   counter={}
@@ -103,6 +107,13 @@ def main():
  routes=[p.load(HERE/'traces'/f'route-{c["index"]}.json') for c in cfg['cases']]
  results['routing']={'n':len(routes),'correct':sum(r['response']['answers']['next_move']['choice']==c['reference'] for r,c in zip(routes,cfg['cases'])),
                      'latency_ms':dist([r['elapsed_ms'] for r in routes]),'by_reference':{g:{'n':16,'correct':sum(c['reference']==g and r['response']['answers']['next_move']['choice']==g for r,c in zip(routes,cfg['cases']))} for g in ['scaffolding','rigor']}}
+ lrrows=[]
+ for c in cfg['cases']:
+  f=HERE/'traces'/f'llmroute-{c["index"]}.json'
+  if f.exists():
+   lr=p.load(f)
+   if lr.get('status')=='complete':lrrows.append((c,lr,json.loads(lr['text'])['decision']))
+ results['llm_routing']={'n':len(lrrows),'correct':sum(c['reference']==label for c,r,label in lrrows),'latency_ms':dist([r['elapsed_ms'] for c,r,label in lrrows]),'cost_usd':sum(r['cost_usd'] for c,r,label in lrrows)}
  for model in cfg['models']:
   cc=[r for r in judge_comparison if r['model']==model]
   results['cross_judge'][model]={'n_replies':len(cc),'n_cases':len({r['index'] for r in cc}),'agree':sum(r['primary']==r['secondary'] for r in cc),'primary_pass':sum(r['primary'] for r in cc),'secondary_pass':sum(r['secondary'] for r in cc)}
@@ -111,6 +122,17 @@ def main():
  results['truncated_generations']=sum(r.get('finish_reason')=='length' for r in traces if r['tag'].startswith('gen-'))
  results['unexpected_reasoning_generations']=sum(bool(r.get('reasoning_text','').strip()) for r in traces if r['tag'].startswith('gen-'))
  results['providers']=dict(collections.Counter(r.get('provider') for r in traces if r['tag'].startswith('gen-')))
+ math_ids=set(p.load(HERE/'domain-screen.json')['math_indices']);results['math_only']={}
+ for model in cfg['models']:
+  rr=[r for r in out if r['model']==model and r['index'] in math_ids]
+  results['math_only'][model]={'conditions':{cond:{'n':sum(r['condition']==cond for r in rr),'strict_pass':sum(r['condition']==cond and r['strict_pass'] for r in rr),
+     'by_reference':{g:{'n':sum(r['condition']==cond and r['reference']==g for r in rr),'pass':sum(r['condition']==cond and r['reference']==g and r['strict_pass'] for r in rr)} for g in ['scaffolding','rigor']}} for cond in CONDITIONS}}
+  a=[r for r in rr if r['condition']=='jev_detailed'];b=[r for r in rr if r['condition']=='self_detailed']
+  if a:results['math_only'][model]['primary_comparison']=paired([int(r['strict_pass']) for r in a],[int(r['strict_pass']) for r in b],[r['reference'] for r in a])
+ prior=[p.load(f) for d in ['preflight','failed-attempts'] for f in (HERE/d).glob('gen-*.json')]
+ results['spending_including_setup_and_failed_reservations_usd']=results['spending_usd']+sum(r['cost_usd'] for r in prior)
+ results['cost_note']='Successful calls use returned costs or input-token list pricing. Failed requests retain conservative reservations, so total including failures is an upper accounting estimate.'
+ results['retries']=sum(len(r.get('connection_attempts',[])) for r in traces+prior)
  p.save(HERE/'results.json',results);p.save(HERE/'judge-comparison.json',judge_comparison)
  for name,data in [('case-results.csv',out),('replies-and-ratings.csv',raw)]:
   if data:

@@ -2,10 +2,24 @@
 
 This project asks a practical question about AI math tutoring: **can a small decision model recognize when a student needs support and when they are ready for more independent thinking?** We use TutorMoments, which provides real math tutoring conversations stopped at teacher-identified decision points.
 
-There are two related experiments here:
+The next experiment asks whether a good decision improves the reply the student receives. See the [matched tutoring pilot](experiments/routing-pilot/PLAN.md) for the frozen design and [execution notes](experiments/routing-pilot/EXECUTION-NOTES.md) for infrastructure corrections. It compares a Jev-directed policy with a tutor that receives the same detailed policies and chooses for itself. Qwen3 14B and 32B provide a within-family model-size comparison.
 
-1. **Jev decision classification, completed:** give Jev the conversation available at the stopping point and ask it to choose `scaffolding` or `rigor`. Compare its choice with the dataset label. No tutor response is generated.
-2. **OpenAI decision-router pilot, earlier work:** use a separate decision model to instruct a tutor LLM's next reply. This tests a different question. Its [runner and method guide](docs/openai-router-guide.md) remain available.
+```mermaid
+flowchart LR
+    A[Conversation up to the stopping point] --> B[Jev chooses scaffold or rigor]
+    B --> C[Select matching teaching instructions]
+    C --> D[Small tutor generates a reply]
+    D --> E[Blinded response evaluation]
+```
+
+The crucial test is whether this system beats **the same tutor with equally good instructions**, including routing delay and cost. Teacher-label routing is a diagnostic: it shows what happens when the intended category is known, but that label is unavailable in deployment. No student learning gains are measured.
+
+There are three related experiments here:
+
+1. **Matched Jev tutoring pilot:** first-reply quality, controlled prompts, both forced-policy outputs, routing errors, model size, cost and streaming latency. [Plan](experiments/routing-pilot/PLAN.md).
+
+2. **Jev decision classification, completed:** give Jev the conversation available at the stopping point and ask it to choose `scaffolding` or `rigor`. Compare its choice with the dataset label. No tutor response is generated.
+3. **OpenAI decision-router pilot, earlier work:** use a separate decision model to instruct a tutor LLM's next reply. This tests a different question. Its [runner and method guide](docs/openai-router-guide.md) remain available.
 
 ## Jev results
 

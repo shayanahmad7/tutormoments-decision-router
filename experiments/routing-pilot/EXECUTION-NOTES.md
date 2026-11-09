@@ -11,3 +11,9 @@ Source: https://qwenlm.github.io/blog/qwen3/
 Reading the sampled conversation tails revealed four non-math current tasks (growth mindset, vocabulary or reading comprehension). They remain in the original 32-case analysis. A math-only 28-case sensitivity analysis was specified before any judge calls, with reasons in `domain-screen.json`. This is a source-based domain screen, not an outcome-based exclusion. It reinforces the need to audit domains before the larger math study.
 
 The two original-condition calls on case 434 were used to verify the uniform `/no_think` correction before resuming the randomized queue. Transient connection-level 429/502/503 errors now receive at most three logged retries with 5/10/15-second backoff. There is no automatic resampling of completed outputs.
+
+DeepInfra Qwen3 32B repeatedly returned shared-pool rate limits, including one failure after all four connection attempts. Preserve that failed request in `failed-attempts/` and resume only incomplete requests. Later exhausted 429 requests are deferred while the remaining queue runs; they are not scored as bad tutoring. Successful outputs are never regenerated.
+
+## Additional router control, specified before judging
+
+Use Qwen3 14B as a decision-only router with the same frozen Jev instructions and two options. Its choices select the existing forced-policy replies. This costs 32 short-output calls, no new tutor replies, and tests whether any routing benefit requires Jev. It is a secondary diagnostic and does not change the two primary comparisons. See `secondary-router-plan.json`.

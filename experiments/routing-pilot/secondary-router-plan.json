@@ -1,0 +1,12 @@
+{
+  "specified_utc": "2026-11-09T21:06:35.639645+00:00",
+  "before_any_judge_calls": true,
+  "scope": "secondary diagnostic only; primary comparisons unchanged",
+  "router_model": "qwen/qwen3-14b",
+  "prompt": "Exact frozen Jev question instructions and option criteria, serialized with pre-cut dialogue, plus a JSON decision-only return instruction. Uniform /no_think suffix.",
+  "output_cap": 32,
+  "cases": "same 32 frozen cases",
+  "generator": "Reuse both saved forced-policy replies for each model, exactly as for Jev; no new tutor generations",
+  "purpose": "Separate the benefit of an external decision stage from the choice of Jev as that stage. Compare quality, decision agreement, full decision-call latency and cost.",
+  "selection": "No tuning or model selection from results"
+}

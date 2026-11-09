@@ -98,7 +98,7 @@ class Client:
  def __init__(self, directory, openrouter_key=None, typesafe_key=None, cap=5):
   self.directory=directory;directory.mkdir(parents=True,exist_ok=True)
   self.keys={'openrouter':openrouter_key,'typesafe':typesafe_key};self.cap=cap;self.lock=threading.Lock();self.pending=0
-  prior=list(directory.glob('*.json'))+list((directory.parent/'preflight').glob('gen-*.json'))
+  prior=list(directory.glob('*.json'))+list((directory.parent/'preflight').glob('gen-*.json'))+list((directory.parent/'failed-attempts').glob('*.json'))
   self.spent=sum(load(p).get('cost_usd',load(p).get('reserve_usd',0)) for p in prior)
  def request(self, service,payload,tag):
   p=self.directory/(tag+'.json');digest=sha(enc(payload))
@@ -198,6 +198,13 @@ def run(args):
  rows=source();mod=jev_module();assert mod.PROMPTS['A - Current learner evidence']==config['jev_prompt']
  client=Client(HERE/'traces',key('OPENROUTER_API_KEY',args.openrouter_env),key('TYPESAFE_API_KEY',args.typesafe_env),config['budget_usd'])
  jobs=[]
+ if args.stage=='llm-routes':
+  for c in config['cases']:
+   jp=mod.payload_for(rows[c['index']],'A - Current learner evidence')
+   prompt=json.dumps({'conversation':jp['state'],'decision_task':jp['questions']['next_move']},ensure_ascii=False)+'\nReturn only JSON {"decision":"scaffolding"} or {"decision":"rigor"}. Do not write a tutor reply.'
+   payload=chat_payload(MODELS[0],[{'role':'user','content':prompt}]);payload['max_tokens']=32;payload['response_format']={'type':'json_object'}
+   r=client.request('openrouter',payload,'llmroute-'+str(c['index']))
+   assert json.loads(r['text'])['decision'] in POLICIES
  if args.stage in ['routes','all']:
   for c in config['cases']:
    r=client.request('typesafe',mod.payload_for(rows[c['index']],'A - Current learner evidence'),'route-'+str(c['index']))
@@ -206,7 +213,11 @@ def run(args):
   jobs=[(c,m,a) for c in config['cases'] for m in MODELS for a in ARMS];random.Random(SEED+1).shuffle(jobs)
   def generate(job):
    c,m,a=job;route=load(HERE/'traces'/('route-'+str(c['index'])+'.json'))['response']['answers']['next_move']['choice']
-   return client.request('openrouter',chat_payload(m,tutor_messages(rows[c['index']],a,route)),f'gen-{c["index"]}-{m.split("/")[-1]}-{a}')
+   try:return client.request('openrouter',chat_payload(m,tutor_messages(rows[c['index']],a,route)),f'gen-{c["index"]}-{m.split("/")[-1]}-{a}')
+   except RuntimeError as e:
+    if 'HTTP 429' not in str(e):raise
+    print(json.dumps({'deferred_rate_limit':f'{c["index"]}-{m}-{a}'}),flush=True)
+    return None
   with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
    for _ in pool.map(generate,jobs):pass
  if args.stage in ['judge','second-judge','all']:
@@ -223,7 +234,7 @@ def run(args):
    for _ in pool.map(judge,jobs):pass
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('command',choices=['prepare','run']);p.add_argument('--stage',choices=['routes','generate','judge','second-judge','all'],default='all')
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['prepare','run']);p.add_argument('--stage',choices=['routes','llm-routes','generate','judge','second-judge','all'],default='all')
  p.add_argument('--openrouter-env',default=os.environ.get('TM_OPENROUTER_ENV','/Users/ee2282/Documents/LemmaEducation_dev/.env.local'))
  p.add_argument('--typesafe-env',default=os.environ.get('TM_TYPESAFE_ENV',str(ROOT.parent/'19 - Jev Decision Classification/.env')))
  args=p.parse_args();prepare() if args.command=='prepare' else run(args)
