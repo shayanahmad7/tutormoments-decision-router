@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I take all six parts of the box, that should be the whole box, right? So what number represents the whole box?",
+      "reason": "Redirects the student's error by asking a guiding question about what the whole box represents, prompting the student to self-correct without giving the answer away."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "six sixths is the same as one whole. So 6/6 equals 1. Does that make sense?",
+      "reason": "Directly supplies the answer (6/6 = 1) that the student could have been guided to discover, without giving the student a chance to correct their own error first."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "six out of six is another way of writing the whole, which is 1. So if I take all six parts of the box, that's 6/6, and that equals 1.",
+      "reason": "Immediately corrects the student and provides the full explanation and answer, then pivots to a new question rather than letting the student work through the correction themselves."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if six sixths equals one whole, and one sixth is just one part, what happens if I take all six parts? What does that equal?",
+      "reason": "Uses a scaffolded question that builds on the established concept (one whole) to guide the student to self-correct without supplying the answer directly."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I shaded all six parts of the box, how many sixths did I take? And what number is that the same as?",
+      "reason": "Explicitly flags the student's error and asks two targeted questions that guide the student to reconsider and self-correct, maintaining cognitive demand."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 434,
+    "moment_id": "balanced_520:edac2eb8-8342-54f6-afd9-28f0e974e987_160d83b3-71b7-5ce8-af38-023ce32665f6_b57ad33f-c9ef-5a7a-9d94-be7a411b92ce__hum_378_396",
+    "student_id": "160d83b3-71b7-5ce8-af38-023ce32665f6",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "8e882c0d5e96c5b9292998595d0dac77eb22506bfb3fbf19425c25042bf8f495"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, can you tell me what 1.2 times 10 is?",
+      "reason": "The tutor breaks down the problem into a simpler step, asking the student to multiply 1.2 by 10, which is a scaffolding technique to help them approach the larger problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose C and how you arrived at that answer?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor by requiring justification of their answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me see your setup for the problem. Can you write out how you're multiplying the numbers?",
+      "reason": "The tutor asks the student to show their work, which is a form of scaffolding to help identify where the student might be struggling in their process."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you ignore the decimals for a moment, what is 12 times 3? How might that help you place the decimal in your final answer?",
+      "reason": "The tutor provides a hint by suggesting the student ignore the decimals first and multiply the whole numbers, then consider how that helps with decimal placement. This is a scaffolding technique."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, you can ignore the decimals and multiply 12 by 5, which is 60. Now, how many decimal places do we have in the original problem? One from 1.2 and one from 0.5, so that's two total. So we move the decimal two places to the left in 60, which gives us 0.60, or just 0.6. So the answer should be 0.6, which is option C. Nice job! You got it right.",
+      "reason": "The tutor completely solves the problem for the student, explaining every step and providing the final answer, which is overhelping."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 281,
+    "moment_id": "balanced_520:8ac58e16-89c8-5162-aef8-521e02a17bcd_c11260df-8221-5e9d-a4a4-168164eb4399_488fb429-f4cd-5147-ae19-23032d0194ad__hum_93_110",
+    "student_id": "c11260df-8221-5e9d-a4a4-168164eb4399",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "a53561f42c3b5c7c82d805faedbd8c75b66a34b127bef104a3d92ee8daea12b3"
+}

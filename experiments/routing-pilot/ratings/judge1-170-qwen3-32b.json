@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "jev_label",
+    "C4": "self_detailed",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How far is 641 from 625? Write that difference down. Then, how far is 641 from 650? Write that one too. Once you have both, we can compare them to see which one is closer. Start with the first difference. What is 641 minus 625?",
+      "reason": "The tutor breaks down the problem into manageable steps, asking the student to calculate the differences, which is a good scaffolding technique. It also promotes rigor by asking the student to perform the calculations independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you figure out how far apart 625 and 650 are? Then tell me how far 641 is from each?",
+      "reason": "The tutor provides the key numbers and then asks the student to perform the calculations to find the distances, which is a good scaffolding technique that also promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, halfway between 625 and 650 is 637.5. So, if 641 is greater than 637.5, it means it's closer to 650. If it's less than 637.5, it would be closer to 625. Let me write that on the number line. Can you see where 641 falls in relation to 637.5?",
+      "reason": "The tutor provides the halfway point and the rule for rounding based on that point, which is overhelping as the student could have been guided to discover this or calculate it themselves. The final question is a simple observation rather than a calculation."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "I'll also write the halfway point, 637.5, on the number line. Can you tell me where 641 falls in relation to 637.5? Is it before or after?",
+      "reason": "The tutor provides the halfway point, which the student could have been prompted to calculate. The question then only requires a simple observation, reducing the cognitive demand."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, where does 641 fall in relation to 637.5? It’s bigger, right? So, 641 is just a little past the halfway point. That means it’s closer to 650 than to 625. So, we round up to 650. Does that make sense now?",
+      "reason": "The tutor explains the entire process, including calculating the midpoint and determining the rounding direction, which is overhelping. The student is not given an opportunity to perform any calculations or reasoning independently."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 170,
+    "moment_id": "balanced_520:4cfd7352-bf53-51f0-a598-1ddde2b31698_831995bf-5fab-552f-8bfe-8c6f5c526d4f_61700a62-0737-5359-bcab-672af3bd0316__hum_111_118",
+    "student_id": "831995bf-5fab-552f-8bfe-8c6f5c526d4f",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "5191a47a77970ee997d5bc8314f0e4d74e4f6beb4a8bc930691da4182378723c"
+}

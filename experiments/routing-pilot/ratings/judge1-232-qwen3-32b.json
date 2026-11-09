@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number, when added to 8, gives us 48? Can you figure out what the star should be?",
+      "reason": "The tutor asks the student to complete the decomposition of 48, which is a key step in the distributive method. This is a good scaffold because it guides the student to the correct answer without giving it away. It also promotes rigor by asking the student to think about the problem independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We know that 48 is made up of 40 and 8, right? So if we break it down, we can write 48 as 40 + 8. Now, in the problem, it's written as (star + 8) x 3. So what number should replace the star to make the left side match the right side?",
+      "reason": "The tutor provides the decomposition of 48 into 40 and 8, which is the core of the distributive method for this problem. While it leads the student to the answer, it still asks the student to identify the star, which is a small step of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what should go in the star to make the equation 48 x 3 = (star + 8) x 3 true? Think about what number, when added to 8, gives you 48.",
+      "reason": "The tutor provides a clear prompt for the student to identify the missing part of the decomposition of 48. This is a good scaffold because it guides the student to the correct answer without giving it away. It also promotes rigor by asking the student to think about the problem independently."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We know that 48 is made up of 40 and 8, right? So if we break it down, we can think of it as (40 + 8) x 3. That means the star should be 40.",
+      "reason": "The tutor directly provides the answer (40) and then explains why, which is overhelping as the student could have productively supplied this information."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what's the tens part of 48, and what's the ones part?",
+      "reason": "The tutor prompts the student to think about place value to decompose 48, which is a good scaffold for the distributive method. This also promotes rigor by asking the student to apply their knowledge of place value independently."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 232,
+    "moment_id": "balanced_520:742de3dd-68d1-5190-9dbf-86d3a1d8abff_15d9f73f-ab05-5288-8db7-e662535c819a_2dc3d3d4-1e14-5595-a485-0e47c8fa74a1__hum_133_135",
+    "student_id": "15d9f73f-ab05-5288-8db7-e662535c819a",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "002c648751baf1e87a3bced2d938a1a1bc43fb2606e7e20dedcf39970a8d012e"
+}

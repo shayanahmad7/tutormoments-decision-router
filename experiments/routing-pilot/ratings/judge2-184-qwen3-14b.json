@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "force_rigor",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Here's a diagram with two intersecting lines. One of the angles is labeled 60°",
+      "reason": "The student just completed the 87° problem correctly and the session is moving on. This reply invents a new 60° problem not present in the session, making it weakly fitted to the actual exchange, though the skill area is relevant."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "So, we can write the equation: x + 2x = 87°, 3x = 87°, Now, to find x, we divide both sides",
+      "reason": "The student already answered this problem correctly (selected C, 29°) and the screen confirmed it. The reply re-explains the full solution step by step, which is overhelp after a correct answer. Also the session has moved past this problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you explain how you would find the value of x?",
+      "reason": "The student already answered correctly; asking them to explain after the fact has some merit for consolidation but the session has moved on, making this only weakly fitted to the current moment."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Suppose two lines intersect, and one of the angles formed is 60°. The vertically opposite angle is split into two angles, labeled a and 2a.",
+      "reason": "Offers a transfer problem with a different value (60°), which is reasonable for consolidation, but the session has already moved to the dashboard and the tutor said they'd play a game after 10 more minutes, so the fit is weak."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the angle labeled 87° is vertically opposite to the angle that's split into x and 2x. That means the total of x and 2x must equal 87°. Can you write an equation",
+      "reason": "This reply addresses the specific problem (87°, x and 2x) that the student was working on during the 52-second pause, providing a targeted hint about setting up the equation without giving the answer, which is appropriate scaffolding for that moment."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 184,
+    "moment_id": "balanced_520:58c94ad4-6cdc-5f5b-bf07-ca368cdb8dbf_eae181aa-099e-5972-9815-989b2b8dca94_be5d2f61-c006-5e95-b6c5-714c00ec598f__hum_66_68",
+    "student_id": "eae181aa-099e-5972-9815-989b2b8dca94",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "5f3fbf20cab43bc9e446f55fcdc2d67e224080821400576f37c663dd871ea2c6"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain your reasoning?",
+      "reason": "The tutor has just given the student the answer for Tuesday's shells. This candidate asks the student to explain their reasoning for how they got 5, which is a good way to promote rigor and understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you take 11 away from 16?",
+      "reason": "This candidate guides the student to the correct operation and numbers without giving the answer directly. It's a good scaffold to help the student understand the '11 less' concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can we use subtraction to find out how many she collected on Tuesday?",
+      "reason": "This candidate provides a clear hint about using subtraction, which is appropriate given the student's previous confusion about 'less than' meaning subtraction."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We take the number of shells from Monday and subtract 11 from it.",
+      "reason": "This candidate explicitly tells the student the operation and the numbers to use, which is overhelping as the student could productively figure this out with a more open-ended prompt."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we do with 16 and 11?",
+      "reason": "This candidate provides a good scaffold by prompting the student to identify the operation needed for 16 and 11, without giving away the answer or the operation directly."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 299,
+    "moment_id": "balanced_520:965bb786-f5e1-5ee7-b20d-5b66b0765519_90dd669f-7d0a-51fd-9501-d305b1bf9356_0014e499-e120-5314-b3d0-962b227fcce0__hum_15_34",
+    "student_id": "90dd669f-7d0a-51fd-9501-d305b1bf9356",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "2c7a6eb1441e2711a3568bac1bd0897c68ca372c53e5359ac31033867143c719"
+}

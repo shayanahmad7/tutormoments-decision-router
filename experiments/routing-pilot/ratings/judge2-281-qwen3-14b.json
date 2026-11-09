@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "force_scaffolding",
+    "C4": "self_detailed",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What is the common denominator between 2, 4, and 6?",
+      "reason": "The conversation has moved well past the common denominator topic into decimal multiplication. The student just guessed 'C' on a decimal multiplication problem; returning to common denominators ignores the current task entirely."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What is the common denominator between 2, 4, and 6?",
+      "reason": "Same issue as C1 — the session has shifted to decimal multiplication and the student just answered 'C' on that problem. Reverting to common denominators contradicts the current task."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What is the common denominator between 2, 4, and 6?",
+      "reason": "Again returns to the common denominator topic, which was set aside long ago. The student is currently working on decimal multiplication and just said 'C'; this reply ignores that entirely."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me see what you got for the problem you were working on. What was your answer?",
+      "reason": "The student just said 'C' as their answer to the current decimal multiplication problem. This reply directly follows up on that response, which is appropriate to the actual exchange, though it is minimal and generic."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": true,
+      "context_fit": 2,
+      "evidence": "C is a good guess, but let's think through it step by step",
+      "reason": "Responds to the student's 'C' guess on the current decimal multiplication problem, which fits the context. However, it immediately works through the entire solution and gives the answer (0.36, option B), which is overhelp. There is also uncertainty about what the exact problem and answer choices are since the problem is not fully visible in the transcript."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 281,
+    "moment_id": "balanced_520:8ac58e16-89c8-5162-aef8-521e02a17bcd_c11260df-8221-5e9d-a4a4-168164eb4399_488fb429-f4cd-5147-ae19-23032d0194ad__hum_93_110",
+    "student_id": "c11260df-8221-5e9d-a4a4-168164eb4399",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "fabd4b43d74733c3a032ec30c3f4901e5fad47c2442ff646c8062cef69d3c212"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "original",
+    "C3": "force_scaffolding",
+    "C4": "force_rigor",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can we use that to help us figure out nine times five",
+      "reason": "Confirms the anchor fact (10x5=50) and then asks the student to make the connection to 9x5, keeping cognitive demand on the student while providing a useful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "we just take away one group of five, right? So fifty minus five is forty-five",
+      "reason": "Supplies the full reasoning and answer (50-5=45) that the student could have worked out, removing the productive thinking the student was beginning to do."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How could you use that to figure out nine times five? Maybe think about what's one less than ten",
+      "reason": "Confirms the anchor fact, asks the student to apply it, and offers a targeted hint about 'one less than ten' without giving away the arithmetic step."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How could you use that to figure out nine times five",
+      "reason": "Minimal but well-targeted: references the student's own strategy and asks them to complete the reasoning, maintaining student responsibility without over-scaffolding."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "9×5 is just one less group of 5, that means 9×5=50−5=45",
+      "reason": "Fully explains the strategy and computes the answer, then moves to a new problem before the student has demonstrated understanding; removes all productive work from the student."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 396,
+    "moment_id": "balanced_520:dfcff302-1878-50ff-80d1-a8eafbe857a5_4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58_cfcc22bc-9a1a-50ad-b725-17d3645fd77d__hum_208_214",
+    "student_id": "4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "c94fd1e331644df364e4f50c090c89d25c960f80f612163f1144f5e11c5759e0"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "force_scaffolding",
+    "C4": "self_detailed",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "let's go back to the problem with the apples",
+      "reason": "The conversation has moved past the apples problem to the paperclips problem; redirecting back to apples ignores the current task context. Asking the student to explain is rigor, but the context fit is poor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the diagram should show a whole of 68, one part of 23, and the other part labeled with a question mark. That matches with option B",
+      "reason": "The student just said 'B' and the tutor confirms it by fully explaining the reasoning and identifying the answer, supplying reasoning the student could have provided."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which diagram shows this?",
+      "reason": "Restates the problem structure to scaffold understanding of bar models, then asks the student to identify the diagram themselves, maintaining student responsibility after the student said 'B'."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Let's go back to the problem with the apples",
+      "reason": "Like C1, redirects to the already-completed apples problem rather than the current paperclips problem, ignoring the current task context."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Option B shows the total number of paperclips Sarah started with (68) in the big box, and then one part is the number she gave away (23)",
+      "reason": "The student just answered 'B' and the tutor confirms and fully explains the reasoning without asking the student to justify or do anything further, supplying all the reasoning."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 18,
+    "moment_id": "balanced_520:1789ab1a-d177-547f-9b1f-1674e5700baf_5fc5a091-b96b-53d8-9755-dec4ae394f64_bdf53111-1eda-5887-ba3f-4751d6dc3a14__hum_54_61",
+    "student_id": "5fc5a091-b96b-53d8-9755-dec4ae394f64",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "8d91fe294ece9600cadebbab107f19e1b3e55bf5ff11cf00bb870bc810895864"
+}

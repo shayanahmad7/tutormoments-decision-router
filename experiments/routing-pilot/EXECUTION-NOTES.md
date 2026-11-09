@@ -17,3 +17,9 @@ DeepInfra Qwen3 32B repeatedly returned shared-pool rate limits, including one f
 ## Additional router control, specified before judging
 
 Use Qwen3 14B as a decision-only router with the same frozen Jev instructions and two options. Its choices select the existing forced-policy replies. This costs 32 short-output calls, no new tutor replies, and tests whether any routing benefit requires Jev. It is a secondary diagnostic and does not change the two primary comparisons. See `secondary-router-plan.json`.
+
+## Evaluator audit and extension after the first ratings
+
+Case 18 exposed a concrete grounding error: the primary judge said the student had not selected B even though that is in the final source turn. Do not erase or selectively fix this rating. Extend the unchanged independent Claude judge from the prespecified eight cases to all 32 cases for both models, retaining the subset and reporting both evaluators. This is a post-results robustness extension, not a second preregistered primary test. See `judge-audit-extension.json`.
+
+One Claude response included prose before its complete ratings JSON. The parser now reads the intact JSON object from that response; no replacement rating was purchased or invented.

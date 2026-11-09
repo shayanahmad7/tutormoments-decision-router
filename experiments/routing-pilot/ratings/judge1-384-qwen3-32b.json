@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's take a step back and think about what multiplication really means. When we say \"four times two,\" we're asking, \"What is the total if we have four groups of two things?\" So, if you have four groups and each group has two items, how many items do you have in total? Let's count together: two in the first group, two in the second, two in the third, and two in the fourth. That's 2 + 2 + 2 + 2. What does that add up to?",
+      "reason": "The tutor scaffolds by explaining the meaning of multiplication as repeated addition and then explicitly writes out the repeated addition problem for the student to solve."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's go back to that problem: four times two. You said 80, then 53... but those are pretty far off. Let me ask you — if you have four groups of two apples, how many apples do you have? Think about it, and tell me how you get the answer.",
+      "reason": "The tutor scaffolds by rephrasing the multiplication problem as a word problem with a concrete example (apples). They also add rigor by asking the student to explain their reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's take a step back to that problem: four times two. Can you think about what four groups of two would look like? Maybe draw four fingers and count them? What do you think the answer might be?",
+      "reason": "The tutor scaffolds by suggesting a visual representation (drawing fingers) to help the student conceptualize the multiplication problem. They also add rigor by asking the student to think about what the answer might be, rather than giving it directly."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's take a step back and think about this one. What is 4 times 2? Let's break it down. If you have 4 groups of 2, how many would that be in total?",
+      "reason": "The tutor scaffolds by rephrasing the multiplication problem in terms of \"groups of\" to help the student understand the concept."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's take a step back and look at this one more time: four times two. What is 4 + 4? That’s the same as 4 times 2. What do you think the answer is?",
+      "reason": "The tutor scaffolds by connecting multiplication to repeated addition, specifically showing 4 times 2 as 4 + 4, which is a common strategy for this particular multiplication fact."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 384,
+    "moment_id": "balanced_520:d1e2d8d9-27ba-5061-86f7-daa2eb7e5097_6859ec65-4e1a-5d3a-a5f2-743446d09885_326cdc5a-f709-569b-9605-238b967ac04c__hum_351_366",
+    "student_id": "6859ec65-4e1a-5d3a-a5f2-743446d09885",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "35afa91c443cfc157c761f23f0b3d7672612dd4d2d2dfcbb3d68dd53b8e1a83b"
+}

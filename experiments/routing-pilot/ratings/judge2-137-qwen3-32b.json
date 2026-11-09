@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "original",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why \"so\" is the correct word",
+      "reason": "Asks the student to justify their typed answer 'so', promoting reasoning about the relationship between sentence parts. No scaffolding provided, just a justification prompt."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "it's showing a result or a consequence. What word would show that the second part is a result of the first?",
+      "reason": "The tutor explains the relationship between the sentence parts (result/consequence) before asking the student, supplying reasoning the student could have produced independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word connects those two ideas — that they didn't understand *before*, but did *after*? What word fits that kind of contrast?",
+      "reason": "Tutor re-frames the sentence as a contrast and explains the before/after structure, providing the interpretive reasoning the student should supply; also mischaracterizes the blank as a contrast connector when it's a cause-effect connector."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word would show that these two ideas are related?",
+      "reason": "Tutor re-reads the sentence aloud and asks a guiding question about the relationship between the two clauses, providing helpful scaffolding without giving away the answer or the reasoning."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word connects the two ideas — that others didn't understand *because* they hadn't experienced the challenges? What word shows cause and effect?",
+      "reason": "Tutor re-reads the sentence and names the grammatical relationship (cause and effect) as a hint, then asks the student to try an option, providing useful scaffolding without fully resolving the task."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 137,
+    "moment_id": "balanced_520:369f06b9-0cd9-5e40-aade-3cc0aae4f7f8_4258716b-b280-51b0-ae7b-1381019e53bc_fdbc85a5-cf5c-5110-bea8-0e8b0f9e30cf__hum_40_47",
+    "student_id": "4258716b-b280-51b0-ae7b-1381019e53bc",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "ece2645fa6194e6957eea3a50a8284db92d4fa6933413ccc3cb7f9d576950b74"
+}

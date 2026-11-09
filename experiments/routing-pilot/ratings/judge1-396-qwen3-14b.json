@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "jev_label",
+    "C4": "original",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, how can we use that to help us figure out nine times five?",
+      "reason": "The tutor confirms the student's correct answer for 10x5 and then asks a guiding question to help them apply that knowledge to 9x5."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How could you use that to figure out nine times five? Maybe think about what's one less than ten?",
+      "reason": "The tutor acknowledges the student's thought process and provides a specific hint to guide them towards the solution for 9x5 using the 10x5 fact."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since $10 \\times 5 = 50$, and $9 \\times 5$ is just one less group of 5, that means $9 \\times 5 = 50 - 5 = 45$.",
+      "reason": "The tutor provides the full explanation and the answer to the problem, which the student could have productively supplied with a bit more guidance."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "And then since it's nine times five, we just take away one group of five, right? So fifty minus five is forty-five.",
+      "reason": "The tutor explains the entire process and gives the answer, which the student could have worked out with more targeted questions."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How could you use that to figure out nine times five?",
+      "reason": "The tutor asks a direct question that prompts the student to connect their known fact (10x5) to the current problem (9x5), providing scaffolding without giving away the answer."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 396,
+    "moment_id": "balanced_520:dfcff302-1878-50ff-80d1-a8eafbe857a5_4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58_cfcc22bc-9a1a-50ad-b725-17d3645fd77d__hum_208_214",
+    "student_id": "4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "0150cf41e32b838b6305455db4804e80ce63aa2da7e6d2472ac81a8e5ceef290"
+}

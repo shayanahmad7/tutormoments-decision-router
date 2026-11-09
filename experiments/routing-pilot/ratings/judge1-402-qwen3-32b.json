@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "original",
+    "C4": "self_detailed",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 10 times 3? How does that help you figure out 30 divided by 10?",
+      "reason": "The tutor asks a related multiplication question and then asks the student to connect it to the division problem, which is a good way to scaffold the problem while maintaining rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can you figure out what thirty divided by ten is? Think about what division means.",
+      "reason": "The tutor prompts the student to think about the meaning of division, which is a good conceptual hint without giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me give you a hint: if you have ten fingers and you count how many times you can make ten from thirty, how many times would that be?",
+      "reason": "The tutor provides a concrete example using fingers to help the student visualize the division problem, which is a helpful scaffold."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have thirty candies and you want to divide them equally among ten friends, how many candies would each friend get? Think about it like sharing.",
+      "reason": "The tutor uses a relatable real-world scenario (sharing candies) to explain division, making the concept more accessible."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if I have ten and I add ten again, that's twenty. Add ten more, that's thirty. So how many tens did we add?",
+      "reason": "The tutor walks the student through the entire process of adding tens to reach thirty, essentially doing the calculation for the student and leaving only the final count for them to state."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 402,
+    "moment_id": "balanced_520:e1c0ee42-4db2-558d-adf0-557bcb20d715_92058906-7c85-5f08-aba9-adbece587c38_4b416254-d002-5c8f-ae73-a3dc0ab29dbb__hum_267_275",
+    "student_id": "92058906-7c85-5f08-aba9-adbece587c38",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "1f6e8b46a573dfd661d135449917ab16286e1cca159cc58faf5e85a12e060b9c"
+}

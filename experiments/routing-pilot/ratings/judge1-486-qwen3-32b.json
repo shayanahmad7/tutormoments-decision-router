@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose B and how you figured out the pattern?",
+      "reason": "The student has given an answer, and the tutor asks them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why B is the right choice? What number is 100 less than 438?",
+      "reason": "The tutor first asks the student to explain their reasoning (rigor) and then provides a scaffold by asking a more specific question about subtracting 100 from 438."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out that it's B?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you subtract 100 from 438? What should come next in the pattern?",
+      "reason": "The tutor guides the student by explicitly stating the operation (subtract 100) and asking for the next number in the pattern, which is a form of scaffolding."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about how the numbers are changing from 538 to 438? What operation is happening there?",
+      "reason": "The tutor provides scaffolding by breaking down the problem and asking the student to identify the pattern and operation between the given numbers."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 486,
+    "moment_id": "balanced_520:fb5ba1d4-bc48-5f4e-8b37-69eb67671729_d206debb-e1f5-50db-bc3f-33c0ad14afb2_9a4efc06-de32-568f-b668-fcda67d8f994__hum_292_297",
+    "student_id": "d206debb-e1f5-50db-bc3f-33c0ad14afb2",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "c6b31e88fc566f02fa40c0bd0b75f1b6b37b4c56fa750b468036e29a8f0fad9b"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you use \"abundant\" in a sentence that shows you understand what it means?",
+      "reason": "The tutor asks the student to apply the vocabulary word in a sentence, which requires the student to demonstrate understanding independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you think of a time when there was an abundant amount of something? Maybe food, toys, or time?",
+      "reason": "The tutor provides examples of contexts (food, toys, time) to help the student generate a sentence, which is a form of scaffolding. The request to use the word in a sentence also promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I say, \"I dedicate my time to studying math,\" what does that mean in your own words? How is that different from just \"I study math\"?",
+      "reason": "The tutor provides a specific example sentence and asks the student to explain the meaning in their own words and differentiate it from a similar phrase, which scaffolds understanding and promotes rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "For \"abundant,\" it means there's a lot of something, like if there's abundant food, there's plenty. For \"authentic,\" it means something is real or genuine, like an authentic painting. And \"dedicate\" means to commit yourself to something, like dedicating time to studying.",
+      "reason": "The tutor re-explains all three vocabulary words and provides examples without first checking the student's recall or understanding, which is overhelping. The student had just heard these definitions."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "let's take a break from the vocabulary and go back to math for a moment. I know we were working on verb tenses earlier, but I want to check in on how you're doing with something else. Let me ask you a question to see where you're at. If I have 12 apples and I give away 5, how many apples do I have left? Can you explain your thinking?",
+      "reason": "The tutor abruptly switches from vocabulary to a basic math problem (subtraction) without any contextual reason or student request. This is a complete departure from the current topic and the previous topic (verb tenses) and is not appropriate for the flow of the conversation."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 226,
+    "moment_id": "balanced_520:6f2cb39d-1c6b-543d-aa6b-a75fddefc244_14892eb2-4f6f-5bb6-af7d-6dea422bdc32_10663abe-0e15-581d-8794-909979e9a3d2__hum_189_212",
+    "student_id": "14892eb2-4f6f-5bb6-af7d-6dea422bdc32",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "a8b3565f2cc81303a85bc86ecab636dd706b63f64cac177485027caf6b8a969a"
+}

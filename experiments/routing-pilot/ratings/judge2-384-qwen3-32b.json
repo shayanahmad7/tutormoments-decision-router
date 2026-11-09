@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "self_detailed",
+    "C3": "jev_label",
+    "C4": "force_rigor",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have 4 groups of 2, how many would that be in total?",
+      "reason": "Offers a concrete grouping interpretation as a hint to scaffold the student's thinking on 4×2 after multiple wrong answers, without giving the answer away."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 4 + 4? That's the same as 4 times 2.",
+      "reason": "Provides a useful reframing of multiplication as repeated addition to help the student access 4×2 after giving nonsensical answers, appropriate scaffolding for this student's level."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's count together: two in the first group, two in the second, two in the third, and two in the fourth. That's 2 + 2 + 2 + 2.",
+      "reason": "Over-breaks the problem by walking through every step of the counting process and setting up the addition expression, leaving almost nothing for the student to do independently."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if you have four groups of two apples, how many apples do you have? Think about it, and tell me how you get the answer.",
+      "reason": "Acknowledges the student's errors, offers a concrete grouping hint, and asks the student to explain their reasoning, adding a layer of justification beyond just getting the answer."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Maybe draw four fingers and count them?",
+      "reason": "Suggests a concrete physical strategy (finger counting) to scaffold 4×2 after repeated wrong answers, appropriate to the student's demonstrated level."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 384,
+    "moment_id": "balanced_520:d1e2d8d9-27ba-5061-86f7-daa2eb7e5097_6859ec65-4e1a-5d3a-a5f2-743446d09885_326cdc5a-f709-569b-9605-238b967ac04c__hum_351_366",
+    "student_id": "6859ec65-4e1a-5d3a-a5f2-743446d09885",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "c50ac4b25c3098b9acf2aae3457bc27175fa744891f88af5d1f15bb6ce1a6c65"
+}

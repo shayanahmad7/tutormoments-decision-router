@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We know that 48 is made up of 40 and 8, right? So if we break it down, we can write 48 as 40 + 8",
+      "reason": "The tutor has already explained the distributive method and place value concept extensively; this reply re-explains it and then essentially walks the student to the answer by restating the equation structure, over-breaking the work into leading steps without evidence the student needs this level of support."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what number, when added to 8, gives you 48",
+      "reason": "Appropriately brief follow-up that references the distributive method just taught and asks the student to supply the missing value, maintaining cognitive demand without giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means the star should be 40",
+      "reason": "Directly supplies the answer (40) and then explains the reasoning, removing all productive work the student could have done after the tutor's prior explanation."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number, when added to 8, gives us 48? Can you figure out what the star should be?",
+      "reason": "Frames the question in a helpful way by connecting the star to the decomposition of 48, then asks the student to determine the value independently, appropriate given the prior instruction."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about place value — what's the tens part of 48, and what's the ones part?",
+      "reason": "Connects directly to the place value discussion the tutor just had, provides a useful hint about decomposition, and asks the student to supply the parts themselves without giving the answer."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 232,
+    "moment_id": "balanced_520:742de3dd-68d1-5190-9dbf-86d3a1d8abff_15d9f73f-ab05-5288-8db7-e662535c819a_2dc3d3d4-1e14-5595-a485-0e47c8fa74a1__hum_133_135",
+    "student_id": "15d9f73f-ab05-5288-8db7-e662535c819a",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "ab493d6ca7da20b877c31f4990c5b5495a85d2af20cfa2522806ecab581427c5"
+}

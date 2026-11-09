@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what a fraction is?",
+      "reason": "The tutor asks a foundational question to assess the student's prior knowledge, which is a good scaffolding technique."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what you know about fractions? Maybe we can build from there.",
+      "reason": "The tutor asks an open-ended question to gauge the student's understanding of fractions, which is a good way to scaffold the learning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what you know about fractions? Maybe we can build from there.",
+      "reason": "The tutor asks an open-ended question to gauge the student's understanding of fractions, which is a good way to scaffold the learning."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Have you heard of fractions before? If so, what do you remember about them?",
+      "reason": "The tutor asks about prior knowledge of fractions, which is a good scaffolding step before diving into equivalent fractions."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you shade in half of this shape? Take your time and show me how you would do it.",
+      "reason": "The tutor provides a concrete task for the student to demonstrate their understanding of fractions, which is both scaffolding and rigor. It allows the student to show what they know actively."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 31,
+    "moment_id": "balanced_520:1f566292-5dd8-51f2-9918-2cb52ca6f4e8_24521773-2fb9-5560-ba51-bc3a095f57a8_5aa741b7-1895-5b1a-acc7-cbe716cc3e00__hum_57_57",
+    "student_id": "24521773-2fb9-5560-ba51-bc3a095f57a8",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "d029ae98bf9482f6647fb5bcc5b331bd4760c077ca80e3a9dc3cf66e150b45ff"
+}

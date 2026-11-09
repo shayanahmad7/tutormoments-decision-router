@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let's try to figure out how many fifths are in 2 wholes",
+      "reason": "Ignores that the student already answered 'Ten' correctly; re-poses the problem as unsolved"
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain how you got 10 as the answer? What does dividing by a fraction mean",
+      "reason": "Confirms the correct answer and asks for justification/explanation, appropriate rigor after a correct response"
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since one whole has 5 fifths, 2 wholes would have 5 × 2 = 10 fifths. That's why the answer is 10",
+      "reason": "Immediately supplies the full reasoning after the student got the answer right, leaving nothing for the student to explain or justify"
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "how many of those pieces would you have? Can you count how many fifths are in one whole first",
+      "reason": "Ignores the student's correct answer of 'Ten' and re-poses the problem as if unanswered"
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain how you got that? For example, can you connect this to the model we looked at earlier",
+      "reason": "Confirms the answer and asks for explanation with a meaningful connection to prior work, promoting transfer and justification"
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 157,
+    "moment_id": "balanced_520:46a653eb-0895-5fc1-b990-2bd149aaaf39_39ac115b-2fe5-5787-9ca7-1e2174cf337e_d39b6568-2a41-5787-bc9b-9d9490406a1f__hum_140_158",
+    "student_id": "39ac115b-2fe5-5787-9ca7-1e2174cf337e",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "cfd3816fe6b033b4203fc6b4e3be7043811bb61bcab03ad9a06255f27de0c508"
+}

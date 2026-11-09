@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured that out?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. The question is appropriate for the student's current response."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what pattern you see when counting backwards by hundreds? What number comes after 438 if we keep subtracting 100?",
+      "reason": "The tutor provides scaffolding by asking about the pattern and then guiding the student to subtract 100, which is a helpful hint for the current problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out the pattern and why the missing number is 338?",
+      "reason": "The tutor gives away the answer (338) before asking the student to explain, which is overhelping. However, asking for an explanation does add rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me check your thinking. If we're going down by hundreds from 538 to 438, what would the next number be before 238? What pattern are you seeing in the numbers?",
+      "reason": "The tutor asks the student to explain their thinking and identify the pattern, which promotes rigor. The questions also provide scaffolding by directing the student's attention to the operation and pattern."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Yes, that's right! Since Jack is skip counting in hundreds and the numbers are going down — 538, 438, [box], 238 — we subtract 100 each time. So after 438, the next number would be 338. That means the number in the box is **338**. Great job figuring that out!",
+      "reason": "The tutor confirms the student's answer and then provides the full explanation and solution, which is overhelping as the student could have explained their own reasoning."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 486,
+    "moment_id": "balanced_520:fb5ba1d4-bc48-5f4e-8b37-69eb67671729_d206debb-e1f5-50db-bc3f-33c0ad14afb2_9a4efc06-de32-568f-b668-fcda67d8f994__hum_292_297",
+    "student_id": "d206debb-e1f5-50db-bc3f-33c0ad14afb2",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "815c35d2e48045a3b35607dbd2582f901ce98bfe6e57b1d8cef6b0271d43d474"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "force_rigor",
+    "C3": "jev_label",
+    "C4": "self_detailed",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many times does ten fit into this number",
+      "reason": "Provides a step-by-step breakdown and a concrete hint about counting tens, which over-breaks the problem and leads the student too directly to the answer without letting them attempt it first."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what division means",
+      "reason": "Asks the student to reason from the meaning of division, which is appropriately open-ended and places cognitive demand on the student without giving away the method or answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if I have ten and I add ten again, that's twenty. Add ten more, that's thirty. So how many tens did we add",
+      "reason": "Walks through the entire reasoning process for the student, leaving only the final count as student work; this over-breaks the problem and supplies the key reasoning step."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "thirty candies and you want to divide them equally among ten friends",
+      "reason": "Offers a concrete real-world representation to make division accessible, consistent with the tutor's earlier orange analogy style, without giving away the answer or the method."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 10 times 3? How does that help you figure out 30 divided by 10",
+      "reason": "Prompts the student to use the inverse relationship between multiplication and division, connecting to multiplication work done earlier in the session, and requires the student to make the connection themselves."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 402,
+    "moment_id": "balanced_520:e1c0ee42-4db2-558d-adf0-557bcb20d715_92058906-7c85-5f08-aba9-adbece587c38_4b416254-d002-5c8f-ae73-a3dc0ab29dbb__hum_267_275",
+    "student_id": "92058906-7c85-5f08-aba9-adbece587c38",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "163f3a2246d9011cd8b3204ea8faca5065bfc1182fb06dec455f5cbb232849a4"
+}

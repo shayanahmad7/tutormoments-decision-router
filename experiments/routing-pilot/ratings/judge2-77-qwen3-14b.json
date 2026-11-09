@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "jev_label",
+    "C3": "force_scaffolding",
+    "C4": "force_rigor",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which one is bigger, 436 or 460?",
+      "reason": "Responds to student's answer attempt by redirecting to compare the two numbers, prompting student to reason rather than confirming or denying, appropriate to the comparing 3-digit numbers problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit comes after 4 in each number?",
+      "reason": "Guides student to compare tens digits as a strategy, breaking the comparison into a productive substep without giving away the answer, fitting the current problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which one is larger? What does that tell us about the symbol",
+      "reason": "Prompts student to identify the larger number and connect it to symbol choice, appropriate scaffolding without overhelp for the comparing 3-digit numbers task."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about the digits in the hundreds place",
+      "reason": "Directs student to start with hundreds place comparison, a useful strategy hint that keeps cognitive demand on the student; fits the problem context well."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "that means 436 is less than 460. So the correct symbol would be 'less than.'",
+      "reason": "Walks through the entire comparison step by step and states the answer outright, removing the cognitive work the student could have done, especially since the student had just attempted an answer."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 77,
+    "moment_id": "balanced_520:2a7d8ede-7bba-510b-a7f9-c73986d1256f_e2c719d2-6ead-55bc-b8f2-a2b38847592b_8580b055-c717-54a9-8548-e7b24d4910f8__hum_111_113",
+    "student_id": "e2c719d2-6ead-55bc-b8f2-a2b38847592b",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "98ba42151d4e8f3a8d454d6ae8ca6da6ffddebaac493e119e4f6e780ae32b56f"
+}

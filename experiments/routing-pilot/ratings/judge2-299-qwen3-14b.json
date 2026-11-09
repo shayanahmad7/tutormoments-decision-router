@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "force_rigor",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you take 11 away from 16?",
+      "reason": "Guides the student to compute Tuesday's shells via a targeted question without giving the answer, appropriate follow-up after the student said 'twenty-one' and the tutor revealed Tuesday = 5."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We take the number of shells from Monday and subtract 11 from it",
+      "reason": "Explicitly states the operation (subtract 11 from Monday's count) before the student has a chance to reason it out, which is overhelp given the student just needs to find Tuesday's count."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we do with 16 and 11?",
+      "reason": "Prompts the student to identify the operation themselves without supplying it, appropriate scaffolding after the student's incorrect answer of twenty-one."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can we use subtraction to find out how many she collected on Tuesday?",
+      "reason": "Hints at subtraction as the operation, which is mild scaffolding; slightly leading but not fully overhelp since the arithmetic is still left to the student."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain your reasoning?",
+      "reason": "Asks the student to justify how they arrived at 5 for Tuesday, increasing cognitive demand through explanation; no scaffolding is provided, just a request for reasoning."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 299,
+    "moment_id": "balanced_520:965bb786-f5e1-5ee7-b20d-5b66b0765519_90dd669f-7d0a-51fd-9501-d305b1bf9356_0014e499-e120-5314-b3d0-962b227fcce0__hum_15_34",
+    "student_id": "90dd669f-7d0a-51fd-9501-d305b1bf9356",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "eb62432395dccbc7cd024bc7b7f926310525e158425bb495531d509826079b72"
+}

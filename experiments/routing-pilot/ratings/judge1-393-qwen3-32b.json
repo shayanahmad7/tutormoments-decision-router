@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number does each side represent? Can you tell me how you would subtract these?",
+      "reason": "The tutor identifies the numbers represented by the blocks and then asks the student to explain their subtraction strategy, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with the tens. How many tens are left after you take 2 tens away from 4 tens?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by focusing on the tens place first, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the first step you can take to solve this?",
+      "reason": "The tutor clearly states the problem in numerical form and then asks the student to identify the first step, which encourages independent thinking and problem-solving."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 44 minus 20 first? And then, what is the result minus 6? Can you break it down like that?",
+      "reason": "The tutor suggests a specific strategy (subtracting in parts) to solve the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what you think the answer might be?",
+      "reason": "The tutor clearly explains the problem and then asks the student for their answer, which promotes independent problem-solving."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 393,
+    "moment_id": "balanced_520:db46772f-cb47-5ca1-8f0f-90e6f67b45c4_ac29d076-88b2-5238-bb1c-c51c414e5029_9d66ec13-35fd-5c4a-ad2d-1b1b1659e35d__hum_106_139",
+    "student_id": "ac29d076-88b2-5238-bb1c-c51c414e5029",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "ec7713e26535b3b9eac0c3f7129ff4a4a384c34582730a860cedbcd87447710b"
+}

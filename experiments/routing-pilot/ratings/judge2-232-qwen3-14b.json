@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would the other part be?",
+      "reason": "Asks the student to identify the missing part of 48 broken into (? + 8), which is a targeted guided substep that requires the student to supply the answer independently, fitting the current problem perfectly."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would the other part be?",
+      "reason": "Nearly identical to C1; sets up the decomposition of 48 and asks the student to supply the missing part, appropriate scaffolding with student responsibility for the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Therefore, the digit that should replace the star is 40... the correct answer is B: 40",
+      "reason": "Walks through the entire solution, identifies the answer, verifies it, and even names the correct answer choice, leaving nothing for the student to do."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we take away 8 from 48, what number are we left with?",
+      "reason": "Provides a concrete arithmetic hint (subtract 8 from 48) to guide the student toward the answer without supplying it, appropriate scaffolding that keeps cognitive demand on the student."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the star should be forty... So the star should be forty. What do you think?",
+      "reason": "Explains the full distributive breakdown, computes both partial products, verifies the answer, and states the answer twice before asking the student, leaving no meaningful work for the student."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 232,
+    "moment_id": "balanced_520:742de3dd-68d1-5190-9dbf-86d3a1d8abff_15d9f73f-ab05-5288-8db7-e662535c819a_2dc3d3d4-1e14-5595-a485-0e47c8fa74a1__hum_133_135",
+    "student_id": "15d9f73f-ab05-5288-8db7-e662535c819a",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "e72affdc1ac5044824ce315c937e82a132660115e0db9919aa1a32069d62cd23"
+}

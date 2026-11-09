@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "jev_label",
+    "C3": "force_scaffolding",
+    "C4": "force_rigor",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let me know if you want to try another problem or go over this one more.",
+      "reason": "Student just answered 'A' for the current problem but the tutor hasn't confirmed or addressed that answer. This reply ignores the student's response entirely and moves on as if the problem is finished."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since 3 is less than 6, that means 436 is less than 460. So, what symbol should go in the gap?",
+      "reason": "The reply walks through the entire reasoning process for the student, supplying the comparison logic and conclusion before asking for the symbol—overhelping by doing the cognitive work the student could do."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which is smaller, 3 or 6? What does that tell you about the numbers?",
+      "reason": "Guides the student to compare the tens digits as a scaffold, then asks the student to draw the conclusion themselves, maintaining appropriate cognitive demand without giving away the answer."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think the answer is A? Let's look at the numbers 436 and 460. What do you notice about the digits in each place?",
+      "reason": "Asks the student to justify their answer and prompts digit-by-digit comparison, promoting reasoning without supplying the answer or the comparison steps."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "is 436 less than, greater than, or equal to 460?",
+      "reason": "Simply restates the question already on screen without adding any scaffolding or pushing for justification; generic and adds little beyond what the problem already presents."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 77,
+    "moment_id": "balanced_520:2a7d8ede-7bba-510b-a7f9-c73986d1256f_e2c719d2-6ead-55bc-b8f2-a2b38847592b_8580b055-c717-54a9-8548-e7b24d4910f8__hum_111_113",
+    "student_id": "e2c719d2-6ead-55bc-b8f2-a2b38847592b",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "45f28eefea20d13ae21ca8cb331c99fed38523b086441794b13e3e5612a17d2f"
+}

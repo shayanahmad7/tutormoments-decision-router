@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "self_detailed",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think about how much more or less 920 is than 910?",
+      "reason": "The tutor asks the student to compare the calculated sum with the target sum, which is a helpful step in identifying the correct answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, add 40 to 872. What do we get? Then, add 8 to that result. What is the final answer?",
+      "reason": "The tutor breaks down the addition into smaller, more manageable steps, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What could you do next to find the correct number?",
+      "reason": "The tutor acknowledges the student's correct calculation and then prompts them to think about the next step to solve the original problem, providing a gentle nudge without giving away the answer."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's try subtracting 872 from 910. What do you get?",
+      "reason": "The tutor directly suggests the correct operation (subtraction) to find the missing number, which is a form of scaffolding."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we subtract 872 from 910, what do we get? That will tell us exactly what number is missing. Let's do that together. What is 910 minus 872?",
+      "reason": "The tutor explains why subtraction is the correct approach and then explicitly asks the student to perform the subtraction, guiding them to the solution."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 89,
+    "moment_id": "balanced_520:2aba7a56-440c-5dcc-b7eb-95bca38eb2df_5da68193-6b53-519e-a57e-03f770db45bd_8aebd464-4086-5169-bc38-6bd33fa38b2a__hum_134_140",
+    "student_id": "5da68193-6b53-519e-a57e-03f770db45bd",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "eb4b99c1fbe2102202e13fe6dbb7cbf7547ed59ba38f6eee10d8595be87ae633"
+}

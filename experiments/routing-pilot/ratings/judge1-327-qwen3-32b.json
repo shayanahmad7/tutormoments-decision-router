@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, growth mindset is a really cool idea! It means that you believe you can get better at things if you practice and keep trying. It's like thinking, \"I might not be good at something right now, but if I work hard and keep learning, I can get better!\" \n\nFor example, when you were learning to make bracelets, maybe it was tricky at first, but now you can make them really fast. That’s a growth mindset in action! \n\nSo, what do you think? Can you think of something that used to be hard for you, but now you can do it?",
+      "reason": "The tutor defines growth mindset clearly and provides a relevant example from the student's previous conversation (making bracelets). This helps the student understand the concept before being asked to apply it."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That's okay—let's explore it together. Can you think of something that used to be really hard for you, but now you can do it? Maybe something related to making bracelets, learning languages, or even math? Once you share that, we can talk about how your brain grew to make that happen!",
+      "reason": "The tutor acknowledges the student's lack of knowledge and then immediately prompts them to think of an example, providing specific, relevant suggestions from their previous conversation (bracelets, languages, math). This scaffolds the task by narrowing down the possibilities for the student."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That's okay. Let's start with the first question on the slide: \"What's one thing that used to be hard, but you can now do?\" Can you think of something that you found challenging at first but now you're good at?",
+      "reason": "The tutor acknowledges the student's lack of knowledge and then immediately directs them to the first question on the slide. This is a direct prompt for the student to engage with the task, promoting rigor by asking them to apply the concept without first defining it."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That's okay! A **growth mindset** is the idea that you can get better at things if you practice and keep trying, even if something is really hard at first. It's about believing that your abilities can grow with effort and learning.\n\nFor example, maybe there was a time when you couldn't make a bracelet in five minutes, but now you can! That’s because you practiced and kept trying.\n\nLet’s start with the first question on the slide: **\"What's one thing that used to be hard, but you can now do?\"** Can you think of something like that?",
+      "reason": "The tutor provides a clear definition of growth mindset and then connects it to a specific, recent example from the student's experience (making bracelets). This helps the student understand the concept before being asked to apply it, making the task more accessible."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "A growth mindset means believing that you can get better at things with practice and effort. It’s like when you used to find something hard, but with time and trying, you got better at it. Can you think of something that used to be hard for you, but now you can do it?",
+      "reason": "The tutor defines growth mindset in a simple, accessible way and then immediately prompts the student to think of a personal example. The definition helps scaffold the student's understanding before they are asked to apply it."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 327,
+    "moment_id": "balanced_520:ab0dd259-a827-5e09-9b3e-5eadcf348508_bf48962c-1c6e-53d1-9687-d12535f72c99_b2d00090-4129-5f8b-8fd4-7860d5fe7c21__hum_121_125",
+    "student_id": "bf48962c-1c6e-53d1-9687-d12535f72c99",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "a8075bda4e70a0df472ef1f7ce1557239b816d6dc0cc2c19c9dbca6327d7b52f"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "original",
+    "C4": "force_rigor",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation is true based on the angles shown?",
+      "reason": "Asks the student to justify their answer choice D, increasing cognitive demand without giving away the answer or providing unnecessary hints."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation would be true based on the diagram?",
+      "reason": "Prompts the student to justify their selection of D, appropriately pressing for reasoning without scaffolding or overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Option B says 'a = 70', which we already determined is true because opposite angles are equal.",
+      "reason": "Fully works through the problem, identifies the correct answer, and explains why all other options are wrong—supplying reasoning the student could productively provide themselves."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that equation would be true based on the angles shown?",
+      "reason": "Asks the student to justify their answer D, increasing cognitive demand without providing hints or doing the work for them."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you know about angles formed by intersecting lines?",
+      "reason": "Prompts the student to recall a relevant angle property (vertically opposite angles) as a hint to help evaluate the answer choices, which is targeted scaffolding appropriate to the problem."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 201,
+    "moment_id": "balanced_520:5ed91b05-935e-5367-a370-4f8ae9dee79f_54cc8df7-d9eb-5741-99e6-6abfcf591bca_56fde3ca-55ae-51ce-a9ab-b35d4f793d15__hum_135_139",
+    "student_id": "54cc8df7-d9eb-5741-99e6-6abfcf591bca",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "d26f2d2321b89f268c27f87d2fcbad97538873cc583f9958c79cad4e7bf26936"
+}

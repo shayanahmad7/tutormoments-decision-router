@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which diagram shows this?",
+      "reason": "The tutor re-explains the problem and the components of a bar model, then asks the student to identify the correct diagram, which is a good scaffold. The question at the end promotes rigor by asking the student to apply the explanation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Okay, let's go back to the problem with the apples. You said the answer is C: 13 + 37 = ?. Can you explain why that equation makes sense for finding the total number of apples?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. However, the tutor is referring to the previous problem about apples, while the current problem is about paperclips. This makes the context fit weak."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Let’s go back to the problem with the apples. The shop has 13 green apples and 37 red apples. If we want to find the total number of apples, what does the equation need to show? Can you explain why the equation you chose represents the total?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. However, the tutor is referring to the previous problem about apples, while the current problem is about paperclips. This makes the context fit weak."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, the diagram should show a whole of 68, one part of 23, and the other part labeled with a question mark. That matches with option B.",
+      "reason": "The tutor provides a detailed explanation of how the bar model should be constructed based on the problem, which is good scaffolding. However, the tutor then directly states that option B is the correct answer, which is overhelping as the student could have identified this themselves after the explanation."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Exactly! Option B shows the total number of paperclips Sarah started with (68) in the big box, and then one part is the number she gave away (23), with the other part labeled as the unknown (how many she has left). That matches the problem perfectly. Great job figuring that out!",
+      "reason": "The tutor directly provides the correct answer and explanation, which is overhelping. The student has not yet chosen an answer for this problem, so the tutor is preempting their response."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 18,
+    "moment_id": "balanced_520:1789ab1a-d177-547f-9b1f-1674e5700baf_5fc5a091-b96b-53d8-9755-dec4ae394f64_bdf53111-1eda-5887-ba3f-4751d6dc3a14__hum_54_61",
+    "student_id": "5fc5a091-b96b-53d8-9755-dec4ae394f64",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "e61cf8d21496ac1f31fa4e4029360bde6fa3ca279c8e1a86a5778a8eedd84970"
+}

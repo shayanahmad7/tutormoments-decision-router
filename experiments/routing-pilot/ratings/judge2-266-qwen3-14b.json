@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed",
+    "C4": "force_rigor",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word do you think fits best here? Why?",
+      "reason": "Asks the student to both select the word and justify their choice, increasing cognitive demand through explanation. No extra hints provided beyond the sentence itself."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what the sister is doing with the violin",
+      "reason": "Provides a contextual hint directing the student's attention to the sister's action, scaffolding the word choice without giving the answer away."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which word do you think fits best here — practice, expert, digital, or precise?",
+      "reason": "Explicitly lists all four vocabulary options as a scaffold, reducing the retrieval demand compared to recalling them independently, though the student could have done this themselves."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "which word do you think fits best? Why?",
+      "reason": "Asks the student to choose and justify without any additional hints, maintaining cognitive demand. Skips confirming the second answer but moves naturally to the next sentence."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word do you think fits here?",
+      "reason": "Simply prompts the student for the next answer without scaffolding or added rigor; a generic next-step prompt."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 266,
+    "moment_id": "balanced_520:7eb4777b-92bc-5f5f-abd6-a6fd4173384c_4df3f0a2-38a8-5378-92e5-e217be975c61_1675a4b8-b81f-5e32-b26e-617bacf1cac8__hum_27_31",
+    "student_id": "4df3f0a2-38a8-5378-92e5-e217be975c61",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "95afc021ddb7fad2bb88a54a9f298985670aaf7604bc0112007e2d9a8dc19d49"
+}

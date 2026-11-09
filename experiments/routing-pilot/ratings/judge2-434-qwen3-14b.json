@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "six out of six is another way of writing one",
+      "reason": "The tutor supplies the answer (six out of six = one) that the student should produce, then immediately pivots to a new question about the circle, giving away the conceptual point before the student can correct herself."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "six out of six is the same as one whole box. So, when the numerator and the denominator are the same, like 6/6, it equals one",
+      "reason": "The tutor fully explains the concept and supplies the answer the student should have worked out, over-breaking the step and removing the cognitive demand after the student gave a wrong answer that could have been redirected with a lighter prompt."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Six out of six is the same as one whole, right? So six sixths is another way of writing the number one",
+      "reason": "The tutor directly states the answer (6/6 = 1) rather than eliciting it from the student, removing the productive struggle after the student's incorrect response of 'one sixth.'"
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So six out of six is another way of writing what number?",
+      "reason": "Repeats the tutor's own question verbatim, giving the student another chance to self-correct without supplying the answer; appropriate minimal re-prompt after the student's error."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So six out of six is another way of writing what number?",
+      "reason": "Identical to C4—repeats the original question to re-elicit the correct answer from the student without giving it away, maintaining student responsibility."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 434,
+    "moment_id": "balanced_520:edac2eb8-8342-54f6-afd9-28f0e974e987_160d83b3-71b7-5ce8-af38-023ce32665f6_b57ad33f-c9ef-5a7a-9d94-be7a411b92ce__hum_378_396",
+    "student_id": "160d83b3-71b7-5ce8-af38-023ce32665f6",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "b4874cda23ce436b5a6aea5be5b3539dbd1b31dbb2ac971a4fad3d72ca7f87ec"
+}

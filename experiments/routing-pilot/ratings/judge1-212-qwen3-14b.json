@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "jev_label",
+    "C4": "original",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you write down the new numbers and finish the subtraction?",
+      "reason": "The tutor confirms the student's correct step and then prompts them to apply that understanding to complete the problem, which is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But how does that affect the subtraction problem? What should we do next with the numbers?",
+      "reason": "The tutor confirms the student's correct step and then asks a guiding question to prompt the student to think about the next step, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, the final answer is 37.",
+      "reason": "The tutor explains the entire solution to the problem, including the final answer, which the student could have productively worked out themselves."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Putting it all together, the answer is 37.",
+      "reason": "The tutor explains the entire solution to the problem, including the final answer, which the student could have productively worked out themselves."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you write down the new number in the tens place and then finish solving 14 minus 7?",
+      "reason": "The tutor confirms the student's correct step and then prompts them to apply that understanding to complete the problem, which is a good balance of scaffolding and rigor."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 212,
+    "moment_id": "balanced_520:67accfc6-80b8-5117-b19c-bb04c151931d_194a468a-5029-5af5-9750-8c27d3274adf_28f479ca-ca56-5b68-b002-a31715fbfa2d__hum_169_198",
+    "student_id": "194a468a-5029-5af5-9750-8c27d3274adf",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "93f1993e76df9eba1198185a753dc5c491ef236100199db0b6ab865b14fa53ef"
+}

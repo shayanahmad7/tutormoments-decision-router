@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "256 divided by 8 gives us 32",
+      "reason": "Confirms the answer and explains the reasoning the student could have supplied, then adds a transfer question. The explanation of the method is overhelp since the student already demonstrated the work. The follow-up question does add rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the formula for the area of a rectangle, and how can you use it to find the missing side length?",
+      "reason": "Prompts the student to articulate the formula and connect it to the procedure they just used, which is appropriate scaffolding after a correct answer to deepen understanding without giving anything away."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you found the value of x?",
+      "reason": "Asks the student to justify their correct work, increasing cognitive demand through explanation. Brief but directly tied to the just-completed problem."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What steps did you take to find the value of x?",
+      "reason": "Requests justification and articulation of the student's process, promoting reflection on correct work without providing any answers or hints."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how you knew to divide 256 by 8 to find x",
+      "reason": "Asks the student to explain the reasoning behind their correct operation, requiring conceptual justification and connection to the area formula."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 497,
+    "moment_id": "balanced_520:fbc0a1bc-dad5-5081-9c46-f89b58c43ba0_afbeb032-32c1-58b7-80ad-72eec1254828_821bb579-2ee2-5167-890b-af490ea40d80__hum_31_38",
+    "student_id": "afbeb032-32c1-58b7-80ad-72eec1254828",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "78020cb3763b946feec2a764184c99400980ce457a3e7be5ecf1bb2e78d88a7d"
+}

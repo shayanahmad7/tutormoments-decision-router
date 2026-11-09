@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "force_rigor",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 16 minus 11?",
+      "reason": "Appropriately re-focuses the student on the Tuesday calculation after the tutor just confirmed the answer (5) and total (21), asking the student to compute the subtraction themselves rather than just accepting the tutor's statement."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "we subtract eleven from sixteen. What is sixteen minus eleven?",
+      "reason": "The reply scripts out the entire reasoning chain including the operation to use before asking the student anything, and it simulates student responses in a way that over-structures the work. The problem has already been resolved in the conversation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 16 minus 11?",
+      "reason": "Concisely re-anchors the student on the Tuesday step and asks them to compute it, consistent with where the conversation left off after the tutor revealed the answer of 5."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how we get the total number of shells she collected altogether?",
+      "reason": "Builds on the just-confirmed values (16 Monday, 5 Tuesday) and asks the student to explain the totaling step, promoting justification without over-scaffolding."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many did she collect on Tuesday? What is 16 minus 11?",
+      "reason": "Directly follows up on the tutor's just-given answer of 5 by asking the student to verify the subtraction themselves, appropriate scaffolding with student responsibility."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 299,
+    "moment_id": "balanced_520:965bb786-f5e1-5ee7-b20d-5b66b0765519_90dd669f-7d0a-51fd-9501-d305b1bf9356_0014e499-e120-5314-b3d0-962b227fcce0__hum_15_34",
+    "student_id": "90dd669f-7d0a-51fd-9501-d305b1bf9356",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "568856f6c336dc12e05ba4ce503dcb0615f322d418a60d5239ca5aab8a47f4dd"
+}

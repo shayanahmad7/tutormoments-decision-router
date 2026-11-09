@@ -27,6 +27,7 @@ class RoutingAblation(unittest.TestCase):
  def test_strict_rating_types(self):
   rating={'id':'C1','scaffolding':True,'rigor':False,'overhelp':False,'math_error':False,'uncertain':False,'context_fit':2,'evidence':'text','reason':'reason'}
   self.assertEqual(len(r.parse_ratings(json.dumps({'ratings':[rating]}),['C1'])),1)
+  self.assertEqual(len(r.parse_ratings('Brief preface.\n```json\n'+json.dumps({'ratings':[rating]})+'\n```',['C1'])),1)
   rating['overhelp']='false'
   with self.assertRaises(AssertionError):r.parse_ratings(json.dumps({'ratings':[rating]}),['C1'])
  def test_budget_stops_before_network(self):

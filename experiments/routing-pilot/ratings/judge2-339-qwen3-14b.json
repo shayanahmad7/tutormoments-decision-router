@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "self_detailed",
+    "C4": "original",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What if we had a remainder in the division step? How would that affect our check?",
+      "reason": "Builds on the inverse relationship just demonstrated and pushes the student to reason about what a remainder would mean, increasing cognitive demand without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how does that relate to the original multiplication problem we did earlier? What does that tell us about the relationship between multiplication and division?",
+      "reason": "Asks the student to articulate the inverse relationship between multiplication and division, which is exactly what the tutor just pointed out, requiring the student to explain the connection themselves."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how these two operations are connected in this case?",
+      "reason": "Asks the student to explain the inverse relationship, promoting justification and connection, though it restates the key observation before asking, slightly reducing demand."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "let me just walk through it one more time with you to make sure everything clicks",
+      "reason": "Fully re-explains every step of both the multiplication and division without evidence the student needs it; the student had just successfully completed the problem, so this is unsolicited over-explanation."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "let's try something similar but with a new number. Let's say we take 428 and multiply it by 6",
+      "reason": "Moves to a new multiplication problem rather than consolidating the inverse-relationship insight the tutor just highlighted; misses the conceptual moment and shifts to procedural practice without connecting to what was just discussed."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 339,
+    "moment_id": "balanced_520:badd87ad-b9ea-57f5-864a-80b83acf57c0_d3a947b2-91c7-5466-87c5-417f128a975e_e879094a-34d1-5090-8d00-ba9fc5ae48da__hum_541_621",
+    "student_id": "d3a947b2-91c7-5466-87c5-417f128a975e",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "48cb5e4794f8da6811d324d5274069bff9dd4a2c3c81bd3db78f017d1596b5b1"
+}

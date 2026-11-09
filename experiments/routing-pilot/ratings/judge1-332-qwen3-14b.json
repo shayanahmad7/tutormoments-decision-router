@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "jev_label",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, 3 times 3 is 9, and 4 times 1 is 4. That gives us 9/4.",
+      "reason": "The tutor provides the full solution to the problem, which the student could have worked out with more targeted guidance."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we multiply the numerators together, what do we get?",
+      "reason": "The tutor reminds the student of the setup and then asks a specific question to guide them to the next step, allowing the student to perform the calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if we only multiply the numerator of 3/4 by 3, what would that give us?",
+      "reason": "The tutor references the feedback from the platform and then asks the student to apply that specific instruction, guiding them without giving the answer."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, for 3/4 multiplied by 3, you can rewrite 3 as 3/1. Then, multiply the numerators: 3 times 3 is 9. Multiply the denominators: 4 times 1 is 4. That gives you 9/4.",
+      "reason": "The tutor explains the entire process and provides the full solution, which the student could have worked out with more targeted questions."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, what would happen if we just multiplied the numerator, 3, by 3? What would that give us?",
+      "reason": "The tutor clarifies the rule for multiplying a fraction by a whole number, directly addressing the feedback from the platform, and then asks a specific question to prompt the student to perform the calculation."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 332,
+    "moment_id": "balanced_520:b777c136-7736-530e-bc50-759e7befb764_63f97df8-217d-5b77-a0be-5582a1f765b1_6759dc20-c3f2-5c19-abff-f63b70c4b4ed__hum_74_82",
+    "student_id": "63f97df8-217d-5b77-a0be-5582a1f765b1",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "8ab301304c6ee1f398d5f11add04f8ee67af1778ba3f33eb94873f7048ae084e"
+}

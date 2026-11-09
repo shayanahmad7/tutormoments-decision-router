@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "self_detailed",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have a one-third piece already on the canvas, what two smaller fractions could you add together to make another one-third?",
+      "reason": "The tutor rephrases the question and provides a hint about smaller fractions, which is appropriate scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "If I have one-third already on the canvas, what fraction could I add to it so that together they make one whole?",
+      "reason": "The tutor changes the question entirely from making 'another third' to making 'one whole', which is not what the student was working on or what the tutor previously asked."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "If you have a third already on the canvas, what could you add to it to make another third? For example, if you have one-third already, what fraction could you add to it so that together they make one whole?",
+      "reason": "The tutor asks the original question, then immediately follows it with a different, unrelated question about making a whole, which is confusing and overhelpful by changing the task."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What if you tried using two smaller fractions that add up to one-third? Can you think of any fractions that could work?",
+      "reason": "The tutor rephrases the question and provides a hint to think about smaller fractions, which is appropriate scaffolding."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What two fractions could you add together to make one-third? Think about smaller fractions that might fit. Can you try one?",
+      "reason": "The tutor rephrases the question and provides a hint to think about smaller fractions, which is appropriate."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 192,
+    "moment_id": "balanced_520:5b6fd601-b7fb-5781-9f76-177d5019131b_296b3de9-99a4-51af-ad4a-1031f3b1233b_d00eebb2-4153-5207-8c63-0c0f1b415b26__hum_52_58",
+    "student_id": "296b3de9-99a4-51af-ad4a-1031f3b1233b",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "9b71e534e970f7ab1b08f1de57eb514eeb7e4616d4a068d60bb968aca1123bc9"
+}

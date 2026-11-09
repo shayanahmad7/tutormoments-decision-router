@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding",
+    "C4": "self_detailed",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose division for this problem?",
+      "reason": "The student has already correctly identified the operation and the answer. This question asks them to justify their choice, increasing rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why are we dividing in this problem?",
+      "reason": "The student has already correctly identified the operation and the answer. This question asks them to justify their choice, increasing rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 24 divided by 4?",
+      "reason": "The student has already written '24 ÷ 4 = 6' on the whiteboard, so asking for the answer is overhelping."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing 24 by 4 gives the number of students in each group?",
+      "reason": "The student has already correctly identified the operation and the answer. This question asks them to justify their choice, increasing rigor."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 24 divided by 4?",
+      "reason": "The student has already written '24 ÷ 4 = 6' on the whiteboard, so asking for the answer is overhelping."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 180,
+    "moment_id": "balanced_520:4f9c07d0-d5ee-5c85-b84c-dd5649dae741_ddf22426-058a-5a4b-8e60-3f7ae6d7945f_e719b588-b1e4-5cd4-ae53-efd57d78a602__hum_82_93",
+    "student_id": "ddf22426-058a-5a4b-8e60-3f7ae6d7945f",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "2823e4a6790a5ba48458a1640bdc45508465cb84587a2b2675b86f889d92a82f"
+}

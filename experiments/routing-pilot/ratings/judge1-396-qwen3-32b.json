@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "jev_label",
+    "C4": "original",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Okay, let's go on to multiplication. Are you ready?",
+      "reason": "The tutor has already stated that they are moving on to multiplication and has already asked if the student is ready. This is a repeat of previous statements and does not add value to the conversation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's ten times five? Then think about how that helps you figure out nine times five.",
+      "reason": "The student stated they were thinking of a technique related to 10x5. This response scaffolds by asking for 10x5 and then prompts the student to connect it to 9x5, which is rigorous."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you know that 10 times 5 is 50, then 9 times 5 is just one group of 5 less. So 50 minus 5 is...?",
+      "reason": "The student indicated they were thinking of a technique related to 10x5. This response provides the entire explanation of the strategy and only leaves the final calculation for the student, which is overhelping."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If ten times five is fifty, then nine times five is just one group of five less. So fifty minus five is forty-five. That's a good strategy. Nice job using that!",
+      "reason": "The tutor completely solves the problem for the student and then praises them for using a strategy they didn't actually get to use. This is overhelping and removes any opportunity for the student to apply the strategy themselves."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That's a good strategy—using what you know about 10 times 5 to help with 9 times 5. Can you explain how that helps you figure out 9 x 5?",
+      "reason": "The student stated they were thinking of a technique related to 10x5. This response acknowledges the student's idea and then asks them to explain their thinking, which is a good way to promote rigor and understanding."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 396,
+    "moment_id": "balanced_520:dfcff302-1878-50ff-80d1-a8eafbe857a5_4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58_cfcc22bc-9a1a-50ad-b725-17d3645fd77d__hum_208_214",
+    "student_id": "4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "86146552e19a97c35bd03c47a5c82dfecf66aa490520aa67dfd9ce73d5ee15fa"
+}

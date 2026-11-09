@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 18 divided by 5? That will help us start solving this division problem.",
+      "reason": "The student suggests dividing 75 by 5, which is not the correct first step in long division. The tutor redirects the student to the correct first step (18 divided by 5) and explains why it's the correct first step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You mentioned seventy-five divided by five — that's a good thought, but we need to start with the first part of the number. What is eighteen divided by five? That will help us get started.",
+      "reason": "The student suggests dividing 75 by 5, which is not the correct first step in long division. The tutor redirects the student to the correct first step (18 divided by 5) and explains why it's the correct first step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is eighteen divided by five, and why does that make sense as our first step?",
+      "reason": "The student suggests dividing 75 by 5, which is not the correct first step in long division. The tutor redirects the student to the correct first step (18 divided by 5) and asks the student to explain why it's the correct first step, which adds rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since 5 doesn't go into 1, we look at the first two digits, which is 18. So, what is 18 divided by 5?",
+      "reason": "The student suggests dividing 75 by 5, which is not the correct first step in long division. The tutor redirects the student to the correct first step (18 divided by 5) and explains why it's the correct first step."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can we divide 1 by 5? No, so we look at the first two digits, which is 18. What's 18 divided by 5?",
+      "reason": "The student suggests dividing 75 by 5, which is not the correct first step in long division. The tutor redirects the student to the correct first step (18 divided by 5) and explains why it's the correct first step."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 372,
+    "moment_id": "balanced_520:c64a4cc1-f4e5-5519-bd5a-d88e194a7341_16b91893-0d76-53f1-9bda-1ae2724abfb1_56be1d1e-9d88-5020-a41e-1f5c3bec3b60__hum_263_281",
+    "student_id": "16b91893-0d76-53f1-9bda-1ae2724abfb1",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "0beeb90721974b749809552d04d36e177a2928abcafc02a1f362905c7eeb8ef4"
+}

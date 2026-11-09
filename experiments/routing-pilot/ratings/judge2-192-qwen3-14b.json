@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "force_scaffolding",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": true,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what fraction could I add to it so that together they make one whole",
+      "reason": "The question asks what two fractions make another third, but C1 redirects to making a whole, which changes the mathematical task. Also conflates making a third with making a whole."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What if you tried using two smaller fractions that add up to one-third?",
+      "reason": "Restates the tutor's question clearly, prompts student to think and try without giving away the answer, appropriate to the fraction strips activity."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What two fractions could you add together to make one-third? Think about smaller fractions that might fit.",
+      "reason": "Directly addresses the tutor's question about making a third from two smaller fractions, invites student to try, no overhelp."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about fractions that are smaller than one-third, like one-sixth or one-ninth",
+      "reason": "Provides specific fraction examples (one-sixth, one-ninth) that the student could productively generate, reducing cognitive demand unnecessarily."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": true,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what fraction could you add to it so that together they make one whole",
+      "reason": "Like C1, redirects from making another third to making a whole, which is a different mathematical question and misrepresents the task."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 192,
+    "moment_id": "balanced_520:5b6fd601-b7fb-5781-9f76-177d5019131b_296b3de9-99a4-51af-ad4a-1031f3b1233b_d00eebb2-4153-5207-8c63-0c0f1b415b26__hum_52_58",
+    "student_id": "296b3de9-99a4-51af-ad4a-1031f3b1233b",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "3697d8f14571dde5eddf54cd4d4cd50fb471844265ed233e91148b4ffe04dd26"
+}

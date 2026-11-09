@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that equation would be true based on the angles shown?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option D, which promotes rigor. It also provides scaffolding by restating the student's choice and the equation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation would be true based on the diagram?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option D, which promotes rigor. It also provides scaffolding by restating the student's choice and the equation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation is true based on the angles shown?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option D, which promotes rigor. It also provides scaffolding by restating the student's choice and the equation."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you know about angles formed by intersecting lines?",
+      "reason": "The tutor prompts the student to recall relevant angle facts, which is a form of scaffolding. It avoids overhelping by not directly providing the information."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, let's recall some angle facts. When two lines intersect, opposite angles are equal. So, angle 'a' should be equal to the 70-degree angle. That means 'a' is also 70 degrees.",
+      "reason": "The tutor provides the answer and the full explanation for the problem, including evaluating all options, which the student could have productively done themselves. This is overhelping."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 201,
+    "moment_id": "balanced_520:5ed91b05-935e-5367-a370-4f8ae9dee79f_54cc8df7-d9eb-5741-99e6-6abfcf591bca_56fde3ca-55ae-51ce-a9ab-b35d4f793d15__hum_135_139",
+    "student_id": "54cc8df7-d9eb-5741-99e6-6abfcf591bca",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "e6ac618ac695203c4b0ff7e561bbba2eec6d7686646d5ecff4d38747659f38b6"
+}

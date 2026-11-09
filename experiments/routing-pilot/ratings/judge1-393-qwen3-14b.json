@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about the blocks on each side of the minus sign? Can you tell me how many blocks there are in total on the left and on the right?",
+      "reason": "The tutor asks the student to identify the numbers represented by the blocks, which is a good first step in solving the problem. This scaffolds the problem without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you start by subtracting the ones? What happens when you try to take away 6 ones from 4 ones?",
+      "reason": "The tutor guides the student to start with the ones place, which is the correct procedure for subtraction. The question about taking 6 ones from 4 ones prompts the student to consider regrouping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with the tens. How many tens are on the left, and how many are on the right?",
+      "reason": "The tutor directs the student to start with the tens place, which is a valid approach for subtraction with base-ten blocks, especially if the student is comfortable with regrouping. It scaffolds the problem by breaking it down."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how would you subtract the units first? Do you think you can take away 6 units from 4 units? If not, what could you do?",
+      "reason": "The tutor explicitly states the numbers involved and then immediately asks about subtracting the units first, which is a good starting point for subtraction. The follow-up question about what to do if 6 units cannot be taken from 4 units directly prompts the student to think about regrouping."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many total units do you think the first group has? And how many does the second group have? Once we know that, we can subtract them.",
+      "reason": "The tutor asks the student to identify the total number of units in each group, which is a good first step in understanding the problem. This scaffolds the problem by having the student translate the visual representation into numerical values."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 393,
+    "moment_id": "balanced_520:db46772f-cb47-5ca1-8f0f-90e6f67b45c4_ac29d076-88b2-5238-bb1c-c51c414e5029_9d66ec13-35fd-5c4a-ad2d-1b1b1659e35d__hum_106_139",
+    "student_id": "ac29d076-88b2-5238-bb1c-c51c414e5029",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "15b8dabe8ae5c3192038b5089c6b3f1831879fc00c824d13056780653db0a6c8"
+}

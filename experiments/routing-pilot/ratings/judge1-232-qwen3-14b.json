@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we take away 8 from 48, what number are we left with?",
+      "reason": "The tutor asks a guiding question that helps the student determine the value of the star by relating it to a simpler subtraction problem, which is a form of scaffolding. It also promotes rigor by asking the student to perform the calculation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we break 48 into two parts, one of them is 8, right? What would the other part be?",
+      "reason": "The tutor provides a hint by reminding the student that 48 is broken into two parts and one is 8, then asks the student to identify the other part, which is a form of scaffolding. It also promotes rigor by asking the student to perform the calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we break 48 into two parts, one of them is 8, right? What would the other part be?",
+      "reason": "The tutor provides a hint by reminding the student that 48 is broken into two parts and one is 8, then asks the student to identify the other part, which is a form of scaffolding. It also promotes rigor by asking the student to perform the calculation."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Therefore, the digit that should replace the star is 40. Let me make sure I didn't miss anything. The answer choices are A: 4, B: 40, C: 8, D: 80. So, the correct answer is B: 40.",
+      "reason": "The tutor explains the entire solution, including the answer, without giving the student an opportunity to contribute or solve the problem independently. This is overhelping."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, what should replace the star in the problem? It looks like they have (star + 8) times three. Since we split forty-eight into forty and eight, the star should be forty.",
+      "reason": "The tutor explains the entire solution, including the answer, without giving the student an opportunity to contribute or solve the problem independently. This is overhelping."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 232,
+    "moment_id": "balanced_520:742de3dd-68d1-5190-9dbf-86d3a1d8abff_15d9f73f-ab05-5288-8db7-e662535c819a_2dc3d3d4-1e14-5595-a485-0e47c8fa74a1__hum_133_135",
+    "student_id": "15d9f73f-ab05-5288-8db7-e662535c819a",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "bb4416fba7d8cc1bd9496d91b39caa405a5af8cdd44cd2d243aabdd31957ce62"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "force_scaffolding",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why that makes sense in relation to the multiplication problem we did earlier? What does this tell us about the relationship between multiplication and division?",
+      "reason": "The tutor asks the student to explain the relationship between multiplication and division, which is a rigorous question. The question is also scaffolded by reminding the student of the previous problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "It shows how multiplication and division are connected. If you multiply and then divide by the same number, you end up right back where you started. That’s a good way to check your work too. If you ever want to make sure a multiplication problem is right, just divide the answer by one of the numbers you multiplied, and if you get the other number, you did it right.",
+      "reason": "The tutor explains the relationship between multiplication and division in detail, which the student could have productively supplied. This is overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that works? What’s the relationship between multiplication and division in this case?",
+      "reason": "The tutor asks the student to explain the relationship between multiplication and division, which is a rigorous question. The question is also scaffolded by reminding the student of the previous problem."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What happens when we subtract 42 from 46? What number do we get, and what is the next step?",
+      "reason": "This question is out of context. The student has already completed the division problem and the tutor has already circled the answer. The student is now observing the relationship between the multiplication and division problems."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that happened? What does it tell us about multiplication and division?",
+      "reason": "The tutor asks the student to explain the relationship between multiplication and division, which is a rigorous question. The question is also scaffolded by reminding the student of the previous problem."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 339,
+    "moment_id": "balanced_520:badd87ad-b9ea-57f5-864a-80b83acf57c0_d3a947b2-91c7-5466-87c5-417f128a975e_e879094a-34d1-5090-8d00-ba9fc5ae48da__hum_541_621",
+    "student_id": "d3a947b2-91c7-5466-87c5-417f128a975e",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "edc280625b74aa813f50c8ced73a60b25a70bb2d6aa3798b7e20b99d52e29462"
+}

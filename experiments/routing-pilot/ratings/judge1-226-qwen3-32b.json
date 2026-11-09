@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a sentence using \"dedicate\" in your own words?",
+      "reason": "The tutor asks the student to apply the word in a sentence, which is a good way to check for understanding and encourage active learning. The prompt also provides a hint to guide the student's thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try to explain what \"dedicate\" means in your own words?",
+      "reason": "The tutor asks the student to explain the word in their own words, which promotes deeper understanding and active recall. The prompt also provides a hint to guide the student's thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a sentence using \"abundant\" to describe something you have a lot of?",
+      "reason": "The tutor asks the student to apply the word in a sentence, which is a good way to check for understanding and encourage active learning. The prompt also provides a hint to guide the student's thinking."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's see. There's another word here called \"diligent.\" Do you know what that means?",
+      "reason": "The tutor provides a summary of the previous words and then introduces a new word without first checking for the student's understanding of the previous words. This is overhelping because the student has not yet demonstrated understanding of the previous words."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I say there are abundant marbles in the bag, what does that tell you about the number of marbles? Is it a small number or a large number?",
+      "reason": "The tutor provides a concrete example to help the student understand the meaning of the word 'abundant.' This is a good way to scaffold the learning process."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 226,
+    "moment_id": "balanced_520:6f2cb39d-1c6b-543d-aa6b-a75fddefc244_14892eb2-4f6f-5bb6-af7d-6dea422bdc32_10663abe-0e15-581d-8794-909979e9a3d2__hum_189_212",
+    "student_id": "14892eb2-4f6f-5bb6-af7d-6dea422bdc32",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "db94d67e2d129b2a0c15b2a34e24fcb8380a0685f7272c5166e8d3bb9a7531b7"
+}

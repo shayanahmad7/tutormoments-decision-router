@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word do you think fits best here? Why?",
+      "reason": "The tutor asks the student to justify their answer, which promotes deeper thinking and rigor. The tutor also provides the sentence, which is a helpful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which word do you think fits best here — practice, expert, digital, or precise?",
+      "reason": "The tutor provides the sentence and lists the remaining vocabulary words, which is a helpful scaffold for the student."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "which word do you think fits best? Why?",
+      "reason": "The tutor provides the sentence and asks the student to justify their answer, which promotes deeper thinking and rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what the sister is doing with the violin.",
+      "reason": "The tutor provides a hint to help the student choose the correct word, which is a helpful scaffold."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "3. Our dog howls when my sister ____ the violin.",
+      "reason": "The tutor provides the next sentence for the student to complete, which is a helpful scaffold."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 266,
+    "moment_id": "balanced_520:7eb4777b-92bc-5f5f-abd6-a6fd4173384c_4df3f0a2-38a8-5378-92e5-e217be975c61_1675a4b8-b81f-5e32-b26e-617bacf1cac8__hum_27_31",
+    "student_id": "4df3f0a2-38a8-5378-92e5-e217be975c61",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "b76cbedcd63b8d10c9fa10ac21049c65cca1a792758500645035ee5c89952531"
+}

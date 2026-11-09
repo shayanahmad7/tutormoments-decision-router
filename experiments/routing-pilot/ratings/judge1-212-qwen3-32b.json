@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "jev_label",
+    "C4": "original",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, so we took one ten from the six, right? That means the six becomes a five. Now, can you tell me what the new top number looks like after we borrow that ten?",
+      "reason": "The tutor confirms the student's correct answer and then asks a follow-up question to guide them to the next step in the borrowing process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you borrowed from the six to give to the four. If we take one ten from the six, what number does the six become?",
+      "reason": "The tutor confirms the student's correct identification of the number to borrow from and then asks a direct question to guide them to the next step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since the six was in the tens place, taking one ten from it changes it from six tens to five tens. So, we took one ten from the six. What does that mean we borrowed?",
+      "reason": "The tutor provides a detailed explanation of the borrowing process, including the new value of the six, which the student could have productively figured out."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means the 6 tens becomes 5 tens. So, how much did we borrow from the 6? Just 1 ten, right? So the 6 becomes a 5. So, the 64 becomes 5 tens and 14 ones. Can you explain why we borrow 1 ten and not 5?",
+      "reason": "The tutor overhelps by explaining the entire borrowing process and the resulting numbers. The rigor comes from asking the student to explain *why* they borrow 1 ten, but this is after the tutor has already provided the answer."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You're very close! If we took 1 from the 6 (making it 5), how much would that add to the 4? Let me know what you think!",
+      "reason": "The tutor acknowledges the student's partial understanding and then asks a guiding question to help them connect the borrowing from the tens place to the addition in the ones place."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 212,
+    "moment_id": "balanced_520:67accfc6-80b8-5117-b19c-bb04c151931d_194a468a-5029-5af5-9750-8c27d3274adf_28f479ca-ca56-5b68-b002-a31715fbfa2d__hum_169_198",
+    "student_id": "194a468a-5029-5af5-9750-8c27d3274adf",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "effe073c21ca588ab250f0d58add5eb540ec5885086222037dbfbe608a129115"
+}

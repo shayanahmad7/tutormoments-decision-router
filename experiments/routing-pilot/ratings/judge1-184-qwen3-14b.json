@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Let’s try a similar problem.",
+      "reason": "The student just answered the problem correctly. The tutor should not give a similar problem without first acknowledging the student's correct answer. This is a generic response that does not fit the immediate context."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you explain how you would find the value of x?",
+      "reason": "The student just answered the problem correctly. The tutor should not ask the student to explain how they would find the value of x without first acknowledging the student's correct answer. This is a generic response that does not fit the immediate context."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "We know that vertically opposite angles are equal. In this case, the angle labeled $ 87^\\circ $ is vertically opposite to the angle that is split into two parts: $ x $ and $ 2x $. That means the total of $ x + 2x $ must equal $ 87^\\circ $.  \n\nSo, we can write the equation:  \n$$\nx + 2x = 87^\\circ\n$$  \n$$\n3x = 87^\\circ\n$$  \n\nNow, to find $ x $, we divide both sides of the equation by 3:  \n$$\nx = \\frac{87^\\circ}{3}\n$$  \n\nWhat do you think $ x $ equals?",
+      "reason": "The student just answered the problem correctly. The tutor should not provide the solution to the problem without first acknowledging the student's correct answer. This is a generic response that does not fit the immediate context."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you write an equation to show that?",
+      "reason": "The student just answered the problem correctly. The tutor should not ask the student to write an equation to show that without first acknowledging the student's correct answer. This is a generic response that does not fit the immediate context."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Let’s try to apply what we just learned about vertically opposite angles to a new problem.",
+      "reason": "The student just answered the problem correctly. The tutor should not give a new problem without first acknowledging the student's correct answer. This is a generic response that does not fit the immediate context."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 184,
+    "moment_id": "balanced_520:58c94ad4-6cdc-5f5b-bf07-ca368cdb8dbf_eae181aa-099e-5972-9815-989b2b8dca94_be5d2f61-c006-5e95-b6c5-714c00ec598f__hum_66_68",
+    "student_id": "eae181aa-099e-5972-9815-989b2b8dca94",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "94726d0c0907114a701362412ad094bd3aec2f936031ba036ce115ee1cbe94fb"
+}

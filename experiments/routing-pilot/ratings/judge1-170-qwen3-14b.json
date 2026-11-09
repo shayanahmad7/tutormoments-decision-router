@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "jev_label",
+    "C4": "self_detailed",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's focus on the number in the middle of those two — what is halfway between 625 and 650?",
+      "reason": "The tutor provides a clear next step by asking the student to identify the midpoint, which is a key part of rounding to the nearest 25."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is exactly halfway between 625 and 650?",
+      "reason": "The tutor guides the student to find the midpoint between the two multiples of 25, which is a crucial step in determining which multiple 641 is closer to. This is a direct and helpful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "I'm going to write the number 641 on the board. Now, we're rounding to the nearest 25, so we need to find the multiples of 25 around 641. What is the multiple of 25 just before 641? And what is the multiple of 25 just after 641?",
+      "reason": "The tutor offers to write the number on the board and then re-prompts the student for the multiples of 25 around 641, which the student had previously identified. This is a good scaffold to re-establish the problem and ensure the student is on track."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What are the two multiples of 25 that 641 is between?",
+      "reason": "The student had already correctly identified these two multiples (625 and 650) in the conversation. Asking for them again is overhelping as it repeats a step the student already completed successfully."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me write down the problem we were working on: rounding 641 to the nearest 25. First, I want to find the two multiples of 25 that 641 is between. What’s the multiple of 25 just before 641? And what’s the one just after? Let me write those down so we can see them clearly.",
+      "reason": "The tutor offers to write down the problem and the multiples, which is a good scaffold to help the student visualize and re-engage with the problem, especially after expressing confusion. While the student had previously identified the multiples, re-writing them can help clarify the starting point."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 170,
+    "moment_id": "balanced_520:4cfd7352-bf53-51f0-a598-1ddde2b31698_831995bf-5fab-552f-8bfe-8c6f5c526d4f_61700a62-0737-5359-bcab-672af3bd0316__hum_111_118",
+    "student_id": "831995bf-5fab-552f-8bfe-8c6f5c526d4f",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "4595fcb913baf91935221c78618a7a9f71ca09b6ef61efda7fa1e0967be74a55"
+}

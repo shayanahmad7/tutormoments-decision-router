@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why did you choose the word \"expert\" for the second sentence?",
+      "reason": "The tutor asks the student to justify their answer, which promotes deeper thinking and responsibility for their learning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you try filling in the blank for sentence 3: \"Our dog howls when my sister ____ the violin.\" Which word from the list fits best?",
+      "reason": "The tutor prompts the student to move to the next sentence and provides the sentence for convenience, which is a helpful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is \"expert\" the right word to use in that sentence?",
+      "reason": "The tutor asks the student to justify their answer, which promotes deeper thinking and responsibility for their learning."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word would make sense in the blank for sentence 3? Think about what the dog howls when the violin is being done.",
+      "reason": "The tutor provides a hint by asking the student to think about the context of the sentence, which is a useful scaffold."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The student drags the word \"expert\" into the blank in the second sentence. The sentence now reads: \"You should call a computer expert to help you fix your broken computer.\"  \n\n[NEW_MESSAGE]  \n\nGreat job so far! Let's look at the third sentence: \"Our dog howls when my sister ____ the violin.\" Which word do you think fits best here?",
+      "reason": "The tutor confirms the student's action and then prompts them to move to the next sentence, providing the sentence for convenience. This is a good scaffold."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 266,
+    "moment_id": "balanced_520:7eb4777b-92bc-5f5f-abd6-a6fd4173384c_4df3f0a2-38a8-5378-92e5-e217be975c61_1675a4b8-b81f-5e32-b26e-617bacf1cac8__hum_27_31",
+    "student_id": "4df3f0a2-38a8-5378-92e5-e217be975c61",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "5c559c96b8301750421da52500b154d7d1a1bd967a711132387d78f5ac7fe89d"
+}

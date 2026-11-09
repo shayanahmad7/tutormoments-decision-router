@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "explain why dividing 24 by 4 gives the number of students in each group",
+      "reason": "Asks the student to justify their equation choice, increasing cognitive demand through explanation. Student already wrote 24÷4=6, so this pushes for reasoning without giving anything away."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why are we dividing in this problem?",
+      "reason": "Asks the student to connect the word problem context to the operation chosen, which is meaningful justification. Student said 'dividing' but hasn't explained the reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What is 24 divided by 4?",
+      "reason": "Student already wrote 24÷4=6 on the board, so asking for the answer is redundant and over-helps by ignoring work already done. The restatement of the problem also does work the student could do."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What is 24 divided by 4?",
+      "reason": "Student already wrote the answer 6 on the whiteboard, so asking for it again is overhelp—it ignores completed student work and asks for something already supplied."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose division for this problem?",
+      "reason": "Asks the student to justify their operation choice by connecting the word problem to the mathematical structure, which is meaningful rigor without giving anything away."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 180,
+    "moment_id": "balanced_520:4f9c07d0-d5ee-5c85-b84c-dd5649dae741_ddf22426-058a-5a4b-8e60-3f7ae6d7945f_e719b588-b1e4-5cd4-ae53-efd57d78a602__hum_82_93",
+    "student_id": "ddf22426-058a-5a4b-8e60-3f7ae6d7945f",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "8656e5ab29807b6ed4f094fcd1144e5d59ffec90ccdc147cceca67b178d1226e"
+}

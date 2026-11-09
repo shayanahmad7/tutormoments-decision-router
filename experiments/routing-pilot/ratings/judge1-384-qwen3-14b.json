@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a way to visualize this? For example, if you have four groups of two objects each, how many objects would you have in total?",
+      "reason": "The tutor acknowledges the student's error without judgment and then provides a concrete visualization strategy to help the student solve the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have four groups of two, how many total do you have?",
+      "reason": "The tutor prompts the student to think about the problem using a group visualization, which is a helpful scaffolding technique."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 2 + 2 + 2 + 2?",
+      "reason": "The tutor provides a specific addition strategy (repeated addition) to help the student solve the multiplication problem, which is a direct scaffold."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Four times two is 8.",
+      "reason": "The tutor gives the answer directly, which the student could have productively supplied with the provided hints. The subsequent hints are good scaffolding, but the initial answer is overhelping."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have two groups of four, how many total do you have?",
+      "reason": "The tutor provides a specific visualization strategy (groups of four) to help the student solve the multiplication problem, which is a form of scaffolding."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 384,
+    "moment_id": "balanced_520:d1e2d8d9-27ba-5061-86f7-daa2eb7e5097_6859ec65-4e1a-5d3a-a5f2-743446d09885_326cdc5a-f709-569b-9605-238b967ac04c__hum_351_366",
+    "student_id": "6859ec65-4e1a-5d3a-a5f2-743446d09885",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "41b2b9b85e5356653bb2df4256887a4a0d00bfb2c3b239698dea457aa991be0f"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "self_detailed",
+    "C3": "jev_label",
+    "C4": "force_rigor",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Four times two is 8",
+      "reason": "Gives away the answer immediately before letting the student try, then adds scaffolding that is no longer needed since the answer was already supplied."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about groups of four. If you have two groups of four, how many total do you have?",
+      "reason": "Corrects the wrong answer without giving it away, then prompts the student to reason through it using a grouping model, maintaining student responsibility."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if you have four groups of two objects each, how many objects would you have in total?",
+      "reason": "Provides a visualization hint appropriate to the student's confusion, though the reassurance and formatting feel slightly over-elaborate for the conversational tone of the session."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have four groups of two, how many total do you have?",
+      "reason": "Brief, on-task correction that redirects the student to reason through the problem using a grouping interpretation without supplying the answer."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 2 + 2 + 2 + 2?",
+      "reason": "Offers a concrete repeated-addition scaffold that makes the multiplication accessible while leaving the computation to the student."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 384,
+    "moment_id": "balanced_520:d1e2d8d9-27ba-5061-86f7-daa2eb7e5097_6859ec65-4e1a-5d3a-a5f2-743446d09885_326cdc5a-f709-569b-9605-238b967ac04c__hum_351_366",
+    "student_id": "6859ec65-4e1a-5d3a-a5f2-743446d09885",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "2a55a425d00464fdde0532f7783a74c984c7577854cc339f32454ed53d947588"
+}

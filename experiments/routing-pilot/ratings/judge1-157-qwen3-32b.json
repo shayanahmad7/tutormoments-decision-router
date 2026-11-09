@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "self_detailed",
+    "C3": "jev_label",
+    "C4": "force_scaffolding",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me explain why. When you divide by a fraction, you're asking, \"How many of these parts fit into the whole?\" So, one whole has five one-fifths. That means two wholes have five times two, which is ten one-fifths.",
+      "reason": "The tutor provides a full explanation of the concept without first asking the student to explain their reasoning or understanding. This is overhelping as the student may have been able to explain it themselves."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 2 divided by 1/5 equals 10? What does this mean in terms of how many fifths are in 2 wholes?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and critical thinking. The question is specific to the problem and encourages the student to connect the division operation to the concept of 'how many parts fit into the whole'."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the answer is 10? How does dividing by a fraction like 1/5 affect the result?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and critical thinking. The question is specific to the problem and encourages the student to think about the effect of dividing by a fraction."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how could you use a model or a number line to show why that makes sense? For example, how many fifths are in 1 whole? What happens when you have 2 wholes?",
+      "reason": "The tutor asks the student to explain their reasoning and suggests using a model or number line, which is a form of scaffolding. The follow-up questions guide the student's thinking towards the concept of how many fifths are in 1 whole and then in 2 wholes, which is appropriate rigor."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing 2 by 1/5 gives 10? How does this relate to the previous problems we worked on?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and critical thinking. The question also encourages the student to make connections to previous problems, which is a good way to build conceptual understanding."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 157,
+    "moment_id": "balanced_520:46a653eb-0895-5fc1-b990-2bd149aaaf39_39ac115b-2fe5-5787-9ca7-1e2174cf337e_d39b6568-2a41-5787-bc9b-9d9490406a1f__hum_140_158",
+    "student_id": "39ac115b-2fe5-5787-9ca7-1e2174cf337e",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "89d56ec857d1ea343cd97b503cfaa51fbf0e6928bdca0d8e55b5b52ad571b4de"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about the blocks on each side of the minus sign?",
+      "reason": "Asks student to observe and count the blocks themselves without giving away the numbers, appropriate scaffolding that keeps cognitive demand on the student for a base-ten blocks subtraction problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The problem is asking you to subtract the number on the right from the number on the left. Let's start with the tens.",
+      "reason": "Tells the student the operation and directs them to a specific sub-step (start with tens) without evidence the student needs that level of guidance; over-breaks the work into leading steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The first number has 4 tens and 4 ones. The second number has 2 tens and 6 ones.",
+      "reason": "Supplies the full decomposition of both numbers (44 and 26) and directs the student to a specific sub-step, giving away information the student could productively determine from the blocks."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We need to find the result of 44 minus 26.",
+      "reason": "Explicitly states both numbers and the full problem (44 minus 26), then further breaks it into a leading sub-step about units; supplies too much of the work the student could do independently."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The first group has 4 tens rods and 4 unit cubes, and the second group has 2 tens rods and 6 unit cubes.",
+      "reason": "Reads out all block counts for the student and then asks them to total the units, supplying information the student could read from the visual; over-scaffolds without evidence of need."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 393,
+    "moment_id": "balanced_520:db46772f-cb47-5ca1-8f0f-90e6f67b45c4_ac29d076-88b2-5238-bb1c-c51c414e5029_9d66ec13-35fd-5c4a-ad2d-1b1b1659e35d__hum_106_139",
+    "student_id": "ac29d076-88b2-5238-bb1c-c51c414e5029",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "b7695f29e228d1a84a859cdce87d7b439320701bc87338bbce609cf35ff3fca9"
+}

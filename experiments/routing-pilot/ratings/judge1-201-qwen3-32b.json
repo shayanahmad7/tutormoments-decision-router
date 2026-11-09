@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation is true based on the diagram?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option D, which promotes rigor by requiring justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you know about the relationship between opposite angles formed by intersecting lines?",
+      "reason": "The tutor provides a targeted hint by directing the student to consider the relationship between opposite angles, which is a key concept for this problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation is true based on the diagram?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option D, which promotes rigor by requiring justification."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we know about vertical angles?",
+      "reason": "The tutor provides a targeted hint by reminding the student about vertical angles, which is a key concept for this problem."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that's the case?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option D, which promotes rigor by requiring justification."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 201,
+    "moment_id": "balanced_520:5ed91b05-935e-5367-a370-4f8ae9dee79f_54cc8df7-d9eb-5741-99e6-6abfcf591bca_56fde3ca-55ae-51ce-a9ab-b35d4f793d15__hum_135_139",
+    "student_id": "54cc8df7-d9eb-5741-99e6-6abfcf591bca",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "8077cdad7109a753641a40d492b7bf7f3d560b54f8a33d2d50996c3848786487"
+}

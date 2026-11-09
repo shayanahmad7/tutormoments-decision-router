@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "jev_label",
+    "C4": "force_rigor",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What symbol should go in the circle to show that?",
+      "reason": "The tutor guides the student to select the correct symbol after establishing the numerical comparison."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means the correct symbol to put in the circle would be the less than symbol. So what do you think the answer is?",
+      "reason": "The tutor states the correct symbol but still asks the student to identify the corresponding option, providing a small step of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is 0.5 of 120 bigger than 0.5 of 60? Can you explain it in your own words?",
+      "reason": "The tutor asks the student to explain their reasoning, promoting deeper understanding and justification."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why does the size of the whole pizza matter when comparing how much they ate?",
+      "reason": "The tutor connects the current problem to a previous, similar problem (the pizza question) and asks a rigorous question about the underlying concept of comparing fractions/decimals of different wholes."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the correct symbol to put in the circle is the \"less than\" symbol, which is option A. Good job figuring that out!",
+      "reason": "The tutor provides the answer (the symbol and the option) directly, which the student could have identified independently."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 458,
+    "moment_id": "balanced_520:f338b82d-4f2a-5029-84c2-c0197a531a62_a056d766-3f6e-51ee-b7c6-382fae34d0ca_e679b3e1-1fe4-582d-8745-cad85f51924b__hum_231_234",
+    "student_id": "a056d766-3f6e-51ee-b7c6-382fae34d0ca",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "05cdcd3c79dc020612cb727928ef590b370c667c20cd1d6ed7dd10892f680750"
+}

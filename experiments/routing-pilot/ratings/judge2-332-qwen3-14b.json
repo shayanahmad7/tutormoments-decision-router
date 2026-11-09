@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "self_detailed",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "only multiply the numerator (the top part) of the fraction by the whole number. The denominator (the bottom part) stays the same. So, what would happen if we just multiplied the numerator, 3, by 3?",
+      "reason": "Clarifies the rule from the feedback message and asks the student to compute 3×3, which is a targeted substep that leaves the answer for the student to supply."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "3 times 3 is 9. Multiply the denominators: 4 times 1 is 4. That gives you 9/4.",
+      "reason": "Works through every step and gives the final answer 9/4 without leaving anything for the student to do; the student had already circled B (9/4), so this confirms the answer rather than prompting the student to reason."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "3 times 3 is 9, and 4 times 1 is 4. That gives us 9/4. Now, let's check the answer choices. Option B is 9/4. That seems to be the correct answer.",
+      "reason": "Fully solves the problem and identifies the correct answer choice, leaving nothing for the student to determine; this is overhelp given the student had just circled B."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we multiply the numerators together, what do we get?",
+      "reason": "Recaps the setup already on the whiteboard and asks the student to compute only the numerator product, a targeted substep that keeps cognitive demand on the student."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if we only multiply the numerator of 3/4 by 3, what would that give us? Let's try that and see what happens.",
+      "reason": "References the platform's feedback message to clarify the rule and asks the student to apply it, scaffolding without supplying the answer."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 332,
+    "moment_id": "balanced_520:b777c136-7736-530e-bc50-759e7befb764_63f97df8-217d-5b77-a0be-5582a1f765b1_6759dc20-c3f2-5c19-abff-f63b70c4b4ed__hum_74_82",
+    "student_id": "63f97df8-217d-5b77-a0be-5582a1f765b1",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "3ed1d919c81bbba614e36ec227934050fc53b794cb41833beb28a3f0ad9061af"
+}

@@ -1,3 +1,8 @@
 # Preserve the experiment archive byte-for-byte, including CSV line endings.
 experiments/jev/** -text
 *.csv whitespace=cr-at-eol
+# Generated replies preserve literal model output, including Markdown line breaks.
+experiments/routing-pilot/replies-and-ratings.csv -text whitespace=-blank-at-eol,cr-at-eol
+experiments/routing-pilot/traces/** -text
+experiments/routing-pilot/preflight/** -text
+experiments/routing-pilot/failed-attempts/** -text

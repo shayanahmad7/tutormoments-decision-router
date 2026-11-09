@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about the relationship between 12 and the numbers 2, 4, and 6? Can you explain how 12 is connected to each of these numbers?",
+      "reason": "The tutor asks the student to explain the relationship between the common denominator and the original denominators, promoting deeper understanding rather than just stating the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you arrived at 12? What makes 12 a common denominator for these numbers?",
+      "reason": "The tutor asks the student to explain their reasoning for 12 being the common denominator, which encourages justification and deeper thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Let me see what you got for the problem you were working on. What was your answer?",
+      "reason": "The student just made a guess (C) for the previous problem, so this question is relevant. However, it's a generic question that doesn't offer specific support or challenge."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we change all the denominators to 12, what would the new fractions be? Let’s start with 1/2. What number would you multiply the denominator 2 by to get 12?",
+      "reason": "The tutor provides a clear next step by asking the student to convert the first fraction, breaking down the problem into manageable parts."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we're multiplying decimals, we can ignore the decimals first and multiply the numbers as if they were whole numbers. So, 12 times 3 is 36. Now, we need to account for the decimals. There is one decimal place in 1.2 and one decimal place in 0.3, so that's a total of two decimal places. We move the decimal point in 36 two places to the left, which gives us 0.36. So the correct answer is actually 0.36, which would be option B.",
+      "reason": "The tutor completely solves the problem for the student, explaining every step and providing the final answer, which the student could have productively supplied."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 281,
+    "moment_id": "balanced_520:8ac58e16-89c8-5162-aef8-521e02a17bcd_c11260df-8221-5e9d-a4a4-168164eb4399_488fb429-f4cd-5147-ae19-23032d0194ad__hum_93_110",
+    "student_id": "c11260df-8221-5e9d-a4a4-168164eb4399",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "49e885e9160f37bd638c77c9fc493718d56a54d3eaa85ae0a54adc42a59dddbe"
+}

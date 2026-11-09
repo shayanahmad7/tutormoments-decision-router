@@ -1,0 +1,919 @@
+{
+  "tag": "gen-170-qwen3-14b-self_detailed",
+  "payload": {
+    "model": "qwen/qwen3-14b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'thousand hundred eight' (start)] Whiteboard shows the text \"thousand hundred eight\" and \"neigh\" written in black. Below this, \"PEMDAS\" is written in pink and black, with a \"1\" written above the \"M\". A notification \"Jordan has joined\" appears at 00:01.\nTurn 1. TUTOR: [PAUSE: 294 seconds]\nTurn 1. TUTOR: [PAUSE: 4 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed is removed from the screen. A notification appears at the top of the screen: \"Jordan has left\".\nTurn 1. TUTOR: [PAUSE: 75 seconds]\nTurn 1. STUDENT: thousand hundred eight.\nTurn 2. TUTOR: Okay.\nTurn 3. STUDENT: Neigh.\nTurn 4. TUTOR: Okay.\nTurn 5. STUDENT: PEMDAS.\nTurn 6. TUTOR: PEMDAS.\nTurn 7. STUDENT: I don't know what that is.\nTurn 8. TUTOR: Okay. So, PEMDAS is the order of operations.\nTurn 9. STUDENT: Oh.\nTurn 10. TUTOR: Have you heard of that before?\nTurn 11. STUDENT: No.\nTurn 12. TUTOR: Okay. So, it's just the order that you do math problems in.\nTurn 13. STUDENT: Okay.\nTurn 14. TUTOR: So, P stands for parentheses. E is for exponents. M is for multiplication.\nTurn 15. STUDENT: Oh, I've heard of this.\nTurn 16. TUTOR: Okay. D is for division.\nTurn 17. STUDENT: Yeah.\nTurn 18. TUTOR: A is for addition, and S is for subtraction.\nTurn 19. STUDENT: Yeah.\nTurn 20. TUTOR: So, do you wanna try to write that out for me?\nTurn 21. STUDENT: Okay.\nTurn 22. TUTOR: [SCREEN_INTERACTION: student - drawing] Student begins to write \"PEMDAS\" vertically in pink text.\nTurn 22. TUTOR: Good.\nTurn 23. TUTOR: [SCREEN_INTERACTION: student - drawing] Student finishes writing \"PEMDAS\" vertically in pink text.\nTurn 23. TUTOR: Perfect.\nTurn 24. TUTOR: [PAUSE: 2 seconds]\nTurn 24. TUTOR: So, P is for...\nTurn 25. STUDENT: Parentheses.\nTurn 26. TUTOR: Good.\nTurn 27. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes \"Parentheses\" next to the letter P.\nTurn 27. TUTOR: And E is for...\nTurn 28. STUDENT: Exponents.\nTurn 29. TUTOR: Good.\nTurn 30. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes \"Exponents\" next to the letter E.\nTurn 30. TUTOR: M is for...\nTurn 31. STUDENT: Multiplication.\nTurn 32. TUTOR: Good.\nTurn 33. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes \"Multiplication\" next to the letter M.\nTurn 33. TUTOR: D is for...\nTurn 34. STUDENT: Division.\nTurn 35. TUTOR: Good.\nTurn 36. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes \"Division\" next to the letter D.\nTurn 36. TUTOR: A is for...\nTurn 37. STUDENT: Addition.\nTurn 38. TUTOR: Good.\nTurn 39. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes \"Addition\" next to the letter A.\nTurn 39. TUTOR: And S is for...\nTurn 40. STUDENT: Subtraction.\nTurn 41. TUTOR: Perfect.\nTurn 42. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes \"Subtraction\" next to the letter S.\nTurn 42. TUTOR: Good job.\nTurn 43. STUDENT: Okay.\nTurn 44. TUTOR: So, that's the order of operations.\nTurn 45. STUDENT: Okay.\nTurn 46. TUTOR: So, let's try a problem with that.\nTurn 47. STUDENT: Okay.\nTurn 48. TUTOR: [PAUSE: 310 seconds] The whiteboard shows the text \"thousand hundred eight\" and \"neigh\". Below this, the word \"PEMDAS\" is written in pink and black, with the number 1 above the \"A\".\nTurn 48. TUTOR: [SCREEN_UPDATE] A notification appears on screen: \"Jordan has joined\".\nTurn 48. TUTOR: [PAUSE: 12 seconds]\nTurn 48. TUTOR: Hi, Jordan.\nTurn 49. STUDENT: Hello.\nTurn 50. TUTOR: Hi.\nTurn 51. TUTOR: Um, we're gonna start right away with the math since you joined a little bit late. That's okay. We're gonna start with the math, okay?\nTurn 52. STUDENT: Okay.\nTurn 53. TUTOR: Let me share my screen.\nTurn 54. TUTOR: [SCREEN_UPDATE] The tutor shares their screen, showing a MathBridge math problem. The problem is titled \"Rounding Rodeo\" and the instruction is \"Which number line shows 37 rounded to the nearest ten?\". There are three options, A, B, and C, each showing a number line.\nTurn 54. TUTOR: [PAUSE: 14 seconds]\nTurn 54. STUDENT: It's number B.\nTurn 55. TUTOR: [SCREEN_INTERACTION: tutor - selecting answer] The tutor's cursor selects option B and clicks the \"Next\" button.\nTurn 55. TUTOR: [PROBLEM_CHANGE: p1 - 'Round 37 to the nearest ten.' (start)] The screen updates to the next part of the problem, which asks to \"Round 37 to the nearest ten.\" There is an empty answer box.\nTurn 55. TUTOR: [SCREEN_INTERACTION: student - writes 40] The student types \"40\" into the answer box.\nTurn 55. TUTOR: [SCREEN_INTERACTION: tutor - submitting answer] The tutor clicks the \"Next\" button.\nTurn 55. TUTOR: [PROBLEM_CHANGE: p2 - 'Which number line shows 85 rounded to the nearest ten?' (start)] The screen updates to a new problem: \"Which number line shows 85 rounded to the nearest ten?\". There are three options, A, B, and C, each showing a number line.\nTurn 55. STUDENT: Mhm.\nTurn 56. TUTOR: [PAUSE: 10 seconds]\nTurn 56. STUDENT: I'm confused on this one.\nTurn 57. TUTOR: Okay. So, when we're rounding to the nearest ten, right? We have to look at the number in the ones place. So, if the number is five or greater, we round up. If it's four or less, we round down. So, what number is in the ones place?\nTurn 58. STUDENT: A different topic.\nTurn 59. TUTOR: No, no, no. We're still on the same topic. We're rounding.\nTurn 60. TUTOR: [PAUSE: 8 seconds]\nTurn 60. TUTOR: Okay, so we're rounding eighty-five to the nearest ten. So, what number is in the ones place?\nTurn 61. STUDENT: Baby sister's in the room. Um, to the nearest fifty? Yes, I do.\nTurn 62. TUTOR: No, to the nearest ten.\nTurn 63. TUTOR: [PAUSE: 16 seconds]\nTurn 63. TUTOR: What number is in the ones place?\nTurn 64. TUTOR: [PAUSE: 9 seconds]\nTurn 64. STUDENT: I don't know how to do this one.\nTurn 65. TUTOR: [PAUSE: 4 seconds]\nTurn 65. TUTOR: Yeah.\nTurn 66. TUTOR: [PAUSE: 2 seconds]\nTurn 66. TUTOR: So, we're rounding to the nearest 25. So, we're thinking about our 25 times table. So, we have 25, 50, 75, 100. So, we're looking at the number 641. So, what would be the multiple of 25 before 641 and the multiple of 25 after 641?\nTurn 67. STUDENT: Mhm.\nTurn 68. TUTOR: What do you think?\nTurn 69. STUDENT: 600.\nTurn 70. TUTOR: So, is 600 in the 25 times table?\nTurn 71. STUDENT: Oh, 550. It's closer to 50. 25 and 50.\nTurn 72. TUTOR: Okay, so we're looking at the number 641. So, we're looking at the numbers around 641.\nTurn 73. STUDENT: Twenty, 22.\nTurn 74. TUTOR: [PAUSE: 18 seconds]\nTurn 74. TUTOR: So, what are the multiples of 25 that are around 641?\nTurn 75. TUTOR: [PAUSE: 16 seconds]\nTurn 75. STUDENT: 650 and 625. That's the closest one.\nTurn 76. TUTOR: Brilliant. So, we've got 625 and 650. So, which one is 641 closer to?\nTurn 77. TUTOR: [PAUSE: 9 seconds]\nTurn 77. STUDENT: Um.\nTurn 78. STUDENT: Hold on. 34.\nTurn 79. TUTOR: So, how many away from 625 is 641?\nTurn 80. TUTOR: [PAUSE: 4 seconds]\nTurn 80. STUDENT: I think, hold on. I give up. I can't do it. It's too hard.\nTurn 81. TUTOR: No, you're so close. You're so close. You've got the two numbers.\nTurn 82. STUDENT: It's too hard. I can't do it.\nTurn 83. TUTOR: So, you've got 625 and you've got 650. And we're looking at the number 641.\nTurn 84. TUTOR: So, how many away from 625 is 641?\nTurn 85. STUDENT: Nine.\nTurn 86. TUTOR: And how many away from 650 is 641?\nTurn 87. STUDENT: Yeah.\nTurn 88. STUDENT: 620 uh 650.\nTurn 89. TUTOR: So, which one is it closer to?\nTurn 90. STUDENT: Huh?\nTurn 91. TUTOR: So, which one is 641 closer to?\nTurn 92. STUDENT: Six, um, 625. No, no, 650.\nTurn 93. TUTOR: So, how many away from 650 is it?\nTurn 94. STUDENT: 625.\nTurn 95. TUTOR: So, how many away from 625 is it? And how many away from 650 is it?\nTurn 96. STUDENT: You tricked me.\nTurn 97. TUTOR: I didn't trick you.\nTurn 98. TUTOR: [SCREEN_UPDATE: A video begins playing on the whiteboard.] The video shows a number line and explains how to round 641 to the nearest 25. The audio from the video is: \"Here, I need to round 641 to the nearest 25. So I need to think about the numbers in the 25 times table that are before 641 and the one just after. So the one before would be 625 and the one after would be 650. Now working out the midpoint here, the halfway point is going to be a bit trickier. So what I'm going to do is I'm going to half 25. Well, when I half 25, that gives me 12.5. So this is 12 and a half further along than 625. So that's 637.5.\nTurn 98. TUTOR: So where is six hundred and forty one in relation to that?\nTurn 99. TUTOR: Well, it's bigger than it. So six hundred and forty one is going to be up here approximately.\nTurn 100. TUTOR: So does that mean it's going to round up to six hundred and fifty or down to six hundred and twenty five?\nTurn 101. TUTOR: It's going to round up to six hundred and fifty because it's closer to six hundred and fifty than it is to six hundred and twenty five.\nTurn 102. TUTOR: [PAUSE: 11 seconds]\nTurn 102. STUDENT: Because I don't understand. I don't understand still.\nTurn 103. TUTOR: [PAUSE: 32 seconds]\nTurn 103. STUDENT: Yeah.\nTurn 104. TUTOR: [PAUSE: 5 seconds]\nTurn 104. STUDENT: Oh my gosh.\nTurn 105. STUDENT: 5,005? That's my best guess.\nTurn 106. TUTOR: [PAUSE: 28 seconds]\nTurn 106. STUDENT: I think it's 5,000 'cause it's 9 9 9 and if you can make that eight a 10, um, and then that gives that the that nine a one, which brings that a 10. Now that's a zero. Now makes now then gives that one, that nine a one, which makes 10. And so now you got 5,000. But 5,000 nearest to five would be five.\nTurn 107. TUTOR: [PAUSE: 6 seconds]\nTurn 107. TUTOR: [SCREEN_UPDATE] A small window on the right changes to show multiple choice options. The options are: 705, 450, 500, 505.\nTurn 107. STUDENT: 450? No, um, 700, 705 and 450. Yeah.\nTurn 108. STUDENT: I give up. I can't. It's it's this one's confusing.\nTurn 109. TUTOR: [PAUSE: 67 seconds]\nTurn 109. STUDENT: 500.\nTurn 110. TUTOR: [PAUSE: 18 seconds]\nTurn 110. STUDENT: Yes, please.\nTurn 111. TUTOR: [PAUSE: 71 seconds] On the main whiteboard, the words \"thousand hundred eight\" and \"neigh\" are written in black text. Below that, \"PEMDAS\" is written in pink with a black \"1\" above the \"A\". There is significant background noise of paper rustling throughout the clip.\nTurn 111. STUDENT: I don't understand anything you just said.\nTurn 112. TUTOR: You don't? Okay. Do you want me to write it down for you?\nTurn 113. TUTOR: [PAUSE: 3 seconds]\nTurn 113. STUDENT: Yes, please.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nFor this next reply, decide privately which of the following teaching policies fits the current learner evidence, then apply it. Use the current mathematical task and recent student work in the context of the full conversation. Agreement with a tutor-supplied answer is not proof of understanding. An independently corrected earlier error does not by itself justify more help.\nSCAFFOLDING: Provide targeted scaffolding now. Identify the specific unresolved obstacle in the student's current mathematical work. Offer only the smallest useful hint, representation, or clarification that makes the next step accessible. Use the learner's actual numbers and ideas when available. Leave the key calculation or inference for the student and invite one manageable next step. Do not give a full solution, stack several leading questions, repeat an explanation the learner already understands, or invent unseen worksheet details.\nRIGOR: Push for appropriate rigor now. Build on what the learner has actually demonstrated, not an answer the tutor supplied. Invite the student to justify a step, connect representations, check a claim, generalize, or take the next step independently. Choose one opportunity that fits the current problem. Do not give the reasoning before asking for it, turn the challenge into a sequence of tiny leading hints, or introduce unrelated difficulty. Keep the mathematical work with the learner; rigor is not simply saying why after every answer.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261109,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "e5bedab769fb1fffdb9d59ce36d5ebed1c74009280b2e43273d3f25f211f7fdf",
+  "reserve_usd": 0.0022605599999999996,
+  "started_utc": "2026-11-09T20:59:28Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "Sure, let's start by looking at the number 641. We want to round it to the nearest 25. What are the two multiples of 25 that 641 is between?",
+  "first_answer_ms": 513.1627079999994,
+  "usage": {
+    "prompt_tokens": 4262,
+    "completion_tokens": 48,
+    "total_tokens": 4310,
+    "cost": 0.00052296,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00052296,
+      "upstream_inference_prompt_cost": 0.00051144,
+      "upstream_inference_completions_cost": 1.152e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-14b",
+  "events": [
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant",
+            "reasoning": "\n",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "\n",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant",
+            "reasoning": "\n",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "\n",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Sure, ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "let",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "'s start",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " by",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " loo",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "king at",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "num",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ber 6",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "41.",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " We wa",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "nt ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "to ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "roun",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "d it to ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "neare",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "st 2",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "5. W",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "hat ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "are the tw",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "o m",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "u",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "l",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "iples",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "o",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "f",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "25 ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "that 641",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "is between?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant",
+            "reasoning": null
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794257968-MZlRnWsCWzjXAmwWfUIk",
+      "object": "chat.completion.chunk",
+      "created": 1794257968,
+      "model": "qwen/qwen3-14b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 4262,
+        "completion_tokens": 48,
+        "total_tokens": 4310,
+        "cost": 0.00052296,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00052296,
+          "upstream_inference_prompt_cost": 0.00051144,
+          "upstream_inference_completions_cost": 1.152e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "\n\n",
+  "cost_usd": 0.00052296,
+  "elapsed_ms": 1102.2658749999969
+}

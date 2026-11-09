@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "original",
+    "C3": "force_scaffolding",
+    "C4": "self_detailed",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I take all six parts, that means I have six out of six, right? And six out of six is the same as one whole box. So, when the numerator and the denominator are the same, like 6/6, it equals one. Does that make sense?",
+      "reason": "The tutor provides a clear explanation of why 6/6 equals one, connecting it back to the visual of the box. This is a helpful clarification for the student."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Six out of six is the same as one whole, right? So six sixths is another way of writing the number one. Does that make sense?",
+      "reason": "The tutor directly answers the question and then checks for understanding, which is appropriate scaffolding given the student's previous difficulty with the concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So six out of six is another way of writing what number?",
+      "reason": "The tutor repeats the question, prompting the student to recall the answer independently. This encourages rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So six out of six is another way of writing what number?",
+      "reason": "The tutor repeats the question, prompting the student to recall the answer independently. This encourages rigor."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So six out of six is another way of writing one. Now, let's say I have this circle here, and I take this part of it. How much of the circle did I take? Can you tell me in fraction form?",
+      "reason": "The tutor provides the answer to the previous question and then immediately transitions to a new example to reinforce the concept, which is a good scaffolding technique."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 434,
+    "moment_id": "balanced_520:edac2eb8-8342-54f6-afd9-28f0e974e987_160d83b3-71b7-5ce8-af38-023ce32665f6_b57ad33f-c9ef-5a7a-9d94-be7a411b92ce__hum_378_396",
+    "student_id": "160d83b3-71b7-5ce8-af38-023ce32665f6",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "e1ee5f4994227f84ee6448aaefc65c85ea8a35309844435f9f1a39326af47237"
+}

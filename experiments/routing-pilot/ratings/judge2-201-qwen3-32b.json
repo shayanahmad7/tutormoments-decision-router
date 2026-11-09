@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "original",
+    "C4": "force_rigor",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation is true based on the diagram?",
+      "reason": "Asks the student to justify their answer choice, increasing cognitive demand through explanation without providing hints or leading steps."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you know about the relationship between opposite angles formed by intersecting lines?",
+      "reason": "Provides a conceptual hint about vertical angles to scaffold the student's thinking, while also asking the student to apply that knowledge to evaluate their answer—combining scaffolding with rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that's the case?",
+      "reason": "Asks the student to justify their answer, promoting reasoning without providing any hints or leading steps."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that equation is true based on the diagram?",
+      "reason": "Requests justification from the student for their chosen answer, increasing cognitive demand through explanation without scaffolding or overhelp."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we know about vertical angles?",
+      "reason": "Introduces the concept of vertical angles as a scaffold to guide the student's reasoning, while also posing a question that requires the student to recall and apply a geometric property."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 201,
+    "moment_id": "balanced_520:5ed91b05-935e-5367-a370-4f8ae9dee79f_54cc8df7-d9eb-5741-99e6-6abfcf591bca_56fde3ca-55ae-51ce-a9ab-b35d4f793d15__hum_135_139",
+    "student_id": "54cc8df7-d9eb-5741-99e6-6abfcf591bca",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "0626818786441a4f2242f13ae61671af3161154110137ceb7bb0d104a71a4e23"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "force_rigor",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the largest multiple of 5 that goes into 18?",
+      "reason": "Redirects student to correct starting step (18÷5) after self-correction error, asks student to determine the multiple themselves without giving the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But 1 divided by 5 is too small, so we look at the first two digits, which is 18",
+      "reason": "Explains the long division logic for choosing 18, then asks the student to compute 18÷5, appropriate given student's confusion about where to start."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So we look at how many times 5 goes into 18 (the first two digits). What do you think that is?",
+      "reason": "Concisely redirects to correct first step and asks student to supply the answer, fitting the student's self-correction error."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "We looked at 18 divided by 5 first and found that 5 goes into 18 three times",
+      "reason": "Supplies the answer to 18÷5 (three times) that the student should determine, then only asks about the next step; overhelp given student hadn't yet worked this out."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the largest multiple of 5 that's less than or equal to 18?",
+      "reason": "Concise redirect to correct starting step, asks student to reason about multiples without supplying the answer, well-matched to student's confusion."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 372,
+    "moment_id": "balanced_520:c64a4cc1-f4e5-5519-bd5a-d88e194a7341_16b91893-0d76-53f1-9bda-1ae2724abfb1_56be1d1e-9d88-5020-a41e-1f5c3bec3b60__hum_263_281",
+    "student_id": "16b91893-0d76-53f1-9bda-1ae2724abfb1",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "f9b97f7d498d98fdcbd6113550bf5243e53ad0514093f7a990fb36894dc17210"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what you remember about equivalent fractions? Maybe you can give me an example of two fractions that are equivalent?",
+      "reason": "The tutor asks the student to recall prior knowledge and provide an example, which is a good way to assess understanding and encourage active participation. This is appropriate given the new topic."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Imagine you have 12 apples and you want to divide them equally among 4 friends. How many apples would each friend get?",
+      "reason": "The tutor introduces a division word problem, but the stated topic is 'Represent equivalent fractions'. This problem does not align with the new topic."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I have the fraction 1/2, and I multiply both the numerator and the denominator by 2, I get 2/4. These are equivalent fractions. Can you try this with the fraction 1/3?",
+      "reason": "The tutor provides a clear example of how to create equivalent fractions and then asks the student to apply the same method to a new fraction, which is a good scaffolded approach to introduce the topic."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you draw a fraction on the screen? Maybe 1/2? I want to see how you represent it.",
+      "reason": "The tutor asks the student to draw a fraction, which is a good way to engage them visually and assess their understanding of basic fraction representation before moving to equivalent fractions."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you draw a picture or model to show what 1/2 is equivalent to in fourths? Once you do that, explain how you know they're the same amount.",
+      "reason": "The tutor directly addresses the topic of equivalent fractions by asking the student to model an equivalence and then explain their reasoning, which promotes both understanding and justification."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 31,
+    "moment_id": "balanced_520:1f566292-5dd8-51f2-9918-2cb52ca6f4e8_24521773-2fb9-5560-ba51-bc3a095f57a8_5aa741b7-1895-5b1a-acc7-cbe716cc3e00__hum_57_57",
+    "student_id": "24521773-2fb9-5560-ba51-bc3a095f57a8",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "641180cf0544c3c7b3c9526c1ac226428fb2a3398af1cf233a10da01540519e2"
+}

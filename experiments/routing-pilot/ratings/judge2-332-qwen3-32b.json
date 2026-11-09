@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "self_detailed",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think that matches with in the answer choices?",
+      "reason": "Student has just circled B (9/4) and the tutor confirms the arithmetic then asks the student to connect it to the answer choices, requiring the student to do the final identification step independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "So that's the right answer. Great job!",
+      "reason": "Tutor walks through all the arithmetic, explains the method, interprets the feedback message, and confirms the answer repeatedly without letting the student do any work; also contains confused/repetitive reasoning and misreads the answer choices (claims B is 9/4 when the transcript lists B as 3/1)."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": true,
+      "uncertain": true,
+      "context_fit": 1,
+      "evidence": "Option B is 3/1, which is just 3",
+      "reason": "Tutor does all the reasoning for the student and then makes a math/reading error by listing B as 3/1 rather than 9/4 (which the student just circled), leading to a false conclusion that 9/4 is not among the choices; this contradicts the student's action and introduces confusion."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 3 times 3?",
+      "reason": "Tutor recaps the correct setup and then asks the student to supply the one arithmetic fact (3×3) they have been struggling with, providing targeted scaffolding without giving the answer."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how does that lead to 9/4? What happens to the numerator and denominator?",
+      "reason": "Asks the student to justify and explain their answer 9/4, increasing cognitive demand by requiring articulation of the reasoning rather than just confirming correctness."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 332,
+    "moment_id": "balanced_520:b777c136-7736-530e-bc50-759e7befb764_63f97df8-217d-5b77-a0be-5582a1f765b1_6759dc20-c3f2-5c19-abff-f63b70c4b4ed__hum_74_82",
+    "student_id": "63f97df8-217d-5b77-a0be-5582a1f765b1",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "d9a93c100c69efb80d1cadf6bd683d1172084cbe31ba438112ca6008a62e4db9"
+}

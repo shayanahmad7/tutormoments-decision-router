@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "original",
+    "C3": "force_scaffolding",
+    "C4": "self_detailed",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If the whole box is divided into six equal parts and I take all six parts, that means I have the whole box, right? So six sixths is the same as one whole. So 6/6 equals 1. Does that make sense?",
+      "reason": "The tutor provides a clear explanation of why 6/6 equals 1, directly addressing the student's confusion. This is a helpful clarification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "No, six out of six is another way of writing the whole, which is 1. So if I take all six parts of the box, that's 6/6, and that equals 1. \n\nLet me ask you: If I take just one part of the box, that's 1/6. If I take two parts, that's 2/6. What if I take three parts? What fraction would that be?",
+      "reason": "The tutor corrects the student's error and then provides a scaffolded question to check for understanding and build on the concept of fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if six sixths equals one whole, and one sixth is just one part, what happens if I take all six parts? What does that equal?",
+      "reason": "The tutor uses the student's previous correct answer (one sixth) and the concept of a whole to guide them to the correct answer for 6/6, promoting active recall."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said six out of six is one sixth — but wait, that doesn’t match what we just saw. If I shaded all six parts of the box, how many sixths did I take? And what number is that the same as?",
+      "reason": "The tutor directly addresses the student's incorrect statement and then rephrases the question to guide them to reconsider the concept of a whole, promoting deeper thinking."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said six out of six is one sixth. Let me see if that makes sense. If I take all six parts of the box, that should be the whole box, right? So what number represents the whole box?",
+      "reason": "The tutor challenges the student's incorrect answer by asking them to consider the meaning of 'the whole box,' which they had just discussed, prompting them to self-correct."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 434,
+    "moment_id": "balanced_520:edac2eb8-8342-54f6-afd9-28f0e974e987_160d83b3-71b7-5ce8-af38-023ce32665f6_b57ad33f-c9ef-5a7a-9d94-be7a411b92ce__hum_378_396",
+    "student_id": "160d83b3-71b7-5ce8-af38-023ce32665f6",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "49f0d72117230c15e99537d165581a68dbbb831b31d984121c80f87dd712f2d2"
+}

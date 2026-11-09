@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "original",
+    "C3": "force_rigor",
+    "C4": "force_scaffolding",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me help you with that. So, we have the number 6,0_4,232 and we're comparing it to 6,034,23_. The first blank is in the thousands place, and the second blank is in the ones place.",
+      "reason": "The tutor provides the full solution to the problem, including the reasoning for each part. This is overhelping as the student has indicated confusion but not an inability to engage with the problem with more targeted support."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's take a look at this problem together. We have the inequality: 6,0_4,232 < 6,034,23_.",
+      "reason": "The tutor provides the full solution to part A of the problem, which is overhelping. The student has indicated confusion but not an inability to engage with the problem with more targeted support. The tutor also cuts off mid-sentence, which is not ideal."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the second part of the problem again. If the first missing number is 3, what possible values can the second missing number take? Can you explain why those values work?",
+      "reason": "The tutor focuses on the second part of the problem, which the student has not yet fully addressed. The tutor asks the student to identify the values and explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If the first missing number was a 3, what does that make the first number? How does that compare to the second number? What does that tell you about the possible values for the second missing number?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable questions, guiding the student towards the solution without giving it away. This scaffolds the problem-solving process and promotes rigor by asking the student to think through the comparison."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's look at the numbers again. The first number is 6,0_4,232 and the second number is 6,034,23_. If the first missing number is 2, then the first number becomes 6,024,232. What do you notice about the second number? How does it compare?",
+      "reason": "The tutor re-states the problem with the given information for part A and then asks a guiding question to help the student compare the numbers. This is a good scaffold that prompts the student to think about the relationship between the two numbers."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 514,
+    "moment_id": "balanced_520:fce0bf42-dce2-568e-b271-3149f5a0dbe6_26cec584-a869-58bf-8cf5-51fbb49e323f_a2e0105d-553c-525b-8a15-4db2e668acd2__hum_314_338",
+    "student_id": "26cec584-a869-58bf-8cf5-51fbb49e323f",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "0f62077f557d1f3f5012c838b70126ecca315a91b1ada4259235c97f54e0e269"
+}

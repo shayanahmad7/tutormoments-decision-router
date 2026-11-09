@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "force_scaffolding",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What if we had a remainder in the division step? How would that affect our check? Would it still be correct? Why or why not?",
+      "reason": "The tutor asks a hypothetical question that extends the student's thinking beyond the immediate problem, promoting deeper understanding of the relationship between multiplication and division and the role of remainders."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me just walk through it one more time with you to make sure everything clicks. So, we started with 367 times 7, right? You did 7 times 7, which is 49. You put the 9 in the ones place and carried the 4 over. Then you did 7 times 6, which is 42, and added the 4 you carried over, making it 46. You put the 6 in the tens place and carried the 4 again. Then you did 7 times 3, which is 21, and added the 4 you carried over, making it 25. So the final answer was 2569. Then we divided 2569 by 7, and you worked through it step by step. You found that 7 goes into 25 three times (21), subtracted to get 4, brought down the 6 to make 46, and then 7 goes into 46 six times (42), subtracted to get 4, brought down the 9 to make 49, and 7 goes into 49 exactly seven times. So the answer was 367, which matches the original number we multiplied. That’s a perfect check!",
+      "reason": "The tutor completely re-explains both the multiplication and division problems, detailing every step and the final answer. The student had already successfully completed both problems with guidance, making this re-explanation unnecessary and over-helping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how does that relate to the original multiplication problem we did earlier? What does that tell us about the relationship between multiplication and division?",
+      "reason": "The tutor asks the student to articulate the relationship between multiplication and division based on the completed problem, promoting conceptual understanding and justification."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, let’s try something similar but with a new number. Let’s say we take 428 and multiply it by 6. What do you think the result would be? Can you try solving 428 x 6 first?",
+      "reason": "The tutor correctly identifies the connection between the two operations and then immediately moves to a new, similar problem without first asking the student to explain the connection, which would have been a more rigorous approach."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that tell us about the relationship between multiplication and division? Can you explain how these two operations are connected in this case?",
+      "reason": "The tutor asks the student to explain the relationship between multiplication and division based on the completed problem, which encourages deeper conceptual understanding."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 339,
+    "moment_id": "balanced_520:badd87ad-b9ea-57f5-864a-80b83acf57c0_d3a947b2-91c7-5466-87c5-417f128a975e_e879094a-34d1-5090-8d00-ba9fc5ae48da__hum_541_621",
+    "student_id": "d3a947b2-91c7-5466-87c5-417f128a975e",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "2f2670e6c528143690e80e467ab5171126839fddcb2aeecf49700fe205c2465a"
+}

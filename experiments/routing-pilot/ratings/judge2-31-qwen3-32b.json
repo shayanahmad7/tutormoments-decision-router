@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I have the fraction 1/2, and I multiply both the numerator and the denominator by 2, I get 2/4",
+      "reason": "Directly models the procedure (multiplying numerator and denominator by 2) before asking the student to try it, supplying the key reasoning step the student could have discovered."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "divide them equally among 4 friends",
+      "reason": "The recommended topic is 'Represent equivalent fractions,' but this reply presents a division word problem, contradicting the current task."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "draw a picture or model to show what 1/2 is equivalent to in fourths... explain how you know they're the same amount",
+      "reason": "Provides a concrete representational scaffold (drawing/model) while also requiring justification, fitting the 'Represent equivalent fractions' topic without giving away the answer."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what you remember about equivalent fractions? Maybe you can give me an example",
+      "reason": "Activates prior knowledge and asks the student to independently produce an example, appropriate to the equivalent fractions topic, though no scaffolding is offered."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you draw a fraction on the screen? Maybe 1/2?",
+      "reason": "Asking the student to draw 1/2 is a reasonable entry point for equivalent fractions, but it is quite generic and doesn't clearly connect to representing equivalence, making the fit weak."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 31,
+    "moment_id": "balanced_520:1f566292-5dd8-51f2-9918-2cb52ca6f4e8_24521773-2fb9-5560-ba51-bc3a095f57a8_5aa741b7-1895-5b1a-acc7-cbe716cc3e00__hum_57_57",
+    "student_id": "24521773-2fb9-5560-ba51-bc3a095f57a8",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "24270b7ec5aa31d0a3b7717660dc51b2f01019d22e545e7f1437592bef48d075"
+}

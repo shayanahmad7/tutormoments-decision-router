@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "original",
+    "C3": "force_rigor",
+    "C4": "force_scaffolding",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s look at part A first: If the first missing number is 2, what values can the second missing number be?",
+      "reason": "The tutor breaks down the problem into smaller, manageable parts (part A and part B) and then guides the student to compare the digits, which is a good scaffolding strategy. It also asks the student to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's break this down. If the first missing number is a 2, then the number on the left is 6,0**2**4,232. The number on the right is 6,034,23_. Now, look at the digits from left to right. The first three digits are the same (6,0, and then 2 vs. 3). Since 2 is less than 3, the number on the left is already smaller, no matter what the second missing digit is. So for part A, there are **no possible values** for the second digit that would make the left number greater than the right one.",
+      "reason": "The tutor provides the complete solution for both parts of the problem, which is overhelping. The student could have productively worked through these steps with more guidance."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What makes the second number bigger when the first missing number is a 3? What do you need to think about in the second blank to make the whole number bigger than the first one?",
+      "reason": "The tutor asks guiding questions that prompt the student to think about the comparison of numbers and the role of the second blank, which is good scaffolding and promotes rigor."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s focus on part B first. If the first missing number is 3, the number becomes 6,0**3**4,23_. What values for the second blank would make the whole number greater than 6,034,23_? Start by comparing the digits from left to right. What do you notice?",
+      "reason": "The tutor provides a clear starting point by focusing on part B and then asks a guiding question to help the student compare the digits, which is good scaffolding and promotes rigor."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If the first missing number was a 3, the possible values of the second missing number are 3 through 9. Can you explain why the second number can only be 3 or higher in that case?",
+      "reason": "The tutor provides the correct answer for part B but then immediately asks the student to explain their reasoning, which is a good way to promote rigor and check for understanding."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 514,
+    "moment_id": "balanced_520:fce0bf42-dce2-568e-b271-3149f5a0dbe6_26cec584-a869-58bf-8cf5-51fbb49e323f_a2e0105d-553c-525b-8a15-4db2e668acd2__hum_314_338",
+    "student_id": "26cec584-a869-58bf-8cf5-51fbb49e323f",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "21143ab4540808a001fc3143b677b05aad6afc86c7aa90a0787afbfd7c78f365"
+}

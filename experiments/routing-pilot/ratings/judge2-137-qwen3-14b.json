@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "original",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why \"so\" fits in the sentence better than the other options?",
+      "reason": "Asks the student to justify their answer choice, increasing cognitive demand without giving away the answer or providing scaffolding hints."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Would \"so\" make sense here? Let's try it: \"Others at Luz's school did not experience the challenges Luz faced when she used the bathroom, so they did not understand.\" Does that make sense?",
+      "reason": "Plugs 'so' directly into the sentence and asks only for confirmation, doing the key reasoning step the student should perform and essentially confirming the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the sentence is saying that others didn't experience Luz's challenges, and because of that, they didn't understand. What word would connect those two ideas?",
+      "reason": "Paraphrases the logical relationship between the two clauses to help the student identify the connector, a useful hint without giving the answer."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is there a word that means \"so\" or \"therefore\" in this context?",
+      "reason": "Restates the sentence and guides the student toward the semantic category of the answer (causal connector), providing a useful hint without selecting the answer for them."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "It should show a reason or explanation. Can you think of a word that means \"so\" or \"therefore\" in this context?",
+      "reason": "Explains the logical relationship and narrows the word type needed, scaffolding the student's thinking without directly supplying the answer."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 137,
+    "moment_id": "balanced_520:369f06b9-0cd9-5e40-aade-3cc0aae4f7f8_4258716b-b280-51b0-ae7b-1381019e53bc_fdbc85a5-cf5c-5110-bea8-0e8b0f9e30cf__hum_40_47",
+    "student_id": "4258716b-b280-51b0-ae7b-1381019e53bc",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "2aceeb179550361f7339b84a5738dda0722043aed078eacb257f1cf0d285e10d"
+}

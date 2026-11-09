@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed",
+    "C4": "force_rigor",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why did you choose the word \"expert\" for the second sentence?",
+      "reason": "Asks the student to justify their word choice, increasing cognitive demand through explanation rather than just confirming the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what the dog howls when the violin is being done",
+      "reason": "Provides a hint by redirecting attention to the context clue in sentence 3, helping the student access the next item without giving the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which word from the list fits best?",
+      "reason": "Moves to the next sentence and asks the student to select the word; this is a straightforward next-step prompt without additional scaffolding or justification demand."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is \"expert\" the right word to use in that sentence?",
+      "reason": "Asks the student to justify their correct answer, requiring explanation and deepening understanding of the vocabulary word in context."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The student drags the word \"expert\" into the blank in the second sentence",
+      "reason": "The tutor performs the drag-and-drop action for the student (confirming and completing sentence 2) before asking about sentence 3, supplying an action the student could have done independently."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 266,
+    "moment_id": "balanced_520:7eb4777b-92bc-5f5f-abd6-a6fd4173384c_4df3f0a2-38a8-5378-92e5-e217be975c61_1675a4b8-b81f-5e32-b26e-617bacf1cac8__hum_27_31",
+    "student_id": "4df3f0a2-38a8-5378-92e5-e217be975c61",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "7107a37856a10de352191e900dad24d813cec40a1d459ff51f0a10eb54df715e"
+}

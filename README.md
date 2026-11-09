@@ -1,8 +1,25 @@
 # TutorMoments: Choosing When to Help and When to Challenge
 
-This project asks a practical question about AI math tutoring: **can a small decision model recognize when a student needs support and when they are ready for more independent thinking?** We use TutorMoments, which provides real math tutoring conversations stopped at teacher-identified decision points.
+This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-The next experiment asks whether a good decision improves the reply the student receives. See the [matched tutoring pilot](experiments/routing-pilot/PLAN.md) for the frozen design and [execution notes](experiments/routing-pilot/EXECUTION-NOTES.md) for infrastructure corrections. It compares a Jev-directed policy with a tutor that receives the same detailed policies and chooses for itself. Qwen3 14B and 32B provide a within-family model-size comparison.
+The completed [matched tutoring pilot](experiments/routing-pilot/RESULTS.md) compares a Jev-directed policy with a tutor that receives the same detailed policies and chooses for itself. Qwen3 14B and 32B provide a within-family model-size comparison. The [design](experiments/routing-pilot/PLAN.md) was frozen before generation; [execution notes](experiments/routing-pilot/EXECUTION-NOTES.md) record every correction and extension.
+
+## New pilot: what happened
+
+We generated 320 replies across 32 distinct students and had two independent model judges evaluate every reply. Four sampled stopping points concern non-math tasks, so the math comparison contains 28 cases. All original cases and results are retained.
+
+| Tutor and evaluator | Detailed self-choice | Jev + detailed policy | Always use rigor policy |
+|---|---:|---:|---:|
+| Qwen3 14B, Gemini judge | 14/28 | 17/28 | 19/28 |
+| Qwen3 14B, Claude judge | 15/28 | 19/28 | 19/28 |
+| Qwen3 32B, Gemini judge | 17/28 | 23/28 | 20/28 |
+| Qwen3 32B, Claude judge | 14/28 | 19/28 | 21/28 |
+
+These are passes on our first-reply rubric, not official TutorMoments scores. Both judges favor Jev over detailed self-choice, but Jev does not consistently beat a fixed policy or a cheap LLM router. No math-only paired exact comparison above establishes a significant Jev benefit at .05. We also found no evidence of a special advantage for the smaller model or lower end-to-end delay than one tutor call. Total accounted pilot spending was **$2.59**, including evaluator checks, setup and conservative failed-request reservations.
+
+**Interpretation:** worthwhile preliminary evidence for the course, not yet proof that context-sensitive routing improves tutoring. The strongest follow-up tests the value of the decision itself against fixed-policy and equally detailed prompting controls. Read the [findings and recommended study](experiments/routing-pilot/FINDINGS.md), [complete results](experiments/routing-pilot/RESULTS.md), and [related work](experiments/routing-pilot/RELATED-WORK.md).
+
+Actual [replies and both judges' ratings](experiments/routing-pilot/replies-and-ratings.csv), [case-level policy results](experiments/routing-pilot/case-results.csv), and an offline [conversation reader](experiments/routing-pilot/review.html) are included. Exact requests, responses, prompt hashes, and offline verification scripts make the run auditable. Download `review.html` and open it locally; GitHub displays its source.
 
 ```mermaid
 flowchart LR

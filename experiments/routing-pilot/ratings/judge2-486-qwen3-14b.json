@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number comes after 438 if we keep subtracting 100?",
+      "reason": "The student already answered B and the tutor is breaking it down further with a leading substep, over-scaffolding a student who has already identified the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me check your thinking. If we're going down by hundreds from 538 to 438, what would the next number be before 238?",
+      "reason": "Asks the student to verify and explain their reasoning without giving away the answer, appropriate since the student just said 'B' without full explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "why the missing number is 338",
+      "reason": "Reveals the answer (338) while asking the student to explain it, which removes the productive challenge of confirming the answer independently."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured that out?",
+      "reason": "Asks the student to justify their answer of B without giving it away, appropriate follow-up to check understanding after the student identified the pattern."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So after 438, the next number would be 338. That means the number in the box is 338.",
+      "reason": "Fully confirms and explains the answer the student had just identified, supplying reasoning the student could have provided themselves."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 486,
+    "moment_id": "balanced_520:fb5ba1d4-bc48-5f4e-8b37-69eb67671729_d206debb-e1f5-50db-bc3f-33c0ad14afb2_9a4efc06-de32-568f-b668-fcda67d8f994__hum_292_297",
+    "student_id": "d206debb-e1f5-50db-bc3f-33c0ad14afb2",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "5c65a081a5dc96363bb04b05a325b179bd27f940f59138afa52b5ed8ba87a734"
+}

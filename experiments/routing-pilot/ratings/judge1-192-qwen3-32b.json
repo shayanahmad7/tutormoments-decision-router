@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "self_detailed",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "think about what two fractions could add up to 1/3. For example, could you use smaller pieces like 1/6 or 1/12?",
+      "reason": "The tutor provides a clear hint by suggesting specific smaller fractions (1/6 or 1/12) that could be used to make 1/3, which directly addresses the student's current task."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if you have one-third of a whole, what two different fractions could you add together to make the same amount?",
+      "reason": "The tutor rephrases the question, which is appropriate, but it doesn't offer additional scaffolding beyond the original question."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What smaller fractions do you have available? For example, could you use tenths or sixths to make up 1/3?",
+      "reason": "The tutor provides a useful hint by suggesting specific smaller fractions (tenths or sixths) that could be used to make 1/3, which helps the student narrow down their options."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you wanted to fill the same space using two different fractions, what two pieces could you combine to match the size of one-third?",
+      "reason": "The tutor clarifies the goal by explicitly stating the need to match the size of one-third using two different fractions, which is a helpful rephrasing of the previous question."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "If you take out the one-fourth, what two fractions could you use to fill that same space? Think about how they would add up to one-fourth.",
+      "reason": "The tutor completely changes the problem from making a third to making a fourth, which was not the current task. This is overhelp because it shifts the focus unnecessarily."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 192,
+    "moment_id": "balanced_520:5b6fd601-b7fb-5781-9f76-177d5019131b_296b3de9-99a4-51af-ad4a-1031f3b1233b_d00eebb2-4153-5207-8c63-0c0f1b415b26__hum_52_58",
+    "student_id": "296b3de9-99a4-51af-ad4a-1031f3b1233b",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "671f8e77dfb148d8244d8d44acf693f9e2ffb9719a92b90c924e555e1bf4bc8d"
+}

@@ -1,0 +1,577 @@
+{
+  "tag": "gen-497-qwen3-32b-force_scaffolding",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears on the screen: \"Amira has joined\".\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears on the screen: \"Mr. Bradley has joined\".\nTurn 1. TUTOR: [PAUSE: 298 seconds]\nTurn 1. TUTOR: [PAUSE: 193 seconds] The screen shows the the tutoring platform main room. A user named Amira is present. The main area of the screen says \"No pages created\".\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Mr. Bradley has joined\" appears. The tutor's video feed appears on the right panel, then moves to the main screen area. The tutor has a virtual background showing bookshelves and the word \"Tutoring\".\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - creating page] The tutor clicks the \"Create Page\" button, and the screen switches to a new blank whiteboard.\nTurn 1. TUTOR: [PAUSE: 235 seconds] The screen remains on the blank whiteboard with no activity or dialogue for the rest of the video.\nTurn 1. TUTOR: [PAUSE: 310 seconds] The screen shows the the tutoring platform interface. A participant named \"Amira\" is in the room. The main whiteboard area displays the message \"No pages created\". No one is speaking and there are no screen interactions.\nTurn 1. TUTOR: [PAUSE: 112 seconds] The screen shows a blank the tutoring platform whiteboard with the message \"No pages created\". A participant named \"Amira\" is in the room.\nTurn 1. TUTOR: Hello.\nTurn 2. TUTOR: [SCREEN_UPDATE] The student's video feed appears. The tutor and student video feeds are now side-by-side.\nTurn 2. TUTOR: How are you doing?\nTurn 3. STUDENT: Good.\nTurn 4. TUTOR: Good.\nTurn 5. TUTOR: How was your weekend?\nTurn 6. STUDENT: Good.\nTurn 7. TUTOR: Great. What did you do?\nTurn 8. STUDENT: Went to the beach and to the desert.\nTurn 9. TUTOR: Oh, that's awesome.\nTurn 10. TUTOR: Was the weather nice?\nTurn 11. STUDENT: It was kind of hot.\nTurn 12. TUTOR: Yeah.\nTurn 13. TUTOR: That's fun. The beach is fun.\nTurn 14. STUDENT: Mhm.\nTurn 15. TUTOR: All right. Share my screen with you.\nTurn 16. TUTOR: [SCREEN_UPDATE] The tutor's screen share replaces their video feed. It loads and then shows a purple background with a white card titled \"Areas of composite shapes made of rectangles\".\nTurn 16. TUTOR: [PROBLEM_CHANGE: p1 - Areas of composite shapes made of rectangles (start)] The screen updates to show a problem. On the left is a composite shape made of a pink 6x6 square and a blue 3x9 rectangle. The problem text reads: \"The shape is split into two rectangles to help find the total area. What number would go in the box to complete this calculation? 6 x 6 + 3 x [ ]\". Four multiple-choice options are shown: A) 9, B) 27, C) 36, D) 63.\nThe tutor's cursor moves over the problem text.\nStudent draws the number 9 and a curved line pointing from the 9 to the empty box in the equation.\nTutor clicks option A, then clicks the \"Check\" button. The screen shows \"Correct!\" and a \"Next\" button appears.\nTurn 16. TUTOR: So, we will continue building on what we did last time. Can you see my screen all right?\nTurn 17. STUDENT: Mhm, yeah.\nTurn 18. TUTOR: All right. So, we will start with similar to what we did last time, um, areas of composite shapes with more than one rectangle in a shape. So, see this first question. This shape is split into two rectangles to help find the total area. So, we're looking for the total area. What number would go into the box, so looking for the number that would go into this blue box, to complete the calculation?\nTurn 19. STUDENT: Nine?\nTurn 20. TUTOR: Yeah, good job.\nTurn 21. TUTOR: [PROBLEM_CHANGE: p2 - Areas of composite shapes made of rectangles (start)] The screen updates to the next problem. It shows a composite shape made of a pink 3x3 square and a blue 6x5 rectangle. The problem text reads: \"The shape is split into two rectangles to help find the total area. What number would go in the box to complete this calculation? 3 x [ ] + 6 x 5\". Four multiple-choice options are shown: A) 21, B) 3, C) 5, D) 7.\nTutor's cursor moves over the problem text and the empty box in the equation.\nTurn 21. TUTOR: What number would go into the box to complete this calculation?\nTurn 22. TUTOR: [SCREEN_INTERACTION: student - drawing] Student draws a line pointing to the pink 3x3 square.\nTurn 22. STUDENT: Seven?\nTurn 23. TUTOR: Seven. Great job.\nTurn 24. TUTOR: [SCREEN_INTERACTION: student - answering question] The student clicks on option D, then clicks the \"Check\" button. A message \"D is correct!\" appears. The student then clicks the \"Next\" button.\nTurn 24. TUTOR: [PROBLEM_CHANGE: p2 - 'What is the total area of the shape?' (start)] The problem updates to a new question for the same shape: \"What is the total area of the shape?\". The options are A: 18, B: 30, C: 12, D: 50.\nTurn 24. TUTOR: What is the total area of this shape? So the pink part plus the blue part.\nTurn 25. TUTOR: [PAUSE: 50 seconds] Student writes \"18 + \" on the board.\nStudent writes a messy \"12\" that looks like a \"Z\", followed by \"= 30\".\nTurn 25. TUTOR: Eighteen. All right. Good job.\nTurn 26. STUDENT: plus twelve, I think, yeah. equals thirty. So that would be B.\nTurn 27. TUTOR: Thirty in all. B. Great job.\nTurn 28. TUTOR: [SCREEN_INTERACTION: student - answering question] The student clicks on option B, then clicks the \"Check\" button. A message \"B is correct!\" appears. The student then clicks the \"Next\" button.\nTurn 28. TUTOR: [PROBLEM_CHANGE: p3 - 'What is the total area of the shape?' (start)] The problem updates to a new question with a new composite shape. The question is \"What is the total area of the shape?\". The shape is composed of two rectangles. The left rectangle has dimensions 6 units by 4 units. The right rectangle has dimensions 3 units by 5 units. The options are A: 24 square units, B: 15 square units, C: 39 square units, D: 18 square units.\nStudent writes \"6 x 4 = 24\" on the board.\nTurn 28. TUTOR: All right. This shape is split into two rectangles to help find the total area. What is the total area? So this time, we are gonna have to multiply to find the area of each rectangle and then add them together.\nTurn 29. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes \"5 x 3 = 15\" and then \"24 + 15 = 39\" on the board.\nTurn 29. STUDENT: Hmm. Thirty-nine?\nTurn 30. TUTOR: Thirty-nine, yes. Awesome.\nTurn 31. TUTOR: [SCREEN_INTERACTION: student - answering question] The student clicks on option C, then clicks the \"Check\" button. A message \"C is correct!\" appears. The student then clicks the \"Next\" button.\nTurn 31. TUTOR: [PROBLEM_CHANGE: p4 - 'What is the total area of the shape?' (start)] The problem updates to a new question with a new composite shape. The question is \"What is the total area of the shape?\". The shape is composed of a top rectangle (7 units by 5 units) and a bottom rectangle (8 units by 2 units). The options are A: 35 square units, B: 51 square units, C: 22 square units, D: 16 square units.\nTurn 31. TUTOR: All right, the shape is split into two rectangles to help find the total area. What is the total area of the shape?\nTurn 32. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes \"7 x 5 = 35\", then \"2 x 8 = 16\", and finally \"35 + 16 = 51\".\nTurn 32. STUDENT: Fifty-one, B?\nTurn 33. TUTOR: Fifty-one, B. All right.\nTurn 34. TUTOR: [SCREEN_INTERACTION: student - answering question] The student clicks on option B, then clicks the \"Check\" button. A message \"B is correct!\" appears. The screen then shows a summary: \"Overview. You got 5/5 correct.\" Confetti falls on the screen.\nStudent clicks the \"Take stretch and challenge\" button.\nTurn 34. TUTOR: Awesome. One hundred percent. Let's see if there's a challenge on this level. All right.\nTurn 35. TUTOR: [PROBLEM_CHANGE: p5 - 'What is the value of x?' (start)] The screen updates to a new problem. \"Practice Question 1. What is the value of x?\". A rectangle is shown with \"Area = 256 cm²\" written inside. The height is labeled \"8 cm\" and the length is labeled \"x cm\".\nTurn 35. TUTOR: What is the value of x? So, we know the area is two hundred fifty-six centimeter squared. The height is eight. What is the length?\nTurn 36. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes out the long division of 256 divided by 8, arriving at the answer 32.\nTutor types \"32\" into the answer box and clicks the submit button.\nTurn 36. STUDENT: So, thirty-two.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nProvide targeted scaffolding now. Identify the specific unresolved obstacle in the student's current mathematical work. Offer only the smallest useful hint, representation, or clarification that makes the next step accessible. Use the learner's actual numbers and ideas when available. Leave the key calculation or inference for the student and invite one manageable next step. Do not give a full solution, stack several leading questions, repeat an explanation the learner already understands, or invent unseen worksheet details.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261109,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "d7761545e713fe353bae2c6b9aa6f2f18cd1fbe2e614af9ff4f225ff9b6cf82b",
+  "reserve_usd": 0.0012737599999999999,
+  "started_utc": "2026-11-09T21:11:24Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "What is the formula for the area of a rectangle, and how can you use it to find the missing side length?",
+  "first_answer_ms": 1048.625582999989,
+  "usage": {
+    "prompt_tokens": 2850,
+    "completion_tokens": 28,
+    "total_tokens": 2878,
+    "cost": 0.00023584,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00023584,
+      "upstream_inference_prompt_cost": 0.000228,
+      "upstream_inference_completions_cost": 7.84e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant",
+            "reasoning": "\n",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "\n",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant",
+            "reasoning": "\n",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "\n",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "What is ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "the ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "form",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ula f",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "or ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "th",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e area of ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " rec",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "tang",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "le, ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "and ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "how ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "can",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " yo",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "u use",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " it ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "to find ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "the m",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "issing ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ide length?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant",
+            "reasoning": null
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794258684-FnEPBjJIwRA3HkrOh54G",
+      "object": "chat.completion.chunk",
+      "created": 1794258684,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2850,
+        "completion_tokens": 28,
+        "total_tokens": 2878,
+        "cost": 0.00023584,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00023584,
+          "upstream_inference_prompt_cost": 0.000228,
+          "upstream_inference_completions_cost": 7.84e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "\n\n",
+  "cost_usd": 0.00023584,
+  "elapsed_ms": 1556.772292000005
+}

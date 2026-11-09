@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you think of a sentence using \"abundant\"",
+      "reason": "Asks student to produce a sentence with 'abundant', which is reasonable rigor, but the tutor already explained 'abundant' and moved on to other words; returning to it without context is weakly connected to the current moment where the student just rejoined after a disconnect."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you think of a sentence using \"dedicate\" in your own words?",
+      "reason": "Asks student to produce a sentence, which is a productive independent task, but ignores that the student just rejoined after a connection drop and the session had moved past vocabulary; no acknowledgment of the reconnection."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you try to explain what \"dedicate\" means in your own words?",
+      "reason": "Prompts student to explain a vocabulary word independently, which is appropriate rigor, but like C2 ignores the reconnection moment and jumps back into vocabulary without re-orienting the student."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "using a math example",
+      "reason": "Introduces a math framing for an ELA vocabulary lesson with no math content anywhere in the session; contradicts the subject matter of the tutoring session."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's get back into it. So we were going through some vocabulary words",
+      "reason": "Acknowledges the reconnection, briefly recaps the three words already covered (appropriate given the dropout), then introduces a new vocabulary word for the student to define independently, fitting the session's vocabulary activity and the reconnection moment."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 226,
+    "moment_id": "balanced_520:6f2cb39d-1c6b-543d-aa6b-a75fddefc244_14892eb2-4f6f-5bb6-af7d-6dea422bdc32_10663abe-0e15-581d-8794-909979e9a3d2__hum_189_212",
+    "student_id": "14892eb2-4f6f-5bb6-af7d-6dea422bdc32",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "43debb83c2da2e97f7b77c632ef5adc67300e2ae1293314f11bf2f5bef0e26bb"
+}

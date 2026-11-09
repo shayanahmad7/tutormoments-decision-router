@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "original",
+    "C3": "force_scaffolding",
+    "C4": "force_rigor",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "When we want to compare fractions, it helps to think about what each fraction means.",
+      "reason": "The tutor provides a helpful strategy for comparing fractions by explaining what each fraction means. This is a good way to scaffold the student's understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "When we want to compare fractions, it helps to have them all with the same bottom number, which we call the denominator.",
+      "reason": "The tutor introduces the concept of a common denominator, which is a key strategy for comparing fractions. This is a good scaffold for the student who stated they don't know how to convert fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you imagine two pizzas, one cut into 12 slices and the other into 2 slices, which is smaller: one slice of the 12-slice pizza or one slice of the 2-slice pizza?",
+      "reason": "The tutor uses a relatable analogy (pizzas) to help the student visualize and compare the fractions 1/12 and 1/2. This is a good scaffolding technique."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me which of these is the biggest and which is the smallest? Why do you think that?",
+      "reason": "The tutor asks the student to identify the biggest and smallest fractions and to justify their reasoning, which promotes deeper thinking and responsibility."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me which one is the smallest and why?",
+      "reason": "The tutor asks the student to identify the smallest fraction and to explain their reasoning, which encourages independent thought and justification."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 449,
+    "moment_id": "balanced_520:f2fcc679-0694-5615-9acb-871584d8ccd2_38d93a42-475e-51a5-b69a-24da2040f34d_ff918db4-ce8a-5c0c-a5eb-999f94f8ab05__hum_243_265",
+    "student_id": "38d93a42-475e-51a5-b69a-24da2040f34d",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "b58d460396818f367ef0439c243c0838d42206e0a5a82319989f546150a2b016"
+}

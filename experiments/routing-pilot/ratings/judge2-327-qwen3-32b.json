@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "original",
+    "C4": "jev_label",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of something that used to be hard for you, but now you can do it?",
+      "reason": "Briefly explains growth mindset and immediately asks the student to apply it with a reflective question, balancing scaffolding with student-generated thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Maybe something related to making bracelets, learning languages, or even math?",
+      "reason": "Connects to the student's own interests from the conversation to scaffold the concept, then asks the student to generate an example themselves, which is appropriate and context-sensitive."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "when you were learning to make bracelets, maybe it was tricky at first, but now you can make them really fast. That's a growth mindset in action!",
+      "reason": "Provides a full definition and supplies a specific example for the student using their own experience, leaving little for the student to construct themselves before asking the follow-up question."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "maybe there was a time when you couldn't make a bracelet in five minutes, but now you can! That's because you practiced and kept trying.",
+      "reason": "Gives a complete definition and a worked personal example before asking the student anything, over-scaffolding by supplying the very reasoning the student could have generated."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's one thing that used to be hard, but you can now do?",
+      "reason": "Skips explaining growth mindset entirely and goes straight to the slide question, placing full cognitive responsibility on the student; appropriate given the slide's structure but provides no scaffolding for the unknown concept."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 327,
+    "moment_id": "balanced_520:ab0dd259-a827-5e09-9b3e-5eadcf348508_bf48962c-1c6e-53d1-9687-d12535f72c99_b2d00090-4129-5f8b-8fd4-7860d5fe7c21__hum_121_125",
+    "student_id": "bf48962c-1c6e-53d1-9687-d12535f72c99",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "294850ae061d7dabb28ccdd53f8e6bf8b849cfb73959397242ce898e4b896317"
+}

@@ -30,6 +30,8 @@ def paired(a,b,labels,seed=20261109):
  return {'n':len(d),'difference_pp':100*statistics.mean(d),'ci95_pp':[100*q(boots,.025),100*q(boots,.975)],'wins':win,'losses':loss,'ties':len(d)-discord,'mcnemar_exact_p':pv}
 
 def main():
+ pending=[f.name for f in (HERE/'traces').glob('*.json') if p.load(f).get('status')=='pending']
+ if pending:raise RuntimeError('Experiment still running; wait before final analysis: '+', '.join(pending))
  cfg=p.load(HERE/'frozen.json');source=p.source();out=[];raw=[];judge_comparison=[];bad_evidence=[]
  for c in cfg['cases']:
   idx=c['index'];rt=p.load(HERE/'traces'/f'route-{idx}.json');ans=rt['response']['answers']['next_move'];route=ans['choice'];prob=max(ans['probabilities'].values())
@@ -114,22 +116,40 @@ def main():
    lr=p.load(f)
    if lr.get('status')=='complete':lrrows.append((c,lr,json.loads(lr['text'])['decision']))
  results['llm_routing']={'n':len(lrrows),'correct':sum(c['reference']==label for c,r,label in lrrows),'latency_ms':dist([r['elapsed_ms'] for c,r,label in lrrows]),'cost_usd':sum(r['cost_usd'] for c,r,label in lrrows)}
+ secondmap={(x['index'],x['model'],x['arm']):x for x in judge_comparison}
+ secondrows=[]
+ for row in out:
+  k=(row['index'],row['model'],row['selected_arm'])
+  if k in secondmap:secondrows.append({**row,'strict_pass':secondmap[k]['secondary']})
+ for row in raw:
+  x=secondmap.get((row['index'],row['model'],row['arm']))
+  row['secondary_pass']=x['secondary'] if x else None
+  row['secondary_reason']=x['secondary_rating']['reason'] if x else None
+  row['secondary_overhelp']=x['secondary_rating']['overhelp'] if x else None
+  row['secondary_context_fit']=x['secondary_rating']['context_fit'] if x else None
  for model in cfg['models']:
   cc=[r for r in judge_comparison if r['model']==model]
   results['cross_judge'][model]={'n_replies':len(cc),'n_cases':len({r['index'] for r in cc}),'agree':sum(r['primary']==r['secondary'] for r in cc),'primary_pass':sum(r['primary'] for r in cc),'secondary_pass':sum(r['secondary'] for r in cc)}
- traces=[p.load(f) for f in (HERE/'traces').glob('*.json')]
+ traces=[p.load(f) for f in sorted((HERE/'traces').glob('*.json'))]
  results['spending_usd']=sum(r['cost_usd'] for r in traces);results['api_calls']=len(traces)
  results['truncated_generations']=sum(r.get('finish_reason')=='length' for r in traces if r['tag'].startswith('gen-'))
  results['unexpected_reasoning_generations']=sum(bool(r.get('reasoning_text','').strip()) for r in traces if r['tag'].startswith('gen-'))
  results['providers']=dict(collections.Counter(r.get('provider') for r in traces if r['tag'].startswith('gen-')))
  math_ids=set(p.load(HERE/'domain-screen.json')['math_indices']);results['math_only']={}
+ results['secondary_judge_analysis']={}
+ for model in cfg['models']:
+  results['secondary_judge_analysis'][model]={}
+  for scope in ['all','math_only']:
+   rr=[r for r in secondrows if r['model']==model and (scope=='all' or r['index'] in math_ids)]
+   a=[r for r in rr if r['condition']=='jev_detailed'];b=[r for r in rr if r['condition']=='self_detailed']
+   results['secondary_judge_analysis'][model][scope]={'conditions':{cond:{'n':sum(r['condition']==cond for r in rr),'strict_pass':sum(r['condition']==cond and r['strict_pass'] for r in rr)} for cond in CONDITIONS},'paired':paired([int(r['strict_pass']) for r in a],[int(r['strict_pass']) for r in b],[r['reference'] for r in a]) if a else None}
  for model in cfg['models']:
   rr=[r for r in out if r['model']==model and r['index'] in math_ids]
   results['math_only'][model]={'conditions':{cond:{'n':sum(r['condition']==cond for r in rr),'strict_pass':sum(r['condition']==cond and r['strict_pass'] for r in rr),
      'by_reference':{g:{'n':sum(r['condition']==cond and r['reference']==g for r in rr),'pass':sum(r['condition']==cond and r['reference']==g and r['strict_pass'] for r in rr)} for g in ['scaffolding','rigor']}} for cond in CONDITIONS}}
   a=[r for r in rr if r['condition']=='jev_detailed'];b=[r for r in rr if r['condition']=='self_detailed']
   if a:results['math_only'][model]['primary_comparison']=paired([int(r['strict_pass']) for r in a],[int(r['strict_pass']) for r in b],[r['reference'] for r in a])
- prior=[p.load(f) for d in ['preflight','failed-attempts'] for f in (HERE/d).glob('gen-*.json')]
+ prior=[p.load(f) for d in ['preflight','failed-attempts'] for f in sorted((HERE/d).glob('gen-*.json'))]
  results['spending_including_setup_and_failed_reservations_usd']=results['spending_usd']+sum(r['cost_usd'] for r in prior)
  results['cost_note']='Successful calls use returned costs or input-token list pricing. Failed requests retain conservative reservations, so total including failures is an upper accounting estimate.'
  results['retries']=sum(len(r.get('connection_attempts',[])) for r in traces+prior)

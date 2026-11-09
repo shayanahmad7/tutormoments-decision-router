@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the largest multiple of 5 that's less than or equal to 18?",
+      "reason": "The tutor provides a hint to help the student find the correct quotient for the first step of division."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the largest multiple of 5 that goes into 18?",
+      "reason": "The tutor provides a hint to help the student find the correct quotient for the first step of division."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what should we do next with the remainder? Let's think about how we move forward from here. What number do we bring down next?",
+      "reason": "The tutor provides a guided substep by asking what to do with the remainder and what number to bring down next, which is the next logical step in long division."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So we look at how many times 5 goes into 18 (the first two digits). What do you think that is?",
+      "reason": "The tutor clarifies which digits to focus on for the first division step, providing a useful hint."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But 1 divided by 5 is too small, so we look at the first two digits, which is 18. Now, what is 18 divided by 5?",
+      "reason": "The tutor clarifies why the student should look at the first two digits instead of just the first, providing a useful hint for long division."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 372,
+    "moment_id": "balanced_520:c64a4cc1-f4e5-5519-bd5a-d88e194a7341_16b91893-0d76-53f1-9bda-1ae2724abfb1_56be1d1e-9d88-5020-a41e-1f5c3bec3b60__hum_263_281",
+    "student_id": "16b91893-0d76-53f1-9bda-1ae2724abfb1",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "51992fdffbfb5edfbe54e8e3cb6b0a4bd1c7ac5d7c4f380e8ec0377b5a904361"
+}

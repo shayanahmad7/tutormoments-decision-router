@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "force_scaffolding",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 2 divided by 1/5 equals 10? What does this mean in terms of how many fifths are in 2 wholes?",
+      "reason": "Confirms the correct answer and then asks the student to justify and connect to the concrete meaning, increasing cognitive demand without over-scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the answer is 10? How does dividing by a fraction like 1/5 affect the result?",
+      "reason": "Asks for explanation and conceptual reasoning after confirming the answer, appropriate rigor. Slightly generic but fits the lesson on dividing by unit fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me explain why. When you divide by a fraction, you're asking... So, 2 ÷ 1/5 = 10.",
+      "reason": "Tutor supplies the full explanation of why the answer is correct without giving the student a chance to reason through it, then poses a new problem. This is overhelp since the student gave the right answer and could have been asked to explain."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how could you use a model or a number line to show why that makes sense? For example, how many fifths are in 1 whole?",
+      "reason": "Asks the student to justify using a model/number line and provides a helpful sub-question scaffold (how many fifths in 1 whole) that connects to the earlier bar-model problems in the session, combining scaffolding with meaningful rigor."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing 2 by 1/5 gives 10? How does this relate to the previous problems we worked on?",
+      "reason": "Asks for justification and explicit connection to prior problems in the session, appropriate rigor without over-scaffolding."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 157,
+    "moment_id": "balanced_520:46a653eb-0895-5fc1-b990-2bd149aaaf39_39ac115b-2fe5-5787-9ca7-1e2174cf337e_d39b6568-2a41-5787-bc9b-9d9490406a1f__hum_140_158",
+    "student_id": "39ac115b-2fe5-5787-9ca7-1e2174cf337e",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "5590deb597d777300782216c20661a0dbab465152d669175ae9448fd920b54f0"
+}

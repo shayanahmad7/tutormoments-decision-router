@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "force_rigor",
+    "C3": "jev_label",
+    "C4": "self_detailed",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Ten goes into thirty three times, right? Because ten plus ten plus ten is thirty. So thirty divided by ten is three.",
+      "reason": "Gives the student the full explanation and answer without letting them work through it, similar to how the tutor already explained 23-30 in the conversation. The student just said they don't know how to divide by tens, but the reply immediately supplies the complete reasoning and answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many groups of 10 can you make? Can you explain your thinking?",
+      "reason": "Introduces the grouping concept as a scaffold for division by ten, then asks the student to explain their thinking, which is appropriate rigor. Does not give away the answer and fits the moment where the student said they don't know how to divide by tens."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "30 cookies and you want to divide them equally among 10 friends, each friend would get 3 cookies. So, 30 divided by 10 is 3",
+      "reason": "Fully explains the concept and gives the answer, then immediately pivots to a new problem (20÷5) without letting the student work through the original. Over-breaks the work and supplies reasoning the student could have produced."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if you have thirty objects and you divide them into groups of ten, how many groups can you make?",
+      "reason": "Reframes division as grouping (scaffolding) and asks the student to count out objects to find the answer themselves (rigor). Does not supply the answer and fits the context of the student not knowing how to divide by tens."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "count by tens to thirty and see how many groups of ten you can make",
+      "reason": "Offers a concrete counting-by-tens strategy as a scaffold and asks the student to apply it themselves. Appropriate to the moment and does not give away the answer."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 402,
+    "moment_id": "balanced_520:e1c0ee42-4db2-558d-adf0-557bcb20d715_92058906-7c85-5f08-aba9-adbece587c38_4b416254-d002-5c8f-ae73-a3dc0ab29dbb__hum_267_275",
+    "student_id": "92058906-7c85-5f08-aba9-adbece587c38",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "984d501a511cf0da916f2d34658fa0e1f40c3a7f90dbb8ecfa1f3228df007d7b"
+}

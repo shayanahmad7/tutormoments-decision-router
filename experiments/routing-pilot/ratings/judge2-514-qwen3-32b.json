@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "force_scaffolding",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So for part A, there are no possible values for the second digit that would make the left number greater than the right one",
+      "reason": "The tutor has already typed out the full answer in the answer box and explained the reasoning completely; this reply re-explains everything the tutor already supplied, giving the student nothing to do independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What makes the second number bigger when the first missing number is a 3?",
+      "reason": "Asks the student to reason about part B specifically, which is where the conversation left off, prompting independent thinking without supplying the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the possible values of the second missing number are 3 through 9. Can you explain why",
+      "reason": "Gives away the answer (3 through 9) before asking for justification, which the tutor had already typed; asking for explanation after supplying the answer is partial rigor but the answer itself is overhelp."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start by comparing the digits from left to right. What do you notice?",
+      "reason": "Focuses on part B, provides a useful strategy hint (compare left to right) without giving the answer, and asks the student to reason independently."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the left number becomes 6,024,232. What do you notice about the digits in the right number",
+      "reason": "Fills in the blank for the student (left number becomes 6,024,232) and walks through the comparison setup step by step, doing the cognitive work the student could supply; the question at the end is weak given how much was handed over."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 514,
+    "moment_id": "balanced_520:fce0bf42-dce2-568e-b271-3149f5a0dbe6_26cec584-a869-58bf-8cf5-51fbb49e323f_a2e0105d-553c-525b-8a15-4db2e668acd2__hum_314_338",
+    "student_id": "26cec584-a869-58bf-8cf5-51fbb49e323f",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "0a99df8cd0252f05515e24a2f0382ddc5c54ee60312a04c39b760b87152691d5"
+}

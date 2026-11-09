@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "self_detailed",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what does 12 divided by 2 equal? And what does 16 divided by 2 equal? Can you write those numbers down?",
+      "reason": "The tutor breaks down the simplification process into smaller, manageable steps by asking the student to perform one division at a time and write the results. This provides targeted support for a student who is struggling with the concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Exactly! So if you divide the top number, twelve, by two, you get six. And if you divide the bottom number, sixteen, by two, you get eight. So the simplified fraction is six over eight. But wait, can we simplify that even more? Let's see. Both six and eight are even numbers, so they can be divided by two again. If you divide six by two, you get three, and if you divide eight by two, you get four. So the simplified fraction is three over four. And that's as simplified as it can get because three and four don't have any common factors other than one.",
+      "reason": "The tutor provides the complete solution to the problem, including the intermediate step and the final simplified fraction, without giving the student an opportunity to work through it independently. This is overhelping as the student could productively engage with these steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start with the numerator: 12 divided by 2 is...?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by focusing on the numerator first. This provides scaffolding by guiding the student through the initial part of the calculation."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we divide both twelve and sixteen by two, what do we get for the numerator and denominator? Can you write that down?",
+      "reason": "The tutor provides scaffolding by explicitly stating the operation (dividing by two) and asking the student to write down both the numerator and denominator, which breaks the problem into clear, actionable steps."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we divide both the top and bottom by 2, what do we get? Can you simplify this fraction further?",
+      "reason": "The tutor provides scaffolding by explicitly stating the operation (dividing by 2) and then asks a follow-up question about further simplification, which guides the student through the process without giving away the answer."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 27,
+    "moment_id": "balanced_520:1aa36bfc-6b57-5be7-9665-189364443674_98cce3d5-f4eb-5541-9f96-286198fd0433_9c4eac0c-65a0-55b6-87f0-2be6abf3740e__hum_590_652",
+    "student_id": "98cce3d5-f4eb-5541-9f96-286198fd0433",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "1f7ed1796ad81d6d83f0678a07de933c1e5a70d4c6a66f9d6f1e5cf19d8f717c"
+}

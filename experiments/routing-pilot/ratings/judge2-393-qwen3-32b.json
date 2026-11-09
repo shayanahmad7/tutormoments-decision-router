@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding",
+    "C4": "original",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number does each side represent? Can you tell me how you would subtract these?",
+      "reason": "Asks the student to identify the numbers from the blocks and then perform the subtraction themselves, providing orientation without giving away the equation or method."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the problem is: 44 - 26",
+      "reason": "Translates the blocks into the equation 44-26 for the student, which is a step the student could productively do; then asks for the first step, but the translation itself is overhelp."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the question is asking: What is 44 minus 26? Let's start with the tens. How many tens are left after you take 2 tens away from 4 tens?",
+      "reason": "Gives the equation and then breaks the subtraction into a leading substep about tens, over-scaffolding by supplying both the translation and the method without evidence the student needs this level of guidance."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 44 minus 20 first? And then, what is the result minus 6?",
+      "reason": "Supplies the equation and then prescribes a specific decomposition strategy (44-20 then minus 6), directing the student through each sub-step rather than letting them choose an approach."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the problem is asking: What is 44 minus 26? Can you tell me what you think the answer might be?",
+      "reason": "Fully interprets the blocks into numbers and the operation for the student, then only asks for the final answer, removing most of the cognitive work the student could have done."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 393,
+    "moment_id": "balanced_520:db46772f-cb47-5ca1-8f0f-90e6f67b45c4_ac29d076-88b2-5238-bb1c-c51c414e5029_9d66ec13-35fd-5c4a-ad2d-1b1b1659e35d__hum_106_139",
+    "student_id": "ac29d076-88b2-5238-bb1c-c51c414e5029",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "b8986b3a62af5e5d1d23190bc719f0ecb8003cc4c07751639127b5b2a06587b3"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "original",
+    "C4": "jev_label",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a skill or topic that was challenging for you at first, but now you feel confident with?",
+      "reason": "Briefly defines growth mindset and immediately directs student to the slide's first column question, prompting independent reflection without over-explaining."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of something you used to find difficult but now you can do?",
+      "reason": "Skips defining growth mindset (student said they don't know it) and jumps to the activity question, leaving the student without the conceptual grounding they need; however it does ask the student to reflect independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "It's about believing that you can get better with effort and practice",
+      "reason": "Provides a clear, accessible definition with a concrete example, appropriate since student said they don't know the concept, but doesn't ask the student to do anything independently."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of something you used to find hard but now you can do?",
+      "reason": "Defines growth mindset with an analogy and then asks the student to apply it personally, but the explanation is quite lengthy and detailed for a brief first-session slide activity."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "A growth mindset is the belief that you can grow and improve through effort and learning",
+      "reason": "Concisely defines the concept and immediately invites the student to engage with the slide's first question, balancing scaffolding and student responsibility efficiently."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 327,
+    "moment_id": "balanced_520:ab0dd259-a827-5e09-9b3e-5eadcf348508_bf48962c-1c6e-53d1-9687-d12535f72c99_b2d00090-4129-5f8b-8fd4-7860d5fe7c21__hum_121_125",
+    "student_id": "bf48962c-1c6e-53d1-9687-d12535f72c99",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "5f0c813419521a1c87849480cdf15c5d1d5264d8605abe23d48374cfbb8a5975"
+}

@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How is that different from just 'I study math'?",
+      "reason": "Picks up directly on the vocabulary word just covered, asks student to explain in own words and make a distinction, which is appropriate rigor without giving the answer away."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you use 'abundant' in a sentence that shows you understand what it means?",
+      "reason": "Directly continues the vocabulary activity with a production task using a word just covered; asks student to demonstrate understanding independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you think of a time when there was an abundant amount of something? Maybe food, toys, or time?",
+      "reason": "Continues vocabulary work with a contextualizing scaffold (personal connection examples) while still requiring the student to generate their own sentence."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "let's take a break from the vocabulary and go back to math",
+      "reason": "Completely ignores the current ELA/vocabulary task and introduces an arithmetic problem with no connection to the ongoing lesson; contradicts the session's subject matter."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Let me make sure you got those... Let me check if you have any questions",
+      "reason": "Re-explains all three vocabulary words the tutor already covered without evidence the student needs re-explanation; offers only a vague check-in rather than a substantive task, and the student just rejoined so no confusion has been expressed yet."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 226,
+    "moment_id": "balanced_520:6f2cb39d-1c6b-543d-aa6b-a75fddefc244_14892eb2-4f6f-5bb6-af7d-6dea422bdc32_10663abe-0e15-581d-8794-909979e9a3d2__hum_189_212",
+    "student_id": "14892eb2-4f6f-5bb6-af7d-6dea422bdc32",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "f3abd830d015f018c1a1ddccb7bd88d8107a6d59ee0b333702cb2027873f032e"
+}

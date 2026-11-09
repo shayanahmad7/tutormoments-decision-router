@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "original",
+    "C3": "jev_label",
+    "C4": "force_rigor",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "write an equation to show that relationship",
+      "reason": "Re-scaffolds a problem already solved and confirmed correct; ignores that the answer was already revealed and the session moved on."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "can you think of how we can use this information to find the value of x",
+      "reason": "Attempts to guide through a problem already completed and confirmed correct; completely ignores the current state of the conversation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "explain why angle x is 29 degrees in your own words",
+      "reason": "Asks for post-solution justification connecting the vertically opposite angles concept to the answer, appropriate after the correct answer was confirmed."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "explain why we divided 87 by 3 to find the value of x",
+      "reason": "Asks for justification of a specific reasoning step after the correct answer, promoting understanding of the algebraic process used."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What is the total of the three angles labeled in the diagram",
+      "reason": "Re-engages with a problem already solved and confirmed; the session has moved past this question."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 184,
+    "moment_id": "balanced_520:58c94ad4-6cdc-5f5b-bf07-ca368cdb8dbf_eae181aa-099e-5972-9815-989b2b8dca94_be5d2f61-c006-5e95-b6c5-714c00ec598f__hum_66_68",
+    "student_id": "eae181aa-099e-5972-9815-989b2b8dca94",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "9837b703db30cfa322441c16596a7045a059d4f745fdfa81890bbbaa2c2ec571"
+}

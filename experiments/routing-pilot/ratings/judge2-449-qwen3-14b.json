@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "original",
+    "C3": "force_rigor",
+    "C4": "self_detailed",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which one is smaller?",
+      "reason": "Provides a concrete example converting 1/2 to 6/12 to scaffold the concept, then asks the student to reason about which is smaller, maintaining cognitive demand."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "1/12 is like having one slice of a pizza that's cut into 12 pieces",
+      "reason": "Uses a pizza analogy to make fraction comparison accessible without requiring denominator conversion, appropriate given student said they don't know how to convert fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we convert them all to have a denominator of 12, what would each fraction become? Start with 1/2.",
+      "reason": "Introduces the common denominator strategy and asks the student to do the conversion work, but jumps to all four fractions at once which may be slightly ambitious given student just said they don't know how."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What denominator could we use that works for both 1/12 and 1/2?",
+      "reason": "Narrows focus to just two fractions and asks student to identify a common denominator, appropriate scaffolding that still requires student thinking given they said they don't know how to convert."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start with 1/12. What would 1/2 be as twelfths?",
+      "reason": "Tells the student to use twelfths as the common denominator (removing that reasoning step) and then asks only for the conversion of 1/2, over-breaking the work given the student just said they don't know the method."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 449,
+    "moment_id": "balanced_520:f2fcc679-0694-5615-9acb-871584d8ccd2_38d93a42-475e-51a5-b69a-24da2040f34d_ff918db4-ce8a-5c0c-a5eb-999f94f8ab05__hum_243_265",
+    "student_id": "38d93a42-475e-51a5-b69a-24da2040f34d",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "b60f6d4ed6c59c6205591e3597a338a4a3299c8a7685995d697624bfb674fb3b"
+}

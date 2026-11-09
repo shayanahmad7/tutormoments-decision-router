@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "jev_label",
+    "C3": "original",
+    "C4": "force_rigor",
+    "C5": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "we need to start with the first part of the number. What is eighteen divided by five?",
+      "reason": "Acknowledges the student's incorrect suggestion and redirects to the correct first step with a guiding question, appropriate scaffolding for long division procedure."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can we divide 1 by 5? No, so we look at the first two digits, which is 18. What's 18 divided by 5?",
+      "reason": "Explains the reasoning for starting with 18 and asks the student to compute it, providing procedural scaffolding directly relevant to the student's error."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since 5 doesn't go into 1, we look at the first two digits, which is 18. So, what is 18 divided by 5?",
+      "reason": "Similar to C2, explains why we start with 18 and prompts the student to compute, appropriate scaffolding for the student's procedural confusion."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is eighteen divided by five, and why does that make sense as our first step?",
+      "reason": "Asks for both the computation and the justification, adding rigor by requiring the student to explain the reasoning, not just supply an answer."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 18 divided by 5? That will help us start solving this division problem.",
+      "reason": "Redirects to the correct first step with a guiding question, minimal but appropriate scaffolding; lacks explanation of why we start with 18."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 372,
+    "moment_id": "balanced_520:c64a4cc1-f4e5-5519-bd5a-d88e194a7341_16b91893-0d76-53f1-9bda-1ae2724abfb1_56be1d1e-9d88-5020-a41e-1f5c3bec3b60__hum_263_281",
+    "student_id": "16b91893-0d76-53f1-9bda-1ae2724abfb1",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "84e8f1773a50ccbd6366ad426f84a38411dfa009fdaeaea8f8ffb84916355e5c"
+}

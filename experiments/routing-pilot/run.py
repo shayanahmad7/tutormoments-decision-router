@@ -2,7 +2,7 @@
 from __future__ import annotations
 import argparse, collections, concurrent.futures, csv, hashlib, importlib.util, json, math, os
 from pathlib import Path
-import random, statistics, sys, threading, time, urllib.request, urllib.error
+import random, re, statistics, sys, threading, time, urllib.request, urllib.error
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -180,7 +180,11 @@ def chat_payload(model,messages,*,judge=False):
 def parse_ratings(text, ids):
  text=text.strip()
  if text.startswith('```'):text=text.split('\n',1)[1].rsplit('```',1)[0]
- rr=json.loads(text)['ratings'];assert len(rr)==len(ids) and {r['id'] for r in rr}==set(ids)
+ # Preserve the saved response; tolerate explanatory prose before the JSON object.
+ match=re.search(r'\{\s*"ratings"\s*:',text)
+ if not match:raise ValueError('No ratings JSON object in saved judge response')
+ obj,end=json.JSONDecoder().raw_decode(text[match.start():])
+ rr=obj['ratings'];assert len(rr)==len(ids) and {r['id'] for r in rr}==set(ids)
  for r in rr:
   for k in ['scaffolding','rigor','overhelp','math_error','uncertain']:assert type(r[k]) is bool
   assert type(r['context_fit']) is int and r['context_fit'] in [0,1,2]
@@ -220,9 +224,9 @@ def run(args):
     return None
   with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
    for _ in pool.map(generate,jobs):pass
- if args.stage in ['judge','second-judge','all']:
-  second=args.stage=='second-judge';jm=config['second_judge'] if second else config['judge_model']
-  cases=[c for c in config['cases'] if not second or c['index'] in config['secondary_judge_indices']]
+ if args.stage in ['judge','second-judge','second-judge-all','all']:
+  second=args.stage in ['second-judge','second-judge-all'];jm=config['second_judge'] if second else config['judge_model']
+  cases=[c for c in config['cases'] if not second or args.stage=='second-judge-all' or c['index'] in config['secondary_judge_indices']]
   jobs=[(c,m) for c in cases for m in MODELS];random.Random(SEED+2).shuffle(jobs)
   def judge(job):
    c,m=job;replies={a:load(HERE/'traces'/f'gen-{c["index"]}-{m.split("/")[-1]}-{a}.json')['text'] for a in ARMS}
@@ -234,8 +238,13 @@ def run(args):
    for _ in pool.map(judge,jobs):pass
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('command',choices=['prepare','run']);p.add_argument('--stage',choices=['routes','llm-routes','generate','judge','second-judge','all'],default='all')
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['prepare','run']);p.add_argument('--stage',choices=['routes','llm-routes','generate','judge','second-judge','second-judge-all','all'],default='all')
  p.add_argument('--openrouter-env',default=os.environ.get('TM_OPENROUTER_ENV','/Users/ee2282/Documents/LemmaEducation_dev/.env.local'))
  p.add_argument('--typesafe-env',default=os.environ.get('TM_TYPESAFE_ENV',str(ROOT.parent/'19 - Jev Decision Classification/.env')))
- args=p.parse_args();prepare() if args.command=='prepare' else run(args)
+ args=p.parse_args()
+ if args.command=='prepare':prepare()
+ elif args.stage=='all':
+  for stage in ['routes','generate','llm-routes','judge','second-judge']:
+   args.stage=stage;run(args)
+ else:run(args)
 if __name__=='__main__':main()

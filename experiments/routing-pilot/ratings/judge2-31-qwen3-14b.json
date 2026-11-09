@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you tell me what you know about fractions?",
+      "reason": "Asks student to recall prior knowledge about fractions, which is appropriate given the equivalent fractions topic, but is generic and doesn't engage with the specific task of representing equivalent fractions shown on screen."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you tell me what you know about fractions?",
+      "reason": "Identical to C1 — asks student to recall prior knowledge, appropriate to the topic but generic and not specifically tied to representing equivalent fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you shade in half of this shape?",
+      "reason": "Provides a concrete visual/drawing task that scaffolds entry into fractions and leverages the whiteboard drawing capability the tutor just mentioned, while requiring the student to independently demonstrate understanding."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you tell me what a fraction is?",
+      "reason": "Asks for a definition, which is a reasonable starting point for the equivalent fractions topic, but is very generic and doesn't connect to the specific task or use any scaffolding."
+    },
+    {
+      "id": "C5",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Have you heard of fractions before? If so, what do you remember about them?",
+      "reason": "Directly names the topic (equivalent fractions) and asks the student to activate prior knowledge, fitting the screen context, though it remains a generic recall question without specific scaffolding."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 31,
+    "moment_id": "balanced_520:1f566292-5dd8-51f2-9918-2cb52ca6f4e8_24521773-2fb9-5560-ba51-bc3a095f57a8_5aa741b7-1895-5b1a-acc7-cbe716cc3e00__hum_57_57",
+    "student_id": "24521773-2fb9-5560-ba51-bc3a095f57a8",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "bf012227b645f81f64c18bb9ae7f9db558daeb4738a8d391b9ab8d98ef043813"
+}

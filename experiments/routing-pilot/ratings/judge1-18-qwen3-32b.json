@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which diagram shows the total (68) in the big box and one part as 23?",
+      "reason": "The tutor provides a clear hint by restating the problem in terms of the bar model components, which is appropriate given the student's previous struggles with identifying the correct diagram."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option B makes sense for this problem? How does the diagram show what’s happening with Sarah’s paperclips?",
+      "reason": "The student has not yet chosen an answer for this problem. Asking them to explain why option B makes sense is premature and could be confusing, as they haven't indicated B is their choice. It also assumes they have chosen B, which they haven't."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think option B is correct for the paperclip problem? What does each part of the diagram represent?",
+      "reason": "The student has not yet chosen an answer for this problem. Asking them to explain why option B is correct is premature and could be confusing, as they haven't indicated B is their choice. It also assumes they have chosen B, which they haven't."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "In a bar model, the big box represents the total amount at the beginning — in this case, 68. One part of the bar is the amount she gives away, which is 23. The other part is what we’re trying to find — how many she has left.",
+      "reason": "The tutor provides a detailed explanation of how to interpret the bar model in the context of the problem, which is a helpful scaffold given the student's previous difficulties with similar problems."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "In a bar model, the total amount (68) should go in the big box, and one of the parts is the 23 she gave away. The other part is what we're trying to find. Which diagram shows this?",
+      "reason": "The tutor clearly explains how the numbers from the problem should be represented in a bar model, providing a strong scaffold for the student to identify the correct diagram."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 18,
+    "moment_id": "balanced_520:1789ab1a-d177-547f-9b1f-1674e5700baf_5fc5a091-b96b-53d8-9755-dec4ae394f64_bdf53111-1eda-5887-ba3f-4751d6dc3a14__hum_54_61",
+    "student_id": "5fc5a091-b96b-53d8-9755-dec4ae394f64",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "1b2839a5e81ee1740ffd4223c7beb1ea385157b5741b2f9d8f819d1c000709f7"
+}

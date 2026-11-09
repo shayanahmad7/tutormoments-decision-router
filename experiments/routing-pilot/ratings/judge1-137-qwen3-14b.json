@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "jev_label",
+    "C3": "self_detailed",
+    "C4": "force_scaffolding",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What makes option C the best choice here? Can you explain why \"so\" fits in the sentence better than the other options?",
+      "reason": "The student has already typed 'so' into the answer box, which is option C. The tutor asks the student to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word could show the relationship between not experiencing something and not understanding it?",
+      "reason": "The tutor provides scaffolding by re-reading the sentence and asking the student to identify the relationship between the two clauses, which is a helpful hint for choosing the correct conjunction."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word would connect those two ideas?",
+      "reason": "The tutor rephrases the sentence to highlight the cause-and-effect relationship, then asks the student to identify the connecting word, which is a form of scaffolding."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a word that means \"so\" or \"therefore\" in this context?",
+      "reason": "The tutor provides scaffolding by rephrasing the sentence to emphasize the causal relationship and then offers a strong hint by suggesting words like 'so' or 'therefore'."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Would \"so\" make sense here? Let's try it: \"Others at Luz's school did not experience the challenges Luz faced when she used the bathroom, so they did not understand.\" Does that make sense?",
+      "reason": "The tutor suggests the correct answer ('so') and then tests it in the sentence, which is overhelping as the student could have done this independently."
+    }
+  ],
+  "judge": "google/gemini-2.5-flash",
+  "case": {
+    "index": 137,
+    "moment_id": "balanced_520:369f06b9-0cd9-5e40-aade-3cc0aae4f7f8_4258716b-b280-51b0-ae7b-1381019e53bc_fdbc85a5-cf5c-5110-bea8-0e8b0f9e30cf__hum_40_47",
+    "student_id": "4258716b-b280-51b0-ae7b-1381019e53bc",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "292ac3bf49db852a7efb1cb42b9232600e79f58046458e1d2f0bcb95244106bd"
+}

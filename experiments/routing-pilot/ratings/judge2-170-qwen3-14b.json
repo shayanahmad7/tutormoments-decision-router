@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "jev_label",
+    "C2": "original",
+    "C3": "self_detailed",
+    "C4": "force_scaffolding",
+    "C5": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What is the multiple of 25 just before 641? And what is the multiple of 25 just after 641?",
+      "reason": "The student already identified 625 and 650 correctly earlier in the conversation. Re-asking this question ignores that progress and restarts from a step the student already completed, which is overhelp by regression rather than building on what was established."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What's the multiple of 25 just before 641? And what's the one just after?",
+      "reason": "Same issue as C1 — the student already found 625 and 650, so re-asking for those multiples ignores established progress and restarts unnecessarily. The promise to write things down is responsive to the student's request but the question itself is redundant."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What are the two multiples of 25 that 641 is between?",
+      "reason": "Again asks for information the student already provided (625 and 650). While brief, it ignores the conversation's current state where those multiples were already established, making it a weak context fit."
+    },
+    {
+      "id": "C4",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We already found the two closest multiples of 25: 625 and 650. Let's focus on the number in the middle",
+      "reason": "Appropriately acknowledges the student's prior correct work, advances to the next logical step (finding the midpoint), and asks the student to supply that midpoint — consistent with the video explanation and the student's expressed confusion, without giving away the answer."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We found the two closest multiples of 25: 625 and 650. Now, let's think about the halfway point between them.",
+      "reason": "Builds directly on established student work, advances to the midpoint concept introduced in the video, and asks the student to find it independently — well-matched to the current state of the conversation and the student's confusion."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 170,
+    "moment_id": "balanced_520:4cfd7352-bf53-51f0-a598-1ddde2b31698_831995bf-5fab-552f-8bfe-8c6f5c526d4f_61700a62-0737-5359-bcab-672af3bd0316__hum_111_118",
+    "student_id": "831995bf-5fab-552f-8bfe-8c6f5c526d4f",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-14b",
+  "trace_sha256": "348cbdeceef62281fde64b3e9205310f74cde3b3a505dcf14ce3a5f5bf8824fd"
+}

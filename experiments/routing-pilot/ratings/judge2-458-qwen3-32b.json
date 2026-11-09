@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "original",
+    "C2": "force_rigor",
+    "C3": "self_detailed",
+    "C4": "jev_label",
+    "C5": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Great job figuring that out! So even though both calculations are \"0.5 of something,\" the size of the \"something\" matters a lot",
+      "reason": "The student just said 'smaller' which is the correct final answer; the tutor supplies the conclusion (less than = option A), the conceptual generalization, and the connection to the whole—all reasoning the student could have produced. No meaningful cognitive demand remains."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Both calculations were 0.5 of something. What does that tell you about how we can compare them more generally?",
+      "reason": "After the student correctly identifies 'smaller,' the reply pushes for a generalization and conceptual explanation about how the original number affects the result—genuine transfer and justification demand without giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the \"less than\" symbol is the right choice here?",
+      "reason": "Confirms the answer and asks the student to justify the choice, which is appropriate rigor. However, it does supply the answer (less than symbol) before asking for explanation, which is mild overhelp, though the student had already said 'smaller' making this a reasonable confirmation before asking for reasoning."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you explain why that is? What makes thirty less than sixty?",
+      "reason": "Asks the student to explain why 30 < 60, which is a very basic arithmetic fact the student clearly already knows; the question doesn't connect back to the decimal comparison task or push toward the lesson objective, making it weakly contextualized."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what symbol should go between 30 and 60? Is 30 less than, greater than, or equal to 60?",
+      "reason": "Bridges the computed values (30 and 60) back to the original comparison question, scaffolding the final step while still requiring the student to select the symbol—appropriate given the student's prior confusion about which symbol to use."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 458,
+    "moment_id": "balanced_520:f338b82d-4f2a-5029-84c2-c0197a531a62_a056d766-3f6e-51ee-b7c6-382fae34d0ca_e679b3e1-1fe4-582d-8745-cad85f51924b__hum_231_234",
+    "student_id": "a056d766-3f6e-51ee-b7c6-382fae34d0ca",
+    "reference": "scaffolding"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "5313247eed0cf18e10a4e33d03d6b7b32156dcb2fda840e2e86efccc81a9cbeb"
+}

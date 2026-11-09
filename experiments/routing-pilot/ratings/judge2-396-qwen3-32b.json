@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "original",
+    "C3": "force_scaffolding",
+    "C4": "force_rigor",
+    "C5": "jev_label"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Okay, let's go on to multiplication. Are you ready?",
+      "reason": "Ignores the student's comment about using the tens strategy for 9x5 and moves on without engaging with it at all."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "fifty minus five is forty-five. That's a good strategy",
+      "reason": "Completes the reasoning the student was in the process of working through, then jumps to a new problem without letting the student finish their own thought."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's ten times five? Then think about how that helps you figure out nine times five.",
+      "reason": "Builds directly on the student's mention of the tens technique by prompting them to recall 10x5 first, then connect it to 9x5—appropriate scaffolding without giving away the answer."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how that helps you figure out 9 x 5?",
+      "reason": "Picks up directly on the student's mention of the technique and asks them to articulate the reasoning, increasing cognitive demand through justification."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "9 times 5 is just one group of 5 less. So 50 minus 5 is...?",
+      "reason": "Explains the entire reasoning chain (10x5=50, subtract one group of 5) before asking the student only for the final arithmetic, supplying reasoning the student could have produced."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 396,
+    "moment_id": "balanced_520:dfcff302-1878-50ff-80d1-a8eafbe857a5_4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58_cfcc22bc-9a1a-50ad-b725-17d3645fd77d__hum_208_214",
+    "student_id": "4ca3e9d1-7b82-58f2-8ed4-aeafb4b05e58",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "df5f3472e9015e13ea2424dbbdec19f062a67ddbba5e385327020132bdf827f4"
+}

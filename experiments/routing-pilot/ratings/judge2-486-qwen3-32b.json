@@ -1,0 +1,75 @@
+{
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor",
+    "C4": "jev_label",
+    "C5": "original"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why B is the right choice? What number is 100 less than 438?",
+      "reason": "Asks the student to justify their answer and then provides a guiding sub-question to support the reasoning, appropriate given the student's pattern of guessing without always explaining."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you're starting at 538 and skip counting down by hundreds. The next number is 438. What happens when you subtract 100 from 438?",
+      "reason": "The student already identified the answer (B) and noted they're going back down; the tutor re-explains the pattern and breaks it into a leading sub-step the student could supply, which is overhelp at this point."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out that it's B?",
+      "reason": "Brief but appropriate request for justification after the student gave an answer, increasing cognitive demand without over-scaffolding."
+    },
+    {
+      "id": "C4",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose B and how you figured out the pattern?",
+      "reason": "Asks for both justification and pattern recognition, appropriate rigor after the student answered; no unnecessary scaffolding added."
+    },
+    {
+      "id": "C5",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about how the numbers are changing from 538 to 438? What operation is happening there?",
+      "reason": "The student already correctly identified the answer and the direction (going back down); re-walking through the pattern step by step is unnecessary scaffolding that over-breaks the work the student already completed."
+    }
+  ],
+  "judge": "anthropic/claude-sonnet-4.6",
+  "case": {
+    "index": 486,
+    "moment_id": "balanced_520:fb5ba1d4-bc48-5f4e-8b37-69eb67671729_d206debb-e1f5-50db-bc3f-33c0ad14afb2_9a4efc06-de32-568f-b668-fcda67d8f994__hum_292_297",
+    "student_id": "d206debb-e1f5-50db-bc3f-33c0ad14afb2",
+    "reference": "rigor"
+  },
+  "tutor": "qwen/qwen3-32b",
+  "trace_sha256": "ea03fcbe751ec05cdb8f34ae7e172e2d1db329d45e8429e3e77ab529d8c689be"
+}
