@@ -1,0 +1,46 @@
+{
+  "tag": "A-106",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears: \"Nathan has joined\".\nTurn 1. TUTOR: [PAUSE: 33 seconds]\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - video on] The tutor's video feed appears, showing a red circle with the letter 'N' inside.\nTurn 1. TUTOR: [PAUSE: 71 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears: \"Emily has joined\".\nTurn 1. TUTOR: [PAUSE: 17 seconds]\nTurn 1. TUTOR: [SCREEN_INTERACTION: student - video on] The student's video feed appears, showing a green circle with the letter 'E' inside.\nTurn 1. TUTOR: [PAUSE: 106 seconds]\nTurn 1. TUTOR: [PAUSE: 27 seconds]\nTurn 1. TUTOR: Hello?\nTurn 2. TUTOR: [PAUSE: 3 seconds]\nTurn 2. STUDENT: Hello.\nTurn 3. TUTOR: Hey, how's it going?\nTurn 4. STUDENT: Good.\nTurn 5. TUTOR: How was your weekend?\nTurn 6. TUTOR: [PAUSE: 3 seconds]\nTurn 6. STUDENT: Good.\nTurn 7. TUTOR: Only good?\nTurn 8. STUDENT: Yeah.\nTurn 9. TUTOR: Didn't- didn't do anything special?\nTurn 10. STUDENT: Uh, not really.\nTurn 11. TUTOR: Why not?\nTurn 12. STUDENT: Um, maybe just got a new laptop.\nTurn 13. TUTOR: [PAUSE: 2 seconds]\nTurn 13. TUTOR: Oh.\nTurn 14. TUTOR: You got a new laptop?\nTurn 15. STUDENT: Uh, yeah.\nTurn 16. TUTOR: Which one?\nTurn 17. STUDENT: Um, let me just show you.\nTurn 18. STUDENT: Wait. Let me turn off so I can... background.\nTurn 19. TUTOR: [SCREEN_INTERACTION: student - video off] Student's video feed turns black.\nTurn 19. TUTOR: [PAUSE: 14 seconds]\nTurn 19. TUTOR: [SCREEN_UPDATE] A loud, continuous beep sounds.\nTurn 19. TUTOR: [PAUSE: 23 seconds]\nTurn 19. STUDENT: Okay. Um, it is, this one.\nTurn 20. TUTOR: Nice. What are you gonna do with it?\nTurn 21. STUDENT: Uh, probably watch videos and play Roblox.\nTurn 22. TUTOR: Play Roblox. What do you, do you play the, one of my other students does this event on Saturdays at six a.m. It's like, I think it's dress to impress, I'm not sure.\nTurn 23. STUDENT: Yes. You do that?\nTurn 24. STUDENT: Uh, not really.\nTurn 25. TUTOR: What do you do on Roblox then?\nTurn 26. STUDENT: Uh, probably just do like obbies.\nTurn 27. TUTOR: Hobbies?\nTurn 28. STUDENT: Obbies.\nTurn 29. TUTOR: How do you spell that?\nTurn 30. STUDENT: O B B Y.\nTurn 31. TUTOR: Okay. What what is that? I don't know what that is.\nTurn 32. STUDENT: It's where like pretty much a course that you go through.\nTurn 33. TUTOR: Like an obstacle course?\nTurn 34. STUDENT: Yeah.\nTurn 35. TUTOR: Oh. Nice.\nTurn 36. TUTOR: Like a, like a horse obstacle course or a human obstacle course?\nTurn 37. STUDENT: Human.\nTurn 38. TUTOR: Human. Got it.\nTurn 39. TUTOR: Oh, that sounds like fun.\nTurn 40. TUTOR: [PAUSE: 6 seconds]\nTurn 40. TUTOR: I'm gonna, you wanna dive right in to math or do you wanna play like a game first?\nTurn 41. STUDENT: Dive in.\nTurn 42. TUTOR: Diving in. Okay. Let me, let's do our,\nTurn 43. TUTOR: do we have a bonus question?\nTurn 44. STUDENT: Maybe.\nTurn 45. TUTOR: Question of the day. Question of the day. Let's do this. Warm up.\nTurn 46. TUTOR: [PAUSE: 2 seconds]\nTurn 46. TUTOR: Okay. This is like pattern recognition. If you know that six times seven is forty-two, which of the following is true?\nTurn 47. TUTOR: [PROBLEM_CHANGE: p1 - 'If you know that 7 x 6 = 42, which of the following is true?' (start)] The screen shows a multiple-choice question. \"If you know that 7 x 6 = 42, which of the following is true?\" The options are: A) 70 x 60 = 42 x 10, B) 70 x 6 = 4200, C) 70 x 60 = 4200, D) 70 x 60 = 420.\nTurn 47. TUTOR: [PAUSE: 5 seconds] Student selects option C.\nTurn 47. STUDENT: Seven times sixty equals forty-two, uh, not minus. Seventy, wait. Seventy times sixty equals forty-two times ten. Then seventy times six equals four thousand two hundred. Seventy times sixty equals forty-two thousand. Seventy times sixty equals four hundred and twenty. Um,",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which next tutoring move best fits what the learner has demonstrated on the current math task? Read the sequence of student work, tutor help, and described screen actions. Give greatest weight to the current task and the most recent substantive student contribution, using earlier turns to interpret it. A correct answer supplied by the tutor, or a student saying yes, does not by itself demonstrate understanding. An earlier error does not require more help after the learner has independently corrected and explained it.",
+        "criteria": {
+          "scaffolding": "The learner needs targeted support to access or complete the current mathematical step: unresolved confusion, an uncorrected error, inability to begin, or difficulty understanding the required concept or representation. Help with the specific obstacle while leaving meaningful participation.",
+          "rigor": "The learner is ready to attempt the next step independently, explain or justify a successful step, connect ideas, or transfer a method. Build on demonstrated understanding or self-correction instead of repeating mastered work or supplying the next operation."
+        }
+      }
+    }
+  },
+  "payload_sha256": "dd135cf77f585a08d844bf9b145c8bae1ce1a0357b9bfe4e9c0041cdf85c7c51",
+  "reserve_usd": 0.0002993928,
+  "started_utc": "2026-11-10T19:20:06Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.16,
+        "probabilities": {
+          "rigor": 0.42,
+          "scaffolding": 0.58
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1825,
+      "output_tokens": 39
+    }
+  },
+  "usage": {
+    "input_tokens": 1825,
+    "output_tokens": 39
+  },
+  "cost_usd": 7.664999999999999e-05,
+  "elapsed_ms": 103.82512500000018
+}

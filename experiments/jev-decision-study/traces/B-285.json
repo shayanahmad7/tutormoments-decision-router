@@ -1,0 +1,46 @@
+{
+  "tag": "B-285",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top center of the screen: \"Victoria has joined\".\nTurn 1. TUTOR: [PAUSE: 2 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A video feed tile for the tutor appears on the left side of the screen. It is a red circle with a white \"V\" in the center. The name \"Victoria\" is displayed below the tile.\nTurn 1. TUTOR: [PAUSE: 291 seconds]\nTurn 1. TUTOR: [PAUSE: 231 seconds] The tutor is alone in the main room, waiting for the student to join.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Kayla has joined\". A second participant tile appears for the student.\nTurn 1. TUTOR: [PAUSE: 87 seconds]\nTurn 1. TUTOR: [PAUSE: 1 second]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Kayla has left\". The student's video feed disappears.\nTurn 1. TUTOR: [PAUSE: 31 seconds]\nTurn 1. TUTOR: Hi Kayla.\nTurn 2. TUTOR: [PAUSE: 5 seconds]\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: How are you?\nTurn 4. STUDENT: Good. And you?\nTurn 5. TUTOR: I'm good. How's school been? Your first, what, three days?\nTurn 6. STUDENT: Um, it's been good.\nTurn 7. TUTOR: Are you liking your school so far?\nTurn 8. STUDENT: Um, yeah.\nTurn 9. TUTOR: Or is it just like, all right?\nTurn 10. STUDENT: I like it.\nTurn 11. TUTOR: Oh, that's good.\nTurn 12. TUTOR: Well, we can get started right away. Um, so, you're going to do, remember we're going to be practicing on your quick, uh, what's it called? Your multiplication, division, just like solving them quick at the end.\nTurn 13. TUTOR: Um, first, I'm going to show you 15 problems. They're pretty easy, okay? Like, they're, you should get most of them done. And what I'm going to do is I'm going to put on a 20-minute timer and see how many you can get done.\nTurn 14. TUTOR: The minimum you should get done is 10 questions, okay?\nTurn 15. STUDENT: Okay.\nTurn 16. TUTOR: So as soon as, um, you see them on your screen, get started right away, okay? And remember, you can always ask questions too.\nTurn 17. STUDENT: Okay.\nTurn 18. TUTOR: All right, here they are.\nTurn 19. TUTOR: [SCREEN_UPDATE] The tutor's video feed is replaced by a black screen.\nTurn 19. TUTOR: I'll check back in at 3:25.\nTurn 20. TUTOR: [PAUSE: 17 seconds]\nTurn 20. TUTOR: [PROBLEM_CHANGE: p1-15 - Math Problems (start)] A list of 15 math problems appears on the left side of the screen. The problems are:\n1. What is 6 x 4?\n2. Multiply: 12 x 3\n3. Add: 7 + 82\n4. What is the value of x if x + 8 = 12?\n5. What is the perimeter of a rectangle with length 8 cm and width 3 cm?\n6. Add: 1/2 + 1/2\n7. What is 9 x 2?\n8. Divide: 24 / 6\n9. What is 3/3 equal to?\n10. What is the value of x if 2x = 10?\n11. Subtract: 15 - 9\n12. What is the perimeter of a square with sides of 6 inches?\n13. Multiply: -8 x 7\n14. What is the value of x if x - 3 = 4?\n15. Add: 1M + 1M\nTutor's cursor moves to the right of the problem list, and a name tag \"Kayla\" appears.\nTurn 20. TUTOR: You have about 10, 12 minutes left, all right? Just a reminder.\nTurn 21. STUDENT: Okay.\nTurn 22. TUTOR: [PAUSE: 3 seconds]\nTurn 22. TUTOR: [SCREEN_INTERACTION: tutor - moves cursor] Tutor's cursor moves away, and the \"Kayla\" name tag disappears.\nTurn 22. TUTOR: [PAUSE: 356 seconds]\nTurn 22. TUTOR: Hi Kayla. You still have some time, but I was wondering which question are you on?\nTurn 23. STUDENT: I'm on eight.\nTurn 24. TUTOR: [SCREEN_INTERACTION: tutor - pointing] The tutor's cursor moves to point at question 8.\nTurn 24. TUTOR: All right. All right. Remember, try to go as fast as you can. Um, you should, I think you should be a little farther than eight, but just keep going. Also for number 10, um, go ahead and skip number 10, okay?\nTurn 25. STUDENT: Okay.\nTurn 26. TUTOR: Just keep going with the rest. Keep going, real fast.\nTurn 27. TUTOR: [PAUSE: 3 seconds]\nTurn 27. STUDENT: I need help on nine.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Choose the better instructional opportunity at the stopping point: scaffold for access or push for rigor. This is a choice about the student now, not a description of what the human tutor already did. Track the current problem, the student’s own mathematical contribution and what the tutor supplied. A student need not demonstrate complete mastery before being asked to explain, justify or try independently. Conversely a correct answer after tiny leading steps can still conceal an unresolved gap. Respect productive thinking time; silence, hesitation, an earlier mistake or a new problem alone do not establish a need for more help. Use the latest exchange in the full history. Return only the decision.",
+        "criteria": {
+          "scaffolding": "There is a current obstacle to accessing the mathematical idea or taking a useful next step. A focused clarification, representation, demonstration or guided substep would bridge it. The student may repeat a correct answer after heavy help while still lacking the idea. Choose support for a specific need, not help merely because the tutor can provide it.",
+          "rigor": "There is an opportunity to return or increase mathematical responsibility: ask the student to attempt a reachable step, explain their answer, justify a method, connect ideas or transfer it. Partial success or a plausible independently generated idea can be enough to invite reasoning. Do not require perfect mastery or provide more explanation before the student has had a useful independent attempt."
+        }
+      }
+    }
+  },
+  "payload_sha256": "257e8a6d0e026e2e8daa48b6597ffae2304300877a26476e2b5f70d526f5b6cc",
+  "reserve_usd": 0.0003236856,
+  "started_utc": "2026-11-10T19:20:03Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.4,
+        "probabilities": {
+          "rigor": 0.3,
+          "scaffolding": 0.7
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1878,
+      "output_tokens": 39
+    }
+  },
+  "usage": {
+    "input_tokens": 1878,
+    "output_tokens": 39
+  },
+  "cost_usd": 7.8876e-05,
+  "elapsed_ms": 153.64999999999895
+}

@@ -1,0 +1,46 @@
+{
+  "tag": "A-347",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A white whiteboard loads with a loading spinner in the center.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Emily has joined\".\nTurn 1. TUTOR: [PAUSE: 3 minutes 19 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Mia has joined\".\nTurn 1. TUTOR: [PAUSE: 52 seconds]\nTurn 1. TUTOR: [PAUSE: 4 seconds]\nTurn 1. TUTOR: Hi, Mia. How are you?\nTurn 2. STUDENT: Good. How are you?\nTurn 3. TUTOR: I'm good. Thank you.\nTurn 4. TUTOR: [PAUSE: 1 second]\nTurn 4. TUTOR: Um, so today we're gonna be working on some more multiplication.\nTurn 5. STUDENT: Okay.\nTurn 6. TUTOR: Does that sound good?\nTurn 7. STUDENT: Yes.\nTurn 8. TUTOR: Okay.\nTurn 9. TUTOR: Let me just pull up the first problem.\nTurn 10. TUTOR: [PAUSE: 2 seconds]\nTurn 10. TUTOR: [PROBLEM_CHANGE: p1 - 'Which expression is represented by the model below?' (start)] On the whiteboard, the question \"Which expression is represented by the model below?\" is displayed. Below the text is a grid of blue squares with 4 rows and 7 columns. Four multiple-choice options are listed: A. 4 + 7, B. 7 - 4, C. 4 x 7, D. 7 ÷ 4.\nTutor circles the option \"C. 4 x 7\" in red.\nTurn 10. TUTOR: Okay.\nTurn 11. TUTOR: So, which expression is represented by the model below?\nTurn 12. STUDENT: Um, C.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which next tutoring move best fits what the learner has demonstrated on the current math task? Read the sequence of student work, tutor help, and described screen actions. Give greatest weight to the current task and the most recent substantive student contribution, using earlier turns to interpret it. A correct answer supplied by the tutor, or a student saying yes, does not by itself demonstrate understanding. An earlier error does not require more help after the learner has independently corrected and explained it.",
+        "criteria": {
+          "scaffolding": "The learner needs targeted support to access or complete the current mathematical step: unresolved confusion, an uncorrected error, inability to begin, or difficulty understanding the required concept or representation. Help with the specific obstacle while leaving meaningful participation.",
+          "rigor": "The learner is ready to attempt the next step independently, explain or justify a successful step, connect ideas, or transfer a method. Build on demonstrated understanding or self-correction instead of repeating mastered work or supplying the next operation."
+        }
+      }
+    }
+  },
+  "payload_sha256": "8099192370d01542907bdbca9b15cac06a88f2d19e686b4e31574d3f5b0101ed",
+  "reserve_usd": 0.0001743,
+  "started_utc": "2026-11-10T19:21:28Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.5,
+        "probabilities": {
+          "rigor": 0.75,
+          "scaffolding": 0.25
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 945,
+      "output_tokens": 37
+    }
+  },
+  "usage": {
+    "input_tokens": 945,
+    "output_tokens": 37
+  },
+  "cost_usd": 3.969e-05,
+  "elapsed_ms": 102.31745899999822
+}

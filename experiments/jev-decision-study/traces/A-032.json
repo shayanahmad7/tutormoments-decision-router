@@ -1,0 +1,46 @@
+{
+  "tag": "A-032",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \"What are the goal(s) you can work towards this semester?\"\nTurn 1. TUTOR: [PAUSE: 12 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Diane has left\" appears on the screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Kayla has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 8 seconds]\nTurn 1. STUDENT: All right. You can go ahead and make it big.\nTurn 2. STUDENT: And then you just hit exit, and then you go to this one. Bye. All right.\nTurn 3. STUDENT: All right.\nTurn 4. STUDENT: So you can make it big right there. Bye.\nTurn 5. TUTOR: [PAUSE: 24 seconds]\nTurn 5. TUTOR: [PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\nTurn 5. TUTOR: Hello?\nTurn 6. STUDENT: Hi.\nTurn 7. TUTOR: Hi, Kayla. How's your weekend?\nTurn 8. STUDENT: What?\nTurn 9. TUTOR: How was your weekend?\nTurn 10. STUDENT: It was good.\nTurn 11. TUTOR: Nice.\nTurn 12. TUTOR: [PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \"What is the remainder when you work out the answer to this division? 2143 ÷ 4\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\nTurn 12. TUTOR: Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\nTurn 13. STUDENT: All right.\nTurn 14. TUTOR: Do you wanna write on the whiteboard or?\nTurn 15. TUTOR: [PAUSE: 7 seconds]\nTurn 15. STUDENT: I'll write on the whiteboard.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which next tutoring move best fits what the learner has demonstrated on the current math task? Read the sequence of student work, tutor help, and described screen actions. Give greatest weight to the current task and the most recent substantive student contribution, using earlier turns to interpret it. A correct answer supplied by the tutor, or a student saying yes, does not by itself demonstrate understanding. An earlier error does not require more help after the learner has independently corrected and explained it.",
+        "criteria": {
+          "scaffolding": "The learner needs targeted support to access or complete the current mathematical step: unresolved confusion, an uncorrected error, inability to begin, or difficulty understanding the required concept or representation. Help with the specific obstacle while leaving meaningful participation.",
+          "rigor": "The learner is ready to attempt the next step independently, explain or justify a successful step, connect ideas, or transfer a method. Build on demonstrated understanding or self-correction instead of repeating mastered work or supplying the next operation."
+        }
+      }
+    }
+  },
+  "payload_sha256": "7606f98c6ef5622d10deb8345b3e7de1448f44012180f5ec64612482b0beac21",
+  "reserve_usd": 0.0001938552,
+  "started_utc": "2026-11-10T19:19:40Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "scaffolding",
+        "confidence": 0.6,
+        "probabilities": {
+          "rigor": 0.2,
+          "scaffolding": 0.8
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1065,
+      "output_tokens": 39
+    }
+  },
+  "usage": {
+    "input_tokens": 1065,
+    "output_tokens": 39
+  },
+  "cost_usd": 4.473e-05,
+  "elapsed_ms": 117.33545799999989
+}

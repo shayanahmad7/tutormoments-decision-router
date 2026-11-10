@@ -1,0 +1,46 @@
+{
+  "tag": "B-032",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \"What are the goal(s) you can work towards this semester?\"\nTurn 1. TUTOR: [PAUSE: 12 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Diane has left\" appears on the screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Kayla has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 8 seconds]\nTurn 1. STUDENT: All right. You can go ahead and make it big.\nTurn 2. STUDENT: And then you just hit exit, and then you go to this one. Bye. All right.\nTurn 3. STUDENT: All right.\nTurn 4. STUDENT: So you can make it big right there. Bye.\nTurn 5. TUTOR: [PAUSE: 24 seconds]\nTurn 5. TUTOR: [PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\nTurn 5. TUTOR: Hello?\nTurn 6. STUDENT: Hi.\nTurn 7. TUTOR: Hi, Kayla. How's your weekend?\nTurn 8. STUDENT: What?\nTurn 9. TUTOR: How was your weekend?\nTurn 10. STUDENT: It was good.\nTurn 11. TUTOR: Nice.\nTurn 12. TUTOR: [PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \"What is the remainder when you work out the answer to this division? 2143 ÷ 4\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\nTurn 12. TUTOR: Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\nTurn 13. STUDENT: All right.\nTurn 14. TUTOR: Do you wanna write on the whiteboard or?\nTurn 15. TUTOR: [PAUSE: 7 seconds]\nTurn 15. STUDENT: I'll write on the whiteboard.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Choose the better instructional opportunity at the stopping point: scaffold for access or push for rigor. This is a choice about the student now, not a description of what the human tutor already did. Track the current problem, the student’s own mathematical contribution and what the tutor supplied. A student need not demonstrate complete mastery before being asked to explain, justify or try independently. Conversely a correct answer after tiny leading steps can still conceal an unresolved gap. Respect productive thinking time; silence, hesitation, an earlier mistake or a new problem alone do not establish a need for more help. Use the latest exchange in the full history. Return only the decision.",
+        "criteria": {
+          "scaffolding": "There is a current obstacle to accessing the mathematical idea or taking a useful next step. A focused clarification, representation, demonstration or guided substep would bridge it. The student may repeat a correct answer after heavy help while still lacking the idea. Choose support for a specific need, not help merely because the tutor can provide it.",
+          "rigor": "There is an opportunity to return or increase mathematical responsibility: ask the student to attempt a reachable step, explain their answer, justify a method, connect ideas or transfer it. Partial success or a plausible independently generated idea can be enough to invite reasoning. Do not require perfect mastery or provide more explanation before the student has had a useful independent attempt."
+        }
+      }
+    }
+  },
+  "payload_sha256": "cb9e9dd17a5ecac753e26e221b3d3f6f5c6696d7e4e9ee7f6ba7b33e15cf68bf",
+  "reserve_usd": 0.000213612,
+  "started_utc": "2026-11-10T19:19:44Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.86,
+        "probabilities": {
+          "rigor": 0.93,
+          "scaffolding": 0.07
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1140,
+      "output_tokens": 37
+    }
+  },
+  "usage": {
+    "input_tokens": 1140,
+    "output_tokens": 37
+  },
+  "cost_usd": 4.7879999999999996e-05,
+  "elapsed_ms": 123.49612499999995
+}

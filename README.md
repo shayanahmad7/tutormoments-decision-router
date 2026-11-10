@@ -2,6 +2,20 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
+## Separate decision experiment, 10 November 2026
+
+The [new decision-only study](experiments/jev-decision-study/README.md) tests Jev against all 520 released scaffold/rigor labels, without generating tutor replies. Five prompt/context candidates were compared on development students, then the selected prompt and a fresh control were evaluated on the other students. Two unchanged full repeats check stability.
+
+| Version | All 520 | Separate evaluation 382 |
+|---|---:|---:|
+| Previous prompt, fresh control | 372/520 (71.5%) | 278/382 (72.8%) |
+| New structured prompt, first run | 376/520 (72.3%) | 274/382 (71.7%) |
+| New prompt + development threshold .55 | 382/520 (73.5%) | 280/382 (73.3%) |
+
+The new wording did not establish an improvement on evaluation students. Thresholding is separately reported probability postprocessing, not Jev's raw choice. The two additional raw repeats scored 378 and 375; voting did not improve accuracy. Three identical-input pairs carry opposite reference labels, so a consistent context-only classifier cannot reach 520/520 on this unchanged file. All labels are retained.
+
+The study contains [all 520 decisions](experiments/jev-decision-study/All%20520%20decisions.csv), [every first-run error](experiments/jev-decision-study/Errors%20for%20review.csv), exact prompts and responses, a source-label audit, and a local conversation viewer. Total new cost: **$0.77**, 2,494 Jev requests, no tutor-generation or evaluator calls. The response-quality pilot below remains a separate experiment.
+
 The completed [matched tutoring pilot](experiments/routing-pilot/RESULTS.md) compares a Jev-directed policy with a tutor that receives the same detailed policies and chooses for itself. Qwen3 14B and 32B provide a within-family model-size comparison. The [design](experiments/routing-pilot/PLAN.md) was frozen before generation; [execution notes](experiments/routing-pilot/EXECUTION-NOTES.md) record every correction and extension.
 
 ## New pilot: what happened

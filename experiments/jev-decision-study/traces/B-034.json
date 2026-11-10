@@ -1,0 +1,46 @@
+{
+  "tag": "B-034",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \"What are the goal(s) you can work towards this semester?\"\nTurn 1. TUTOR: [PAUSE: 12 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Diane has left\" appears on the screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Kayla has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 8 seconds]\nTurn 1. STUDENT: All right. You can go ahead and make it big.\nTurn 2. STUDENT: And then you just hit exit, and then you go to this one. Bye. All right.\nTurn 3. STUDENT: All right.\nTurn 4. STUDENT: So you can make it big right there. Bye.\nTurn 5. TUTOR: [PAUSE: 24 seconds]\nTurn 5. TUTOR: [PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\nTurn 5. TUTOR: Hello?\nTurn 6. STUDENT: Hi.\nTurn 7. TUTOR: Hi, Kayla. How's your weekend?\nTurn 8. STUDENT: What?\nTurn 9. TUTOR: How was your weekend?\nTurn 10. STUDENT: It was good.\nTurn 11. TUTOR: Nice.\nTurn 12. TUTOR: [PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \"What is the remainder when you work out the answer to this division? 2143 ÷ 4\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\nTurn 12. TUTOR: Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\nTurn 13. STUDENT: All right.\nTurn 14. TUTOR: Do you wanna write on the whiteboard or?\nTurn 15. TUTOR: [PAUSE: 7 seconds]\nTurn 15. STUDENT: I'll write on the whiteboard.\nTurn 16. TUTOR: Okay.\nTurn 17. TUTOR: [PAUSE: 13 seconds]\nTurn 17. TUTOR: [SCREEN_INTERACTION: student - writing] Student uses the pen tool to write out the long division problem \"2143 ÷ 4\". He writes 4 outside the division symbol and 2143 inside. He then solves the problem:\n1. Writes 5 above the 1 in 2143.\n2. Writes 20 below 21.\n3. Subtracts to get 1.\n4. Brings down the 4 to make 14.\n5. Writes 3 above the 4 in 2143.\n6. Writes 12 below 14.\n7. Subtracts to get 2.\n8. Brings down the 3 to make 23.\n9. Writes 5 above the 3 in 2143.\n10. Writes 20 below 23.\n11. Subtracts to get a remainder of 3.\nTurn 17. STUDENT: The remainder's three.\nTurn 18. TUTOR: Yes, good job.\nTurn 19. TUTOR: [PROBLEM_CHANGE: p3 - 'Perimeter and Area' (start)] Tutor navigates to a new whiteboard showing a worksheet with various perimeter and area problems that were worked on previously.\nTutor clears the current whiteboard and pastes a new problem.\nTurn 19. TUTOR: Okay, thank you. I have a hundred percent you get it. Um, uh, I think I assigned you four quizzes last week, right?\nTurn 20. STUDENT: Yeah.\nTurn 21. TUTOR: And for the last one, I think you were struggling a little bit.\nTurn 22. STUDENT: Yeah.\nTurn 23. TUTOR: Okay, let's see. Let me put it on this whiteboard.\nTurn 24. TUTOR: [PROBLEM_CHANGE: p4 - 'Pizza Problem' (start)] The new problem shows a picture of a rectangular pizza with dimensions 26cm by 45cm. The text reads: \"Helena is making pizzas with the dimensions shown. How many pizzas of this size will she need to make for 15 people if each person will eat approximately 300cm² of pizza?\". The options are A: 4500, B: 32, C: 3, D: 4.\nTurn 24. TUTOR: It's this one, right? This question.\nTurn 25. STUDENT: Yeah.\nTurn 26. TUTOR: Can you tell me why you thought the answer was B?\nTurn 27. STUDENT: B? Um...\nTurn 28. TUTOR: Mhm.\nTurn 29. STUDENT: I forgot what I did. Um...",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Choose the better instructional opportunity at the stopping point: scaffold for access or push for rigor. This is a choice about the student now, not a description of what the human tutor already did. Track the current problem, the student’s own mathematical contribution and what the tutor supplied. A student need not demonstrate complete mastery before being asked to explain, justify or try independently. Conversely a correct answer after tiny leading steps can still conceal an unresolved gap. Respect productive thinking time; silence, hesitation, an earlier mistake or a new problem alone do not establish a need for more help. Use the latest exchange in the full history. Return only the decision.",
+        "criteria": {
+          "scaffolding": "There is a current obstacle to accessing the mathematical idea or taking a useful next step. A focused clarification, representation, demonstration or guided substep would bridge it. The student may repeat a correct answer after heavy help while still lacking the idea. Choose support for a specific need, not help merely because the tutor can provide it.",
+          "rigor": "There is an opportunity to return or increase mathematical responsibility: ask the student to attempt a reachable step, explain their answer, justify a method, connect ideas or transfer it. Partial success or a plausible independently generated idea can be enough to invite reasoning. Do not require perfect mastery or provide more explanation before the student has had a useful independent attempt."
+        }
+      }
+    }
+  },
+  "payload_sha256": "a15d9ddcea1df63651c8a24dd516d366096d748c8568b0bbd6aa43ab5dca5319",
+  "reserve_usd": 0.0003097752,
+  "started_utc": "2026-11-10T19:19:46Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.14,
+        "probabilities": {
+          "rigor": 0.57,
+          "scaffolding": 0.43
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1785,
+      "output_tokens": 37
+    }
+  },
+  "usage": {
+    "input_tokens": 1785,
+    "output_tokens": 37
+  },
+  "cost_usd": 7.497e-05,
+  "elapsed_ms": 153.91525000000073
+}

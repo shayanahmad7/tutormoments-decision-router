@@ -1,0 +1,46 @@
+{
+  "tag": "A-315",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] The screen loads to show a turquoise background with the \"Bright Path Tutoring\" logo and the text \"First Session Guide\". A notification \"Lily has joined\" appears.\nTurn 1. TUTOR: [PAUSE: 201 seconds] The student's video feed appears at 00:16 but is muted. The screen remains static.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears. A \"Bright Path Tutoring\" widget with a bookshelf, a timer, and a table appears in the top right corner.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Lily has left\" appears.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Lily has joined\" appears.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Lily has left\" appears.\nTurn 1. TUTOR: [PAUSE: 96 seconds]\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'First Session Guide' (start)] The screen has a teal background with the \"Bright Path Tutoring\" logo and the text \"First Session Guide\" in large white font.\nTurn 1. TUTOR: [PAUSE: 300 seconds] Tutor's cursor moves to the top of the screen and clicks on the \"Whiteboard 3\" tab. The screen changes to a new whiteboard.\nTurn 1. TUTOR: [PAUSE: 1 second]\nTurn 1. TUTOR: Hi, Lily.\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: How are you?\nTurn 4. STUDENT: Good.\nTurn 5. TUTOR: Good. I'm so excited to be your tutor today. My name is Rachel.\nTurn 6. STUDENT: Okay.\nTurn 7. TUTOR: And we're gonna have so much fun doing some math.\nTurn 8. STUDENT: Okay.\nTurn 9. TUTOR: So, first, what we're gonna do is we're gonna do a little get to know you activity.\nTurn 10. TUTOR: [PROBLEM_CHANGE: p2 - 'Get to Know You' (start)] The whiteboard is titled \"Get to Know You\". Below the title are two columns, one for the tutor and one for the student. Each column has rows for \"Favorite Color:\", \"Favorite Food:\", and \"Favorite Animal:\". The tutor's column is pre-filled with \"Blue\", \"Pizza\", and \"Dog\".\nTutor types \"Pink\" in the \"Favorite Color:\" row under the student's column.\nTutor types \"Pizza\" in the \"Favorite Food:\" row under the student's column.\nTutor types \"Dog\" in the \"Favorite Animal:\" row under the student's column.\nTurn 10. TUTOR: So, I'm gonna go first.\nTurn 11. STUDENT: Okay.\nTurn 12. TUTOR: So, my favorite color is blue. My favorite food is pizza.\nTurn 13. STUDENT: Me too.\nTurn 14. TUTOR: And my favorite animal is a dog.\nTurn 15. TUTOR: So, now it's your turn. What's your favorite color?\nTurn 16. STUDENT: Pink.\nTurn 17. TUTOR: Pink. Okay. I'm gonna write that down.\nTurn 18. TUTOR: What about your favorite food?\nTurn 19. STUDENT: Pizza.\nTurn 20. TUTOR: Pizza. We have the same favorite food. That's awesome.\nTurn 21. TUTOR: And what's your favorite animal?\nTurn 22. STUDENT: A dog.\nTurn 23. TUTOR: A dog. We have the same favorite animal too.\nTurn 24. TUTOR: That's so cool. We have so much in common.\nTurn 25. TUTOR: [PAUSE: 1 second] Tutor's cursor moves to the top of the screen and clicks on the \"Whiteboard 4\" tab. The screen changes to a new, blank whiteboard.\nTurn 25. TUTOR: Okay. So, now we're gonna move on to our next activity.\nTurn 26. TUTOR: [PROBLEM_CHANGE: p3 - '10 + 10 = ?' (start)] Tutor writes \"1. 10 + 10 =\" on the whiteboard.\nTutor writes \"20\" after the equals sign.\nTurn 26. TUTOR: So, what is ten plus ten?\nTurn 27. STUDENT: Twenty.\nTurn 28. TUTOR: Twenty. Good job.\nTurn 29. TUTOR: [PROBLEM_CHANGE: p4 - '100 + 100 = ?' (start)] Tutor writes \"2. 100 + 100 =\" on the whiteboard.\nTutor writes \"200\" after the equals sign.\nTurn 29. TUTOR: What about one hundred plus one hundred?\nTurn 30. STUDENT: Two hundred.\nTurn 31. TUTOR: Two hundred. Perfect.\nTurn 32. TUTOR: [PROBLEM_CHANGE: p5 - '5 + 4 = ?' (start)] Tutor writes \"3. 5 + 4 =\" on the whiteboard.\nTutor writes \"9\" after the equals sign.\nTurn 32. TUTOR: What is five plus four?\nTurn 33. STUDENT: Nine.\nTurn 34. TUTOR: Nine. Good job.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Which next tutoring move best fits what the learner has demonstrated on the current math task? Read the sequence of student work, tutor help, and described screen actions. Give greatest weight to the current task and the most recent substantive student contribution, using earlier turns to interpret it. A correct answer supplied by the tutor, or a student saying yes, does not by itself demonstrate understanding. An earlier error does not require more help after the learner has independently corrected and explained it.",
+        "criteria": {
+          "scaffolding": "The learner needs targeted support to access or complete the current mathematical step: unresolved confusion, an uncorrected error, inability to begin, or difficulty understanding the required concept or representation. Help with the specific obstacle while leaving meaningful participation.",
+          "rigor": "The learner is ready to attempt the next step independently, explain or justify a successful step, connect ideas, or transfer a method. Build on demonstrated understanding or self-correction instead of repeating mastered work or supplying the next operation."
+        }
+      }
+    }
+  },
+  "payload_sha256": "4266e4c1e0ba52a7a1aa6eb887a66e9ebf86fafd21105de9507a33a0af740576",
+  "reserve_usd": 0.0003017616,
+  "started_utc": "2026-11-10T19:19:42Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.96,
+        "probabilities": {
+          "rigor": 0.98,
+          "scaffolding": 0.02
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1727,
+      "output_tokens": 37
+    }
+  },
+  "usage": {
+    "input_tokens": 1727,
+    "output_tokens": 37
+  },
+  "cost_usd": 7.2534e-05,
+  "elapsed_ms": 157.56237500000037
+}
