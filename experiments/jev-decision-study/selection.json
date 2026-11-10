@@ -1,0 +1,171 @@
+{
+  "selected": "C",
+  "ranking": [
+    "C",
+    "D",
+    "A",
+    "E",
+    "B"
+  ],
+  "development_scores": {
+    "A": {
+      "n": 138,
+      "correct": 94,
+      "accuracy": 0.6811594202898551,
+      "balanced_accuracy": 0.6741041244083841,
+      "macro_f1": 0.6674698795180722,
+      "per_label": {
+        "scaffolding": {
+          "n": 51,
+          "correct": 33,
+          "recall": 0.6470588235294118,
+          "f1": 0.6
+        },
+        "rigor": {
+          "n": 87,
+          "correct": 61,
+          "recall": 0.7011494252873564,
+          "f1": 0.7349397590361445
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 33,
+          "rigor": 18
+        },
+        "rigor": {
+          "scaffolding": 26,
+          "rigor": 61
+        }
+      }
+    },
+    "B": {
+      "n": 138,
+      "correct": 92,
+      "accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.5733603786342123,
+      "macro_f1": 0.5511877828054298,
+      "per_label": {
+        "scaffolding": {
+          "n": 51,
+          "correct": 11,
+          "recall": 0.21568627450980393,
+          "f1": 0.3235294117647059
+        },
+        "rigor": {
+          "n": 87,
+          "correct": 81,
+          "recall": 0.9310344827586207,
+          "f1": 0.7788461538461537
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 11,
+          "rigor": 40
+        },
+        "rigor": {
+          "scaffolding": 6,
+          "rigor": 81
+        }
+      }
+    },
+    "C": {
+      "n": 138,
+      "correct": 102,
+      "accuracy": 0.7391304347826086,
+      "balanced_accuracy": 0.6957403651115619,
+      "macro_f1": 0.7032258064516128,
+      "per_label": {
+        "scaffolding": {
+          "n": 51,
+          "correct": 27,
+          "recall": 0.5294117647058824,
+          "f1": 0.5999999999999999
+        },
+        "rigor": {
+          "n": 87,
+          "correct": 75,
+          "recall": 0.8620689655172413,
+          "f1": 0.8064516129032258
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 27,
+          "rigor": 24
+        },
+        "rigor": {
+          "scaffolding": 12,
+          "rigor": 75
+        }
+      }
+    },
+    "D": {
+      "n": 138,
+      "correct": 101,
+      "accuracy": 0.7318840579710145,
+      "balanced_accuracy": 0.6859364435429344,
+      "macro_f1": 0.6932043501772518,
+      "per_label": {
+        "scaffolding": {
+          "n": 51,
+          "correct": 26,
+          "recall": 0.5098039215686274,
+          "f1": 0.5842696629213484
+        },
+        "rigor": {
+          "n": 87,
+          "correct": 75,
+          "recall": 0.8620689655172413,
+          "f1": 0.8021390374331552
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 26,
+          "rigor": 25
+        },
+        "rigor": {
+          "scaffolding": 12,
+          "rigor": 75
+        }
+      }
+    },
+    "E": {
+      "n": 138,
+      "correct": 99,
+      "accuracy": 0.717391304347826,
+      "balanced_accuracy": 0.6703853955375253,
+      "macro_f1": 0.6766208015381843,
+      "per_label": {
+        "scaffolding": {
+          "n": 51,
+          "correct": 25,
+          "recall": 0.49019607843137253,
+          "f1": 0.5617977528089888
+        },
+        "rigor": {
+          "n": 87,
+          "correct": 74,
+          "recall": 0.8505747126436781,
+          "f1": 0.7914438502673796
+        }
+      },
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 25,
+          "rigor": 26
+        },
+        "rigor": {
+          "scaffolding": 13,
+          "rigor": 74
+        }
+      }
+    }
+  },
+  "frozen_at_utc": "2026-11-10T19:20:50.914273+00:00",
+  "rule": "development balanced accuracy, macro F1, accuracy, shorter question, candidate ID",
+  "new_evaluation_predictions": 0,
+  "configuration_sha256": "a5e0bdffe9e805d58b606049957f614ec480fd77ec99e62415b638511051d517"
+}
