@@ -1,0 +1,521 @@
+{
+  "frozen_at_utc": "2026-11-10T19:21:43.478546+00:00",
+  "selected_candidate": "C",
+  "status": "Secondary amendment after evaluation calls began but before any evaluation scores were calculated or inspected. Raw API choices remain the primary result.",
+  "threshold": 0.55,
+  "grid": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "rule": "Maximize development balanced accuracy, then closest to .5, then lower threshold. At .5 use the raw API choice for tie consistency.",
+  "development_scores": [
+    {
+      "threshold": 0.1,
+      "balanced_accuracy": 0.579107505070994
+    },
+    {
+      "threshold": 0.15,
+      "balanced_accuracy": 0.5987153482082488
+    },
+    {
+      "threshold": 0.2,
+      "balanced_accuracy": 0.5987153482082488
+    },
+    {
+      "threshold": 0.25,
+      "balanced_accuracy": 0.6223799864773496
+    },
+    {
+      "threshold": 0.3,
+      "balanced_accuracy": 0.6517917511832318
+    },
+    {
+      "threshold": 0.35,
+      "balanced_accuracy": 0.6656524678837052
+    },
+    {
+      "threshold": 0.4,
+      "balanced_accuracy": 0.689317106152806
+    },
+    {
+      "threshold": 0.45,
+      "balanced_accuracy": 0.6933739012846518
+    },
+    {
+      "threshold": 0.5,
+      "balanced_accuracy": 0.6957403651115619
+    },
+    {
+      "threshold": 0.55,
+      "balanced_accuracy": 0.7038539553752535
+    },
+    {
+      "threshold": 0.6,
+      "balanced_accuracy": 0.6987829614604462
+    },
+    {
+      "threshold": 0.65,
+      "balanced_accuracy": 0.6798512508451657
+    },
+    {
+      "threshold": 0.7,
+      "balanced_accuracy": 0.6862745098039216
+    },
+    {
+      "threshold": 0.75,
+      "balanced_accuracy": 0.6599053414469236
+    },
+    {
+      "threshold": 0.8,
+      "balanced_accuracy": 0.6548343475321163
+    },
+    {
+      "threshold": 0.85,
+      "balanced_accuracy": 0.6071670047329276
+    },
+    {
+      "threshold": 0.9,
+      "balanced_accuracy": 0.5855307640297498
+    }
+  ],
+  "development_oof": [
+    {
+      "heldout_student": "010c8c6e-a380-5740-aa53-a29a61adf7af",
+      "threshold": 0.75,
+      "indices": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "decisions": [
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "scaffolding",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "scaffolding",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "scaffolding"
+      ]
+    },
+    {
+      "heldout_student": "02020d06-7b55-5b35-b27f-18b334d8c8c3",
+      "threshold": 0.55,
+      "indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "decisions": [
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "12c76fc4-7e8e-5d4f-877a-2e843bfe8232",
+      "threshold": 0.6,
+      "indices": [
+        133,
+        134,
+        135,
+        136
+      ],
+      "decisions": [
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "16c06104-4239-534f-9d9e-4100d7337e02",
+      "threshold": 0.55,
+      "indices": [
+        282,
+        283,
+        284,
+        285,
+        286,
+        287
+      ],
+      "decisions": [
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "scaffolding",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "303a5298-1da1-500d-849a-c6d7eb2f5221",
+      "threshold": 0.55,
+      "indices": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "decisions": [
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "scaffolding"
+      ]
+    },
+    {
+      "heldout_student": "4f72ec14-67cc-5ab0-b1d1-364f69ba4e29",
+      "threshold": 0.55,
+      "indices": [
+        413,
+        414
+      ],
+      "decisions": [
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "5c346a15-0e32-57f2-8081-96ff9d9563b8",
+      "threshold": 0.55,
+      "indices": [
+        152,
+        153,
+        154,
+        155
+      ],
+      "decisions": [
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "6aaa8c0e-2d55-5aed-9a67-542f0cea7390",
+      "threshold": 0.55,
+      "indices": [
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326
+      ],
+      "decisions": [
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "763f4b3a-e22b-58db-b563-7fecbfcefe78",
+      "threshold": 0.55,
+      "indices": [
+        459
+      ],
+      "decisions": [
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "87d23e6a-470c-5079-862b-5ba9e54082b9",
+      "threshold": 0.55,
+      "indices": [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169
+      ],
+      "decisions": [
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "scaffolding"
+      ]
+    },
+    {
+      "heldout_student": "8ee79abb-e3f2-52d6-bd36-767fe496694f",
+      "threshold": 0.5,
+      "indices": [
+        365,
+        366,
+        367,
+        368
+      ],
+      "decisions": [
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "9487ffeb-f1b1-5ddc-a5b2-a33ee2cf08af",
+      "threshold": 0.6,
+      "indices": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128
+      ],
+      "decisions": [
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "9ba19d80-34b1-5f50-a7f0-f5d783d66a57",
+      "threshold": 0.55,
+      "indices": [
+        140,
+        141,
+        142,
+        143,
+        144
+      ],
+      "decisions": [
+        "scaffolding",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "scaffolding"
+      ]
+    },
+    {
+      "heldout_student": "9fe1ab43-9323-5663-a1e1-92c66ba02b05",
+      "threshold": 0.55,
+      "indices": [
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468
+      ],
+      "decisions": [
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "ab86ca1a-3cf4-5983-b66c-b021f58a3cb0",
+      "threshold": 0.55,
+      "indices": [
+        270,
+        271
+      ],
+      "decisions": [
+        "scaffolding",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "c0f67d80-f8de-5977-8c5e-50a273e69cd4",
+      "threshold": 0.55,
+      "indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "decisions": [
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor",
+        "rigor"
+      ]
+    },
+    {
+      "heldout_student": "cb3a3184-ab32-5b22-a8d0-159264c97184",
+      "threshold": 0.55,
+      "indices": [
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110
+      ],
+      "decisions": [
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "rigor",
+        "scaffolding",
+        "scaffolding",
+        "rigor",
+        "scaffolding",
+        "rigor",
+        "scaffolding"
+      ]
+    },
+    {
+      "heldout_student": "cea9a4fc-0185-5ba4-a944-22e75c10e693",
+      "threshold": 0.55,
+      "indices": [
+        424,
+        425,
+        426
+      ],
+      "decisions": [
+        "rigor",
+        "rigor",
+        "rigor"
+      ]
+    }
+  ],
+  "evaluation_outputs_read": 0,
+  "additional_api_calls": 0,
+  "limitation": "Threshold is postprocessing of Jev probabilities, not Jev raw choice. Leave-one-student-out threshold results do not remove earlier prompt-selection exposure."
+}
