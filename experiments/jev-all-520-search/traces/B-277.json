@@ -1,0 +1,46 @@
+{
+  "tag": "B-277",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A loading spinner is shown in the center of a white whiteboard.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Jordan has joined\" appears at the top of the screen. The whiteboard disappears, and the screen becomes dark green.\nTurn 1. TUTOR: [PAUSE: 21 seconds] The tutor's video feed appears, showing a red circle with the letter 'J' and the name \"Jordan\" below it.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - moving cursor] The tutor's video feed is minimized, and the white whiteboard reappears. The tutor's cursor moves around the whiteboard.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - sharing screen] The tutor initiates a screen share. The shared screen is initially black, then briefly shows the whiteboard before displaying the LearnLit.org website.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - clicking] The tutor clicks the \"Login\" button on the LearnLit website, which redirects to a Google sign-in page.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - typing] On the Google sign-in page for LearnLit, the tutor types the email address \"<Email>\" into the \"Email or phone\" field.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - clicking] The tutor clicks the \"Next\" button. The screen transitions to a password entry page.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - typing] The tutor types a password into the \"Enter your password\" field. The characters are obscured.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - clicking] The tutor clicks the \"Next\" button, logs into LearnLit, and then closes a pop-up advertisement on the site.\nTurn 1. TUTOR: [PAUSE: 215 seconds] The screen displays the LearnLit dashboard with the greeting \"Hi, Jordan! Here's what's new at LearnLit.\"\nTurn 1. TUTOR: [SCREEN_UPDATE] The screen displays the LearnLit.org website. The main text says \"Hi, Jordan! Here's what's new at LearnLit.\"\nTurn 1. TUTOR: [PAUSE: 121 seconds]\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - navigating website] The tutor's cursor moves to the top of the browser and clicks on the \"Math Games | Education...\" tab.\nTurn 1. TUTOR: [SCREEN_UPDATE] The screen changes to toytheater.com, displaying a grid of icons for various math games like \"Addition Pull,\" \"Multiply Race,\" \"Missing Addend,\" etc.\nTurn 1. TUTOR: [PAUSE: 176 seconds]\nTurn 1. TUTOR: [PROBLEM_CHANGE: Math Games Selection (start)] The screen displays a webpage from toytheater.com showing a grid of math game options. The games include \"Perimeter Climber,\" \"Cavern,\" \"Math Mine Multiply Divide,\" \"Math Mine Add Subtract,\" \"Missing Addend,\" \"Missing Subtrahend,\" \"Missing Multiplier,\" \"Missing Divisor,\" \"Fish Feeder,\" \"Combo,\" \"Moves,\" \"Quarterback,\" \"Skip Count Race,\" \"Wind,\" and \"Pinball.\" The tutor's cursor is hovering over \"Missing Subtrahend.\"\nTurn 1. TUTOR: [PAUSE: 300 seconds]\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - clicking] On a webpage showing various math games, the tutor's cursor moves to and clicks on a card labeled \"Missing Subtrahend\".\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - '10 - ? = 6' (start)] The screen changes to a game interface. The problem \"10 - ? = 6\" is displayed at the top. Below it is a number line from 0 to 10 and a number pad.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Kayla has left\". The student's video feed is removed.\nTurn 1. TUTOR: [SCREEN_INTERACTION: tutor - changes screen] The tutor closes the browser tab with the reading passage, revealing a blank whiteboard with a small thumbnail of a different activity.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Jordan has left\". The tutor's video feed is removed.\nTurn 1. TUTOR: [PAUSE: 7 seconds]\nTurn 1. TUTOR: Okay, Kayla. So, ten minus what equals six?\nTurn 2. STUDENT: Four.\nTurn 3. TUTOR: Four. Good job.\nTurn 4. TUTOR: [SCREEN_INTERACTION: tutor - entering answer] The tutor's cursor clicks '4' on the number pad. A green checkmark appears, and the score updates to 1.\nTurn 4. TUTOR: [PROBLEM_CHANGE: p2 - '10 - ? = 1' (start)] A new problem \"10 - ? = 1\" appears on the screen.\nTurn 4. TUTOR: Okay. Ten minus what equals one?\nTurn 5. STUDENT: Nine.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Choose the better instructional opportunity at the stopping point: scaffold for access or push for rigor. This is a choice about the student now, not a description of what the human tutor already did. Track the current problem, the student’s own mathematical contribution and what the tutor supplied. A student need not demonstrate complete mastery before being asked to explain, justify or try independently. Conversely a correct answer after tiny leading steps can still conceal an unresolved gap. Respect productive thinking time; silence, hesitation, an earlier mistake or a new problem alone do not establish a need for more help. Use the latest exchange in the full history. Return only the decision.",
+        "criteria": {
+          "scaffolding": "There is a current obstacle to accessing the mathematical idea or taking a useful next step. A focused clarification, representation, demonstration or guided substep would bridge it. The student may repeat a correct answer after heavy help while still lacking the idea. Choose support for a specific need, not help merely because the tutor can provide it.",
+          "rigor": "There is an opportunity to return or increase mathematical responsibility: ask the student to attempt a reachable step, explain their answer, justify a method, connect ideas or transfer it. Partial success or a plausible independently generated idea can be enough to invite reasoning. Do not require perfect mastery or provide more explanation before the student has had a useful independent attempt."
+        }
+      }
+    }
+  },
+  "payload_sha256": "418f625dd30d8b0e04b371e37be6f42308b88b47cd6c6c3845b77f2ff2602ef3",
+  "reserve_usd": 0.0003380496,
+  "started_utc": "2026-11-10T21:27:42Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.96,
+        "probabilities": {
+          "rigor": 0.98,
+          "scaffolding": 0.02
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1746,
+      "output_tokens": 37
+    }
+  },
+  "usage": {
+    "input_tokens": 1746,
+    "output_tokens": 37
+  },
+  "cost_usd": 7.3332e-05,
+  "elapsed_ms": 137.85541700001147
+}

@@ -17,4 +17,9 @@ class FullSearch(unittest.TestCase):
    for c in 'ABCDE':self.assertEqual(m.payload(row,c),m.m.payload(row,c))
  def test_new_candidate_preserves_full_history(self):
   for row in m.m.source():self.assertIn(m.m.lines(row['context']),m.payload(row,'F')['state'])
+ def test_ensemble_thresholds_do_not_depend_on_float_addition_order(self):
+  s=importlib.util.spec_from_file_location('search_analysis',ROOT/'experiments/jev-all-520-search/analyze.py');a=importlib.util.module_from_spec(s);s.loader.exec_module(a)
+  self.assertEqual(a.mean_probability([.1,.2,.3]),.2)
+  self.assertEqual(a.mean_probability([.3,.2,.1]),.2)
+  self.assertEqual(a.thresholded({0:.2},{0:'scaffolding'},.2),{0:'rigor'})
 if __name__=='__main__':unittest.main()

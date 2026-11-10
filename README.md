@@ -2,6 +2,14 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
+## Latest: all six decision prompts on all 520 records
+
+The [full-520 Jev search](experiments/jev-all-520-search/README.md) is complete: **520 decisions for each of six prompts**, or 3,120 candidate-record decisions. This extension completed the previously untested records for B, D and E and ran the new F prompt on every record. It added 1,666 Jev calls, costing **$0.45**, with no tutor generation or model judging.
+
+Raw matches were A 372, B 329, C 376, D 375, E 373 and F 368, each out of 520. The structured prompt C remains best at **72.3%**. Searching probability thresholds gives **382/520 (73.5%)** with C and a .55 rigor cutoff. The six-prompt probability average does not beat it. All records, labels, decisions and threshold results are included in the [single comparison CSV](experiments/jev-all-520-search/All%20520%20-%20Six%20prompt%20decisions.csv).
+
+This latest round explicitly optimizes against all 520 labels and reports full-set accuracy. It is exploratory, not a held-out validation result. The earlier split-based study and tutoring-response pilot below remain unchanged and separate.
+
 ## Separate decision experiment, 10 November 2026
 
 The [new decision-only study](experiments/jev-decision-study/README.md) tests Jev against all 520 released scaffold/rigor labels, without generating tutor replies. Five prompt/context candidates were compared on development students, then the selected prompt and a fresh control were evaluated on the other students. Two unchanged full repeats check stability.

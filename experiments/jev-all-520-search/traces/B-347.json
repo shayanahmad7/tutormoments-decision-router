@@ -1,0 +1,46 @@
+{
+  "tag": "B-347",
+  "payload": {
+    "model": "jev-1.14.0",
+    "state": "Here is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A white whiteboard loads with a loading spinner in the center.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Emily has joined\".\nTurn 1. TUTOR: [PAUSE: 3 minutes 19 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Mia has joined\".\nTurn 1. TUTOR: [PAUSE: 52 seconds]\nTurn 1. TUTOR: [PAUSE: 4 seconds]\nTurn 1. TUTOR: Hi, Mia. How are you?\nTurn 2. STUDENT: Good. How are you?\nTurn 3. TUTOR: I'm good. Thank you.\nTurn 4. TUTOR: [PAUSE: 1 second]\nTurn 4. TUTOR: Um, so today we're gonna be working on some more multiplication.\nTurn 5. STUDENT: Okay.\nTurn 6. TUTOR: Does that sound good?\nTurn 7. STUDENT: Yes.\nTurn 8. TUTOR: Okay.\nTurn 9. TUTOR: Let me just pull up the first problem.\nTurn 10. TUTOR: [PAUSE: 2 seconds]\nTurn 10. TUTOR: [PROBLEM_CHANGE: p1 - 'Which expression is represented by the model below?' (start)] On the whiteboard, the question \"Which expression is represented by the model below?\" is displayed. Below the text is a grid of blue squares with 4 rows and 7 columns. Four multiple-choice options are listed: A. 4 + 7, B. 7 - 4, C. 4 x 7, D. 7 ÷ 4.\nTutor circles the option \"C. 4 x 7\" in red.\nTurn 10. TUTOR: Okay.\nTurn 11. TUTOR: So, which expression is represented by the model below?\nTurn 12. STUDENT: Um, C.",
+    "questions": {
+      "next_move": {
+        "type": "choice",
+        "instructions": "Choose the better instructional opportunity at the stopping point: scaffold for access or push for rigor. This is a choice about the student now, not a description of what the human tutor already did. Track the current problem, the student’s own mathematical contribution and what the tutor supplied. A student need not demonstrate complete mastery before being asked to explain, justify or try independently. Conversely a correct answer after tiny leading steps can still conceal an unresolved gap. Respect productive thinking time; silence, hesitation, an earlier mistake or a new problem alone do not establish a need for more help. Use the latest exchange in the full history. Return only the decision.",
+        "criteria": {
+          "scaffolding": "There is a current obstacle to accessing the mathematical idea or taking a useful next step. A focused clarification, representation, demonstration or guided substep would bridge it. The student may repeat a correct answer after heavy help while still lacking the idea. Choose support for a specific need, not help merely because the tutor can provide it.",
+          "rigor": "There is an opportunity to return or increase mathematical responsibility: ask the student to attempt a reachable step, explain their answer, justify a method, connect ideas or transfer it. Partial success or a plausible independently generated idea can be enough to invite reasoning. Do not require perfect mastery or provide more explanation before the student has had a useful independent attempt."
+        }
+      }
+    }
+  },
+  "payload_sha256": "79bb5fe1b8b3e08815373ca15c21e823a3739fbd3979fb4afcf4294c613ee2ca",
+  "reserve_usd": 0.0001940568,
+  "started_utc": "2026-11-10T21:26:38Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "next_move": {
+        "type": "choice",
+        "choice": "rigor",
+        "confidence": 0.48,
+        "probabilities": {
+          "rigor": 0.74,
+          "scaffolding": 0.26
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1020,
+      "output_tokens": 37
+    }
+  },
+  "usage": {
+    "input_tokens": 1020,
+    "output_tokens": 37
+  },
+  "cost_usd": 4.2839999999999996e-05,
+  "elapsed_ms": 224.7652500000008
+}
