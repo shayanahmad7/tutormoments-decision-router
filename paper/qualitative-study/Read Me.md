@@ -2,7 +2,7 @@
 
 This folder reproduces the 38-moment analysis in the course paper. It does not combine that sample with the later eight-episode human-method pilot or the 520-moment routing experiments.
 
-## Start here
+## Contents
 
 - **Qualitative Coding and Results.xlsx:** the main reading copy, with three tabs: Read Me and Codebook, Coded Responses, and Results. Both passes remain visible; counts and agreement are calculated from the response table.
 - **Complete Coding Data - 114 Responses.csv:** 38 matched moments × observed human, GPT-5.5 plain, and GPT-5.5 evaluation-aware responses. The Work Left and Information Supplied columns contain the first archived AI-assisted coding pass used in the paper. Exact response text, evidence quote and rationale are included. The second archived pass appears in separate clearly named columns.

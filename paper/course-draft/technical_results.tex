@@ -1,30 +1,29 @@
-Detailed self-choice passed 357/520 cases (68.7\%), Jev-directed selection 379 (72.9\%), and Decisions-directed selection 382 (73.5\%; Table~\ref{tab:routing}). Jev's paired gain was 4.2 percentage points (95\% student-cluster bootstrap interval: $-1.0$ to $9.2$); Decisions' gain was 4.8 points ($0.2$ to $9.5$). Neither exceeded fixed rigor guidance (385/520, 74.0\%). Jev improved rigor-condition passes from 149 to 180 but reduced scaffolding-condition passes from 208 to 199. Thus, its aggregate improvement concealed a trade-off across situations.
+Jev-guided replies passed in 379/520 cases and Decisions-guided replies in 382, compared with 357 for self-choice (Table~\ref{tab:routing}). These were gains of 4.2 percentage points for Jev (95\% student-resampling interval: $-1.0$ to $9.2$) and 4.8 points for Decisions ($0.2$ to $9.5$). However, always using rigor guidance passed 385 cases, slightly more than either decision system. Jev improved performance on rigor opportunities from 149 to 180 passes, while reducing scaffolding passes from 208 to 199.
 
 \begin{table}[ht]
 \centering\small
-\caption{Passing first replies under the primary evaluator.}
+\caption{Passing first replies. Each row uses the same 520 conversation stopping points.}
 \label{tab:routing}
 \begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
 \toprule
-Policy & All 520 & Scaffold 260 & Rigor 260 & Matched 346\\
+How instructions are selected & All 520 & Scaffold 260 & Rigor 260 & Math set 346\\
 \midrule
-Detailed self-choice &68.7\%&80.0\%&57.3\%&72.0\%\\
-Jev-directed &72.9\%&76.5\%&69.2\%&72.8\%\\
-Decisions-directed &73.5\%&80.8\%&66.2\%&75.1\%\\
-Always scaffold &56.5\%&86.2\%&26.9\%&59.8\%\\
-Always rigor &74.0\%&65.8\%&82.3\%&76.0\%\\
-Reference-label diagnostic &84.2\%&86.2\%&82.3\%&86.4\%\\
-Opposite-label diagnostic &46.3\%&65.8\%&26.9\%&49.4\%\\
+Qwen chooses its approach &68.7\%&80.0\%&57.3\%&72.0\%\\
+Jev chooses &72.9\%&76.5\%&69.2\%&72.8\%\\
+OpenAI Decisions chooses &73.5\%&80.8\%&66.2\%&75.1\%\\
+Always use scaffold instructions &56.5\%&86.2\%&26.9\%&59.8\%\\
+Always use rigor instructions &74.0\%&65.8\%&82.3\%&76.0\%\\
+Use the dataset label (diagnostic) &84.2\%&86.2\%&82.3\%&86.4\%\\
 \bottomrule
 \end{tabularx}
-\vspace{3pt}
+\vspace{2pt}
 \begin{minipage}{\linewidth}\footnotesize
-The last column uses the strict matched mathematics frame. The two label-based policies are diagnostic controls, not deployable systems. All policies share the same paired scaffold/rigor replies, except self-choice.
+The mathematics set also requires clear turn boundaries and usable original responses; it is not a subject-only filter. The diagnostic assumes access to the assigned label and is not a deployable system. These are our first-reply ratings, not the original multi-turn benchmark score.
 \end{minipage}
 \end{table}
 
-The stricter mathematics comparison was less favorable to routing: Jev passed 252/346 cases versus 249 for self-choice, a 0.9-point difference ($-5.3$ to $6.5$). Decisions passed 260 and fixed rigor 263. On the 32-case evaluation audit, Claude passed 16 self-choice replies and 22 each for Jev, Decisions, and fixed rigor. On those same cases, the primary evaluator passed 20 self-choice and 19 Jev replies, reversing the relative result. Overall agreement was 75/96 replies (78.1\%): condition differences were evaluator-sensitive.
+In the stricter 346-moment mathematics set, Jev's advantage over self-choice was only 3 cases, or 0.9 points (interval $-5.3$ to $6.5$). Evaluation was also sensitive to the judge. On the same 32 cases, Gemini passed 20 self-choice and 19 Jev replies; Claude passed 16 and 22, respectively. The two evaluators agreed on 75 of the 96 individual reply judgments (78.1\%).
 
-Category agreement and reply success diverged. When Jev matched the reference category, 320/376 selected replies passed; when it disagreed, 59/144 still passed. Across the paired policy replies, both passed at 214 moments, only rigor passed at 171, only scaffolding at 80, and neither at 55. Even reference-label selection passed only 438/520. Better category prediction therefore leaves a separate response-execution problem, while category disagreement does not invariably produce a poor reply. In moment 24, for example, the learner was working on $1{,}000-10$. Both routers correctly selected scaffolding, but the selected reply returned to an earlier $338+586$ problem; the evaluator marked a context failure.
+Correct category selection did not guarantee a good response. Of Jev's 376 category matches, 320 selected replies passed; 59 of its 144 mismatches also passed. In one case, both decision systems correctly selected scaffolding for a learner working on $1{,}000-10$, but Qwen's reply returned to an earlier $338+586$ problem. Even selecting by the dataset label passed only 438/520 cases. The remaining failures concern how the tutor carries out its instruction, not just which instruction is chosen.
 
-Median generator time to first answer was 1.20 seconds for self-choice. Adding archived routing time yielded reconstructed medians of 1.43 seconds for Jev and 1.60 for Decisions. Estimated selected-response costs per 1,000 cases were \$0.59, \$0.90, and \$1.25, respectively. These estimates exclude evaluation and do not establish a deployment speedup. The complete new experiment cost approximately \$3.00, including evaluation and conservative failed-call reservations.
+We found no speed advantage. Qwen's median time to begin answering was 1.20 seconds for self-choice. Adding the separately measured decision durations gave estimated totals of 1.43 seconds with Jev and 1.60 with Decisions. These are reconstructed estimates, because saved decisions selected pre-generated replies; we did not time a live end-to-end system. Estimated model costs per 1,000 replies were \$0.59, \$0.90, and \$1.25, respectively, excluding evaluation.
