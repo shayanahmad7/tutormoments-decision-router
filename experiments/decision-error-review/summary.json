@@ -1,0 +1,165 @@
+{
+  "n": 520,
+  "gold_counts": {
+    "scaffolding": 260,
+    "rigor": 260
+  },
+  "run_columns": 18,
+  "distinct_prediction_vectors": 15,
+  "aliases": {
+    "Jev prompt C": "Jev earlier",
+    "Jev previous fresh": "Jev prompt A",
+    "Jev selected C": "Jev earlier"
+  },
+  "full_run_error_union": 342,
+  "latest_three_error_union": 254,
+  "latest_three_all_wrong": 57,
+  "partial_only_extra": 1,
+  "document_cases": 343,
+  "identical_context_conflict_groups": [
+    [
+      70,
+      71
+    ],
+    [
+      367,
+      368
+    ],
+    [
+      411,
+      412
+    ]
+  ],
+  "unique_contexts": 491,
+  "completed_blind_cases": 20,
+  "runs": {
+    "Jev earlier": {
+      "correct": 376,
+      "scaffolding_correct": 181,
+      "rigor_correct": 195
+    },
+    "OpenAI Decisions earlier": {
+      "correct": 386,
+      "scaffolding_correct": 204,
+      "rigor_correct": 182
+    },
+    "Luna one-word earlier": {
+      "correct": 373,
+      "scaffolding_correct": 213,
+      "rigor_correct": 160
+    },
+    "Jev revised": {
+      "correct": 367,
+      "scaffolding_correct": 147,
+      "rigor_correct": 220
+    },
+    "OpenAI Decisions revised": {
+      "correct": 372,
+      "scaffolding_correct": 210,
+      "rigor_correct": 162
+    },
+    "Luna one-word revised": {
+      "correct": 377,
+      "scaffolding_correct": 224,
+      "rigor_correct": 153
+    },
+    "Jev prompt A": {
+      "correct": 372,
+      "scaffolding_correct": 203,
+      "rigor_correct": 169
+    },
+    "Jev prompt B": {
+      "correct": 329,
+      "scaffolding_correct": 91,
+      "rigor_correct": 238
+    },
+    "Jev prompt C": {
+      "correct": 376,
+      "scaffolding_correct": 181,
+      "rigor_correct": 195
+    },
+    "Jev prompt D": {
+      "correct": 375,
+      "scaffolding_correct": 178,
+      "rigor_correct": 197
+    },
+    "Jev prompt E": {
+      "correct": 373,
+      "scaffolding_correct": 176,
+      "rigor_correct": 197
+    },
+    "Jev prompt F": {
+      "correct": 368,
+      "scaffolding_correct": 153,
+      "rigor_correct": 215
+    },
+    "Jev original archived": {
+      "correct": 367,
+      "scaffolding_correct": 200,
+      "rigor_correct": 167
+    },
+    "Jev previous archived": {
+      "correct": 375,
+      "scaffolding_correct": 196,
+      "rigor_correct": 179
+    },
+    "Jev previous fresh": {
+      "correct": 372,
+      "scaffolding_correct": 203,
+      "rigor_correct": 169
+    },
+    "Jev selected C": {
+      "correct": 376,
+      "scaffolding_correct": 181,
+      "rigor_correct": 195
+    },
+    "Jev repeat 2": {
+      "correct": 378,
+      "scaffolding_correct": 181,
+      "rigor_correct": 197
+    },
+    "Jev repeat 3": {
+      "correct": 375,
+      "scaffolding_correct": 181,
+      "rigor_correct": 194
+    }
+  },
+  "source_files": [
+    {
+      "path": "experiments/openai-decision-comparison/All 520 decisions.csv",
+      "sha256": "670f62a9301da08c34e92105046fa6ff8de44dd954b2ff82b3fb1f02bff344b6"
+    },
+    {
+      "path": "experiments/final-prompt-revision/All 520 decisions.csv",
+      "sha256": "1ec6441ccdeee4c43441a4b7e5dee97b22206dae4599ebdfb8c139218b948516"
+    },
+    {
+      "path": "experiments/jev-all-520-search/All 520 - Six prompt decisions.csv",
+      "sha256": "a770f1cd65b3c2069f940d3c5e7af09c27476a885c85cb97e60451b76512a34a"
+    },
+    {
+      "path": "experiments/jev-decision-study/All 520 decisions.csv",
+      "sha256": "cbe219c7df7668fdd8563bfe34cac772a4088c84b6b5cd76e3f64e9aa5c450eb"
+    },
+    {
+      "path": "experiments/jev/Context-focused prompt test/All 520 - Original versus optimized.csv",
+      "sha256": "a6930e656d001ce2e29bd1bcc460f961b9aee96291ac9436ad17646cb91c0f21",
+      "verified_aliases": [
+        "Jev original archived",
+        "Jev previous archived"
+      ]
+    }
+  ],
+  "blind_results": {
+    "correct": 14,
+    "scaffolding_correct": 6,
+    "rigor_correct": 8,
+    "agrees_with_api": 18,
+    "corrected_api_errors": [
+      246
+    ],
+    "new_api_errors": [
+      440
+    ]
+  }
+}

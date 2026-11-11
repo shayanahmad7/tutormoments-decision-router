@@ -1,0 +1,466 @@
+# Moment 347
+
+Source ID: `balanced_520:bc5eb3f1-d32c-5af1-a9e2-f0fdfc44d29f_c0bc395f-a533-5229-a654-2ce10abfc90e_95b66712-0f68-58ff-86a5-d9ee7f1b4946__hum_104_120`
+
+Cut turn: 109. Teacher episode: 104–120.
+
+## Conversation available before the decision
+
+Turn 1 | tutor: [SCREEN_UPDATE] A white whiteboard loads with a loading spinner in the center.
+
+Turn 1 | tutor: [SCREEN_UPDATE] A notification appears at the top of the screen: "Emily has joined".
+
+Turn 1 | tutor: [PAUSE: 3 minutes 19 seconds]
+
+Turn 1 | tutor: [SCREEN_UPDATE] A notification appears at the top of the screen: "Mia has joined".
+
+Turn 1 | tutor: [PAUSE: 52 seconds]
+
+Turn 1 | tutor: [PAUSE: 4 seconds]
+
+Turn 1 | tutor: Hi, Mia. How are you?
+
+Turn 2 | student: Good. How are you?
+
+Turn 3 | tutor: I'm good. Thank you.
+
+Turn 4 | tutor: [PAUSE: 1 second]
+
+Turn 4 | tutor: Um, so today we're gonna be working on some more multiplication.
+
+Turn 5 | student: Okay.
+
+Turn 6 | tutor: Does that sound good?
+
+Turn 7 | student: Yes.
+
+Turn 8 | tutor: Okay.
+
+Turn 9 | tutor: Let me just pull up the first problem.
+
+Turn 10 | tutor: [PAUSE: 2 seconds]
+
+Turn 10 | tutor: [PROBLEM_CHANGE: p1 - 'Which expression is represented by the model below?' (start)] On the whiteboard, the question "Which expression is represented by the model below?" is displayed. Below the text is a grid of blue squares with 4 rows and 7 columns. Four multiple-choice options are listed: A. 4 + 7, B. 7 - 4, C. 4 x 7, D. 7 ÷ 4.
+Tutor circles the option "C. 4 x 7" in red.
+
+Turn 10 | tutor: Okay.
+
+Turn 11 | tutor: So, which expression is represented by the model below?
+
+Turn 12 | student: Um, C.
+
+Turn 13 | tutor: C. Perfect.
+
+Turn 14 | tutor: And how did you know that?
+
+Turn 15 | student: Because there's four rows and seven columns, so it's four times seven.
+
+Turn 16 | tutor: Perfect. Good job.
+
+Turn 17 | tutor: [PROBLEM_CHANGE: p2 - 'Which expression is represented by the model below?' (start)] The whiteboard is cleared and a new problem appears. The question is "Which expression is represented by the model below?". Below the text is a grid of blue squares with 5 rows and 6 columns. Four multiple-choice options are listed: A. 5 + 6, B. 6 - 5, C. 5 x 6, D. 6 ÷ 5.
+
+Turn 17 | tutor: [PAUSE: 216 seconds]
+
+Turn 17 | tutor: Hello Mia, how are you?
+
+Turn 18 | student: I'm good.
+
+Turn 19 | tutor: Okay, that's good.
+
+Turn 20 | tutor: Okay. So today we're going to start a new lesson. And for that, we're going to do our daily drawing. So this is what we're going to do today. We're going to write a slogan and draw a protest sign to campaign for a right that you want to have. Okay, so...
+
+Turn 21 | tutor: [SCREEN_UPDATE] The screen switches from the main room to "Whiteboard 2". A small window in the bottom right shows the prompt: "Write a slogan and draw a protest sign to campaign for a right that you want to have."
+
+Turn 21 | tutor: [SCREEN_INTERACTION: tutor - drawing] Tutor draws a vertical black line down the center of the whiteboard.
+
+Turn 21 | tutor: [SCREEN_INTERACTION: tutor - writing] Tutor writes "Mia" in black text on the left side of the whiteboard.
+
+Turn 21 | tutor: [SCREEN_INTERACTION: tutor - writing] Tutor writes "Tutor" in black text on the right side of the whiteboard.
+
+Turn 21 | tutor: [PAUSE: 23 seconds] The whiteboard is split vertically. The left side is labeled "Mia" and the right side is labeled "Tutor". A smaller window in the bottom right shows the prompt: "Write a slogan and draw a protest sign to campaign for a right that you want to have."
+Tutor begins drawing on the right side of the whiteboard. She draws the letter 'E'.
+
+Turn 21 | student: Okay, so I'm gonna draw, um, a sign for end hunger.
+
+Turn 22 | student: So I I wanna campaign which would end hunger.
+
+Turn 23 | tutor: [SCREEN_INTERACTION: tutor - drawing] Tutor writes the word "END" on the right side of the board.
+
+Turn 23 | tutor: [SCREEN_INTERACTION: tutor - drawing] Tutor writes the word "HUNGER" below "END" on the right side of the board.
+
+Turn 23 | student: What are you gonna draw for your campaign?
+
+Turn 24 | tutor: [PAUSE: 29 seconds] Tutor draws a hot dog, an ice cream cone, and a croissant on the right side of the board.
+
+Turn 24 | tutor: [SCREEN_INTERACTION: student and tutor - drawing] Student writes "END" on the left side of the board. Tutor draws a planet Earth on the right side of the board.
+Student begins writing "HUNTING" on the left side of the board, starting with the letter 'H'. Tutor draws a stick figure on the right side.
+
+Turn 24 | tutor: You could end poverty, like end poor people.
+
+Turn 25 | tutor: And having poor people or end... You could end pollution. There's a lot of pollution.
+
+Turn 26 | student: Mhm.
+
+Turn 27 | student: There are a lot of homeless people.
+
+Turn 28 | tutor: [SCREEN_INTERACTION: student - drawing] Student finishes writing "HUNTING" on the left side of the board.
+Student draws a question mark and a circle on the left side of the board.
+
+Turn 28 | tutor: Oh, end hunting. That's really good.
+
+Turn 29 | tutor: Okay, so next to mine, I have made some cookies and ice cream 'cause I wanna end hunger.
+
+Turn 30 | tutor: [SCREEN_INTERACTION: student - drawing] Student draws a stick figure inside the circle and then draws a larger circle and a diagonal line through it, creating a "no" symbol over the stick figure.
+
+Turn 30 | tutor: [SCREEN_INTERACTION: student and tutor - drawing] On the left side of the whiteboard, under the label "Mia", the student has drawn "END HUNTIN" in large block letters. Below it, they draw a stick figure, circle it, and cross it out. On the right side, under "Tutor", the tutor has drawn "END HUNGER" with drawings of an ice cream cone, a planet, a hot dog, and two stick figures.
+
+Turn 30 | tutor: Okay, are you done?
+
+Turn 31 | tutor: [SCREEN_INTERACTION: student and tutor - drawing] The student draws another stick figure to the left of the crossed-out one. The tutor draws a circle around the student's new stick figure.
+
+Turn 31 | student: I'm done.
+
+Turn 32 | tutor: Okay, that's really pretty. Okay, so this is done for drawing. Now we're going to go on to our lesson. So last time we learned about angles, right? And then I think we started learning about lines and line segments, but I'm thinking now, let's drop line and line segments and let's learn about adding and subtracting fractions, okay?
+
+Turn 33 | student: Okay.
+
+Turn 34 | tutor: Have you done that before?
+
+Turn 35 | student: No.
+
+Turn 36 | tutor: No, okay.
+
+Turn 37 | tutor: [SCREEN_INTERACTION: tutor - navigating screen] The tutor closes the whiteboard tab and opens a new tab.
+
+Turn 37 | tutor: [SCREEN_UPDATE] The tutor shares her screen, showing a MathEdPlatform page. The title is "Unit 8: Add and subtract fractions". She scrolls down and clicks on a section titled "Decomposing fractions visually". A new page loads with a problem.
+
+Turn 37 | tutor: [PAUSE: 6 seconds]
+
+Turn 37 | tutor: Okay. So, do you see this purple part? What fraction does it show? The purple part out of the whole.
+
+Turn 38 | tutor: [PAUSE: 9 seconds]
+
+Turn 38 | tutor: I want you to find one of the choices. So basically you're adding, right? So just add the numerator over here. I want you to find the purple part, the red part, and the green part, and then basically add the numbers at the top to find the answer over here. The answer over here. So if you have to find the purple part first, the red part, and then the green part, and then we'll find the answer together.
+
+Turn 39 | tutor: So what is it going to be? A, B, or C?
+
+Turn 40 | tutor: [PAUSE: 30 seconds]
+
+Turn 40 | tutor: What fraction does the purple part show?
+
+Turn 41 | tutor: [PAUSE: 46 seconds]
+
+Turn 41 | tutor: Okay, wait, let's do one thing. Let's do normal fractions first, and then we're going to do addition of fractions. Okay. Let's do this first.
+
+Turn 42 | tutor: [SCREEN_UPDATE] A video from MathEdPlatform titled "Equivalent fractions with models" starts playing. The video shows a black screen with the text "[Instructor] So what we're going to do in this video is think about equivalent fractions."
+
+Turn 42 | tutor: [PROBLEM_CHANGE: p1 - '3/4 = y/8' (start)] On a black whiteboard, the equation "3/4 = /8" is written in yellow. A yellow dot is in the numerator of the second fraction. The tutor's voice from a video is playing.
+The yellow dot is erased and replaced with a yellow question mark, which is then erased and replaced with a yellow "y".
+The "3" in "3/4" is underlined in yellow.
+The tutor starts drawing a rectangle in orange.
+The tutor finishes drawing the orange rectangle.
+The tutor divides the rectangle into four equal vertical sections with orange lines.
+The tutor circles the "3" in "3/4" in purple. The first, second, and fourth sections of the rectangle are shaded in with purple diagonal lines.
+The tutor draws a second rectangle in white below the first one.
+The tutor divides the white rectangle into four equal sections, and then divides each of those sections in half, creating eight equal sections.
+The tutor shades the first two sections of the bottom rectangle in purple.
+The tutor shades the third and fourth sections of the bottom rectangle in purple.
+The tutor shades the seventh and eighth sections of the bottom rectangle in purple.
+The tutor writes "6/8" and then "6/8 = y" in purple on the whiteboard.
+
+Turn 42 | tutor: And to represent that how many, I could put a question mark there, but instead of a question mark, I'll just put a letter. So what should y be?
+
+Turn 43 | tutor: 3/4 is equal to y/8. What does y need to be to make this true?
+
+Turn 44 | tutor: And before I tell you to go go pause this video and try to work on it on your own, which I will do in a little bit, I'll give you a little bit of a hint.
+
+Turn 45 | tutor: So let's try to represent 3/4, or I'll represent it for you.
+
+Turn 46 | tutor: So I will do it with this rectangle. So I'm going to divide it into four equal sections.
+
+Turn 47 | tutor: So let's see, that would be dividing it roughly in half. I'm hand-drawing it, so it's not perfect, but these should be equal sections. The areas of each of these sections should be equal. So there you go. This is my hand-drawn version of that.
+
+Turn 48 | tutor: And so three of those four, and I will do that in purple. Three of those four, it could be one, two, and then just for kicks, I will do this one out here. So that is 3/4 right over there.
+
+Turn 49 | tutor: So if I were to think about this in terms of eighths, so I'm going to draw another whole. But this time, instead of just splitting them into fourths, I'm going to split it into eighths.
+
+Turn 50 | tutor: So let's do the fourths first, just 'cause it's easy to look at the one above that. So that's my fourths. And then I'll divide each of the fourths into two. So that gives me eighths. All right, almost there. The drawing is really the hardest part here.
+
+Turn 51 | tutor: And so each of these is an eighth. It's hand-drawn, but imagine if there were eight equal sections. So how many eighths is equal to 3/4? Pause the video and try to work it out on your own.
+
+Turn 52 | tutor: All right. Well, we can just look at this visually. So this first fourth, we could say that's equivalent to filling out this eighth and this eighth. So that first fourth is equal to 2/8.
+
+Turn 53 | tutor: This second fourth is equal to another two of these eighths.
+
+Turn 54 | tutor: And then this third fourth is equal to another two of the eighths. So how many eighths have I shaded in? Well, I have one, two, three, four, five, 6/8.
+
+Turn 55 | tutor: So I have six over eight. So 3/4 is equivalent to 6/8. So in this scenario, y is equal to 6/8, or we could say 6/8 is equal to y.
+
+Turn 56 | tutor: Now let's do another example.
+
+Turn 57 | tutor: [PROBLEM_CHANGE: p2 - '4/6 = x/3' (start)] The screen changes to show two circles. The top circle is divided into 6 equal sections, each labeled "1/6". Four of the sections are shaded light blue. The bottom circle is divided into 3 equal sections, each labeled "1/3".
+The tutor writes "4/6" in black on the whiteboard.
+The tutor writes "?/3" and then replaces the "?" with an "x".
+The tutor writes "4/6 = x/3" on the whiteboard.
+The tutor draws a red line along the border of one of the 1/3 sections in the bottom circle. Then, the tutor circles two of the 1/6 sections in the top circle with an orange line.
+The tutor divides one of the 1/3 sections in the bottom circle in half. The tutor then shades in the entire 1/3 section in red.
+The student is visible in her webcam, writing on a piece of paper.
+The tutor colors over one of the shaded 1/6 sections in white, and then colors an adjacent unshaded 1/6 section in light blue.
+The tutor circles two adjacent 1/6 sections in purple and connects them with a line to an adjacent 1/3 section in the bottom circle, which is also shaded purple.
+
+Turn 57 | tutor: So what we could see here in this top circle is we've divided it into six equal sections. So each of these are one of the six equal sections or 1/6. And we can see that one, two, three, four of them are shaded in. So what we have represented in that top circle, that is four, four out of six.
+
+Turn 58 | tutor: So what I wanna think about is how many thirds are equivalent to 4/6? Pause this video and think about it. So once again, how many thirds are equivalent to 4/6? Instead of just putting a question mark there, I'll put the letter x. So what should x be for these two things to be equivalent?
+
+Turn 59 | tutor: Or another way to think about it is four over six is equal to x over three. 4/6 is equal to how many thirds? All right, now let's do this together.
+
+Turn 60 | tutor: And so one way you could think about it, let's see, for 1/3, for us to make this equal to 1/3, it looks like that is equivalent to what I am circling in the orange up here. And that also makes sense.
+
+Turn 61 | tutor: If I were to divide a third into two, so now I would have this would be 1/6 and that would be 1/6. So you need 2/6 to make up a third, or each 1/3 is equivalent to 2/6. So this is 1/3 right over here. And that is equivalent to two of these sixths.
+
+Turn 62 | tutor: But we are not completely done yet. We have another 2/6. So we could say those 2/6 are equivalent to another third.
+
+Turn 63 | tutor: And it's a little tricky because they didn't put this sixth next to that sixth, but you could imagine if we were to move. Let's say we were to move this sixth. So I'm gonna color this one in white. So if I were to move that sixth to right over here. So we're shading this one in instead.
+
+Turn 64 | tutor: So then you can see that these two sixths right over here, these two sixths are equivalent to this third right over there. So what you can see is, is that our 4/6, and remember, I moved this one over, so I'm not shading this one in anymore. But you can see the 4/6 that I've shaded in is equivalent to 2/3. Or another way to say it is x would be equal to two.
+
+Turn 65 | tutor: [SCREEN_UPDATE] A MathEdPlatform video is playing on the screen. The video shows two pie charts, one divided into sixths and one into thirds. The narrator is explaining the equivalence of 4/6 and 2/3. The equation "4/6 = x/3" is written on the screen, and the narrator solves for x, writing "x = 2".
+
+Turn 65 | tutor: [SCREEN_UPDATE] The MathEdPlatform video ends. The title "Equivalent fractions with models" is visible.
+
+Turn 65 | student: Okay.
+
+Turn 66 | tutor: [SCREEN_INTERACTION: tutor - navigating website] The tutor navigates the MathEdPlatform interface. She clicks on "Equivalent fractions (fraction models)" from a list on the left, and a new problem page loads.
+
+Turn 66 | tutor: [PROBLEM_CHANGE: p1 - 'Which picture has an area equivalent to 8/12 shaded?' (start)] The screen shows a multiple-choice question: "Which picture has an area equivalent to 8/12 shaded? Choose 1 answer:" followed by three options with fraction bars.
+Tutor draws a long rectangle on the right side of the screen.
+
+Turn 66 | tutor: So, which picture has an area equivalent to 8 by 12 shaded?
+
+Turn 67 | tutor: So what would be equal to 8 by 12?
+
+Turn 68 | tutor: First, we're gonna make 8 by 12, right? And then we're gonna find something equal to that.
+
+Turn 69 | tutor: [SCREEN_INTERACTION: tutor - drawing] The tutor divides the rectangle into 12 roughly equal parts by drawing vertical lines.
+
+Turn 69 | tutor: One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve.
+
+Turn 70 | tutor: [SCREEN_INTERACTION: tutor - drawing] The tutor erases the rectangle and lines she just drew and starts drawing a new set of 12 vertical lines.
+Tutor shades in the first 8 sections of the 12 vertical lines she drew.
+
+Turn 70 | student: Okay, here we go. We have 12 here. Then we are gonna shade eight.
+
+Turn 71 | tutor: One, one, two, three, four, five, six, seven, eight.
+
+Turn 72 | tutor: Okay, this is 8 by 12. Now I want you to find something that's equal to this. Equal to this part. Equivalent to 8 by 12 shaded.
+
+Turn 73 | tutor: [PAUSE: 16 seconds]
+
+Turn 73 | tutor: Is there one by three, one by six, one by four?
+
+Turn 74 | tutor: [PAUSE: 48 seconds]
+
+Turn 74 | tutor: [SCREEN_INTERACTION: tutor - navigating website] The tutor clicks the back arrow on the MathEdPlatform interface, returning to the course unit page.
+
+Turn 74 | tutor: [SCREEN_INTERACTION: tutor - navigating website] The tutor navigates from the "4th grade math" page to the "3rd grade math" page.
+
+Turn 74 | tutor: [SCREEN_INTERACTION: tutor - navigating website] On the "3rd grade math" page, the tutor clicks on "Unit 6: Equivalent fractions and comparing fractions" and then clicks "Start" for "Compare fractions with fraction models".
+
+Turn 74 | tutor: [PROBLEM_CHANGE: p2 - 'Compare 4/6 and 4/4' (start)] A new problem loads: "Compare using >, <, or =. Think about how you would shade in each rectangle below to help you compare the fractions. 4/6 [ ] 4/4". Below the problem are two empty fraction bars, one divided into sixths and one into fourths.
+Tutor shades in all 4 parts of the bottom fraction bar (representing 4/4) and 4 of the 6 parts of the top fraction bar (representing 4/6).
+
+Turn 74 | tutor: Hmm. Let's try it over here. So is 4 by 6 greater than, less than, or equal to 4 by 4?
+
+Turn 75 | tutor: Imagine we have shaded four. We have made four parts and we have shaded all four of them. And we have six parts and we have shaded just four of them.
+
+Turn 76 | tutor: Two scenarios, two completely different scenarios. Is it gonna be greater than, less than, or equal to? What is it gonna be?
+
+Turn 77 | tutor: [PAUSE: 16 seconds]
+
+Turn 77 | tutor: I want you to try. What is it gonna be? Think about it.
+
+Turn 78 | tutor: [PROBLEM_CHANGE: p1 - 'Compare 4/6 and 4/4' (start)] The screen shows a MathEdPlatform problem titled "Compare fractions with fraction models". The problem is "Compare using >, <, or =. Hint: Think about how you would fill in each rectangle below to help you compare the fractions." The fractions to compare are 4/6 and 4/4. Below the fractions are two empty rectangles. The top one is divided into 6 parts, and the bottom one is divided into 4 parts. The tutor shades 4 of the 6 parts in the top rectangle and all 4 parts in the bottom rectangle. The tutor then erases the shading.
+Tutor shades 4 of 6 boxes in the top rectangle and all 4 boxes in the bottom rectangle.
+Tutor's cursor points to the shaded parts of the two rectangles.
+Tutor's cursor moves back and forth between the two shaded rectangles.
+
+Turn 78 | tutor: Four by six and four by four.
+
+Turn 79 | tutor: Which one's greater? Four by six or four by four?
+
+Turn 80 | tutor: Look at the shaded parts. Which one do you think is greater?
+
+Turn 81 | tutor: [PAUSE: 12 seconds] Tutor selects the less than symbol (<) in the blank space between the fractions. The equation now reads 4/6 < 4/4. Tutor clicks the "Check" button. A "Great work!" message appears. Tutor clicks the "Next question" button.
+
+Turn 81 | tutor: Okay, four by four is gonna be greater 'cause we're shading more of it. You see the whole bar is getting shaded, but over here only four of them are getting shaded. So four by four is gonna be greater.
+
+Turn 82 | tutor: [PROBLEM_CHANGE: p2 - 'Compare 2/3 and 5/3' (start)] The screen shows a new problem: "Compare using >, <, or =. 2/3 ___ 5/3". Two empty rectangles divided into 3 parts each are shown below.
+Tutor erases some leftover shading from the previous problem.
+Tutor's cursor moves between the two fractions.
+Tutor selects the less than symbol (<). The equation reads 2/3 < 5/3. Tutor clicks "Check". A "Good work" message appears. Tutor clicks "Next question".
+
+Turn 82 | tutor: Okay, I want you to try this one. Two by three or five by three.
+
+Turn 83 | tutor: Which one's greater?
+
+Turn 84 | student: Five by three.
+
+Turn 85 | tutor: Yep, that's right. Five by three.
+
+Turn 86 | tutor: [PROBLEM_CHANGE: p3 - 'Compare 5/6 and 5/8' (start)] The screen shows a new problem: "Compare using >, <, or =. 5/6 ___ 5/8". Two empty circles are shown below. The top one is divided into 6 slices, and the bottom one is divided into 8 slices.
+Tutor selects the greater than symbol (>). The equation reads 5/6 > 5/8. Tutor clicks "Check". A "Good work" message appears. Tutor clicks "Next question".
+
+Turn 86 | tutor: Now what about this one? Five by six or five by eight?
+
+Turn 87 | student: Five by six.
+
+Turn 88 | tutor: Five by six. All right.
+
+Turn 89 | tutor: [PROBLEM_CHANGE: p4 - 'Compare 1/2 and 4/2' (start)] The screen shows a new problem: "Compare using >, <, or =. 1/2 ___ 4/2". Two empty rectangles divided into 2 parts each are shown below.
+
+Turn 89 | tutor: Now this one. One by two or four by two.
+
+Turn 90 | tutor: [PAUSE: 97 seconds] Tutor's cursor moves between the two fractions.
+
+Turn 90 | tutor: Which one's greater? One by two or four by two?
+
+Turn 91 | tutor: [PAUSE: 10 seconds] Tutor selects the less than symbol (<). The equation reads 1/2 < 4/2. Tutor clicks "Check". A "Nice work!" message appears. Tutor clicks "Next question".
+
+Turn 91 | student: Four by two.
+
+Turn 92 | tutor: Yep. Four by two.
+
+Turn 93 | tutor: [PROBLEM_CHANGE: p5 - 'Compare 4/3 and 4/8' (start)] The screen shows a new problem: "Compare using >, <, or =. 4/3 ___ 4/8". Four empty circles are shown below. The top two are divided into 3 slices, and the bottom two are divided into 8 slices.
+
+Turn 93 | tutor: What about this one? Four by three or four by eight?
+
+Turn 94 | tutor: [PAUSE: 14 seconds]
+
+Turn 94 | student: Four by three or four by eight?
+
+Turn 95 | tutor: [PAUSE: 5 seconds] Tutor's cursor points to 4/3.
+Tutor selects the greater than symbol (>). The equation reads 4/3 > 4/8. Tutor clicks "Check". A "Nice work!" message appears. Tutor clicks "Next question".
+
+Turn 95 | student: Four by three.
+
+Turn 96 | tutor: Four by three, yeah.
+
+Turn 97 | tutor: Four by three.
+
+Turn 98 | tutor: [PROBLEM_CHANGE: p6 - 'Compare 2/4 and 4/4' (start)] The screen shows a new problem: "Compare using >, <, or =. 2/4 ___ 4/4". Two empty circles divided into 4 slices each are shown below.
+
+Turn 98 | tutor: What about two by four and four by four?
+
+Turn 99 | tutor: [PAUSE: 11 seconds] Tutor selects the less than symbol (<). The equation reads 2/4 < 4/4. Tutor clicks "Check". A "Nice work!" message appears. Tutor clicks "Next question".
+
+Turn 99 | tutor: Two by four or four by four?
+
+Turn 100 | student: Four by four.
+
+Turn 101 | tutor: Yep. That's right. Four by four.
+
+Turn 102 | tutor: [PROBLEM_CHANGE: p7 - 'Compare 3/8 and 3/4' (start)] The screen shows a new problem: "Compare using >, <, or =. 3/8 ___ 3/4". Two empty circles are shown below. The top one is divided into 8 slices, and the bottom one is divided into 4 slices.
+
+Turn 102 | tutor: And what about three by eight and three by four? Which one is it?
+
+Turn 103 | tutor: [PAUSE: 7 seconds]
+
+Turn 103 | student: Three by four.
+
+Turn 104 | tutor: [SCREEN_INTERACTION: tutor - enters answer] Tutor selects the less than symbol, making the statement 3/8 < 3/4, and clicks the "Check" button.
+
+Turn 104 | tutor: [SCREEN_UPDATE] A "Nice work!" pop-up appears. The screen then loads the next problem set.
+
+Turn 104 | tutor: [PROBLEM_CHANGE: p2 - 'Compare fractions on the number line' (start)] The new problem is "Use the number lines above to compare __ and __". Two number lines are shown, both marked from 0/8 to 8/8. The fractions to compare are 7/8 and 8/8.
+
+Turn 104 | tutor: Okay. Now we have fraction on the number line.
+
+Turn 105 | tutor: [PAUSE: 5 seconds]
+
+Turn 105 | tutor: Okay, I want you to make a dot using your, um, pen on where, where 7 by 8 and 8 by 8 are going to be.
+
+Turn 106 | tutor: [PAUSE: 7 seconds]
+
+Turn 106 | tutor: So I want you to use your pen and make a dot on where 7 by 8 and 8 by 8 are going to appear on the number line.
+
+Turn 107 | tutor: [PAUSE: 5 seconds]
+
+Turn 107 | tutor: Where's 7 by 8 going to be?
+
+Turn 108 | tutor: [PAUSE: 58 seconds]
+
+Turn 108 | tutor: Okay, tell me, is 7 by 8 greater or is 8 by 8 greater?
+
+Turn 109 | tutor: [PAUSE: 6 seconds] Tutor selects the less than symbol, making the statement 7/8 < 8/8. Student draws a green dot on the 8/8 mark on the second number line. Tutor clicks the "Check" button.
+
+Turn 109 | student: Eight by eight.
+
+## Reference and model decisions
+
+Reference: **rigor**
+
+
+Jev earlier: rigor [matches]
+OpenAI Decisions earlier: rigor [matches]
+Luna one-word earlier: rigor [matches]
+Jev revised: rigor [matches]
+OpenAI Decisions revised: scaffolding [disagrees]
+Luna one-word revised: scaffolding [disagrees]
+Jev prompt A: rigor [matches]
+Jev prompt B: rigor [matches]
+Jev prompt C: rigor [matches]
+Jev prompt D: scaffolding [disagrees]
+Jev prompt E: rigor [matches]
+Jev prompt F: rigor [matches]
+Jev original archived: rigor [matches]
+Jev previous archived: rigor [matches]
+Jev previous fresh: rigor [matches]
+Jev selected C: rigor [matches]
+Jev repeat 2: rigor [matches]
+Jev repeat 3: rigor [matches]
+
+
+## Released teacher hint (never sent to decision models)
+
+This 
+
+## Exact source annotation match
+
+**situation:** This 
+**action:** The tutor asks the student to do a few more problems independently without support from the tutor.
+**result:** This 
+**strategy_label:** effective
+**situation_label:** {'scaffolding': 'no_mention', 'rigor': 'no_mention'}
+**situation_label_agg:** rigor
+**action_direction_agg:** both
+
+**situation:** This 
+**action:** The tutor asks the student to do a few more problems independently without support from the tutor.
+**result:** This 
+**strategy_label:** effective
+**situation_label:** {'scaffolding': 'no_mention', 'rigor': 'no_mention'}
+**situation_label_agg:** rigor
+**action_direction_agg:** both
+
+**situation:** This is an appropriate place to push for rigor because the student did get the lsat question about this correct. 
+**action:** The tutor asks the student to do a few more problems independently without support from the tutor.
+**result:** This 
+**strategy_label:** effective
+**situation_label:** {'scaffolding': 'no_mention', 'rigor': 'yes'}
+**situation_label_agg:** rigor
+**action_direction_agg:** both
+
+**situation:** This is an appropriate place to push for rigor because the student did get the lsat question about this correct. 
+**action:** The tutor asks the student to do a few more problems independently without support from the tutor.
+**result:** The tutor's strategy is not necessarily pushing for rigor because the student has already proven that they are able to do this kind of work. The tutor could have asked the student to explain or could have presented them with a problem that asks them to apply their skills in a different way to push for rigor.
+**strategy_label:** ineffective
+**situation_label:** {'scaffolding': 'no_mention', 'rigor': 'yes'}
+**situation_label_agg:** rigor
+**action_direction_agg:** both
+
+
+## Derived results, not additional model calls
+
+Jev threshold adjustment: rigor
+Jev majority of repeats: rigor
+Jev mean probability: rigor

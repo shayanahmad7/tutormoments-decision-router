@@ -1,0 +1,125 @@
+# Expert K-12 math tutor
+
+You are an expert K-12 math tutor.
+
+Your goal is **not** to get the student to a correct answer — it is to build
+deeper understanding the student can apply on their own.
+
+### The core dial: scaffold ↔ rigor
+
+Every moment is a choice between adding **support** (a scaffold, to make the task
+approachable) and pushing for **rigor** (a harder task, a justification, a
+transfer to a new problem).
+
+Two failure modes bracket the right move:
+
+- **Over-scaffolding** — you do the thinking, give away the answer or the
+  operation, or help before the student has shown a need. This is the single
+  most common tutoring failure. Avoid it.
+- **Missed chances to push for rigor** — you miss chances to turn the dial
+  toward a more rigorous form of questioning by accepting an immediate correct
+  answer or re-teaching a skill the student has already mastered.
+
+The goal is to stay in the student's zone of proximal development by:
+- Scaffolding for access when the content is challenging for the student.
+- Pushing for rigor when the student masters more basic expressions of a concept.
+
+### Context
+
+You have the following metadata about the student: Platform: tutoring_provider_a
+
+Here is the conversation so far:
+
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification "Ms. Rivera has joined" appears on the screen.
+Turn 1. TUTOR: [PAUSE: 10 seconds]
+Turn 1. TUTOR: [SCREEN_UPDATE] The tutor's camera feed appears, but the screen is black.
+Turn 1. TUTOR: [PAUSE: 90 seconds] The tutor's camera feed is now active, showing her with a "Bright Futures Tutoring" virtual background. She is waiting for the student to join.
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification "Kayla has joined" appears on the screen.
+Turn 1. TUTOR: [PAUSE: 4 seconds]
+Turn 1. TUTOR: [SCREEN_UPDATE: Tutor leaves the room] A notification "Ms. Rivera has left" appears.
+Turn 1. TUTOR: [PAUSE: 128 seconds] The screen shows the Lessonspace interface with a dark background and a button in the center that says "No pages created". No one is speaking and there are no interactions.
+Turn 1. TUTOR: Hi, Kayla. How are you?
+Turn 2. TUTOR: [PAUSE: 6 seconds]
+Turn 2. STUDENT: Good.
+Turn 3. TUTOR: Good.
+Turn 4. TUTOR: So, um, I know we were working on, um, multiplication last week.
+Turn 5. STUDENT: Yeah.
+Turn 6. TUTOR: Um, so today we're gonna do some more multiplication, and then we're gonna move on to division. How do you feel about division?
+Turn 7. STUDENT: Um, I'm okay with it.
+Turn 8. TUTOR: You're okay with it?
+Turn 9. STUDENT: Yeah.
+Turn 10. TUTOR: Okay. So we're gonna do a little bit of multiplication, and then we're gonna move on to division. And then, um, we're gonna do a fun game at the end. Okay?
+Turn 11. STUDENT: Okay.
+Turn 12. TUTOR: So, um, I'm gonna pull up the first, um, problem, and then we're gonna get started. Okay?
+Turn 13. TUTOR: [PAUSE: 8 seconds]
+Turn 13. TUTOR: Okay.
+Turn 14. TUTOR: [PAUSE: 76 seconds]
+Turn 14. TUTOR: Okay.
+Turn 15. TUTOR: [PAUSE: 48 seconds]
+Turn 15. TUTOR: [SCREEN_UPDATE] A notification "Kayla has joined" appears. The student's video feed appears, initially black, then shows the student.
+Turn 15. TUTOR: Hello.
+Turn 16. STUDENT: Hi.
+Turn 17. TUTOR: Hi. Good afternoon, right? What time is it over there?
+Turn 18. STUDENT: Five thirty-four.
+Turn 19. TUTOR: Five thirty-four. Good evening. Nice, nice. How has your uh, Tuesday and Wednesday been so far? Or, how has your, how was your Tuesday and how was your Wednesday?
+Turn 20. STUDENT: Good.
+Turn 21. TUTOR: Good.
+Turn 22. TUTOR: Nothing crazy happened?
+Turn 23. STUDENT: No.
+Turn 24. TUTOR: No. Okay.
+Turn 25. TUTOR: [PAUSE: 2 seconds]
+Turn 25. TUTOR: So, today, same as other summer classes we've been doing, we'll just play some games, okay? Um, and these games are obviously to help with adding, subtracting. We may try multiplication and division today. Maybe. I found a game that does that. We'll give it a try.
+Turn 26. TUTOR: Um, yeah. Do you have any questions or like, do you want me to review something with you next time? Do you have any suggestions?
+Turn 27. STUDENT: No.
+Turn 28. TUTOR: No. Yeah, if you ever come up with something like, maybe, hey, I'm confused about fractions, negative numbers, you know, all that stuff, just let me know, okay? And we can talk about it instead of playing games, okay?
+Turn 29. STUDENT: Okay.
+Turn 30. TUTOR: Um, but maybe I'll try and find games or activities that cover those as well. I mean, we do have a learning platform, right? We have a learning platform, but I feel like a learning platform is a little bit too serious for summer. So, let me see which topic we're even on with a learning platform. Um, yeah, we haven't used a learning platform in so long. Maybe we will next week.
+Turn 31. TUTOR: So, this is the plan. We're gonna start with the usual, well, we're gonna start with the quick math game. And I'll try and do that often. Because the more you see the math, the more you, um, you start to understand it better, right? And then get quicker at it.
+Turn 32. TUTOR: [SCREEN_UPDATE] The tutor's screen changes to a black loading screen with a blue spinning circle.
+Turn 32. TUTOR: [PROBLEM_CHANGE: p1 - 'QUICK MATH!' (start)] The game "QUICK MATH!" loads on a teal background. It shows a cartoon character, a "BEST 25" score, and three buttons: a question mark, a play button, and a Twitter logo.
+Clicks the play button.
+Turn 32. TUTOR: So this game is, we played it the first game we played yesterday. Basically, you just click the correct one or tell me the correct one and I'll click it. And it's, it's mostly adding and subtracting. Okay?
+Turn 33. STUDENT: Okay.
+Turn 34. TUTOR: All right. Let's get started. You ready?
+Turn 35. STUDENT: Yeah.
+Turn 36. TUTOR: All right, let's go.
+Turn 37. TUTOR: [PROBLEM_CHANGE: p2 - '7 - 9 = -2' or '9 + 9 = 23' (start)] The screen shows two equations. The top one is `7 - 9 = -2`. The bottom one is `9 + 9 = 23`.
+Clicks the bottom equation, which is incorrect. A new screen appears with the text "Really? 9 + 9 = 23".
+Turn 37. STUDENT: The bottom one.
+Turn 38. TUTOR: So what is nine plus nine?
+Turn 39. TUTOR: [PAUSE: 5 seconds]
+Turn 39. STUDENT: Eighteen.
+Turn 40. TUTOR: Eighteen, right? A trick is to just do ten plus nine and then take away one, right? Okay.
+Turn 41. TUTOR: Okay.
+Turn 42. TUTOR: [SCREEN_INTERACTION: tutor - clicking] Tutor clicks the retry button on the game screen.
+Turn 42. TUTOR: [PROBLEM_CHANGE: p1 - '7 + 0 = 0' and '3 + 7 = 10' (start)] The game starts, showing two math problems.
+Tutor clicks the bottom option, '3 + 7 = 10'.
+Turn 42. STUDENT: The bottom one.
+Turn 43. TUTOR: [PROBLEM_CHANGE: p2 - '9 + 4 = 9' and '5 - 8 = -3' (start)] The next set of problems appears. The score is 1.
+Tutor clicks the bottom option, '5 - 8 = -3'.
+Turn 43. STUDENT: The bottom one.
+Turn 44. TUTOR: [PROBLEM_CHANGE: p3 - '5 - 2 = 10', '9 - 8 = 1', '7 + 9 = 8' (start)] The next set of problems appears. The score is 4.
+Tutor clicks the middle option, '9 - 8 = 1'.
+Turn 44. STUDENT: The middle one.
+Turn 45. TUTOR: [PROBLEM_CHANGE: p4 - '8 + 1 = 9', '1 - 3 = -10', '6 + 8 = 5' (start)] The next set of problems appears. The score is 7.
+Tutor clicks the top option, '8 + 1 = 9'.
+Turn 45. STUDENT: The top one.
+Turn 46. TUTOR: [PROBLEM_CHANGE: p5 - '7 - 4 = 5', '7 - 6 = 10', '8 - 4 = 4' (start)] The next set of problems appears. The score is 9.
+Tutor clicks the bottom option, '8 - 4 = 4'.
+Turn 46. STUDENT: The bottom one.
+Turn 47. TUTOR: [PROBLEM_CHANGE: p6 - '9 + 8 = 17', '0 - 1 = -7', '2 + 7 = 14' (start)] The next set of problems appears. The score is 10.
+Tutor clicks the top option, '9 + 8 = 17'.
+Turn 47. STUDENT: The top one.
+Turn 48. TUTOR: [PROBLEM_CHANGE: p7 - '9 - 6 = 3', '2 + 4 = -1', '1 - 2 = -10' (start)] The next set of problems appears.
+Tutor clicks the top option, '9 - 6 = 3'.
+Turn 48. STUDENT: The top one.
+Turn 49. TUTOR: [PROBLEM_CHANGE: p8 - '6 + 6 = 16', '0 + 3 = 3', '9 - 6 = 4' (start)] The next set of problems appears. The score is 11.
+Tutor clicks the middle option, '0 + 3 = 3'.
+Turn 49. STUDENT: The middle one.
+Turn 50. TUTOR: [PROBLEM_CHANGE: p9 - '0 + 0 = 6', '0 - 7 = 1', '4 + 3 = 7', '6 + 2 = 0' (start)] The next set of problems appears. The score is 14.
+Turn 50. STUDENT: The th-
+Turn 51. TUTOR: [SCREEN_UPDATE] The screen changes to "Too Slow!!!" with a score of 14.
+Turn 51. TUTOR: Good. All right, let's try again. You did very good.
+Turn 52. STUDENT: Okay.
+
+Using the tutoring instructions above and the conversation so far, choose the approach for the tutor's next move. Return exactly one word: scaffolding or rigor. Do not generate a tutor response or an explanation.

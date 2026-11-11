@@ -1,0 +1,453 @@
+# Expert K-12 math tutor
+
+You are an expert K-12 math tutor.
+
+Your goal is **not** to get the student to a correct answer — it is to build
+deeper understanding the student can apply on their own.
+
+### The core dial: scaffold ↔ rigor
+
+Every moment is a choice between adding **support** (a scaffold, to make the task
+approachable) and pushing for **rigor** (a harder task, a justification, a
+transfer to a new problem).
+
+Two failure modes bracket the right move:
+
+- **Over-scaffolding** — you do the thinking, give away the answer or the
+  operation, or help before the student has shown a need. This is the single
+  most common tutoring failure. Avoid it.
+- **Missed chances to push for rigor** — you miss chances to turn the dial
+  toward a more rigorous form of questioning by accepting an immediate correct
+  answer or re-teaching a skill the student has already mastered.
+
+The goal is to stay in the student's zone of proximal development by:
+- Scaffolding for access when the content is challenging for the student.
+- Pushing for rigor when the student masters more basic expressions of a concept.
+
+### Context
+
+You have the following metadata about the student: Platform: tutoring_provider_a
+
+Here is the conversation so far:
+
+Turn 1. TUTOR: [SCREEN_UPDATE] A whiteboard appears with the word "Welcome" written in blue, along with a star, a smiley face, and a wavy line underneath the word.
+Turn 1. TUTOR: [SCREEN_UPDATE] The whiteboard disappears, and the screen is blank. A notification "Ms. Rivera has joined" appears and then fades.
+Turn 1. TUTOR: [PAUSE: 49 seconds]
+Turn 1. TUTOR: [SCREEN_UPDATE] The tutor switches to a new tab titled "Lesson 8 - First Word...". The content shows "Teacher's Guide 2:1:1", "OA2-8", and "First Word Problems".
+Turn 1. TUTOR: [SCREEN_UPDATE] The tutor switches to a new tab. The content is a word problem: "Lee read 8 short books and 4 long books last summer. How many books did Lee read altogether?". Below the problem, the equation "8 + 4 = 12" is written.
+Turn 1. TUTOR: [SCREEN_UPDATE] The tutor switches to a new tab. The content is a worksheet with several word problems. Some answers and calculations are already written on the page.
+Turn 1. TUTOR: [SCREEN_UPDATE] The tutor switches to a new tab. The content is a reading comprehension worksheet titled "Soccer Game" with questions and circled answers.
+Turn 1. TUTOR: [SCREEN_UPDATE] The tutor switches to a new tab. The content is a reading comprehension worksheet titled "A Tough Night".
+Turn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'A Tough Night' (start)] The worksheet is displayed. It contains a short story and multiple-choice questions. The text of the story is: "Jamal and his dad went camping in the mountains. There they built a campfire and cooked hot dogs and marshmallows. Then, they went to sleep in a tent. During the night, Jamal woke up three times. At midnight, he woke up because he heard his dad snoring. At 3 a.m. he woke up again because he felt an insect crawling on his face. One hour later, he woke up again because he got thirsty." The questions below are partially visible. The tutor scrolls down slightly during this time.
+Turn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'A Tough Night' (start)] A reading comprehension worksheet is displayed on the whiteboard.
+Title: A Tough Night
+Instruction: Read the text 3 times and color a circle after each reading. (Followed by three numbered circles)
+Text: Jamal and his dad went camping in the mountains. They built a campfire and cooked hot dogs and marshmallows. Then, they went to sleep in a tent. During the night, Jamal woke up three times. At midnight, he woke up because he heard his dad snoring. At 3 a.m. he woke up again because he felt an insect crawling on his face. One hour later, he woke up again because he got thirsty.
+Questions:
+1. Where did Jamal and his dad go camping?
+a. in the mountains b. on the beach c. in the desert
+2. What did Jamal and his dad cook?
+a. hamburgers b. eggs c. hot dogs and marshmallows
+3. Where did Jamal and his dad sleep?
+a. in a cabin b. in a tent c. in a hammock
+Turn 1. TUTOR: [PAUSE: 600 seconds]
+Turn 1. TUTOR: [PAUSE: 2 minutes 45 seconds] The tutor waits for the student to join. The screen initially shows a reading comprehension worksheet titled "A Tough Night". The tutor cycles through several other worksheets and a "Welcome" screen before settling on the "Welcome" screen, which has the word "Welcome" written in blue, with a star and a smiley face drawn above it.
+Turn 1. TUTOR: [PAUSE: 43 seconds]
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: "Amari has joined".
+Turn 1. TUTOR: [PAUSE: 6 seconds]
+Turn 1. TUTOR: [PAUSE: 4 seconds]
+Turn 1. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor writes "A 75 D 65" on the whiteboard.
+Turn 1. TUTOR: [PAUSE: 94 seconds] The student's video feed turns off.
+Turn 1. TUTOR: [PAUSE: 123 seconds] The tutor's video feed is replaced by an avatar with the initial 'A'.
+Turn 1. TUTOR: [SCREEN_UPDATE: Whiteboard is displayed] The whiteboard shows two completed subtraction problems. On the left: "41 - 9 = 32", with the 4 in 41 crossed out, a 3 written above it, and the 1 changed to 11. On the right: "75 - 37 = 38", with the 7 in 75 crossed out, a 6 written above it, and the 5 changed to 15. Above these problems, "A 75 D 65" is written in red.
+Turn 1. TUTOR: [SCREEN_UPDATE: Tutor leaves the session] A notification appears on the screen: "Ms. Rivera has left".
+Turn 1. TUTOR: [PAUSE: 253 seconds]
+Turn 1. TUTOR: [PROBLEM_CHANGE: p1 - Subtraction problems (start)] The whiteboard shows several subtraction problems. In the top left, "A 75 D 65" is written in red. In the bottom left, the problem "41 - 9 = 32" is shown, with the 4 in 41 crossed out and a 3 written above it, and the 1 in 41 crossed out and an 11 written above it. In the top right, the problem "75 - 37 = 38" is shown, with the 7 in 75 crossed out and a 6 written above it, and the 5 in 75 crossed out and a 15 written above it.
+Turn 1. TUTOR: [PAUSE: 205 seconds]
+Turn 1. TUTOR: Hi, can you hear me?
+Turn 2. TUTOR: [PAUSE: 20 seconds]
+Turn 2. TUTOR: Hi Amari, can you hear me?
+Turn 3. STUDENT: Yes.
+Turn 4. TUTOR: Awesome.
+Turn 5. TUTOR: [PAUSE: 5 seconds] On the whiteboard, the word "Welcome" is written in blue, with a star, a smiley face, and a wavy line underneath.
+Turn 5. TUTOR: How are you doing today?
+Turn 6. STUDENT: Good.
+Turn 7. TUTOR: Good.
+Turn 8. TUTOR: All right. And how is camp going?
+Turn 9. STUDENT: Good.
+Turn 10. TUTOR: Good. What'd you do today?
+Turn 11. STUDENT: Um, the same things, but I got um swimming at ten.
+Turn 12. TUTOR: Today or tomorrow?
+Turn 13. STUDENT: Today.
+Turn 14. TUTOR: Oh, how was that?
+Turn 15. STUDENT: Fun.
+Turn 16. TUTOR: Good.
+Turn 17. TUTOR: Did you swim with your friends?
+Turn 18. STUDENT: Yes.
+Turn 19. TUTOR: Yeah? What's your favorite part about swimming?
+Turn 20. STUDENT: I can um like, sometimes they, uh, on Fridays they let us um swim. Like we can teach the kids the moves what we got. Even we can do races.
+Turn 21. TUTOR: Oh, really? That's cool. Do you win in the races?
+Turn 22. TUTOR: [PAUSE: 8 seconds]
+Turn 22. STUDENT: On Fridays. Fridays.
+Turn 23. TUTOR: Fridays. When you do the races, do you win?
+Turn 24. STUDENT: Uh, yes, but not against my friend.
+Turn 25. TUTOR: Oh. Your friend's really fast?
+Turn 26. STUDENT: Uh-huh.
+Turn 27. TUTOR: Okay.
+Turn 28. STUDENT: I just paddled with my, I just um paddle with my feet and he paddles with the um things that um help you swim.
+Turn 29. TUTOR: Oh, like, like flippers things, like with your feet like that?
+Turn 30. STUDENT: Flippers, yeah.
+Turn 31. TUTOR: Oh, so he's super fast then.
+Turn 32. TUTOR: All right. So, let's go ahead and get started. So, do you remember what we worked on last time? We worked on, we worked on word problems and we did some reading. You remember?
+Turn 33. STUDENT: Uh, no.
+Turn 34. TUTOR: No.
+Turn 35. TUTOR: That's okay. So, we're going to do some practice reading again today, and then we're going to do some math problems on an educational platform, and then we're going to try to play a game at the end. I'm not sure if it'll work, but we'll try, okay?
+Turn 36. STUDENT: Okay.
+Turn 37. TUTOR: Okay.
+Turn 38. TUTOR: [PROBLEM_CHANGE: p1 - 'A Tough Night' (start)] A reading comprehension worksheet titled "A Tough Night" appears on the screen. It has a short story and multiple-choice questions.
+Turn 38. TUTOR: So, we'll go ahead and just start with this. Can you see my screen?
+Turn 39. STUDENT: Yes.
+Turn 40. TUTOR: Okay.
+Turn 41. TUTOR: So, let me Okay. So you can go ahead and start reading here with the title.
+Turn 42. TUTOR: And then we're going to answer some questions, okay? So you can go ahead and
+Turn 43. STUDENT: A touch night.
+Turn 44. TUTOR: Well, that's what it says? A tough night.
+Turn 45. TUTOR: Okay. And so you can go ahead and you can start reading here.
+Turn 46. TUTOR: So Jamal.
+Turn 47. STUDENT: Jamal.
+Turn 48. STUDENT: And his dad went camping in the
+Turn 49. TUTOR: mountains.
+Turn 50. STUDENT: mountains.
+Turn 51. TUTOR: Uh-huh.
+Turn 52. STUDENT: There they
+Turn 53. TUTOR: That's right.
+Turn 54. STUDENT: they built a campfire and cooked hot dogs and marshmallows. Good. Uh-huh. When they went to sleep in the tent during the night,
+Turn 55. TUTOR: Then,
+Turn 56. TUTOR: [PAUSE: 2 seconds]
+Turn 56. TUTOR: Uh-huh.
+Turn 57. STUDENT: Jamal. Jamal woke up three times at a middle, wait.
+Turn 58. TUTOR: You got it. Right here. Mid, what does this say right here? Midnight.
+Turn 59. STUDENT: Midnight.
+Turn 60. TUTOR: Good.
+Turn 61. STUDENT: He, he at a three, woke up at midnight, he woke up because he heard his dad smoking.
+Turn 62. TUTOR: snoring.
+Turn 63. STUDENT: Snoring.
+Turn 64. TUTOR: Uh-huh.
+Turn 65. STUDENT: At 3 a.m. he woke up again because he felt, he woke up again because he got,
+Turn 66. TUTOR: Okay.
+Turn 67. TUTOR: So, right here. He woke up again because he felt, we're starting right here.
+Turn 68. STUDENT: An, can you sound it out?
+Turn 69. TUTOR: in-sect. In-sect.
+Turn 70. STUDENT: inside crawled on his face. One hour later, he woke up again because he got thirsty.
+Turn 71. TUTOR: There you go.
+Turn 72. TUTOR: Okay. So, we're going to go through it again. So, what is this word right here again?
+Turn 73. STUDENT: Camping.
+Turn 74. TUTOR: Camping. Good.
+Turn 75. TUTOR: And what about this one?
+Turn 76. TUTOR: [PAUSE: 5 seconds] Tutor's cursor points to the word "mountains".
+Tutor's cursor points to the word "Then".
+Tutor's cursor points to the word "snoring".
+Tutor's cursor points to the word "insect".
+Turn 76. STUDENT: Mountains.
+Turn 77. TUTOR: There you go.
+Turn 78. TUTOR: Okay, what about this one over here?
+Turn 79. STUDENT: Then.
+Turn 80. TUTOR: Good. And this one right here?
+Turn 81. STUDENT: Snoring.
+Turn 82. TUTOR: Uh-huh. And right here?
+Turn 83. TUTOR: [PAUSE: 7 seconds]
+Turn 83. TUTOR: Sound it out. You got it.
+Turn 84. TUTOR: [PAUSE: 5 seconds] Tutor's cursor points to the word "thirsty".
+Turn 84. TUTOR: In-sect.
+Turn 85. STUDENT: Inside.
+Turn 86. TUTOR: Inside? Insect, like a bug.
+Turn 87. STUDENT: Insect.
+Turn 88. TUTOR: Insect. Uh-huh.
+Turn 89. TUTOR: Can you say it one more time?
+Turn 90. STUDENT: Insect.
+Turn 91. TUTOR: Good. So insect is like a bug. So he felt like a bug crawling on his face. So what is this last word?
+Turn 92. STUDENT: Thirsty.
+Turn 93. TUTOR: Good. Okay. So I'm gonna go ahead and have you try to read it again. Okay?
+Turn 94. STUDENT: Jamal and his dad went camping in the mountains.
+Turn 95. STUDENT: There, um, there,
+Turn 96. STUDENT: they built a campfire and cooked hot, hot dogs and marshmallows. When they went to sleep in
+Turn 97. TUTOR: [SCREEN_INTERACTION: tutor - pointing] Tutor's cursor points to the word "Then".
+Tutor's cursor points to the word "Then".
+Turn 97. STUDENT: their tent.
+Turn 98. TUTOR: Let's let's start over right here first.
+Turn 99. TUTOR: So let's start over with this word right here. What does this say?
+Turn 100. STUDENT: Then.
+Turn 101. TUTOR: Good. Okay, keep going.
+Turn 102. STUDENT: Then they went
+Turn 103. TUTOR: went.
+Turn 104. STUDENT: went to sleep in a tent. During the night, he woke up because he heard his dad snoring.
+Turn 105. TUTOR: Here, let's
+Turn 106. STUDENT: at three
+Turn 107. TUTOR: Let's pause. Let's go ahead and restart from right here where it says during the night. And so I'm going to go ahead and point at the words so you don't you don't get lost. Or
+Turn 108. TUTOR: [PAUSE: 4 seconds] Tutor's cursor points to the word "During".
+Tutor accidentally draws a short black line over the word "Jamal" and then erases it.
+Tutor's cursor points to the word "Then".
+Tutor's cursor points to question 1.
+Turn 108. TUTOR: Okay, so start right here.
+Turn 109. STUDENT: During the night,
+Turn 110. TUTOR: Oops. Sorry. Uh-huh, Jamal.
+Turn 111. STUDENT: Jamal woke up three times.
+Turn 112. STUDENT: At midnight, he woke up because he heard his dad snoring.
+Turn 113. TUTOR: Good.
+Turn 114. STUDENT: At 3 a.m. he woke up again because he felt an insect crawling on his face. One hour later, he woke up again because he got thirsty.
+Turn 115. TUTOR: Awesome. Awesome job.
+Turn 116. TUTOR: Okay, what is this word one more time?
+Turn 117. STUDENT: Then.
+Turn 118. TUTOR: Good. Okay. So, Jamal and his dad went camping in the mountains. There, they built a campfire and cooked hot dogs and marshmallows. Then, they went to sleep in a tent. During the night, Jamal woke up three times. At midnight, he woke up because he heard his dad snoring. At 3 a.m., he woke up again because he felt an insect crawling on his face. One hour later, he woke up again because he got thirsty.
+Turn 119. TUTOR: So, our first question right here. Can you read that for me?
+Turn 120. TUTOR: [PAUSE: 2 seconds]
+Turn 120. STUDENT: Where
+Turn 121. STUDENT: Where did Jamal and his dad go camping?
+Turn 122. TUTOR: Okay.
+Turn 123. TUTOR: Where did they go camping?
+Turn 124. STUDENT: A.
+Turn 125. TUTOR: Mhm. Can you read it for me?
+Turn 126. STUDENT: In the mountains.
+Turn 127. TUTOR: Okay, perfect. Go ahead and circle your answer.
+Turn 128. TUTOR: [SCREEN_INTERACTION: student - drawing] Student circles the answer "a. in the mountains" with a green pen.
+Tutor uses the checkmark tool to mark question 1 as correct.
+Turn 128. TUTOR: Perfect.
+Turn 129. TUTOR: Okay. Next question, number two.
+Turn 130. TUTOR: [SCREEN_INTERACTION: tutor - pointing] Tutor points to question 2 with the cursor.
+Student highlights "c. hot dogs and marshmallows" in green.
+Turn 130. STUDENT: What did Jamal and his dad cook?
+Turn 131. TUTOR: Mhm.
+Turn 132. TUTOR: Okay. So what did they cook? A, B, or C?
+Turn 133. STUDENT: C.
+Turn 134. TUTOR: Okay. Go ahead and read it out loud for me.
+Turn 135. STUDENT: Hot dogs and marshmallows.
+Turn 136. TUTOR: Good.
+Turn 137. TUTOR: Okay. Next question, three.
+Turn 138. TUTOR: [SCREEN_INTERACTION: tutor - pointing] Tutor points to question 3 with the cursor.
+Student highlights "b. in a tent" in green.
+Student highlights "b. three times" in green.
+Student highlights "a. he heard his dad snoring" in green.
+Tutor highlights the sentence "At midnight, he woke up because he heard his dad snoring." in blue.
+Turn 138. STUDENT: Where did Jamal and his dad sleep?
+Turn 139. TUTOR: Mhm.
+Turn 140. STUDENT: B.
+Turn 141. TUTOR: Okay, go ahead and circle it. And what does it say?
+Turn 142. STUDENT: In a tent.
+Turn 143. TUTOR: Good.
+Turn 144. TUTOR: And number four, go ahead.
+Turn 145. STUDENT: How many times Jamal woke up during the night?
+Turn 146. TUTOR: Mhm.
+Turn 147. TUTOR: How many times?
+Turn 148. STUDENT: B.
+Turn 149. TUTOR: Good. Go ahead and highlight it and read it out loud.
+Turn 150. STUDENT: Three times.
+Turn 151. TUTOR: Good, perfect.
+Turn 152. TUTOR: Okay, next question, number five.
+Turn 153. STUDENT: What time did Jamal woke up because his... he was thirsty?
+Turn 154. TUTOR: This one right here, number five.
+Turn 155. STUDENT: Oh.
+Turn 156. STUDENT: Why did Jamal wake up at midnight?
+Turn 157. TUTOR: Mhm.
+Turn 158. TUTOR: Is it A or B?
+Turn 159. TUTOR: So, if we need to look back at the story, so he woke up three times, right?
+Turn 160. TUTOR: Let's see. The first time, so at midnight, what does it say?
+Turn 161. STUDENT: Uh, um, can we go back to the question now?
+Turn 162. TUTOR: Yeah, it's right here at the bottom of the screen.
+Turn 163. STUDENT: B.
+Turn 164. TUTOR: Are you sure? So let's reread this sentence right here. Look. At midnight, go ahead and read the sentence.
+Turn 165. STUDENT: At midnight... At midnight, he woke up because he heard his dad snoring.
+Turn 166. TUTOR: Mhm. Okay, so what would be the answer to number five?
+Turn 167. STUDENT: Uh, A.
+Turn 168. TUTOR: Good. And what does it say?
+Turn 169. STUDENT: He heard his dad snoring.
+Turn 170. TUTOR: Perfect.
+Turn 171. TUTOR: Okay, our next question and our last one, number six.
+Turn 172. STUDENT: What time did Jamal wake up because he was thirsty?
+Turn 173. TUTOR: Okay. So looking back at the story...
+Turn 174. STUDENT: A.
+Turn 175. TUTOR: At midnight... So it says... Here, look, let's reread it right here. At 3:00 a.m. Go ahead and reread this sentence.
+Turn 176. STUDENT: Uh, five... no, um... Here, let's reread this these last two sentences first.
+Turn 177. TUTOR: At 3:00 a.m.
+Turn 178. STUDENT: At 3:00 a.m. he... at 3:00 a.m. he... I think it's um, C.
+Turn 179. TUTOR: So, we're looking at the at the passage again. So at 3:00 a.m., he woke up again because he felt an insect crawling on his face. So at 3:00 a.m., it wouldn't be A because at 3:00 a.m. he woke up with a bug on his face.
+Turn 180. TUTOR: The next sentence, what does the next sentence say?
+Turn 181. STUDENT: One hour later... Uh-huh. He woke up again because he got thirsty.
+Turn 182. TUTOR: Okay. So what is one hour plus 3:00 a.m.? So what is an hour from 3:00 a.m.?
+Turn 183. STUDENT: An hour from 3:00 a.m.?
+Turn 184. STUDENT: One plus three?
+Turn 185. TUTOR: Mhm.
+Turn 186. STUDENT: A... No, B.
+Turn 187. TUTOR: There you go. Mhm.
+Turn 188. TUTOR: So, it would be 4:00 a.m. because he woke up at 3:00 a.m. with the bug on his face, and one hour later he woke up again 'cause he got thirsty. So that's why it would be B.
+Turn 189. STUDENT: Okay.
+Turn 190. TUTOR: Okay? So go ahead and circle your answer.
+Turn 191. TUTOR: [SCREEN_INTERACTION: student - highlighting] Student highlights "b. 4 a.m." in green.
+Tutor uses the checkmark tool to mark questions 1, 2, 3, 4, and 5 as correct.
+Turn 191. TUTOR: Awesome. And let me just go ahead and recheck the answers. So, good. Good. Good. Good. Three times. Good.
+Turn 192. TUTOR: Okay. Awesome. So we finished this one.
+Turn 193. TUTOR: So let me go ahead, I'm going to share my screen with you real quick. And we're gonna work on a few
+Turn 194. TUTOR: [SCREEN_UPDATE: Opens screen share] The screen goes black as the tutor initiates a new screen share.
+Turn 194. TUTOR: Can you see my screen?
+Turn 195. STUDENT: Yes.
+Turn 196. TUTOR: Okay, perfect.
+Turn 197. TUTOR: Can you read the sentence to me?
+Turn 198. STUDENT: What number is nine more than twenty-nine?
+Turn 199. TUTOR: Okay.
+Turn 200. TUTOR: [PROBLEM_CHANGE: p1 - 'What number is 9 more than 29?' (start)] A new problem appears on a teal background from a program called "an educational platform". The problem is "What number is 9 more than 29?". The multiple choice options are A) 39, B) 38, C) 290, D) 37.
+Turn 200. TUTOR: So, what more than twenty-nine? So, to get that number, are we going to be adding these two numbers or subtracting?
+Turn 201. STUDENT: Adding.
+Turn 202. TUTOR: Good.
+Turn 203. TUTOR: So, what are we gonna be adding?
+Turn 204. STUDENT: What numbers? Nine plus twenty-nine.
+Turn 205. TUTOR: Good. Do you have a piece of paper with you? You can write it on or do you want to use the whiteboard on my screen?
+Turn 206. STUDENT: I wanna use the whiteboard on the screen.
+Turn 207. TUTOR: Okay.
+Turn 208. TUTOR: So let's go back to mine.
+Turn 209. TUTOR: [SCREEN_UPDATE: Opens whiteboard] The screen switches from the an educational platform problem back to the previous worksheet, then to a new blank whiteboard.
+Turn 209. TUTOR: So,
+Turn 210. TUTOR: Okay, go ahead and write your equation. And what numbers were we using again?
+Turn 211. STUDENT: Uh,
+Turn 212. TUTOR: [PAUSE: 2 seconds]
+Turn 212. STUDENT: nine.
+Turn 213. TUTOR: Mhm.
+Turn 214. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes "9 + 29 =" on the whiteboard.
+Turn 214. TUTOR: Yes.
+Turn 215. TUTOR: And what does that equal?
+Turn 216. STUDENT: Thirty-eight.
+Turn 217. TUTOR: Mhm.
+Turn 218. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes "38" after the equals sign, completing the equation "9 + 29 = 38".
+Turn 218. TUTOR: Good.
+Turn 219. TUTOR: Okay, so we're gonna go back to an educational platform.
+Turn 220. TUTOR: So what would be our answer choice?
+Turn 221. TUTOR: [PAUSE: 3 seconds]
+Turn 221. STUDENT: B.
+Turn 222. TUTOR: [SCREEN_INTERACTION: tutor - selecting answer] Tutor clicks on answer choice B, then clicks the "Check" button. The screen shows "B is correct!"
+Turn 222. TUTOR: Good. Perfect.
+Turn 223. TUTOR: [PROBLEM_CHANGE: p2 - '23 + 108 = ?' (start)] The screen advances to the next problem: "23 + 108 =". The multiple choice options are A) 128, B) 151, C) 131, D) 131.
+Turn 223. TUTOR: Okay. So, we have what is these, what are these numbers?
+Turn 224. STUDENT: Twenty-three and one hundred and eight.
+Turn 225. TUTOR: Okay. And we're adding or subtracting?
+Turn 226. STUDENT: Adding.
+Turn 227. TUTOR: Okay, good.
+Turn 228. TUTOR: Let me, actually, let me see if I can do something that will make this easier.
+Turn 229. TUTOR: [SCREEN_UPDATE: Closes screen share] The screen switches from the an educational platform problem back to the whiteboard from the previous problem.
+Turn 229. TUTOR: So we don't have to keep going back and forth.
+Turn 230. TUTOR: [PAUSE: 42 seconds] Tutor adjusts the screen layout, resizing and moving windows.
+Turn 230. TUTOR: Okay, can you see my whole screen?
+Turn 231. STUDENT: Uh-oh. Yes.
+Turn 232. TUTOR: Let's see.
+Turn 233. TUTOR: [PAUSE: 2 seconds]
+Turn 233. TUTOR: Oh man, I'm trying to get the,
+Turn 234. TUTOR: let's see.
+Turn 235. TUTOR: [PAUSE: 2 seconds]
+Turn 235. TUTOR: Let's do,
+Turn 236. TUTOR: [PAUSE: 8 seconds]
+Turn 236. TUTOR: Do you have space to write?
+Turn 237. STUDENT: Uh, yes.
+Turn 238. TUTOR: Okay.
+Turn 239. TUTOR: So go ahead and do the twenty-three plus one oh eight.
+Turn 240. STUDENT: Twenty-eight plus um one hundred and eight.
+Turn 241. TUTOR: Do you see the numbers on, on my screen?
+Turn 242. TUTOR: The ones from an educational platform?
+Turn 243. STUDENT: No.
+Turn 244. TUTOR: [PAUSE: 1 second]
+Turn 244. STUDENT: I can't see it.
+Turn 245. STUDENT: I can't see it. I just see a white screen.
+Turn 246. TUTOR: Oh, okay.
+Turn 247. STUDENT: That's because I don't remember.
+Turn 248. TUTOR: They're right here. On the right side of your screen.
+Turn 249. STUDENT: I can't see it there.
+Turn 250. TUTOR: Hm?
+Turn 251. TUTOR: Oh, okay. It's twenty-three plus one oh eight.
+Turn 252. TUTOR: [PAUSE: 2 seconds]
+Turn 252. STUDENT: One oh eight.
+Turn 253. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes "23 +" on the whiteboard.
+Student writes "+ 10" and then struggles to write the number 8.
+Turn 253. TUTOR: plus 108.
+Turn 254. STUDENT: I didn't finish writing eight.
+Turn 255. TUTOR: That's okay. You can keep going.
+Turn 256. TUTOR: [SCREEN_INTERACTION: student - drawing] Student finishes writing "108". The full problem on the board is "23 + 108".
+Turn 256. STUDENT: Wait, can't I'm gonna do it a different way.
+Turn 257. TUTOR: Okay, that's fine.
+Turn 258. TUTOR: [SCREEN_INTERACTION: student - drawing] Student erases "108" and writes "16" underneath "23". He then scribbles over the 6.
+Student erases the scribbled "16" and writes "14" under "23".
+Tutor erases the student's writing and writes the problem vertically: 108 on top, 23 below, with a line underneath for the answer.
+Turn 258. TUTOR: Do you need help writing it?
+Turn 259. STUDENT: Uh, I know how to draw it.
+Turn 260. TUTOR: So, it might be easier, so let me write it this way. One oh eight and twenty three. Like that.
+Turn 261. TUTOR: You can go ahead and solve it with that one, okay?
+Turn 262. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes a "1" above the 0 in 108.
+Turn 262. TUTOR: Mhm.
+Turn 263. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes "171" as the answer to the problem.
+Tutor rewrites the problem "108 + 23" vertically in purple to the left of the student's work.
+Tutor highlights the ones column (8 and 3) in yellow.
+Turn 263. TUTOR: Okay.
+Turn 264. TUTOR: Let's go ahead and... Is that what your answer is, your final answer?
+Turn 265. STUDENT: Yes.
+Turn 266. TUTOR: Okay. So I'm gonna go over it with you again.
+Turn 267. TUTOR: Okay, so it's one oh, have you ever did, um, sorry, have you ever done addition this way?
+Turn 268. STUDENT: Uh, no.
+Turn 269. TUTOR: No? Okay. So, it's okay. That's why I'm here for you to learn. So, when you're doing addition like this, you can see my writing in purple, right?
+Turn 270. STUDENT: Yeah.
+Turn 271. TUTOR: Okay. So, when you're doing addition, it's kind of like the same thing as subtraction. So, you're gonna start from over here first. So, what is eight plus three?
+Turn 272. STUDENT: Eleven.
+Turn 273. TUTOR: Eleven. Okay, so where would the first one go?
+Turn 274. STUDENT: On zero.
+Turn 275. TUTOR: On top of zero, right? Okay, so go ahead and write where the first one goes.
+Turn 276. TUTOR: [SCREEN_INTERACTION: student - drawing] Student writes a "1" above the 0 in the purple problem.
+Tutor writes a "1" above the 0 and a "1" below the line in the ones column for the purple problem.
+Student writes "3" below the line in the tens column for the purple problem.
+Student writes "1" below the line in the hundreds column, completing the answer "131".
+Turn 276. TUTOR: Good.
+Turn 277. TUTOR: Where does the second one go, since it's eleven? STUDENT: Uh, on zero?
+Turn 278. TUTOR: So, when you're doing eight plus three equals eleven, the first number will go right here above the zero and the second number will go down here. So see, we have one and one and that's our eleven.
+Turn 279. TUTOR: Okay. So, what would we be adding next? STUDENT: Um, one plus two?
+Turn 280. TUTOR: Good. So go ahead and add that. And what does that equal?
+Turn 281. STUDENT: That's because I got confused and I thought it was um six.
+Turn 282. TUTOR: It's okay.
+Turn 283. TUTOR: So, what is one plus two?
+Turn 284. TUTOR: Good.
+Turn 285. TUTOR: Perfect. Okay, so what's your answer?
+Turn 286. STUDENT: One hundred thirty-one.
+Turn 287. TUTOR: Good. Okay, so let's go back to an educational platform.
+Turn 288. TUTOR: [SCREEN_UPDATE] The screen changes from the whiteboard to a black screen, then loads an an educational platform problem.
+Turn 288. TUTOR: what would be our answer?
+Turn 289. STUDENT: Uh, D.
+Turn 290. TUTOR: Let's check it.
+Turn 291. TUTOR: Perfect.
+Turn 292. TUTOR: Okay, next one.
+Turn 293. TUTOR: So, what should replace the star? So we have blank plus 107 equals 121.
+Turn 294. TUTOR: [PROBLEM_CHANGE: p1 - 'What should replace the star? ⭐ + 107 = 121' (start)] A new problem appears on the screen from a program called an educational platform. The title is "Mental addition and subtraction 1". The problem is "What should replace the star? ⭐ + 107 = 121". The multiple-choice options are A) 128, B) 14, C) 21, D) 26.
+Turn 294. TUTOR: So, to be able to find the answer of the star, we're going to need to subtract these two numbers. So we're going to need to do 107 minus 121.
+Turn 295. TUTOR: So let's come back to our whiteboard.
+Turn 296. TUTOR: [SCREEN_UPDATE] The screen switches back to the whiteboard.
+Writes "121 - 107" on the whiteboard.
+Turn 296. TUTOR: and the numbers were 121. So one, twenty, one, minus one, oh, seven.
+Turn 297. TUTOR: Are you able to read that okay?
+Turn 298. STUDENT: Yeah.
+Turn 299. TUTOR: Okay, so go ahead and solve that.
+Turn 300. TUTOR: [SCREEN_INTERACTION: student - writing] Student crosses out the 2 in 121, writes a 1 above it.
+Turn 300. TUTOR: [SCREEN_INTERACTION: student - writing] Student crosses out the 1 in the ones place of 121 and writes 11 above it.
+Turn 300. TUTOR: [PAUSE: 14 seconds]
+Turn 300. TUTOR: Mhm.
+Turn 301. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes "4" as the result in the ones column.
+Turn 301. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes "1" as the result in the tens column.
+Turn 301. TUTOR: Perfect.
+Turn 302. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes "0" as the result in the hundreds column, making the final answer "014".
+Turn 302. TUTOR: Good.
+Turn 303. TUTOR: Okay, what's your answer?
+Turn 304. STUDENT: Fourteen.
+Turn 305. TUTOR: Awesome. Okay, let's go back to an educational platform.
+Turn 306. TUTOR: [SCREEN_UPDATE] The screen goes black and then loads the an educational platform problem again.
+Turn 306. STUDENT: Fourteen. And I already knew it was fourteen.
+Turn 307. TUTOR: Uh-huh.
+Turn 308. TUTOR: [SCREEN_INTERACTION: student - clicking] Student clicks on option B.
+Turn 308. TUTOR: [SCREEN_INTERACTION: student - clicking] Student clicks the "Check" button.
+Turn 308. TUTOR: [SCREEN_UPDATE] A message appears: "B is correct!" along with an explanation.
+Turn 308. TUTOR: [SCREEN_INTERACTION: student - clicking] Student clicks the "Next" button.
+Turn 308. TUTOR: [PROBLEM_CHANGE: p2 - 'What should replace the star? ⭐ - 37 = 38' (start)] A new problem appears on the screen: "What should replace the star? ⭐ - 37 = 38". The multiple-choice options are A) 75, B) 1, C) -1, D) 65.
+Turn 308. STUDENT: Uh...
+Turn 309. TUTOR: [PAUSE: 24 seconds]
+Turn 309. STUDENT: Wait, um, B?
+
+Using the tutoring instructions above and the conversation so far, choose the approach for the tutor's next move. Return exactly one word: scaffolding or rigor. Do not generate a tutor response or an explanation.

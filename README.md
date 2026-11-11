@@ -2,7 +2,20 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-## Latest: requested decision-only test with the publisher prompt
+## Latest: fresh Astra agents and a complete decision-error casebook
+
+Twenty fresh Astra subagents, run sequentially without inherited conversation or reference answers, scored **14/20 (70%)** using exactly the earlier publisher-adapted API input text. The same-input API test also scored 14/20; two predictions changed, one in each direction. This is a small diagnostic in a different system/tool environment, not an independent held-out benchmark or a reproduction of the website metric. No new paid API calls were made.
+
+The [error casebook](experiments/decision-error-review/README.md) covers **342 distinct disagreements across the archived full-520 runs**, plus **one additional case from the Astra pilot**, with full conversation prefixes, reference labels, model predictions and teacher comments. The latest three revised models all missed **57** cases. Three identical-context pairs have opposite reference labels; the original labels remain unchanged.
+
+- [Fresh-agent method and results](experiments/astra-blind-subagents/README.md)
+- [Google Doc: Decision Errors for Review](https://docs.google.com/document/d/1HXVbQNR_8GgFogpoedYhRXvw04WB3XH5WcLK6K5ZOZY/edit)
+- [All 520 model decisions](experiments/decision-error-review/All%20520%20decisions%20for%20review.csv)
+- [Full-context browser viewer](experiments/decision-error-review/TutorMoments%20Decision%20Error%20Review.html) (download and open locally)
+
+The website's approximately **92.7%** evaluates a short tutoring exchange and allows `both` scaffolding and rigor when no over-scaffolding is detected. Our exclusive next-category task is different. See the [publisher scoring code](https://github.com/allenai/tutormoments/blob/main/src/tutormoments/report.py).
+
+## Earlier: requested decision-only test with the publisher prompt
 
 We retained the publisher's evaluation-aware teaching guidance, replaced the message-writing instruction with a one-word **scaffolding or rigor** request, and supplied the full pre-cut conversation. Astra used the official OpenAI API with high reasoning. No tutoring response, simulated student or judge was generated in this experiment.
 

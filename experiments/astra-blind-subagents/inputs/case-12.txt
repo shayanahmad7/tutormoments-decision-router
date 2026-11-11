@@ -1,0 +1,144 @@
+# Expert K-12 math tutor
+
+You are an expert K-12 math tutor.
+
+Your goal is **not** to get the student to a correct answer — it is to build
+deeper understanding the student can apply on their own.
+
+### The core dial: scaffold ↔ rigor
+
+Every moment is a choice between adding **support** (a scaffold, to make the task
+approachable) and pushing for **rigor** (a harder task, a justification, a
+transfer to a new problem).
+
+Two failure modes bracket the right move:
+
+- **Over-scaffolding** — you do the thinking, give away the answer or the
+  operation, or help before the student has shown a need. This is the single
+  most common tutoring failure. Avoid it.
+- **Missed chances to push for rigor** — you miss chances to turn the dial
+  toward a more rigorous form of questioning by accepting an immediate correct
+  answer or re-teaching a skill the student has already mastered.
+
+The goal is to stay in the student's zone of proximal development by:
+- Scaffolding for access when the content is challenging for the student.
+- Pushing for rigor when the student masters more basic expressions of a concept.
+
+### Context
+
+You have the following metadata about the student: Platform: tutoring_provider_a
+
+Here is the conversation so far:
+
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification appears: "Nathan has joined".
+Turn 1. TUTOR: [PAUSE: 33 seconds]
+Turn 1. TUTOR: [SCREEN_INTERACTION: tutor - video on] The tutor's video feed appears, showing a red circle with the letter 'N' inside.
+Turn 1. TUTOR: [PAUSE: 71 seconds]
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification appears: "Emily has joined".
+Turn 1. TUTOR: [PAUSE: 17 seconds]
+Turn 1. TUTOR: [SCREEN_INTERACTION: student - video on] The student's video feed appears, showing a green circle with the letter 'E' inside.
+Turn 1. TUTOR: [PAUSE: 106 seconds]
+Turn 1. TUTOR: [PAUSE: 27 seconds]
+Turn 1. TUTOR: Hello?
+Turn 2. TUTOR: [PAUSE: 3 seconds]
+Turn 2. STUDENT: Hello.
+Turn 3. TUTOR: Hey, how's it going?
+Turn 4. STUDENT: Good.
+Turn 5. TUTOR: How was your weekend?
+Turn 6. TUTOR: [PAUSE: 3 seconds]
+Turn 6. STUDENT: Good.
+Turn 7. TUTOR: Only good?
+Turn 8. STUDENT: Yeah.
+Turn 9. TUTOR: Didn't- didn't do anything special?
+Turn 10. STUDENT: Uh, not really.
+Turn 11. TUTOR: Why not?
+Turn 12. STUDENT: Um, maybe just got a new laptop.
+Turn 13. TUTOR: [PAUSE: 2 seconds]
+Turn 13. TUTOR: Oh.
+Turn 14. TUTOR: You got a new laptop?
+Turn 15. STUDENT: Uh, yeah.
+Turn 16. TUTOR: Which one?
+Turn 17. STUDENT: Um, let me just show you.
+Turn 18. STUDENT: Wait. Let me turn off so I can... background.
+Turn 19. TUTOR: [SCREEN_INTERACTION: student - video off] Student's video feed turns black.
+Turn 19. TUTOR: [PAUSE: 14 seconds]
+Turn 19. TUTOR: [SCREEN_UPDATE] A loud, continuous beep sounds.
+Turn 19. TUTOR: [PAUSE: 23 seconds]
+Turn 19. STUDENT: Okay. Um, it is, this one.
+Turn 20. TUTOR: Nice. What are you gonna do with it?
+Turn 21. STUDENT: Uh, probably watch videos and play Roblox.
+Turn 22. TUTOR: Play Roblox. What do you, do you play the, one of my other students does this event on Saturdays at six a.m. It's like, I think it's dress to impress, I'm not sure.
+Turn 23. STUDENT: Yes. You do that?
+Turn 24. STUDENT: Uh, not really.
+Turn 25. TUTOR: What do you do on Roblox then?
+Turn 26. STUDENT: Uh, probably just do like obbies.
+Turn 27. TUTOR: Hobbies?
+Turn 28. STUDENT: Obbies.
+Turn 29. TUTOR: How do you spell that?
+Turn 30. STUDENT: O B B Y.
+Turn 31. TUTOR: Okay. What what is that? I don't know what that is.
+Turn 32. STUDENT: It's where like pretty much a course that you go through.
+Turn 33. TUTOR: Like an obstacle course?
+Turn 34. STUDENT: Yeah.
+Turn 35. TUTOR: Oh. Nice.
+Turn 36. TUTOR: Like a, like a horse obstacle course or a human obstacle course?
+Turn 37. STUDENT: Human.
+Turn 38. TUTOR: Human. Got it.
+Turn 39. TUTOR: Oh, that sounds like fun.
+Turn 40. TUTOR: [PAUSE: 6 seconds]
+Turn 40. TUTOR: I'm gonna, you wanna dive right in to math or do you wanna play like a game first?
+Turn 41. STUDENT: Dive in.
+Turn 42. TUTOR: Diving in. Okay. Let me, let's do our,
+Turn 43. TUTOR: do we have a bonus question?
+Turn 44. STUDENT: Maybe.
+Turn 45. TUTOR: Question of the day. Question of the day. Let's do this. Warm up.
+Turn 46. TUTOR: [PAUSE: 2 seconds]
+Turn 46. TUTOR: Okay. This is like pattern recognition. If you know that six times seven is forty-two, which of the following is true?
+Turn 47. TUTOR: [PROBLEM_CHANGE: p1 - 'If you know that 7 x 6 = 42, which of the following is true?' (start)] The screen shows a multiple-choice question. "If you know that 7 x 6 = 42, which of the following is true?" The options are: A) 70 x 60 = 42 x 10, B) 70 x 6 = 4200, C) 70 x 60 = 4200, D) 70 x 60 = 420.
+Turn 47. TUTOR: [PAUSE: 5 seconds] Student selects option C.
+Turn 47. STUDENT: Seven times sixty equals forty-two, uh, not minus. Seventy, wait. Seventy times sixty equals forty-two times ten. Then seventy times six equals four thousand two hundred. Seventy times sixty equals forty-two thousand. Seventy times sixty equals four hundred and twenty. Um,
+Turn 48. TUTOR: Mhm.
+Turn 49. STUDENT: Okay, so it's gonna be, um, so seventy times sixty equals, I'm gonna go with C, it equals four thousand two hundred.
+Turn 50. TUTOR: C is the correct answer.
+Turn 51. TUTOR: [SCREEN_UPDATE] The screen shows a green banner with a checkmark that says "C is correct! By multiplying both factors by 10, the product increases by a factor of 100."
+Turn 51. TUTOR: Nice. That's the, that's the only question. Okay, we're done for the day.
+Turn 52. STUDENT: Okay. Bye-bye.
+Turn 53. TUTOR: I'm joking.
+Turn 54. TUTOR: [SCREEN_UPDATE] The screen transitions to a dashboard showing "Your Daily Questions" with a score of 1/2 and 100%.
+Turn 54. TUTOR: [SCREEN_UPDATE] The screen navigates through the MathBridge platform, showing "This week's work", then "Topics", then a "Welcome Emily" screen with a "Start topic" button for "Skip counting in 10s".
+Tutor scrolls down a list of math topics on a website.
+Turn 54. TUTOR: Okay, we did skip counting in fives last time.
+Turn 55. TUTOR: [SCREEN_INTERACTION: tutor - starts topic] Tutor scrolls to "Skip counting in 10s" and clicks the "Start topic" button. The screen begins to load.
+The screen finishes loading and shows a purple background with the text "Skip counting in 10s".
+Tutor draws the numbers 1, 2, 3, 4 vertically on the left side of the whiteboard. Then draws 5, 6, 7, 8, 9 vertically on the right side. He then draws arrows pointing from 0 to 5, 1 to 6, 2 to 7, 3 to 8, and 4 to 9, and back from 5 to 0, 6 to 1, etc.
+Tutor writes "12", then "+ 5" underneath, with "17" as the sum. Then writes "+ 5" under 17, with "22" as the sum. He then says 27 and 32. He circles the "2" and "7" in his drawing on the left. He points to the last digits of the numbers he wrote: 2, 7, 2, 7, 2.
+Tutor erases the whiteboard.
+Tutor finishes erasing the whiteboard.
+Turn 55. TUTOR: Do you remember, do you remember like our strategy for that?
+Turn 56. TUTOR: You know how every time you count from
+Turn 57. STUDENT: Skip counting in tens?
+Turn 58. TUTOR: No, fives.
+Turn 59. STUDENT: Oh, fives.
+Turn 60. STUDENT: Um, five, ten, fifteen, twenty, twenty-five, thirty.
+Turn 61. TUTOR: Not not that one. Um,
+Turn 62. TUTOR: you know how like every time we count in fives, it switches between these numbers.
+Turn 63. TUTOR: For example, for example, if you have, if you have like twelve, you add five to it, you get seventeen. You add five, you get twenty-two, and then you get twenty-seven, you get thirty-two. So, like you just go to this table and you see like two switches with seven, so it switches with two every time. So two, seven, two, seven, two.
+Turn 64. STUDENT: Uh-huh.
+Turn 65. TUTOR: Does that, does that make, do you remember now or do you want like another example?
+Turn 66. STUDENT: I remember it now.
+Turn 67. STUDENT: I don't really like doing it that way.
+Turn 68. TUTOR: No, it's like you don't, you don't have to do it, you don't need to know this for addition. It's like when you're checking your answers and you want to check it quickly and you know that you added five to the ones place, then that's like, this is like a quick way to check that one's place is the right number.
+Turn 69. TUTOR: And then if you need to check the rest, then you should, but sometimes just doing this is enough. Okay. So, well you know this now, so that's good. Um, the one with tens is that the ones place just stays the same.
+Turn 70. TUTOR: because you're adding ten, you're adding zero in the ones place basically. So, try to remember that when we do these questions.
+Turn 71. TUTOR: Do you have any, do you have any questions before we get started?
+Turn 72. STUDENT: Um, no.
+Turn 73. TUTOR: [PROBLEM_CHANGE: p1 - 'Penny is counting in 10s. What number would she say after 590?' (start)] The problem appears on the screen. The question is "Penny is counting in 10s. What number would she say after 590?". The multiple-choice options are A: 580, B: 591, C: 5100, D: 600.
+Turn 73. TUTOR: Okay. Can you go ahead and read that for me?
+Turn 74. STUDENT: Penny is counting in tens. What number would she say after five hundred ninety?
+Turn 75. TUTOR: [PAUSE: 2 seconds] Tutor writes "590" on the whiteboard, then "+ 10" below it. He explains that the 0 in the ones place stays, the 9 in the tens place becomes 10, so a 0 goes in the tens place and the 1 is carried over to the hundreds place, making the 5 a 6. The final answer is "600".
+Turn 75. TUTOR: Right. So there's, there's a clear option that's wrong because if you add ten here, there should not be a one in one's place, right?
+Turn 76. STUDENT: Yeah.
+Turn 77. TUTOR: Okay, so B's wrong. What do you think the right one is?
+Turn 78. STUDENT: So it's pretty much asking five hundred and nine hundred, five hundred, nine hundred times, times ten?
+
+Using the tutoring instructions above and the conversation so far, choose the approach for the tutor's next move. Return exactly one word: scaffolding or rigor. Do not generate a tutor response or an explanation.

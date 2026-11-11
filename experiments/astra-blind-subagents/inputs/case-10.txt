@@ -1,0 +1,82 @@
+# Expert K-12 math tutor
+
+You are an expert K-12 math tutor.
+
+Your goal is **not** to get the student to a correct answer — it is to build
+deeper understanding the student can apply on their own.
+
+### The core dial: scaffold ↔ rigor
+
+Every moment is a choice between adding **support** (a scaffold, to make the task
+approachable) and pushing for **rigor** (a harder task, a justification, a
+transfer to a new problem).
+
+Two failure modes bracket the right move:
+
+- **Over-scaffolding** — you do the thinking, give away the answer or the
+  operation, or help before the student has shown a need. This is the single
+  most common tutoring failure. Avoid it.
+- **Missed chances to push for rigor** — you miss chances to turn the dial
+  toward a more rigorous form of questioning by accepting an immediate correct
+  answer or re-teaching a skill the student has already mastered.
+
+The goal is to stay in the student's zone of proximal development by:
+- Scaffolding for access when the content is challenging for the student.
+- Pushing for rigor when the student masters more basic expressions of a concept.
+
+### Context
+
+You have the following metadata about the student: Platform: tutoring_provider_a
+
+Here is the conversation so far:
+
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification appears on the screen: "Amira has joined".
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification appears on the screen: "Mr. Bradley has joined".
+Turn 1. TUTOR: [PAUSE: 298 seconds]
+Turn 1. TUTOR: [PAUSE: 193 seconds] The screen shows the the tutoring platform main room. A user named Amira is present. The main area of the screen says "No pages created".
+Turn 1. TUTOR: [SCREEN_UPDATE] A notification "Mr. Bradley has joined" appears. The tutor's video feed appears on the right panel, then moves to the main screen area. The tutor has a virtual background showing bookshelves and the word "Tutoring".
+Turn 1. TUTOR: [SCREEN_INTERACTION: tutor - creating page] The tutor clicks the "Create Page" button, and the screen switches to a new blank whiteboard.
+Turn 1. TUTOR: [PAUSE: 235 seconds] The screen remains on the blank whiteboard with no activity or dialogue for the rest of the video.
+Turn 1. TUTOR: [PAUSE: 310 seconds] The screen shows the the tutoring platform interface. A participant named "Amira" is in the room. The main whiteboard area displays the message "No pages created". No one is speaking and there are no screen interactions.
+Turn 1. TUTOR: [PAUSE: 112 seconds] The screen shows a blank the tutoring platform whiteboard with the message "No pages created". A participant named "Amira" is in the room.
+Turn 1. TUTOR: Hello.
+Turn 2. TUTOR: [SCREEN_UPDATE] The student's video feed appears. The tutor and student video feeds are now side-by-side.
+Turn 2. TUTOR: How are you doing?
+Turn 3. STUDENT: Good.
+Turn 4. TUTOR: Good.
+Turn 5. TUTOR: How was your weekend?
+Turn 6. STUDENT: Good.
+Turn 7. TUTOR: Great. What did you do?
+Turn 8. STUDENT: Went to the beach and to the desert.
+Turn 9. TUTOR: Oh, that's awesome.
+Turn 10. TUTOR: Was the weather nice?
+Turn 11. STUDENT: It was kind of hot.
+Turn 12. TUTOR: Yeah.
+Turn 13. TUTOR: That's fun. The beach is fun.
+Turn 14. STUDENT: Mhm.
+Turn 15. TUTOR: All right. Share my screen with you.
+Turn 16. TUTOR: [SCREEN_UPDATE] The tutor's screen share replaces their video feed. It loads and then shows a purple background with a white card titled "Areas of composite shapes made of rectangles".
+Turn 16. TUTOR: [PROBLEM_CHANGE: p1 - Areas of composite shapes made of rectangles (start)] The screen updates to show a problem. On the left is a composite shape made of a pink 6x6 square and a blue 3x9 rectangle. The problem text reads: "The shape is split into two rectangles to help find the total area. What number would go in the box to complete this calculation? 6 x 6 + 3 x [ ]". Four multiple-choice options are shown: A) 9, B) 27, C) 36, D) 63.
+The tutor's cursor moves over the problem text.
+Student draws the number 9 and a curved line pointing from the 9 to the empty box in the equation.
+Tutor clicks option A, then clicks the "Check" button. The screen shows "Correct!" and a "Next" button appears.
+Turn 16. TUTOR: So, we will continue building on what we did last time. Can you see my screen all right?
+Turn 17. STUDENT: Mhm, yeah.
+Turn 18. TUTOR: All right. So, we will start with similar to what we did last time, um, areas of composite shapes with more than one rectangle in a shape. So, see this first question. This shape is split into two rectangles to help find the total area. So, we're looking for the total area. What number would go into the box, so looking for the number that would go into this blue box, to complete the calculation?
+Turn 19. STUDENT: Nine?
+Turn 20. TUTOR: Yeah, good job.
+Turn 21. TUTOR: [PROBLEM_CHANGE: p2 - Areas of composite shapes made of rectangles (start)] The screen updates to the next problem. It shows a composite shape made of a pink 3x3 square and a blue 6x5 rectangle. The problem text reads: "The shape is split into two rectangles to help find the total area. What number would go in the box to complete this calculation? 3 x [ ] + 6 x 5". Four multiple-choice options are shown: A) 21, B) 3, C) 5, D) 7.
+Tutor's cursor moves over the problem text and the empty box in the equation.
+Turn 21. TUTOR: What number would go into the box to complete this calculation?
+Turn 22. TUTOR: [SCREEN_INTERACTION: student - drawing] Student draws a line pointing to the pink 3x3 square.
+Turn 22. STUDENT: Seven?
+Turn 23. TUTOR: Seven. Great job.
+Turn 24. TUTOR: [SCREEN_INTERACTION: student - answering question] The student clicks on option D, then clicks the "Check" button. A message "D is correct!" appears. The student then clicks the "Next" button.
+Turn 24. TUTOR: [PROBLEM_CHANGE: p2 - 'What is the total area of the shape?' (start)] The problem updates to a new question for the same shape: "What is the total area of the shape?". The options are A: 18, B: 30, C: 12, D: 50.
+Turn 24. TUTOR: What is the total area of this shape? So the pink part plus the blue part.
+Turn 25. TUTOR: [PAUSE: 50 seconds] Student writes "18 + " on the board.
+Student writes a messy "12" that looks like a "Z", followed by "= 30".
+Turn 25. TUTOR: Eighteen. All right. Good job.
+Turn 26. STUDENT: plus twelve, I think, yeah. equals thirty. So that would be B.
+
+Using the tutoring instructions above and the conversation so far, choose the approach for the tutor's next move. Return exactly one word: scaffolding or rigor. Do not generate a tutor response or an explanation.
