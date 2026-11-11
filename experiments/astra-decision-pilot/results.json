@@ -1,0 +1,537 @@
+{
+  "n": 20,
+  "source_indices": [
+    309,
+    250,
+    325,
+    376,
+    403,
+    359,
+    232,
+    245,
+    471,
+    494,
+    439,
+    108,
+    171,
+    219,
+    336,
+    292,
+    507,
+    169,
+    380,
+    244
+  ],
+  "methods": {
+    "astra": {
+      "n": 20,
+      "correct": 13,
+      "accuracy": 0.65,
+      "wilson_95ci": [
+        0.43285427668523624,
+        0.818808175898918
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 5
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 8
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 1.3879599999999999,
+      "median_seconds": 4.612831979000006,
+      "p95_seconds": 21.04461203365,
+      "input_tokens": 118011,
+      "output_tokens": 4157,
+      "reasoning_tokens": 3990
+    },
+    "jev": {
+      "n": 20,
+      "correct": 12,
+      "accuracy": 0.6,
+      "wilson_95ci": [
+        0.3865815007622531,
+        0.781193467627183
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 3
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 9
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 0.005667396,
+      "median_seconds": 0.26290245849999394,
+      "p95_seconds": 0.4614172893000039,
+      "input_tokens": 134938,
+      "output_tokens": 748,
+      "reasoning_tokens": 0
+    },
+    "decisions": {
+      "n": 20,
+      "correct": 13,
+      "accuracy": 0.65,
+      "wilson_95ci": [
+        0.43285427668523624,
+        0.818808175898918
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 5
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 8
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 0.011825099999999998,
+      "median_seconds": 0.3460153334999916,
+      "p95_seconds": 0.6118691708000016,
+      "input_tokens": 118251,
+      "output_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "llm": {
+      "n": 20,
+      "correct": 12,
+      "accuracy": 0.6,
+      "wilson_95ci": [
+        0.3865815007622531,
+        0.781193467627183
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 5
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 7
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 0.011865100000000002,
+      "median_seconds": 1.012606208500003,
+      "p95_seconds": 13.099120209799997,
+      "input_tokens": 118011,
+      "output_tokens": 128,
+      "reasoning_tokens": 0
+    }
+  },
+  "astra_vs_baselines": {
+    "jev": {
+      "astra_only_correct": 2,
+      "baseline_only_correct": 1,
+      "net_correct": 1,
+      "difference_percentage_points": 5.0,
+      "exact_two_sided_mcnemar_p": 1,
+      "holm_adjusted_p": 1
+    },
+    "decisions": {
+      "astra_only_correct": 2,
+      "baseline_only_correct": 2,
+      "net_correct": 0,
+      "difference_percentage_points": 0.0,
+      "exact_two_sided_mcnemar_p": 1,
+      "holm_adjusted_p": 1
+    },
+    "llm": {
+      "astra_only_correct": 2,
+      "baseline_only_correct": 1,
+      "net_correct": 1,
+      "difference_percentage_points": 5.0,
+      "exact_two_sided_mcnemar_p": 1,
+      "holm_adjusted_p": 1
+    }
+  },
+  "cascades": {
+    "0.9": {
+      "n": 20,
+      "correct": 13,
+      "accuracy": 0.65,
+      "wilson_95ci": [
+        0.43285427668523624,
+        0.818808175898918
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 5
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 8
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 1.339707396,
+      "median_seconds": 4.900125645500012,
+      "p95_seconds": 21.48782535415001,
+      "input_tokens": 247902,
+      "output_tokens": 4836,
+      "reasoning_tokens": 3930,
+      "threshold": 0.9,
+      "astra_calls": 19,
+      "jev_only_cases": 1,
+      "cost_reduction_vs_astra": 0.034765125796132335,
+      "confident_jev_errors": 0,
+      "astra_errors_avoided": 0,
+      "astra_correct_overridden": 0,
+      "estimated_not_deployed": true
+    },
+    "0.8": {
+      "n": 20,
+      "correct": 13,
+      "accuracy": 0.65,
+      "wilson_95ci": [
+        0.43285427668523624,
+        0.818808175898918
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 5
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 8
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 1.172507396,
+      "median_seconds": 4.433804645500004,
+      "p95_seconds": 21.48782535415001,
+      "input_tokens": 233122,
+      "output_tokens": 4448,
+      "reasoning_tokens": 3575,
+      "threshold": 0.8,
+      "astra_calls": 15,
+      "jev_only_cases": 5,
+      "cost_reduction_vs_astra": 0.15522969249834273,
+      "confident_jev_errors": 1,
+      "astra_errors_avoided": 0,
+      "astra_correct_overridden": 0,
+      "estimated_not_deployed": true
+    },
+    "0.95": {
+      "n": 20,
+      "correct": 13,
+      "accuracy": 0.65,
+      "wilson_95ci": [
+        0.43285427668523624,
+        0.818808175898918
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 5
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 8
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 1.339707396,
+      "median_seconds": 4.900125645500012,
+      "p95_seconds": 21.48782535415001,
+      "input_tokens": 247902,
+      "output_tokens": 4836,
+      "reasoning_tokens": 3930,
+      "threshold": 0.95,
+      "astra_calls": 19,
+      "jev_only_cases": 1,
+      "cost_reduction_vs_astra": 0.034765125796132335,
+      "confident_jev_errors": 0,
+      "astra_errors_avoided": 0,
+      "astra_correct_overridden": 0,
+      "estimated_not_deployed": true
+    }
+  },
+  "older_prompt_supplementary": {
+    "jev": {
+      "n": 20,
+      "correct": 14,
+      "accuracy": 0.7,
+      "wilson_95ci": [
+        0.4810271816464765,
+        0.8545227551323956
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 5
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 9
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 0.005718636000000001,
+      "median_seconds": 0.19485402100000115,
+      "p95_seconds": 0.24177932115000056,
+      "input_tokens": 136158,
+      "output_tokens": 752,
+      "reasoning_tokens": 0
+    },
+    "decisions": {
+      "n": 20,
+      "correct": 17,
+      "accuracy": 0.85,
+      "wilson_95ci": [
+        0.6395811352592431,
+        0.9476312541037835
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 8
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 9
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 0.011825099999999998,
+      "median_seconds": 0.32420081250000266,
+      "p95_seconds": 0.6364909872000081,
+      "input_tokens": 118251,
+      "output_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "llm": {
+      "n": 20,
+      "correct": 15,
+      "accuracy": 0.75,
+      "wilson_95ci": [
+        0.531299122381256,
+        0.8881382985923343
+      ],
+      "by_label": {
+        "scaffolding": {
+          "n": 10,
+          "correct": 7
+        },
+        "rigor": {
+          "n": 10,
+          "correct": 8
+        }
+      },
+      "invalid": 0,
+      "cost_usd": 0.011897600000000003,
+      "median_seconds": 0.8803266249999968,
+      "p95_seconds": 3.0098515440500133,
+      "input_tokens": 118331,
+      "output_tokens": 129,
+      "reasoning_tokens": 0
+    }
+  },
+  "full_520_diagnostics": {
+    "jev": {
+      "min_tokens": 1352,
+      "median_tokens": 7164.0,
+      "max_tokens": 21518,
+      "length_quartiles": [
+        {
+          "n": 130,
+          "min_tokens": 1352,
+          "max_tokens": 4825,
+          "correct": 90,
+          "accuracy": 0.6923076923076923
+        },
+        {
+          "n": 130,
+          "min_tokens": 4827,
+          "max_tokens": 7162,
+          "correct": 94,
+          "accuracy": 0.7230769230769231
+        },
+        {
+          "n": 130,
+          "min_tokens": 7166,
+          "max_tokens": 10094,
+          "correct": 92,
+          "accuracy": 0.7076923076923077
+        },
+        {
+          "n": 130,
+          "min_tokens": 10138,
+          "max_tokens": 21518,
+          "correct": 91,
+          "accuracy": 0.7
+        }
+      ],
+      "confidence_subsets": [
+        {
+          "threshold": 0.8,
+          "n": 196,
+          "coverage": 0.3769230769230769,
+          "correct": 170,
+          "accuracy": 0.8673469387755102,
+          "by_label": {
+            "scaffolding": {
+              "n": 73,
+              "correct": 55
+            },
+            "rigor": {
+              "n": 123,
+              "correct": 115
+            }
+          }
+        },
+        {
+          "threshold": 0.9,
+          "n": 70,
+          "coverage": 0.1346153846153846,
+          "correct": 66,
+          "accuracy": 0.9428571428571428,
+          "by_label": {
+            "scaffolding": {
+              "n": 24,
+              "correct": 21
+            },
+            "rigor": {
+              "n": 46,
+              "correct": 45
+            }
+          }
+        },
+        {
+          "threshold": 0.95,
+          "n": 24,
+          "coverage": 0.046153846153846156,
+          "correct": 24,
+          "accuracy": 1.0,
+          "by_label": {
+            "scaffolding": {
+              "n": 4,
+              "correct": 4
+            },
+            "rigor": {
+              "n": 20,
+              "correct": 20
+            }
+          }
+        }
+      ]
+    },
+    "decisions": {
+      "min_tokens": 1102,
+      "median_tokens": 6329.0,
+      "max_tokens": 19300,
+      "length_quartiles": [
+        {
+          "n": 130,
+          "min_tokens": 1102,
+          "max_tokens": 4252,
+          "correct": 99,
+          "accuracy": 0.7615384615384615
+        },
+        {
+          "n": 130,
+          "min_tokens": 4257,
+          "max_tokens": 6319,
+          "correct": 99,
+          "accuracy": 0.7615384615384615
+        },
+        {
+          "n": 130,
+          "min_tokens": 6339,
+          "max_tokens": 8910,
+          "correct": 92,
+          "accuracy": 0.7076923076923077
+        },
+        {
+          "n": 130,
+          "min_tokens": 8949,
+          "max_tokens": 19300,
+          "correct": 82,
+          "accuracy": 0.6307692307692307
+        }
+      ]
+    },
+    "llm": {
+      "min_tokens": 1090,
+      "median_tokens": 6317.0,
+      "max_tokens": 19288,
+      "length_quartiles": [
+        {
+          "n": 130,
+          "min_tokens": 1090,
+          "max_tokens": 4240,
+          "correct": 102,
+          "accuracy": 0.7846153846153846
+        },
+        {
+          "n": 130,
+          "min_tokens": 4245,
+          "max_tokens": 6307,
+          "correct": 93,
+          "accuracy": 0.7153846153846154
+        },
+        {
+          "n": 130,
+          "min_tokens": 6327,
+          "max_tokens": 8898,
+          "correct": 95,
+          "accuracy": 0.7307692307692307
+        },
+        {
+          "n": 130,
+          "min_tokens": 8937,
+          "max_tokens": 19288,
+          "correct": 87,
+          "accuracy": 0.6692307692307692
+        }
+      ]
+    }
+  },
+  "post_hoc_full_520_majority": {
+    "earlier": {
+      "n": 520,
+      "correct": 381,
+      "by_label": {
+        "scaffolding": 204,
+        "rigor": 177
+      },
+      "component_token_cost_usd": 0.8711828439999997,
+      "fixes_vs_previous_best_decisions": 22,
+      "regressions_vs_previous_best_decisions": 27,
+      "post_hoc": true,
+      "description": "Unweighted majority of Jev, Decisions and Luna; no new API calls."
+    },
+    "revised": {
+      "n": 520,
+      "correct": 387,
+      "by_label": {
+        "scaffolding": 213,
+        "rigor": 174
+      },
+      "component_token_cost_usd": 0.8690276040000006,
+      "fixes_vs_previous_best_decisions": 43,
+      "regressions_vs_previous_best_decisions": 42,
+      "post_hoc": true,
+      "description": "Unweighted majority of Jev, Decisions and Luna; no new API calls."
+    }
+  },
+  "new_spend_usd": 1.3879599999999999,
+  "notes": [
+    "Exploratory20-case pilot; same prompt and cases, differing model/reasoning configurations.",
+    "All20 selected cases mathematical and from distinct students. Selection was independent of model errors.",
+    "All520 source records previously informed prompt development; no held-out generalization claim.",
+    "Cascade costs and latency are estimated from component traces, not a live sequential deployment.",
+    "Historical cheap-model timings and current Astra timings differ in concurrency and service conditions."
+  ]
+}

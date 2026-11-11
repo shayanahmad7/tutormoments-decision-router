@@ -1,0 +1,15 @@
+# Astra disagreements in the 20-case pilot
+
+The seven rows below retain the published category and are counted as errors in the reported 13/20 result. These notes assess possible explanations; they do not relabel cases or establish that the model was pedagogically correct. The representative teacher hint can differ from the aggregate reference label. Source moment numbers below are one-based, matching the CSV.
+
+| Moment | Reference | Astra | Evidence and ambiguity |
+|---|---|---|---|
+|377|Rigor|Scaffolding|The representative hint explicitly recommends scaffolding for recurring mistakes and self-correction. The visible sequence places the blank after 466, while the student answers 451; other parts of the shared history describe a different blank position. All four latest-prompt classifiers chose scaffolding. This is a label/rationale and screen-alignment concern, not proof that the aggregate label is wrong.|
+|360|Scaffolding|Rigor|The student correctly obtains 8 and says they understand the written format. The hint questions that understanding. Earlier representation difficulty could justify a check, while asking the student to explain could be a rigor move. All four classifiers chose rigor.|
+|246|Rigor|Scaffolding|The student can add but has difficulty interpreting a word problem. The representative hint explicitly recommends scaffolding. Jev and Decisions choose rigor; Astra and Luna choose scaffolding. The distinction between helping interpret and asking the student to explain the approach needs independent adjudication.|
+|472|Scaffolding|Rigor|After the tutor explains units, the student recognizes that groups are needed. The hint explicitly says the student should have a chance to attempt the problem before support. Astra and Jev choose rigor; Decisions and Luna choose scaffolding. Both current understanding and prior confusion matter.|
+|508|Scaffolding|Rigor|The question asks which statement will NOT establish evenness. The student selects a statement that does establish evenness. The hint identifies confusion about a non-example. All four latest-prompt classifiers choose rigor; overlooking this specific misunderstanding is a plausible model failure.|
+|170|Scaffolding|Rigor|The student says “I got it,” and the tutor asks for the answer, which is not yet in the input. The hint criticizes premature support and references a later mistake. All four classifiers choose rigor. The cutoff leaves the learner's actual result unavailable.|
+|381|Scaffolding|Rigor|After a correct count of 15, the student agrees with the tutor. The representative hint says neither direction is necessarily appropriate before a new attempt. All four classifiers choose rigor. The forced binary category may not align neatly with this representative annotation.|
+
+Several disagreements therefore involve ambiguous evidence, but the study cannot dismiss them. The appropriate next step is blinded human review using both the exact cutoff and the original annotation aggregation, followed by reporting original-label and adjudicated-label results separately. That review has not been conducted.

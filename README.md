@@ -2,7 +2,26 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-## Latest: final prompt revision after full transcript review
+## Latest: small Astra decision pilot and routing assessment
+
+A frozen **20-moment decision-only pilot** compared GPT-6 Astra with high reasoning against the same latest prompt and saved cheap-model predictions. The sample contains ten scaffolding and ten rigor moments from different students, selected without using prediction correctness.
+
+| Method | Correct /20 | Token cost for these 20 | Median complete request |
+|---|---:|---:|---:|
+| Astra, high reasoning | 13 | $1.3880 | 4.61s |
+| OpenAI Decisions, Luna | 13 | $0.0118 | 0.35s |
+| Jev 1.14.0 | 12 | $0.0057 | 0.26s |
+| Luna, one-word answer | 12 | $0.0119 | 1.01s |
+
+This pilot **does not establish an Astra accuracy advantage or equivalence between models**. It does show a large observed cost difference. Cheap-model timings are historical; Astra's are from the new run. Its 13/20 score measures a forced decision, not the website's multi-turn tutoring-replay metric. No outputs were invalid or truncated. New spending was **$1.3880**, with no extra cheap-model calls.
+
+The predeclared Jev-to-Astra cascade at probability 0.90 retained 13/20 matches while deferring 19/20 cases and saving only 3.5% of estimated token cost. The 0.80 sensitivity rule saved 15.5% at the same score. These are offline component estimates. A separate exploratory majority vote across all 520 latest-prompt cheap-model predictions scored 387/520, only one above the previous best single Decisions result.
+
+Context capacity was not exhausted: the longest Jev request was 21,518 tokens, below its 32k per-question limit. Across the 520-case run, Jev's probability ≥0.90 subset matched 66/70 labels but covered only 13.5% of cases. This motivates testing selective reliability, not claiming near-perfect overall accuracy.
+
+[Full pilot results](experiments/astra-decision-pilot/README.md), [all 20 decisions](experiments/astra-decision-pilot/All%2020%20decisions.csv), [research assessment and proposed next study](experiments/astra-decision-pilot/Research%20assessment.md), and [disagreement audit](experiments/astra-decision-pilot/Disagreement%20audit.md). The assessment distinguishes findings from proposals and explains why fine-tuning, a wider context window, or more model calls are not yet established solutions.
+
+## Earlier: final prompt revision after full transcript review
 
 We reviewed all **520 moments across 112 conversation histories**, then froze one revised prompt and ran it once per method. The prompt tracks the current learning obstacle, who supplied the reasoning, when support should fade, and opportunities for students to explain or check their work. It contains no case-specific examples or answer rules.
 
