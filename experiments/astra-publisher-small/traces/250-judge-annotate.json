@@ -1,0 +1,142 @@
+{
+  "tag": "250-judge-annotate",
+  "kind": "judge",
+  "payload": {
+    "model": "anthropic/claude-opus-4.6",
+    "max_tokens": 8192,
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are an expert in pedagogy and an experienced teaching coach. A previous review of this tutoring transcript flagged the turn range below as a scaffolding-related moment (between >>> DETECTED MOMENT START <<< and >>> DETECTED MOMENT END <<<). Your task is to analyze the moment in detail.\n\n## Research Context\n\nWe are studying how tutors in K-12 math tutoring conversations decide to push for rigor in a session by asking students to do harder tasks or tasks that involve more metacognition, versus when they choose to introduce scaffolds that make problems more accessible for students. For each flagged moment, you will analyze the provided situation, and then summarize the tutor's strategy and how well it worked. \n\n### Scaffolding\n\nScaffolding is temporary, calibrated support that helps a student accomplish a task they cannot yet do independently. It is gradually removed as the student gains competence. The goal is to keep the student in their zone of proximal development — challenged but not overwhelmed.\n\nCommon scaffolding strategies:\n- The tutor breaks down a problem into steps for the student.\n- The tutor draws a diagram and uses a real-world analogy to help the student.\n- The tutor rephrases the problem using simpler language or provides a simpler alternative. \n- The tutor asks guiding questions based on sub-steps to lead the student towards the solution. \n- The tutor fills in some of the steps for the student or provides a starting point.\n- The tutor models an example solution. \n- The tutor gives the student a hint, e.g. reminding the student of a similar prior problem, or highlighting parts of the problem text.\n- The tutor explains a concept or procedure. \n- The tutor presents a different representation or form of the problem to guide the student. \n- The tutor co-solves the problem with the student.\n- The tutor reduces answer options to simplify the problem. \n\nOver-scaffolding occurs when the tutor provides support even though the student has demonstrated knowledge or competency, or does most of the cognitive lifting without giving openings for the student to participate. These moments include those when the tutor...\n- begins scaffolding before the student has shown what they can do.\n- gives away answers or key steps, over-explains, re-scaffolds, or oversimplifies.\n- jumps in during a student's productive struggle.\n\n### Rigor \n\nRigor means increasing the level of conceptual challenge for the student to foster critical thinking, independence, and deeper understanding. \n\nCommon strategies that push for rigor:\n- The tutor withdraws support and has the student work on problems independently and/or struggle productively. \n- The tutor asks the student to justify or explain an answer, solution, or process. \n- The tutor increases problem complexity, e.g. whole numbers to decimals, one-step to two-step equations.\n- The tutor asks the student to define and/or use a key vocabulary term.\n- The tutor asks the student to find and fix their own error.\n- The tutor asks the student to explain why an answer is wrong.\n\nThough pushing for rigor can also involve questioning (e.g. probing for reasoning), asking step-by-step guided questions that funnel the student towards the answer is scaffolding, not a push for rigor. \n\n## Effectiveness Guidance\n\nAt each moment, the tutor decides how much support to provide. The right choice depends on reading the student's current state — their understanding, confidence, and engagement. For a given key moment, you will summarize the situation, the tutor's actions, and the result. \n\nWhen evaluating the result, primarily consider the **student outcome**. Some evidence of effectiveness includes the student getting the problem correct, completing some steps of a problem, or showing engagement or confidence. Also consider small wins: the student explains reasoning, struggles productively, self-corrects, or applies a skill. Most cases where a student participates in co-problem-solving and progresses, including arriving at the correct answer with support, leans effective, even without a check of comprehension afterwards. Only provide observations; do not speculate.\n\nSecondarily, consider **scaffolding calibration**. Did the tutor scaffold or push for rigor appropriately? Heavy scaffolding is effective if the student genuinely lacks prerequisite knowledge or signals confusion. Lighter scaffolding is effective when a student does meaningful cognitive work (e.g. identifies operations, supplies intermediate answers, performs computations, self-corrects, or explains sub-steps) with the tutor's support and arrives at new understanding. Tutor-dominated co-solving where the student's contributions are limited while the tutor manages all higher-order reasoning may lean ineffective. For rigor-appropriate situations, the tutor may push for rigor and the student rises to the challenge. A single well-chosen rigor move (e.g., asking for an explanation) that the student responds to substantively is effective.\n\nAny approach leans ineffective if student signals are worsening. Confusion, struggle, and guessing are normal during learning, but if the moment concludes with no intermediate learning wins, it may lean ineffective. Also ineffective are cases when the tutor gives away answers or key reasoning steps that the student has shown the capacity to produce, and there is no evidence the student engaged with the explanation. An extended tutor monologue where the student only contributes 'okay,' 'yeah,' or 'mhm' with little participation leans ineffective, even if the student's final answer is correct. A tutor who makes a mistake or gives incorrect information also leans ineffective. \n\nAnother secondary consideration is **missed opportunities**, where the tutor took no substantive action in the appropriate direction at all. A moment with no discernible tutor strategy when one is needed leans ineffective. This includes moments where the tutor moves past student errors or confusion without scaffolding or allows a student who is coasting to continue without any challenge. Verbal encouragement, affirmation, or general confidence-building do not count as appropriate scaffolding or rigor when either is needed.\n\nSome actions are contentious, with evidence for both sides. Before deciding a moment is partially effective, use the student outcome to determine whether you should actually lean ineffective or effective instead. The tutor's action may be partially effective if:\n- The student eventually gets the correct answer, but the moment concludes with the student giving confused responses or unable to explain their reasoning.\n- Indicators of effectiveness are missing, ambiguous, or insufficient to be certain of effectiveness.\n- The tutor's intervention addressed one issue but missed another.\n\nA well-calibrated scaffold can be effective if the student demonstrates progress during it. The student is learning; do not downgrade a moment because the student struggles on problems later in the session. Also do not downgrade a moment simply because the tutor doesn't push for rigor after a successful scaffolding moment.  \n\n## Examples\n\nYour response MUST match the **brevity, level of abstraction, and format** of the following examples. Do not paraphrase what was said, reference specific turn numbers, or quote transcript content.\n\n### Example 1: \n{\n  \"situation\": \"This is an appropriate place to scaffold because the student has been making similar mistakes on multiple questions.\",\n  \"action\": \"The tutor is scaffolding. They ask guiding questions as the student works through a problem step-by-step.\",\n  \"result\": \"The tutor's strategy is effective, as the student was having some difficulty prior to this and eventually completes this problem correctly. The student also seems to be understanding the newly introduced concepts.\"\n}\n\n### Example 2: \n{\n  \"situation\": \"This would be an appropriate time to push for rigor, since the student is completing the task correctly.\",\n  \"action\": \"The tutor is mostly scaffolding. The tutor moves onto the next problem and starts off by providing a hint. The tutor shares a potential approach the student could use to solve the next problem.\",\n  \"result\": \"The tutor is not effective here because they offered too much support. Though the student arrives at the correct answer, the tutor gave away more than the student seems to need in this moment.\"\n}\n\n### Example 3: \n{\n  \"situation\": \"This would be an appropriate time to push for rigor, since the student is breezing through problems.\",\n  \"action\": \"The tutor pushes for rigor by proposing a harder problem. They also push by asking the student to explain their proposed process for this problem. When the student is unsure, the tutor scaffolds by setting up the initial step of the problem.\",\n  \"result\": \"The tutor is effective. The student is able to explain their rational and works through the problem. The student self-corrects an intermediate error.\"\n}\n\n## Your Task\n\nFor the flagged moment, provide:\n- **Situation**: First, state whether this moment is appropriate for scaffolding or rigor. Summarize the student's starting state (e.g. stuck, confused, succeeding, coasting), and what pedagogical context makes this moment appropriate for scaffolding or rigor.  \n- **Action**: Examine the tutor's actions within the moment boundaries. Explicitly state when the tutor scaffolds and when they push for rigor. Scan the strategies in the lists above and, if applicable, use similar phrasing to convey the tutor's general approach or strategy.\n- **Result**: Was the tutor's strategy effective, ineffective, or partially effective? Assess the current problem arc; refrain from commenting on student performance on subsequent problems. Note any and all student learning, engagement, and understanding wins, even if small. \n\nIMPORTANT: Avoid discussing low-level details (e.g. specific numbers in the math problem or quotes from the conversation). Keep your output high-level like the examples above; do NOT give a turn by turn recap.\n\nThe following excerpt contains the flagged turn range. The surrounding turns provide context; summarize ONLY tutor actions that occur between >>> DETECTED MOMENT START <<< and >>> DETECTED MOMENT END <<<. A team of teachers believe that this moment is appropriate for scaffolding.\n\n[... turns 1-151 omitted ...]\n\n>>> DETECTED MOMENT START (Turn 152) <<<\nTurn 152. TUTOR: Yes—31 with 3 left over. A full group has 6, so what fraction of another group do those 3 leftovers make? <<<\nTurn 153. STUDENT: Um, three over six? <<<\nTurn 154. TUTOR: Yes—\\(\\frac{3}{6}\\) of another group. What simpler fraction names that same amount, and how do you know? <<<\nTurn 155. STUDENT: Um, I don't know. <<<\nTurn 156. TUTOR: Let’s picture six equal pieces, with three shaded:\n\n■ ■ ■ □ □ □\n\nThat shows \\(\\frac{3}{6}\\). How does the shaded amount compare with the unshaded amount? <<<\n>>> DETECTED MOMENT END (Turn 156) <<<\n\n## Output Format\n\nRespond with valid JSON only:\n{\n  \"situation\": \"...\",\n  \"action\": \"...\",\n  \"result\": \"...\"\n}"
+      }
+    ],
+    "thinking": {
+      "type": "adaptive"
+    },
+    "provider": {
+      "only": [
+        "Anthropic"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "system": "You must respond with valid JSON only. Do not include markdown code fences, explanations, or any text outside the JSON object."
+  },
+  "payload_sha256": "30aaba1bb1cbe63c1166e003ae131813d50621fda1729893555b40e18d82c048",
+  "endpoint": "https://openrouter.ai/api/v1/messages",
+  "status": "complete",
+  "started_utc": "2026-11-11T04:12:08Z",
+  "response": {
+    "id": "msg_011CgvVGsmw1MoVQpiodH2Pw",
+    "type": "message",
+    "role": "assistant",
+    "container": null,
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "Let me analyze this flagged moment carefully.\n\nThe student is working on a division problem that involves remainders expressed as fractions. They've correctly identified that 31 groups with 3 left over, and that 3/6 represents the fractional part. Now the tutor asks them to simplify 3/6.\n\nThe student says \"I don't know\" when asked to simplify 3/6, so scaffolding is appropriate here.\n\nThe tutor's action: First pushes for rigor by asking the student to simplify the fraction and explain how they know (Turn 154). When the student says they don't know (Turn 155), the tutor scaffolds by drawing a visual representation of 3/6 and asking a guiding question about comparing shaded to unshaded (Turn 156).\nNow I'm checking the boundaries of the moment, which runs from turn 152 to 156. Turn 152 has the tutor confirming 31 with 3 left over and asking for 3 out of 6 as a fraction, and at turn 153 the student correctly says 3/6. Turn 154 is where the tutor's next move starts.\n\nI'm weighing whether the student's lack of a response to the visual scaffold means we can't judge the outcome, even though the shift from a rigor push to a diagram seems well-matched to their confusion.\n\nI'm noting that the student can form the fraction 3/6 but hasn't yet shown they can simplify it, so the scaffolding fits that specific step.\n\n",
+        "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS00LjYtb3B1cy0yMDI2MDIwNXxhbnRocm9waWMifQ"
+      },
+      {
+        "type": "text",
+        "text": "{\n  \"situation\": \"This is an appropriate place to scaffold. The student correctly formed the fraction but was unable to simplify it when asked, explicitly saying they didn't know. The student needs support with equivalent fractions or simplification.\",\n  \"action\": \"The tutor initially pushes for rigor by asking the student to simplify the fraction and explain their reasoning. When the student says they don't know, the tutor pivots to scaffolding by presenting a visual diagram of the fraction and asking a guiding comparison question to lead the student toward recognizing the simplified form.\",\n  \"result\": \"The tutor's strategy is partially effective. The pivot from rigor to scaffolding is well-calibrated to the student's expressed confusion, and the visual representation is a reasonable scaffold. The student demonstrated a small win by correctly identifying the unsimplified fraction. However, the moment ends before we can see whether the student benefits from the visual scaffold, so there is insufficient evidence of a clear learning outcome from the scaffolding move itself.\"\n}",
+        "citations": []
+      }
+    ],
+    "model": "anthropic/claude-opus-4.6",
+    "stop_reason": "end_turn",
+    "stop_details": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 2562,
+      "output_tokens": 795,
+      "output_tokens_details": {
+        "thinking_tokens": 566
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard",
+      "cost": 0.032685,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.032685,
+        "upstream_inference_prompt_cost": 0.01281,
+        "upstream_inference_completions_cost": 0.019875
+      }
+    },
+    "context_management": null,
+    "provider": "Anthropic",
+    "openrouter_metadata": {
+      "requested": "anthropic/claude-opus-4.6",
+      "strategy": "direct",
+      "region": "EWR",
+      "summary": "available=1, selected=Anthropic",
+      "attempt": 1,
+      "is_byok": false,
+      "endpoints": {
+        "total": 6,
+        "available": [
+          {
+            "provider": "Anthropic",
+            "model": "anthropic/claude-4.6-opus-20260205",
+            "selected": true
+          }
+        ]
+      },
+      "generation_time": 17802
+    }
+  },
+  "usage": {
+    "input_tokens": 2562,
+    "output_tokens": 795,
+    "output_tokens_details": {
+      "thinking_tokens": 566
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard",
+    "cost": 0.032685,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.032685,
+      "upstream_inference_prompt_cost": 0.01281,
+      "upstream_inference_completions_cost": 0.019875
+    }
+  },
+  "reported_metadata": {
+    "requested": "anthropic/claude-opus-4.6",
+    "strategy": "direct",
+    "region": "EWR",
+    "summary": "available=1, selected=Anthropic",
+    "attempt": 1,
+    "is_byok": false,
+    "endpoints": {
+      "total": 6,
+      "available": [
+        {
+          "provider": "Anthropic",
+          "model": "anthropic/claude-4.6-opus-20260205",
+          "selected": true
+        }
+      ]
+    },
+    "generation_time": 17802
+  },
+  "text": "{\n  \"situation\": \"This is an appropriate place to scaffold. The student correctly formed the fraction but was unable to simplify it when asked, explicitly saying they didn't know. The student needs support with equivalent fractions or simplification.\",\n  \"action\": \"The tutor initially pushes for rigor by asking the student to simplify the fraction and explain their reasoning. When the student says they don't know, the tutor pivots to scaffolding by presenting a visual diagram of the fraction and asking a guiding comparison question to lead the student toward recognizing the simplified form.\",\n  \"result\": \"The tutor's strategy is partially effective. The pivot from rigor to scaffolding is well-calibrated to the student's expressed confusion, and the visual representation is a reasonable scaffold. The student demonstrated a small win by correctly identifying the unsimplified fraction. However, the moment ends before we can see whether the student benefits from the visual scaffold, so there is insufficient evidence of a clear learning outcome from the scaffolding move itself.\"\n}",
+  "cost_usd": 0.032685,
+  "elapsed_ms": 17953.807374999997
+}

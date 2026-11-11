@@ -1,0 +1,137 @@
+{
+  "tag": "325-judge-structure",
+  "kind": "judge",
+  "payload": {
+    "model": "anthropic/claude-opus-4.6",
+    "max_tokens": 8192,
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are classifying a teaching coach's analysis of a tutoring moment.\n\nYou will be given one or more descriptions of a tutor's actions during a tutoring moment. Your job is to determine whether the moment involves the tutor employing pedagogical strategies that relate to scaffolding or those that relate to pushing for rigor. \n\n**Scaffolding**\n\nScaffolding is pedagogical support that helps a student accomplish a task.\n\n- The tutor breaks down a problem into steps for the student.\n- The tutor draws a diagram and uses a real-world analogy to help the student.\n- The tutor rephrases the problem using simpler language or provides a simpler alternative. \n- The tutor asks guiding questions based on sub-steps to lead the student towards the solution. \n- The tutor fills in some of the steps for the student or provides a starting point.\n- The tutor models an example solution. \n- The tutor gives the student a hint, e.g. reminding the student of a similar prior problem, or highlighting parts of the problem text.\n- The tutor explains a concept or procedure. \n- The tutor presents a different representation or form of the problem to guide the student. \n- The tutor co-solves the problem with the student.\n- The tutor reduces answer options to simplify the problem. \n- The tutor gives away definitions, answers, or key steps to the problem.   \n\n**Rigor**\n\nRigor increases the level of conceptual challenge for the student. \n\n- The tutor has the student work on problems and/or struggle productively without support. \n- The tutor asks the student to justify, verbalize, or explain an answer, solution, or process. \n- The tutor increases problem complexity, e.g. whole numbers to decimals, one-step to two-step equations.\n- The tutor asks the student to define and/or use a key vocabulary term.\n- The tutor asks the student to find and fix their own error.\n- The tutor asks the student to explain why an answer is wrong.\n\nThough pushing for rigor can also involve questions (e.g. probing for reasoning), asking pinpointed, guiding questions is scaffolding, not a push for rigor. \n\n**Neither**\n\n- The tutor zooms in on the screen. \n- The tutor moves on. \n- The tutor presents the student with a game. \n- The tutor engages in off-topic conversation. \n- The tutor reads out the problem. \n- The tutor types in the student's answer. \n- The tutor clicks on the screen.\n- The tutor confirms the student's answer. \n\n# Your Task\n\nNow, examine the following actions taken by a tutor. Using the exemplars above as guidance, determine if rigor and scaffolding strategies are present. Return \"yes\" or \"no\" in a JSON object, e.g., {\"scaffolding\": \"no\", \"rigor\": \"yes\"}. If the list of actions conflicts on whether rigor occurred or not, or whether scaffolding occurred or not, lean \"yes\".  \n\nACTIONS: \n- The tutor pushes for rigor by asking the student to justify their answer.\n- The tutor asks the student to explain why an alternative (incorrect) answer is wrong.\n- When the student responds with a strong explanation, the tutor pushes further by posing a deeper conceptual question about whether a different shape could share the same perimeter but have a different area.\n- When the student expresses uncertainty, the tutor scaffolds by providing a specific starting value.\n- The tutor suggests the student sketch the shape.\n\n# Output Format\n\nRespond with valid JSON only:\n{\n  \"scaffolding\": \"\",\n  \"rigor\": \"\"\n}"
+      }
+    ],
+    "thinking": {
+      "type": "adaptive"
+    },
+    "provider": {
+      "only": [
+        "Anthropic"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "system": "You must respond with valid JSON only. Do not include markdown code fences, explanations, or any text outside the JSON object."
+  },
+  "payload_sha256": "900ae4e2570c5ea50e1821a88b86a319815ccf97351312848ab00a558d961d66",
+  "endpoint": "https://openrouter.ai/api/v1/messages",
+  "status": "complete",
+  "started_utc": "2026-11-11T04:13:37Z",
+  "response": {
+    "id": "msg_011CgvVPTbKejFcnzqJAN4qn",
+    "type": "message",
+    "role": "assistant",
+    "container": null,
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"scaffolding\":\"yes\",\"rigor\":\"yes\"}",
+        "citations": []
+      }
+    ],
+    "model": "anthropic/claude-opus-4.6",
+    "stop_reason": "end_turn",
+    "stop_details": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 890,
+      "output_tokens": 15,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard",
+      "cost": 0.004825,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.004825,
+        "upstream_inference_prompt_cost": 0.00445,
+        "upstream_inference_completions_cost": 0.000375
+      }
+    },
+    "context_management": null,
+    "provider": "Anthropic",
+    "openrouter_metadata": {
+      "requested": "anthropic/claude-opus-4.6",
+      "strategy": "direct",
+      "region": "EWR",
+      "summary": "available=1, selected=Anthropic",
+      "attempt": 1,
+      "is_byok": false,
+      "endpoints": {
+        "total": 6,
+        "available": [
+          {
+            "provider": "Anthropic",
+            "model": "anthropic/claude-4.6-opus-20260205",
+            "selected": true
+          }
+        ]
+      },
+      "generation_time": 1283
+    }
+  },
+  "usage": {
+    "input_tokens": 890,
+    "output_tokens": 15,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard",
+    "cost": 0.004825,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.004825,
+      "upstream_inference_prompt_cost": 0.00445,
+      "upstream_inference_completions_cost": 0.000375
+    }
+  },
+  "reported_metadata": {
+    "requested": "anthropic/claude-opus-4.6",
+    "strategy": "direct",
+    "region": "EWR",
+    "summary": "available=1, selected=Anthropic",
+    "attempt": 1,
+    "is_byok": false,
+    "endpoints": {
+      "total": 6,
+      "available": [
+        {
+          "provider": "Anthropic",
+          "model": "anthropic/claude-4.6-opus-20260205",
+          "selected": true
+        }
+      ]
+    },
+    "generation_time": 1283
+  },
+  "text": "{\"scaffolding\":\"yes\",\"rigor\":\"yes\"}",
+  "cost_usd": 0.004825,
+  "elapsed_ms": 1585.0744999999904
+}

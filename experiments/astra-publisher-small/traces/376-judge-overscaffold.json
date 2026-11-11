@@ -1,0 +1,142 @@
+{
+  "tag": "376-judge-overscaffold",
+  "kind": "judge",
+  "payload": {
+    "model": "anthropic/claude-opus-4.6",
+    "max_tokens": 8192,
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are restructuring a teaching coach's analysis of a tutoring moment.\n\nGiven a description of a tutor's actions in a tutoring interaction, extract textual clauses or spans that indicate or suggest the presence of over-scaffolding. Examples of textual spans that convey the presence of over-scaffolding: \n- \"The tutor ended up explaining the answer to the student, which allowed the student to just check out from their learning.\"\n- \"This appears to be a bit of over scaffolding.\"\n- \"The tutor did way too much scaffolding.\"\n- \"The tutor is doing a lot of teaching or talking at the student but the student is not given an opportunity to apply these skills at all.\"\n- \"The tutor almost added too much support at this point.\"\n- \"The tutor is still doing a lot of the academic work here.\"\n- \"Seemed like maybe over-scaffolding.\"\n- \"The tutor was giving away more than necessary.\" \n\nFocus on descriptions that indicate or suggest **excessive** or unwarranted levels of support, not necessary support or the mere presence of scaffolding at all. Under-rigor or ineffective strategies do not neccessarily entail over-scaffolding. Do not speculate; rely on the description's judgement. \n\n# Your task\n\nLook at the following description of a tutoring interaction, and return ONLY a valid JSON array of strings representing spans that suggest or indicate that the tutor is over-scaffolding. If the description does not include any indication of over-scaffolding, return an empty list. \n\nSituation: This is an appropriate place to push for rigor. The student is succeeding — they have correctly identified the skip-counting rule, extended the pattern forward, and extended it backward. The student is showing competence and could be challenged further.\nAction: The tutor mostly scaffolds by presenting structured pattern tasks and confirming answers, but includes a push for rigor at the end by asking the student to verify their answer using a different approach (counting forward to check). The tutor also guides the student through a backward extension of the pattern, which adds mild complexity.\nResult: The tutor's strategy is partially effective. The student demonstrates understanding throughout, correctly identifying the pattern rule and applying it in both directions. The final rigor move — asking the student to explain how they could verify their answer — is a meaningful metacognitive prompt. However, given the student's consistent success, the tutor could have pushed harder for independence or increased complexity rather than continuing to set up each sub-task and confirm answers along the way."
+      }
+    ],
+    "thinking": {
+      "type": "adaptive"
+    },
+    "provider": {
+      "only": [
+        "Anthropic"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "system": "You must respond with valid JSON only. Do not include markdown code fences, explanations, or any text outside the JSON object."
+  },
+  "payload_sha256": "41982eccb44583c31f57aedbc029ebf4388e133691fab8c251ae1a35c8b5e063",
+  "endpoint": "https://openrouter.ai/api/v1/messages",
+  "status": "complete",
+  "started_utc": "2026-11-11T04:14:59Z",
+  "response": {
+    "id": "msg_011CgvVVVJgqHkVbvZ2aa9kZ",
+    "type": "message",
+    "role": "assistant",
+    "container": null,
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "The description mentions that the tutor \"could have pushed harder for independence or increased complexity rather than continuing to set up each sub-task and confirm answers along the way.\" This suggests that the tutor was providing more structure than necessary given the student's demonstrated competence. Let me check if this rises to the level of indicating over-scaffolding.\n\nThe phrase \"continuing to set up each sub-task and confirm answers along the way\" when the student is showing consistent success suggests excessive support. But it's more of a mild suggestion rather than an explicit statement of over-scaffolding.\n\nLet me re-read carefully. The description says the tutor's strategy is \"partially effective\" and that \"given the student's consistent success, the tutor could have pushed harder for independence or increased complexity rather than continuing to set up each sub-task and confirm answers along the way.\"\nThe description says the tutor could have pushed for more independence instead of keeping the scaffolding in place, which points to the support outlasting what the student needed. The phrasing doesn't name over-scaffolding outright, but I think it fairly qualifies.\n\n",
+        "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS00LjYtb3B1cy0yMDI2MDIwNXxhbnRocm9waWMifQ"
+      },
+      {
+        "type": "text",
+        "text": "```json\n[\"given the student's consistent success, the tutor could have pushed harder for independence or increased complexity rather than continuing to set up each sub-task and confirm answers along the way\"]\n```",
+        "citations": []
+      }
+    ],
+    "model": "anthropic/claude-opus-4.6",
+    "stop_reason": "end_turn",
+    "stop_details": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 598,
+      "output_tokens": 326,
+      "output_tokens_details": {
+        "thinking_tokens": 277
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard",
+      "cost": 0.01114,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.01114,
+        "upstream_inference_prompt_cost": 0.00299,
+        "upstream_inference_completions_cost": 0.00815
+      }
+    },
+    "context_management": null,
+    "provider": "Anthropic",
+    "openrouter_metadata": {
+      "requested": "anthropic/claude-opus-4.6",
+      "strategy": "direct",
+      "region": "EWR",
+      "summary": "available=1, selected=Anthropic",
+      "attempt": 1,
+      "is_byok": false,
+      "endpoints": {
+        "total": 6,
+        "available": [
+          {
+            "provider": "Anthropic",
+            "model": "anthropic/claude-4.6-opus-20260205",
+            "selected": true
+          }
+        ]
+      },
+      "generation_time": 7388
+    }
+  },
+  "usage": {
+    "input_tokens": 598,
+    "output_tokens": 326,
+    "output_tokens_details": {
+      "thinking_tokens": 277
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard",
+    "cost": 0.01114,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.01114,
+      "upstream_inference_prompt_cost": 0.00299,
+      "upstream_inference_completions_cost": 0.00815
+    }
+  },
+  "reported_metadata": {
+    "requested": "anthropic/claude-opus-4.6",
+    "strategy": "direct",
+    "region": "EWR",
+    "summary": "available=1, selected=Anthropic",
+    "attempt": 1,
+    "is_byok": false,
+    "endpoints": {
+      "total": 6,
+      "available": [
+        {
+          "provider": "Anthropic",
+          "model": "anthropic/claude-4.6-opus-20260205",
+          "selected": true
+        }
+      ]
+    },
+    "generation_time": 7388
+  },
+  "text": "```json\n[\"given the student's consistent success, the tutor could have pushed harder for independence or increased complexity rather than continuing to set up each sub-task and confirm answers along the way\"]\n```",
+  "cost_usd": 0.01114,
+  "elapsed_ms": 7627.393124999998
+}

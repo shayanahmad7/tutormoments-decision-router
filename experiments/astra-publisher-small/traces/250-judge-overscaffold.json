@@ -1,0 +1,142 @@
+{
+  "tag": "250-judge-overscaffold",
+  "kind": "judge",
+  "payload": {
+    "model": "anthropic/claude-opus-4.6",
+    "max_tokens": 8192,
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are restructuring a teaching coach's analysis of a tutoring moment.\n\nGiven a description of a tutor's actions in a tutoring interaction, extract textual clauses or spans that indicate or suggest the presence of over-scaffolding. Examples of textual spans that convey the presence of over-scaffolding: \n- \"The tutor ended up explaining the answer to the student, which allowed the student to just check out from their learning.\"\n- \"This appears to be a bit of over scaffolding.\"\n- \"The tutor did way too much scaffolding.\"\n- \"The tutor is doing a lot of teaching or talking at the student but the student is not given an opportunity to apply these skills at all.\"\n- \"The tutor almost added too much support at this point.\"\n- \"The tutor is still doing a lot of the academic work here.\"\n- \"Seemed like maybe over-scaffolding.\"\n- \"The tutor was giving away more than necessary.\" \n\nFocus on descriptions that indicate or suggest **excessive** or unwarranted levels of support, not necessary support or the mere presence of scaffolding at all. Under-rigor or ineffective strategies do not neccessarily entail over-scaffolding. Do not speculate; rely on the description's judgement. \n\n# Your task\n\nLook at the following description of a tutoring interaction, and return ONLY a valid JSON array of strings representing spans that suggest or indicate that the tutor is over-scaffolding. If the description does not include any indication of over-scaffolding, return an empty list. \n\nSituation: This is an appropriate place to scaffold. The student correctly formed the fraction but was unable to simplify it when asked, explicitly saying they didn't know. The student needs support with equivalent fractions or simplification.\nAction: The tutor initially pushes for rigor by asking the student to simplify the fraction and explain their reasoning. When the student says they don't know, the tutor pivots to scaffolding by presenting a visual diagram of the fraction and asking a guiding comparison question to lead the student toward recognizing the simplified form.\nResult: The tutor's strategy is partially effective. The pivot from rigor to scaffolding is well-calibrated to the student's expressed confusion, and the visual representation is a reasonable scaffold. The student demonstrated a small win by correctly identifying the unsimplified fraction. However, the moment ends before we can see whether the student benefits from the visual scaffold, so there is insufficient evidence of a clear learning outcome from the scaffolding move itself."
+      }
+    ],
+    "thinking": {
+      "type": "adaptive"
+    },
+    "provider": {
+      "only": [
+        "Anthropic"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "system": "You must respond with valid JSON only. Do not include markdown code fences, explanations, or any text outside the JSON object."
+  },
+  "payload_sha256": "1dd1384ba619be1fafe4ad887f5b961dc78235413707e9c7e1460527b0abce5b",
+  "endpoint": "https://openrouter.ai/api/v1/messages",
+  "status": "complete",
+  "started_utc": "2026-11-11T04:12:29Z",
+  "response": {
+    "id": "msg_011CgvVJRxTeE2PQTVedTHzd",
+    "type": "message",
+    "role": "assistant",
+    "container": null,
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "The description discusses scaffolding but does not indicate over-scaffolding. The scaffolding is described as \"well-calibrated\" and \"appropriate.\" There are no spans suggesting excessive support.",
+        "signature": "EuwDCsQBCBMYAipAddyaxjsMgNvjsUz2m9E1eo58Q+m7hCsk4pdhqlj/haDrxUNj/ilIQYhT581yx1bntAg5LAnulV1q7hsilDbboDIPY2xhdWRlLW9wdXMtNC02OABCCHRoaW5raW5nWiQwZDk4M2YzZi00OWZhLTRhNDYtODI1NC1iMWJiMjQ5MWEyYTl6HnVwcm9mXzAxMUNndDQzbndnZk1NdnV4UFBUN05iR5oBEQoPY2xhdWRlLW9wdXMtNC02qAGw1s/XBhIMpq70p4h/ZGPXGxFKGgz3MY/p+ekrpJipeWAiMLd9+ZRoghI4iqmYKjTysbQL7Asa3JzvZbKkUcsnE6sabFSyyyUEhlcg5T7UcW19FyrUAY3PLgtIOcGSlHyup3dQt6eSpzRWkOpuKH2iHQ9QVr7QzSbm8CwdvokwsZUJRbaZRR6maAcU//6+x6rAoPUuk7tVGSZqX/9qmdGUmliG8NDYCEWlEP2PjEtGFIN1NXqmrNHlNZfkDvJchP51fhiZeftals+Z6I8A+tb2MAei7XMz2VzbmTB5lyiHu+ImC9bbcLpqDZlRcMsjiVfy3vbNUrU/FTBGW9XwYZcOyOcRP/iCDVsMkOQyKcpWR8EBHP8GPdTVTujXpDU6InpXyvcDiA3FhkTLGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS00LjYtb3B1cy0yMDI2MDIwNXxhbnRocm9waWMifQ"
+      },
+      {
+        "type": "text",
+        "text": "[]",
+        "citations": []
+      }
+    ],
+    "model": "anthropic/claude-opus-4.6",
+    "stop_reason": "end_turn",
+    "stop_details": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 595,
+      "output_tokens": 61,
+      "output_tokens_details": {
+        "thinking_tokens": 53
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard",
+      "cost": 0.0045,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0045,
+        "upstream_inference_prompt_cost": 0.002975,
+        "upstream_inference_completions_cost": 0.001525
+      }
+    },
+    "context_management": null,
+    "provider": "Anthropic",
+    "openrouter_metadata": {
+      "requested": "anthropic/claude-opus-4.6",
+      "strategy": "direct",
+      "region": "EWR",
+      "summary": "available=1, selected=Anthropic",
+      "attempt": 1,
+      "is_byok": false,
+      "endpoints": {
+        "total": 6,
+        "available": [
+          {
+            "provider": "Anthropic",
+            "model": "anthropic/claude-4.6-opus-20260205",
+            "selected": true
+          }
+        ]
+      },
+      "generation_time": 2520
+    }
+  },
+  "usage": {
+    "input_tokens": 595,
+    "output_tokens": 61,
+    "output_tokens_details": {
+      "thinking_tokens": 53
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard",
+    "cost": 0.0045,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0045,
+      "upstream_inference_prompt_cost": 0.002975,
+      "upstream_inference_completions_cost": 0.001525
+    }
+  },
+  "reported_metadata": {
+    "requested": "anthropic/claude-opus-4.6",
+    "strategy": "direct",
+    "region": "EWR",
+    "summary": "available=1, selected=Anthropic",
+    "attempt": 1,
+    "is_byok": false,
+    "endpoints": {
+      "total": 6,
+      "available": [
+        {
+          "provider": "Anthropic",
+          "model": "anthropic/claude-4.6-opus-20260205",
+          "selected": true
+        }
+      ]
+    },
+    "generation_time": 2520
+  },
+  "text": "[]",
+  "cost_usd": 0.0045,
+  "elapsed_ms": 2857.7103749999965
+}

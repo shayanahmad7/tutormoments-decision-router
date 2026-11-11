@@ -1,0 +1,142 @@
+{
+  "tag": "309-judge-annotate",
+  "kind": "judge",
+  "payload": {
+    "model": "anthropic/claude-opus-4.6",
+    "max_tokens": 8192,
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are an expert in pedagogy and an experienced teaching coach. A previous review of this tutoring transcript flagged the turn range below as a scaffolding-related moment (between >>> DETECTED MOMENT START <<< and >>> DETECTED MOMENT END <<<). Your task is to analyze the moment in detail.\n\n## Research Context\n\nWe are studying how tutors in K-12 math tutoring conversations decide to push for rigor in a session by asking students to do harder tasks or tasks that involve more metacognition, versus when they choose to introduce scaffolds that make problems more accessible for students. For each flagged moment, you will analyze the provided situation, and then summarize the tutor's strategy and how well it worked. \n\n### Scaffolding\n\nScaffolding is temporary, calibrated support that helps a student accomplish a task they cannot yet do independently. It is gradually removed as the student gains competence. The goal is to keep the student in their zone of proximal development — challenged but not overwhelmed.\n\nCommon scaffolding strategies:\n- The tutor breaks down a problem into steps for the student.\n- The tutor draws a diagram and uses a real-world analogy to help the student.\n- The tutor rephrases the problem using simpler language or provides a simpler alternative. \n- The tutor asks guiding questions based on sub-steps to lead the student towards the solution. \n- The tutor fills in some of the steps for the student or provides a starting point.\n- The tutor models an example solution. \n- The tutor gives the student a hint, e.g. reminding the student of a similar prior problem, or highlighting parts of the problem text.\n- The tutor explains a concept or procedure. \n- The tutor presents a different representation or form of the problem to guide the student. \n- The tutor co-solves the problem with the student.\n- The tutor reduces answer options to simplify the problem. \n\nOver-scaffolding occurs when the tutor provides support even though the student has demonstrated knowledge or competency, or does most of the cognitive lifting without giving openings for the student to participate. These moments include those when the tutor...\n- begins scaffolding before the student has shown what they can do.\n- gives away answers or key steps, over-explains, re-scaffolds, or oversimplifies.\n- jumps in during a student's productive struggle.\n\n### Rigor \n\nRigor means increasing the level of conceptual challenge for the student to foster critical thinking, independence, and deeper understanding. \n\nCommon strategies that push for rigor:\n- The tutor withdraws support and has the student work on problems independently and/or struggle productively. \n- The tutor asks the student to justify or explain an answer, solution, or process. \n- The tutor increases problem complexity, e.g. whole numbers to decimals, one-step to two-step equations.\n- The tutor asks the student to define and/or use a key vocabulary term.\n- The tutor asks the student to find and fix their own error.\n- The tutor asks the student to explain why an answer is wrong.\n\nThough pushing for rigor can also involve questioning (e.g. probing for reasoning), asking step-by-step guided questions that funnel the student towards the answer is scaffolding, not a push for rigor. \n\n## Effectiveness Guidance\n\nAt each moment, the tutor decides how much support to provide. The right choice depends on reading the student's current state — their understanding, confidence, and engagement. For a given key moment, you will summarize the situation, the tutor's actions, and the result. \n\nWhen evaluating the result, primarily consider the **student outcome**. Some evidence of effectiveness includes the student getting the problem correct, completing some steps of a problem, or showing engagement or confidence. Also consider small wins: the student explains reasoning, struggles productively, self-corrects, or applies a skill. Most cases where a student participates in co-problem-solving and progresses, including arriving at the correct answer with support, leans effective, even without a check of comprehension afterwards. Only provide observations; do not speculate.\n\nSecondarily, consider **scaffolding calibration**. Did the tutor scaffold or push for rigor appropriately? Heavy scaffolding is effective if the student genuinely lacks prerequisite knowledge or signals confusion. Lighter scaffolding is effective when a student does meaningful cognitive work (e.g. identifies operations, supplies intermediate answers, performs computations, self-corrects, or explains sub-steps) with the tutor's support and arrives at new understanding. Tutor-dominated co-solving where the student's contributions are limited while the tutor manages all higher-order reasoning may lean ineffective. For rigor-appropriate situations, the tutor may push for rigor and the student rises to the challenge. A single well-chosen rigor move (e.g., asking for an explanation) that the student responds to substantively is effective.\n\nAny approach leans ineffective if student signals are worsening. Confusion, struggle, and guessing are normal during learning, but if the moment concludes with no intermediate learning wins, it may lean ineffective. Also ineffective are cases when the tutor gives away answers or key reasoning steps that the student has shown the capacity to produce, and there is no evidence the student engaged with the explanation. An extended tutor monologue where the student only contributes 'okay,' 'yeah,' or 'mhm' with little participation leans ineffective, even if the student's final answer is correct. A tutor who makes a mistake or gives incorrect information also leans ineffective. \n\nAnother secondary consideration is **missed opportunities**, where the tutor took no substantive action in the appropriate direction at all. A moment with no discernible tutor strategy when one is needed leans ineffective. This includes moments where the tutor moves past student errors or confusion without scaffolding or allows a student who is coasting to continue without any challenge. Verbal encouragement, affirmation, or general confidence-building do not count as appropriate scaffolding or rigor when either is needed.\n\nSome actions are contentious, with evidence for both sides. Before deciding a moment is partially effective, use the student outcome to determine whether you should actually lean ineffective or effective instead. The tutor's action may be partially effective if:\n- The student eventually gets the correct answer, but the moment concludes with the student giving confused responses or unable to explain their reasoning.\n- Indicators of effectiveness are missing, ambiguous, or insufficient to be certain of effectiveness.\n- The tutor's intervention addressed one issue but missed another.\n\nA well-calibrated scaffold can be effective if the student demonstrates progress during it. The student is learning; do not downgrade a moment because the student struggles on problems later in the session. Also do not downgrade a moment simply because the tutor doesn't push for rigor after a successful scaffolding moment.  \n\n## Examples\n\nYour response MUST match the **brevity, level of abstraction, and format** of the following examples. Do not paraphrase what was said, reference specific turn numbers, or quote transcript content.\n\n### Example 1: \n{\n  \"situation\": \"This is an appropriate place to scaffold because the student has been making similar mistakes on multiple questions.\",\n  \"action\": \"The tutor is scaffolding. They ask guiding questions as the student works through a problem step-by-step.\",\n  \"result\": \"The tutor's strategy is effective, as the student was having some difficulty prior to this and eventually completes this problem correctly. The student also seems to be understanding the newly introduced concepts.\"\n}\n\n### Example 2: \n{\n  \"situation\": \"This would be an appropriate time to push for rigor, since the student is completing the task correctly.\",\n  \"action\": \"The tutor is mostly scaffolding. The tutor moves onto the next problem and starts off by providing a hint. The tutor shares a potential approach the student could use to solve the next problem.\",\n  \"result\": \"The tutor is not effective here because they offered too much support. Though the student arrives at the correct answer, the tutor gave away more than the student seems to need in this moment.\"\n}\n\n### Example 3: \n{\n  \"situation\": \"This would be an appropriate time to push for rigor, since the student is breezing through problems.\",\n  \"action\": \"The tutor pushes for rigor by proposing a harder problem. They also push by asking the student to explain their proposed process for this problem. When the student is unsure, the tutor scaffolds by setting up the initial step of the problem.\",\n  \"result\": \"The tutor is effective. The student is able to explain their rational and works through the problem. The student self-corrects an intermediate error.\"\n}\n\n## Your Task\n\nFor the flagged moment, provide:\n- **Situation**: First, state whether this moment is appropriate for scaffolding or rigor. Summarize the student's starting state (e.g. stuck, confused, succeeding, coasting), and what pedagogical context makes this moment appropriate for scaffolding or rigor.  \n- **Action**: Examine the tutor's actions within the moment boundaries. Explicitly state when the tutor scaffolds and when they push for rigor. Scan the strategies in the lists above and, if applicable, use similar phrasing to convey the tutor's general approach or strategy.\n- **Result**: Was the tutor's strategy effective, ineffective, or partially effective? Assess the current problem arc; refrain from commenting on student performance on subsequent problems. Note any and all student learning, engagement, and understanding wins, even if small. \n\nIMPORTANT: Avoid discussing low-level details (e.g. specific numbers in the math problem or quotes from the conversation). Keep your output high-level like the examples above; do NOT give a turn by turn recap.\n\nThe following excerpt contains the flagged turn range. The surrounding turns provide context; summarize ONLY tutor actions that occur between >>> DETECTED MOMENT START <<< and >>> DETECTED MOMENT END <<<. A team of teachers believe that this moment is appropriate for scaffolding.\n\n[... turns 1-309 omitted ...]\n\n>>> DETECTED MOMENT START (Turn 310) <<<\nTurn 310. TUTOR: Let’s check B, which is 1. Could you start with 1, take away 37, and have 38 left? Explain your thinking. <<<\nTurn 311. STUDENT: Um, no. <<<\nTurn 312. TUTOR: Right—1 doesn’t work. If taking away 37 leaves you with 38, how could you work backward to find how many you started with? <<<\nTurn 313. STUDENT: Um, subtract them? <<<\nTurn 314. TUTOR: Imagine ⭐ is how many blocks you started with. You move 37 blocks into a box, and 38 stay on the table. How could you use those two groups to find how many blocks you started with? <<<\n>>> DETECTED MOMENT END (Turn 314) <<<\n\n## Output Format\n\nRespond with valid JSON only:\n{\n  \"situation\": \"...\",\n  \"action\": \"...\",\n  \"result\": \"...\"\n}"
+      }
+    ],
+    "thinking": {
+      "type": "adaptive"
+    },
+    "provider": {
+      "only": [
+        "Anthropic"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "system": "You must respond with valid JSON only. Do not include markdown code fences, explanations, or any text outside the JSON object."
+  },
+  "payload_sha256": "4c736fa8a1c8c1bace00232288c5a21dd851da2aee5137f0fd31eb6f353af1fb",
+  "endpoint": "https://openrouter.ai/api/v1/messages",
+  "status": "complete",
+  "started_utc": "2026-11-11T04:10:48Z",
+  "response": {
+    "id": "msg_011CgvVAyb1BrzdUbY7L1k4t",
+    "type": "message",
+    "role": "assistant",
+    "container": null,
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "Let me analyze this flagged moment carefully.\n\nThe student is working on a problem where they need to find the starting number such that when 37 is taken away, 38 remains. The answer would be 75 (37 + 38).\n\nThe tutor is checking answer choice B (which is 1) and asking the student to evaluate whether it works.\n\nThe student correctly identifies that 1 doesn't work, but when asked how to work backward, the student says \"subtract them\" — which is incorrect (they should add). The tutor then scaffolds by using a real-world analogy (blocks on a table, blocks in a box) to help the student think about combining the two groups.\nI'm weighing the tutor's blocks analogy against the student's subtraction slip, and I can't yet see whether the student will connect it to adding the two groups. The student did rule out answer 1, which is a modest step forward.\n\nI'm weighing whether the tutor's blocks analogy will help the student see that the two groups need to be added, not subtracted. Since the moment stops before the student responds, I can't yet tell if the analogy works, though the student did correctly rule out answer 1.\n\nI'm still weighing whether the analogy will be enough to get the student past their confusion about the operation.\n\n",
+        "signature": "Ep8UCsQBCBMYAipANKQyD8JvQNiXwXzCqo++z404w8+GLCtw9uNAj5UNfD5Wpcl/JsbAdofOQ/5biCBx1zPBHuTibhbIeoaQBaKwVzIPY2xhdWRlLW9wdXMtNC02OABCCHRoaW5raW5nWiQwZDk4M2YzZi00OWZhLTRhNDYtODI1NC1iMWJiMjQ5MWEyYTl6HnVwcm9mXzAxMUNndDQzbndnZk1NdnV4UFBUN05iR5oBEQoPY2xhdWRlLW9wdXMtNC02qAHX1c/XBhIMeT7OaXsEEKU5p310Ggz2LVLxgEwQayZhWGoiMN/+TktntFo5t2xLeKgK4bHInkyiZdBali/ZJeNdvejFhom0JC3jevKMESWWT2WeciqHEpWpB4bxJ4NSMynMjCCmWFqeq4OeRpocVMJ38H8T5QA4bP1vQuGmbc3UGUgZV/cnHfpmpfOcQVchKqx5+hKxOrg3BJ+Kspt7DsK1BC00HrZr2fyl3UaEInZ3D/4ukfUz/76A2DNKG2WO3OcCPHHLC7B5YZ6u4szqdcMBCxC3wijffZm8YoTWFCfywBCuh7hwA5EeJ93YwjLoqEct6/qSL+rDooMnWJl7IiJ7CJIzWHrFujSa7BoXJgz3rfELIEoiynwk2Hd+GQIFrLRnHJhnnEDrZpMR0FHwRiAtSzGMfijpEvsyN6SFjz7qb+tv7+4af/ZaZWU4/aAZxLwf4VH/83Y/DQ36DytitVs7A742mDwToAAoCYS+oqp/XvGMh2JlvmYM/BRV9wWN4nmKc0BXCjuI+d6qtaNvNYC6UZpqKWUA0AabOBuMp2tCsOUhPmAZ9ukcOqS+5MxzFvRotUoO6BZqDuCLoDigILrhrsOpOu1RkkN55kGFuCb329QcJQkdtujctDxsoTT6Cp0aHWrgCNbqTGTd7McJjnEhaiPsXSPC7DLaiDpg9Enk+XFMucv4EnKIalegGob94xl7gZ34hXXb5HmrkBbIPWKQEgx2NRwrsvlwNjDg6WEIFhyqUfQN2BNU2vFAkqtkzE/O7xSZ3CQjQx9AHFL0uRCBBJgPsl5f+ulEZd60fL0JOH6gYdZ5Rl4qrwfK3YRykNgh+N5N7gghtPCiiFC96nhRbRrSEYf5snPG9VyElKPG/23N9oDPL9MkcQ0bslT9UWnkToMWhXtE2mxZK/EOwiE+X8y8JLuKhdbFEnXIuJ6MeeX+eOfvWt1ISxyP9h3WK21lftWaxPgm5/vqhguvslGpoEYjYvFbGH5drYc1+aMqfVMgf21klE9CgvpslBn+/Arz9ABm+N75GTUEDwp8lf4IPy3LJ+UeKvFEsZrWXM+I+FVOSjCa3D6+2QdbP5HTTNZV+06smayHPYy5VDzaTbo44Y/0x7McJkOLrwuPz3N5VIyLFK/YbBz/YcQL/VHj1nSp/WEFP91y6vQn43YDbfUbSPCqKXftH7xed5Ps8JYo+UZN37FOOktj7XunCRdPKLmahoi0r9MxSl6EkX6NXT6vw3s8k0DFslzR7zWr2HPfaC8gUKP4hqssy0TU4cNyi+sWkoS4UVg8jXGDV6wkJj/aOZko+lxwYZd5fh9wmLZkcKfoHglnhfj6ASS1wzQ5h2eH+twgkdgsT2tOf2kb9aTcrcTNgR+N7QFFEo+CLx37mLhDW8PkuQxe/ov0MjPWpMIAemc7IjClCHyRRFvAcKwTwFtYRRJwJ5K2h7025VNetIZJgVLTzC2XIdmb9Gg2hcMXNWlYh5ZCwuANhaiOYvLucwFjKNAakP9wYvsXf58+qm4/c+AiF7zUdNPufTaTgB1CLfeQiqorCv6CCPz3bGeKJLlE7hxfnoWvyUH8l+Ff6osuM/OiVCjkpwWFRfU5+icFc9u4MJeKrf0qh8ceYlV4Jx23mn5YFhKc7KPkgbzlEP2ya20CQji9RuV7ezpeislt8qEOPjkgqtZ5o/V0R7z4USlyRF0jf4iizIMX/Lt+J6pB7xPjykfthl8UnJNiPueXZnZWaDQRM5KrL7aPxl1atHR0Wl2hqZ2IIyI/j+jGzhi0vKulyQHJQS5rUHYa4coRp00Js4Avqt/RJPhacc0l6BmO9VdkShl295DmmIz3E0+UBEtemvtHPTp2S8HE+gsVACMRaX/Jt0L8HlEC/5KqBWB0j3elarT1tG3ZdqXiEKxThaHscJbFwAfnxWdkVWQBqebqJivD+Te98OvXUvOpUqZ/pTWYt1roHrSMhL1TeDH3fUuxEiOZIp52wRqL42TcIBNx2HILbPOgPr++3tsHDfHT3f4eqDXEEQkYm+8mWZjZm1gLt3yv0mRUZd7XyX2CwVV7Z3z8s1dpmjUFtY7O8syvhdl3WYorLl+Uj+Fe2lTpkHvtRqAfcpHsH6jzH2OskF7be3NjYnz23XJ66EvKnmvqkOVgeb0/5HAGEOHeMR6Xm65L+EWFUhSNMywW/arxNaA9+8sCuEE7CnfF2WLImX7PkQphWRNlrgBw0xE5PPML2A+aqQfdNQL71Xzq4biIrIoEsGui7bdbFnztt7k6QQ5u60viP/GU5ycsd1OtcJwysLHoKtwNLrN9x6ccZhF7tT74dtklMaphdX//e9xG77qfK9VWyikTrtQQxXFW6WoJmHphB4nmQ0v8kHi1LCGOqiskQMnT709Zn2YHVE0TpKwfirGwPq6stXrLV2+f4sZ8oyZqLbbOXIG8V3Af4Ixt040S/HFWGfdUIG5qs1T0wYjNLJex9Q3l3gYMtUUcwEQhNhm1DbncsSz27IeQGx1zamMIJxPO/gRO7GDBIEiebf3v9OeT9RXLGhkwH6rs+jdxiVryVGcvXEuVKxdJsi2uh1xx4878V2RbzHzzCT6vpHTfYt0nS3tbHyg5ekzv6ABX3qHBfhPLpDqO1Uxi4CZKG91UKld5N4DFRIpv2TIusBHCqTH5rBtfyeWOafKuQ4hnZPCSZB5qQIGebEQ5r4QTcd9XIN0oDzkVhcDGvVxVK/eoSeSLVB3+QpZ9GzAuv3ocoQO9Yy81vNDeecG8PzfGjT7Q42E5TmIDCIxAN0c1YzohohXCRqPKNzQDqRwsf/1c7BryeVyzFSXHFy3oesitm256wvZ1RWMXGnMjTY7SmgKC+vrBm2conAE2/DEd9VM++S+usXGX0pj1oPUU5ErcNsdg+gwrn3QTI6qunjK2AbTin0pomsjqS6p9YGUz7eRcgAigqZQzdfnLjTSz4e2pjAnrME0zX4WOo3yDPmKQi06vuD3Z4k+AttV/vV+HhGVbQe78C+aUUs1r0EgVj9u8kAZKXEtdj8ryTVuHnywwKhdiEWeADDnW0MZISjDA2v9Ic32jSKmoGW5MLTpnxb7f0m3W6CmjNEMxvwLbJeY5gB4cmA/v7v5nbMqE5vd6PrJrYkA9vTBbOvC6Jg08f6GTm9/zCLbyJ0bMV/8W8bNvEjCXr1a30EqWld5KJqyYyFg1VFcGhD9ZLJ24fTIYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS00LjYtb3B1cy0yMDI2MDIwNXxhbnRocm9waWMifQ"
+      },
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"situation\": \"This is an appropriate place to scaffold because the student is struggling with the concept of inverse operations. When asked how to work backward from the result, the student incorrectly suggests subtraction, indicating a misunderstanding of how to reverse the operation to find the starting value.\",\n  \"action\": \"The tutor scaffolds in multiple ways. First, they guide the student to evaluate and eliminate an incorrect answer choice. When the student incorrectly proposes subtraction as the backward strategy, the tutor introduces a concrete real-world analogy involving blocks on a table and blocks in a box to help the student visualize combining two groups to find the original total.\",\n  \"result\": \"The tutor's strategy is partially effective. The student achieves a small win by correctly recognizing that the wrong answer choice doesn't work, but the student's suggestion of subtraction reveals persistent confusion about the inverse operation needed. The moment ends before the student can respond to the tutor's analogy, so it is unclear whether the scaffolding resolved the underlying misconception.\"\n}\n```",
+        "citations": []
+      }
+    ],
+    "model": "anthropic/claude-opus-4.6",
+    "stop_reason": "end_turn",
+    "stop_details": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 2557,
+      "output_tokens": 767,
+      "output_tokens_details": {
+        "thinking_tokens": 527
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard",
+      "cost": 0.03196,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.03196,
+        "upstream_inference_prompt_cost": 0.012785,
+        "upstream_inference_completions_cost": 0.019175
+      }
+    },
+    "context_management": null,
+    "provider": "Anthropic",
+    "openrouter_metadata": {
+      "requested": "anthropic/claude-opus-4.6",
+      "strategy": "direct",
+      "region": "EWR",
+      "summary": "available=1, selected=Anthropic",
+      "attempt": 1,
+      "is_byok": false,
+      "endpoints": {
+        "total": 6,
+        "available": [
+          {
+            "provider": "Anthropic",
+            "model": "anthropic/claude-4.6-opus-20260205",
+            "selected": true
+          }
+        ]
+      },
+      "generation_time": 18152
+    }
+  },
+  "usage": {
+    "input_tokens": 2557,
+    "output_tokens": 767,
+    "output_tokens_details": {
+      "thinking_tokens": 527
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard",
+    "cost": 0.03196,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.03196,
+      "upstream_inference_prompt_cost": 0.012785,
+      "upstream_inference_completions_cost": 0.019175
+    }
+  },
+  "reported_metadata": {
+    "requested": "anthropic/claude-opus-4.6",
+    "strategy": "direct",
+    "region": "EWR",
+    "summary": "available=1, selected=Anthropic",
+    "attempt": 1,
+    "is_byok": false,
+    "endpoints": {
+      "total": 6,
+      "available": [
+        {
+          "provider": "Anthropic",
+          "model": "anthropic/claude-4.6-opus-20260205",
+          "selected": true
+        }
+      ]
+    },
+    "generation_time": 18152
+  },
+  "text": "```json\n{\n  \"situation\": \"This is an appropriate place to scaffold because the student is struggling with the concept of inverse operations. When asked how to work backward from the result, the student incorrectly suggests subtraction, indicating a misunderstanding of how to reverse the operation to find the starting value.\",\n  \"action\": \"The tutor scaffolds in multiple ways. First, they guide the student to evaluate and eliminate an incorrect answer choice. When the student incorrectly proposes subtraction as the backward strategy, the tutor introduces a concrete real-world analogy involving blocks on a table and blocks in a box to help the student visualize combining two groups to find the original total.\",\n  \"result\": \"The tutor's strategy is partially effective. The student achieves a small win by correctly recognizing that the wrong answer choice doesn't work, but the student's suggestion of subtraction reveals persistent confusion about the inverse operation needed. The moment ends before the student can respond to the tutor's analogy, so it is unclear whether the scaffolding resolved the underlying misconception.\"\n}\n```",
+  "cost_usd": 0.03196,
+  "elapsed_ms": 18351.019167000006
+}

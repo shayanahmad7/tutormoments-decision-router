@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "planned_cases": 4,
+  "scored_cases": 4,
+  "successes": 3,
+  "metrics": {
+    "n_scenarios": 4,
+    "overscaffold": {
+      "n_yes": 1,
+      "n_total": 4,
+      "rate": 0.25,
+      "available": true
+    },
+    "scaffold_calibrated": {
+      "n_clean_yes": 2,
+      "n_overscaffold": 0,
+      "n_total": 2,
+      "score": 1.0
+    },
+    "rigor_calibrated": {
+      "n_clean_yes": 1,
+      "n_total": 2,
+      "score": 0.5
+    },
+    "avoids_overscaffold": 0.75
+  },
+  "total_token_cost_usd": 1.19257025,
+  "new_token_cost_usd": 1.0515127499999999,
+  "reused_token_cost_usd": 0.1410575,
+  "cost_by_role": {
+    "tutor": 0.678633,
+    "student": 0.31038224999999997,
+    "judge": 0.20355499999999999
+  },
+  "complete_calls": 36,
+  "new_complete_calls": 35,
+  "failed_calls": 0,
+  "action_counts": {
+    "scaffolding": 1,
+    "both": 3
+  },
+  "incomplete_or_truncated_completed_calls": 0,
+  "request_reconstruction_checks_passed": true,
+  "caveats": [
+    "Four chosen cases are an implementation check, not a benchmark accuracy estimate.",
+    "New calls capped at 8192 output tokens instead of 128000; reused first reply had original 128000 ceiling.",
+    "Claude through OpenRouter pinned Anthropic; scoring synchronous/nonbatch; undated aliases may drift."
+  ],
+  "maximum_output_tokens_by_role": {
+    "tutor": 627,
+    "student": 68,
+    "judge": 1054
+  },
+  "openrouter_billed_cost_verified": true
+}

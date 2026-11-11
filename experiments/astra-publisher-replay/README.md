@@ -1,6 +1,8 @@
 # Astra under the original TutorMoments conditions
 
-## Current status: awaiting OpenRouter credit
+> Update: the user requested a smaller, inexpensive test. A separate [four-case original-prompt replay](../astra-publisher-small/README.md) is now complete, using an explicitly disclosed 8,192-token ceiling for new calls. It passed 3/4 and required no top-up. This frozen 20-case/128,000-token setup remains unmodified and incomplete; the status below is its historical state.
+
+## Historical status: blocked by OpenRouter credit
 
 The original-protocol replication is prepared for the same 20 moments as the earlier decision-only pilot. One Astra tutor call completed with the publisher's exact evaluation-aware instructions. The first Claude student call was rejected before provider generation because OpenRouter's available balance did not cover the publisher's 128,000-token output ceiling. No complete replay has been scored. **There is no replication accuracy result yet.** Completed-call token cost: $0.1410575. The failed trace's $3.47235 value is a conservative worst-case reservation, not an observed charge.
 

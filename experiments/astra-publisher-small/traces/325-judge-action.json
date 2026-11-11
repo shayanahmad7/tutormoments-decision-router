@@ -1,0 +1,142 @@
+{
+  "tag": "325-judge-action",
+  "kind": "judge",
+  "payload": {
+    "model": "anthropic/claude-opus-4.6",
+    "max_tokens": 8192,
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are restructuring a teaching coach's analysis of a tutoring moment.\n\nGiven a description of a tutor's actions in a tutoring interaction, decompose it into short, standalone, atomic facets. Focus ONLY on extracting actions the tutor did or did not do. Exclude events and actions that are hypothetical (e.g. things the description says should have occurred).  \n\n# Examples\n\nINPUT\nThe tutor sees that the student knows the correct answer and then asks the student to explain why the answer is correct.\nOUTPUT\n[\"The tutor sees that the student knows the correct answer.\", \"The tutor asks the student to explain why the answer is correct.\"]\n\nINPUT\nThe tutor breaks the question down into smaller more manageable chunks and asks prompting questions.\nOUTPUT\n[\"The tutor breaks the question down into smaller more mangeable chunks.\", \"The tutor asks prompting questions.\"]\n\nINPUT\nEncouraging, reminding, waiting\nOUTPUT\n[\"The tutor is encouraging.\", \"The tutor is reminding.\", \"The tutor is waiting.\"]\n\nINPUT\nThe tutor's strategy is to again tell the student they are adding 10 when it should be 5.\nOUTPUT\n[\"The tutor's strategy is to again tell the student they are adding 10 when it should be 5.\"]\n\nINPUT\nThe tutor didn't push the student. They should've asked probing questions. \nOUTPUT\n[\"The tutor didn't push the student.\"]\n\nINPUT\nThe tutor told the student to compare this to an input output table. If the tutor had told the student to skip count instead of input-output, it would've been more effective.\nOUTPUT\n[\"The tutor told the student to compare this to an input output table.\"]\n\n# Your task\n\nNow, look at the following description of a tutor's actions, and return ONLY a valid JSON array of strings representing standalone facets that correspond to something the tutor did. If the description is entirely about hypothetical or non-occurring events/actions, return an empty list. \n\nAction description:\nThe tutor pushes for rigor by asking the student to justify their answer and explain why an alternative (incorrect) answer is wrong. When the student responds with a strong explanation, the tutor pushes further by posing a deeper conceptual question about whether a different shape could share the same perimeter but have a different area. When the student expresses uncertainty, the tutor scaffolds by providing a specific starting value and suggesting the student sketch the shape."
+      }
+    ],
+    "thinking": {
+      "type": "adaptive"
+    },
+    "provider": {
+      "only": [
+        "Anthropic"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "system": "You must respond with valid JSON only. Do not include markdown code fences, explanations, or any text outside the JSON object."
+  },
+  "payload_sha256": "e86eeafb055e47376ef33cc435c46030950a98ec436808e6253e7d70b45dc3e5",
+  "endpoint": "https://openrouter.ai/api/v1/messages",
+  "status": "complete",
+  "started_utc": "2026-11-11T04:13:33Z",
+  "response": {
+    "id": "msg_011CgvVP9fogLz2fX7vsUWAQ",
+    "type": "message",
+    "role": "assistant",
+    "container": null,
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "Let me decompose this into atomic facets about what the tutor did.",
+        "signature": "EuoCCsQBCBMYAipAuyvV3EQlUuXOoyXAd9ODYIvjXAA7DV+eLDtkSLeBjbnQFGI/eIEWwm0d0LTK2kf1Dn7LnoU4/mQLmxHwaHrQ6DIPY2xhdWRlLW9wdXMtNC02OABCCHRoaW5raW5nWiQwZDk4M2YzZi00OWZhLTRhNDYtODI1NC1iMWJiMjQ5MWEyYTl6HnVwcm9mXzAxMUNndDQzbndnZk1NdnV4UFBUN05iR5oBEQoPY2xhdWRlLW9wdXMtNC02qAHv1s/XBhIMfJU+PkOvGULHbe2YGgw1S6n5h1jY7GsoLsQiMNRMLDsWKDF9R1W+Jpn3indBiSbAPOXCQTpHnUzYRibbBrIUu6CVhamY4jjrEAMKpSpT2u90hH37MMPoEklVslxup8XfkB4eIpNEaFnZPcIcFsbWafFnC1FlYwOCOxfqn7md6TOL5lwTG0mAF0K2rQJvTtZUxX1qkk+K10p1vKHb3f/GXvQYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS00LjYtb3B1cy0yMDI2MDIwNXxhbnRocm9waWMifQ"
+      },
+      {
+        "type": "text",
+        "text": "[\"The tutor pushes for rigor by asking the student to justify their answer.\", \"The tutor asks the student to explain why an alternative (incorrect) answer is wrong.\", \"When the student responds with a strong explanation, the tutor pushes further by posing a deeper conceptual question about whether a different shape could share the same perimeter but have a different area.\", \"When the student expresses uncertainty, the tutor scaffolds by providing a specific starting value.\", \"The tutor suggests the student sketch the shape.\"]",
+        "citations": []
+      }
+    ],
+    "model": "anthropic/claude-opus-4.6",
+    "stop_reason": "end_turn",
+    "stop_details": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 581,
+      "output_tokens": 145,
+      "output_tokens_details": {
+        "thinking_tokens": 28
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard",
+      "cost": 0.00653,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00653,
+        "upstream_inference_prompt_cost": 0.002905,
+        "upstream_inference_completions_cost": 0.003625
+      }
+    },
+    "context_management": null,
+    "provider": "Anthropic",
+    "openrouter_metadata": {
+      "requested": "anthropic/claude-opus-4.6",
+      "strategy": "direct",
+      "region": "EWR",
+      "summary": "available=1, selected=Anthropic",
+      "attempt": 1,
+      "is_byok": false,
+      "endpoints": {
+        "total": 6,
+        "available": [
+          {
+            "provider": "Anthropic",
+            "model": "anthropic/claude-4.6-opus-20260205",
+            "selected": true
+          }
+        ]
+      },
+      "generation_time": 2582
+    }
+  },
+  "usage": {
+    "input_tokens": 581,
+    "output_tokens": 145,
+    "output_tokens_details": {
+      "thinking_tokens": 28
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard",
+    "cost": 0.00653,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00653,
+      "upstream_inference_prompt_cost": 0.002905,
+      "upstream_inference_completions_cost": 0.003625
+    }
+  },
+  "reported_metadata": {
+    "requested": "anthropic/claude-opus-4.6",
+    "strategy": "direct",
+    "region": "EWR",
+    "summary": "available=1, selected=Anthropic",
+    "attempt": 1,
+    "is_byok": false,
+    "endpoints": {
+      "total": 6,
+      "available": [
+        {
+          "provider": "Anthropic",
+          "model": "anthropic/claude-4.6-opus-20260205",
+          "selected": true
+        }
+      ]
+    },
+    "generation_time": 2582
+  },
+  "text": "[\"The tutor pushes for rigor by asking the student to justify their answer.\", \"The tutor asks the student to explain why an alternative (incorrect) answer is wrong.\", \"When the student responds with a strong explanation, the tutor pushes further by posing a deeper conceptual question about whether a different shape could share the same perimeter but have a different area.\", \"When the student expresses uncertainty, the tutor scaffolds by providing a specific starting value.\", \"The tutor suggests the student sketch the shape.\"]",
+  "cost_usd": 0.00653,
+  "elapsed_ms": 2763.5115420000034
+}

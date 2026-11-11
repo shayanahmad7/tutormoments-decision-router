@@ -2,9 +2,17 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-## Original-protocol replication: prepared, credit blocked
+## Latest: four original-prompt Astra tutoring replays completed
 
-The previous 65% result used our binary-decision prompt, not the publisher's original tutoring prompt. It cannot be compared directly with the website's approximately 92.7% tutoring-replay score. A [20-case original-protocol replication](experiments/astra-publisher-replay/README.md) now preserves their tutor prompt, five-speaking-call exchange, Claude Opus 4.6 student and scorer, and original scoring rule. The first Astra reply completed; OpenRouter then rejected the student request because the balance could not cover the original 128,000-token output ceiling. **No complete replay score is available yet.** Completed-call token cost is $0.1411. The run awaits the user's credit update.
+Astra ran through the **official OpenAI API** with the publisher's unchanged evaluation-aware tutoring instructions. The original Claude Opus 4.6 student and judge were retained through OpenRouter, pinned to Anthropic. **Three of four replays passed** the publisher's scoring rule: scaffolding 2/2, rigor 1/2. One rigor replay contained both action types but failed because the judge found over-scaffolding.
+
+New token usage cost **$1.0515**, or **$1.1926** including the reused first reply. All four planned cases completed, with no API failures or truncated outputs. New calls used an explicitly disclosed 8,192-token output ceiling instead of the original 128,000; the largest output was 1,054 tokens. This four-case implementation check is not a benchmark accuracy estimate or an exact replication of every generation setting. No top-up was needed, and no larger run was launched.
+
+[Full report](experiments/astra-publisher-small/README.md), [readable replays and scorer judgments](experiments/astra-publisher-small/Readable%20replays.md), [four-case results](experiments/astra-publisher-small/Four%20replay%20results.csv). The original 20-case setup below remains preserved and was not resumed.
+
+## Earlier: original 128,000-token setup, not resumed
+
+The previous 65% result used our binary-decision prompt, not the publisher's original tutoring prompt. It cannot be compared directly with the website's approximately 92.7% tutoring-replay score. A [20-case original-protocol replication](experiments/astra-publisher-replay/README.md) now preserves their tutor prompt, five-speaking-call exchange, Claude Opus 4.6 student and scorer, and original scoring rule. The first Astra reply completed; OpenRouter then rejected the student request because the balance could not cover the original 128,000-token output ceiling. **No complete replay score is available yet.** Completed-call token cost is $0.1411. That exact-ceiling setup was not resumed; the completed four-case budget adaptation is linked above.
 
 ## Latest: small Astra decision pilot and routing assessment
 

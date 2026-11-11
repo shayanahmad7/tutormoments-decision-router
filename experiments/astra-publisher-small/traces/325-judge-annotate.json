@@ -1,0 +1,142 @@
+{
+  "tag": "325-judge-annotate",
+  "kind": "judge",
+  "payload": {
+    "model": "anthropic/claude-opus-4.6",
+    "max_tokens": 8192,
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are an expert in pedagogy and an experienced teaching coach. A previous review of this tutoring transcript flagged the turn range below as a scaffolding-related moment (between >>> DETECTED MOMENT START <<< and >>> DETECTED MOMENT END <<<). Your task is to analyze the moment in detail.\n\n## Research Context\n\nWe are studying how tutors in K-12 math tutoring conversations decide to push for rigor in a session by asking students to do harder tasks or tasks that involve more metacognition, versus when they choose to introduce scaffolds that make problems more accessible for students. For each flagged moment, you will analyze the provided situation, and then summarize the tutor's strategy and how well it worked. \n\n### Scaffolding\n\nScaffolding is temporary, calibrated support that helps a student accomplish a task they cannot yet do independently. It is gradually removed as the student gains competence. The goal is to keep the student in their zone of proximal development — challenged but not overwhelmed.\n\nCommon scaffolding strategies:\n- The tutor breaks down a problem into steps for the student.\n- The tutor draws a diagram and uses a real-world analogy to help the student.\n- The tutor rephrases the problem using simpler language or provides a simpler alternative. \n- The tutor asks guiding questions based on sub-steps to lead the student towards the solution. \n- The tutor fills in some of the steps for the student or provides a starting point.\n- The tutor models an example solution. \n- The tutor gives the student a hint, e.g. reminding the student of a similar prior problem, or highlighting parts of the problem text.\n- The tutor explains a concept or procedure. \n- The tutor presents a different representation or form of the problem to guide the student. \n- The tutor co-solves the problem with the student.\n- The tutor reduces answer options to simplify the problem. \n\nOver-scaffolding occurs when the tutor provides support even though the student has demonstrated knowledge or competency, or does most of the cognitive lifting without giving openings for the student to participate. These moments include those when the tutor...\n- begins scaffolding before the student has shown what they can do.\n- gives away answers or key steps, over-explains, re-scaffolds, or oversimplifies.\n- jumps in during a student's productive struggle.\n\n### Rigor \n\nRigor means increasing the level of conceptual challenge for the student to foster critical thinking, independence, and deeper understanding. \n\nCommon strategies that push for rigor:\n- The tutor withdraws support and has the student work on problems independently and/or struggle productively. \n- The tutor asks the student to justify or explain an answer, solution, or process. \n- The tutor increases problem complexity, e.g. whole numbers to decimals, one-step to two-step equations.\n- The tutor asks the student to define and/or use a key vocabulary term.\n- The tutor asks the student to find and fix their own error.\n- The tutor asks the student to explain why an answer is wrong.\n\nThough pushing for rigor can also involve questioning (e.g. probing for reasoning), asking step-by-step guided questions that funnel the student towards the answer is scaffolding, not a push for rigor. \n\n## Effectiveness Guidance\n\nAt each moment, the tutor decides how much support to provide. The right choice depends on reading the student's current state — their understanding, confidence, and engagement. For a given key moment, you will summarize the situation, the tutor's actions, and the result. \n\nWhen evaluating the result, primarily consider the **student outcome**. Some evidence of effectiveness includes the student getting the problem correct, completing some steps of a problem, or showing engagement or confidence. Also consider small wins: the student explains reasoning, struggles productively, self-corrects, or applies a skill. Most cases where a student participates in co-problem-solving and progresses, including arriving at the correct answer with support, leans effective, even without a check of comprehension afterwards. Only provide observations; do not speculate.\n\nSecondarily, consider **scaffolding calibration**. Did the tutor scaffold or push for rigor appropriately? Heavy scaffolding is effective if the student genuinely lacks prerequisite knowledge or signals confusion. Lighter scaffolding is effective when a student does meaningful cognitive work (e.g. identifies operations, supplies intermediate answers, performs computations, self-corrects, or explains sub-steps) with the tutor's support and arrives at new understanding. Tutor-dominated co-solving where the student's contributions are limited while the tutor manages all higher-order reasoning may lean ineffective. For rigor-appropriate situations, the tutor may push for rigor and the student rises to the challenge. A single well-chosen rigor move (e.g., asking for an explanation) that the student responds to substantively is effective.\n\nAny approach leans ineffective if student signals are worsening. Confusion, struggle, and guessing are normal during learning, but if the moment concludes with no intermediate learning wins, it may lean ineffective. Also ineffective are cases when the tutor gives away answers or key reasoning steps that the student has shown the capacity to produce, and there is no evidence the student engaged with the explanation. An extended tutor monologue where the student only contributes 'okay,' 'yeah,' or 'mhm' with little participation leans ineffective, even if the student's final answer is correct. A tutor who makes a mistake or gives incorrect information also leans ineffective. \n\nAnother secondary consideration is **missed opportunities**, where the tutor took no substantive action in the appropriate direction at all. A moment with no discernible tutor strategy when one is needed leans ineffective. This includes moments where the tutor moves past student errors or confusion without scaffolding or allows a student who is coasting to continue without any challenge. Verbal encouragement, affirmation, or general confidence-building do not count as appropriate scaffolding or rigor when either is needed.\n\nSome actions are contentious, with evidence for both sides. Before deciding a moment is partially effective, use the student outcome to determine whether you should actually lean ineffective or effective instead. The tutor's action may be partially effective if:\n- The student eventually gets the correct answer, but the moment concludes with the student giving confused responses or unable to explain their reasoning.\n- Indicators of effectiveness are missing, ambiguous, or insufficient to be certain of effectiveness.\n- The tutor's intervention addressed one issue but missed another.\n\nA well-calibrated scaffold can be effective if the student demonstrates progress during it. The student is learning; do not downgrade a moment because the student struggles on problems later in the session. Also do not downgrade a moment simply because the tutor doesn't push for rigor after a successful scaffolding moment.  \n\n## Examples\n\nYour response MUST match the **brevity, level of abstraction, and format** of the following examples. Do not paraphrase what was said, reference specific turn numbers, or quote transcript content.\n\n### Example 1: \n{\n  \"situation\": \"This is an appropriate place to scaffold because the student has been making similar mistakes on multiple questions.\",\n  \"action\": \"The tutor is scaffolding. They ask guiding questions as the student works through a problem step-by-step.\",\n  \"result\": \"The tutor's strategy is effective, as the student was having some difficulty prior to this and eventually completes this problem correctly. The student also seems to be understanding the newly introduced concepts.\"\n}\n\n### Example 2: \n{\n  \"situation\": \"This would be an appropriate time to push for rigor, since the student is completing the task correctly.\",\n  \"action\": \"The tutor is mostly scaffolding. The tutor moves onto the next problem and starts off by providing a hint. The tutor shares a potential approach the student could use to solve the next problem.\",\n  \"result\": \"The tutor is not effective here because they offered too much support. Though the student arrives at the correct answer, the tutor gave away more than the student seems to need in this moment.\"\n}\n\n### Example 3: \n{\n  \"situation\": \"This would be an appropriate time to push for rigor, since the student is breezing through problems.\",\n  \"action\": \"The tutor pushes for rigor by proposing a harder problem. They also push by asking the student to explain their proposed process for this problem. When the student is unsure, the tutor scaffolds by setting up the initial step of the problem.\",\n  \"result\": \"The tutor is effective. The student is able to explain their rational and works through the problem. The student self-corrects an intermediate error.\"\n}\n\n## Your Task\n\nFor the flagged moment, provide:\n- **Situation**: First, state whether this moment is appropriate for scaffolding or rigor. Summarize the student's starting state (e.g. stuck, confused, succeeding, coasting), and what pedagogical context makes this moment appropriate for scaffolding or rigor.  \n- **Action**: Examine the tutor's actions within the moment boundaries. Explicitly state when the tutor scaffolds and when they push for rigor. Scan the strategies in the lists above and, if applicable, use similar phrasing to convey the tutor's general approach or strategy.\n- **Result**: Was the tutor's strategy effective, ineffective, or partially effective? Assess the current problem arc; refrain from commenting on student performance on subsequent problems. Note any and all student learning, engagement, and understanding wins, even if small. \n\nIMPORTANT: Avoid discussing low-level details (e.g. specific numbers in the math problem or quotes from the conversation). Keep your output high-level like the examples above; do NOT give a turn by turn recap.\n\nThe following excerpt contains the flagged turn range. The surrounding turns provide context; summarize ONLY tutor actions that occur between >>> DETECTED MOMENT START <<< and >>> DETECTED MOMENT END <<<. A team of teachers believe that this moment is appropriate for pushing for rigor.\n\n[... turns 1-94 omitted ...]\n\n>>> DETECTED MOMENT START (Turn 95) <<<\nTurn 95. TUTOR: Yes, 20 feet. How would you convince someone who chose 25 feet that your answer gives the distance around the sign? <<<\nTurn 96. STUDENT: Um, since a square has four sides and each side is five feet, you have to add all four sides together. So it's five plus five plus five plus five, which is twenty feet. And if someone picked twenty-five, they probably did five times five, which is the area, not the perimeter. <<<\nTurn 97. TUTOR: You clearly explained the difference between perimeter and area. Could a rectangular sign have the same 20-foot perimeter as this square but a different area? Use specific side lengths to justify your answer. <<<\nTurn 98. STUDENT: Um, I'm not sure. <<<\nTurn 99. TUTOR: Let’s try a rectangle that’s 6 feet long. What width would make the distance all the way around exactly 20 feet? You can sketch it to keep track of the sides. <<<\n>>> DETECTED MOMENT END (Turn 99) <<<\n\n## Output Format\n\nRespond with valid JSON only:\n{\n  \"situation\": \"...\",\n  \"action\": \"...\",\n  \"result\": \"...\"\n}"
+      }
+    ],
+    "thinking": {
+      "type": "adaptive"
+    },
+    "provider": {
+      "only": [
+        "Anthropic"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    },
+    "system": "You must respond with valid JSON only. Do not include markdown code fences, explanations, or any text outside the JSON object."
+  },
+  "payload_sha256": "b51fea9432ec01b5166871dc369dfb2588915e12eb2020cbc6b9f0e705456768",
+  "endpoint": "https://openrouter.ai/api/v1/messages",
+  "status": "complete",
+  "started_utc": "2026-11-11T04:13:19Z",
+  "response": {
+    "id": "msg_011CgvVN97Yodb14xbNaFx8Z",
+    "type": "message",
+    "role": "assistant",
+    "container": null,
+    "content": [
+      {
+        "type": "thinking",
+        "thinking": "Let me analyze this moment carefully.\n\nThe student has correctly solved a perimeter problem (finding the perimeter of a square with 5-foot sides = 20 feet). The tutor then pushes for rigor by asking the student to explain why their answer is correct and why an alternative answer (25 feet) is wrong. The student gives an excellent explanation, clearly distinguishing between perimeter and area. The tutor then pushes further by asking whether a rectangle could have the same perimeter but different area - a deeper conceptual question. When the student says they're unsure, the tutor scaffolds by providing a specific starting point (a rectangle 6 feet long) and suggesting the student sketch it.\nI'm checking whether the tutor's push for rigor fits here, since the student clearly understands perimeter. The tutor's follow-up questions are getting harder, and the student's explanation of perimeter versus area is strong. I'm now looking at how the scaffolding for the harder question worked out, including the specific starting point the tutor gave.\n\nThe tutor's harder question about rectangles with equal perimeters stumped the student, so the tutor offered a concrete 6-foot starting point. I'm reading that scaffolding as well-calibrated: push when the student is ready, then support when they struggle.\n\n",
+        "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS00LjYtb3B1cy0yMDI2MDIwNXxhbnRocm9waWMifQ"
+      },
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"situation\": \"This is an appropriate place to push for rigor. The student has just correctly solved a perimeter problem and is demonstrating solid understanding of the concept.\",\n  \"action\": \"The tutor pushes for rigor by asking the student to justify their answer and explain why an alternative (incorrect) answer is wrong. When the student responds with a strong explanation, the tutor pushes further by posing a deeper conceptual question about whether a different shape could share the same perimeter but have a different area. When the student expresses uncertainty, the tutor scaffolds by providing a specific starting value and suggesting the student sketch the shape.\",\n  \"result\": \"The tutor's strategy is effective. The student rises to the initial rigor push by clearly articulating the difference between perimeter and area and identifying the likely error behind the wrong answer. The follow-up conceptual extension is well-calibrated, and the tutor appropriately shifts to scaffolding when the student signals uncertainty, providing a concrete entry point without giving away the answer.\"\n}\n```",
+        "citations": []
+      }
+    ],
+    "model": "anthropic/claude-opus-4.6",
+    "stop_reason": "end_turn",
+    "stop_details": null,
+    "stop_sequence": null,
+    "usage": {
+      "input_tokens": 2613,
+      "output_tokens": 611,
+      "output_tokens_details": {
+        "thinking_tokens": 374
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "server_tool_use": null,
+      "service_tier": "standard",
+      "speed": "standard",
+      "cost": 0.02834,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.02834,
+        "upstream_inference_prompt_cost": 0.013065,
+        "upstream_inference_completions_cost": 0.015275
+      }
+    },
+    "context_management": null,
+    "provider": "Anthropic",
+    "openrouter_metadata": {
+      "requested": "anthropic/claude-opus-4.6",
+      "strategy": "direct",
+      "region": "EWR",
+      "summary": "available=1, selected=Anthropic",
+      "attempt": 1,
+      "is_byok": false,
+      "endpoints": {
+        "total": 6,
+        "available": [
+          {
+            "provider": "Anthropic",
+            "model": "anthropic/claude-4.6-opus-20260205",
+            "selected": true
+          }
+        ]
+      },
+      "generation_time": 13494
+    }
+  },
+  "usage": {
+    "input_tokens": 2613,
+    "output_tokens": 611,
+    "output_tokens_details": {
+      "thinking_tokens": 374
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "server_tool_use": null,
+    "service_tier": "standard",
+    "speed": "standard",
+    "cost": 0.02834,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.02834,
+      "upstream_inference_prompt_cost": 0.013065,
+      "upstream_inference_completions_cost": 0.015275
+    }
+  },
+  "reported_metadata": {
+    "requested": "anthropic/claude-opus-4.6",
+    "strategy": "direct",
+    "region": "EWR",
+    "summary": "available=1, selected=Anthropic",
+    "attempt": 1,
+    "is_byok": false,
+    "endpoints": {
+      "total": 6,
+      "available": [
+        {
+          "provider": "Anthropic",
+          "model": "anthropic/claude-4.6-opus-20260205",
+          "selected": true
+        }
+      ]
+    },
+    "generation_time": 13494
+  },
+  "text": "```json\n{\n  \"situation\": \"This is an appropriate place to push for rigor. The student has just correctly solved a perimeter problem and is demonstrating solid understanding of the concept.\",\n  \"action\": \"The tutor pushes for rigor by asking the student to justify their answer and explain why an alternative (incorrect) answer is wrong. When the student responds with a strong explanation, the tutor pushes further by posing a deeper conceptual question about whether a different shape could share the same perimeter but have a different area. When the student expresses uncertainty, the tutor scaffolds by providing a specific starting value and suggesting the student sketch the shape.\",\n  \"result\": \"The tutor's strategy is effective. The student rises to the initial rigor push by clearly articulating the difference between perimeter and area and identifying the likely error behind the wrong answer. The follow-up conceptual extension is well-calibrated, and the tutor appropriately shifts to scaffolding when the student signals uncertainty, providing a concrete entry point without giving away the answer.\"\n}\n```",
+  "cost_usd": 0.02834,
+  "elapsed_ms": 13664.977583999998
+}
