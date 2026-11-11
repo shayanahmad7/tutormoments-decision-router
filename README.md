@@ -2,7 +2,23 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-## Latest: OpenAI Decisions versus a one-word LLM
+## Latest: final prompt revision after full transcript review
+
+We reviewed all **520 moments across 112 conversation histories**, then froze one revised prompt and ran it once per method. The prompt tracks the current learning obstacle, who supplied the reasoning, when support should fade, and opportunities for students to explain or check their work. It contains no case-specific examples or answer rules.
+
+| Method | Previous prompt | Revised prompt | Net change |
+|---|---:|---:|---:|
+| Jev 1.14.0 | 376/520 (72.3%) | 367/520 (70.6%) | −9 |
+| OpenAI Decisions, GPT-6 Luna | 386/520 (74.2%) | 372/520 (71.5%) | −14 |
+| GPT-6 Luna, one-word answer | 373/520 (71.7%) | 377/520 (72.5%) | +4 |
+
+**The revision did not beat the previous best.** Retain the earlier Decisions prompt as the strongest observed configuration at 74.2%. The one-word LLM's four additional matches are a small exploratory change; the paired student-cluster interval includes no improvement. There was no second revision after seeing these results.
+
+New completed-response token cost was **$0.8690**, or **$0.8736 including a conservative reservation for one HTTP 503 failure** that returned no decision and was retried with the identical request. All 1,560 completed decisions were valid. No tutor responses were generated. Full-corpus prompt development means this is not held-out evidence of generalization. The source also contains non-math and setup moments, all retained in the requested 520-case comparison.
+
+[Full results and interpretation](experiments/final-prompt-revision/README.md), [all 520 previous and revised decisions](experiments/final-prompt-revision/All%20520%20decisions.csv), [exact prompt](experiments/final-prompt-revision/prompt.json), and [transcript review findings](experiments/final-prompt-revision/Review%20findings.md). Exact requests, responses, frozen hashes, review coverage and offline verification are archived alongside them.
+
+## Earlier: OpenAI Decisions versus a one-word LLM
 
 The [matched decision comparison](experiments/openai-decision-comparison/README.md) is complete on **all 520 moments**. OpenAI Decisions scored **386/520 (74.2%)**, GPT-6 Luna returning a one-word answer scored **373/520 (71.7%)**, and the saved Jev prompt C run scored **376/520 (72.3%)**. Every condition receives the full preceding conversation and the same decision criteria. These are raw decisions, with no new threshold fitting and no tutor-response generation.
 

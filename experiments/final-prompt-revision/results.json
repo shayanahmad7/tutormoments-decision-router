@@ -1,0 +1,225 @@
+{
+  "methods": {
+    "jev": {
+      "n": 520,
+      "correct": 367,
+      "accuracy": 0.7057692307692308,
+      "scaffolding_correct": 147,
+      "rigor_correct": 220,
+      "invalid": 0,
+      "macro_f1": 0.6998540013807621,
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 147,
+          "rigor": 113,
+          "invalid": 0
+        },
+        "rigor": {
+          "scaffolding": 40,
+          "rigor": 220,
+          "invalid": 0
+        }
+      },
+      "cost_usd": 0.16727180400000013,
+      "input_tokens": 3982662,
+      "output_tokens": 19614,
+      "median_seconds": 0.2791108544999936,
+      "p95_seconds": 0.45734846249999955,
+      "clean_median_seconds": 0.2791108544999936,
+      "retried_requests": 0,
+      "failed_transport_attempts": 0,
+      "failed_attempt_seconds": 0,
+      "failed_attempt_cost_reservation_usd": 0,
+      "retry_inclusive_median_seconds": 0.2791108544999936,
+      "retry_inclusive_p95_seconds": 0.45734846249999955
+    },
+    "decisions": {
+      "n": 520,
+      "correct": 372,
+      "accuracy": 0.7153846153846154,
+      "scaffolding_correct": 210,
+      "rigor_correct": 162,
+      "invalid": 0,
+      "macro_f1": 0.7129386488422058,
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 210,
+          "rigor": 50,
+          "invalid": 0
+        },
+        "rigor": {
+          "scaffolding": 98,
+          "rigor": 162,
+          "invalid": 0
+        }
+      },
+      "cost_usd": 0.3503266999999997,
+      "input_tokens": 3503267,
+      "output_tokens": 0,
+      "median_seconds": 0.3558861040000032,
+      "p95_seconds": 0.6966779360499981,
+      "clean_median_seconds": 0.3558861040000032,
+      "retried_requests": 0,
+      "failed_transport_attempts": 0,
+      "failed_attempt_seconds": 0,
+      "failed_attempt_cost_reservation_usd": 0,
+      "retry_inclusive_median_seconds": 0.3558861040000032,
+      "retry_inclusive_p95_seconds": 0.6966779360499981
+    },
+    "llm": {
+      "n": 520,
+      "correct": 377,
+      "accuracy": 0.725,
+      "scaffolding_correct": 224,
+      "rigor_correct": 153,
+      "invalid": 0,
+      "macro_f1": 0.7197758508285003,
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 224,
+          "rigor": 36,
+          "invalid": 0
+        },
+        "rigor": {
+          "scaffolding": 107,
+          "rigor": 153,
+          "invalid": 0
+        }
+      },
+      "cost_usd": 0.3514291,
+      "input_tokens": 3497036,
+      "output_tokens": 3451,
+      "median_seconds": 1.0350097915000092,
+      "p95_seconds": 2.565884833050004,
+      "clean_median_seconds": 1.0346834580000037,
+      "retried_requests": 1,
+      "failed_transport_attempts": 1,
+      "failed_attempt_seconds": 2.9939221670000005,
+      "failed_attempt_cost_reservation_usd": 0.004533250000000001,
+      "retry_inclusive_median_seconds": 1.0350097915000092,
+      "retry_inclusive_p95_seconds": 2.6159947631499993
+    }
+  },
+  "previous_correct": {
+    "jev": 376,
+    "decisions": 386,
+    "llm": 373
+  },
+  "new_minus_previous": {
+    "jev": {
+      "additional_correct": -9,
+      "difference_percentage_points": -1.7307692307692308,
+      "a_only_correct": 29,
+      "b_only_correct": 38,
+      "both_correct": 338,
+      "neither_correct": 115,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -5.410914892390534,
+        2.0678446635260324
+      ]
+    },
+    "decisions": {
+      "additional_correct": -14,
+      "difference_percentage_points": -2.6923076923076925,
+      "a_only_correct": 49,
+      "b_only_correct": 63,
+      "both_correct": 323,
+      "neither_correct": 85,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -6.8893528183716075,
+        1.758317025440312
+      ]
+    },
+    "llm": {
+      "additional_correct": 4,
+      "difference_percentage_points": 0.7692307692307693,
+      "a_only_correct": 34,
+      "b_only_correct": 30,
+      "both_correct": 343,
+      "neither_correct": 113,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -1.9342359767891684,
+        3.5417076771653537
+      ]
+    }
+  },
+  "new_method_comparisons": {
+    "decisions_minus_llm": {
+      "additional_correct": -5,
+      "difference_percentage_points": -0.9615384615384616,
+      "a_only_correct": 39,
+      "b_only_correct": 44,
+      "both_correct": 333,
+      "neither_correct": 104,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -4.7776577280358845,
+        2.966871070310072
+      ]
+    },
+    "decisions_minus_jev": {
+      "additional_correct": 5,
+      "difference_percentage_points": 0.9615384615384616,
+      "a_only_correct": 84,
+      "b_only_correct": 79,
+      "both_correct": 288,
+      "neither_correct": 69,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -4.112149532710281,
+        6.361920877200859
+      ]
+    },
+    "llm_minus_jev": {
+      "additional_correct": 10,
+      "difference_percentage_points": 1.9230769230769231,
+      "a_only_correct": 79,
+      "b_only_correct": 69,
+      "both_correct": 298,
+      "neither_correct": 74,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -2.8936509104672186,
+        6.74168450151596
+      ]
+    }
+  },
+  "cost_usd": 0.8690276039999998,
+  "student_clusters": 89,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261111,
+  "review_conversations": 112,
+  "review_moments": 520,
+  "unique_contexts": 491,
+  "conflicting_context_groups_zero_based": [
+    [
+      69,
+      70
+    ],
+    [
+      366,
+      367
+    ],
+    [
+      410,
+      411
+    ]
+  ],
+  "deterministic_context_only_maximum_correct": 517,
+  "interpretation": "Exploratory agreement with unchanged published labels after full-corpus prompt development. Not held-out validation or a measure of tutoring quality.",
+  "previous_class_correct": {
+    "jev": {
+      "scaffolding": 181,
+      "rigor": 195
+    },
+    "decisions": {
+      "scaffolding": 204,
+      "rigor": 182
+    },
+    "llm": {
+      "scaffolding": 213,
+      "rigor": 160
+    }
+  },
+  "failed_transport_attempts": 1,
+  "failed_attempt_cost_reservation_usd": 0.004533250000000001,
+  "budget_accounted_cost_usd": 0.8735608539999998,
+  "api_attempts": 1561
+}
