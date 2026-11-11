@@ -1,0 +1,45 @@
+{
+  "case_index": 252,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, let’s think: does 31.5 make sense as the answer? Why or why not? What does multiplying by a fraction greater than 1 do to a number?",
+      "reason": "The tutor provides a recap of the steps taken, which is a form of scaffolding. They then ask the student to evaluate the reasonableness of the answer and consider the effect of multiplying by a fraction greater than 1, which promotes deeper understanding and critical thinking (rigor)."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why this makes sense? What does multiplying by 7/6 mean in terms of the number 27?",
+      "reason": "The tutor recaps the steps, which is scaffolding. They then ask the student to explain the meaning of multiplying by 7/6, which encourages conceptual understanding and justification (rigor)."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, since this is a fraction, we can write it as a mixed number. What is 31.5 as a mixed number?",
+      "reason": "The tutor immediately introduces the concept of converting to a mixed number without first asking the student to reflect on the current answer or problem. While not incorrect, it's an additional step that might not be necessary or requested, and it's a direct instruction rather than a question that promotes deeper thinking about the current result."
+    }
+  ],
+  "trace_sha256": "ba5b7025acc75582f22a675832e7cc020291ed7bf13478bc7a9d2988b5e682f7"
+}

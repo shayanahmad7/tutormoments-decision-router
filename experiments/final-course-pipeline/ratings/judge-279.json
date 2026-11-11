@@ -1,0 +1,45 @@
+{
+  "case_index": 279,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The 8 is in the hundreds place, so it represents 800. The 2 is in the tens place, so it represents 20.",
+      "reason": "The tutor breaks down the place value of each digit, which is a helpful scaffold for the student to understand the actual values being multiplied."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 16 and why that would be in the hundreds place?",
+      "reason": "The tutor asks the student to explain their reasoning, promoting deeper thinking and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's connect this to the place value. Since the 8 is in the hundreds place and the 2 is in the tens place, what does multiplying them actually represent in the full multiplication process?",
+      "reason": "The tutor provides a hint about connecting to place value (scaffolding) and then asks a question that requires the student to think about the meaning of the multiplication in context (rigor)."
+    }
+  ],
+  "trace_sha256": "9b5df1ef76985a1a47be9ae4a07c55e224f32e51e221220da98d77e21ac6b537"
+}

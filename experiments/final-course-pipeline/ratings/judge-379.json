@@ -1,0 +1,45 @@
+{
+  "case_index": 379,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many small pieces do you have from the two full circles? Can you count those first?",
+      "reason": "The student is struggling to count the pieces. The tutor breaks down the counting task by asking the student to count only the pieces from the two full circles first, which is a scaffold. It also maintains rigor by asking the student to do the counting."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s focus on the two full circles first. If each full circle is cut into 4 pieces, how many small pieces do you get from just the two full circles?",
+      "reason": "The student is struggling to count the pieces. The tutor breaks down the counting task by asking the student to count only the pieces from the two full circles first, which is a scaffold. It also maintains rigor by asking the student to do the counting."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you figure out how many total pieces you have? Count all the small pieces from the two full circles and the half circle. What do you get?",
+      "reason": "The tutor reiterates the instructions for counting all the pieces, which the student has already struggled with. It doesn't offer a new strategy or break down the task further, which would be helpful given the student's previous difficulty."
+    }
+  ],
+  "trace_sha256": "64fe0637e9b074ac64bb93d456080a1c2a5b8ceecebb1c20ae72fab6fe300b65"
+}

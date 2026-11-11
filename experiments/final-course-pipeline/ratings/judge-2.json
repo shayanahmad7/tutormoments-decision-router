@@ -1,0 +1,45 @@
+{
+  "case_index": 2,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if Kiera has a small pizza and eats 3/8 of it, and Lucas has a large pizza and eats 2/8 of it, who do you think ate more pizza? Why?",
+      "reason": "The tutor rephrases the hint from the platform, making it a direct question to the student. This scaffolds the student's understanding of the hint by applying it to the problem's context. Asking 'Why?' adds rigor by prompting the student to justify their reasoning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if you have a really big pizza and eat 2/8 of it, and I have a really small pizza and eat 3/8 of it, who do you think ate more? Why?",
+      "reason": "The tutor uses a relatable scenario (you and I with pizzas) to help the student understand the concept of comparing fractions when the wholes are different sizes. This is a good scaffolding technique. Asking 'Why?' promotes rigor by requiring justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that make you wonder? What’s the key idea the question is trying to bring out?",
+      "reason": "The tutor breaks down the problem by first restating the core question and the known fractional comparison. They then directly address the hint provided by the platform, asking the student to interpret its meaning. This scaffolds the student's thinking by guiding them to focus on the critical information. The questions 'What does that make you wonder? What’s the key idea the question is trying to bring out?' add rigor by prompting deeper conceptual understanding rather than just an answer."
+    }
+  ],
+  "trace_sha256": "fd18ec34d0d254dc37c7beccd05b9f7b7e20a867f523d7e911d5152afc80cc8f"
+}

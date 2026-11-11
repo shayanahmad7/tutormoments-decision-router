@@ -1,0 +1,45 @@
+{
+  "case_index": 416,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the total number of birds should be more than 15, right? Which diagram shows the total (the question mark) as the biggest part?",
+      "reason": "The tutor provides a clear hint by asking the student to identify the diagram where the total (question mark) is the biggest part, which directly relates to the problem of adding more birds."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Look at the parts and the whole — how should the question mark be positioned?",
+      "reason": "The tutor prompts the student to consider the relationship between parts and the whole in the diagrams, which is a relevant scaffolding strategy for bar models."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which diagram shows the total (the question mark) as the biggest part? Let’s look at the options together — can you point to the one where the bottom bar is the biggest?",
+      "reason": "The tutor provides a clear hint by asking the student to identify the diagram where the total (question mark) is the biggest part, and then further specifies to look for the 'bottom bar is the biggest', which is a direct and helpful prompt for this type of problem."
+    }
+  ],
+  "trace_sha256": "0a773d9cf98d9f63dc891c0c43b99b763024839ec83360101b17b61f55ca9c7e"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 191,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you decide where to place the zeros when multiplying 516 by 400? Can you explain why that step is important?",
+      "reason": "The student just completed a three-digit multiplication problem and is about to start another. This question asks the student to explain their reasoning for a key step in multiplication, promoting deeper understanding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the first thing you can do to make this easier? Think about the zeros in 400. How can you use that to simplify the multiplication?",
+      "reason": "This hint guides the student towards a more efficient strategy for multiplying by a number ending in zeros, which is a useful scaffolding technique."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how multiplying by 400 is the same as multiplying by 4 and then by 100. What would 516 times 4 be?",
+      "reason": "This provides a direct hint on how to simplify the multiplication by breaking down 400 into 4 and 100, and then asks for the first step, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "82829616cef2e0b4d28c68cfea513d34c544dacf1f6dca74c741ddcc7819850d"
+}

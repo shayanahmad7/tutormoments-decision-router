@@ -1,0 +1,45 @@
+{
+  "case_index": 217,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose to start with 33?",
+      "reason": "The tutor has already demonstrated a solution. This question asks the student to explain their reasoning, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What could you add next to get to 44?",
+      "reason": "The tutor has already demonstrated a solution. This question guides the student to complete the same solution, which is scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of another way to make 44 using the keys that are available on the broken calculator?",
+      "reason": "The tutor has already demonstrated a solution. This question asks the student to find an alternative solution, which increases rigor."
+    }
+  ],
+  "trace_sha256": "ca2239bd3ba8a5f10a20eb27dadf3db485e168acf21b16a5eab1dc9b70b455e8"
+}

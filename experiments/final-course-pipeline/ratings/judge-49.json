@@ -1,0 +1,45 @@
+{
+  "case_index": 49,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's try one more together, and then you can try solving it on your own.",
+      "reason": "The tutor provides a new problem and asks the student to identify the first step, which is appropriate scaffolding after the student successfully solved the previous problem with video guidance."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why multiplying both sides by 3 after getting x/3 = 4 gives the correct answer?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and justification, increasing rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do first to solve for x?",
+      "reason": "The tutor provides a new problem and asks for the first step, which is a form of scaffolding to guide the student through the problem-solving process."
+    }
+  ],
+  "trace_sha256": "afbdffe23016e493571a0eb694b6085c92feace2dc34a4242acb555621e71a73"
+}

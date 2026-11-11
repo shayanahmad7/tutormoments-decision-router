@@ -1,0 +1,45 @@
+{
+  "case_index": 315,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What about ten plus ten?",
+      "reason": "The tutor just asked and the student answered 'Twenty.' The tutor then wrote '20' on the board. This candidate repeats the question that was just answered."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is six plus three?",
+      "reason": "This is a new, simple addition problem, consistent with the previous problems and the student's demonstrated ability."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you solve this one on your own? What is 7 + 6?",
+      "reason": "The tutor asks the student to solve the problem independently, which increases rigor. The problem is also a new, slightly more challenging addition problem, appropriate for the context."
+    }
+  ],
+  "trace_sha256": "4b9845d30be59471d34f03f5ab00283583d2da59f5409771010f6cc1af258e0a"
+}

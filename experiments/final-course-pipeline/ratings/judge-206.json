@@ -1,0 +1,45 @@
+{
+  "case_index": 206,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you read the rest of the definition for \"shell\" out loud? Then, can you explain in your own words what a shell is and what it does for the animal?",
+      "reason": "The tutor asks the student to read the rest of the definition, which is a form of scaffolding. They then ask the student to explain the definition in their own words, which promotes rigor by requiring the student to process and articulate their understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try reading the rest of the definition for \"shell\" out loud? It might help you understand what it means in the context of the article.",
+      "reason": "The tutor asks the student to read the rest of the definition out loud, which is a form of scaffolding. The suggestion that it 'might help you understand' is a gentle prompt but doesn't push for deeper processing or explanation from the student."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you read the rest of the definition for \"shell\" out loud? It starts with \"A shell is a hard thing...\" — go ahead!",
+      "reason": "The tutor asks the student to read the rest of the definition out loud and provides the starting phrase, which is a clear and appropriate scaffold. It does not, however, include any element of rigor."
+    }
+  ],
+  "trace_sha256": "be6e3a586368a73194c62df5b147844bae58a3ecc3d1d870f2af6fbd5a122d09"
+}

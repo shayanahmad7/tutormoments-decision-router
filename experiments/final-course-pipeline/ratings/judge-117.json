@@ -1,0 +1,45 @@
+{
+  "case_index": 117,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If a = 4 and b = 2, what is a ÷ b and b ÷ a? Are they the same? What does that tell you about Katie’s statement?",
+      "reason": "The tutor provides a new example with concrete numbers to help the student understand the abstract concept of 'a' and 'b'. This is a good scaffold. It then asks the student to perform the calculations and interpret the results, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why switching the order in multiplication doesn’t change the result, but it does in division? What’s different about how those operations work?",
+      "reason": "This candidate asks the student to explain the underlying mathematical principles, which is a high-rigor question. It directly addresses the student's confusion about the 'a' and 'b' problem by asking for a conceptual explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If a = 4 and b = 2, what is 4 ÷ 2? What is 2 ÷ 4? Are they the same? Try calculating both.",
+      "reason": "This candidate provides a concrete example with numbers, which is a good scaffold for the student's stated confusion. It then asks the student to perform the calculations and compare the results, which adds rigor."
+    }
+  ],
+  "trace_sha256": "1925f801c56a764327531293e2e48f82f0ff65703b566835e20e36f549960132"
+}

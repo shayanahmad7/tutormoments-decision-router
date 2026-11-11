@@ -1,0 +1,45 @@
+{
+  "case_index": 138,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you find the part in the story where Lavonne says that?",
+      "reason": "The tutor asks the student to locate specific information in the text, which promotes active reading and independent verification. This is a good way to encourage the student to engage with the text and find evidence for their answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the word \"so\" is connecting two ideas in the sentence. The first part is about others not understanding Luz's challenges, and the second part is about how hearing her explain helped them understand. What word or phrase could help show that the second part is the result of the first part?",
+      "reason": "The tutor provides a clear explanation of the function of the word 'so' in the sentence, which is a form of scaffolding. They then ask a guiding question to help the student think about the relationship between the two parts of the sentence, which is also scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how Lavonne's words helped Luz take action?",
+      "reason": "The tutor asks the student to elaborate on their previous answer, which encourages deeper thinking and justification. This promotes rigor by asking the student to explain the 'how' behind their answer."
+    }
+  ],
+  "trace_sha256": "a9881ebf29667c3c9bb0f01d25bdc2301b93a2bd5deb20111ec13eec3acd585c"
+}

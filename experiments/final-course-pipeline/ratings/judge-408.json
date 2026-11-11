@@ -1,0 +1,45 @@
+{
+  "case_index": 408,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So what is 12 plus 40 plus 40?",
+      "reason": "The tutor provides the full expression for the student to calculate, which is a helpful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, how do you find the total number of students still on the buses? What should you do next?",
+      "reason": "The tutor asks the student to determine the next step, promoting independent thinking and problem-solving."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You have two buses with 40 students each and one bus with 12 students. What should we do next to find the total?",
+      "reason": "The tutor restates the current state of the problem, reminding the student of the components they need to combine, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "9e83248906c7355f11a7cd7f75121d1f153a762750eacefb7026aa63e709b5cd"
+}

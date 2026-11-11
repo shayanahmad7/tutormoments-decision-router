@@ -1,0 +1,45 @@
+{
+  "case_index": 245,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Do you think that too?",
+      "reason": "The tutor asks a clarifying question about the problem's constraints, which is a form of scaffolding to ensure the student understands the setup before proceeding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens if we try putting the largest numbers in the tens place instead? Let's try 97 + 86. What would that give us?",
+      "reason": "The tutor suggests an alternative arrangement and provides the specific numbers to try, which is a form of scaffolding. It guides the student to explore a different strategy without giving the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Would that give us a bigger total? Why or why not?",
+      "reason": "The tutor prompts the student to consider an alternative arrangement and then asks 'Why or why not?', which encourages justification and deeper mathematical reasoning, adding rigor. It also provides scaffolding by suggesting the alternative."
+    }
+  ],
+  "trace_sha256": "4b4ae97ff1a05b7f7d7571bce2715a4823605d7af063112f3240cda88c4fe73f"
+}

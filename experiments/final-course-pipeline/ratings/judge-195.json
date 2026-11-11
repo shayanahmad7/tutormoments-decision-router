@@ -1,0 +1,45 @@
+{
+  "case_index": 195,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What did you get? And how did you figure it out?",
+      "reason": "The tutor asks the student to provide their answer and explain their reasoning, which promotes independent thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the largest number that can divide both 8 and 10 evenly? Try dividing both by that number.",
+      "reason": "The tutor provides a specific hint about finding the greatest common divisor, which directly guides the student towards the next step in reducing the fraction."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you divide both the numerator and denominator by the same number?",
+      "reason": "The tutor reminds the student of the core concept of reducing fractions (dividing both numerator and denominator by the same number), which is a helpful scaffold given the student's earlier confusion."
+    }
+  ],
+  "trace_sha256": "cabc98e25e297a1caece518a2527c9db8bb4c184d205debbba37c1d86221d31a"
+}

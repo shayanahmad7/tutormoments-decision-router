@@ -1,0 +1,45 @@
+{
+  "case_index": 74,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me how to find the width of the rectangle using the coordinates of the top edge?",
+      "reason": "The tutor asks the student to explain their reasoning for finding the width, which promotes rigor. It also provides scaffolding by reminding the student to use the coordinates of the top edge."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How do we find the distance between these two points? What’s the difference between their x-coordinates?",
+      "reason": "The tutor provides scaffolding by reminding the student what width means and pointing to the relevant coordinates. It also promotes rigor by asking the student to find the difference between the x-coordinates."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why did you choose B for the width? How can we use the coordinates to find the width?",
+      "reason": "The tutor asks the student to justify their answer and explain how to use the coordinates to find the width, which promotes rigor. It does not provide any scaffolding."
+    }
+  ],
+  "trace_sha256": "13a8666d5c5829f9c2c60eb536af31a6a90b3152a882e91d972dae870a096c11"
+}

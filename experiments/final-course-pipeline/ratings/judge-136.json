@@ -1,0 +1,45 @@
+{
+  "case_index": 136,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you show me how you would write that as a multiplication equation?",
+      "reason": "The student correctly explained their reasoning for multiplying. This response asks them to represent that reasoning in a multiplication equation, which adds a layer of rigor by asking for a different representation of the same concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would solve a similar problem if each box had a different number, like 9 chocolates, and there were 4 boxes?",
+      "reason": "The student correctly answered the problem and explained their reasoning. This response asks them to apply the same concept to a new, similar problem, which promotes transfer and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you might check that answer another way?",
+      "reason": "The student correctly answered the problem and explained their reasoning. This response asks them to think about checking their work, which encourages a deeper understanding of the operation and promotes rigor."
+    }
+  ],
+  "trace_sha256": "9d8b9fc9a5cea3b6217e2de198f28a9286fb6faa4bedcc91572e60315440ea8b"
+}

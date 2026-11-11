@@ -1,0 +1,45 @@
+{
+  "case_index": 172,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit is in the hundreds place in 1270?",
+      "reason": "The tutor re-establishes the context of the problem and then asks a targeted question to guide the student to the next step of rounding, promoting student thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is in the hundreds place in 1270?",
+      "reason": "The tutor re-establishes the context of the problem and then asks a targeted question to guide the student to the next step of rounding, promoting student thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which digit do we look at to decide whether to round up or down?",
+      "reason": "The tutor re-establishes the context of the problem and then asks a targeted question to guide the student to the next step of rounding, promoting student thinking."
+    }
+  ],
+  "trace_sha256": "9bd4ad24b046959c7ff441a1a51905a69c33759116e3684ea1d08086d43bdeeb"
+}

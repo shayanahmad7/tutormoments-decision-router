@@ -1,0 +1,45 @@
+{
+  "case_index": 129,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about the tens place now? You had borrowed one, so the five is left. What is five minus three?",
+      "reason": "The tutor provides the answer to the first part of the subtraction problem and then guides the student to the next step, reminding them about the borrowing that occurred."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is eleven minus nine?",
+      "reason": "The tutor asks the student to complete the next step in the subtraction problem, which the tutor just set up."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is eleven minus nine?",
+      "reason": "The tutor asks the student to complete the next step in the subtraction problem, which the tutor just set up."
+    }
+  ],
+  "trace_sha256": "40bfdbb91558ca74f1210ac130c0ae458cd55901f6549ab411e2e381668eeac2"
+}

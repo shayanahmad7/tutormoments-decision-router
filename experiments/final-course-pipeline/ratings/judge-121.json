@@ -1,0 +1,45 @@
+{
+  "case_index": 121,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think 7 + 7 shows an even number? What happens when you add those two numbers together?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing 7+7, which promotes rigor. They also scaffold by asking what happens when the numbers are added, which helps the student articulate their thought process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Nice choice — 7 + 7. What happens when you add those two numbers together? What does that tell you about the result?",
+      "reason": "The tutor affirms the student's choice and then asks two questions that encourage the student to explain their reasoning and connect it to the concept of even numbers, promoting both rigor and scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is 7 + 7 an even number?",
+      "reason": "The tutor asks the student to justify their answer, which promotes rigor. It is a direct question that requires the student to explain their understanding."
+    }
+  ],
+  "trace_sha256": "0e128191b20a0d86a2817664ae157eddd382c09f74e815df8b4623f4441a008d"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 502,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the total area of the wall before we subtract the window and door?",
+      "reason": "The tutor asks a question that guides the student to the first step of the problem, which is to find the total area of the wall."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the total area of the wall before we subtract the window and door? Let's start with that.",
+      "reason": "The tutor provides a clear first step for the student, asking for the total area of the wall before considering the subtractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total area of the wall before we subtract the areas of the window and the door? Let's start by calculating the area of the whole wall.",
+      "reason": "The tutor explicitly states the first step, which is to calculate the area of the whole wall, providing scaffolding for the student."
+    }
+  ],
+  "trace_sha256": "92678ceb61624c68a664433a48997ee5c4ffe863bdaaa5ccd533f8966fb2721c"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 361,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start with just those tens.",
+      "reason": "The tutor breaks down the problem into a more manageable step by suggesting to start with the tens place, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, so you did twenty plus forty plus thirty. What would that be?",
+      "reason": "The tutor acknowledges the student's previous work and asks a direct question about the next step, which is appropriate to the conversation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would twenty plus forty plus thirty be?",
+      "reason": "The tutor asks a direct question that follows logically from the student's described method of separating tens and ones."
+    }
+  ],
+  "trace_sha256": "5ac5cb665d44f2192a89019898f67f6f589d6dcd2266b6115e88ca231019e0b7"
+}

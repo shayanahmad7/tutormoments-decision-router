@@ -1,0 +1,45 @@
+{
+  "case_index": 16,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you check if each of these numbers can be made using only the prime factors 3, 5, and 7? Start with 10.",
+      "reason": "Directly addresses the current problem about whether 10 and 75 are factors of 3⁴x5²x7², scaffolds by breaking into sub-steps, and asks student to reason independently about 10 first."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 10 is a factor of this number?",
+      "reason": "Asks student to justify/explain, which is rigor, but provides no scaffolding or hint about how to approach it; also slightly misleading since 10 is NOT a factor (2 is not in the prime factorization), though the question is asking the student to reason it out rather than asserting it as true."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What prime factors make up 10? Can you find them in the expression?",
+      "reason": "Scaffolds by guiding student to decompose 10 into prime factors and check against the expression, while requiring independent student reasoning; well-targeted to the current problem."
+    }
+  ],
+  "trace_sha256": "5892e78f9472f14edeec9f029981acd46f6666235811bd3087f612263cd0ca72"
+}

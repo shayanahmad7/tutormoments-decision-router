@@ -1,0 +1,45 @@
+{
+  "case_index": 489,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you find the area of the shed? It's 5 meters by 4 meters. What would that be?",
+      "reason": "The student had just calculated the area of the patio incorrectly, and the tutor corrected them. This reply then prompts the student to calculate the area of the shed, which is the next logical step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the area of the shed? Once we have that, we can subtract both the shed and the patio from the total area to find how much turf Peter needs. Can you calculate the area of the shed?",
+      "reason": "The student had just calculated the area of the patio incorrectly, and the tutor corrected them. This reply then prompts the student to calculate the area of the shed, which is the next logical step. It also provides a hint for the subsequent step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what should we do next to find the area that needs turf?",
+      "reason": "The student had just calculated the area of the patio incorrectly, and the tutor corrected them. This reply then prompts the student to think about the next step in the problem, which is to combine the areas of the patio and shed."
+    }
+  ],
+  "trace_sha256": "a87cca5b5bd5c1f1ea304a872db34047872f1b3a2b560e99d3a63ed768fd24ab"
+}

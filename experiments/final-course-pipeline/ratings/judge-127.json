@@ -1,0 +1,45 @@
+{
+  "case_index": 127,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option C is the correct equation",
+      "reason": "The student has already selected the correct answer and performed the calculation. This question asks them to justify their choice, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option C, **6 + 8 - 9 = [box]**, is the correct equation to represent this situation? What does each part of the equation mean?",
+      "reason": "The student has already selected the correct answer and performed the calculation. This question asks them to justify their choice and explain the meaning of each part of the equation, which increases rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why this equation matches the story? What does each part of the equation represent?",
+      "reason": "The student has already selected the correct answer and performed the calculation. This question asks them to justify their choice and explain the meaning of each part of the equation, which increases rigor."
+    }
+  ],
+  "trace_sha256": "51024961481256e8ab19cb5b416580449aacf4022f635ccafe4eaa3dab059e7e"
+}

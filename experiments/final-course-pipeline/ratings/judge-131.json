@@ -1,0 +1,45 @@
+{
+  "case_index": 131,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number do you land on after that jump?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking the student to focus on the first jump and its result."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you show me where it lands after that first jump?",
+      "reason": "The tutor scaffolds the problem by breaking it into steps and then adds rigor by asking the student to demonstrate their understanding, either on the ruler or through calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you show that on the ruler or with a calculation?",
+      "reason": "The tutor scaffolds the problem by focusing on the first jump and then adds rigor by asking the student to show their work using a specific representation (ruler or calculation)."
+    }
+  ],
+  "trace_sha256": "1f276b16657dbc0b9d97178e8db4ac380ae7db2f2ab34116e0c5e115629513a7"
+}

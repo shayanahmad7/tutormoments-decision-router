@@ -1,0 +1,45 @@
+{
+  "case_index": 333,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number would you add to 24 to get 76?",
+      "reason": "The tutor rephrases the problem in a way that makes the inverse operation more apparent, which is a helpful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation can we use to find that number?",
+      "reason": "The tutor prompts the student to consider the inverse operation, which is a good scaffold for solving the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how you might reverse the subtraction to find the missing number. What operation could help you figure it out?",
+      "reason": "The tutor provides a scaffold by suggesting the student think about reversing the subtraction and asking what operation would help."
+    }
+  ],
+  "trace_sha256": "2426852470ea91be23008605bb176f4aa71a89a380cfb8f06a2cedb1ec5c9f76"
+}

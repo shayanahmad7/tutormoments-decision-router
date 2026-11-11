@@ -1,0 +1,45 @@
+{
+  "case_index": 475,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what you did earlier with the nines and eights. What strategy could you use here?",
+      "reason": "The tutor reminds the student of a previously used strategy and asks them to apply it to the new problem, which promotes independent thinking and connection to prior learning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we had 10 groups of 8, that would be 80. But we only have 72. How much less than 80 is 72? What does that tell you about how many 8s we need?",
+      "reason": "The tutor provides a significant hint by starting with 10 groups of 8 and then guiding the student to subtract, which is a step the student could productively figure out on their own."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you start by figuring out how many 8s fit into 72? Maybe start with a guess and check it.",
+      "reason": "The tutor prompts the student to use a strategy (guess and check) and connect it to the previous problems, encouraging independent problem-solving."
+    }
+  ],
+  "trace_sha256": "4e44ef629f2fecc01425f5a074af8d9aaeec1527dcc3447aaa9da23e1676491f"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 494,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 18 and 12 for the areas of the two parts?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. It's also scaffolding because it targets the specific numbers the student wrote, making the request for explanation more accessible."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 18 and 12 for the areas of the two parts?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. It's also scaffolding because it targets the specific numbers the student wrote, making the request for explanation more accessible."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you check the second part of the shape again? The blue rectangle is 6 by 5. What is 6 times 5?",
+      "reason": "The tutor provides a hint by directing the student to re-evaluate the blue rectangle and then asks a direct question about the multiplication, which is a form of scaffolding. It doesn't ask for student explanation or justification, so it lacks rigor."
+    }
+  ],
+  "trace_sha256": "30f7679708432203936a7d595af4f3b460d7bba54ec35dffa6d693a5dcccb5e1"
+}

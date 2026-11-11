@@ -1,0 +1,45 @@
+{
+  "case_index": 37,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do next to figure out how many cakes are needed?",
+      "reason": "The tutor provides the two key pieces of information needed for the next step and then asks the student to determine the next operation, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": true,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the area of one cake is 60 cm²",
+      "reason": "The area of the cake is 20cm * 30cm = 600 cm^2, not 60 cm^2. This is a mathematical error."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do next?",
+      "reason": "The tutor provides the area of one cake and the total amount of cake needed, then asks the student to determine the next step, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "620130d91450f6f10ecad627c734c0d3089a683098dd597d17aa312a84f66e94"
+}

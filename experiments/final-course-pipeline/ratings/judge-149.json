@@ -1,0 +1,45 @@
+{
+  "case_index": 149,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that is the case, based on where the numbers are on the number line?",
+      "reason": "The student correctly identified the greater number. The tutor asks for an explanation, connecting it to the number line, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If -3/5 is the same as -0.6, then where would -0.6 be on the number line compared to 0.6? Can you point to both spots?",
+      "reason": "The tutor provides a useful conversion (-3/5 to -0.6) which is a scaffold. They then ask the student to locate both numbers and compare them, which is rigorous and helps the student visualize the comparison."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 0.6 is bigger than -3/5?",
+      "reason": "The student correctly identified the greater number. The tutor asks for an explanation, which is a good way to encourage rigor and deeper thinking."
+    }
+  ],
+  "trace_sha256": "53bd4342d9db86f295efd0353018465d2a3527a18ede3b62ac71617792b804d0"
+}

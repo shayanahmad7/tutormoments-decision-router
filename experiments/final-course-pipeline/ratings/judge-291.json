@@ -1,0 +1,45 @@
+{
+  "case_index": 291,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What are the numbers that multiply together to give 12? Can you list them?",
+      "reason": "The student is struggling to articulate the definition of a factor. The tutor provides a scaffold by rephrasing the question in a more accessible way, using the student's example of 12."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What are the factors of 12? Let's list them out together.",
+      "reason": "The student is struggling to define 'factor' and has offered '12' as an example. The tutor scaffolds by suggesting they list the factors of 12 together, providing a concrete task to help the student demonstrate understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you list all the factors of twelve and explain how you know they are factors?",
+      "reason": "The tutor asks the student to list the factors and explain their reasoning, which increases cognitive demand and promotes deeper understanding rather than just providing an answer."
+    }
+  ],
+  "trace_sha256": "0d78c3f0c9aa7e5f4f492c0e7003fde2c8acf75b21490a53ec22b976ee682911"
+}

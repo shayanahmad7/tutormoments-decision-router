@@ -1,0 +1,45 @@
+{
+  "case_index": 355,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 5/3 is more than 2/3? What does the numerator tell you about the size of the fraction?",
+      "reason": "The tutor confirms the student's (implied) correct answer and then asks the student to explain their reasoning, focusing on the role of the numerator. This promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Both have the same denominator, which is 3. That means the size of each part is the same in both fractions. Now, think about how many of those parts you're shading in each one. Which one has more shaded parts? What does that tell you about which fraction is bigger?",
+      "reason": "The tutor provides a lot of information that the student could productively figure out on their own, such as the meaning of the denominator and how to compare the shaded parts. This is overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 5/3 is greater than 2/3? What does the numerator tell you about the size of the fraction?",
+      "reason": "The tutor confirms the student's (implied) correct answer and then asks the student to explain their reasoning, focusing on the role of the numerator. This promotes deeper understanding and justification. The tutor also points out that 5/3 is more than a whole, which is a good observation."
+    }
+  ],
+  "trace_sha256": "996180d091db0b29a6c2521ec4eb42f18c2a7fa8f8f05161a69ae366e09bab53"
+}

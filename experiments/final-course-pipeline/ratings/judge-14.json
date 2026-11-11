@@ -1,0 +1,45 @@
+{
+  "case_index": 14,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think the next term in the sequence should be if we follow this rule?",
+      "reason": "The tutor confirms the student's observation and then asks the student to apply the rule to find the next term, which promotes deeper understanding and independent application of the rule."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should the fourth term be using the same rule? What do you get when you add the second and third terms?",
+      "reason": "The tutor guides the student to test the rule for the next term, which helps the student verify their reasoning and apply the rule consistently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option B works for this sequence but not for the earlier ones we looked at? What's different about how the terms change here?",
+      "reason": "The tutor asks the student to justify their reasoning and compare the current problem to previous ones, which encourages critical thinking and deeper understanding of the concepts."
+    }
+  ],
+  "trace_sha256": "129b0d1eddac26b2515011d509853d4c441452bdd9856bb2e653894bae202006"
+}

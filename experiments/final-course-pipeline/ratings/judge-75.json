@@ -1,0 +1,45 @@
+{
+  "case_index": 75,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But why does that happen? What’s the same about their two different expressions?",
+      "reason": "The tutor asks the student to consider why the two expressions yield the same result, prompting a deeper understanding of the mathematical equivalence rather than just identifying the correct option. This encourages the student to think about the underlying mathematical properties."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if both Tom and Katie got the same answer, what does that tell us about their methods?",
+      "reason": "This is a good question that prompts the student to make a conclusion based on their calculations. It's a logical next step in the conversation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if both Tom and Katie's methods give the same answer, what does that tell us about who is correct?",
+      "reason": "This question directly addresses the problem's core question and prompts the student to synthesize their findings. It's a clear and appropriate next step."
+    }
+  ],
+  "trace_sha256": "df7a8807e0d0204917268f05b23c718353acbc5cf321b6d5b4e1f1f4cb103b4a"
+}

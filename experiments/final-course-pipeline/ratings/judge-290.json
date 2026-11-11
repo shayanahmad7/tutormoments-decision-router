@@ -1,0 +1,45 @@
+{
+  "case_index": 290,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would solve the first problem on the list, 6 + 4 x 5, using the order of operations?",
+      "reason": "The tutor asks the student to explain their reasoning for the first problem, which they solved correctly earlier. This promotes rigor by asking for justification and scaffolding by reminding them of the order of operations."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let's look at the first problem again: \"5 - ? = 1.\" You're trying to find the missing number that, when subtracted from 5, gives 1. What number do you need to take away from 5 to get to 1?",
+      "reason": "This problem was from the game the student was playing, not from the list of problems the tutor just presented. The tutor is asking about a problem that is no longer relevant to the current task."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Can you explain why multiplying is the opposite of dividing in this step?",
+      "reason": "The student correctly identified that multiplication is the opposite of division when solving problem 9. Asking them to explain why is a good rigor move, but it's a bit generic and doesn't directly address the current problem the student is looking at (the first problem on the new list)."
+    }
+  ],
+  "trace_sha256": "e4b82e36a2ee0b8aab1128e3c6dfae9496cc3a987af417f849aadac1e7513a95"
+}

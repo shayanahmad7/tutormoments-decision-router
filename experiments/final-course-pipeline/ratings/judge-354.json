@@ -1,0 +1,45 @@
+{
+  "case_index": 354,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Okay, let's try another one. In the video game Fantasy Farm, it takes 5/6 of a minute to harvest magic flowers, and it takes 5/6 of an hour to build a golden barn. Which takes more time? Magic flowers or the golden barn?",
+      "reason": "The tutor has already presented this problem and the student has already answered it incorrectly, then used hints to get the correct answer. This candidate repeats the exact same problem, which is overhelping because the student has already seen the solution."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's try another one. Luke had 3/8 of the glass of strawberry milkshake left to drink. Rita had 3/8 of a larger glass of mint milkshake left to drink. Who had more milkshake left to drink? Luke, Rita, or They had the same amount?",
+      "reason": "This candidate presents the next problem in the sequence, which is appropriate for the flow of the conversation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what you know about minutes and hours, and decide who took more time.",
+      "reason": "This candidate presents the next problem in the sequence and provides a relevant hint to guide the student's thinking without giving away the answer."
+    }
+  ],
+  "trace_sha256": "e0a1833e707f4e656a8b196cbadee4c9fcb9646f138040e5a4036db6fb55a147"
+}

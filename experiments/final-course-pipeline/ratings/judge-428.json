@@ -1,0 +1,45 @@
+{
+  "case_index": 428,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you figure out that A is the rule for the input output table? Let me know your thinking.",
+      "reason": "The student has not yet answered the question, so asking them to explain their thinking for an answer they haven't given is not appropriate. However, if the student had given an answer, this would be a good rigor move."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens if you subtract 34 and 15? Try it with one pair, then check if the same thing happens with the others. What do you notice?",
+      "reason": "The tutor provides a clear hint to guide the student towards the correct operation (subtraction) and encourages them to test it across multiple pairs, which is a good scaffolding strategy."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you need to do to 34 to get to 15? Try subtracting. What number do you subtract from 34 to get 15?",
+      "reason": "The tutor provides a direct hint to try subtraction and then asks a specific question to guide the student to perform the calculation, which is appropriate scaffolding."
+    }
+  ],
+  "trace_sha256": "d35cc0f924507155a0deb439b20024b7179fdda28b0249d645f3c2ce0a3b18af"
+}

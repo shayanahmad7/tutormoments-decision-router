@@ -1,0 +1,45 @@
+{
+  "case_index": 368,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you figure out what the final answer should be by adding 20 and 21, and then putting that over the denominator 12?",
+      "reason": "The tutor asks the student to complete the final step of the problem, which involves both calculation and understanding of fraction structure. This is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what that sum is?",
+      "reason": "The tutor asks the student to perform the addition, which is appropriate for the current step of the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what 20 plus 21 equals? Let me know when you're ready to share your answer.",
+      "reason": "The tutor asks the student to perform the addition, which is appropriate for the current step of the problem. The added phrase 'Let me know when you're ready to share your answer' provides a small amount of scaffolding by inviting the student to respond at their own pace."
+    }
+  ],
+  "trace_sha256": "40e6a494e84958c4b55c28ae02453b964406ed0cb06b0930f45fcc84d89c02d8"
+}

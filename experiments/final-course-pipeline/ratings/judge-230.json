@@ -1,0 +1,45 @@
+{
+  "case_index": 230,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you subtract 5 from 11? What do you get?",
+      "reason": "The tutor correctly identifies the next step and asks the student to perform the calculation, which is appropriate scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That made it 11 minus 5, which is 6.",
+      "reason": "The tutor provides the answer to 11-5, which the student could have productively supplied. This is overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what 11 minus 5 is?",
+      "reason": "The tutor correctly identifies the next step and asks the student to perform the calculation, which is appropriate scaffolding."
+    }
+  ],
+  "trace_sha256": "63c77aafca9a4241af182df1adcaac7bb10e964ca234eadab08ae191249ba57f"
+}

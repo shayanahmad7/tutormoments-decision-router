@@ -1,0 +1,45 @@
+{
+  "case_index": 309,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So what operation can we use to find the missing number?",
+      "reason": "The tutor provides a hint by rephrasing the problem and then asks a guiding question about the operation needed."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can we rewrite this equation to solve for the star?",
+      "reason": "The tutor asks about the operation and then provides a scaffold by asking how to rewrite the equation, which is a direct hint towards inverse operations."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do we need to use to find the star in the equation ⭐ - 37 = 38? Why?",
+      "reason": "The tutor asks for the operation and then adds a 'why' question, which encourages the student to justify their reasoning, adding rigor."
+    }
+  ],
+  "trace_sha256": "32c3d744563257174d2fe8732d8b2250860e24b42339c08534f63df7bbd3e20d"
+}

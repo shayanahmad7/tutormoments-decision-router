@@ -1,0 +1,45 @@
+{
+  "case_index": 42,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how many pizzas Helena needs to make? What should we do next?",
+      "reason": "The tutor provides the two key numbers and asks the student to determine the next step, which promotes independent thinking and problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do next to find out how many pizzas Helena needs to make?",
+      "reason": "The tutor provides the two key numbers and asks the student to determine the next step, which promotes independent thinking and problem-solving."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do with these two numbers?",
+      "reason": "The tutor provides the two key numbers and asks the student to determine the next step, which promotes independent thinking and problem-solving. The additional prompt 'What should we do with these two numbers?' is a slight scaffold."
+    }
+  ],
+  "trace_sha256": "f6d6d81ffbf9ec9ccdfb68fb69294212958c455f01fe280b179a47caa701cb8a"
+}

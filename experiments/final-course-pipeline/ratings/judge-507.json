@@ -1,0 +1,45 @@
+{
+  "case_index": 507,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why does option C not help show there's an even number of apples?",
+      "reason": "The student selected C, which is the correct answer, but the tutor asks why it *doesn't* help, which is the opposite of what the question asks. The question asks which fact will *not* help, and C is the correct answer because it *does* help. The tutor's question is confusing and could lead the student to doubt their correct answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think option C doesn't help show there's an even number of apples? Let me hear your reasoning.",
+      "reason": "The student selected C, which is the correct answer, but the tutor asks why it *doesn't* help, which is the opposite of what the question asks. The question asks which fact will *not* help, and C is the correct answer because it *does* help. The tutor's question is confusing and could lead the student to doubt their correct answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me check your thinking. If you count in 2s and get to 12, that means you can pair the apples into groups of 2 with none left over. How does that help us decide if the total is even or odd? What does this fact actually tell us?",
+      "reason": "The student selected C, which is the correct answer, but the tutor asks about C as if it's the wrong answer. The question asks which fact will *not* help, and C is the correct answer because it *does* help. The tutor's question is confusing and could lead the student to doubt their correct answer."
+    }
+  ],
+  "trace_sha256": "816b30d80c053bee6d6cf66a4feb35e75baacdefbb8bd8a0e148aaa22bb330c2"
+}

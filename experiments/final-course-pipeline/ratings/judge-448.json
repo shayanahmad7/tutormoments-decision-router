@@ -1,0 +1,45 @@
+{
+  "case_index": 448,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the largest number that rounds down to 94,360 when rounded to the nearest 10?",
+      "reason": "The tutor is trying to guide the student to the largest number that rounds to 94,360. The student is currently struggling with the concept of rounding down vs. up."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if 5 or more rounds up, what is the largest number that would still round down to 94,360?",
+      "reason": "This candidate provides a useful hint by reminding the student of the rounding rule (5 or more rounds up) and then rephrasing the question to focus on the largest number that rounds *down* to the target, which is a key distinction the student is missing."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit would be in the ones place?",
+      "reason": "This candidate provides a useful hint by reminding the student of the rounding rule (5 or more rounds up) and then rephrasing the question to focus on the largest number that rounds *down* to the target, which is a key distinction the student is missing. It also adds an additional scaffold by asking about the specific digit place."
+    }
+  ],
+  "trace_sha256": "18a3a2e8a0194a267ddf865aa92cb6e690f0742d236c08d958255e6b21944bb6"
+}

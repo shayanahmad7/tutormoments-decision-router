@@ -1,0 +1,45 @@
+{
+  "case_index": 124,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain why the other equations don’t work? For example, why doesn’t A (13 - [ ] = 37) make sense for this problem?",
+      "reason": "The tutor asks the student to explain why the other options don't work, which promotes deeper understanding and justification. The tutor also provides a specific example to help the student get started."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we want to find the total number of apples, what operation do we use? What would the equation look like if we add them together?",
+      "reason": "The student has already selected the correct answer (C) and clicked check. This candidate asks questions that lead the student to the answer they've already found, which is overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the other options don't make sense for finding the total number of apples?",
+      "reason": "The tutor asks the student to explain their reasoning for why the other options are incorrect, which promotes deeper understanding and justification. This is a good rigor move after the student has already correctly identified the answer."
+    }
+  ],
+  "trace_sha256": "c2a7a484ca398067caf2fdeec69337a971d34c1055fc903f6f4473cff18ae9f5"
+}

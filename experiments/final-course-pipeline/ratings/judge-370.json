@@ -1,0 +1,45 @@
+{
+  "case_index": 370,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would start solving this division problem?",
+      "reason": "The tutor confirms the student's correct answer and then asks the student to explain their next step, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would be the first step in dividing 2,284 by 4?",
+      "reason": "The tutor confirms the student's correct answer and then asks the student to identify the first step, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with the first digit. How many times does 4 go into 2?",
+      "reason": "The tutor confirms the student's correct answer but then immediately provides the first step of the division problem, which the student could have productively supplied."
+    }
+  ],
+  "trace_sha256": "9fb9c7ae27efe30c43cd6a044e5f976a6934b369e968feb4fba5e2086ad0a9cc"
+}

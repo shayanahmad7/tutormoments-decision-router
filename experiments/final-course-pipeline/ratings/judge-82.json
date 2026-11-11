@@ -1,0 +1,45 @@
+{
+  "case_index": 82,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's count together: 4, 8, ...?",
+      "reason": "The tutor provides a hint by starting the count for the multiplication table, which scaffolds the student's recall of multiplication facts."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's four times four? Let me know so we can continue with the problem.",
+      "reason": "The tutor asks a direct question that is relevant to the current step of the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's four times four?",
+      "reason": "The tutor asks a direct question that is relevant to the current step of the problem."
+    }
+  ],
+  "trace_sha256": "5c7d8fd8dd7e4db01178962ce1d6cc015616afca0c7c4220a5455591c8c5e0ae"
+}

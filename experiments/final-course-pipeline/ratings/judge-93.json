@@ -1,0 +1,45 @@
+{
+  "case_index": 93,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many tens do we have? What about ones?",
+      "reason": "The tutor breaks down the number 46 into its place values, which is a helpful scaffold for the student to identify the correct option."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many groups of ten are in 46, and how many ones are left over?",
+      "reason": "The tutor provides a clear explanation of how to break down the number 46 into tens and ones, which is a useful scaffold for the student to understand the concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think option D is correct? Let's look at what 46 really means in terms of tens and ones.",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. The tutor also provides a scaffold by suggesting to look at the meaning of 46 in terms of tens and ones."
+    }
+  ],
+  "trace_sha256": "7261ddc7c7d170ec981613f920a328229f4044410c2d9c03eaed0cf520d1a5ba"
+}

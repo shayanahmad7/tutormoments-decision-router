@@ -1,0 +1,45 @@
+{
+  "case_index": 324,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you need to know about a rectangle to find its perimeter when only two side lengths are given?",
+      "reason": "This question prompts the student to recall the properties of a rectangle relevant to perimeter calculation, which is a helpful scaffold given the student's uncertainty."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What information do you need to calculate the perimeter of a rectangle, and what information do you already have?",
+      "reason": "This reply scaffolds the student by breaking down the problem into two parts: identifying needed information and identifying available information, which can help them connect the two."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think we need to know about a rectangle to find its perimeter when only two side lengths are shown?",
+      "reason": "This question is a good scaffold, prompting the student to think about the properties of a rectangle and how they relate to finding the perimeter when only partial information is given."
+    }
+  ],
+  "trace_sha256": "d0f30486c6c5b6c938691d88ae9b181722aae854b68ad9cc33f4e0c267032486"
+}

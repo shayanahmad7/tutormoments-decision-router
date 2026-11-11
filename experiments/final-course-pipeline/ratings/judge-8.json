@@ -1,0 +1,45 @@
+{
+  "case_index": 8,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how the sequence would continue if we added a fourth term? What would that term be and why?",
+      "reason": "The student correctly identified the third term. This response asks them to extend the sequence and explain their reasoning, which promotes deeper understanding and application of the rule."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would find the next term if the rule was different, like doubling instead of tripling?",
+      "reason": "This question encourages the student to generalize their understanding of non-linear sequences by applying a similar but different rule, promoting transfer of knowledge."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you've got the pattern: multiply by 3 each time. Let's check the next step. If the third term is 18, what would the fourth term be? Try applying the same rule.",
+      "reason": "The tutor first confirms the student's understanding of the pattern ('multiply by 3 each time') and then scaffolds the next step by explicitly asking for the fourth term and reminding them to apply the same rule. This provides targeted help while still requiring the student to perform the calculation and extend the sequence."
+    }
+  ],
+  "trace_sha256": "38039c2611c262ac135c5bf3bd37e21c7b432130d10f5ebc6f5d47453c277de6"
+}

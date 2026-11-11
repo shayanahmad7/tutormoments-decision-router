@@ -1,0 +1,45 @@
+{
+  "case_index": 123,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why the diagram you chose (A) is the correct one to show this addition? What makes it different from the others?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing diagram A, which promotes deeper understanding and justification. This is a good follow-up question after the student correctly identified the answer and performed the addition."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if the problem had said 12 birds flew into the tree first and then 15 more, would the total still be the same? Why or why not?",
+      "reason": "The tutor asks a question about the commutative property of addition, which encourages the student to think about the underlying mathematical principles rather than just solving the problem. This adds rigor by prompting a conceptual explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how the 2 and the 7 make 27? What does each part stand for?",
+      "reason": "The tutor asks the student to explain the place value of the digits in their answer, which reinforces their understanding of how numbers are composed. This is a good scaffolding question that also adds rigor by asking for an explanation."
+    }
+  ],
+  "trace_sha256": "b64bee9655c105af30b92c17a3187b1f18444ba21a68c9ef043ae698c761d391"
+}

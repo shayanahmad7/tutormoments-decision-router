@@ -1,0 +1,45 @@
+{
+  "case_index": 224,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think is the main idea or message of the story so far? How do the events in the chapters support that idea?",
+      "reason": "The tutor asks the student to identify the main idea or message of the story and to support their answer with evidence from the text. This promotes deeper thinking and analysis."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what happened in chapter six? What was the main event?",
+      "reason": "The tutor asks the student to summarize chapter six, which is a direct and appropriate follow-up to the reading."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "In chapter six, the students gave the tree a name. What was the name they chose, and why did they like it? What clue in the story tells us that?",
+      "reason": "The tutor asks a specific question about a detail from chapter six, which helps the student recall and process the information. The question about 'why they liked it' and 'what clue in the story tells us that' adds a layer of comprehension beyond simple recall."
+    }
+  ],
+  "trace_sha256": "18f380312f56c7ca463840b24503148897397dc02e667b74a81918c04b755966"
+}

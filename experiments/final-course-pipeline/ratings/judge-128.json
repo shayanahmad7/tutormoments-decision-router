@@ -1,0 +1,45 @@
+{
+  "case_index": 128,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why D is the correct equation for the number line?",
+      "reason": "The student has already selected the correct answer. The tutor asks the student to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many jumps back do we see from 7 to 3? Can you count them for me?",
+      "reason": "The student is struggling to identify the correct equation. The tutor provides a guided substep by asking them to count the jumps on the number line, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why this matches the number line? What does the arrow from 7 to 3 show?",
+      "reason": "The student has already selected the correct answer. The tutor confirms the answer and then asks the student to explain their reasoning, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "b593ce81377c40ca4ac95c00a7a4db0fa212b2b17cab12a797ff76eacd84f52a"
+}

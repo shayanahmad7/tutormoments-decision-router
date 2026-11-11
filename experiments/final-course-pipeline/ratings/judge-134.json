@@ -1,0 +1,45 @@
+{
+  "case_index": 134,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "which one did you use to decide if it was odd or even? The 1 or the 3? Why?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing the last digit, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "which digit would you look at to decide if it's odd or even? Why that one?",
+      "reason": "The tutor provides a new example to check for understanding and asks the student to justify their choice, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "For the first number, 78,431 — you said it's odd. That's right! You looked at the last digit, 1, and that's correct. But for the second number, 92,296, you said it's even. That's also right! You looked at the last digit, 6, and that's even. So you're doing great!",
+      "reason": "The tutor overhelps by explaining the student's correct reasoning for both problems, rather than letting the student explain their own thinking."
+    }
+  ],
+  "trace_sha256": "7c7aa7b80506d85566770a04443df35d21e9bd2c029ba48c67c812e349c1b22a"
+}

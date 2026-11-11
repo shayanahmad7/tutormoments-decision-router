@@ -1,0 +1,45 @@
+{
+  "case_index": 47,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do we do to both sides to get rid of the 3?",
+      "reason": "The tutor asks a guiding question to prompt the student to recall the inverse operation needed to isolate x, which is appropriate scaffolding given the student's previous struggles."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do to both sides of the equation to remove the 3?",
+      "reason": "The tutor provides a clear hint by identifying the number to remove (3) and then asks the student to identify the operation, which is a good scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you subtract three from both sides of the equation 9 = 3 + x/4? Write it out and see if you can take the next step.",
+      "reason": "The tutor provides a direct hint about the operation (subtracting 3 from both sides) and then encourages the student to write it out and take the next step independently, combining scaffolding with rigor."
+    }
+  ],
+  "trace_sha256": "a9dcfe7a4d7a7ce72202cf3b9e8f981e5999a7291d3859410c00480b106f4306"
+}

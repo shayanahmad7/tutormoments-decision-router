@@ -1,0 +1,45 @@
+{
+  "case_index": 474,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 8 plus 4?",
+      "reason": "The tutor just asked the student to break up the addition problem and asked 'what's four plus four?'. The student replied 'eight'. This response continues the scaffolding by asking for the next step in the addition."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, great! You said four plus four is eight. Now, can you add the next four to that? So what's eight plus four?",
+      "reason": "This response acknowledges the student's previous correct answer and then prompts them to continue the addition, providing clear scaffolding for the next step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 8 plus 4?",
+      "reason": "The tutor just asked the student to break up the addition problem and asked 'what's four plus four?'. The student replied 'eight'. This response continues the scaffolding by asking for the next step in the addition."
+    }
+  ],
+  "trace_sha256": "ce26a427b1d2b6fe77de657a5e9a77a2eb6c6ac687297ed9f841efb1b95db572"
+}

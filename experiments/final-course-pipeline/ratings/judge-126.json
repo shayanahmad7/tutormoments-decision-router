@@ -1,0 +1,45 @@
+{
+  "case_index": 126,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how could we check if 6 + 15 really gives 21?",
+      "reason": "The student correctly identified the missing number. The tutor asks the student to justify their answer by checking it, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you find that number?",
+      "reason": "The student already stated the correct answer (6). The tutor's question asks for the answer again, which is overhelping as the student already provided it."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you know that 15 plus 6 equals 21?",
+      "reason": "The student correctly identified the missing number. The tutor asks for an explanation, which promotes rigor by requiring the student to articulate their reasoning."
+    }
+  ],
+  "trace_sha256": "1c7720e66a6513d308e212c0bc29eb19b76d2eb4b7030c9228bee50d3eb2cac2"
+}

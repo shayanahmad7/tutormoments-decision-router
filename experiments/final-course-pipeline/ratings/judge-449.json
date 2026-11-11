@@ -1,0 +1,45 @@
+{
+  "case_index": 449,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me which of these is the largest and why?",
+      "reason": "The tutor asks the student to identify the largest fraction and justify their answer, which promotes deeper thinking and responsibility."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we imagine two pizzas, one cut into 12 slices and one cut into 2 slices, which piece is bigger — one of the 12 slices or one of the 2 slices?",
+      "reason": "The tutor provides a concrete analogy (pizzas) to help the student compare fractions, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me which of these is the smallest and which is the largest? Let’s start there.",
+      "reason": "The tutor breaks down the problem by asking the student to identify the smallest and largest fractions first, which is a helpful substep. It also promotes rigor by asking the student to identify them independently."
+    }
+  ],
+  "trace_sha256": "4de9284a24d8c92179d0d914a3b53b4cfa46c21aeb8c07f13ef45a143d9901cb"
+}

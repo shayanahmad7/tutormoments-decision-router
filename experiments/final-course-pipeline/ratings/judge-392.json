@@ -1,0 +1,45 @@
+{
+  "case_index": 392,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Explain why you think that option has two true statements.",
+      "reason": "The student has just read all the options aloud. This prompt asks them to make a choice and justify it, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How do the hundreds digits compare? What about the tens digits?",
+      "reason": "The student is struggling with comparing numbers and the symbols. This reply scaffolds the comparison process by asking them to look at the digits in a specific order."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Both numbers start with 4, so we compare the next digit. 7 (in 472) is greater than 2 (in 427). That means 472 is greater than 427. So the first part of option A is true.",
+      "reason": "The tutor provides the full explanation for the first comparison, which the student could productively work through themselves, making it overhelpful."
+    }
+  ],
+  "trace_sha256": "819ca834bef3c2a4435a805502d1895c3f66f291dd6acd00ada5a32d2017e9c5"
+}

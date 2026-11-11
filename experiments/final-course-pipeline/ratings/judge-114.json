@@ -1,0 +1,45 @@
+{
+  "case_index": 114,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How does that match up with the bar model? What does each part of the equation represent in the diagram?",
+      "reason": "The tutor asks the student to connect the equation to the visual representation, promoting deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how the diagram shows 28 ÷ 7 = 4?",
+      "reason": "The tutor asks the student to explain their reasoning, which encourages justification and deeper engagement with the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The bar model shows 28 split into 4 equal parts. If each part is 7, then 28 divided by 7 gives the number of parts.",
+      "reason": "The tutor provides a significant amount of the explanation and connection between the diagram and the equation, which the student could productively figure out themselves."
+    }
+  ],
+  "trace_sha256": "23694991dbf194e317d7fb0a427acb3e35c5e037ca9031a03529c5c4306cb5e1"
+}

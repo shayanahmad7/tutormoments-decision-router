@@ -1,0 +1,45 @@
+{
+  "case_index": 145,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you write the number out without the exponent?",
+      "reason": "The tutor asks the student to write the number out, which is a direct way to apply the concept and see if they understand the decimal movement."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s count together: one, two, three... you can write the number as you go.",
+      "reason": "The tutor offers to count with the student and suggests writing the number as they go, providing a guided substep to help visualize the decimal movement."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s the first number you see after moving it one place?",
+      "reason": "The tutor breaks down the process by asking about the first step of moving the decimal, making the initial move more accessible."
+    }
+  ],
+  "trace_sha256": "daf9bdc23dad5c6a080f14f1b1e2fe74d9953c3302130c6a6cfcf7f9f879959f"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 76,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "which two numbers would you multiply and then divide by two to find the area?",
+      "reason": "The tutor provides a clear hint by reminding the student of the formula and asking them to identify the relevant numbers for triangle A."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "It has a base of 4 units and a height of 3 units. If we use the formula for area of a triangle (base × height ÷ 2), what would the area of triangle A be?",
+      "reason": "The tutor provides the base and height, and explicitly states the formula, making the calculation very straightforward for the student."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "It has a base of 4 units and a height of 3 units. If we use the formula for area of a triangle, what would the area of A be?",
+      "reason": "The tutor provides the base and height for triangle A and reminds the student to use the formula, which is a helpful scaffold."
+    }
+  ],
+  "trace_sha256": "8419583e0a8f392397afd7633cf461782f480d6d84a8eca9675c6e707283b9a7"
+}

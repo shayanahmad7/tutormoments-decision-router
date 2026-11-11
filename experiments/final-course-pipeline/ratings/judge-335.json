@@ -1,0 +1,45 @@
+{
+  "case_index": 335,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 65?",
+      "reason": "The student provided an incorrect answer, and the tutor asks them to explain their reasoning, which promotes rigor by asking the student to justify their thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you take one step forward from 33 and tell me what number you land on?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking the student to take just one step on the number line, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you take one step forward from 33 and tell me what number you land on?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking the student to take just one step on the number line, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "ad817f2fe60ab474afa69f84b06897d3eae9bbfc866f643ecbfae7ac3200c7b5"
+}

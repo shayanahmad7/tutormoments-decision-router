@@ -1,0 +1,45 @@
+{
+  "case_index": 43,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you start by subtracting 2 from both sides? What would you get?",
+      "reason": "The tutor provides a new problem and then immediately prompts the student with the first step, which is appropriate scaffolding given the student's previous hesitation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try solving it step by step? What’s the first thing you’d do?",
+      "reason": "The tutor provides a new problem and asks the student to articulate the first step, which encourages independent thinking while still offering support."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you walk me through how you would solve it?",
+      "reason": "The tutor provides a new problem and asks the student to explain their process, which promotes rigor by requiring the student to articulate their understanding."
+    }
+  ],
+  "trace_sha256": "ef55b48852aeefb3303734def743860b72c06237da59599b5edd677b0ad39df3"
+}

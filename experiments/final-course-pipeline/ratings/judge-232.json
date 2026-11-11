@@ -1,0 +1,45 @@
+{
+  "case_index": 232,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number should go in the star to split 48 into two parts?",
+      "reason": "The tutor provides a clear hint by reminding the student of the distributive method and asking how to split 48 into two parts, which directly relates to the star in the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number, when added to 8, gives us 48?",
+      "reason": "The tutor scaffolds the problem by rephrasing it as a simpler addition problem, making the connection between the distributive method and breaking down the number 48 more accessible."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about the tens place.",
+      "reason": "The tutor provides a targeted hint by directing the student to 'Think about the tens place,' which is crucial for understanding that the '4' in 48 represents 40 in the context of the distributive method."
+    }
+  ],
+  "trace_sha256": "f9b8df99078fe4f485dfc357d3ec0d5cee930d2e20209625b98b25c8e1ccdc64"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 39,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 14 times 10? That might help you get close.",
+      "reason": "The student is stuck on 154 divided by 14. The tutor provides a hint to help them get started with the division, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 154 divided by 14? Can you try solving this division problem?",
+      "reason": "The student correctly identified the operation needed. The tutor asks them to solve it, maintaining rigor by not providing further steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try writing that out on the whiteboard and doing the first step of the division?",
+      "reason": "The student is stuck on the division. The tutor scaffolds by asking them to write it out and do the first step, which is a common strategy for long division."
+    }
+  ],
+  "trace_sha256": "829056208b23c077ee02e72c82cde0194c89829c64d69224844ac4e5baade13b"
+}

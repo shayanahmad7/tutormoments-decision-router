@@ -1,0 +1,45 @@
+{
+  "case_index": 62,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many fives do we need to multiply together? Can you write that expression for me?",
+      "reason": "The tutor asks a guiding question about the number of factors needed, then asks the student to write the expression, which promotes independent work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means we need three fives multiplied together. Can you write out the expression for five to the power of three?",
+      "reason": "The tutor explicitly states the meaning of the exponent before asking the student to write the expression, providing a clear scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "five to the power of three means we multiply five by itself three times. What does that expression look like? Write it out for me.",
+      "reason": "The tutor clearly explains the meaning of the exponential notation before asking the student to write the expression, which is a direct scaffold."
+    }
+  ],
+  "trace_sha256": "7a256d9010b892f1308a05b8d57079969023636b1aeb723238889d349d3c1a4f"
+}

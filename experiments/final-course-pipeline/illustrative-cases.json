@@ -1,0 +1,407 @@
+[
+  {
+    "contrast": "Correct category, unsuccessful reply",
+    "selection_rule": "Lowest source index in strict matched mathematics frame meeting the stated contrast",
+    "index": 23,
+    "moment_number": 24,
+    "source_id": "balanced_520:1aa36bfc-6b57-5be7-9665-189364443674_98cce3d5-f4eb-5541-9f96-286198fd0433_9c4eac0c-65a0-55b6-87f0-2be6abf3740e__hum_292_333",
+    "reference": "scaffolding",
+    "jev": "scaffolding",
+    "decisions": "scaffolding",
+    "context_excerpt": [
+      {
+        "turn_number": 286,
+        "role": "tutor",
+        "text": "Now, now you know this, there's one thousand cubes in this big cube, right?"
+      },
+      {
+        "turn_number": 287,
+        "role": "student",
+        "text": "Yeah."
+      },
+      {
+        "turn_number": 288,
+        "role": "tutor",
+        "text": "So then how many cubes are in this one?"
+      },
+      {
+        "turn_number": 289,
+        "role": "student",
+        "text": "Ten."
+      },
+      {
+        "turn_number": 290,
+        "role": "tutor",
+        "text": "So now it's a thousand minus ten. What do you get?"
+      },
+      {
+        "turn_number": 291,
+        "role": "student",
+        "text": "Hundred."
+      },
+      {
+        "turn_number": 292,
+        "role": "tutor",
+        "text": "No. One thousand minus ten."
+      },
+      {
+        "turn_number": 293,
+        "role": "tutor",
+        "text": "You can work it out."
+      },
+      {
+        "turn_number": 294,
+        "role": "student",
+        "text": "One thousand minus ten. One comma zero zero zero minus ten."
+      },
+      {
+        "turn_number": 295,
+        "role": "student",
+        "text": "We got zero, zero, zero, zero."
+      }
+    ],
+    "source_annotation_explanation": "This is an appropriate place to scaffold because the student is struggling to solve independently. The students initial answer was incorrect and they were unsure of where to start in order to get the correct answer.",
+    "replies_and_ratings": [
+      {
+        "index": "23",
+        "moment_number": "24",
+        "student_id": "98cce3d5-f4eb-5541-9f96-286198fd0433",
+        "reference": "scaffolding",
+        "arm": "self_detailed",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "Okay, so you're trying to figure out 1,000 minus 10. Let's write it out like this:  \n1,000  \n- 10  \n________  \n\nNow, subtract the ones place first. What do you get when you subtract 0 minus 0?",
+        "strict_pass": "True",
+        "direction_no_overhelp": "True",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "False",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "Let's write it out like this: 1,000 - 10",
+        "evidence_exact": "False",
+        "reason": "The student is struggling with 1000 - 10. The tutor provides a scaffold by setting up the subtraction problem vertically and then guiding the student to start with the ones place.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      },
+      {
+        "index": "23",
+        "moment_number": "24",
+        "student_id": "98cce3d5-f4eb-5541-9f96-286198fd0433",
+        "reference": "scaffolding",
+        "arm": "force_scaffolding",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "Let's go back to the problem on the screen: 338 + 586 = 924. So, 924 - 586 = ?\n\nYou mentioned that 338 + 586 = 924. If I take away 586 from 924, what number am I left with? Can you look at the original addition to help you figure it out?",
+        "strict_pass": "False",
+        "direction_no_overhelp": "True",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "False",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "0",
+        "uncertain": "False",
+        "evidence": "Let's go back to the problem on the screen: 338 + 586 = 924. So, 924 - 586 = ?",
+        "evidence_exact": "True",
+        "reason": "The tutor is trying to go back to a previous problem that the student already solved correctly. The student is currently working on 1000 - 10, which is a different problem related to the volume of cubes.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      },
+      {
+        "index": "23",
+        "moment_number": "24",
+        "student_id": "98cce3d5-f4eb-5541-9f96-286198fd0433",
+        "reference": "scaffolding",
+        "arm": "force_rigor",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "Okay, so you said one thousand minus ten. Let me see how you figure that out. Can you write it down step by step on the whiteboard?",
+        "strict_pass": "True",
+        "direction_no_overhelp": "True",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "True",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "Can you write it down step by step on the whiteboard?",
+        "evidence_exact": "True",
+        "reason": "The student is struggling with 1000 - 10. The tutor asks the student to write it down on the whiteboard, which encourages the student to show their work and take responsibility for the next step, while also providing a visual aid for the tutor to understand the student's thought process.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      }
+    ],
+    "interpretation": "Both routers chose scaffolding, matching the source. The selected reply nevertheless returned to an earlier addition problem instead of the current 1,000 minus 10 task. The evaluator marked context_fit=0. Self-choice stayed with the current task and passed. This separates category selection from contextual execution."
+  },
+  {
+    "contrast": "Category mismatch, successful reply",
+    "selection_rule": "Lowest source index in strict matched mathematics frame meeting the stated contrast",
+    "index": 4,
+    "moment_number": 5,
+    "source_id": "balanced_520:09264613-5009-5557-87c6-d590c3d6c391_02020d06-7b55-5b35-b27f-18b334d8c8c3_ffa4bb37-6dd8-5c9a-a2ae-4c6f746ff82c__hum_171_174",
+    "reference": "scaffolding",
+    "jev": "rigor",
+    "decisions": "rigor",
+    "context_excerpt": [
+      {
+        "turn_number": 165,
+        "role": "student",
+        "text": "We shouldn't ever do this."
+      },
+      {
+        "turn_number": 166,
+        "role": "tutor",
+        "text": "We've done this before. Just see if you can pull out of your memory like how to solve these kinds of questions."
+      },
+      {
+        "turn_number": 167,
+        "role": "tutor",
+        "text": "[PAUSE: 1 second]"
+      },
+      {
+        "turn_number": 167,
+        "role": "tutor",
+        "text": "Okay. So, do you remember what a whole number like how to write a whole number in a fraction?"
+      },
+      {
+        "turn_number": 168,
+        "role": "student",
+        "text": "You like do what you do to the top to the bottom or something."
+      },
+      {
+        "turn_number": 169,
+        "role": "tutor",
+        "text": "So, that's if we're trying to find an equivalent fraction."
+      },
+      {
+        "turn_number": 170,
+        "role": "student",
+        "text": "Oh."
+      },
+      {
+        "turn_number": 171,
+        "role": "tutor",
+        "text": "But if you multiply three over four times three, what is three written in fraction form?"
+      },
+      {
+        "turn_number": 172,
+        "role": "tutor",
+        "text": "What can we put in as the denominator to make three a fraction?"
+      },
+      {
+        "turn_number": 173,
+        "role": "student",
+        "text": "Uh, one."
+      }
+    ],
+    "source_annotation_explanation": "This is a good place to provide additional support through scaffolding. The tutor is checking the student to see if they understand the concept.\n",
+    "replies_and_ratings": [
+      {
+        "index": "4",
+        "moment_number": "5",
+        "student_id": "02020d06-7b55-5b35-b27f-18b334d8c8c3",
+        "reference": "scaffolding",
+        "arm": "self_detailed",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "So, if we write 3 as a fraction with denominator 1, it's $ \\frac{3}{1} $. Now, how can we multiply $ \\frac{3}{4} $ by 3 (or $ \\frac{3}{1} $) to find the result? What happens when you multiply the numerators and denominators?",
+        "strict_pass": "True",
+        "direction_no_overhelp": "True",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "False",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "So, if we write 3 as a fraction with denominator 1, it's $ \\frac{3}{1} $. Now, how can we multiply $ \\frac{3}{4} $ by 3 (or $ \\frac{3}{1} $) to find the result? What happens when you multiply the numerators and denominators?",
+        "evidence_exact": "True",
+        "reason": "The tutor explicitly states how to write 3 as a fraction and then prompts the student on the next steps for multiplying fractions, which is a clear scaffold.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      },
+      {
+        "index": "4",
+        "moment_number": "5",
+        "student_id": "02020d06-7b55-5b35-b27f-18b334d8c8c3",
+        "reference": "scaffolding",
+        "arm": "force_scaffolding",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "So you're saying three is the same as 3/1. That's right! Now, if we want to multiply 3/1 by 3/4, how can we start? What do we need to do with the numerators and denominators?",
+        "strict_pass": "True",
+        "direction_no_overhelp": "True",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "False",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "So you're saying three is the same as 3/1. That's right! Now, if we want to multiply 3/1 by 3/4, how can we start? What do we need to do with the numerators and denominators?",
+        "evidence_exact": "True",
+        "reason": "The tutor affirms the student's implicit understanding of writing 3 as a fraction and then guides them to the next step of multiplying fractions by asking about numerators and denominators.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      },
+      {
+        "index": "4",
+        "moment_number": "5",
+        "student_id": "02020d06-7b55-5b35-b27f-18b334d8c8c3",
+        "reference": "scaffolding",
+        "arm": "force_rigor",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "So if three is three over one, how can we multiply that by three over four? What does that look like?",
+        "strict_pass": "True",
+        "direction_no_overhelp": "True",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "False",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "So if three is three over one, how can we multiply that by three over four?",
+        "evidence_exact": "True",
+        "reason": "The tutor provides the correct fraction form for 3 and then asks the student to apply that knowledge to the multiplication problem, which is a helpful next step.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      }
+    ],
+    "interpretation": "Both routers chose rigor despite the source scaffolding category. The selected reply restated three as three over one and asked how to multiply it by three over four. The evaluator counted this as scaffolding and passed it. A forced-policy label does not guarantee an exclusive behavioral category."
+  },
+  {
+    "contrast": "Routed reply passes while self-choice fails",
+    "selection_rule": "Lowest source index in strict matched mathematics frame meeting the stated contrast",
+    "index": 25,
+    "moment_number": 26,
+    "source_id": "balanced_520:1aa36bfc-6b57-5be7-9665-189364443674_98cce3d5-f4eb-5541-9f96-286198fd0433_9c4eac0c-65a0-55b6-87f0-2be6abf3740e__hum_358_367",
+    "reference": "rigor",
+    "jev": "rigor",
+    "decisions": "rigor",
+    "context_excerpt": [
+      {
+        "turn_number": 357,
+        "role": "tutor",
+        "text": "Uh-oh."
+      },
+      {
+        "turn_number": 358,
+        "role": "tutor",
+        "text": "[PAUSE: 13 seconds]"
+      },
+      {
+        "turn_number": 358,
+        "role": "tutor",
+        "text": "Let's do this one. We're just gonna go in order."
+      },
+      {
+        "turn_number": 359,
+        "role": "student",
+        "text": "No, number line."
+      },
+      {
+        "turn_number": 360,
+        "role": "tutor",
+        "text": "[PAUSE: 22 seconds]"
+      },
+      {
+        "turn_number": 360,
+        "role": "student",
+        "text": "The A."
+      },
+      {
+        "turn_number": 361,
+        "role": "tutor",
+        "text": "[PAUSE: 7 seconds]"
+      },
+      {
+        "turn_number": 361,
+        "role": "tutor",
+        "text": "Did you look at what numbers are you using? So you have eight and you're going back to three. So what do you have to subtract eight by to get three?"
+      },
+      {
+        "turn_number": 362,
+        "role": "tutor",
+        "text": "[PAUSE: 12 seconds]"
+      },
+      {
+        "turn_number": 362,
+        "role": "student",
+        "text": "Five."
+      }
+    ],
+    "source_annotation_explanation": "This is an appropriate place to push for rigor because the student is showing signs of mastering this skill. The student is able to apply the skill into multiple different problems  with minimal or no support from the tutor.",
+    "replies_and_ratings": [
+      {
+        "index": "25",
+        "moment_number": "26",
+        "student_id": "98cce3d5-f4eb-5541-9f96-286198fd0433",
+        "reference": "rigor",
+        "arm": "self_detailed",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "So if you're subtracting 8 and ending up at 3 on the number line, how many steps back did you take? What number do you get when you subtract that from 8 to reach 3?",
+        "strict_pass": "False",
+        "direction_no_overhelp": "False",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "False",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "how many steps back did you take? What number do you get when you subtract that from 8 to reach 3?",
+        "evidence_exact": "True",
+        "reason": "The tutor is guiding the student to think about the subtraction in terms of steps on a number line, which is a helpful visual and conceptual scaffold for this type of problem.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      },
+      {
+        "index": "25",
+        "moment_number": "26",
+        "student_id": "98cce3d5-f4eb-5541-9f96-286198fd0433",
+        "reference": "rigor",
+        "arm": "force_scaffolding",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "So you have 8, and you want to get to 3. If you take away 5 from 8, what do you get? Try that step.",
+        "strict_pass": "False",
+        "direction_no_overhelp": "False",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "False",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "If you take away 5 from 8, what do you get? Try that step.",
+        "evidence_exact": "True",
+        "reason": "The student has already said 'The A' which is likely the answer 5. The tutor is asking the student to verify their answer by performing the subtraction, which is a good scaffolding step.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      },
+      {
+        "index": "25",
+        "moment_number": "26",
+        "student_id": "98cce3d5-f4eb-5541-9f96-286198fd0433",
+        "reference": "rigor",
+        "arm": "force_rigor",
+        "judge": "google/gemini-2.5-flash",
+        "reply": "So you said five. Let me see — if you start at eight on the number line and subtract five, does that get you to three? Why or why not?",
+        "strict_pass": "True",
+        "direction_no_overhelp": "True",
+        "valid_generation": "True",
+        "observed_scaffolding": "True",
+        "observed_rigor": "True",
+        "overhelp": "False",
+        "math_error": "False",
+        "context_fit": "2",
+        "uncertain": "False",
+        "evidence": "if you start at eight on the number line and subtract five, does that get you to three? Why or why not?",
+        "evidence_exact": "True",
+        "reason": "The tutor asks the student to verify their answer and then justify it, which promotes deeper thinking and rigor. The 'why or why not' part is particularly good for rigor.",
+        "finish_reason": "stop",
+        "provider": "DeepInfra"
+      }
+    ],
+    "interpretation": "The student had supplied five for eight minus an unknown number equaling three. Jev selected rigor. The selected reply asked the student to check and justify that answer; the evaluator rated both rigor and scaffolding. The self-choice reply was rated as scaffolding only. This is one positive contrast, not a claim that adding a why-question is sufficient in general."
+  }
+]

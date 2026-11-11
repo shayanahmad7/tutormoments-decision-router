@@ -1,0 +1,45 @@
+{
+  "case_index": 132,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start with the tens first. What is 50 + 30?",
+      "reason": "The tutor asks the student to explain their answer, which is a good rigor move. The tutor then scaffolds the explanation by breaking down the addition into tens and ones, which is appropriate given the student's previous struggles with explaining their work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you need to do with these two numbers to find the total length?",
+      "reason": "The tutor asks the student to explain their process, which is a good rigor move. However, the student has already selected the correct answer, so asking 'what do you need to do' is a bit redundant. It would be more helpful to ask how they arrived at the correct answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you added 56 and 35 to get 91? What steps did you take in your mind or on the paper?",
+      "reason": "The tutor asks the student to explain their thinking process, which is a good rigor move. This is appropriate as the student has previously struggled to articulate their reasoning."
+    }
+  ],
+  "trace_sha256": "7812725b0bf53fdddb66d721663329fbd5dab19cba6906285a608848be6e5fcb"
+}

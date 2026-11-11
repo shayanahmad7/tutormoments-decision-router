@@ -1,0 +1,45 @@
+{
+  "case_index": 10,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the difference between 31 and 40? Can you use that to check if Tom's rule might still work in a different way, or is Katie's result of 40 the only one that matches?",
+      "reason": "The student has already correctly identified that Tom's rule doesn't work and Katie's does. The tutor's question about the difference between 31 and 40 is unnecessary scaffolding that might confuse the student or lead them to re-evaluate a rule they've already correctly dismissed."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Could you try writing out the next term in the sequence using Katie’s rule to make sure the pattern continues? What would the next number be after 121?",
+      "reason": "The student has already correctly identified Katie's rule and explained why it works for the given sequence. Asking them to apply the rule to find the next term is a good way to reinforce their understanding and ensure they can extend the pattern independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you write a general rule or formula that describes Katie's pattern? For example, if the previous term is $ x $, what expression would give the next term?",
+      "reason": "The student has successfully identified and applied Katie's rule. Asking them to generalize it into a formula using a variable increases the rigor by moving from specific application to abstract representation, which is a higher level of mathematical thinking."
+    }
+  ],
+  "trace_sha256": "e6b06db53083d4b57c178b824bc035dd2637f194aa7570fb6111077a01082799"
+}

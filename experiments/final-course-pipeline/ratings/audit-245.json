@@ -1,0 +1,45 @@
+{
+  "case_index": 245,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what if we tried a different arrangement, like putting the two largest numbers in the tens place instead? Would that give us a bigger total? Why or why not?",
+      "reason": "Directly follows the student's answer of 147 and the tutor's written 97+86, prompting Mia to compare arrangements and justify her reasoning—appropriate scaffolding with genuine cognitive demand."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens if we try putting the largest numbers in the tens place instead? Let's try 97 + 86.",
+      "reason": "Fits the moment perfectly—tutor had just written 97+86 on the whiteboard—and guides Mia to explore the alternative arrangement, though it doesn't ask for justification, limiting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "reason": "This text is a verbatim repeat of an earlier tutor turn from the conversation; it ignores the current state where the student has already answered 147 and the tutor has written 97+86, making it contradictory to the actual exchange.",
+      "evidence": "arrange four of the cards to get the largest... Okay, so it seems like there's only one of each one of each number. Do you think that too?"
+    }
+  ],
+  "trace_sha256": "d3c517267030a012c43a71b60b3aff9c8639eb12ec802df5a56a934e3e58f901"
+}

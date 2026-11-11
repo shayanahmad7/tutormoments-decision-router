@@ -1,0 +1,45 @@
+{
+  "case_index": 90,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we start at 0 and make one big skip of 5, where do we land?",
+      "reason": "The tutor is re-engaging the student after a break and a previous explanation of skip counting. This question is a direct, simple application of the concept, providing a clear starting point."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Show me on the number line or explain how you know.",
+      "reason": "The tutor asks the student to apply the concept of skip counting from a starting point other than zero, which is a good step up. The request to 'show me on the number line or explain how you know' adds rigor by asking for justification or a visual representation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Show me on the number line or explain how you’d figure it out.",
+      "reason": "The tutor asks the student to apply the concept of skip counting from a starting point other than zero, which is a good step up. The request to 'show me on the number line or explain how you’d figure it out' adds rigor by asking for justification or a visual representation."
+    }
+  ],
+  "trace_sha256": "2c3bc81a1671887fff018781db686c4cb6b9a91ac01a5e3d78989efc71d81d86"
+}

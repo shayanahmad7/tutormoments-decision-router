@@ -1,0 +1,45 @@
+{
+  "case_index": 220,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number times 1 equals 8?",
+      "reason": "The tutor breaks down the problem into a more accessible question, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "what should we click for \"8 x ? = 40\"?",
+      "reason": "The tutor asks the student to solve the next problem independently, which increases rigor. However, the problem '8 x ? = 40' is not the current problem in the conversation, making the context fit weak."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that makes sense? What happens when you multiply any number by 1?",
+      "reason": "The tutor asks the student to justify their answer and connect it to a mathematical property, which promotes rigor. The question is directly related to the problem the student just solved."
+    }
+  ],
+  "trace_sha256": "e756c3ef1a95fa4e0c84b8c8076bc89674f64f9afabb3cd1895337be878bdbb5"
+}

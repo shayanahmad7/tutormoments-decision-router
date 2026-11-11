@@ -1,0 +1,45 @@
+{
+  "case_index": 223,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What was the main action in the chapter? Who were the main characters involved, and what did they do? Let's start with that.",
+      "reason": "The tutor provides scaffolding by asking guiding questions to help the student recall the main action and characters, which are key components of a summary."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happened with the tadpoles and the Fair Fairy that led to the tree coming to life?",
+      "reason": "The tutor provides scaffolding by connecting the student's previous statements (tadpoles and Fair Fairy) to a specific event (the tree coming to life) to help them focus their summary."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happened with them in the chapter? Can you describe the main events in your own words?",
+      "reason": "The tutor encourages rigor by asking the student to describe the main events in their own words, building on what the student has already mentioned."
+    }
+  ],
+  "trace_sha256": "1b2fa8613b8a8f5c8b77ef045097dce435167ce2f5a6f88b6ad1bb9914e6f41c"
+}

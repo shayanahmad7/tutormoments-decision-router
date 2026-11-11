@@ -1,0 +1,45 @@
+{
+  "case_index": 362,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think you need to do first to solve this?",
+      "reason": "The tutor asks the student to identify the first step, which promotes independent thinking and problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the 4 when we borrow 1 from the 6 in the tens place?",
+      "reason": "The tutor guides the student through the first step of borrowing, providing a specific prompt to help them proceed."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Do you think you need to subtract the ones first or the tens first?",
+      "reason": "The tutor provides a specific hint by narrowing down the options for the first step, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "6cdf7374e78b63dda3ec8c1d4483f5a3de60d32211586b2b1a704dc82cbb05f1"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 426,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 3 minus 2?",
+      "reason": "Guides the student to compute the numerator subtraction as a substep, appropriate scaffolding for the student who said 'one out of eight' (correct answer) without showing reasoning; asks a leading but useful sub-question."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what is the denominator in the answer?",
+      "reason": "Asks the student to identify the denominator, pushing for justification of the correct answer the student gave; increases cognitive demand without giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is the answer 1/8?",
+      "reason": "Directly asks the student to justify their correct answer, promoting mathematical reasoning and connection to the same-denominator concept just taught; concise and appropriately rigorous."
+    }
+  ],
+  "trace_sha256": "1c852a6e87f81788a40b639f48dbf8426b34cc1a285c25f2c77eb16e5402dea7"
+}

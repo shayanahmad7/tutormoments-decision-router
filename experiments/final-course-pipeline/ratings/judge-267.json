@@ -1,0 +1,45 @@
+{
+  "case_index": 267,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think A is the best answer? What part of the text supports that idea?",
+      "reason": "The tutor asks the student to justify their answer and provide textual evidence, which promotes deeper engagement with the text and critical thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option A makes sense for reducing mistakes in surgery? What part of the text supports that idea?",
+      "reason": "The tutor asks the student to explain their reasoning and provide textual evidence, which encourages the student to articulate their understanding and connect it to the passage."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Student clicks the \"Answer\" button next to question 4. [SCREEN_UPDATE] Option A, \"It could allow doctors to see body parts clearly and in 3D to better plan out the exact steps of a surgery,\" is highlighted in green.",
+      "reason": "The tutor provides the correct answer before asking the student to explain their reasoning, which is overhelping as the student could have been prompted to justify their choice first."
+    }
+  ],
+  "trace_sha256": "6487c4bf893252ec7b9bba8c09ac192288d100ed55b670d2cf163031eca4d238"
+}

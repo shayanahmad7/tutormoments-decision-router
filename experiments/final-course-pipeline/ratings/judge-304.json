@@ -1,0 +1,45 @@
+{
+  "case_index": 304,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Okay, let's try this one.",
+      "reason": "This is a generic statement that doesn't add much to the conversation. It's not clear what 'this one' refers to, as the previous problem was just solved."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would figure out how many sweets each child gets?",
+      "reason": "This response asks the student to explain their reasoning for the previous problem, which promotes rigor by encouraging justification and deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's try a similar problem on your own. Imagine Mr. Biggins has 8 bags of sweets, and each bag has 45 sweets. He wants to share them equally among 4 children. How would you figure out how many sweets each child gets? Start by finding the total number of sweets first.",
+      "reason": "This response provides a similar problem for the student to work on independently, promoting rigor. It also offers a scaffold by suggesting a starting point ('Start by finding the total number of sweets first'), which is helpful given the student's previous struggles with multi-step problems."
+    }
+  ],
+  "trace_sha256": "233a7cadd5cd705f15d3a2707bd1963446be94d15447966321b710ada16d0f1b"
+}

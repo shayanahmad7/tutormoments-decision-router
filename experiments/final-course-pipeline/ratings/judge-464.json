@@ -1,0 +1,45 @@
+{
+  "case_index": 464,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option C is correct for that problem? What makes both statements in option C true?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option C, which promotes rigor by requiring justification. It also provides scaffolding by reminding the student that both statements in option C need to be true."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option C is correct for the last question? What makes both statements in option C true?",
+      "reason": "This candidate is very similar to C1, asking for an explanation of why option C is correct and reminding the student that both statements need to be true. This promotes rigor and provides scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you compare the hundreds digits first to see if this is true?",
+      "reason": "The tutor provides a specific hint on how to approach the problem (comparing hundreds digits first), which is a form of scaffolding. However, it doesn't ask the student to justify their answer or take full responsibility for the explanation, thus lacking rigor."
+    }
+  ],
+  "trace_sha256": "bc7e34436f81caffe31aa4f09bfa33a4c73828c047778c8e5cfb9144301d34b1"
+}

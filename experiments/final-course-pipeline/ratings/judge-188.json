@@ -1,0 +1,45 @@
+{
+  "case_index": 188,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the least common multiple of 3 and 8?",
+      "reason": "The student correctly identified the need for a common denominator, and the tutor's response affirms this and then prompts for the next step in finding the LCM."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the least common multiple of 3 and 8? That will be your common denominator. What is the smallest number both 3 and 8 divide into evenly?",
+      "reason": "The tutor affirms the student's correct identification of the need for a common denominator and then provides a clear prompt for finding the LCM, including a helpful rephrasing of what an LCM is."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would find that, and why it's important for subtracting these fractions?",
+      "reason": "The tutor asks the student to explain their reasoning and the importance of the step, which increases rigor by requiring justification and deeper understanding rather than just the answer."
+    }
+  ],
+  "trace_sha256": "bfc5f61e8029a956eccb2c3f005a327c81bb44b02e954f3670aa5aa0560b4da2"
+}

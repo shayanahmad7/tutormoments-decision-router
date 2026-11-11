@@ -1,0 +1,45 @@
+{
+  "case_index": 110,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is 789 not a number you would say when skip counting in 10s from 780?",
+      "reason": "The student just selected D (789) correctly but seems to have done so by elimination rather than understanding. The tutor asks for justification of why 789 is excluded, which increases cognitive demand by requiring the student to explain the reasoning rather than just pick an answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit is in the ones place each time? What digit would you expect in the ones place of any number you say when counting in 10s?",
+      "reason": "Breaks the reasoning into guided substeps focusing on the ones digit pattern, which directly connects to the tutor's earlier instruction about the ones place staying the same when adding 10, helping the student build understanding of why 789 would never be said."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what numbers do you say? What pattern do the numbers follow in the ones place?",
+      "reason": "Guides the student to list numbers and identify the ones-place pattern, which is appropriate scaffolding given the student's confusion, though it is slightly more broken down than C2 and asks about tens and hundreds which is less targeted to the key insight."
+    }
+  ],
+  "trace_sha256": "5fb4c422795c1fc948a1d5afbc9272e7c02455a448adaafbbeb5b7c527de9733"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 130,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s look at the ruler together. The grasshopper starts at 8cm. If it jumps forward 8cm, where would it land? Can you count or add to find that first stop?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking the student to focus on the first jump and provides a hint to use the ruler or addition."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you show me how you would use the ruler to add the two jumps together? Start at 8cm and then show me how you would add another 6cm.",
+      "reason": "The tutor asks the student to demonstrate their thinking using the ruler, which is a form of scaffolding, and also promotes rigor by asking the student to show their work rather than just state an answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you show me how you would count the first jump of 8cm on the ruler? Let's start there.",
+      "reason": "The tutor breaks the problem into a smaller step and asks the student to demonstrate their understanding using the ruler, which is both scaffolding and rigor."
+    }
+  ],
+  "trace_sha256": "fe252f7feca87a3e599b6c7e911ff882f92b3162dab0778375701529aa6eb2c5"
+}

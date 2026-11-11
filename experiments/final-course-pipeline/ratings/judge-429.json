@@ -1,0 +1,45 @@
+{
+  "case_index": 429,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's test it with the first input. If thirty-four minus nineteen equals fifteen, does that work? Try it out and see if it matches the output.",
+      "reason": "The tutor confirms the student's answer and then prompts them to verify it using another part of the table, which is a good way to reinforce the concept and ensure understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Try doing the calculation step by step.",
+      "reason": "The tutor asks the student to re-verify their calculation, which is a good way to encourage careful work and self-correction. It also provides scaffolding by suggesting a step-by-step approach."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got that answer?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification of their answer."
+    }
+  ],
+  "trace_sha256": "cf38a6a9730bee58324069698d897862e41299f0eb125c89f40d0a68c25c7b69"
+}

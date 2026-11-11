@@ -1,0 +1,45 @@
+{
+  "case_index": 17,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How do you decide which equation matches this situation? What should the total represent in the equation?",
+      "reason": "The tutor asks guiding questions that prompt the student to think about the structure of the equation and the meaning of the 'total' in this context, which encourages deeper understanding rather than just finding the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which equation shows adding 13 and 37 together to find the total?",
+      "reason": "The tutor explicitly states the operation (adding) and the numbers involved, which is a strong hint towards the correct answer, reducing the cognitive load for the student."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, what operation do we use when we’re combining two groups to find the total?",
+      "reason": "The tutor prompts the student to identify the correct operation for combining groups, which is a key conceptual step in solving the problem. This encourages the student to think about the underlying mathematical principle."
+    }
+  ],
+  "trace_sha256": "2b2bf48cceaae338f9ff851d4a519a7eba6895b103c2801abaa5df2679f14877"
+}

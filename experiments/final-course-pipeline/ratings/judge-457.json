@@ -1,0 +1,45 @@
+{
+  "case_index": 457,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about half of 120? How could you figure that out?",
+      "reason": "The tutor confirms the first calculation and then prompts the student to apply the same reasoning to the second calculation, which is a good scaffold. The 'how could you figure that out' adds a layer of rigor by asking for the method, not just the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about 0.5 of 120? How could you figure that out?",
+      "reason": "The tutor confirms the first calculation and then prompts the student to apply the same reasoning to the second calculation, which is a good scaffold. The 'how could you figure that out' adds a layer of rigor by asking for the method, not just the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about half of 120? What do you think that would be?",
+      "reason": "The tutor confirms the first calculation and then prompts the student to apply the same reasoning to the second calculation, which is a good scaffold. It asks for the answer, but not the method."
+    }
+  ],
+  "trace_sha256": "ec2d56e508e50149407d9f9339a1b99616fc052e2f7b8f454d92f9f17b39c36b"
+}

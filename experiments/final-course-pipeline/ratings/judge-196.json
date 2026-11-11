@@ -1,0 +1,45 @@
+{
+  "case_index": 196,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you know dividing by two gives you the simplest form for 8/10?",
+      "reason": "The student correctly simplified 8/10 to 4/5. This prompt asks the student to justify their answer and explain how they know it's in simplest form, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about the next one, 2/4? What do you think you could divide both the numerator and denominator by to simplify it?",
+      "reason": "This is a direct prompt to the next problem, offering a hint about dividing both numerator and denominator, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain why dividing both the numerator and denominator by 2 gives you an equivalent fraction?",
+      "reason": "The student correctly simplified 8/10. This prompt asks for a conceptual explanation of why the operation works, increasing rigor by asking for justification."
+    }
+  ],
+  "trace_sha256": "23ad6ebfb9bfd40fc112f7aa1141268b3bdab6d5224d40cde988ab14d114ce12"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 27,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, twelve divided by two is six, and sixteen divided by two is eight. So what does that give you?",
+      "reason": "The tutor provides the result of the division, which is a form of scaffolding. The student is still responsible for stating the simplified fraction."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is twelve divided by two? What is sixteen divided by two? Write those answers in the numerator and denominator.",
+      "reason": "The tutor asks the student to perform the division and write the resulting fraction, which promotes independent work and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So twelve divided by two is six, and sixteen divided by two is eight. That gives you six over eight. Can this be simplified further? What could you divide both six and eight by?",
+      "reason": "The tutor provides the initial division results (scaffolding) but then immediately asks the student to consider further simplification, which adds rigor by prompting deeper thought about the process."
+    }
+  ],
+  "trace_sha256": "550f82bf0e68f5f4f3f35f1a9adcd0956b01ac629348027beb987fd2912e3be9"
+}

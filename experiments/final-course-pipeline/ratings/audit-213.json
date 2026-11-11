@@ -1,0 +1,45 @@
+{
+  "case_index": 213,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "skip counting by twos again, but this time start at 3",
+      "reason": "Doesn't follow the tutor's stated plan to move to 3s next; odd-start skip counting by 2s is an unplanned tangent with no evidence of need."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "let's try skip counting by threes, starting at three",
+      "reason": "Directly follows the tutor's stated plan to practice 2s, 3s, 4s, then 5s; asks student to attempt independently, appropriate cognitive demand."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "skip counting by twos starting from 3",
+      "reason": "Like C1, departs from the tutor's stated plan to move to 3s; odd-start skip counting by 2s is an unplanned extension not grounded in the session's trajectory."
+    }
+  ],
+  "trace_sha256": "5e02702792edca542ad36511aac703ca5028c2404d3034f878127fc2dd91184b"
+}

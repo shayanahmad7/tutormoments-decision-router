@@ -1,0 +1,45 @@
+{
+  "case_index": 398,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you walk me through how you would use the \"jumping method\" to solve 11 + 5 on the number line you started drawing?",
+      "reason": "The tutor asks the student to explain their process for using the jumping method, which encourages the student to articulate their thinking and take responsibility for the explanation. It also provides scaffolding by reminding the student of the specific problem and the drawing they started."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how your number line jump would work for 11 + 5? Where would you start, and how would you move?",
+      "reason": "The tutor asks the student to explain their method, promoting rigor. The follow-up questions about where to start and how to move provide scaffolding by breaking down the explanation into more manageable parts, without giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you're using a number line for 11 + 5, you can start at 11 and make 5 jumps forward. Where would you land after 1, 2, 3, 4, 5 jumps?",
+      "reason": "The tutor provides the first two steps of the jumping method (start at 11, make 5 jumps forward), which the student could productively figure out themselves, making it overhelpful. While it does scaffold the next step, it removes too much of the student's responsibility."
+    }
+  ],
+  "trace_sha256": "074a95dddfa27849508bc9f66a23d0f6cd6fb0813c8a22c94c249a8643999e01"
+}

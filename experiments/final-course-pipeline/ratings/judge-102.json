@@ -1,0 +1,45 @@
+{
+  "case_index": 102,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The 1 in the ones place stays the same, and the 3 in the tens place increases by 1.",
+      "reason": "The tutor provides a clear explanation of how the digits change when adding 10, which directly addresses the student's confusion about skip counting and helps them apply the concept to the specific number."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which digit changes, and how?",
+      "reason": "This question prompts the student to think about the place value changes when adding 10, which is a key concept for skip counting in tens. It directly follows the student's confusion about 'skip counting'."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s focus just on the last digit: 1 + 10 = ?",
+      "reason": "The tutor clarifies the meaning of skip counting and then provides a specific, scaffolded step by asking the student to focus on the last digit, which is a common strategy for understanding addition with tens."
+    }
+  ],
+  "trace_sha256": "ff142cdbd33bdd1e55aa8ce6dfe2e9500f830ccfaf6b3696092b4bf112a9855f"
+}

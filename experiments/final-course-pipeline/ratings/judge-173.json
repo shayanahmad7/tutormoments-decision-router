@@ -1,0 +1,45 @@
+{
+  "case_index": 173,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit is that, and does it tell us to round up or down?",
+      "reason": "The tutor provides a clear hint by directing the student to the ones place and then asks a question that requires the student to apply their knowledge of rounding rules."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit is that, and what does it tell you about whether 85 is closer to 80 or 90?",
+      "reason": "The tutor provides scaffolding by directing the student to the ones place and then asks a question that prompts the student to apply rounding rules to determine proximity to the nearest tens."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit is that, and what does it tell you about whether 85 is closer to 80 or 90?",
+      "reason": "The tutor provides scaffolding by directing the student to the ones place and then asks a question that prompts the student to apply rounding rules to determine proximity to the nearest tens."
+    }
+  ],
+  "trace_sha256": "e1f993e6376673629e949af6a9b0d9c8a825940f6d66d2b4a5b92c995442cc93"
+}

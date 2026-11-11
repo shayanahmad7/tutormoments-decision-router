@@ -1,0 +1,45 @@
+{
+  "case_index": 70,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what is the complete coordinate for the missing vertex?",
+      "reason": "The tutor asks the student to combine the x and y coordinates they just identified, requiring them to synthesize the information independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what would the full coordinate be?",
+      "reason": "The tutor asks the student to state the full coordinate, requiring them to combine the x and y values they have identified."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the Y-coordinate of the point below it. What is that number?",
+      "reason": "The tutor provides a specific hint by directing the student to look at the y-coordinate of a specific point to find the missing y-coordinate."
+    }
+  ],
+  "trace_sha256": "3949a2c47f77d2b1c13e4103384664c68e2b6bed750c1bd91b137ca19a8eac78"
+}

@@ -1,0 +1,306 @@
+{
+  "tag": "gen-198-force_scaffolding",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Water' drawing (start)] A notification \"Jayden has joined\" appears and fades. The whiteboard shows the word \"Water\" handwritten in black, with an arrow pointing to it. Below the arrow is a simple drawing of a cup.\nTurn 1. TUTOR: [PAUSE: 302 seconds] At 00:17, the student's video feed icon appears, displaying the name \"Jayden\". The screen remains static for the rest of the video.\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - Drawing of a cup and the word \"Water\" (start)] The whiteboard shows the word \"Water\" handwritten in black. A cursor points to the 'r' in \"Water\". Below the word is a drawing of the top of a cup.\nTurn 1. TUTOR: [PAUSE: 314 seconds] The whiteboard shows the word \"Water\" written in black, with a drawing of a cup below it. The student is waiting in the room.\nTurn 1. TUTOR: [PAUSE: 22 seconds] A notification \"Nora has joined\" appears. The screen layout changes to show the tutor and student video feeds side-by-side.\nTurn 1. TUTOR: Hi Jayden, how are you doing today?\nTurn 2. STUDENT: Good.\nTurn 3. TUTOR: [PAUSE: 3 seconds]\nTurn 3. TUTOR: Um, last time, where did we leave off? We were working on angles, right?\nTurn 4. STUDENT: Yeah.\nTurn 5. TUTOR: [PAUSE: 18 seconds]\nTurn 5. TUTOR: Okay, you know what? Let's start with the question of the day and then we can start going into the topic.\nTurn 6. STUDENT: Okay.\nTurn 7. TUTOR: [PAUSE: 25 seconds]\nTurn 7. TUTOR: [SCREEN_UPDATE] The tutor shares their screen, which shows a lesson plan interface with a list of topics.\nTurn 7. TUTOR: Okay, let's see what today's question is.\nTurn 8. TUTOR: [PROBLEM_CHANGE: p1 - 'What is the result of subtracting 607 from 2035?' (start)] The screen shows a multiple-choice question.\nQuestion: \"What is the result of subtracting 607 from 2035?\"\nOptions:\nA: 1632\nB: 1335\nC: 1428\nD: 614\nTurn 8. TUTOR: Okay, what is the result of subtracting 607 from 2035?\nTurn 9. TUTOR: [PAUSE: 4 seconds] Tutor writes \"2035\" on the whiteboard space to the right of the problem.\nTutor writes \"- 607\" below \"2035\" and draws a line for the answer.\nTurn 9. STUDENT: Um,\nTurn 10. TUTOR: I'll write it out for you so you have the space to work on it.\nTurn 11. STUDENT: Okay.\nTurn 12. TUTOR: And then six oh seven.\nTurn 13. TUTOR: [SCREEN_INTERACTION: student - solving problem] The student solves the subtraction problem on the whiteboard. They first write \"2028\" incorrectly, then erase it. They then correctly borrow from the tens and hundreds place, writing out the steps to get the final answer of \"1428\".\nTurn 13. STUDENT: The answer will be C.\nTurn 14. TUTOR: Okay, let's check it.\nTurn 15. TUTOR: [SCREEN_INTERACTION: student - selects answer] The student clicks on option C. The system confirms it is correct.\nTurn 15. TUTOR: Yeah, good job. I saw that you got a different answer and then you kind of realized that that answer wasn't one of the options. So I'm glad you realized and then you went back to check your work.\nTurn 16. STUDENT: Yeah.\nTurn 17. TUTOR: [SCREEN_INTERACTION: student - clicks next] The student clicks the \"Next\" button. A \"Summer Prize Streak!\" screen with a donut graphic appears.\nTurn 17. TUTOR: [SCREEN_INTERACTION: student - clicks dashboard] The student clicks the \"Go to my dashboard\" button.\nTurn 17. TUTOR: [PAUSE: 51 seconds] The screen returns to the lesson plan view. The tutor scrolls through the topics. The screen then changes to a new problem about angles.\nTurn 17. TUTOR: [PAUSE: 2 seconds] The whiteboard shows a completed subtraction problem: 2035 - 607 = 1428. There is also a small blue circle drawn on the left side of the board.\nTurn 17. TUTOR: [PROBLEM_CHANGE: p1 - 'Put the following angles in order, from the smallest to the largest.' (start)] A new problem appears on the screen. The question is \"Question 1 of 10: Put the following angles in order, from the smallest to the largest.\" The options are: A) Obtuse angle, B) Right angle, C) Reflex angle, D) Acute angle. The student's cursor moves over the options.\nTurn 17. TUTOR: Okay.\nTurn 18. TUTOR: [PAUSE: 7 seconds]\nTurn 18. TUTOR: Okay.\nTurn 19. TUTOR: [PAUSE: 13 seconds] The student's cursor moves over the different answer options.\nStudent types \"D, B, C, A\" into the chat box below the problem.\nTurn 19. STUDENT: So, it's gonna be D, B, C, and A.\nTurn 20. TUTOR: [PAUSE: 7 seconds]\nTurn 20. TUTOR: [SCREEN_INTERACTION: tutor - checks answer] The tutor clicks the \"Check it\" button. The screen transitions to show the chat history.\nTurn 20. TUTOR: Okay. So you're absolutely right. The order is correct. Can you tell me the definition for each of these? What's an acute angle?\nTurn 21. STUDENT: An acute angle is where the angle is below ninety degrees.\nTurn 22. TUTOR: Perfect. And what about a right angle?\nTurn 23. TUTOR: [PAUSE: 11 seconds]\nTurn 23. TUTOR: [SCREEN_UPDATE] The screen goes black, then shows only the webcam feeds, then goes black again.\nTurn 23. TUTOR: [SCREEN_UPDATE] The tutor shares their screen, showing a Google search for \"reflex angle\".\nTurn 23. STUDENT: Oh.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nProvide targeted scaffolding now. Identify the specific unresolved obstacle in the student's current mathematical work. Offer only the smallest useful hint, representation, or clarification that makes the next step accessible. Use the learner's actual numbers and ideas when available. Leave the key calculation or inference for the student and invite one manageable next step. Do not give a full solution, stack several leading questions, repeat an explanation the learner already understands, or invent unseen worksheet details.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "3cf950073c225d93d0a7512f23e6a209de26edd831c24fd44e7ab203bf5bdb42",
+  "reserve_usd": 0.0009513920000000001,
+  "started_utc": "2026-11-11T20:00:53Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "What about a right angle? What is its measure?",
+  "first_answer_ms": 1708.420541999999,
+  "usage": {
+    "prompt_tokens": 1984,
+    "completion_tokens": 12,
+    "total_tokens": 1996,
+    "cost": 0.00016208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00016208,
+      "upstream_inference_prompt_cost": 0.00015872,
+      "upstream_inference_completions_cost": 3.36e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "W",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "hat ab",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "out a ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "r",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ight ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ang",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "le? ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "What is ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "i",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ts measure?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427253-rYcPprCd2wGfb8eQ6hd1",
+      "object": "chat.completion.chunk",
+      "created": 1794427253,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1984,
+        "completion_tokens": 12,
+        "total_tokens": 1996,
+        "cost": 0.00016208,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00016208,
+          "upstream_inference_prompt_cost": 0.00015872,
+          "upstream_inference_completions_cost": 3.36e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.00016208,
+  "elapsed_ms": 1855.0595830000134
+}

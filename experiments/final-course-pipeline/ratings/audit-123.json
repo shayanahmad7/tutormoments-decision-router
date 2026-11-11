@@ -1,0 +1,45 @@
+{
+  "case_index": 123,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why the diagram you chose (A) is the correct one to show this addition? What makes it different from the others?",
+      "reason": "Asks the student to justify her diagram choice and distinguish it from alternatives, increasing cognitive demand through explanation and connection. No scaffolding needed as student already answered correctly."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if the problem had said 12 birds flew into the tree first and then 15 more, would the total still be the same? Why or why not?",
+      "reason": "Confirms the correct answer and then extends to a transfer question about commutativity of addition, which is appropriate rigor. Connects to the diagram question (options A and C both had 15 and 12 in the top boxes in different order)."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how the 2 and the 7 make 27? What does each part stand for?",
+      "reason": "Asks the student to articulate place value meaning of the digits in 27, providing a scaffolded prompt to deepen understanding of the column addition strategy the student just used. Appropriate given the student's informal explanation."
+    }
+  ],
+  "trace_sha256": "0f2351429ec83f35b7e155ff20632da4dd0d28f1fa20c919094602b40c0c3326"
+}

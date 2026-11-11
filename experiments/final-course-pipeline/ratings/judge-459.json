@@ -1,0 +1,45 @@
+{
+  "case_index": 459,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does this mean in your own words? Can you think of a simple example using numbers to test if this is true?",
+      "reason": "The tutor asks the student to explain the concept in their own words and provide an example, which promotes deeper understanding and independent thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What makes you say that both Tom and Katie are correct?",
+      "reason": "The student has already selected the correct answer (C) 'Both Tom and Katie'. This question asks the student to justify their correct answer, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is there a reason why switching the order might or might not matter for multiplication and addition?",
+      "reason": "The tutor rephrases the problem in simpler terms and then asks a guiding question that prompts the student to think about the underlying mathematical properties, providing scaffolding while maintaining rigor."
+    }
+  ],
+  "trace_sha256": "66b3e1a380acfde1164a790a11c6c03959994bb508a1f359dda3817cb28add20"
+}

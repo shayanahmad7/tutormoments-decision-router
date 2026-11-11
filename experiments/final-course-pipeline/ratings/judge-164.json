@@ -1,0 +1,45 @@
+{
+  "case_index": 164,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation helps us find the difference between the starting size and the final size?",
+      "reason": "The tutor asks a guiding question that helps the student connect the concept of 'how much it grew' to a mathematical operation, without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think about which operation helps us find a difference?",
+      "reason": "The tutor provides a clear hint by explicitly stating that the goal is to find the 'difference' and then asks the student to identify the operation, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that difference represent in the problem? How can you use that to decide which operation to use?",
+      "reason": "The tutor acknowledges the student's highlighting and then asks two questions that prompt the student to think about the meaning of the highlighted information and how it relates to choosing an operation. This encourages deeper thinking and justification."
+    }
+  ],
+  "trace_sha256": "ce6fac36ecbb6cb979751b11eba5b4519282d2c6a12a039fd338261434fd013b"
+}

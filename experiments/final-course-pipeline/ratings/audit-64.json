@@ -1,0 +1,45 @@
+{
+  "case_index": 64,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Tom says 9 is a composite number",
+      "reason": "The tutor already moved past the Tom and Katie question (p15) to a new problem (p16: 4 x ? = 24), so this reply addresses the wrong current problem entirely."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 24 divided by 4?",
+      "reason": "Directly scaffolds the current problem 4 x ? = 24 by prompting the inverse operation, appropriate hint without giving the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": true,
+      "context_fit": 1,
+      "evidence": "Can you explain how you know?",
+      "reason": "Asks for justification which adds rigor, but presupposes the student has already given an answer when no student response to p16 is shown; generic follow-up without clear grounding in the current exchange."
+    }
+  ],
+  "trace_sha256": "b2e38d0d4f0fe8b5bfead6a60bd96156f36be89b02a8e5e90b6a39958ce39e53"
+}

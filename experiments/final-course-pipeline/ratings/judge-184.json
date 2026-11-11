@@ -1,0 +1,45 @@
+{
+  "case_index": 184,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you simplify and solve for x?",
+      "reason": "The tutor provides the equation and then asks the student to solve it, which is a guided substep."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why x + 2x equals 87 degrees in this problem?",
+      "reason": "The tutor asks the student to justify the setup of the equation, promoting deeper understanding and responsibility."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": true,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What is the total of the three angles labeled in the diagram?",
+      "reason": "The problem only labels two angles (87 degrees and x+2x). The question implies there are three angles, which is incorrect. Also, the question is not relevant to solving for x using vertically opposite angles."
+    }
+  ],
+  "trace_sha256": "05bfccaac9c7da168bc73fd63c0f7598571ece45689095def8e85bb928bb11de"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 341,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when we subtract 42 from 46? What number do we get, and what is the next step after that?",
+      "reason": "The student has just stated 'forty-two' and 'six' in response to 'What goes on top?' and 'What happens when we subtract this?'. The tutor's question guides the student to perform the subtraction and then prompts for the next step in the long division process, which is appropriate scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why that makes sense in relation to the original multiplication problem?",
+      "reason": "The tutor asks the student to explain the relationship between the multiplication and division problems, which encourages deeper understanding and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what does that tell us about the relationship between multiplication and division here? What does it mean that we got back to our original number?",
+      "reason": "The tutor prompts the student to articulate the inverse relationship between multiplication and division, requiring them to connect the two operations and explain the significance of the result."
+    }
+  ],
+  "trace_sha256": "167a6863b632e1a697957bbed755f49adf12c85302c6faf47a40772376aa38e7"
+}

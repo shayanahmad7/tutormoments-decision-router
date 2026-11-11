@@ -1,0 +1,45 @@
+{
+  "case_index": 334,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 65?",
+      "reason": "The student provided an incorrect answer, and the tutor asks them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you count on 1 from 33?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking the student to count on only one from 33, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you take one step forward from 33 on the number line?",
+      "reason": "The tutor provides a guided substep by asking the student to take one step forward on the number line, making the problem more accessible."
+    }
+  ],
+  "trace_sha256": "6a53c13184398b026b966fdbf7940f36c83ea0eb559adc41c9b8310b46713622"
+}

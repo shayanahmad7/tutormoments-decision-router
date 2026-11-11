@@ -1,0 +1,45 @@
+{
+  "case_index": 439,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many parts the whole (from 0 to 1) is divided into?",
+      "reason": "The tutor provides a clear hint by reminding the student of the definition of a fraction and then asks a direct question about the number of parts, which is a scaffolding technique."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how each part represents 1/3? What makes you sure the star is at the first third and not somewhere else?",
+      "reason": "The tutor asks the student to explain their reasoning and justify their answer, which promotes deeper understanding and critical thinking, demonstrating rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many equal parts is the number line divided into?",
+      "reason": "The tutor provides a direct, leading question that guides the student to the next step in solving the problem, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "f4fc7ab5f1ac0f0677c49078d0400eef202a5a91232469e3a70529aa4428c760"
+}

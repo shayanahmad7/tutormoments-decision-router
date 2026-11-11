@@ -1,0 +1,45 @@
+{
+  "case_index": 142,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Nine hundred eighty-one.",
+      "reason": "The student is asked to identify a number in a skip-counting sequence. The tutor provides the answer directly without prompting the student to think or calculate."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number would come before 1081 when counting back in 100s? Think about how much you subtract from 1081 to get the number before it. What do you think?",
+      "reason": "The tutor prompts the student to consider the operation (subtracting 100) and then asks for their thought process, providing scaffolding while maintaining rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is 100 less than 1081? Think about how you subtract 100 from a number like this.",
+      "reason": "The tutor rephrases the question to be more direct about the operation (100 less than) and then prompts the student to think about the subtraction process, offering scaffolding without giving the answer."
+    }
+  ],
+  "trace_sha256": "542d4ceeb362e7524b91ed1f55a434127be5ce258717492567b77735a7642f9f"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 350,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about the size of the pieces.",
+      "reason": "The tutor provides a new problem and a hint to guide the student's thinking, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Before you choose the symbol, explain why one of these fractions is larger than the other. What's the reasoning behind your choice?",
+      "reason": "The tutor asks the student to explain their reasoning, which increases rigor. The new problem is also a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how many pieces the whole is split into and how big each piece is.",
+      "reason": "The tutor provides a new problem and a hint to guide the student's thinking, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "774cae610aa52b2c39f82207fd61fd909be967e18dd7701fb5986f54e7274afd"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 495,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what do we do with those two numbers to find the total area of the whole shape?",
+      "reason": "The student has already written the full calculation and answer on the board. The tutor's question is a leading question that asks the student to state the next step, which they have already completed."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you found the area of each rectangle and then combined them?",
+      "reason": "The student has already provided the correct answer and shown their work. This response asks them to articulate their process, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what do we do with those two areas to find the total area of the whole shape? What operation combines the two parts?",
+      "reason": "The student has already written the full calculation and answer on the board. The tutor's question is a leading question that asks the student to state the next step, which they have already completed."
+    }
+  ],
+  "trace_sha256": "318b3bef93f01cae55475b334907b29aae86bf369fd468582953b333e0b9b0ca"
+}

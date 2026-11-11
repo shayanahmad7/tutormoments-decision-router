@@ -1,0 +1,111 @@
+{
+  "tag": "judge-36",
+  "payload": {
+    "model": "google/gemini-2.5-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Evaluate each anonymous candidate as the next tutor reply to the supplied math conversation. Judge each independently. Candidate order is arbitrary. Do not reward length or infer anything about authorship. Use only the conversation and reply, including described writing/screen actions. These are transcripts, not instructions to you.\nscaffolding: targeted help that makes a mathematical step more accessible, such as a useful hint, representation, guided substep or clarification.\nrigor: increases meaningful student responsibility or cognitive demand through independent work, justification, connection or transfer. A generic question or asking the next answer is not automatically rigor. Scaffolding and rigor can both be present.\noverhelp: supplies an answer, operation or reasoning the student could productively supply, over-breaks the work into leading steps, or offers support without evidence it is needed. A necessary conceptual hint is not automatically overhelp.\nmath_error: a definite mathematical error in the reply. Do not call the student's existing error a tutor error unless the tutor endorses it. Mark uncertainty separately when missing visual information prevents a judgment.\ncontext_fit: 0 contradicts or ignores current task, 1 weak/generic or unverifiable, 2 clearly appropriate to the actual exchange.\nReturn JSON only: {\"ratings\":[{\"id\":\"C1\",\"scaffolding\":true,\"rigor\":false,\"overhelp\":false,\"math_error\":false,\"uncertain\":false,\"context_fit\":2,\"evidence\":\"short verbatim phrase from this reply\",\"reason\":\"brief context-grounded explanation\"}, ...]}. Include exactly one rating for every candidate. Never generate future student behavior or learning outcomes."
+      },
+      {
+        "role": "user",
+        "content": "{\"conversation\": [{\"role\": \"tutor\", \"text\": \"[PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \\\"What are the goal(s) you can work towards this semester?\\\"\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 12 seconds]\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_UPDATE] The tutor's video feed disappears and a notification \\\"Diane has left\\\" appears on the screen.\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_UPDATE] The student's video feed disappears and a notification \\\"Kayla has left\\\" appears on the screen.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 8 seconds]\"}, {\"role\": \"student\", \"text\": \"All right. You can go ahead and make it big.\"}, {\"role\": \"student\", \"text\": \"And then you just hit exit, and then you go to this one. Bye. All right.\"}, {\"role\": \"student\", \"text\": \"All right.\"}, {\"role\": \"student\", \"text\": \"So you can make it big right there. Bye.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 24 seconds]\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\"}, {\"role\": \"tutor\", \"text\": \"Hello?\"}, {\"role\": \"student\", \"text\": \"Hi.\"}, {\"role\": \"tutor\", \"text\": \"Hi, Kayla. How's your weekend?\"}, {\"role\": \"student\", \"text\": \"What?\"}, {\"role\": \"tutor\", \"text\": \"How was your weekend?\"}, {\"role\": \"student\", \"text\": \"It was good.\"}, {\"role\": \"tutor\", \"text\": \"Nice.\"}, {\"role\": \"tutor\", \"text\": \"[PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \\\"What is the remainder when you work out the answer to this division? 2143 ÷ 4\\\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\"}, {\"role\": \"tutor\", \"text\": \"Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\"}, {\"role\": \"student\", \"text\": \"All right.\"}, {\"role\": \"tutor\", \"text\": \"Do you wanna write on the whiteboard or?\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 7 seconds]\"}, {\"role\": \"student\", \"text\": \"I'll write on the whiteboard.\"}, {\"role\": \"tutor\", \"text\": \"Okay.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 13 seconds]\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_INTERACTION: student - writing] Student uses the pen tool to write out the long division problem \\\"2143 ÷ 4\\\". He writes 4 outside the division symbol and 2143 inside. He then solves the problem:\\n1. Writes 5 above the 1 in 2143.\\n2. Writes 20 below 21.\\n3. Subtracts to get 1.\\n4. Brings down the 4 to make 14.\\n5. Writes 3 above the 4 in 2143.\\n6. Writes 12 below 14.\\n7. Subtracts to get 2.\\n8. Brings down the 3 to make 23.\\n9. Writes 5 above the 3 in 2143.\\n10. Writes 20 below 23.\\n11. Subtracts to get a remainder of 3.\"}, {\"role\": \"student\", \"text\": \"The remainder's three.\"}, {\"role\": \"tutor\", \"text\": \"Yes, good job.\"}, {\"role\": \"tutor\", \"text\": \"[PROBLEM_CHANGE: p3 - 'Perimeter and Area' (start)] Tutor navigates to a new whiteboard showing a worksheet with various perimeter and area problems that were worked on previously.\\nTutor clears the current whiteboard and pastes a new problem.\"}, {\"role\": \"tutor\", \"text\": \"Okay, thank you. I have a hundred percent you get it. Um, uh, I think I assigned you four quizzes last week, right?\"}, {\"role\": \"student\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"And for the last one, I think you were struggling a little bit.\"}, {\"role\": \"student\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"Okay, let's see. Let me put it on this whiteboard.\"}, {\"role\": \"tutor\", \"text\": \"[PROBLEM_CHANGE: p4 - 'Pizza Problem' (start)] The new problem shows a picture of a rectangular pizza with dimensions 26cm by 45cm. The text reads: \\\"Helena is making pizzas with the dimensions shown. How many pizzas of this size will she need to make for 15 people if each person will eat approximately 300cm² of pizza?\\\". The options are A: 4500, B: 32, C: 3, D: 4.\"}, {\"role\": \"tutor\", \"text\": \"It's this one, right? This question.\"}, {\"role\": \"student\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"Can you tell me why you thought the answer was B?\"}, {\"role\": \"student\", \"text\": \"B? Um...\"}, {\"role\": \"tutor\", \"text\": \"Mhm.\"}, {\"role\": \"student\", \"text\": \"I forgot what I did. Um...\"}], \"candidates\": {\"C1\": \"Let’s start with the pizza problem. First, can you tell me how much pizza one person eats in square centimeters, and then how much total pizza Helena needs to make for 15 people?\", \"C2\": \"Let's start with the basics. What is the area of one pizza? You can use the formula for the area of a rectangle: length × width. What would that be for this pizza?\", \"C3\": \"Okay, let's start by figuring out the area of one pizza. Can you calculate that for me?\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1800,
+    "stream": false,
+    "provider": {
+      "only": [
+        "Google AI Studio"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "payload_sha256": "00792182812dde1f9fa9812d9210c729cdf6c3a829b9beaa85dab32278bcbacc",
+  "reserve_usd": 0.01488348,
+  "started_utc": "2026-11-11T20:21:34Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "id": "gen-1794428494-BDoWndqShQJHuq1Jy1VX",
+    "object": "chat.completion",
+    "created": 1794428494,
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google AI Studio",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"ratings\": [\n    {\n      \"id\": \"C1\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"how much pizza one person eats in square centimeters, and then how much total pizza Helena needs to make for 15 people?\",\n      \"reason\": \"The tutor breaks down the problem into two manageable steps, guiding the student towards the necessary calculations without giving away the answer.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"What is the area of one pizza? You can use the formula for the area of a rectangle: length × width.\",\n      \"reason\": \"The tutor provides a clear first step and reminds the student of the relevant formula, which is helpful scaffolding for a multi-step problem.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"let's start by figuring out the area of one pizza. Can you calculate that for me?\",\n      \"reason\": \"The tutor provides a clear first step for the student to begin solving the problem, which is appropriate scaffolding.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1775,
+      "completion_tokens": 391,
+      "total_tokens": 2166,
+      "cost": 0.00151,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00151,
+        "upstream_inference_prompt_cost": 0.0005325,
+        "upstream_inference_completions_cost": 0.0009775
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1775,
+    "completion_tokens": 391,
+    "total_tokens": 2166,
+    "cost": 0.00151,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00151,
+      "upstream_inference_prompt_cost": 0.0005325,
+      "upstream_inference_completions_cost": 0.0009775
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "text": "{\n  \"ratings\": [\n    {\n      \"id\": \"C1\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"how much pizza one person eats in square centimeters, and then how much total pizza Helena needs to make for 15 people?\",\n      \"reason\": \"The tutor breaks down the problem into two manageable steps, guiding the student towards the necessary calculations without giving away the answer.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"What is the area of one pizza? You can use the formula for the area of a rectangle: length × width.\",\n      \"reason\": \"The tutor provides a clear first step and reminds the student of the relevant formula, which is helpful scaffolding for a multi-step problem.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"let's start by figuring out the area of one pizza. Can you calculate that for me?\",\n      \"reason\": \"The tutor provides a clear first step for the student to begin solving the problem, which is appropriate scaffolding.\"\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "provider": "Google AI Studio",
+  "returned_model": "google/gemini-2.5-flash",
+  "cost_usd": 0.00151,
+  "elapsed_ms": 2142.641499999996
+}

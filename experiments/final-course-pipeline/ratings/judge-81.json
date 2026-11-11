@@ -1,0 +1,45 @@
+{
+  "case_index": 81,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's three times four? What about three times five? Can you find a number between those two?",
+      "reason": "The tutor provides two multiplication facts that are relevant to the problem and then asks the student to find a number between them, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "3 times 4 is 12, and 3 times 5 is 15. Which one works here?",
+      "reason": "The tutor provides the exact multiplication facts needed and then asks the student to choose, which is a strong scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number can we multiply by 3 to get close to 13 without going over? Let me know how you're thinking about it.",
+      "reason": "The tutor asks the student to explain their thinking, which increases rigor by requiring justification."
+    }
+  ],
+  "trace_sha256": "48ff24db25a5a5d4415b9a6eb04ad51282717715369c2ea1c94f41a4430d7591"
+}

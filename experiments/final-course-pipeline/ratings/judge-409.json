@@ -1,0 +1,45 @@
+{
+  "case_index": 409,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what should we do first to find the total number of apples?",
+      "reason": "The tutor asks a guiding question to help the student identify the first step in solving the problem, which is to find the total number of apples before any are removed. This is appropriate scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can you use what you know about multiplication and subtraction to find how many apples are left in total?",
+      "reason": "The tutor provides a hint about the operations to use (multiplication and subtraction) but still requires the student to figure out how to apply them to find the total. This balances scaffolding with rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we calculate first — the total number of apples at the start?",
+      "reason": "The tutor breaks down the problem by asking the student to identify the first step, which is to calculate the initial total number of apples. This is a helpful scaffold."
+    }
+  ],
+  "trace_sha256": "545d6906582d4f73e7457d13b16a42dde9146069d8889f5181495fff51980f82"
+}

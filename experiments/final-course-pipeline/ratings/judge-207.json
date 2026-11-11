@@ -1,0 +1,45 @@
+{
+  "case_index": 207,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s try an example. Suppose a = 6 and b = 3. What is 6 × 3? What is 3 × 6? What about 6 ÷ 3? What is 3 ÷ 6? What do you notice?",
+      "reason": "The tutor provides specific numbers for the student to use in the equations, which is a form of scaffolding. The questions 'What do you notice?' promote rigor by asking the student to analyze the results and draw conclusions independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s try an example. Let’s say a = 6 and b = 3. What is 6 × 3? What is 3 × 6? What about 6 ÷ 3? What is 3 ÷ 6? What does that tell you about Tom and Katie?",
+      "reason": "The tutor provides specific numbers for the student to use in the equations, which is a form of scaffolding. The question 'What does that tell you about Tom and Katie?' promotes rigor by asking the student to connect their findings back to the original problem and draw conclusions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s try an example. Suppose a = 4 and b = 2. What is 4 x 2? What is 2 x 4? What about 4 ÷ 2? What is 2 ÷ 4? What do you notice?",
+      "reason": "The tutor provides specific numbers for the student to use in the equations, which is a form of scaffolding. The questions 'What do you notice?' promote rigor by asking the student to analyze the results and draw conclusions independently."
+    }
+  ],
+  "trace_sha256": "6a77d4c98e80f255fd19145949a7db48b12e7b02d2b882f46f729d41f6937c28"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 515,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why if the first missing number is 3, the second missing number has to be 3 or greater?",
+      "reason": "The tutor asks the student to explain their reasoning for a specific part of the problem, which promotes deeper understanding and critical thinking. This is a good way to check for understanding without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the second number can only be 3 or higher in that case?",
+      "reason": "The tutor provides the correct answer for part B and then asks the student to explain why, which is a good way to check for understanding and encourage critical thinking. This is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's focus on part A first: if the first missing number is 2, what do we know about the value of the number 6,0_4,232? Is it more or less than 6,034,23_? Why?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable parts by focusing on part A first. This is a good scaffolding technique to help the student understand the problem better. The tutor also asks 'why' to encourage the student to explain their reasoning."
+    }
+  ],
+  "trace_sha256": "a5be9e946e7ae5fe8ba808b65727a75d6694684427b467ccbb1d0440969f0f24"
+}

@@ -1,0 +1,1944 @@
+{
+  "tag": "gen-263-force_scaffolding",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A dark screen is shown with the Tutorroom UI.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears in the center of the screen: \"Mr. Reeves has joined\". It then fades.\nTurn 1. TUTOR: [PAUSE: 23 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The view changes to Whiteboard 3. A blank white whiteboard is visible. The tutor's camera feed appears in the top right corner.\nTurn 1. TUTOR: [PAUSE: 268 seconds]\nTurn 1. TUTOR: [PAUSE: 600 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE: Opens whiteboard] A blank whiteboard is shown. The active tab is \"Whiteboard 3\".\nTurn 1. TUTOR: [PAUSE: 460 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Dante has joined\".\nTurn 1. TUTOR: [PAUSE: 9 seconds]\nTurn 1. TUTOR: [PAUSE: 48 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A banner appears at the top of the screen saying \"Dante has left\".\nTurn 1. TUTOR: [PAUSE: 22 seconds]\nTurn 1. STUDENT: Wait, what's he going back?\nTurn 2. TUTOR: Hi Dante.\nTurn 3. STUDENT: Hey.\nTurn 4. TUTOR: How was your weekend?\nTurn 5. STUDENT: Good.\nTurn 6. TUTOR: Good?\nTurn 7. STUDENT: Yeah.\nTurn 8. TUTOR: What did you do?\nTurn 9. STUDENT: Uh, I just went to the store to get some... It's someone's birthday. It's my cousin's birthday.\nTurn 10. TUTOR: Oh, okay, that makes sense.\nTurn 11. STUDENT: And I went to a go-kart place.\nTurn 12. TUTOR: What's K one... What's a go-kart place?\nTurn 13. STUDENT: Go-karting.\nTurn 14. TUTOR: Oh, I see.\nTurn 15. TUTOR: [PAUSE: 3 seconds]\nTurn 15. TUTOR: Wait, they let you do that even though you're, you can't drive?\nTurn 16. STUDENT: Yeah.\nTurn 17. TUTOR: Okay, that's pretty cool.\nTurn 18. STUDENT: You can still get your LEGO driver's license.\nTurn 19. TUTOR: I used to love doing like bumper cars until I learned how to drive and then that became boring.\nTurn 20. TUTOR: Once you learn how to drive, bumper cars are not very fun anymore 'cause you can just do it on the real road.\nTurn 21. STUDENT: Huh?\nTurn 22. STUDENT: I know.\nTurn 23. TUTOR: Once, once you learn how to actually drive, bumper cars won't be fun anymore because then you can do it in the real road.\nTurn 24. STUDENT: I know.\nTurn 25. TUTOR: [PAUSE: 3 seconds]\nTurn 25. STUDENT: But bumper cars are well because... That's just a go-kart. But bumper... but bumper cars are well because, uh, you're... because you're able to bump into people.\nTurn 26. TUTOR: That's why I...\nTurn 27. TUTOR: That's why I made the joke. It's not fun when you can learn how to drive because you're going to get into car accidents.\nTurn 28. STUDENT: I know. You can just get into car accidents.\nTurn 29. TUTOR: [PAUSE: 2 seconds]\nTurn 29. TUTOR: Okay.\nTurn 30. TUTOR: Um, seems like you're on the phone, so we'll have to postpone our Fireboy and Watergirl game.\nTurn 31. TUTOR: Then, how about we play the game that we played when we first met? You remember Connect Four?\nTurn 32. STUDENT: Okay.\nTurn 33. STUDENT: Yeah.\nTurn 34. TUTOR: You remember how you couldn't beat me?\nTurn 35. TUTOR: [PAUSE: 1 second]\nTurn 35. TUTOR: Do you think you can beat me this time?\nTurn 36. STUDENT: What?\nTurn 37. TUTOR: Do you think you can beat me this time?\nTurn 38. STUDENT: No.\nTurn 39. TUTOR: No.\nTurn 40. TUTOR: Wait, don't be discouraged.\nTurn 41. TUTOR: If you can, if you can outsmart me, I'll let you out early.\nTurn 42. TUTOR: [SCREEN_UPDATE: Screen changes from a blank whiteboard to a shared browser window showing the CBC Kids website with the game \"Connect 4\".]\nTurn 42. TUTOR: [SCREEN_INTERACTION: tutor - clicking] The tutor clicks through the game's start menu and selects the two-player mode. The game board appears.\nTurn 42. TUTOR: [SCREEN_INTERACTION: student - drawing] The student, playing as red, drops a chip in the third column from the left.\nTurn 42. TUTOR: Was that your turn or my turn?\nTurn 43. STUDENT: Your, my turn.\nTurn 44. TUTOR: Oh, is it my turn now?\nTurn 45. STUDENT: Yeah.\nTurn 46. TUTOR: Okay.\nTurn 47. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor, playing as yellow, drops a chip in the seventh column from the left.\nTurn 47. TUTOR: Okay, you go.\nTurn 48. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fifth column from the left.\nTurn 48. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fourth column from the left.\nTurn 48. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fourth column from the left.\nTurn 48. TUTOR: [PAUSE: 4 seconds]\nTurn 48. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the second column from the left.\nTurn 48. TUTOR: Do you have a big family, Dante?\nTurn 49. STUDENT: A little. Yeah.\nTurn 50. TUTOR: You do?\nTurn 51. STUDENT: Yeah.\nTurn 52. TUTOR: You can hear them, huh?\nTurn 53. TUTOR: Yeah.\nTurn 54. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fourth column from the left.\nTurn 54. TUTOR: [PAUSE: 1 second]\nTurn 54. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the third column from the left.\nTurn 54. TUTOR: Do you like having a big family?\nTurn 55. STUDENT: A little.\nTurn 56. TUTOR: A little?\nTurn 57. STUDENT: Yeah.\nTurn 58. TUTOR: What makes it hard?\nTurn 59. STUDENT: Well.\nTurn 60. TUTOR: [PAUSE: 23 seconds] The student's video and audio feed cuts out. A notification appears saying \"Dante has left\". The tutor waits.\nTurn 60. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the third column from the left.\nTurn 60. TUTOR: [PAUSE: 3 seconds]\nTurn 60. TUTOR: [SCREEN_UPDATE: A notification appears saying \"<Student> has joined\".] The student's video and audio feed returns.\nTurn 60. STUDENT: Uh, hello.\nTurn 61. TUTOR: Hello.\nTurn 62. STUDENT: Hello.\nTurn 63. STUDENT: It keeps on blocking me out. Uh.\nTurn 64. STUDENT: Well, it's pretty harsh.\nTurn 65. TUTOR: Harsh? Why?\nTurn 66. STUDENT: Yeah.\nTurn 67. STUDENT: 'Cause it's normally just like\nTurn 68. TUTOR: [PAUSE: 25 seconds]\nTurn 68. TUTOR: Is it my turn?\nTurn 69. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the third column from the left.\nTurn 69. STUDENT: Oh, oops.\nTurn 70. TUTOR: [SCREEN_UPDATE: A \"YELLOW WINS\" message appears over the board.] The tutor has won the game.\nTurn 70. STUDENT: I accidentally did that for you.\nTurn 71. TUTOR: Yeah, I didn't even see that.\nTurn 72. STUDENT: That doesn't count.\nTurn 73. TUTOR: Okay, okay, that doesn't count. Let's let's restart.\nTurn 74. TUTOR: Okay, you're red.\nTurn 75. TUTOR: [SCREEN_UPDATE: The game board resets for a new game.]\nTurn 75. TUTOR: Oh.\nTurn 76. TUTOR: Yeah, you're red.\nTurn 77. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fourth column from the left.\nTurn 77. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the third column from the left.\nTurn 77. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fourth column from the left.\nTurn 77. TUTOR: Why why why did you say it was harsh?\nTurn 78. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fourth column from the left.\nTurn 78. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the third column from the left.\nTurn 78. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fifth column from the left.\nTurn 78. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the third column from the left.\nTurn 78. TUTOR: [PAUSE: 2 seconds]\nTurn 78. TUTOR: Do you have any brothers?\nTurn 79. STUDENT: Yes.\nTurn 80. TUTOR: You do?\nTurn 81. TUTOR: Are they older?\nTurn 82. STUDENT: One is young. Oh no, I have two is young. But, you know, not really.\nTurn 83. TUTOR: Oh. Do do you wish you had an older brother?\nTurn 84. STUDENT: No.\nTurn 85. TUTOR: No?\nTurn 86. TUTOR: Why not?\nTurn 87. STUDENT: I don't know.\nTurn 88. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fifth column from the left.\nTurn 88. TUTOR: Do you wish you were an only child?\nTurn 89. STUDENT: A little.\nTurn 90. TUTOR: A little?\nTurn 91. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fifth column from the left.\nTurn 91. TUTOR: [SCREEN_UPDATE: A \"YELLOW WINS\" message appears over the board.] The tutor has won the game.\nTurn 91. TUTOR: Well, look at that.\nTurn 92. TUTOR: [SCREEN_UPDATE: The game board resets for a new game.]\nTurn 92. TUTOR: Okay.\nTurn 93. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fourth column from the left.\nTurn 93. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the third column from the left.\nTurn 93. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fourth column from the left.\nTurn 93. TUTOR: [PAUSE: 2 seconds]\nTurn 93. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the sixth column from the left.\nTurn 93. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fifth column from the left.\nTurn 93. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fifth column from the left.\nTurn 93. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the second column from the left.\nTurn 93. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the fifth column from the left.\nTurn 93. TUTOR: [PAUSE: 2 seconds]\nTurn 93. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the sixth column from the left.\nTurn 93. TUTOR: [PAUSE: 2 seconds]\nTurn 93. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the sixth column from the left.\nTurn 93. TUTOR: What do you usually, uh, like to do with your family?\nTurn 94. STUDENT: Hey.\nTurn 95. TUTOR: Oh, was that, okay, you can choose where I go next. I I didn't mean to do that.\nTurn 96. TUTOR: [SCREEN_INTERACTION: tutor - drawing] The tutor drops a yellow chip in the third column from the left.\nTurn 96. TUTOR: [SCREEN_INTERACTION: student - drawing] The student drops a red chip in the fifth column from the left.\nTurn 96. TUTOR: Whoa, you beat me!\nTurn 97. TUTOR: [SCREEN_UPDATE: A \"RED WINS\" message appears over the board.] The student has won the game.\nTurn 97. TUTOR: What the heck?\nTurn 98. TUTOR: [SCREEN_UPDATE: Game board resets for a new game] The \"RED WINS\" pop-up disappears, and the Connect 4 board is empty.\nTurn 98. TUTOR: Oh, you're too good at this.\nTurn 99. STUDENT: I finally outsmarted you.\nTurn 100. STUDENT: Yeah.\nTurn 101. TUTOR: Okay, fine. That that that counts. That'll be five minutes out early.\nTurn 102. STUDENT: And when do I get out?\nTurn 103. TUTOR: When do we get out? Uh, we started today's class at six\nTurn 104. TUTOR: fifty. When did we start? Hold on, let me check your text.\nTurn 105. STUDENT: So it's six.\nTurn 106. STUDENT: It's it was 6:50. We started at 6:50. And it was supposed to be at six.\nTurn 107. TUTOR: Oh, yeah, I'll I'll let you leave at 7:45.\nTurn 108. STUDENT: 7:45?\nTurn 109. TUTOR: Because you came late. We started at 6:50.\nTurn 110. STUDENT: No, that wasn't my fault.\nTurn 111. STUDENT: That was traffic's fault.\nTurn 112. TUTOR: That was traffic's fault?\nTurn 113. TUTOR: But I need to give you your whole tutoring time. Otherwise, I'm going to get fired.\nTurn 114. STUDENT: They're going to be like, why didn't you Ma'am, no. Yeah, I am.\nTurn 115. TUTOR: They're like going to be like, why didn't you teach Dante enough? They're going to be like, you you're such a bad tutor. You're always letting him out early. You're always letting him play online games.\nTurn 116. STUDENT: You're a baby. Am I supposed to do this?\nTurn 117. TUTOR: No.\nTurn 118. TUTOR: No. Well, technically, technically, I'm supposed to check in with you and then like have have like play games with you, but the games that they want us to play are like educational games and they're kind of boring.\nTurn 119. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nTurn 119. TUTOR: So I was like, well, how about we do something more fun? Like Fireboy and Watergirl.\nTurn 120. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 120. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nTurn 120. STUDENT: You say that it was it was just fun.\nTurn 121. STUDENT: That's all you could have said.\nTurn 122. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 122. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nTurn 122. TUTOR: Come on, get over here and do this.\nTurn 123. TUTOR: No, cuz this is this is this is allowed because because I get to check in with you more. So it's fine. It's just that it's just that other tutors usually you would be doing like\nTurn 124. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 5th column from the left.\nTurn 124. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nTurn 124. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 6th column from the left.\nTurn 124. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 5th column from the left.\nTurn 124. TUTOR: two truths and one lie. I don't know if that's more fun for you, but to me, that's not really fun.\nTurn 125. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 125. STUDENT: What is that? What is that?\nTurn 126. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 2nd column from the left.\nTurn 126. TUTOR: It's like, it's like basically I tell you um, two truths about me and then one lie and then you have to guess which one is the lie.\nTurn 127. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 127. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 2nd column from the left.\nTurn 127. STUDENT: You almost got me.\nTurn 128. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 2nd column from the left.\nTurn 128. TUTOR: Does that sound fun?\nTurn 129. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 2nd column from the left.\nTurn 129. STUDENT: A little.\nTurn 130. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 2nd column from the left.\nTurn 130. STUDENT: A little, but no.\nTurn 131. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 3rd column from the left.\nTurn 131. TUTOR: No?\nTurn 132. STUDENT: That's where you're trying to go.\nTurn 133. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 2nd column from the left.\nTurn 133. TUTOR: Like\nTurn 134. TUTOR: What what don't you why don't we we can like do both games at the same time. Why don't you tell me two truths about yourself and then one lie?\nTurn 135. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 6th column from the left.\nTurn 135. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 135. STUDENT: All right.\nTurn 136. STUDENT: I do not have a garage.\nTurn 137. TUTOR: Okay.\nTurn 138. STUDENT: Be quiet.\nTurn 139. TUTOR: Well.\nTurn 140. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nTurn 140. STUDENT: And I'm having a party.\nTurn 141. TUTOR: Having a party, okay.\nTurn 142. STUDENT: And I have shoes.\nTurn 143. TUTOR: And I I feel like this one's a little too easy.\nTurn 144. TUTOR: You already told me that you're having a party. And then you definitely have shoes. So you don't have a garage.\nTurn 145. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 5th column from the left.\nTurn 145. TUTOR: You have to see if it's a lie or a truth.\nTurn 146. TUTOR: You that's what you have to tell me. I I think that the garage is a lie.\nTurn 147. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 6th column from the left.\nTurn 147. STUDENT: Well, I want one.\nTurn 148. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 4th column from the left.\nTurn 148. STUDENT: You're correct.\nTurn 149. TUTOR: It is a lie.\nTurn 150. STUDENT: It is a lie.\nTurn 151. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 5th column from the left.\nTurn 151. TUTOR: You're correct.\nTurn 152. STUDENT: It is a lie.\nTurn 153. TUTOR: It is a lie.\nTurn 154. STUDENT: Which one is the lie?\nTurn 155. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 6th column from the left.\nTurn 155. TUTOR: The garage.\nTurn 156. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 4th column from the left.\nTurn 156. STUDENT: You do have a garage.\nTurn 157. TUTOR: Yes, I do.\nTurn 158. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 5th column from the left.\nTurn 158. TUTOR: Yeah. See, it has to be harder. Like, okay, I'll give you one.\nTurn 159. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 4th column from the left.\nTurn 159. STUDENT: All right, bet. Then I'll do a harder one.\nTurn 160. TUTOR: Okay, I'll give you one.\nTurn 161. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 4th column from the left, winning the game.\nTurn 161. TUTOR: Oh, by the way, I won.\nTurn 162. STUDENT: You didn't.\nTurn 163. TUTOR: [SCREEN_UPDATE: Game screen shows \"YELLOW WINS\"] A pop-up appears on the Connect 4 board that reads: \"YELLOW WINS, BONUS TIME: 0, BONUS WIN: 1000, TOTAL SCORE 1000\".\nTurn 163. TUTOR: Yeah, I did. Look at that. What does it say? Yellow wins.\nTurn 164. STUDENT: No, it says red.\nTurn 165. TUTOR: [SCREEN_UPDATE: Game board resets for a new game] The \"YELLOW WINS\" pop-up disappears, and the Connect 4 board is empty.\nTurn 165. TUTOR: What? You can't gaslight me. I can read.\nTurn 166. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 166. STUDENT: All right, fine. Bet, I'll do a harder one.\nTurn 167. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nTurn 167. TUTOR: All right. Okay. Yeah, do a do a harder one.\nTurn 168. STUDENT: Like I I don't have socks on right now.\nTurn 169. TUTOR: Uh-huh.\nTurn 170. STUDENT: I'm sitting on my bed right now.\nTurn 171. TUTOR: Okay.\nTurn 172. STUDENT: And I'm listening to a bunch of music.\nTurn 173. TUTOR: Right now?\nTurn 174. STUDENT: Huh?\nTurn 175. TUTOR: You're listening to a bunch of music right now?\nTurn 176. STUDENT: Yeah.\nTurn 177. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 6th column from the left.\nTurn 177. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 177. TUTOR: Um, is it the you're listening to a bunch of music right now?\nTurn 178. STUDENT: Yeah.\nTurn 179. TUTOR: It is?\nTurn 180. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 1st column from the left.\nTurn 180. STUDENT: What?\nTurn 181. TUTOR: Are you you're not listening to a lot of music right now.\nTurn 182. STUDENT: I am.\nTurn 183. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 183. TUTOR: You are? What?\nTurn 184. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nTurn 184. TUTOR: How are you listening to music and doing tutoring at the same time?\nTurn 185. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor (yellow) drops a chip into the 3rd column from the left.\nTurn 185. TUTOR: [SCREEN_INTERACTION: student - drawing] Student (red) drops a chip into the 4th column from the left.\nThe student drops a red chip into the third column from the left.\nTurn 185. STUDENT: It's someone's birthday. Of course they're going to put music on.\nTurn 186. TUTOR: Oh. Wait, are you at a party right now?\nTurn 187. STUDENT: I'm at my house right now. Yes.\nTurn 188. TUTOR: [PAUSE: 3 seconds] The tutor drops a yellow chip into the fifth column from the left.\nThe student drops a red chip into the fourth column from the left.\nThe student drops a red chip into the fourth column from the left.\nThe tutor drops a yellow chip into the fifth column from the left.\nThe student drops a red chip into the fourth column from the left.\nThe tutor drops a yellow chip into the fifth column from the left.\nThe student drops a red chip into the fourth column from the left.\nThe tutor drops a yellow chip into the fifth column from the left.\nThe student drops a red chip into the fourth column from the left.\nThe tutor clicks the \"undo\" button. A pop-up appears with the text \"ARE YOU SURE?\" and an X and a checkmark.\nThe tutor clicks the checkmark, ending the game. The screen changes to a new browser tab with the CloudBrowser logo. The tutor types \"eedi\" into the search bar.\nThe tutor navigates to the MathEdPlatform login page, clicks \"Log in\" for Teachers, then clicks \"Log in\" for Students. The tutor types in the student's username and password.\nThe tutor logs into the MathEdPlatform dashboard. The tutor clicks on \"Topics\", then clicks \"Start topic\" for \"Adding and subtracting 10 and 100 mentally\".\n[PROBLEM CHANGE: p1 - 'What is 10 more than 248?' (start)]\nA multiple-choice question appears. The options are A: 258, B: 2480, C: 348, D: 249.\nThe tutor selects option A.\nThe screen shows \"A is correct!\" and an explanation.\nTurn 188. TUTOR: Oh, wait. Oh my goodness. Wait, then I'll let you out even more early. I didn't know you were at a party. You should have let me know.\nTurn 189. TUTOR: I thought you had a party and now you just came home.\nTurn 190. STUDENT: Came home. No, I went to Kate one's speed.\nTurn 191. TUTOR: Oh, okay, I got it.\nTurn 192. TUTOR: Wait, you should have just told me and then we could have rescheduled until after your party.\nTurn 193. STUDENT: Well, Nana did tell me to do it, so.\nTurn 194. TUTOR: Okay, don't worry, don't worry. I'll I'll I understand now. I'm going to let you out. I'll let you out. Okay.\nTurn 195. TUTOR: Yeah. Let me think. Yeah, I'll let you out early. And then next time we could just add on more time for our next lesson.\nTurn 196. STUDENT: Cuz I don't want to. So how so when am I gonna get out again now?\nTurn 197. TUTOR: I'll let you out at seven at seven thirty.\nTurn 198. STUDENT: Yeah! Seven thirty, the original time. Let's go. Let's go.\nTurn 199. TUTOR: Okay. Sounds good.\nTurn 200. STUDENT: All right, now what's the now what's the lie?\nTurn 201. TUTOR: Wait, now now... wait, now... let me think. So, we were supposed to go out at seven...\nTurn 202. TUTOR: fifty. So, twenty minutes. Okay. So next next time we'll just we'll just have a slightly longer class to make up for it.\nTurn 203. TUTOR: But I'll let you out a lot earlier this time because I don't want you to miss your party.\nTurn 204. STUDENT: Okay.\nTurn 205. TUTOR: Okay, wait, then we we do that, we got to cancel this game. We got to start learning immediately.\nTurn 206. STUDENT: What?\nTurn 207. TUTOR: We got to we got to start learning. I need to shove in as much math as possible.\nTurn 208. STUDENT: No, you do not need to do it.\nTurn 209. TUTOR: No, we do. We totally do.\nTurn 210. STUDENT: We don't.\nTurn 211. TUTOR: We do because I get fired if we don't.\nTurn 212. STUDENT: They're going to be like... So you're so they're going to think that you put like lots of effort into this. Like no fun. No fun at all.\nTurn 213. STUDENT: If they ask you, Dante, how much have you Mr. Reeves has Mr. Reeves been teaching you, you better say, oh, we learned the entire time. We never ever played games.\nTurn 214. STUDENT: I could just say that we only played like like learning games.\nTurn 215. TUTOR: Yeah, we only played learning games.\nTurn 216. STUDENT: We never played any non-learning games.\nTurn 217. STUDENT: Yeah. Yeah, definitely.\nTurn 218. STUDENT: Didn't play any learning. Definitely.\nTurn 219. TUTOR: No, no, we definitely, definitely, 100%. Okay. Let's do mental adding and subtracting. So this time we can't use the whiteboard, which is perfect.\nTurn 220. STUDENT: No.\nTurn 221. TUTOR: So let's start. Uh, what is 10 more than 248?\nTurn 222. STUDENT: Uh, B.\nTurn 223. TUTOR: Or not B. Not B, not B.\nTurn 224. STUDENT: Not B. A.\nTurn 225. TUTOR: A. Nice.\nTurn 226. STUDENT: A, A, A, A, B, C, D, E, F, G.\nTurn 227. TUTOR: [PROBLEM_CHANGE: p2 - 'What is 100 more than 248?' (start)] A multiple-choice question appears. The options are A: 249, B: 348, C: 258, D: 24 800.\nTurn 227. TUTOR: So are you at your friend's birthday party? Is that what you're at?\nTurn 228. STUDENT: No, I'm at my house.\nTurn 229. TUTOR: Oh, oh, okay, okay.\nTurn 230. TUTOR: Uh, and also, who is Nana? Is that your...\nTurn 231. STUDENT: sister? My guardian.\nTurn 232. TUTOR: Huh?\nTurn 233. STUDENT: Claudette.\nTurn 234. TUTOR: Oh, oh.\nTurn 235. TUTOR: Is that your uh guardian?\nTurn 236. STUDENT: Yes, that's Nana.\nTurn 237. TUTOR: I see.\nTurn 238. TUTOR: [PAUSE: 14 seconds]\nTurn 238. TUTOR: Okay. What is 100 more than 248?\nTurn 239. STUDENT: It has a swim.\nTurn 240. STUDENT: B. Three forty. My mom is sick.\nTurn 241. TUTOR: Oh, I see. I see. Okay.\nTurn 242. TUTOR: [PROBLEM_CHANGE: p3 - 'What is 10 less than 345?' (start)] A multiple-choice question appears. The options are A: 34.5, B: 344, C: 335, D: 245.\nThe tutor selects option C. The screen shows \"C is correct!\" and an explanation.\n[PROBLEM CHANGE: p4 - 'What is 100 less than 456?' (start)]\nA multiple-choice question appears. The options are A: 4.56, B: 455, C: 446, D: 356.\nTurn 242. TUTOR: What is 10 less than 345?\nTurn 243. STUDENT: (mumbling)\nTurn 244. STUDENT: B C.\nTurn 245. TUTOR: C. Nice.\nTurn 246. STUDENT: You're really good at this. (mumbling)\nTurn 247. TUTOR: What about this? 100 less than 456.\nTurn 248. STUDENT: Oh.\nTurn 249. TUTOR: Whoa, it's so hard.\nTurn 250. TUTOR: How do you do this, Dante?\nTurn 251. TUTOR: [PAUSE: 10 seconds]\nTurn 251. STUDENT: How you ever do this?\nTurn 252. TUTOR: Oh my god.\nTurn 253. STUDENT: It's so impossible.\nTurn 254. TUTOR: No.\nTurn 255. TUTOR: I believe you can do it.\nTurn 256. STUDENT: I remember Squid Games.\nTurn 257. STUDENT: Four fifty-six.\nTurn 258. TUTOR: I bet you can do it.\nTurn 259. TUTOR: Oh, right, that is Squid Games.\nTurn 260. TUTOR: Did you watch season three?\nTurn 261. STUDENT: I watched all the seasons.\nTurn 262. TUTOR: Dude, the ending was so mid.\nTurn 263. TUTOR: Why did the baby win?\nTurn 264. TUTOR: [PAUSE: 9 seconds]\nTurn 264. STUDENT: Hehe.\nTurn 265. TUTOR: You should have just ended your life.\nTurn 266. STUDENT: Okay. Yeah.\nTurn 267. TUTOR: Then, then what is a hundred, a hundred less than four fifty-six?\nTurn 268. STUDENT: D.\nTurn 269. STUDENT: Well, they should have actually did the lunchbox though.\nTurn 270. TUTOR: [SCREEN_INTERACTION: student - selecting answer] Student's cursor clicks on option D, then clicks the 'Check' button.\nTurn 270. TUTOR: What was the lunch? Wait, I I don't understand\nTurn 271. TUTOR: why couldn't he have just pressed the button?\nTurn 272. TUTOR: [PROBLEM_CHANGE: p2 - '⭐ + 10 = 403' (start)] The screen transitions to the next problem. The question is \"What number should replace the star?\". Options are A: 413, B: 303, C: 393, D: 493.\nTurn 272. STUDENT: Um, I don't know.\nTurn 273. TUTOR: Right?\nTurn 274. TUTOR: Wasn't there a button that he could have pressed?\nTurn 275. STUDENT: Oh yeah, yeah, he could have. And then when he fell, he could they he could have died, then he would have won the game. Baby.\nTurn 276. TUTOR: Yeah.\nTurn 277. STUDENT: Instead, he didn't press it.\nTurn 278. TUTOR: Yeah, I don't know why he didn't, he didn't press it.\nTurn 279. TUTOR: 'Cause then his daughter had to get all his like money, right?\nTurn 280. STUDENT: Yeah.\nTurn 281. TUTOR: Alright, what number should replace the star?\nTurn 282. STUDENT: I think the daughter's gonna be in uh the next Squid Game, the American one.\nTurn 283. TUTOR: I don't think so.\nTurn 284. TUTOR: I kind of doubt it.\nTurn 285. STUDENT: Well, I guess what they said though.\nTurn 286. TUTOR: Because I think, I think in the American Squid Games, you're gonna, you're not gonna see any more Korean people. I think you're gonna see mainly like American people.\nTurn 287. STUDENT: But guess what?\nTurn 288. TUTOR: Except for the front man.\nTurn 289. STUDENT: Guess what?\nTurn 290. TUTOR: What?\nTurn 291. STUDENT: The down, the downside was that they said that what they they wasn't gonna make any more. They they wasn't gonna make a season three, yeah.\nTurn 292. TUTOR: And they left us on a cliffhanger. I said, yeah, they left us on a cliffhanger though.\nTurn 293. TUTOR: Yeah, that makes sense.\nTurn 294. TUTOR: What what number should replace the star?\nTurn 295. STUDENT: Uh, hm hm hm hm hm, I'm thinking very hard.\nTurn 296. TUTOR: So, think about it.\nTurn 297. STUDENT: C.\nTurn 298. TUTOR: What's four hundred and three minus ten?\nTurn 299. STUDENT: That's ten plus ten.\nTurn 300. TUTOR: Yeah, but if you do four hundred and three, 'cause remember, what's the opposite of addition?\nTurn 301. STUDENT: I don't know.\nTurn 302. TUTOR: It's subtraction, man. Come on, we did this.\nTurn 303. STUDENT: No, no, no, no. I asked you this.\nTurn 304. TUTOR: This thing like fifty thousand times.\nTurn 305. STUDENT: Divide, division.\nTurn 306. TUTOR: No. It's just like subtraction.\nTurn 307. TUTOR: Division is the opposite of, the division is the opposite of multiplication.\nTurn 308. STUDENT: Hehe.\nTurn 309. TUTOR: So, if I can add, I can also subtract.\nTurn 310. TUTOR: So if you do four hundred and three, the total, minus ten, then you can also get what it's added to. Okay?\nTurn 311. TUTOR: But you got it right. So nice job.\nTurn 312. TUTOR: [PAUSE: 2 seconds]\nTurn 312. STUDENT: Okay. Oh, no. Five out of five correct.\nTurn 313. TUTOR: All right. We got like twenty more minutes left.\nTurn 314. TUTOR: All right. Write down a number for each case.\nTurn 315. STUDENT: All right. What's case A?\nTurn 316. TUTOR: Case A, when only the tens digit changes.\nTurn 317. STUDENT: Okay. Case B.\nTurn 318. TUTOR: So, when you add only the tens and hundreds digit change.\nTurn 319. TUTOR: And then case C is the tens, hundreds, and thousands digit change.\nTurn 320. TUTOR: So basically, so basically what they're asking, maybe, maybe a whiteboard is required for this one.\nTurn 321. TUTOR: [SCREEN_UPDATE: Opens whiteboard] Tutor opens a blank whiteboard, which covers the quiz interface.\nTurn 321. TUTOR: What they're asking is if you go to a whiteboard, let's let me take a screenshot of this so we can take a look at this. What did I do to my screen?\nTurn 322. STUDENT: Kaching.\nTurn 323. STUDENT: You took a screenshot. It was so loud.\nTurn 324. TUTOR: I didn't even take it yet.\nTurn 325. STUDENT: Yeah, you did. Kaching. Just took another one.\nTurn 326. TUTOR: I didn't take, I didn't take a screenshot yet.\nTurn 327. STUDENT: Kaching.\nTurn 328. TUTOR: Okay.\nTurn 329. STUDENT: You took it now.\nTurn 330. TUTOR: [SCREEN_INTERACTION: tutor - pasting text] Tutor pastes the following text onto the whiteboard: \"Write down a number for each case. When you add 10 to the number a) Only the tens digit changes b) Only the tens and hundreds digit change c) The tens, hundreds and thousands digit change\"\nTurn 330. STUDENT: There you go. Look at that. You took it.\nTurn 331. TUTOR: So, we gotta write a number for each case. Uh, let me use a different color. Let me use blue. Write down a number for each case.\nTurn 332. TUTOR: So, our first case is when we, let's let's call this a mystery number. When you add ten to this mystery number, the ending number only the tens digit changes, right?\nTurn 333. STUDENT: Right.\nTurn 334. TUTOR: So we got a, we got a ones and tens. So, what what would we have to add\nTurn 335. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor draws an infinity symbol and a question mark, then \"+ 10 =\".\nTurn 335. TUTOR: to make the tens change? Let's say this is your ones and then this is your tens, right? Ones, tens.\nTurn 336. TUTOR: Do you remember your hundreds, thousands, tens, ones, and stuff?\nTurn 337. TUTOR: [PAUSE: 5 seconds] Tutor circles the word \"case\" in the problem description.\nTutor writes \"10 + 10 = 20\" on the whiteboard.\nTutor draws a checkmark next to \"10 + 10 = 20\" and writes a circled \"b\" below it.\nTutor underlines \"Only the tens\" and \"hundreds\" in part b) of the problem.\nTutor writes \"? + 10 = ___\" and labels the three blanks for the answer as \"hund\", \"tens\", and \"ones\".\nTutor draws a blank line below the question mark in the equation for part b).\nTurn 337. TUTOR: So, what would we have to add?\nTurn 338. STUDENT: Huh?\nTurn 339. TUTOR: Okay.\nTurn 340. TUTOR: What would we have to add so that only the tens digit changes when you add ten to the number?\nTurn 341. TUTOR: You can give any number.\nTurn 342. STUDENT: Ten.\nTurn 343. TUTOR: Yeah. So you can add ten plus ten and it'll change the tens to twenties, right? It won't change the one.\nTurn 344. TUTOR: So this will be fine.\nTurn 345. TUTOR: So ten is a good answer. Let's move on to the next scenario.\nTurn 346. TUTOR: So, only tens and hundreds digit change.\nTurn 347. TUTOR: So what would you have to add here plus ten so that the hundreds, this is hundreds, this is tens, and then your ones will stay the same.\nTurn 348. TUTOR: So what would you have to add to ten to make this change? So that this number, the tens, hundreds and tens, when you add it, changes.\nTurn 349. TUTOR: [PAUSE: 5 seconds]\nTurn 349. TUTOR: Does that make sense?\nTurn 350. STUDENT: Yes.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nProvide targeted scaffolding now. Identify the specific unresolved obstacle in the student's current mathematical work. Offer only the smallest useful hint, representation, or clarification that makes the next step accessible. Use the learner's actual numbers and ideas when available. Leave the key calculation or inference for the student and invite one manageable next step. Do not give a full solution, stack several leading questions, repeat an explanation the learner already understands, or invent unseen worksheet details.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "3308f33f3c437ad357a49d4a7f961834948c0fa8f9ecadd440f6b95a482da194",
+  "reserve_usd": 0.003807776,
+  "started_utc": "2026-11-11T20:14:11Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "So, if we want only the tens and hundreds digits to change when we add 10, we need a number where adding 10 causes a carry-over from the tens to the hundreds place. For example, if the tens digit is 9, adding 10 would make it 10, which carries over to the hundreds. What number could we use for this case? Let’s try one together. What if we start with 190? What happens when we add 10?",
+  "first_answer_ms": 1604.1035410000006,
+  "usage": {
+    "prompt_tokens": 11510,
+    "completion_tokens": 105,
+    "total_tokens": 11615,
+    "cost": 0.0009502,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009502,
+      "upstream_inference_prompt_cost": 0.0009208,
+      "upstream_inference_completions_cost": 2.94e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "So,",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " if w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e wa",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "nt on",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ly t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "he tens a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "nd hund",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "red",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s digit",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s to ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "cha",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "nge ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " we",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " add ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "10",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ", we ne",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ed a n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "umber w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "r",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e addin",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "g ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "10 cau",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ses a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " carr",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "y-ov",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "er fr",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "om ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "the ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "tens to t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "he hun",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "d",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "reds",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " place. ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "F",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "or ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "exam",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ple, ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "if the",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " te",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "digit i",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "9",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": ", addi",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ng 10",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " wo",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "u",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "l",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "d",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "make i",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t 10, wh",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ich c",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "arr",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ies ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "over to t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e hun",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "dreds. ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "What n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "umb",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "er c",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ould",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " we u",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "se fo",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "r",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " thi",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "case",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "? Le",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t’s try o",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e tog",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "eth",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "er.",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " What ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "if we",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "r",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t wit",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h 190? W",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "hat h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "app",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ens ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " we add 10?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428051-8mioYbwG8qHzpM8pMXzX",
+      "object": "chat.completion.chunk",
+      "created": 1794428051,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 11510,
+        "completion_tokens": 105,
+        "total_tokens": 11615,
+        "cost": 0.0009502,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009502,
+          "upstream_inference_prompt_cost": 0.0009208,
+          "upstream_inference_completions_cost": 2.94e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.0009502,
+  "elapsed_ms": 5562.899625
+}

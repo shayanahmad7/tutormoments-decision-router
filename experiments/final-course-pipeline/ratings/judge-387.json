@@ -1,0 +1,45 @@
+{
+  "case_index": 387,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation connects the total amount, the amount each worker gets, and the number of workers?",
+      "reason": "The tutor rephrases the problem and then asks a guiding question about the operation, which is scaffolding. The question also promotes rigor by asking the student to identify the operation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "W \\times 75 = 600",
+      "reason": "The tutor provides the equation directly, which the student could have productively supplied."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do we use when we're dividing a total amount equally among a group?",
+      "reason": "The tutor asks a question that guides the student towards the correct operation, which is scaffolding. This also promotes rigor by asking the student to think about the operation."
+    }
+  ],
+  "trace_sha256": "12b601f8e619361c933e1a4ea7ceb53250f5b5e1b5396b2c6e4ef967f7f15c61"
+}

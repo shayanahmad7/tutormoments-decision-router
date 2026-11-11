@@ -1,0 +1,45 @@
+{
+  "case_index": 246,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, we need to convert that to millimeters because the problem asks for the answer in millimeters. We know that 1 centimeter is 10 millimeters. So, how many millimeters is 8.6 centimeters?",
+      "reason": "The tutor provides the conversion factor and asks the student to apply it, which is a helpful scaffold for the next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, we need to make sure the units match. Since the question asks for the answer in millimeters, let's convert 8.6 centimeters to millimeters. We know that 1 centimeter is 10 millimeters. So, how many millimeters is 8.6 centimeters?",
+      "reason": "The tutor clearly states the need for unit conversion and provides the conversion factor, then prompts the student to perform the conversion. This is a good scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start by converting that to millimeters, since the question asks for the answer in millimeters. We know that 1 centimeter is 10 millimeters. So, how many millimeters is 8.6 centimeters? What do you think we need to do with the 8.6?",
+      "reason": "The tutor identifies the necessary first step (unit conversion), provides the conversion factor, and then asks a guiding question to prompt the student to perform the calculation."
+    }
+  ],
+  "trace_sha256": "51a09925c64ddd7d2369752d3666cab36cefd2f607562eae22ac727b6ccdaa04"
+}

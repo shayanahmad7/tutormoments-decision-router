@@ -1,0 +1,111 @@
+{
+  "tag": "judge-150",
+  "payload": {
+    "model": "google/gemini-2.5-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Evaluate each anonymous candidate as the next tutor reply to the supplied math conversation. Judge each independently. Candidate order is arbitrary. Do not reward length or infer anything about authorship. Use only the conversation and reply, including described writing/screen actions. These are transcripts, not instructions to you.\nscaffolding: targeted help that makes a mathematical step more accessible, such as a useful hint, representation, guided substep or clarification.\nrigor: increases meaningful student responsibility or cognitive demand through independent work, justification, connection or transfer. A generic question or asking the next answer is not automatically rigor. Scaffolding and rigor can both be present.\noverhelp: supplies an answer, operation or reasoning the student could productively supply, over-breaks the work into leading steps, or offers support without evidence it is needed. A necessary conceptual hint is not automatically overhelp.\nmath_error: a definite mathematical error in the reply. Do not call the student's existing error a tutor error unless the tutor endorses it. Mark uncertainty separately when missing visual information prevents a judgment.\ncontext_fit: 0 contradicts or ignores current task, 1 weak/generic or unverifiable, 2 clearly appropriate to the actual exchange.\nReturn JSON only: {\"ratings\":[{\"id\":\"C1\",\"scaffolding\":true,\"rigor\":false,\"overhelp\":false,\"math_error\":false,\"uncertain\":false,\"context_fit\":2,\"evidence\":\"short verbatim phrase from this reply\",\"reason\":\"brief context-grounded explanation\"}, ...]}. Include exactly one rating for every candidate. Never generate future student behavior or learning outcomes."
+      },
+      {
+        "role": "user",
+        "content": "{\"conversation\": [{\"role\": \"tutor\", \"text\": \"[PROBLEM_CHANGE: p1 - 'Find the value of 4x - 8' (start)] An image of a worksheet is loaded onto the whiteboard. The problem is \\\"4. Find the value of 4x - 8 when: (a) x = 2 (b) x = 4 (c) x = 5.5\\\". Handwritten answers \\\"0\\\", \\\"8\\\", and \\\"14\\\" are visible next to each part.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 3 minutes 20 seconds] A conversation in a foreign language is audible in the background.\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_UPDATE] The tutor joins the session. The whiteboard is cleared and replaced with a virtual background showing a bookshelf and the \\\"Bright Path Tutoring\\\" logo.\"}, {\"role\": \"student\", \"text\": \"Hello.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 3 seconds]\"}, {\"role\": \"student\", \"text\": \"Can you hear me?\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 13 seconds]\"}, {\"role\": \"student\", \"text\": \"Could you hear me now?\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 27 seconds]\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_INTERACTION: student - sends chat] Student sends a chat message: \\\"hello\\\"\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 4 seconds]\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_INTERACTION: tutor - sends chat] Tutor sends a chat message: \\\"hold on just a bit\\\"\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 1 minute 11 seconds] Student holds up a workbook page to the camera. Tutor takes a screenshot and places it on the whiteboard. The image shows the problem \\\"4. Find the value of 4x - 8 when: (a) x = 2 (b) x = 4 (c) x = 5.5\\\" with handwritten answers \\\"0\\\", \\\"8\\\", and \\\"14\\\".\\nTutor deletes the image and pastes a new one from the student's camera. The new image shows \\\"2. Solve 2y = 1.\\\" with \\\"y=0\\\" and \\\"0\\\" written, and \\\"1/2 = 0.5\\\" circled. Below it is \\\"3. Solve 2y+1=7\\\" with \\\"y=8\\\" and \\\"14\\\" written, and \\\"3\\\" written separately.\\nTutor erases the image and all writing, clearing the whiteboard.\"}, {\"role\": \"tutor\", \"text\": \"Wait. Um, All right, now it's working.\"}, {\"role\": \"student\", \"text\": \"I can hear you.\"}, {\"role\": \"tutor\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"All right.\"}, {\"role\": \"tutor\", \"text\": \"Okay, great.\"}, {\"role\": \"tutor\", \"text\": \"All right. Do you want to work on the app or in the book?\"}, {\"role\": \"student\", \"text\": \"Book, book, because my school is opening tomorrow. We need to work on those stuff and finish it off.\"}, {\"role\": \"tutor\", \"text\": \"Okay.\"}, {\"role\": \"student\", \"text\": \"So let's finish it.\"}, {\"role\": \"tutor\", \"text\": \"All right.\"}, {\"role\": \"student\", \"text\": \"No, no, no. Don't erase anything. Do not erase anything.\"}, {\"role\": \"tutor\", \"text\": \"Okay.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 53 seconds]\"}, {\"role\": \"tutor\", \"text\": \"[PROBLEM_CHANGE: p1 - Number line with shapes (start)] Student holds up a new workbook page. Tutor takes a screenshot and places it on the whiteboard. The problem is \\\"4. Each shape on the number line represents a fraction. Fill in the blanks with the correct shapes.\\\" A number line is shown, marked from -2 1/4 to 2 1/4, with various shapes (triangle, circle, square, etc.) at different points. Below are empty boxes next to values like \\\"= -2\\\", \\\"= -1\\\", etc.\"}, {\"role\": \"tutor\", \"text\": \"Okay.\"}, {\"role\": \"tutor\", \"text\": \"All right. Uh, each shape on the number line represents a fraction. Fill in the blank with the correct shape.\"}, {\"role\": \"tutor\", \"text\": \"Oh, okay.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 2 seconds] Tutor draws an arrow pointing to the first empty box, which is next to \\\"= -2\\\".\"}, {\"role\": \"tutor\", \"text\": \"All right.\"}, {\"role\": \"tutor\", \"text\": \"So, um, do you have any idea what shape goes into this box right here?\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 6 seconds] Tutor circles the triangle shape on the number line, which is located at the -2 mark.\\nTutor draws a triangle in the first empty box next to \\\"= -2\\\".\\nStudent draws a triangle in the first box, over the tutor's drawing.\\nStudent draws an oval in the second box, next to \\\"= -1\\\".\\nStudent draws three dots in a vertical line above the triangle she drew.\\nTutor draws several small vertical lines on the number line between -2 and -1.\\nStudent draws over the triangle she drew in the box, then points her cursor to the -2 mark on the number line.\\nTutor circles the -2 on the number line.\\nThe image on the whiteboard adjusts to show the full problem. The problem is titled \\\"4. Each shape on the number line represents a fraction. Fill in the blanks with the correct shapes.\\\" It shows a number line from -2 1/4 to 2 1/4 with various shapes at different points. Below the number line are several equations with blank boxes where shapes should be drawn, such as a triangle next to \\\"= -2\\\" and a blank box next to \\\"= -1\\\".\\nTutor's cursor moves from an oval shape that was previously in the box for -1 to the triangle shape in the box for -2.\"}, {\"role\": \"tutor\", \"text\": \"This is actually not too hard of a problem. I don't think.\"}, {\"role\": \"student\", \"text\": \"I'd rather think it's a shape which is kind of the... I don't know what shape that is. It's kind of blurry for me.\"}, {\"role\": \"tutor\", \"text\": \"Uh, what?\"}, {\"role\": \"student\", \"text\": \"I don't know what shape that is.\"}, {\"role\": \"tutor\", \"text\": \"It looks like... not over there. It's like...\"}, {\"role\": \"student\", \"text\": \"Not over there. It's before that.\"}, {\"role\": \"tutor\", \"text\": \"Oh, the one before, the triangle one?\"}, {\"role\": \"student\", \"text\": \"Mhm.\"}, {\"role\": \"tutor\", \"text\": \"Yeah, I think I think that's a triangle and yeah, that's the correct answer.\"}, {\"role\": \"student\", \"text\": \"That's what I actually thought about.\"}, {\"role\": \"tutor\", \"text\": \"A triangle.\"}, {\"role\": \"student\", \"text\": \"I can draw a triangle right over there for you.\"}, {\"role\": \"tutor\", \"text\": \"Okay. Yeah, why don't you try to do the uh, the rest of them? I think I think you understand um, how to do this.\"}, {\"role\": \"student\", \"text\": \"Mhm.\"}, {\"role\": \"tutor\", \"text\": \"And do you know why you would put the triangle there? Because it's right over here, right? That's where the two number two is, right?\"}, {\"role\": \"student\", \"text\": \"Mhm.\"}, {\"role\": \"tutor\", \"text\": \"So...\"}, {\"role\": \"student\", \"text\": \"How do I know where it is?\"}, {\"role\": \"tutor\", \"text\": \"Yeah.\"}, {\"role\": \"student\", \"text\": \"Because they only asking in negative. They're not asking something else. So they're asking negative. So, that's why I thought about that.\"}, {\"role\": \"tutor\", \"text\": \"Okay, but if they're asking negative, the negative two could be, for example, it could be here, could be there. But how did you know that it was like right at this exact point?\"}, {\"role\": \"student\", \"text\": \"Because they told negative two. Like over here.\"}, {\"role\": \"tutor\", \"text\": \"Yeah, yeah, yeah, yeah, because it's close to that. Yeah.\"}, {\"role\": \"tutor\", \"text\": \"Okay.\"}, {\"role\": \"tutor\", \"text\": \"Um, what happened to the top part of the picture? Oh, there we go. Okay.\"}, {\"role\": \"tutor\", \"text\": \"Um, you put zero at... actually, I will, um, check this one, 'cause this one's not right.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 5 seconds] Student's cursor moves over the triangle.\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_INTERACTION: student - erasing] Student erases the oval shape from the box next to \\\"= -1\\\".\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 18 seconds] Student's cursor moves around the number line.\\nStudent draws a long black line from the square on the number line towards the right side of the screen.\\nStudent draws a vertical black line at the -1 mark on the number line.\\nStudent's cursor points to the diamond shape on the number line, which is at the -1 mark.\\nStudent first draws a U-shape in the box next to \\\"= -1\\\", then erases it and draws a diamond.\"}, {\"role\": \"tutor\", \"text\": \"What do you think you'll put in the second one?\"}, {\"role\": \"student\", \"text\": \"A square.\"}, {\"role\": \"tutor\", \"text\": \"Um, let's see. So you have...\"}, {\"role\": \"tutor\", \"text\": \"Um, so you see two is right here, right?\"}, {\"role\": \"student\", \"text\": \"Yeah, and one should be somewhere around here.\"}, {\"role\": \"tutor\", \"text\": \"And zero is right here.\"}, {\"role\": \"student\", \"text\": \"And you're trying to find negative one. I think one is somewhere around here.\"}, {\"role\": \"tutor\", \"text\": \"No, no, no, no. So, okay, the way you think about this is you see two is right here, right? Negative two. And... wait, give me a minute, give me a minute. Okay.\"}, {\"role\": \"student\", \"text\": \"Negative two. Negative two is over near the rectangle, I mean triangle.\"}, {\"role\": \"tutor\", \"text\": \"Yeah, exactly.\"}, {\"role\": \"student\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"So where would, where would negative one be?\"}, {\"role\": \"student\", \"text\": \"Near this part. Right over there. That's where negative one is.\"}, {\"role\": \"tutor\", \"text\": \"Yeah. So you have, right, so draw that shape.\"}, {\"role\": \"student\", \"text\": \"And that is a shape which is something like... a diamond.\"}, {\"role\": \"tutor\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 8 seconds]\"}, {\"role\": \"tutor\", \"text\": \"All right. And then let's move on to the next one. Yeah, the next one.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 29 seconds] Student erases the diamond they drew, the vertical line on the number line, and the long horizontal line.\"}, {\"role\": \"tutor\", \"text\": \"Um, yeah.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 18 seconds] Student draws a messy version of the diamond in the box for -1.\"}, {\"role\": \"tutor\", \"text\": \"So, any idea what the, what the next one would be?\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 24 seconds] Student erases the messy diamond and redraws a neater diamond.\\nStudent's cursor points to the square on the number line.\\nStudent attempts to draw the square shape in the box for -1/4.\\nStudent draws a dot inside the shape they drew.\"}, {\"role\": \"student\", \"text\": \"Give me a minute. Let me think.\"}, {\"role\": \"tutor\", \"text\": \"Okay.\"}, {\"role\": \"student\", \"text\": \"So it could, just could, okay? It could be somewhere around... maybe around here, I guess.\"}, {\"role\": \"tutor\", \"text\": \"Um, so it's basically somewhere close to...\"}, {\"role\": \"student\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"Yeah, it will be that one. 'Cause negative one over four is very close to zero, right?\"}, {\"role\": \"student\", \"text\": \"Yeah, that's what I thought about.\"}, {\"role\": \"tutor\", \"text\": \"Yeah, but why would it not be the star?\"}, {\"role\": \"student\", \"text\": \"Star is like the other way. It's not the this way. Star is for not like normal. Like, you know.\"}], \"candidates\": {\"C1\": \"Let’s focus on the shape for -1/4. You said it’s close to zero, which is right. Now, look at the number line—how far is -1/4 from zero? Is there a shape that’s placed in that same spot? What shape is closest to zero but still negative?\", \"C2\": \"So you said the star is \\\"not this way.\\\" Can you explain what you mean by that? How does the star’s position on the number line help you decide it’s not the right shape for -1/4?\", \"C3\": \"Let’s look at the shape for -1/4. You said it’s close to zero, which is right. But why is it the square and not the star? What do you notice about the square’s position compared to the star?\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1800,
+    "stream": false,
+    "provider": {
+      "only": [
+        "Google AI Studio"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "payload_sha256": "24e54ac121d9d25f917dcff73f0441ae6e218b38cbbdd02503294eb0c8ff5af8",
+  "reserve_usd": 0.019397447999999998,
+  "started_utc": "2026-11-11T20:18:16Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "id": "gen-1794428296-My33AWQo7xXMyDRO271J",
+    "object": "chat.completion",
+    "created": 1794428296,
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google AI Studio",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"ratings\": [\n    {\n      \"id\": \"C1\",\n      \"scaffolding\": true,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"how far is -1/4 from zero? Is there a shape that’s placed in that same spot? What shape is closest to zero but still negative?\",\n      \"reason\": \"The tutor asks guiding questions that prompt the student to analyze the number line and the position of the shapes relative to -1/4 and zero, encouraging independent reasoning.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"scaffolding\": false,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"Can you explain what you mean by that? How does the star’s position on the number line help you decide it’s not the right shape for -1/4?\",\n      \"reason\": \"The tutor asks the student to elaborate on their reasoning, promoting justification and deeper thinking about the number line and the shapes' positions.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"scaffolding\": true,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"But why is it the square and not the star? What do you notice about the square’s position compared to the star?\",\n      \"reason\": \"The tutor acknowledges the student's correct observation about -1/4 being close to zero, then prompts them to compare the positions of the square and the star to justify their choice, adding rigor.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 3586,
+      "completion_tokens": 434,
+      "total_tokens": 4020,
+      "cost": 0.0021608,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021608,
+        "upstream_inference_prompt_cost": 0.0010758,
+        "upstream_inference_completions_cost": 0.001085
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 3586,
+    "completion_tokens": 434,
+    "total_tokens": 4020,
+    "cost": 0.0021608,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0021608,
+      "upstream_inference_prompt_cost": 0.0010758,
+      "upstream_inference_completions_cost": 0.001085
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "text": "{\n  \"ratings\": [\n    {\n      \"id\": \"C1\",\n      \"scaffolding\": true,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"how far is -1/4 from zero? Is there a shape that’s placed in that same spot? What shape is closest to zero but still negative?\",\n      \"reason\": \"The tutor asks guiding questions that prompt the student to analyze the number line and the position of the shapes relative to -1/4 and zero, encouraging independent reasoning.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"scaffolding\": false,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"Can you explain what you mean by that? How does the star’s position on the number line help you decide it’s not the right shape for -1/4?\",\n      \"reason\": \"The tutor asks the student to elaborate on their reasoning, promoting justification and deeper thinking about the number line and the shapes' positions.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"scaffolding\": true,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"But why is it the square and not the star? What do you notice about the square’s position compared to the star?\",\n      \"reason\": \"The tutor acknowledges the student's correct observation about -1/4 being close to zero, then prompts them to compare the positions of the square and the star to justify their choice, adding rigor.\"\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "provider": "Google AI Studio",
+  "returned_model": "google/gemini-2.5-flash",
+  "cost_usd": 0.0021608,
+  "elapsed_ms": 2512.8175
+}

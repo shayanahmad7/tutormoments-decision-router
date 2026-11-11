@@ -1,0 +1,45 @@
+{
+  "case_index": 506,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what pattern do we notice about the numbers? How can that help us figure out which number is odd?",
+      "reason": "The tutor asks the student to identify the pattern in counting by 2s, which is a helpful scaffold. They then ask how that pattern can help identify the odd number, which promotes deeper thinking and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what pattern do the numbers follow? What do you know about odd numbers?",
+      "reason": "The tutor asks about the pattern of counting by 2s and then asks about the definition of odd numbers, which are both good scaffolds. Asking the student to connect these two concepts promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we keep counting by 2s, do we ever land on 9? Why or why not?",
+      "reason": "The tutor guides the student to consider if 9 fits the pattern of counting by 2s, which is a good scaffold. Asking 'Why or why not?' encourages the student to justify their reasoning, adding rigor."
+    }
+  ],
+  "trace_sha256": "bab8c782fb4e9a2215343093c6ca27ff2333eb442ea1ceb35dc6b1996e231419"
+}

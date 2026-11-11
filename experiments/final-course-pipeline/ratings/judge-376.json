@@ -1,0 +1,45 @@
+{
+  "case_index": 376,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the difference between 456 and 461?",
+      "reason": "The student is confused about the pattern. The tutor's question helps the student identify the skip counting interval, which is a useful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the pattern between them? What number comes *before* 456 in this count?",
+      "reason": "The student asked for clarification on the skip counting. The tutor's question about the pattern helps the student identify the interval. The second question about the number before 456 is a good scaffold to help the student work backward to find the missing number."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the pattern Colin is following when he skip counts from 456 to 461 to 466?",
+      "reason": "The student is confused about the skip counting. The tutor's question helps the student identify the skip counting interval, which is a useful scaffold."
+    }
+  ],
+  "trace_sha256": "a72e0f4feaf9917c05aa5e7674b8230bb795deb49ba7f86ebf948bceb6ef7abf"
+}

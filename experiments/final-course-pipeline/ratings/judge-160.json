@@ -1,0 +1,45 @@
+{
+  "case_index": 160,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me point to the division problem on the board: 12 ÷ 3 = 4. The number we're dividing is called the **dividend** — that's 12. The number we're dividing by is the **divisor** — that's 3. The result of the division is the **quotient** — that's 4. \n\nCan you tell me which part of the problem is the dividend, which is the divisor, and which is the quotient in this example?",
+      "reason": "The tutor provides a clear explanation of each term using the example on the board, then asks the student to identify all three terms, which is a good check for understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me which part of the division problem you think is called the dividend, and why?",
+      "reason": "The tutor asks the student to identify one of the terms and justify their answer, which promotes rigor. However, it might be too abrupt given the student just said they are not familiar with the terms."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me clarify one part first: in the division problem 6 ÷ 2 = 3, the number 6 is called the **dividend**—it's the number being divided. The number 2 is the **divisor**—it's the number we divide by. The result, 3, is the **quotient**. \n\nCan you tell me which part of the problem 12 ÷ 3 = 4 would be the dividend?",
+      "reason": "The tutor clarifies the terms using a different example (6 ÷ 2 = 3) and then asks the student to apply that understanding to the original problem (12 ÷ 3 = 4) by identifying the dividend. This provides scaffolding by explaining the terms and then rigor by asking the student to apply the knowledge."
+    }
+  ],
+  "trace_sha256": "1cb9c29f7160a447ac3d1d3fee71b3c76a36178d1f1a2531f5bab9306df76ecd"
+}

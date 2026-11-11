@@ -1,0 +1,45 @@
+{
+  "case_index": 441,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many parts have we counted from zero to the star? What does that tell us about the numerator?",
+      "reason": "The tutor provides a guided question that helps the student identify the numerator by counting the parts from zero to the star."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, how many of those parts do you need to reach the star? Let me know when you find that number — that will be your numerator.",
+      "reason": "The tutor explicitly states the denominator and then guides the student to find the numerator by asking how many parts are needed to reach the star."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can you use the same counting method to figure out what fraction it represents? Take your time and walk me through your thinking.",
+      "reason": "The tutor asks the student to apply the previously learned counting method independently and explain their reasoning, increasing cognitive demand."
+    }
+  ],
+  "trace_sha256": "45f9c48f34e5a9a0c2af79a42b0d7dbf7eeb336619172d0e73520623c94f144b"
+}

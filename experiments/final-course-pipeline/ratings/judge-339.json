@@ -1,0 +1,45 @@
+{
+  "case_index": 339,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when we subtract 42 from 46? What number do we get, and what do we do next?",
+      "reason": "The student has just stated the next step in the long division, and the tutor asks a guiding question to prompt the student to complete the subtraction and then the next step of bringing down the next digit."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why that makes sense in relation to the original multiplication problem we did earlier? What does this tell us about the relationship between multiplication and division?",
+      "reason": "The tutor asks the student to explain the relationship between the multiplication and division problems, which requires the student to make a connection and justify their understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That's right! So we ended up with 367 as the quotient, and that's exactly the number we started with for the multiplication. That means our division checks out. Can you explain why this makes sense in terms of multiplication and division being inverse operations?",
+      "reason": "The tutor confirms the correct answer and then asks the student to explain why it makes sense in terms of inverse operations, which is a good prompt for rigor. The confirmation of the correct answer is scaffolding."
+    }
+  ],
+  "trace_sha256": "642f41f6598e22492bf16266953fccac7d95dee11ffe4740bf6e7d6dcf72f5b3"
+}

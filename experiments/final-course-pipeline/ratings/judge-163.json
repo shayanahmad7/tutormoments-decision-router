@@ -1,0 +1,45 @@
+{
+  "case_index": 163,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know how you figure it out.",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Starting from zero, how many steps do you move along the x-axis (the horizontal line) to reach the point? That number is the x-value.",
+      "reason": "The tutor provides a clear, step-by-step guide on how to find the x-value, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, the X value of the point is how far left or right it is from the origin. If it's on the left side of the origin, it's a negative number. How far left is this point from the origin?",
+      "reason": "The tutor explains the concept of the x-value in relation to the origin and then asks a guiding question, providing scaffolding."
+    }
+  ],
+  "trace_sha256": "8b716f64325e6c0de90c23fd5778656ba02c847e117f64efce8473e582336719"
+}

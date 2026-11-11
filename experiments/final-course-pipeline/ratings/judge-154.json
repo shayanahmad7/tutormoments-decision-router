@@ -1,0 +1,45 @@
+{
+  "case_index": 154,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the number in the hundreds place?",
+      "reason": "The tutor is trying to get the student to identify the place value of the digits in the new number, and this question directly scaffolds that process by asking for the hundreds place first, mirroring the previous example."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about this number? Can you tell me what it is called?",
+      "reason": "This prompt asks the student to read the entire number, which is a more rigorous task than identifying individual place values, but still appropriate given the previous explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what each digit represents and how we read the whole number?",
+      "reason": "This candidate asks the student to apply the full explanation given for the previous number (599) to the new number (801), requiring them to identify each digit's place value and then read the entire number. This is a rigorous application of the recently taught concept."
+    }
+  ],
+  "trace_sha256": "e164079385f2d11f9e0ecbd97769a1ff4836755bfca8ff23d9f64d4845214bdd"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 410,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s the first step?",
+      "reason": "The tutor asks the student to identify the first step in solving the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how many apples are in that one basket now? What should we do with the 12 and the 6?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by focusing on one basket and asks the student to identify the operation needed."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total number of apples before any are taken away?",
+      "reason": "The tutor guides the student by asking for the total number of apples before any are removed, which is a clear first step in solving the problem."
+    }
+  ],
+  "trace_sha256": "edb5c98762a0748d409cd5cd03b6baa32be197a53be31363785b03d0a7f55b23"
+}

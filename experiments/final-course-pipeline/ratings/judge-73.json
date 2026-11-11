@@ -1,0 +1,45 @@
+{
+  "case_index": 73,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how far to the other side of the line would the reflected point be? What would its x-coordinate be?",
+      "reason": "The tutor asks a guiding question to help the student determine the x-coordinate of the reflected point, which is a scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How far is 1 from 4? Once you have that distance, how far to the other side of the line x = 4 would the reflected point be? What x-value would that give you?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable steps by asking the student to first calculate the distance from the point to the line, and then to use that distance to find the reflected x-coordinate. This is a good scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": true,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if the point is two units away from the line x = 4",
+      "reason": "The point Q is at (1,5) and the line is x=4. The distance between x=1 and x=4 is 3 units, not 2 units. This is a mathematical error."
+    }
+  ],
+  "trace_sha256": "d26e2a21981a19fa546a724f3fe31d2ef86ef7b6f5c911285fc15a2be460798a"
+}

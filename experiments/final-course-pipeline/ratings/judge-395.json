@@ -1,0 +1,45 @@
+{
+  "case_index": 395,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation do we use to find the total number of apples in the shop?",
+      "reason": "The tutor asks a leading question to guide the student to the correct operation, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what equation would you write to find the total number of apples? Think about how the numbers and the operation connect to the problem.",
+      "reason": "The tutor asks the student to formulate the equation, which is more rigorous than just identifying the operation. The hint to 'think about how the numbers and the operation connect' provides scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do we use to find the total number of apples in the shop?",
+      "reason": "The tutor asks a leading question to guide the student to the correct operation, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "80524fc88a78215fab7734f306a00b398bd80204ac5579af379afeea94f40802"
+}

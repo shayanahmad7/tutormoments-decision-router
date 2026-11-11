@@ -1,0 +1,45 @@
+{
+  "case_index": 146,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what is 2 times 3? That will give you the new numerator. What do you think comes next?",
+      "reason": "The tutor provides a guided substep by asking the student to multiply the numerators and then asks what comes next, which is a helpful hint."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think B is the correct answer this time?",
+      "reason": "The tutor asks the student to explain their reasoning, which increases cognitive demand and promotes justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what happens when you multiply the numerators? What is 2 times 3?",
+      "reason": "The tutor provides a guided substep by explicitly asking the student to multiply the numerators, making the next step more accessible."
+    }
+  ],
+  "trace_sha256": "4b00d58fd50d80189f5d5dba614f364fba1ef0a6527db2feb467c11cbcee465a"
+}

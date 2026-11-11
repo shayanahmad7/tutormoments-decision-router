@@ -1,0 +1,45 @@
+{
+  "case_index": 210,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number do you need to multiply by 2 to get 14?",
+      "reason": "The tutor provides a guided substep by asking the student to focus on the operation within the parentheses and what value it needs to equal."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, what number multiplied by 2 gives you 14?",
+      "reason": "The tutor clarifies the goal for the expression within the parentheses and then asks a direct question to guide the student to the correct value."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number would you need to get 14?",
+      "reason": "The tutor provides a clear hint by stating what the product of the operation within the parentheses needs to be and then asks the student to find the missing factor."
+    }
+  ],
+  "trace_sha256": "75f5fd1b63eaf84d01940b5ee1d4ae30f8986703e78f9e14f403a1b175ca738d"
+}

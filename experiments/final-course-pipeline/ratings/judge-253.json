@@ -1,0 +1,45 @@
+{
+  "case_index": 253,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we need to do first with the one?",
+      "reason": "The tutor prompts the student to recall the first step for subtracting a fraction from a whole number, which is to convert the whole number into a fraction with a common denominator. This is a direct and appropriate scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we need to do first to figure out how much he spilled?",
+      "reason": "The tutor correctly identifies the next step in the problem (finding how much Bill spilled) and prompts the student to recall the initial operation, which is to subtract the remaining amount from the whole. This is a good scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we need to do with the one to subtract one-sixth from it?",
+      "reason": "The tutor asks the student to recall the first step in subtracting a fraction from a whole number, which is to convert the whole number into a fraction. This is a direct and appropriate scaffold."
+    }
+  ],
+  "trace_sha256": "22ea901de8608aaa2de187e40bdb3c22c514943dadb8e6edcce30e9f3f03ea54"
+}

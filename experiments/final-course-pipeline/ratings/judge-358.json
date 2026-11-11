@@ -1,0 +1,45 @@
+{
+  "case_index": 358,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If each tall block represents 10, and there are two of them, what number do they represent together?",
+      "reason": "The tutor provides a clear hint by stating the value of each tall block and asking the student to combine them, which is a direct step in solving the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let’s go back to the input-output table.",
+      "reason": "The tutor is trying to help the student with a previous problem, but the current problem is about base-ten blocks. This response is out of context."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you count the tall blocks first, how many tens do you see?",
+      "reason": "The tutor provides a clear hint by stating the value of each tall block and asking the student to count them, which is a direct step in solving the problem."
+    }
+  ],
+  "trace_sha256": "f03a6e91c396c6717656051a075e64e16433c62e836fb130feed1f511b381185"
+}

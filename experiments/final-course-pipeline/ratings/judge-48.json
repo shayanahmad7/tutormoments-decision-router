@@ -1,0 +1,45 @@
+{
+  "case_index": 48,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 6 times 4?",
+      "reason": "The tutor correctly identifies the next step and asks the student to perform the calculation, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation would that be? And what would that give us for x?",
+      "reason": "The tutor guides the student to identify the inverse operation and then asks them to apply it to find x, which is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "we need to do the opposite operation, which is multiplication. So, to get X by itself, we can multiply both sides of the equation by four.",
+      "reason": "The tutor explicitly states the operation and how to apply it, which the student could have productively figured out with a more open-ended prompt."
+    }
+  ],
+  "trace_sha256": "d29db1f780a0600e9844a852c9e36ecb26ea0813fb2d1721f8a3bfe7b622eaf3"
+}

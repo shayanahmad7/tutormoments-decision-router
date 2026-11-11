@@ -1,0 +1,45 @@
+{
+  "case_index": 225,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "could you clarify who \"Jim\" is in the story?",
+      "reason": "The tutor asks for clarification on a character name, which is a targeted question to help the student refine their summary and ensure accuracy. This also encourages the student to recall details from the text."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What was the main action or turning point in the chapter? What happened after they used the escape tunnel?",
+      "reason": "The tutor prompts the student to identify key events and a turning point, guiding them towards a more concise and focused summary. This helps the student practice identifying main ideas."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why their arms started flipping?",
+      "reason": "The tutor asks a specific question about a detail from the chapter, prompting the student to recall and explain a particular event. This helps the student focus on a key part of the narrative."
+    }
+  ],
+  "trace_sha256": "5c8068d6cd007f28b9371cd08903a04628c8839832350d25210412a624a10bc8"
+}

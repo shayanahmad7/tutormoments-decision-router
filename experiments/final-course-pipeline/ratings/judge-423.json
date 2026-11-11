@@ -1,0 +1,45 @@
+{
+  "case_index": 423,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number would that make?",
+      "reason": "The tutor asks the student to state the resulting number after the conversion, which is a direct question to check understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you write that out?",
+      "reason": "The tutor asks the student to write out the converted number, promoting active participation and demonstrating their understanding of decimal placement."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s try moving the decimal one place at a time. What happens if you move it once?",
+      "reason": "The tutor provides a guided substep by suggesting moving the decimal one place at a time, which breaks down the conversion process into smaller, more manageable steps."
+    }
+  ],
+  "trace_sha256": "a6f0751c1362aac774097067eac4e2d4c111089541bd3dc5f67819203f8a16f9"
+}

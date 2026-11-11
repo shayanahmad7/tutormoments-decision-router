@@ -1,0 +1,45 @@
+{
+  "case_index": 426,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is the answer 1/8?",
+      "reason": "The student has already stated the answer. This question asks them to justify it, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You're right that 3 minus 2 is 1, but what is the denominator in the answer?",
+      "reason": "The student has already stated the answer. This reply breaks down the problem into two parts, confirming the numerator and then prompting for the denominator, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said one out of eight. Let me see. The problem is 3/8 minus 2/8. What is 3 minus 2?",
+      "reason": "The student has already stated the answer. This reply breaks down the problem into two parts, confirming the numerator and then prompting for the denominator, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "9489f7bce211b0144e8a5654978f1958c218763e7fea345ce1f29ed596e4e903"
+}

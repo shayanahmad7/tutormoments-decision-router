@@ -1,0 +1,46 @@
+{
+  "case_index": 467,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is 4 times as many as 3? Can you calculate that?",
+      "reason": "Directs student to compute 4×3 themselves without confirming or denying C, and asks a targeted question that scaffolds the meaning of 'times as many' while requiring student to do the work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think the star should be 12?",
+      "reason": "Asks student to justify their answer, increasing cognitive demand through explanation, without providing scaffolding or giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How does that connect to the equation? What does \"4 times as many as 3\" mean in numbers?",
+      "reason": "Scaffolds by pointing to the connection between the equation and the phrase, while also requiring the student to articulate the meaning, combining support with demand for reasoning."
+    }
+  ],
+  "trace_sha256": "95be3b60df26a184701259b2b404e960ec60fbd93eab1e0bd2e3be60965bc4ed",
+  "syntax_only_repair": "Escaped two embedded quotation marks inside the evidence string; no field values changed."
+}

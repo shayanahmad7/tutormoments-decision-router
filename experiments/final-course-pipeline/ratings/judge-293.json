@@ -1,0 +1,45 @@
+{
+  "case_index": 293,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many total factors does twelve have? Can you list them all?",
+      "reason": "The tutor asks the student to list all factors of 12, which is a good way to check for understanding and encourage independent work. This is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you list all the factors of 12? Then, decide if 12 is a prime number or not, and explain why.",
+      "reason": "The tutor asks the student to list all factors of 12 and then determine if it's prime, requiring both calculation and explanation. This is a good way to check for understanding and encourage independent work."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What other pair of numbers can you multiply to get 12? What does that tell you about how many factors 12 has?",
+      "reason": "The tutor asks the student to find another factor pair for 12, which is a good way to check for understanding and encourage independent work. This is a good balance of scaffolding and rigor."
+    }
+  ],
+  "trace_sha256": "3cc32ad48ff9a628b716ccd4a25974353d025e49a65a53845dfddc9ac4d94ca8"
+}

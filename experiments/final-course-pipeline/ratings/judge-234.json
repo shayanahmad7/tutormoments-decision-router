@@ -1,0 +1,45 @@
+{
+  "case_index": 234,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the first step you'd take?",
+      "reason": "The tutor breaks down the problem and then asks the student to identify the first step in the multiplication, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do we use when we want to find the total of the same amount repeated multiple times?",
+      "reason": "The tutor guides the student to identify the correct operation by describing the scenario, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation would you use and why?",
+      "reason": "The tutor asks the student to identify the operation and justify their choice, which promotes rigor by requiring explanation."
+    }
+  ],
+  "trace_sha256": "f9f5b0f89e18d1167881a8c83f06e18e4fadc104f3f2ca8f70b9a8449e831508"
+}

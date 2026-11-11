@@ -1,0 +1,45 @@
+{
+  "case_index": 190,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 125 times 5? That's the first step in the second row. Can you write that in?",
+      "reason": "The student has written 625, which is 125 * 5. The tutor asks the student to write that in, which is what the student has already done. The tutor is trying to guide the student to articulate the step they just took."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what's the next step when multiplying by the second digit? How do you handle the \"2\" in the second 125?",
+      "reason": "The student has completed the first partial product. The tutor prompts the student for the next step in the multiplication process, specifically asking about the '2' in the multiplier, which is appropriate scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 625 as the first step in multiplying 125 by 125? What does that number represent in the problem?",
+      "reason": "The student has written the first partial product. The tutor asks the student to explain their work, which promotes rigor by requiring justification of their steps."
+    }
+  ],
+  "trace_sha256": "a920f9c1f251366630a243c090f57d01994463f1c51b7c439540546dceabaea9"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 345,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you move the other blue dot to the 60-degree mark and complete the angle?",
+      "reason": "The tutor provides a direct instruction to the student to move the blue dot to the 60-degree mark, which is a specific and helpful step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Where is the second line going to be if we're making a 60-degree angle? Think about where 60 is on the protractor.",
+      "reason": "The tutor prompts the student to identify the location of the second line and provides a hint to think about where 60 is on the protractor, which is a useful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Look at the protractor and find the 60-degree mark. Can you move the second blue dot to that mark?",
+      "reason": "The tutor provides a clear instruction to look at the protractor and find the 60-degree mark, then asks the student to move the blue dot, which is a direct and helpful scaffold."
+    }
+  ],
+  "trace_sha256": "a342a77fffa761f46a62f914d4a267f5cf23f743dec61ca0646241ea0555142d"
+}

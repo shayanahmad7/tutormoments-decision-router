@@ -1,0 +1,45 @@
+{
+  "case_index": 108,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the digits when you add 10 to 590?",
+      "reason": "The tutor clarifies the student's misunderstanding of 'times ten' versus 'counting in tens' and then prompts the student to think about the effect of adding 10 on the digits, which is a good scaffold for the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the digits in the number when you add 10? Start with the ones place — what do you see there?",
+      "reason": "The tutor provides a clear scaffold by directing the student to consider the effect of adding 10 on the digits, specifically starting with the ones place."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you walk me through that step by step?",
+      "reason": "The tutor asks the student to explain their thinking step-by-step, which promotes rigor by requiring the student to articulate their process."
+    }
+  ],
+  "trace_sha256": "7d1119bf9500b9cc607ccc7ef7dc6ca1e8ef3a8d5cbd0125344ae34c209bdd5c"
+}

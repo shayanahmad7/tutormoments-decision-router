@@ -1,0 +1,45 @@
+{
+  "case_index": 205,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can you write an equation to show that the total of both angles is 360°",
+      "reason": "Redirects the student from visual estimation to algebraic reasoning, prompting them to construct the equation themselves—appropriate scaffolding with genuine cognitive demand."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how you used the idea that the total angles around a point add up to 360° to find angle y",
+      "reason": "Asks the student to connect their answer to the 360° principle, pushing for mathematical justification, but the student's explanation was purely visual/intuitive so this question is appropriate though somewhat generic."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how you used the relationship between the two angles (y and 4y) to find the exact value of y",
+      "reason": "Directly targets the gap between the student's visual/intuitive reasoning and the algebraic relationship y+4y=360°, asking for justification of the exact method—good rigor without overhelp."
+    }
+  ],
+  "trace_sha256": "7fad47e6a65cf58b966ab928b96091289864a9fc221495dc90778c540855d0a7"
+}

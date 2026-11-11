@@ -1,0 +1,45 @@
+{
+  "case_index": 56,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should you do first to solve for x?",
+      "reason": "The tutor provides a new problem and then asks a guiding question to prompt the student's first step, which is appropriate scaffolding after the student correctly answered the previous problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you walk me through how you would solve it?",
+      "reason": "The tutor provides a new problem and asks the student to explain their process, which increases rigor by requiring the student to articulate their understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try solving it step by step? I’ll watch and help if you get stuck.",
+      "reason": "The tutor provides a new problem and asks the student to solve it step-by-step, which promotes independent work and increases rigor. The offer to help if stuck is appropriate."
+    }
+  ],
+  "trace_sha256": "8ee1f4d583791960eb660a45e70b280c56926bd1eaf28730f78f2f97b6f00020"
+}

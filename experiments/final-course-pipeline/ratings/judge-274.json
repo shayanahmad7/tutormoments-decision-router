@@ -1,0 +1,45 @@
+{
+  "case_index": 274,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we have 70 (from 10 x 7) and subtract 7 (from 1 x 7), what is 70 minus 7? What number do we get?",
+      "reason": "The student has already correctly identified and stated the subtraction problem and its answer multiple times in the conversation. The tutor is asking for information the student has already provided."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you think of another multiplication problem where you could use this same strategy—making a larger, easier problem and then subtracting a smaller part? Let’s try one together. How about 8 x 6? What larger, easier number is close to 8 that might make this simpler?",
+      "reason": "The tutor asks the student to apply the strategy to a new problem, which promotes transfer of learning. The tutor also provides a specific problem to work with, which scaffolds the task."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you think of another way to break up 9 x 7 using the distributive property, maybe splitting the 7 instead of the 9? What would that look like?",
+      "reason": "The tutor asks the student to apply the distributive property in a different way to the same problem, which encourages deeper understanding and flexibility. This is a good rigor move, and the suggestion to split the 7 provides scaffolding."
+    }
+  ],
+  "trace_sha256": "ba71026f032acf2f122f75ec0b73f8dcb478eab12e3f52d79a397d4dca9f8280"
+}

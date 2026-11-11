@@ -1,0 +1,45 @@
+{
+  "case_index": 286,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If this were a blank instead of x, you’d say “blank plus 5 is 15.” How would you figure out what number goes in the blank?",
+      "reason": "The tutor is rephrasing the problem in a way that might be more accessible to the student, connecting it to the idea of a 'blank' that was previously discussed as a placeholder for a variable."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation is being done to the X in this equation?",
+      "reason": "This question prompts the student to identify a key component of the equation, which is a necessary step in solving for X, without giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The plus sign is the operation here. What's the opposite of addition?",
+      "reason": "The tutor identifies the operation for the student, which is a form of scaffolding, and then asks about the opposite operation, directly applying the rule they just explained."
+    }
+  ],
+  "trace_sha256": "04b09fde7a8903e55672c249e2663bec6ac0ae6fdc41c16688de365c8141a0e2"
+}

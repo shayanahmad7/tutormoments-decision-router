@@ -1,0 +1,45 @@
+{
+  "case_index": 18,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option B makes sense for this problem? How does the diagram show what’s happening with the paperclips?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option B, which promotes deeper thinking and justification. This is a good way to encourage rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the total number of paperclips Sarah starts with is 68. She gives 23 away. Which diagram shows the total (68) in the big box and one part as 23? What do you think?",
+      "reason": "The tutor reiterates the key information from the problem and then guides the student to look for specific features in the diagrams, which is a form of scaffolding. It's not overhelping because it still requires the student to identify the correct diagram."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think option B is the correct diagram for how many paperclips Sarah has left?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option B, which promotes deeper thinking and justification. This is a good way to encourage rigor."
+    }
+  ],
+  "trace_sha256": "bcac3bb8d751786af0f46072da38eb190527bcae500e8ead9e340e2e18ea5f41"
+}

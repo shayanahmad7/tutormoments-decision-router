@@ -1,0 +1,45 @@
+{
+  "case_index": 168,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is missing here?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable steps, first confirming the sum of the initial equation and then rephrasing the second part as a missing addend problem. This helps the student focus on one part of the problem at a time."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you could move numbers around to make the second equation easier to solve?",
+      "reason": "The tutor asks the student to explain their reasoning and connect the concept of equivalent expressions, which promotes deeper understanding and critical thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s the difference between 152 and 100?",
+      "reason": "The tutor provides a hint by asking the student to find the difference between 152 and 100, which guides them toward the correct operation to find the missing number."
+    }
+  ],
+  "trace_sha256": "6b3c7c80f9986966d3c58c062e48db3abdf731999c1e9b57eb4cbbb26f753e8c"
+}

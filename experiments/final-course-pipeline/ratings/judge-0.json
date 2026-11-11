@@ -1,0 +1,45 @@
+{
+  "case_index": 0,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you tell me which mark represents one half?",
+      "reason": "The student suggested finding one half. The tutor acknowledges this and then asks the student to identify where one half would be on the number line, which promotes active engagement and critical thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number would you mark at the halfway point? And where would three of those parts land?",
+      "reason": "The tutor acknowledges the student's idea of finding the halfway point and then prompts them to apply this to the number line, and also to locate 3/8, which is the next logical step in the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If each part is 1/8, how many parts do you need to count from 0 to reach 3/8? Can you show that on the number line?",
+      "reason": "The tutor confirms the student's observation about the eight intervals and then guides them to mark 3/8 on the number line, which is a direct and appropriate next step for solving the problem."
+    }
+  ],
+  "trace_sha256": "34d500020e4f45061f976c5f394b738a0ed0c161d173cbde8d779ae84c546916"
+}

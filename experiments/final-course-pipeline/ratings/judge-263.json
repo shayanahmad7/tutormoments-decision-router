@@ -1,0 +1,45 @@
+{
+  "case_index": 263,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's say we have a number like 240. If we add 10, what happens?",
+      "reason": "The tutor provides a specific example to help the student understand the concept, which is a form of scaffolding. It's not overhelp because the student still needs to perform the addition and analyze the result."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "For example, if the tens digit is 9, adding 10 would make it 10, which carries over to the hundreds. What number could we use for this case? Let’s try one together. What if we start with 190? What happens when we add 10?",
+      "reason": "The tutor explains the mathematical concept of carry-over that is necessary for the tens and hundreds digits to change, then provides a specific example for the student to work through. This is targeted scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think of a number and explain why it works.",
+      "reason": "The tutor asks the student to come up with a number and justify their answer, which increases cognitive demand and promotes deeper understanding. This is a good example of rigor."
+    }
+  ],
+  "trace_sha256": "35235bb9fc8c87d7a2775c1eb5160f1a02e897b44f3e3c6fa415ec615c803c29"
+}

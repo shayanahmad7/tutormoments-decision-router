@@ -1,0 +1,45 @@
+{
+  "case_index": 352,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we look for to decide?",
+      "reason": "The tutor asks the student to identify criteria for comparing fractions, which promotes deeper thinking and responsibility for the mathematical process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which picture shows both fractions using the same size shape?",
+      "reason": "The tutor provides a specific hint about looking for the 'same whole' which is a key concept for comparing fractions, especially after the previous video and problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you need to see in a picture to help you compare these two fractions? What should the picture show?",
+      "reason": "The tutor prompts the student to articulate the necessary features of a visual model for comparing fractions, encouraging the student to think about the underlying principles rather than just picking an answer."
+    }
+  ],
+  "trace_sha256": "2a06533b27e4e79016bf36065ede9e0438d405b75510bc38895c517c8d67bdf0"
+}

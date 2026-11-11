@@ -1,0 +1,45 @@
+{
+  "case_index": 421,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start by choosing the largest digit for the tens place, and then pick the largest even digit for the ones place",
+      "reason": "Breaks the problem into explicit leading steps and tells the student exactly what strategy to use, removing productive thinking the student could supply independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What makes a two-digit number even, and how can you use that to decide which tiles to choose?",
+      "reason": "Prompts the student to recall the relevant concept (even numbers) and apply it to the tile selection, requiring the student to do the reasoning without giving away the strategy."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": true,
+      "context_fit": 1,
+      "reason": "Asks the student to identify available digits and arrange them, which is helpful scaffolding, but without seeing the actual tiles on screen it is unclear whether this is appropriately targeted; the reply is generic enough to apply to any similar problem.",
+      "evidence": "What digits do you have available to use, and how can you arrange them to make the largest two-digit even number?"
+    }
+  ],
+  "trace_sha256": "b19bffdc5082eddd1fe02d7f73c4b624ce00f9aeeba576e27a7fa12f3d50094e"
+}

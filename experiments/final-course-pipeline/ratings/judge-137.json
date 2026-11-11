@@ -1,0 +1,45 @@
+{
+  "case_index": 137,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word connects the two ideas here? Is it showing cause and effect, contrast, or something else?",
+      "reason": "The tutor rereads the sentence with the student and then provides a hint about the type of relationship between the two clauses, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What word connects the two ideas — that they didn’t understand at first, but then they did after hearing Luz? What word fits the relationship between the two parts of the sentence?",
+      "reason": "The tutor rereads the sentence and then provides a hint about the relationship between the two clauses, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why \"so\" is the correct word to complete the sentence? What does it show about the relationship between the two parts of the sentence?",
+      "reason": "The student has already typed \"so\" into the answer box, and the tutor asks them to explain their reasoning, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "a1423a94ab03477a9ff7c2784a7bf4e470896fdd504a269dfcb05da0ff3117fe"
+}

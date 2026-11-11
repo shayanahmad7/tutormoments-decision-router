@@ -1,0 +1,45 @@
+{
+  "case_index": 481,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you draw the groups and figure out what 6 times 7 is? I'll wait while you try it out.",
+      "reason": "The tutor sets up the problem and then asks the student to take the lead, which is a good way to promote rigor. The prompt to 'draw the groups' is a scaffold that aligns with previous methods used in the conversation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would you like to do first?",
+      "reason": "The tutor introduces a new problem and asks the student to take the lead, which promotes rigor. However, it lacks specific scaffolding on how to approach the problem, which might be helpful given the student's previous struggles."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if I changed the problem to 4 x 5, would the answer still be 20? Why or why not?",
+      "reason": "The tutor connects to the previous problem and asks a question that requires the student to justify their reasoning, promoting rigor. This also serves as a good conceptual check on the commutative property of multiplication, which was briefly mentioned earlier."
+    }
+  ],
+  "trace_sha256": "a2a7e4176e81e294ff5e76a5abe0e4b523172b6af440ba6c89d638b816805472"
+}

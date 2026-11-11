@@ -1,0 +1,45 @@
+{
+  "case_index": 98,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what do you subtract from 203 to find the number just before it?",
+      "reason": "The tutor clarifies the operation needed (subtraction) and the number to operate on (203), which is a helpful scaffold for the student who previously chose a number after 203."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how to count backward in 5s from 203. What would that number be?",
+      "reason": "The tutor prompts the student to think about the process of counting backward in 5s from 203, which encourages independent problem-solving without giving away the operation or the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number is 5 less than 203? What would you subtract 5 from?",
+      "reason": "The tutor explicitly states the operation (subtract 5) and the number to operate on (203), which is a direct scaffold to help the student correct their previous error of counting forward."
+    }
+  ],
+  "trace_sha256": "0dfc520aa887cd847eb6ea901cf37423e2dffe38eaf3a70ba49e7f4da9b9a885"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 421,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digits do you have available to use, and how can you arrange them to make the largest two-digit even number?",
+      "reason": "The tutor asks the student to identify the available digits and consider how to arrange them, which is a helpful step in solving the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start by choosing the largest digit for the tens place, and then pick the largest even digit for the ones place.",
+      "reason": "The tutor provides too much guidance by explicitly telling the student which digits to choose for each place value, rather than letting the student figure out the strategy."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What makes a two-digit number even, and how can you use that to decide which tiles to choose?",
+      "reason": "The tutor prompts the student to recall the definition of an even number, which is relevant to the problem, and then asks how to apply that knowledge to the given tiles."
+    }
+  ],
+  "trace_sha256": "5ea5a729a0bd94788068b90bb3470daadbe25cf71b4a6024ac375090c2c8cb5f"
+}

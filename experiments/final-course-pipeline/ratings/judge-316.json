@@ -1,0 +1,45 @@
+{
+  "case_index": 316,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you found the missing side length? I'd love to hear your thinking!",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the triangle. The perimeter is the total distance around the shape. We know two sides: 5 units and 12 units. What do you think we should do next to find the missing side?",
+      "reason": "The tutor reminds the student of the definition of perimeter and identifies the knowns, then asks a guiding question to prompt the next step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you found the missing side length?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification."
+    }
+  ],
+  "trace_sha256": "d4655f913f02f25d97472111afa275fee0248e2770b7f7d99301d2746e8e9c0c"
+}

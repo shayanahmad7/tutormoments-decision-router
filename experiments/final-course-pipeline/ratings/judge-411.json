@@ -1,0 +1,45 @@
+{
+  "case_index": 411,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how many apples are in that one basket now? What should we do with the 12 and the 6?",
+      "reason": "The tutor breaks down the multi-step problem into a more manageable first step, focusing on the change in a single basket."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me, what is the total number of apples before any are taken away?",
+      "reason": "The tutor guides the student to the first step of the multi-step problem by asking for the initial total."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s the first step you’d take?",
+      "reason": "The tutor prompts the student to identify the initial step in solving the multi-step problem."
+    }
+  ],
+  "trace_sha256": "db263a946fbbcd61e8a2cdbb706b6cf174f46f94c35349d37c934c59efcc1fe0"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 301,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 154 divided by 14?",
+      "reason": "The tutor provides the exact operation the student needs to perform, which is a form of scaffolding. It's not overhelp because the student still needs to perform the calculation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What can you do to find that missing number?",
+      "reason": "The tutor sets up the inverse operation (what number times 14 gives 154) and then asks the student to identify the operation needed, which promotes rigor by requiring the student to think about the mathematical relationship."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What did you do with the 154 square feet and the 14 feet?",
+      "reason": "The student has already provided the correct answer. The tutor asks for the student's reasoning, which is a good way to promote rigor and check for understanding without providing any scaffolding or overhelp."
+    }
+  ],
+  "trace_sha256": "c13bf20deb1ba7f34c703806a03e0fd651c9dfe0777291c0b672bec2ab164846"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 183,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If one full turn is 360°, then two full turns would be 720°, and three fourths of a turn would be 270°.",
+      "reason": "The tutor provides the correct values for 2 full turns and 3/4 of a turn, which scaffolds the student's thinking towards the correct sum. It then asks the student to explain their addition, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 990° for two and three fourths turns?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor by requiring them to articulate their thought process. It does not provide any scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 990° for two and three fourths turns?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor by requiring them to articulate their thought process. It does not provide any scaffolding."
+    }
+  ],
+  "trace_sha256": "e1cae2d19483c169681e07bdfd1e1bbe79d969c03c79ce248d92717df9e9764e"
+}

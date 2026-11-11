@@ -1,0 +1,45 @@
+{
+  "case_index": 425,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's two over nine plus three over nine?",
+      "reason": "The tutor is prompting the student to complete the final step of the addition problem after the denominators have been made common, which is a direct and appropriate next step in the current problem-solving process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain why we needed to simplify 15/27 to 5/9? What does that simplifying step actually mean in terms of the fractions?",
+      "reason": "The tutor asks the student to explain the meaning of simplifying fractions, which encourages deeper understanding and justification beyond just performing the calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which method do you think helps you understand better? Why?",
+      "reason": "The tutor asks the student to compare two methods and justify which one provides better understanding, promoting metacognition and critical thinking about mathematical processes."
+    }
+  ],
+  "trace_sha256": "324be97a3b3d9017e3a4ff31eac6070e0c9694743e2d9b6807ca2d70e4427a83"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 87,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's your reasoning for choosing 4? How does that help you get the largest total?",
+      "reason": "The student said 'four' and the tutor asks for their reasoning, which is a good way to encourage the student to explain their thinking and take responsibility for their learning. The tutor also connects it to the goal of the problem, which is to get the largest total."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the problem again: you need to arrange four digits to make two 2-digit numbers whose sum is as large as possible. You said \"four\"—are you thinking about how many digits to use, or maybe the size of the numbers? Let's start with the first number. What's the largest 2-digit number you can make with the digits 1–9?",
+      "reason": "The tutor clarifies the problem statement and then asks a guiding question to help the student get started, which is a good scaffolding technique. The question 'What's the largest 2-digit number you can make with the digits 1–9?' is a helpful hint."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the problem again. We need to arrange four digits to make two 2-digit numbers whose sum is as large as possible. You said \"four\"—can you explain what you mean? For example, are you thinking about using four digits to make two numbers? If so, what might be a good way to start?",
+      "reason": "The tutor clarifies the problem and then asks the student to explain their thinking, which is a good way to scaffold the student's understanding. The question 'what might be a good way to start?' is a helpful hint."
+    }
+  ],
+  "trace_sha256": "53f836a79ebb1fce6de2662300df702b5ed826e609b40d73f5874d36d77187e7"
+}

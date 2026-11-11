@@ -1,0 +1,45 @@
+{
+  "case_index": 1,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the pizzas. Both Kiera and Lucas have pizzas divided into 8 equal parts. Kiera saved 3 parts, and Lucas saved 2 parts. If you drew 3 shaded parts in one pizza and 2 shaded parts in the other, which one has more shaded? What does that tell you about who saved the most?",
+      "reason": "The tutor provides a clear breakdown of the problem, relating it to the student's previous drawing attempts and guiding them to compare the shaded parts. This is a good scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the two pizzas. Both are divided into 8 equal parts. Kiera has 3 parts saved, and Lucas has 2 parts saved. If you drew both pizzas, how does the amount shaded in Kiera’s compare to Lucas’? What does that tell you about who saved more?",
+      "reason": "The tutor breaks down the problem into manageable parts, reminding the student of the common denominator and prompting them to visualize the shaded portions. This is a good scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the two pizzas. Both are divided into 8 equal parts. Kiera has 3 parts saved, and Lucas has 2 parts saved. If you drew one pizza with 3 shaded parts and another with 2 shaded parts, which one has more shaded? How does that help you decide who saved the most?",
+      "reason": "The tutor provides a clear breakdown of the problem, relating it to the student's previous drawing attempts and guiding them to compare the shaded parts. This is a good scaffold."
+    }
+  ],
+  "trace_sha256": "ffc399c23b38aec604a9b49f79be96945ba9042ee3fd59045a014535cd4ead2f"
+}

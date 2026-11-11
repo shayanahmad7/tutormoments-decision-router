@@ -1,0 +1,45 @@
+{
+  "case_index": 54,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what should you do to solve for x? What operation will isolate x on the left side?",
+      "reason": "The tutor acknowledges the student's correct first step and then asks a guiding question that prompts the student to identify the next operation needed to solve for x, promoting rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the first step to solve 10x - 76 = 754?",
+      "reason": "The tutor asks a direct question about the first step, which is appropriate for encouraging the student to think independently, but it lacks scaffolding given the student's previous struggles with identifying the first step in similar problems."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think we should do first to solve this equation?",
+      "reason": "The tutor asks a generic question about the first step, which is appropriate for encouraging independent thought, but it doesn't offer any specific guidance or hints, which might be beneficial given the student's prior difficulties with similar problems."
+    }
+  ],
+  "trace_sha256": "1ad060092e95fafaea9145552b9ba6a27ac63ec59ccbce5c397457e327244483"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 222,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you're breaking down 8 x 15 into smaller parts?",
+      "reason": "The student is attempting to multiply 8x15 and is getting confused. The tutor asks them to explain their thinking, which is a good way to understand where the student is going wrong and provide targeted help."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, how many flowers did the gardener plant in total? That's the starting point. What's 8 rows of 15 flowers?",
+      "reason": "The student is struggling with the multiplication. The tutor breaks down the word problem into a more manageable first step, which is to calculate the total number of flowers planted."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So first, how many flowers are planted in total? Let's figure that out first. What is 8 times 15?",
+      "reason": "The tutor helps the student by breaking down the multi-step word problem into a more manageable first step, focusing on the multiplication part of the problem."
+    }
+  ],
+  "trace_sha256": "f854c298837027e54e2c56e911ba65fb48d1802d026d8e7738a678220955bcb7"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 336,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you used those numbers to find the total number of squares?",
+      "reason": "The student correctly identified the number of squares. This response asks them to explain their reasoning, which promotes rigor. It also scaffolds by reminding them of the rows and columns."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you figure out that there are 15 squares in the rectangle? Can you explain your thinking?",
+      "reason": "The student correctly answered 'fifteen'. This response asks them to explain their thinking, which promotes rigor by requiring justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens if you count how many squares are in each row and then add them up?",
+      "reason": "This response provides a specific strategy (counting squares in each row and adding them up) to help the student explain their answer, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "3e4ffc726b91629fa4d2c4e15b3b9bfc6dfeeb3edc9b68bc3b77ed27a700db62"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 384,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think about what four groups of two would be? Maybe you can count with your fingers or use a number line to help you.",
+      "reason": "The tutor provides specific strategies (counting with fingers, number line) to help the student solve the multiplication problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can you figure out the correct answer? What strategy can you use to be sure?",
+      "reason": "The tutor asks the student to identify a strategy to solve the problem, which increases cognitive demand and promotes independent problem-solving."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you count out the answer using your fingers or think of a related fact that might help?",
+      "reason": "The tutor offers specific hints (counting on fingers, related facts) to guide the student towards the correct answer, which is scaffolding."
+    }
+  ],
+  "trace_sha256": "daa56368c13109f61a51213fa6608fbca5fc3e1a6a6630329615c33855dc3a79"
+}

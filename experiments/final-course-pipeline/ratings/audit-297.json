@@ -1,0 +1,45 @@
+{
+  "case_index": 297,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many shells did she collect on Tuesday",
+      "reason": "Breaks the problem into a guided substep (finding Tuesday's count) to help the student who answered incorrectly, without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got to 5",
+      "reason": "Asks the student to justify their incorrect answer, increasing cognitive demand by requiring explanation, but provides no scaffolding or hint toward the correct approach."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "5 is the difference between Monday and Tuesday, but the question is asking how many shells Amy has altogether",
+      "reason": "Identifies the conceptual error (confusing difference with total) and asks the student to explain their reasoning and find the total, combining a clarifying hint with a demand for justification."
+    }
+  ],
+  "trace_sha256": "710854b2cccd8656df0c68c155ba4a07b3ed4f6c8985fc75770f291c6298ed49"
+}

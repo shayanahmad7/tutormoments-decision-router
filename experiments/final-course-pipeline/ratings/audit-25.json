@@ -1,0 +1,45 @@
+{
+  "case_index": 25,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you take away 5 from 8, what do you get?",
+      "reason": "The student already answered 'five' correctly, so the tutor's leading sub-step and verification question are unnecessary; the student had already supplied the answer the reply is prompting for."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many steps back did you take? What number do you get when you subtract that from 8 to reach 3?",
+      "reason": "Rephrases the number-line problem to help the student think about it as counting back, appropriate scaffolding for the current problem without giving away the answer (student had just said 'five' but tutor reply appears before that confirmation)."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if you start at eight on the number line and subtract five, does that get you to three? Why or why not?",
+      "reason": "Asks the student to verify and justify their answer of five, increasing cognitive demand by requiring the student to check their reasoning rather than just accepting the answer."
+    }
+  ],
+  "trace_sha256": "750db7bf12b8399fdad94c9c280dd902bad589c695c058b76956e04a6113017e"
+}

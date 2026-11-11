@@ -1,0 +1,45 @@
+{
+  "case_index": 476,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we start by putting one dot in each group, how many dots do we have so far?",
+      "reason": "Breaks the division problem into a manageable first step (one dot per group = 8 total) and asks the student to compute, keeping cognitive demand on the student while guiding the approach."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how many dots we need to put in each group so that all the dots together add up to 72?",
+      "reason": "Jumps straight to asking for the final answer without breaking it into steps, but also over-explains the one-dot and two-dot examples before asking, reducing the student's productive struggle; the scaffolding is partially undermined by giving away the reasoning structure."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": true,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we put one dot in each group, that's eight total. How many more dots do we need to add to each group to reach 72?",
+      "reason": "Contains a math error: asking 'how many more dots to add to each group to reach 72' conflates total dots with dots per group; 72-8=64 more total dots, not per group, making the question mathematically misleading and potentially confusing for the student."
+    }
+  ],
+  "trace_sha256": "ee121458b50d06ef620ba44f15f4534153855088aa8c97ede99ef05e3515c254"
+}

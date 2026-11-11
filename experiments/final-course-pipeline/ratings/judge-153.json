@@ -1,0 +1,45 @@
+{
+  "case_index": 153,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the place of the first digit in 801 called?",
+      "reason": "The tutor is trying to get the student to identify the place value of digits in a three-digit number. This question directly asks for the place value of the first digit in a new number, which is a good next step after the student correctly identified the 'tens' place for the middle digit of 599."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the value of the digit in the tens place in 801, and how do you know?",
+      "reason": "This question asks for both the value and the reasoning, which increases the cognitive demand and encourages the student to articulate their understanding beyond just naming the place."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Yes, the middle place is called the tens place. Good job! Now, if the number in the tens place is 0, like in 801, how would you say that part of the number out loud?",
+      "reason": "The tutor affirms the student's correct answer and then provides a guided substep by introducing a new number (801) with a zero in the tens place, prompting the student to consider how that affects reading the number aloud. This is a good scaffold for understanding place value with zeros."
+    }
+  ],
+  "trace_sha256": "27ca0deec504213ac7a75c8a8dd6b18cd22e39cd6d6c240c2b376594e2334b89"
+}

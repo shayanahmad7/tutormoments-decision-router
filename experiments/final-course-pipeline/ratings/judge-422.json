@@ -1,0 +1,45 @@
+{
+  "case_index": 422,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we take 26.68 and subtract 9.05, do we get 17.63? Let's try it out step by step. What would 26.68 minus 9.05 be?",
+      "reason": "The tutor asks the student to check their answer by performing the inverse operation, which is a good way to build rigor. The tutor also breaks down the problem into smaller steps, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got twenty-six point six eight? Let me see your thinking.",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor and allows the tutor to understand the student's thought process."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's break it down step by step. If you add 17.63 and 9.05, what is 17 + 9 first?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable steps, which is a form of scaffolding. This helps the student to focus on one part of the problem at a time."
+    }
+  ],
+  "trace_sha256": "cd482ca4983ebfce915c95effab8d6a34c7746d84d9de0de3b3ae7253938fbe6"
+}

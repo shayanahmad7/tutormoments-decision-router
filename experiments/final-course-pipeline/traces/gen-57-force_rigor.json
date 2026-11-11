@@ -1,0 +1,612 @@
+{
+  "tag": "gen-57-force_rigor",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE: Opens whiteboard] A blank whiteboard is shown.\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'What are the goal(s) you can work towards this semester?' (start)] The whiteboard now displays text.\nTitle: \"What are the goal(s) you can work towards this semester?\"\nBody text:\n\"Here are some starter examples:\nTutoring goals: I want to attend X tutoring sessions, I want to never miss a session\nAcademic skills: I want to learn how to multiply two-digit numbers, I want to read 6 books\nLife Goals: I want to learn how to skateboard, I want to score X goals in soccer\nWrite your goals below:\nMultiplication and Division, Story problems, getting ready for 5th grade\nGeometry\"\nTurn 1. TUTOR: [PAUSE: 80 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE: Tutor joins the room] A notification \"Aiden has joined\" appears and the screen layout changes.\nTurn 1. TUTOR: [PAUSE: 7 seconds]\nTurn 1. TUTOR: Hi Aiden.\nTurn 2. STUDENT: Hi.\nTurn 3. TUTOR: Hey Aiden.\nTurn 4. STUDENT: Hi.\nTurn 5. TUTOR: Hi.\nTurn 6. TUTOR: How are you feeling today?\nTurn 7. STUDENT: Um, good.\nTurn 8. TUTOR: Did you enjoy your tournament yesterday?\nTurn 9. STUDENT: Uh, yeah.\nTurn 10. TUTOR: Nice.\nTurn 11. TUTOR: Okay.\nTurn 12. TUTOR: [SCREEN_UPDATE: Whiteboard changes] The whiteboard changes to a new, blank page with the formulas for Triangle, Rectangle, Parallelogram, and Trapezoid.\nText on screen:\nTriangle: B x H x 1/2\nRectangle: L x W\nParallelogram: B x H\nTrapezoid:\nTurn 12. TUTOR: Remember, um, on Tuesday we learned about the area of a trapezoid, right?\nTurn 13. STUDENT: Yeah.\nTurn 14. TUTOR: Do you still remember what the formula is?\nTurn 15. STUDENT: Hold on.\nTurn 16. TUTOR: [PAUSE: 15 seconds]\nTurn 16. STUDENT: The area of a trapezoid.\nTurn 17. TUTOR: Mhm.\nTurn 18. TUTOR: [PAUSE: 16 seconds]\nTurn 18. STUDENT: It was it, um, I forgot what the thing, uh, was it, um,\nTurn 19. TUTOR: It's okay. Let me give you a hint.\nTurn 20. TUTOR: Do you want to first draw the shape of a trapezoid?\nTurn 21. STUDENT: Yeah.\nTurn 22. TUTOR: [SCREEN_INTERACTION: student - drawing] Student draws a trapezoid shape on the whiteboard.\nTurn 22. TUTOR: Yeah, perfect.\nTurn 23. TUTOR: So, you see the top part of this trapezoid, right? It's shorter than the bottom part.\nTurn 24. TUTOR: So, do you remember what we called them?\nTurn 25. STUDENT: I forgot what we call them.\nTurn 26. TUTOR: It's okay, but remember we expressed it in two different ways, right? So let's say base one and base two.\nTurn 27. STUDENT: Uh.\nTurn 28. STUDENT: Right? B one and B two.\nTurn 29. TUTOR: Yeah.\nTurn 30. TUTOR: Now that we know this, do you still remember the area?\nTurn 31. STUDENT: Um, base one plus B two times the width? Or the\nTurn 32. TUTOR: The height, right?\nTurn 33. STUDENT: Height, yeah.\nTurn 34. TUTOR: Mhm.\nTurn 35. TUTOR: But you're missing something.\nTurn 36. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor writes \"(b1+b2)x H\" next to \"Trapezoid:\".\nTurn 36. STUDENT: One half.\nTurn 37. TUTOR: Exactly.\nTurn 38. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor completes the formula to read \"Trapezoid: 1/2 x (b1+b2)x H\".\nTurn 38. TUTOR: Okay.\nTurn 39. TUTOR: [SCREEN_INTERACTION: tutor - writing] Tutor labels the student's drawing. Writes \"8\" on the top base, \"11\" on the bottom base, and draws a dotted line for the height.\nTurn 39. TUTOR: [PROBLEM_CHANGE: p1 - 'Area of a trapezoid' (start)] Whiteboard shows formulas for the area of a Triangle, Rectangle, Parallelogram, and Trapezoid. A trapezoid is drawn with the top base labeled '8'.\nWrites '11' below the bottom base of the trapezoid.\nDraws a dashed line for the height of the trapezoid and labels it '9'.\nTurn 39. TUTOR: bottom is 11.\nTurn 40. TUTOR: And the height is um, nine.\nTurn 41. TUTOR: Could you calculate the area for this?\nTurn 42. STUDENT: Yeah.\nTurn 43. TUTOR: Let's try.\nTurn 44. TUTOR: [PAUSE: 76 seconds] Writes '(8 + 11)' on the whiteboard.\nErases '(8 + 11)' from the whiteboard.\nTurn 44. STUDENT: Is it nine?\nTurn 45. TUTOR: The area for this?\nTurn 46. STUDENT: Yeah.\nTurn 47. TUTOR: Nine?\nTurn 48. STUDENT: Yeah.\nTurn 49. TUTOR: Um, not quite.\nTurn 50. TUTOR: So, is this what you did? I'm gonna write on the screen, okay?\nTurn 51. STUDENT: Alright.\nTurn 52. TUTOR: Did you first do eight plus eleven for B one and B two?\nTurn 53. STUDENT: Oh, I think that's what I forgot.\nTurn 54. TUTOR: Right. It's okay. You can try again.\nTurn 55. STUDENT: Oh.\nTurn 56. TUTOR: [PAUSE: 25 seconds]\nTurn 56. STUDENT: Is it two?\nTurn 57. TUTOR: It's a lot bigger than that.\nTurn 58. STUDENT: Wait.\nTurn 59. TUTOR: [PAUSE: 3 seconds] Circles the trapezoid formula: 'Trapezoid: 1/2 x (b1+b2) x H'.\nTurn 59. TUTOR: Remember we're using this formula.\nTurn 60. STUDENT: Yeah.\nTurn 61. STUDENT: Okay, I got... use my paper.\nTurn 62. TUTOR: [PAUSE: 109 seconds]\nTurn 62. STUDENT: Is it three hundred and forty-two?\nTurn 63. TUTOR: Not quite.\nTurn 64. TUTOR: It's okay, let's do it together.\nTurn 65. TUTOR: [PAUSE: 3 seconds] Writes '1/2 ( 8 + 11 )' on the whiteboard.\nTurn 65. TUTOR: So remember we first plug the numbers in for the formula and write it all down.\nTurn 66. STUDENT: Yeah.\nTurn 67. TUTOR: So let's write down one, write down half, eight plus eleven. Is that what you wrote?\nTurn 68. STUDENT: Yeah.\nTurn 69. TUTOR: [SCREEN_INTERACTION: tutor - writing] Writes 'x' after the parentheses.\nWrites '9' to complete the expression: '1/2 ( 8 + 11 ) x 9'.\nSCREEN INTERACTION: student - writing\nStudent writes \"19\" below the equation.\nSCREEN INTERACTION: tutor - writing\nTutor writes \"(19)\" below the equation.\nSCREEN INTERACTION: tutor - writing\nTutor writes \"x 9\" after \"(19)\" and \"1/2\" before it. The expression is now \"1/2 (19) x 9\".\nSCREEN INTERACTION: tutor - writing\nTutor writes \"171\".\nSCREEN INTERACTION: tutor - writing\nTutor writes \"171 x 1/2\" and below that \"171 ÷ 2 =\".\nTurn 69. TUTOR: And what is the height over here?\nTurn 70. STUDENT: The height is nine.\nTurn 71. TUTOR: Mhm.\nTurn 72. TUTOR: So we first calculate the numbers in the parentheses, right?\nTurn 73. TUTOR: So what did you get?\nTurn 74. STUDENT: I got nineteen.\nTurn 75. TUTOR: Mhm. Then did you times the height first or half first?\nTurn 76. TUTOR: I times the height. Okay. What did you get for that?\nTurn 77. STUDENT: I got one hundred and seventy-one.\nTurn 78. TUTOR: Mhm. Good job.\nTurn 79. TUTOR: But you notice right here, one hundred seventy-one, half of one hundred seventy-one is not two hundred something, right? It's got to be less than one hundred seventy-one.\nTurn 80. TUTOR: Right?\nTurn 81. STUDENT: Yeah.\nTurn 82. TUTOR: So, one hundred seventy-one times half. You could also write it as one hundred seventy-one divided by two, right?\nTurn 83. STUDENT: Yeah.\nTurn 84. TUTOR: And you got two hundred, you said?\nTurn 85. STUDENT: Yeah.\nTurn 86. TUTOR: [SCREEN_INTERACTION: tutor - erasing] Tutor erases the equations at the top of the whiteboard.\nTurn 86. TUTOR: Remember, if you divide something in half, it's definitely not larger than the number, okay?\nTurn 87. STUDENT: All right.\nTurn 88. TUTOR: It's half of one hundred seventy-one. You wanna try it again?\nTurn 89. STUDENT: Yeah.\nTurn 90. TUTOR: Okay.\nTurn 91. TUTOR: [PAUSE: 40 seconds]\nTurn 91. STUDENT: Is it eighty-five?\nTurn 92. TUTOR: Mhm. But remember to calculate the decimal.\nTurn 93. STUDENT: Oh yeah, eighty-five point one.\nTurn 94. TUTOR: Not not quite, but very close.\nTurn 95. TUTOR: [PAUSE: 65 seconds] SCREEN INTERACTION: tutor - writing\nTutor draws a long division symbol with \"171\" inside and \"2\" outside.\nSCREEN INTERACTION: tutor - writing\nTutor writes \"8\" above the \"7\" in \"171\". Writes \"16\" below \"17\", subtracts to get \"1\", and brings down the next \"1\" to make \"11\".\nSCREEN INTERACTION: tutor - writing\nTutor writes \"5\" after the \"8\" on top. Writes \"10\" below the \"11\".\nSCREEN INTERACTION: tutor - writing\nTutor subtracts \"10\" from \"11\" to get a remainder of \"1\". Adds a decimal point after \"85\".\nSCREEN INTERACTION: student - pointing\nStudent's cursor points to the right of \"171\" inside the long division symbol.\nSCREEN INTERACTION: tutor - writing\nTutor adds a \"0\" after \"171\" and draws an arrow to bring the \"0\" down next to the remainder \"1\", making it \"10\".\nSCREEN INTERACTION: tutor - writing\nTutor writes \"5\" after the decimal point in the answer \"85.\". Writes \"10\" below the other \"10\" and subtracts to get \"0\".\nSCREEN INTERACTION: tutor - writing\nTutor writes \"85.5\" as the final answer to \"171 ÷ 2 =\".\nTurn 95. STUDENT: I'm not quite sure.\nTurn 96. TUTOR: That's okay. Let me show you.\nTurn 97. TUTOR: So this is what you wrote down, right?\nTurn 98. STUDENT: Yeah.\nTurn 99. TUTOR: And you did eight, right? Sixteen. Seventeen minus sixteen equals one and we bring one down, right?\nTurn 100. STUDENT: Yeah.\nTurn 101. TUTOR: Well, two times five is ten. That's what you did too, right?\nTurn 102. STUDENT: Mhm.\nTurn 103. TUTOR: So you just have one left. So that means we have to, 'cause there's no more numbers behind here, right? So we have to add a decimal point. Do you get it?\nTurn 104. STUDENT: Um.\nTurn 105. STUDENT: So you have to add like a zero over here?\nTurn 106. TUTOR: Yeah. You basically, you add it here and you bring it down, right?\nTurn 107. STUDENT: Mm. Get it?\nTurn 108. STUDENT: A little, yeah.\nTurn 109. TUTOR: It's okay. We can go over more questions, but let's finish this one first. So, it's a zero over here, right?\nTurn 110. STUDENT: Yeah.\nTurn 111. TUTOR: Okay. So what times two is closest to ten?\nTurn 112. STUDENT: Five.\nTurn 113. TUTOR: Yeah. So, no remainders, right?\nTurn 114. STUDENT: Yeah.\nTurn 115. TUTOR: So it's eighty-five point five.\nTurn 116. TUTOR: Get it?\nTurn 117. TUTOR: [PAUSE: 11 seconds]\nTurn 117. TUTOR: You wanna try one hundred fifty-three divided by six?\nTurn 118. STUDENT: Yeah.\nTurn 119. TUTOR: Okay.\nTurn 120. TUTOR: And remember to calculate um the number behind the decimal point, okay?\nTurn 121. STUDENT: All right.\nTurn 122. TUTOR: [PAUSE: 91 seconds]\nTurn 122. STUDENT: Is it 76.666?\nTurn 123. TUTOR: Not really. Um, can you show me what you did?\nTurn 124. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes a long division problem: 6 into 153. Then writes a 7 above the 5 and subtracts 14 from 15.\nTutor's cursor points to the 7 the student wrote.\nTutor's cursor points to the 14 the student wrote.\nTurn 124. TUTOR: Okay. Let's pause over there.\nTurn 125. TUTOR: So, six times seven. What is six times seven?\nTurn 126. STUDENT: Six times seven? Oh, 42.\nTurn 127. TUTOR: Yeah, but you wrote down 14 over here.\nTurn 128. STUDENT: Oh.\nTurn 129. TUTOR: That's okay. Let's try again.\nTurn 130. STUDENT: All right.\nTurn 131. TUTOR: At least we know it's less than seven, right?\nTurn 132. STUDENT: Yeah.\nTurn 133. TUTOR: [PAUSE: 77 seconds]\nTurn 133. STUDENT: Is it 25.5?\nTurn 134. TUTOR: Yes, perfect.\nTurn 135. TUTOR: Um, so...\nTurn 136. TUTOR: Let me give you a couple more questions. Um...\nTurn 137. TUTOR: [SCREEN_UPDATE] Tutor switches to a whiteboard tab with a list of 10 word problems. The problems are:\n1. A rectangle has an area of 56 and a height of 7. What is the missing base?\n2. A rectangle has a perimeter of 30 and a width of 4. What's the length?\n3. A triangle's area is 24. Its base is 6. What's the height?\n4. A parallelogram's area is 63. The base is 7. What's the height?\n5. A parallelogram's perimeter is 36. One side is 8. What's the other side?\n6. A trapezoid has an area of 48. One base is 6, the other is 10. What's the height?\n7. A trapezoid has a perimeter of 32. Three sides are 7, 5, and 6. What's the fourth side?\n8. A rectangle has an area of 72. One side is 9. What is the other side?\n9. A triangle has a height of 10 and an area of 35. What is the base?\n10. A trapezoid's bases are 4 and 6, height is 5. What is the area?\nTurn 137. TUTOR: [SCREEN_UPDATE] Tutor switches to a whiteboard tab with 8 geometry problems showing various shapes (triangles, trapezoids, parallelograms) with labeled dimensions.\nTurn 137. TUTOR: Can you do number two?\nTurn 138. STUDENT: Yeah.\nTurn 139. TUTOR: Okay.\nTurn 140. TUTOR: [PAUSE: 21 seconds]\nTurn 140. TUTOR: [PROBLEM_CHANGE: p1 - Area of shapes (start)] A worksheet with 8 geometry problems is displayed on the whiteboard. The problems involve finding the area of triangles, trapezoids, and parallelograms.\nTutor's cursor points to problem 3, a trapezoid.\nTurn 140. STUDENT: Is it one hundred twenty?\nTurn 141. TUTOR: Yes. Let's do number three.\nTurn 142. STUDENT: All right.\nTurn 143. TUTOR: [PAUSE: 106 seconds] Tutor's cursor points to problem 5, a triangle.\nTurn 143. STUDENT: Thirty-seven point five.\nTurn 144. TUTOR: Perfect.\nTurn 145. TUTOR: I think you got, you mastered like the area of um trapezoid. But just to test you, 'cause last time you got the area for triangle wrong. Do you still remember the formula?\nTurn 146. STUDENT: I think so.\nTurn 147. TUTOR: Okay. You wanna try doing number five? 'Cause it's a triangle.\nTurn 148. STUDENT: Sure.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nPush for appropriate rigor now. Build on what the learner has actually demonstrated, not an answer the tutor supplied. Invite the student to justify a step, connect representations, check a claim, generalize, or take the next step independently. Choose one opportunity that fits the current problem. Do not give the reasoning before asking for it, turn the challenge into a sequence of tiny leading hints, or introduce unrelated difficulty. Keep the mathematical work with the learner; rigor is not simply saying why after every answer.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "3a4ebbe696f2ebf6473b602a4d5d3aba08872843c04859ba220e26ff96d5d80b",
+  "reserve_usd": 0.001732544,
+  "started_utc": "2026-11-11T20:16:49Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "What’s the formula for the area of a triangle, and how does it relate to the formula for the area of a trapezoid?",
+  "first_answer_ms": 839.620334000017,
+  "usage": {
+    "prompt_tokens": 4803,
+    "completion_tokens": 30,
+    "total_tokens": 4833,
+    "cost": 0.00039264,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00039264,
+      "upstream_inference_prompt_cost": 0.00038424,
+      "upstream_inference_completions_cost": 8.4e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "What’s ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "the ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "form",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ula f",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "or ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "th",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e area of",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a tr",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "iang",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "le, a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "nd ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "how doe",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "s i",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t re",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "late to ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "the ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "form",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ula f",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "or ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "th",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "rea",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "of ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " trapezoid?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428209-l4w7dXBXo3LYU68BN4sM",
+      "object": "chat.completion.chunk",
+      "created": 1794428209,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 4803,
+        "completion_tokens": 30,
+        "total_tokens": 4833,
+        "cost": 0.00039264,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00039264,
+          "upstream_inference_prompt_cost": 0.00038424,
+          "upstream_inference_completions_cost": 8.4e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.00039264,
+  "elapsed_ms": 1382.5682500000198
+}

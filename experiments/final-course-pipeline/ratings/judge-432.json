@@ -1,0 +1,45 @@
+{
+  "case_index": 432,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you point to where one slice would be on the number line?",
+      "reason": "The tutor connects the pizza analogy to the number line, prompting the student to apply the concept to the visual representation. This is a good scaffold that also requires the student to do some work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many equal parts is the space from 0 to 1 divided into? Can you count them?",
+      "reason": "The tutor guides the student to count the divisions on the number line, which is a key step in understanding the denominator of a fraction. This is a good scaffold that requires the student to do some work."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you connect that to the number line we were looking at earlier?",
+      "reason": "The tutor prompts the student to connect the pizza analogy to the number line, which is a good way to help the student understand the concept of fractions. This is a good scaffold that also requires the student to do some work."
+    }
+  ],
+  "trace_sha256": "2b111e5565c8ed85aaeb009133d4140336fa6160afc986cfe3528a20e9d9ebc9"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 493,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you show how you could represent this problem using base-ten blocks or a place value chart?",
+      "reason": "The tutor asks the student to represent the problem using a different method, which encourages deeper understanding and application of the concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which number is the same as 5 tens and 17 ones?",
+      "reason": "The tutor provides a new, similar problem for the student to solve independently, which promotes application and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What if the question was \"Which number is the same as 5 tens and 24 ones?\" How would you solve that?",
+      "reason": "The tutor presents a new problem that requires the student to apply the same concept, increasing rigor by asking for the solution process."
+    }
+  ],
+  "trace_sha256": "b1d8259e71e0b61a3342119132442e9b3dcb747fcb5a30c3e1eb92af96d7e724"
+}

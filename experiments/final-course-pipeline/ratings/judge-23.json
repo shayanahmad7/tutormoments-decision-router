@@ -1,0 +1,45 @@
+{
+  "case_index": 23,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's write it out like this: 1,000 - 10",
+      "reason": "The student is struggling with 1000 - 10. The tutor provides a scaffold by setting up the subtraction problem vertically and then guiding the student to start with the ones place."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let's go back to the problem on the screen: 338 + 586 = 924. So, 924 - 586 = ?",
+      "reason": "The tutor is trying to go back to a previous problem that the student already solved correctly. The student is currently working on 1000 - 10, which is a different problem related to the volume of cubes."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you write it down step by step on the whiteboard?",
+      "reason": "The student is struggling with 1000 - 10. The tutor asks the student to write it down on the whiteboard, which encourages the student to show their work and take responsibility for the next step, while also providing a visual aid for the tutor to understand the student's thought process."
+    }
+  ],
+  "trace_sha256": "d98b04849b01447f4456cf64175d71c36f9b0ee6c119905961f8301d1b09f9d3"
+}

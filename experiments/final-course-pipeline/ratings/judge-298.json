@@ -1,0 +1,45 @@
+{
+  "case_index": 298,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The length is 8 meters and the width is 6 meters. What would that give us? What is 8 times 6?",
+      "reason": "The tutor provides the formula and the numbers, then asks the student to perform the multiplication. This is a guided substep."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How do you think we can calculate the area of this house floor plan?",
+      "reason": "The tutor corrects the student's misconception about area vs. perimeter and then asks the student to recall or figure out how to calculate the area, increasing cognitive demand."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "For a rectangle, you multiply the length by the width. So here, the length is 8 meters and the width is 6 meters. What would you multiply to find the area?",
+      "reason": "The tutor corrects the student's misconception, provides the formula for area, and identifies the specific numbers from the problem, then asks the student to state the multiplication. This is a guided substep."
+    }
+  ],
+  "trace_sha256": "6d2c307eac4a8e7b3bb8427408e0a84e28b1ee2de155b2b81fad0487b5573857"
+}

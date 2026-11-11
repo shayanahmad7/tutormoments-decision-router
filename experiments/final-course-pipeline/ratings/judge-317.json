@@ -1,0 +1,45 @@
+{
+  "case_index": 317,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do these add up to? Once you have that sum, think about how it relates to the total perimeter of 23 feet. What do you need to find?",
+      "reason": "The tutor provides a clear, step-by-step guide for the student to follow to solve the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you found the missing side length for this problem?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and critical thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we add 6, 5, 5, and 1, that gives us 17. If the total perimeter is 23, what do we need to add to 17 to get to 23?",
+      "reason": "The tutor breaks down the problem into smaller, manageable steps, guiding the student towards the solution. This is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "fe9b56b3574ab1efa9d0790223901afb31dfbe1a97a51b7e0cb38c3a69176161"
+}

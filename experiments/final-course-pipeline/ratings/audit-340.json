@@ -1,0 +1,45 @@
+{
+  "case_index": 340,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the next step after subtracting 21 from 25?",
+      "reason": "Prompts the student to identify the next procedural step in long division (bring down or find remainder) without supplying the subtraction answer, maintaining cognitive demand."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 25 minus 21?",
+      "reason": "Directs the student to compute the subtraction needed for the remainder, a reasonable next step in the long division process, though it breaks the work into a very small leading substep."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That will tell us the remainder after dividing 25 by 7",
+      "reason": "Asks the same subtraction question as C2 but also pre-explains what the result means (remainder), supplying reasoning the student could productively supply themselves, making it more over-helpful than C2."
+    }
+  ],
+  "trace_sha256": "410ee4cbb4ae59c111307dd85f8aba524c0d51b3655c1dd7a92bfd2ac4aab103"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 115,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is 2 ÷ 3 the same as 3 ÷ 2? What do you get when you calculate each?",
+      "reason": "The tutor has already written 'a=2' and 'b=3' and '2/3' and '3/2' on the screen. This candidate prompts the student to perform the calculation and compare, which is a good next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is Tom's statement always true, but Katie's isn't? Can you think of a simple example to test it?",
+      "reason": "This candidate asks the student to explain the underlying mathematical properties (commutative property for multiplication, and its absence for division), which increases rigor. It also prompts for an example, which is appropriate given the previous work with 'a' and 'b'."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If a = 2 and b = 3, what is 2 ÷ 3? What is 3 ÷ 2? Are they the same? What does that tell you about Katie’s claim?",
+      "reason": "This candidate guides the student through testing Katie's claim using the numbers already provided by the tutor, which is a good scaffold. It then asks for an interpretation of the results."
+    }
+  ],
+  "trace_sha256": "325176db909f352e04c504cd21bf3bb67312cf536f382396ef10a2d824228300"
+}

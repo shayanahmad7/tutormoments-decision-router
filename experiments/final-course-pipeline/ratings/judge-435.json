@@ -1,0 +1,45 @@
+{
+  "case_index": 435,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What whole number does four out of four represent? Can you explain why?",
+      "reason": "The tutor asks the student to apply the concept of a whole number representation of a fraction to a new example, which promotes independent thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can you use the parts to figure out the fraction the star represents? What does each part stand for?",
+      "reason": "The tutor provides a guided substep by directing the student back to the original problem and asking them to consider the parts of the number line."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what whole number would you say four out of six parts is? Let's look at the number line again and see where four out of six would fall. Can you count the parts with me?",
+      "reason": "The tutor attempts to connect the current concept to a new, slightly more complex scenario (four out of six parts) and offers to count with the student, providing scaffolding."
+    }
+  ],
+  "trace_sha256": "f0f50404d843e205ed3c98bc19c300e639e497437f06f48d4a81789d83b27674"
+}

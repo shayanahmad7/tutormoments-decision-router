@@ -1,0 +1,45 @@
+{
+  "case_index": 92,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about the hundreds digits?",
+      "reason": "The tutor asks the student to compare the hundreds digits, which is a helpful scaffold for comparing three-digit numbers. This also promotes rigor by asking the student to analyze the numbers independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think D is the correct answer? Let's check each statement in Option D to be sure.",
+      "reason": "The tutor asks the student to justify their answer, which promotes rigor. The suggestion to check each statement is a good scaffold for the student to re-evaluate their choice."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is 472 less than 427? What about 250 less than 360? Can you check each one?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable parts by asking the student to evaluate each statement individually. This is a good scaffold and promotes rigor by asking the student to check their work."
+    }
+  ],
+  "trace_sha256": "eb3f7cd0291e6991fa1d79f7e41b1d36a5d73e88a25f399b574b61c74e496aca"
+}

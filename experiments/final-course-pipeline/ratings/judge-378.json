@@ -1,0 +1,45 @@
+{
+  "case_index": 378,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total number of apples we're trying to find — the green ones, the red ones, or both? How does that help you decide what the equation should look like?",
+      "reason": "The tutor asks a guiding question about what the total represents, which helps the student connect the problem to the structure of the equation. The follow-up question about how that helps decide the equation structure promotes deeper thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do we use when we combine two groups to find the total?",
+      "reason": "The tutor reminds the student of the goal (find the total) and then asks a direct question about the operation needed to combine groups, which is a helpful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, what operation are we using? Are we adding or subtracting? And what two numbers are we working with?",
+      "reason": "The tutor reiterates the goal of finding the total and then asks two specific, guiding questions about the operation and the numbers involved, which helps the student break down the problem."
+    }
+  ],
+  "trace_sha256": "87058debd9ef3df21c5cadce2e0e5e7f6c1c88c96d999ff6d9983ffc7ecb0ff8"
+}

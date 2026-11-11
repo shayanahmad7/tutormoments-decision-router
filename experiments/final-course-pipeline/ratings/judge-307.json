@@ -1,0 +1,45 @@
+{
+  "case_index": 307,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What time was it one hour after 3:00 a.m.? Can you figure that out?",
+      "reason": "The tutor points the student to the relevant part of the text and then asks a guiding question to help them calculate the time."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We already know he woke up at 3 a.m. because of the insect. So, one hour after 3 a.m. is...? What time is that?",
+      "reason": "The tutor highlights the relevant text and then provides a clear scaffold by connecting the 'one hour later' to the previously established 3 a.m. time, then asks the student to complete the calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said the answer is C, but we just read that at 4:00 a.m. he woke up because he was thirsty. So, what should the correct answer be? Can you explain why?",
+      "reason": "The tutor tells the student the correct time (4:00 a.m.) which the student could have figured out, making it overhelp. The request for an explanation adds rigor, but it comes after the answer has been given."
+    }
+  ],
+  "trace_sha256": "716b761661f929f6b86b97c5e7ca6d523ae496fb33f330597c7c84e3aa743ef9"
+}

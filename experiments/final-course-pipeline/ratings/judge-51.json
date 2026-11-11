@@ -1,0 +1,45 @@
+{
+  "case_index": 51,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if it's three times x, and we divide by three, what do we get?",
+      "reason": "The tutor is trying to help the student understand the inverse operation for multiplication by using a concrete example (3 times x divided by 3) to show how the '3' cancels out, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, for problem 1, 3x = 12, you said you did 12 times 3. But we just saw that to get rid of the 3 in 3x, we divide by 3. So, can you try again and explain how you would solve 3x = 12 using division?",
+      "reason": "The tutor directly addresses the student's incorrect operation (multiplication instead of division) and reminds them of the inverse operation they just reviewed. It then asks the student to re-attempt the problem using the correct operation, which promotes rigor by asking them to apply the learned concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, in the problem 3x = 12, we want to get x by itself. Since 3 is multiplied by x, what operation can we use to \"undo\" that multiplication? What can we do to both sides to get rid of the 3 on the left?",
+      "reason": "The tutor provides scaffolding by reminding the student of the goal (isolate x) and the current operation (multiplication). It then asks a rigorous question about the inverse operation and how to apply it to both sides of the equation, prompting the student to recall and apply the concept independently."
+    }
+  ],
+  "trace_sha256": "41a22dc773708d5dd4e88821e3a2836e9f5bd26566cbcb03760d8e0b57a55168"
+}

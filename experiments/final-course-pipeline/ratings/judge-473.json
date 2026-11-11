@@ -1,0 +1,45 @@
+{
+  "case_index": 473,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you keep going for one more shelf, how many books will you have in total then?",
+      "reason": "The tutor acknowledges the student's progress and then prompts them to continue the current strategy for one more step, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how many books there would be on five shelves without drawing all of them? What pattern are you seeing that could help you predict the total?",
+      "reason": "The tutor acknowledges the student's work and then prompts them to think about a more efficient strategy (without drawing all shelves) and to identify a pattern, which increases rigor by encouraging abstract thinking and generalization."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you add one more shelf with three books? What number would that bring you to?",
+      "reason": "The tutor acknowledges the student's current work and then prompts them to continue the current strategy for one more step, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "b9f60679e5d8d7d71333433e5979b68e4fe15de4f4bd422c9019ac11aa2e2890"
+}

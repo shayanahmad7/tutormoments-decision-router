@@ -1,0 +1,45 @@
+{
+  "case_index": 78,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's write that as a number. How many hundreds is that? What number do we get when we have twelve hundreds?",
+      "reason": "The tutor is guiding the student to convert 'twelve hundreds' into a numerical value, which is a helpful scaffold for place value understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's write that as a number. What would twelve hundreds be?",
+      "reason": "The tutor prompts the student to write 'twelve hundreds' as a number, which is a scaffold to help with place value conversion."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that mean the total value is for that box?",
+      "reason": "The tutor asks for the total value of 'twelve hundreds', which is a scaffold to help the student understand the numerical representation of the quantity."
+    }
+  ],
+  "trace_sha256": "30abf5d722421f44aed4b82a334c0dfccc37b850f27a001e8ec205ee08ed8898"
+}

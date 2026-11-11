@@ -1,0 +1,45 @@
+{
+  "case_index": 504,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can we use this information to figure out how many liters Jackie will need?",
+      "reason": "The tutor correctly identifies the next step in the problem and prompts the student to think about how to use the given information to solve it."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what should we do to find the area Jackie needs to paint?",
+      "reason": "The tutor correctly identifies the student's error in calculation and prompts them to reconsider the next step in the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s 1.7 + 1.5?",
+      "reason": "The tutor provides the exact calculation the student needs to perform, which the student could productively figure out on their own."
+    }
+  ],
+  "trace_sha256": "f7c6bba3d0171dd04cc3091c844838744b0c20d8e73bdcc52848862ff3289520"
+}

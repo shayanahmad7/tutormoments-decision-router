@@ -1,0 +1,45 @@
+{
+  "case_index": 213,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try skip counting by twos starting from 3? What would the pattern look like? Write the first five numbers you get.",
+      "reason": "The tutor asks the student to apply the skip counting by two concept to a new starting number, which increases rigor. The request to write the first five numbers provides a clear task and some scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try skip counting by twos again, but this time start at 3? What would the next number be?",
+      "reason": "The tutor introduces a new challenge by asking the student to start skip counting by twos from an odd number, which requires applying the concept in a slightly different way. Asking for only the 'next number' provides a clear, scaffolded first step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try skip counting by threes, starting at three? What numbers do you think you'll say? Go ahead and try it out!",
+      "reason": "The tutor introduces skip counting by threes, which was part of the original plan to review different skip counting numbers. This increases rigor by moving to a new concept while still providing a clear starting point."
+    }
+  ],
+  "trace_sha256": "0432db1dcb1c612aae84a17675e3a94e7e488ae3800dd1bc36fe9e272ca5ca75"
+}

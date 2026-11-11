@@ -1,0 +1,45 @@
+{
+  "case_index": 419,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many would be in each pile? Can you split them evenly?",
+      "reason": "Breaks the task into a concrete sub-question (how many per pile) and then asks the student to judge divisibility, maintaining cognitive demand without giving the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many apples would be in each pile, and would there be any apples left over? What does that tell you",
+      "reason": "Guides with two sub-questions that scaffold the reasoning, then asks the student to draw the conclusion about odd/even—appropriate given the just-established pairing concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you make the piles equal? Why or why not?",
+      "reason": "Asks the student to attempt the split and justify, connecting directly to the even/odd splitting concept just taught, without supplying the answer."
+    }
+  ],
+  "trace_sha256": "c1a5469bf4f6a66765bdd375526b537e9c3905239afd6a4621df02bf9a814878"
+}

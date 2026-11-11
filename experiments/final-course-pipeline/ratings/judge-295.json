@@ -1,0 +1,45 @@
+{
+  "case_index": 295,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got thirty?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor by requiring justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If Debbie and her four friends are sharing the strawberries, how many people are sharing in total?",
+      "reason": "The tutor provides a guided substep by asking about the total number of people sharing, which is a key step in solving the problem. They also ask for an explanation, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means how many people are sharing the strawberries in total?",
+      "reason": "The tutor provides a useful hint by guiding the student to consider the total number of people sharing, which is a necessary first step for this problem."
+    }
+  ],
+  "trace_sha256": "5c72c1e4e315ac9565344eb397ee99c86d4c33d02115574734310cbc970576c6"
+}

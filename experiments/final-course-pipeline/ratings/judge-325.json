@@ -1,0 +1,45 @@
+{
+  "case_index": 325,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Tutor clicks on option B and then clicks the \"Check\" button.",
+      "reason": "The student stated the answer, and the tutor immediately clicked the answer and checked it without giving the student a chance to explain their reasoning or confirm their answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's check.",
+      "reason": "The tutor immediately moves to check the answer without asking the student to explain their reasoning or confirm their answer, which is overhelping by not requiring the student to articulate their thought process."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "A square has four equal sides, and the perimeter is the total distance around the shape. If each side is 5 feet, what do you need to do with that number to find the total distance around the square?",
+      "reason": "The tutor provides a hint about the properties of a square and the definition of perimeter, then asks a guiding question that prompts the student to apply this knowledge to find the solution, promoting rigor."
+    }
+  ],
+  "trace_sha256": "ad8465f49383e68dcf0c9c30289c0c805ad2d52e494865d53dcca5571267ba95"
+}

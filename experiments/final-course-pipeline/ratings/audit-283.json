@@ -1,0 +1,45 @@
+{
+  "case_index": 283,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why they're the same size, even though the numbers look different?",
+      "reason": "Asks the student to justify the equivalence they just discovered using the visual model, requiring conceptual explanation without providing steps or answers."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if we simplify four-sixths? How could we make it look like two-thirds? What do you think we need to do to the numerator and denominator?",
+      "reason": "Introduces simplification as the next logical topic (fitting the tutor's stated plan to teach simplification) and scaffolds by naming the operation, while still asking the student to figure out the steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what could we say about the relationship between the numerators and denominators of these two fractions?",
+      "reason": "Asks the student to articulate the mathematical relationship between equivalent fractions, requiring genuine reasoning and connection-making without providing hints about the method."
+    }
+  ],
+  "trace_sha256": "fc6dad2ae875cbb90f9d771cfa9d803e263f9de64a0d33b447c3fa5a5f6bc3cf"
+}

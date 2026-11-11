@@ -1,0 +1,45 @@
+{
+  "case_index": 215,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's try a different game. What would you like to try next?",
+      "reason": "The student just indicated they wanted to try a different game, and the tutor is asking them what they would like to try next, which is appropriate."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "How about we try the \"Broken Calculator\" game again, but this time with a new number? Let's see if you can make 25 using the numbers and operations available. What's one way you might start?",
+      "reason": "The tutor suggests returning to a previous game and provides a new target number, which is a form of scaffolding. They also ask the student to initiate the strategy, which adds rigor. However, the student just asked to play a different game, so this suggestion is not ideal."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Can you explain how you know that 9 + 8 is 17? What's the thinking behind that?",
+      "reason": "The student just asked to play a different game, and the tutor is ignoring that request to ask a conceptual question about a previous problem. This is not contextually appropriate."
+    }
+  ],
+  "trace_sha256": "503287c6e7285c7d4499b1e9882c9ba55b574db066db7b7c5dd178bc4375e64f"
+}

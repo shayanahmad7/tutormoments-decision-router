@@ -1,0 +1,45 @@
+{
+  "case_index": 478,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how could we write it out as repeated addition? Let's start with one group of 8 and keep adding 8 until we reach 72. Can you try writing that out?",
+      "reason": "The tutor is trying to guide the student to use repeated addition to solve the division problem, which is a good scaffolding technique. It also promotes rigor by asking the student to write it out."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try adding a number to itself eight times to see if it equals seventy-two? Start with a guess, like nine, and see what happens.",
+      "reason": "The tutor provides a clear strategy (repeated addition) and even suggests a starting guess, which is good scaffolding. It also encourages rigor by having the student perform the calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how this connects to the dots we added to each group? Why does 9 times 8 give us 72?",
+      "reason": "The tutor asks the student to explain the connection between the previous problem and the current one, which promotes deeper understanding and rigor. It doesn't offer direct scaffolding for the new problem, but rather asks for reflection on the previous one."
+    }
+  ],
+  "trace_sha256": "24c2ebdffe2fbf3f5dc18639610a9ee4a5c19518a6597d6bd926bb6a0d90ddb8"
+}

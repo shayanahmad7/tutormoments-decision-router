@@ -1,0 +1,45 @@
+{
+  "case_index": 143,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 97?",
+      "reason": "The tutor correctly selects the answer, then asks the student to explain their reasoning, which promotes rigor. The tutor's action of selecting the answer is overhelping, but the question balances it out."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 97 for 64 + 33?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor by requiring them to articulate their thought process for the correct answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 60 + 30? What is 4 + 3? How can you use those to find the total?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable steps (adding tens, then adding ones) and then asks how to combine them, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "529487cc2303cb3091ffb9ed1c9099f8493e0b6197f908382c8ecda55893674e"
+}

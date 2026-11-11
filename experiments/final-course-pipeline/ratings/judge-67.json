@@ -1,0 +1,45 @@
+{
+  "case_index": 67,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's see if we can figure it out together.",
+      "reason": "The tutor asks the student to predict the result of the multiplication, then offers to work together, which is a good scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "where do I end up on the number line? Is it to the left of zero or the right of zero?",
+      "reason": "The tutor connects the multiplication to the number line concept they just introduced, providing a visual scaffold for understanding negative numbers."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is it on the left side of zero or the right side?",
+      "reason": "The tutor connects the multiplication to the number line concept they just introduced, providing a visual scaffold for understanding negative numbers."
+    }
+  ],
+  "trace_sha256": "15ccefa0bf6e1d12af299ebc466d06cf68c6f0fe172aaf64a44c2c5aee5299bd"
+}

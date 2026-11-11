@@ -1,0 +1,45 @@
+{
+  "case_index": 40,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, let's list out all the side lengths we have",
+      "reason": "The tutor lists all the side lengths, including the ones the student just calculated, which is a helpful scaffold for the student to then add them up."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you arrived at 34 cm for the perimeter?",
+      "reason": "The student and an off-screen person calculated the perimeter, and the tutor's question asks the student to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why subtracting 4 from 7 gives us the missing horizontal side, and subtracting 3 from 10 gives us the missing vertical side?",
+      "reason": "The student just correctly identified how to find the missing sides. This question asks them to explain their reasoning, which adds rigor by requiring justification."
+    }
+  ],
+  "trace_sha256": "5ce0f25f034f1fd6927a87dc90992c568313a602a5d6e9dbfc349e4d4c6e5538"
+}

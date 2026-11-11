@@ -1,0 +1,45 @@
+{
+  "case_index": 483,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number should go in the second question mark",
+      "reason": "The tutor has already filled in the first question mark with '6'. This prompt correctly directs the student to the next step of finding the product."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "what number should go in the first question mark?",
+      "reason": "The tutor has already filled in the first question mark with '6' in the previous turn, making this question redundant and confusing."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what should we do with those numbers?",
+      "reason": "This is a good prompt to encourage the student to think about the operation needed to find the total, without giving away the answer."
+    }
+  ],
+  "trace_sha256": "733689b55db2ddeeb15c28b7b945a02345a0c0e73e352eef4ada12b544fbad6b"
+}

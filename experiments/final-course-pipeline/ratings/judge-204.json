@@ -1,0 +1,45 @@
+{
+  "case_index": 204,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we want to find p + q, what should we subtract from 360° to get just p + q?",
+      "reason": "The tutor acknowledges the student's correct observation about the 90-degree angle and then provides a guided question to help the student calculate p+q."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what must p + q add up to? Can you calculate that?",
+      "reason": "The tutor builds on the student's observation and then asks a direct question that requires the student to perform a calculation, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the total of all the angles around a point is 360°, and how that helps you decide if Tom or Katie is correct?",
+      "reason": "The tutor asks the student to explain their reasoning and connect it to the problem, which increases rigor by requiring justification."
+    }
+  ],
+  "trace_sha256": "d1b74711e6c6eab1c9e0f4b4cdecfcf12b038cfde8150e85489fb81b25d4cb46"
+}

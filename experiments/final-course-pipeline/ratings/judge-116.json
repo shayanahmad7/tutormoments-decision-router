@@ -1,0 +1,45 @@
+{
+  "case_index": 116,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is true for multiplication that isn’t true for division?",
+      "reason": "The tutor asks the student to explain the difference between multiplication and division in this context, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain why multiplication works both ways, but division doesn’t? What’s different about those two operations?",
+      "reason": "The tutor explicitly asks the student to explain the mathematical properties of multiplication and division, which is a rigorous prompt for justification and conceptual understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is it always true that a divided by b is the same as b divided by a? Why or why not?",
+      "reason": "The tutor asks the student to justify their reasoning about Katie's statement, which encourages deeper thinking and explanation."
+    }
+  ],
+  "trace_sha256": "3984153edb1bea12bdb8c8fcb59bf0e91ae41d4af63f9b3e85e8046e094d334c"
+}

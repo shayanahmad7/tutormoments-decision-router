@@ -1,0 +1,45 @@
+{
+  "case_index": 287,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that mean we need to do to both sides to isolate X?",
+      "reason": "The tutor asks a guiding question that prompts the student to think about the next step in solving the equation, building on the student's correct identification of the operation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that mean we should do to both sides of the equation?",
+      "reason": "The tutor explains the 'why' behind using addition (opposite operation) and then asks a question that encourages the student to apply this understanding to the specific problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what happens to the left side?",
+      "reason": "The tutor provides the reason for adding and then asks a specific question about the effect of that operation on one side of the equation, guiding the student to the next step."
+    }
+  ],
+  "trace_sha256": "993f9a439dcb92378ab47b3c964d44c77ec3c1a00fd701083965b80ca11fea98"
+}

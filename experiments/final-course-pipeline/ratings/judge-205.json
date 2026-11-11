@@ -1,0 +1,45 @@
+{
+  "case_index": 205,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you used the idea that the total angles around a point add up to 360° to find angle y?",
+      "reason": "The student guessed the correct answer based on visual estimation. The tutor acknowledges the student's thinking and then prompts them to connect their answer to the mathematical concept of angles around a point, which was explicitly stated in the problem's solution. This scaffolds the student towards a more rigorous mathematical explanation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you used the relationship between the two angles (y and 4y) to find the exact value of y?",
+      "reason": "The student guessed the correct answer based on visual estimation. The tutor acknowledges the student's thinking and then prompts them to connect their answer to the mathematical relationship between the angles (y and 4y), which was a key part of the problem's solution. This scaffolds the student towards a more rigorous mathematical explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can you write an equation to show that the total of both angles is 360°? What would that equation look like?",
+      "reason": "The student guessed the correct answer based on visual estimation. The tutor acknowledges the student's thinking and then provides a strong hint by stating the total degrees in a circle and asking the student to form an equation using y and 4y. This is scaffolding, but it is less rigorous than C1 or C2 because it gives more of the setup for the equation rather than asking the student to recall the relevant concepts themselves."
+    }
+  ],
+  "trace_sha256": "98b4a8f1208a3e797fa5315997c823e613e2b2733d038d6db4c9c4a100e1f6e5"
+}

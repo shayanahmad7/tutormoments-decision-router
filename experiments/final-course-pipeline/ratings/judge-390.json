@@ -1,0 +1,45 @@
+{
+  "case_index": 390,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you decided between the options for this problem?",
+      "reason": "The student has changed their answer from A to B. The tutor asks them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think it's \"less than\"? What part of the numbers helps you decide?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. They also provide a scaffold by asking what part of the numbers helps them decide, which directs the student's attention to the relevant mathematical concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the numbers: 599 and 801. Which one is bigger? How do you know?",
+      "reason": "The tutor overhelps by asking 'Which one is bigger?' after the student has already given an answer. This is a leading question that could be answered by the student independently. The tutor could have asked the student to explain their reasoning for their initial answer."
+    }
+  ],
+  "trace_sha256": "296a316780e8c91b96f18275deb28a0a9d16e11cea1ebe7dd6711d362244873a"
+}

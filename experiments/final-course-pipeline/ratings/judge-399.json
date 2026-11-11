@@ -1,0 +1,45 @@
+{
+  "case_index": 399,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if thirty minus twenty-three is seven, what should twenty-three minus thirty be? Think about the trick we just talked about.",
+      "reason": "The tutor reminds the student of the trick they just discussed and asks them to apply it, which is a good scaffold. It also promotes rigor by asking the student to recall and apply the concept independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, what is thirty minus twenty-three? Once you have that, how can you use it to find twenty-three minus thirty?",
+      "reason": "The tutor guides the student through the first step of the trick (30-23) and then asks them to apply the second part of the trick to find the answer to 23-30, which is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, thirty minus twenty-three is seven. That means twenty-three minus thirty is...? What happens when we add a negative sign to that result?",
+      "reason": "The tutor provides the answer to the first part of the trick (30-23=7) and then explicitly tells the student to 'add a negative sign' to the result, which is overhelping as the student could have been prompted to recall this step themselves."
+    }
+  ],
+  "trace_sha256": "f6ae358f9f5477b65fdb13b8cc0ac8863ba25c0101406bd0852b86e22b803a43"
+}

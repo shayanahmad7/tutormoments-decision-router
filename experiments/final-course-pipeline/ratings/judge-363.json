@@ -1,0 +1,45 @@
+{
+  "case_index": 363,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Maybe start by subtracting the ones place. What is 4 minus 7?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking the student to subtract the ones place, which is a common first step in subtraction problems."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the 4 when we borrow 1 from the 6 in the tens place?",
+      "reason": "The tutor provides a clear hint about borrowing, which is a key concept for this type of subtraction problem, and then asks a guiding question to prompt the student's next step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think you need to do first to subtract 27 from 64?",
+      "reason": "The tutor asks an open-ended question that encourages the student to think about the first step of the subtraction problem independently, promoting rigor."
+    }
+  ],
+  "trace_sha256": "373826c17ee0966d7078161c5dd7854470a2af5b6dfe101cd285f1a819c5eb2c"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 44,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation would you use to move it to the other side?",
+      "reason": "The tutor provides a hint by identifying the number to move and then asks the student to recall the operation needed, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation would we need to perform first? Why?",
+      "reason": "The tutor guides the student to identify the first step and then asks for justification, which promotes deeper understanding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do we need to do to both sides to remove the 3?",
+      "reason": "The tutor identifies the number to be moved and then asks the student to recall the operation, providing scaffolding."
+    }
+  ],
+  "trace_sha256": "6c076a1c692bac38aa01d49724266fe83c3c0e84af744427e0f416c8da55b95e"
+}

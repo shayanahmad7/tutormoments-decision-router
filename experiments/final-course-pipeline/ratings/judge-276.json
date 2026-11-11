@@ -1,0 +1,45 @@
+{
+  "case_index": 276,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you think about what happened in the story that might make her feel that way? Was there something dangerous or surprising about her powers? What did she worry might happen if her parents found out?",
+      "reason": "The tutor provides guiding questions that prompt the student to recall specific details from the story related to Crystal's motivations for keeping her powers a secret. This helps the student formulate a complete answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what Crystal was worried might happen if her parents found out about her powers?",
+      "reason": "The tutor asks a direct question that requires the student to recall information from the story and explain Crystal's reasoning, promoting independent thought and recall."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why did Crystal decide to keep her powers a secret from her parents? Can you explain your reasoning based on the story?",
+      "reason": "The tutor asks the student to explain their reasoning based on the story, which encourages the student to justify their answer with textual evidence, increasing rigor."
+    }
+  ],
+  "trace_sha256": "f98e0b856bc71e57b30b75b3764d6c382591f2ea1d78b61b41a6150f9acf8295"
+}

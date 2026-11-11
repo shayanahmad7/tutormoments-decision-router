@@ -1,0 +1,45 @@
+{
+  "case_index": 30,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What factors do fifteen and twenty-five share? Can you list them?",
+      "reason": "The tutor asks the student to list the common factors, which is a direct next step in the process the tutor just taught."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What factors do fifteen and twenty-five have in common?",
+      "reason": "The tutor asks the student to identify common factors, which requires the student to apply the recently learned concept independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start by listing the factors of 25 like we did for 15.",
+      "reason": "The tutor provides a specific hint to guide the student in listing the factors for 25, mirroring the previous step for 15."
+    }
+  ],
+  "trace_sha256": "86cd950515addbb60f658f7c2b899da37c5f01410219f4a99cd44946d83b29bd"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 211,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the 4 and the 6 when you borrow?",
+      "reason": "The tutor provides a clear hint about borrowing and then asks a specific question to guide the student through the next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what you think you need to do first?",
+      "reason": "The tutor asks the student to articulate their initial thought process, promoting independent problem-solving and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "As you work it out, can you explain why you're doing each step?",
+      "reason": "The tutor encourages the student to explain their reasoning for each step, fostering deeper understanding and justification."
+    }
+  ],
+  "trace_sha256": "fa289d4f2884d048efcf5fc089f954616e16916d3153aec896897d1ba6a9b516"
+}

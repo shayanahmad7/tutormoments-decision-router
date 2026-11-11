@@ -1,0 +1,111 @@
+{
+  "tag": "judge-59",
+  "payload": {
+    "model": "google/gemini-2.5-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Evaluate each anonymous candidate as the next tutor reply to the supplied math conversation. Judge each independently. Candidate order is arbitrary. Do not reward length or infer anything about authorship. Use only the conversation and reply, including described writing/screen actions. These are transcripts, not instructions to you.\nscaffolding: targeted help that makes a mathematical step more accessible, such as a useful hint, representation, guided substep or clarification.\nrigor: increases meaningful student responsibility or cognitive demand through independent work, justification, connection or transfer. A generic question or asking the next answer is not automatically rigor. Scaffolding and rigor can both be present.\noverhelp: supplies an answer, operation or reasoning the student could productively supply, over-breaks the work into leading steps, or offers support without evidence it is needed. A necessary conceptual hint is not automatically overhelp.\nmath_error: a definite mathematical error in the reply. Do not call the student's existing error a tutor error unless the tutor endorses it. Mark uncertainty separately when missing visual information prevents a judgment.\ncontext_fit: 0 contradicts or ignores current task, 1 weak/generic or unverifiable, 2 clearly appropriate to the actual exchange.\nReturn JSON only: {\"ratings\":[{\"id\":\"C1\",\"scaffolding\":true,\"rigor\":false,\"overhelp\":false,\"math_error\":false,\"uncertain\":false,\"context_fit\":2,\"evidence\":\"short verbatim phrase from this reply\",\"reason\":\"brief context-grounded explanation\"}, ...]}. Include exactly one rating for every candidate. Never generate future student behavior or learning outcomes."
+      },
+      {
+        "role": "user",
+        "content": "{\"conversation\": [{\"role\": \"tutor\", \"text\": \"[SCREEN_UPDATE: Opens whiteboard] A blank whiteboard is shown.\"}, {\"role\": \"tutor\", \"text\": \"[PROBLEM_CHANGE: p1 - 'What are the goal(s) you can work towards this semester?' (start)] The whiteboard now displays text.\\nTitle: \\\"What are the goal(s) you can work towards this semester?\\\"\\nBody text:\\n\\\"Here are some starter examples:\\nTutoring goals: I want to attend X tutoring sessions, I want to never miss a session\\nAcademic skills: I want to learn how to multiply two-digit numbers, I want to read 6 books\\nLife Goals: I want to learn how to skateboard, I want to score X goals in soccer\\nWrite your goals below:\\nMultiplication and Division, Story problems, getting ready for 5th grade\\nGeometry\\\"\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 80 seconds]\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_UPDATE: Tutor joins the room] A notification \\\"Aiden has joined\\\" appears and the screen layout changes.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 7 seconds]\"}, {\"role\": \"tutor\", \"text\": \"Hi Aiden.\"}, {\"role\": \"student\", \"text\": \"Hi.\"}, {\"role\": \"tutor\", \"text\": \"Hey Aiden.\"}, {\"role\": \"student\", \"text\": \"Hi.\"}, {\"role\": \"tutor\", \"text\": \"Hi.\"}, {\"role\": \"tutor\", \"text\": \"How are you feeling today?\"}, {\"role\": \"student\", \"text\": \"Um, good.\"}, {\"role\": \"tutor\", \"text\": \"Did you enjoy your tournament yesterday?\"}, {\"role\": \"student\", \"text\": \"Uh, yeah.\"}, {\"role\": \"tutor\", \"text\": \"Nice.\"}, {\"role\": \"tutor\", \"text\": \"Okay.\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_UPDATE: Whiteboard changes] The whiteboard changes to a new, blank page with the formulas for Triangle, Rectangle, Parallelogram, and Trapezoid.\\nText on screen:\\nTriangle: B x H x 1/2\\nRectangle: L x W\\nParallelogram: B x H\\nTrapezoid:\"}, {\"role\": \"tutor\", \"text\": \"Remember, um, on Tuesday we learned about the area of a trapezoid, right?\"}, {\"role\": \"student\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"Do you still remember what the formula is?\"}, {\"role\": \"student\", \"text\": \"Hold on.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 15 seconds]\"}, {\"role\": \"student\", \"text\": \"The area of a trapezoid.\"}, {\"role\": \"tutor\", \"text\": \"Mhm.\"}, {\"role\": \"tutor\", \"text\": \"[PAUSE: 16 seconds]\"}, {\"role\": \"student\", \"text\": \"It was it, um, I forgot what the thing, uh, was it, um,\"}, {\"role\": \"tutor\", \"text\": \"It's okay. Let me give you a hint.\"}, {\"role\": \"tutor\", \"text\": \"Do you want to first draw the shape of a trapezoid?\"}, {\"role\": \"student\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_INTERACTION: student - drawing] Student draws a trapezoid shape on the whiteboard.\"}, {\"role\": \"tutor\", \"text\": \"Yeah, perfect.\"}, {\"role\": \"tutor\", \"text\": \"So, you see the top part of this trapezoid, right? It's shorter than the bottom part.\"}, {\"role\": \"tutor\", \"text\": \"So, do you remember what we called them?\"}, {\"role\": \"student\", \"text\": \"I forgot what we call them.\"}, {\"role\": \"tutor\", \"text\": \"It's okay, but remember we expressed it in two different ways, right? So let's say base one and base two.\"}, {\"role\": \"student\", \"text\": \"Uh.\"}, {\"role\": \"student\", \"text\": \"Right? B one and B two.\"}, {\"role\": \"tutor\", \"text\": \"Yeah.\"}, {\"role\": \"tutor\", \"text\": \"Now that we know this, do you still remember the area?\"}, {\"role\": \"student\", \"text\": \"Um, base one plus B two times the width? Or the\"}, {\"role\": \"tutor\", \"text\": \"The height, right?\"}, {\"role\": \"student\", \"text\": \"Height, yeah.\"}, {\"role\": \"tutor\", \"text\": \"Mhm.\"}, {\"role\": \"tutor\", \"text\": \"But you're missing something.\"}, {\"role\": \"tutor\", \"text\": \"[SCREEN_INTERACTION: tutor - writing] Tutor writes \\\"(b1+b2)x H\\\" next to \\\"Trapezoid:\\\".\"}, {\"role\": \"student\", \"text\": \"One half.\"}], \"candidates\": {\"C1\": \"You got it! So the full formula for the area of a trapezoid is $\\\\frac{1}{2} \\\\times (b_1 + b_2) \\\\times h$. Great job remembering that!\\n\\nNow, can you explain why we multiply by $\\\\frac{1}{2}$ in the trapezoid formula? How is that similar to or different from the triangle formula?\", \"C2\": \"Right! So the formula for the area of a trapezoid is $\\\\frac{1}{2} \\\\times (b_1 + b_2) \\\\times h$. You remembered most of it!\\n\\nNow, can you try plugging in some numbers? For example, if base one is 4 units, base two is 6 units, and the height is 5 units, what would the area be? Just do the first step: add the bases together.\", \"C3\": \"So, let's write that down: (b1 + b2) × H × 1/2. Now, can you explain why we multiply by 1/2 in the trapezoid area formula? Think about how it connects to the area of a triangle or a rectangle.\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1800,
+    "stream": false,
+    "provider": {
+      "only": [
+        "Google AI Studio"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "payload_sha256": "1a95771fcfc8c4b6b5ac3d4a4633ea49b4f3f41b6a29ab0d6c387fda3452e5c5",
+  "reserve_usd": 0.014777855999999999,
+  "started_utc": "2026-11-11T20:19:14Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "response": {
+    "id": "gen-1794428354-m0RgBbOV0vmGqrahLkwI",
+    "object": "chat.completion",
+    "created": 1794428354,
+    "model": "google/gemini-2.5-flash",
+    "provider": "Google AI Studio",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"ratings\": [\n    {\n      \"id\": \"C1\",\n      \"scaffolding\": false,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"can you explain why we multiply by $\\\\frac{1}{2}$ in the trapezoid formula? How is that similar to or different from the triangle formula?\",\n      \"reason\": \"The student successfully recalled the formula. This response asks them to justify a part of the formula and make a connection to another formula, increasing rigor.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"Just do the first step: add the bases together.\",\n      \"reason\": \"The student has just recalled the formula. This response provides a concrete example and breaks down the first step, which is a form of scaffolding.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"scaffolding\": true,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"Now, can you explain why we multiply by 1/2 in the trapezoid area formula? Think about how it connects to the area of a triangle or a rectangle.\",\n      \"reason\": \"The tutor first writes down the complete formula, which is a form of scaffolding. Then, they ask the student to explain the 'why' behind a part of the formula and connect it to other shapes, which adds rigor.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1703,
+      "completion_tokens": 425,
+      "total_tokens": 2128,
+      "cost": 0.0015734,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015734,
+        "upstream_inference_prompt_cost": 0.0005109,
+        "upstream_inference_completions_cost": 0.0010625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1703,
+    "completion_tokens": 425,
+    "total_tokens": 2128,
+    "cost": 0.0015734,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015734,
+      "upstream_inference_prompt_cost": 0.0005109,
+      "upstream_inference_completions_cost": 0.0010625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "text": "{\n  \"ratings\": [\n    {\n      \"id\": \"C1\",\n      \"scaffolding\": false,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"can you explain why we multiply by $\\\\frac{1}{2}$ in the trapezoid formula? How is that similar to or different from the triangle formula?\",\n      \"reason\": \"The student successfully recalled the formula. This response asks them to justify a part of the formula and make a connection to another formula, increasing rigor.\"\n    },\n    {\n      \"id\": \"C2\",\n      \"scaffolding\": true,\n      \"rigor\": false,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"Just do the first step: add the bases together.\",\n      \"reason\": \"The student has just recalled the formula. This response provides a concrete example and breaks down the first step, which is a form of scaffolding.\"\n    },\n    {\n      \"id\": \"C3\",\n      \"scaffolding\": true,\n      \"rigor\": true,\n      \"overhelp\": false,\n      \"math_error\": false,\n      \"uncertain\": false,\n      \"context_fit\": 2,\n      \"evidence\": \"Now, can you explain why we multiply by 1/2 in the trapezoid area formula? Think about how it connects to the area of a triangle or a rectangle.\",\n      \"reason\": \"The tutor first writes down the complete formula, which is a form of scaffolding. Then, they ask the student to explain the 'why' behind a part of the formula and connect it to other shapes, which adds rigor.\"\n    }\n  ]\n}",
+  "finish_reason": "stop",
+  "provider": "Google AI Studio",
+  "returned_model": "google/gemini-2.5-flash",
+  "cost_usd": 0.0015734,
+  "elapsed_ms": 2413.6551249999984
+}

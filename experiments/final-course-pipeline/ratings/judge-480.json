@@ -1,0 +1,45 @@
+{
+  "case_index": 480,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how does the number of times we added eight relate to the answer in the equation? What does that tell us about the missing number?",
+      "reason": "The tutor asks the student to connect the repeated addition to the missing factor in the multiplication problem, which requires the student to make a conceptual leap and apply their understanding of multiplication as repeated addition."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So we added eight three times to get to twenty-four, and then one more time to get to thirty-two. So how many times did we add eight in total?",
+      "reason": "The tutor provides the intermediate steps and the final count of additions, leaving very little for the student to do other than state the final number. This is overhelping as the student could have counted the additions themselves."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, how many times did we add eight to get to thirty-two? Can you count how many eights we used?",
+      "reason": "The tutor prompts the student to count the number of eights used, which is a direct and appropriate next step given the previous conversation. It scaffolds the student towards finding the missing number."
+    }
+  ],
+  "trace_sha256": "5e76dacff081b7deefe57b95e1f12458b61f135e5e8a1d289e4f34aca95e0ec1"
+}

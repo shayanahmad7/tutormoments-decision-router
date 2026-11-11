@@ -1,0 +1,45 @@
+{
+  "case_index": 517,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many tiles are there along the length (the side labeled \"L\")?",
+      "reason": "The tutor is asking the student to identify the number of tiles along the length, which is a direct next step in solving the problem and aligns with the previous questions about the width."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if there are five tiles along the width, what is the total width of the rectangle in meters?",
+      "reason": "This question directly prompts the student to apply the information they just confirmed (5 tiles along the width and 1/6m per tile) to calculate the total width, which is a logical next step in finding the area."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do next to find the width of the whole floor?",
+      "reason": "This is a good scaffolding question that prompts the student to think about the next step in the problem-solving process without giving away the answer. It builds on the information just established."
+    }
+  ],
+  "trace_sha256": "258630fb90fb3d9b45449d7f0954c1f90ca354c04fc3a03aba70393311d63fbc"
+}

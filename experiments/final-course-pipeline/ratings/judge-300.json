@@ -1,0 +1,45 @@
+{
+  "case_index": 300,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, what's the area of one pizza? How would you calculate that?",
+      "reason": "The tutor breaks down the problem into a more manageable first step and asks the student to recall the area formula, which was just reviewed."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, what is the area of one pizza? Use the dimensions given (26cm and 45cm) to calculate it. What do you get?",
+      "reason": "The tutor breaks down the problem into a first step and provides the relevant numbers, which is appropriate scaffolding given the student's previous struggles with multi-step problems."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, what's the area of one pizza? The pan is 26cm by 45cm. What do you need to do with those numbers to find the area?",
+      "reason": "The tutor breaks down the problem into a first step and provides the relevant numbers, then asks the student to recall the operation needed to find the area, which was just reviewed."
+    }
+  ],
+  "trace_sha256": "c3222a70a2554e5ae1075f8b79cef7f2c3f86d6d24460960f798f6263b00f2ba"
+}

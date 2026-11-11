@@ -1,0 +1,45 @@
+{
+  "case_index": 407,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what expression would show the total number of students still on the buses? Can you write that out?",
+      "reason": "The tutor asks the student to write out the expression, which promotes independent work and allows the student to demonstrate their understanding of the problem's structure."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, can you figure out what 40 minus 28 is first, and then add all three together? What is 40 minus 28?",
+      "reason": "The tutor breaks down the problem into very small, explicit steps, telling the student exactly what to calculate first and then what to do next. This is overhelping as the student could productively determine the order of operations."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's focus on the middle bus first. If it had 40 students and 28 go on a tour, how many are left in that one bus? Can you figure that out?",
+      "reason": "The tutor provides a guided substep by directing the student to focus on one part of the problem (the middle bus) to help them get started with the calculation."
+    }
+  ],
+  "trace_sha256": "2b958aeefcadf130562f91498accda4286053ae2219b9a22f7994f3f3e10f5ce"
+}

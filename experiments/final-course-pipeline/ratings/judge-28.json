@@ -1,0 +1,45 @@
+{
+  "case_index": 28,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's another way we can multiply two numbers to get eight?",
+      "reason": "The student just provided one pair of factors for 8. The tutor is asking for another, which is a direct and appropriate next step in finding all factors."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Good! So 2 times 4 is 8. What other pairs of numbers can you multiply to get 8? Let’s list them all below the number 8.",
+      "reason": "The tutor affirms the student's correct answer and then prompts them to find more factor pairs, guiding them to list them on the whiteboard as previously discussed."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's another way to multiply two numbers to get eight?",
+      "reason": "The student just provided one pair of factors for 8. The tutor is asking for another, which is a direct and appropriate next step in finding all factors."
+    }
+  ],
+  "trace_sha256": "4b1005b6a23fa4e92e090f022269769919782e0346e569967a5a1bc060a35b28"
+}

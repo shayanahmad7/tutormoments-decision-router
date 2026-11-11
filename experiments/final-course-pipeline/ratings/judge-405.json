@@ -1,0 +1,45 @@
+{
+  "case_index": 405,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If each bag has 8 apples and there are 3 bags, how many apples would that be in total? Can you calculate that and see if it matches the 48 apples given in the problem?",
+      "reason": "The tutor asks the student to check their answer by working forwards from their proposed solution, which is a good way to encourage self-correction and deeper understanding. This is a rigorous approach."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 6 × 8? Can you use that to help you figure out what a is?",
+      "reason": "The tutor provides a direct hint to the answer (6 x 8), which is overhelping. The student should be able to figure this out with less direct prompting."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try counting by 8s until you reach 48? How many 8s does it take?",
+      "reason": "The tutor suggests a strategy (counting by 8s) that is appropriate for a student who might be struggling with multiplication facts. This is a helpful scaffold without giving away the answer."
+    }
+  ],
+  "trace_sha256": "86e57f3070b97e9f4a561cb5724e5cd7d16138439b29d743610e934fc436f5d6"
+}

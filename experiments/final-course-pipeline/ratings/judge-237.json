@@ -1,0 +1,45 @@
+{
+  "case_index": 237,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you use the idea of the commutative property to figure it out?",
+      "reason": "The tutor introduces the commutative property and then asks the student to apply it to a new problem, which promotes deeper understanding and independent problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If two times four is eight, what do you think two times five would be? Can you figure it out using the pattern we just talked about?",
+      "reason": "The tutor prompts the student to apply the identified pattern (adding two each time) to predict the next multiplication fact, which encourages active learning and pattern recognition."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's say we already know that 3 times 2 is 6. How could we use that to help us figure out 3 times 4?",
+      "reason": "The tutor provides a known fact and then asks the student to use it to solve a related problem, which is a form of scaffolding. It doesn't explicitly ask the student to apply the commutative property to the new problem, but rather to use a given fact."
+    }
+  ],
+  "trace_sha256": "00664d333bfac659dbf3fe5afffe40fc65bea6d6a3c1fe53865ef9efa2670f30"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 280,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "0.4 is the same as 4 tenths. So 0.4 x 5 is the same as 4 tenths x 5.",
+      "reason": "The tutor provides a useful rephrasing of the decimal multiplication problem into a fraction/place value context, which is a good scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How is 0.4 related to 4? What would that mean for the answer compared to 20?",
+      "reason": "The tutor prompts the student to consider the relationship between 0.4 and 4, which is a good way to guide them towards understanding decimal multiplication without giving the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the difference between multiplying whole numbers and multiplying a decimal by a whole number?",
+      "reason": "The tutor asks a relevant question about the difference between multiplying whole numbers and decimals, which could lead to a productive discussion."
+    }
+  ],
+  "trace_sha256": "1d24129123619aef8bae6d18ba00fbc65fca83b4ade6bde51a9a8af01f70be48"
+}

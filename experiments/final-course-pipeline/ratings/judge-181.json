@@ -1,0 +1,45 @@
+{
+  "case_index": 181,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how do you know?",
+      "reason": "The student has consistently answered division problems correctly. Asking 'how do you know?' encourages justification and deeper understanding rather than just providing the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What are we dividing? How many cookies? How many in each box?",
+      "reason": "This provides targeted questions to help the student identify the dividend and divisor in the word problem, which is a helpful scaffold for setting up the division."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total number of cookies being divided, and how does that help us find the number of boxes needed?",
+      "reason": "This question guides the student to identify the dividend and connect it to the goal of the problem, providing a scaffold for problem-solving."
+    }
+  ],
+  "trace_sha256": "afa87ee4f7b9680c8c0bf2863471069af773d42cc2fcefa754d7d62079298a6e"
+}

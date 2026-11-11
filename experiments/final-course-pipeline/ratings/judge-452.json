@@ -1,0 +1,45 @@
+{
+  "case_index": 452,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you compare the shaded parts to decide which is more?",
+      "reason": "The tutor asks the student to compare the shaded parts of the grids, which is a good way to use the visual aid provided in the problem. This scaffolds the student's thinking by directing them to a specific part of the problem, and promotes rigor by asking them to make the comparison themselves."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why one is more than the other based on the shaded parts?",
+      "reason": "The tutor confirms the student's potential answer and then provides a clear explanation of the grids (35 out of 100 vs 40 out of 100). This scaffolds the understanding of the visual representation. The follow-up question, 'Can you explain why one is more than the other based on the shaded parts?' promotes rigor by asking the student to justify their reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you add a zero to 0.4 to make it 0.40, how does 0.35 compare to 0.40?",
+      "reason": "The tutor provides a significant hint by suggesting adding a zero to 0.4 to make it 0.40, which is a common strategy for comparing decimals. This is overhelping because it gives away the key conceptual step the student needs to figure out."
+    }
+  ],
+  "trace_sha256": "400913f2c525c58641f3c4db563c77cddc57a062340f65b585e29e48c4629f75"
+}

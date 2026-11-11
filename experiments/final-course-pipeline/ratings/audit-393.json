@@ -1,0 +1,45 @@
+{
+  "case_index": 393,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the first step when subtracting with base-ten blocks?",
+      "reason": "Identifies the values from the blocks (helpful scaffolding) and then asks the student to articulate the first step, creating meaningful cognitive demand without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What subtraction problem is shown here? Let me know how you see it.",
+      "reason": "Asks the student to interpret the base-ten block representation themselves, which is appropriately rigorous, but provides minimal scaffolding for a student who just asked 'what do I do?'"
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The left side shows 4 tens and 4 ones, which is 44. The right side shows 2 tens and 6 ones, which is 26. The minus sign means we are subtracting. So the question is asking: What is 44 minus 26?",
+      "reason": "Fully decodes both block groups into numbers and restates the entire problem for the student, supplying reasoning the student could have produced; the follow-up question is generic and does not recover the overhelp."
+    }
+  ],
+  "trace_sha256": "a5f304464d4693032c7553aef99c409dd602c21e27e4278add9c823e81f2b563"
+}

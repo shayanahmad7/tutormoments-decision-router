@@ -1,0 +1,45 @@
+{
+  "case_index": 313,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out why your answer is different and what might have gone wrong in your calculation?",
+      "reason": "The tutor asks the student to identify the error in their calculation, which promotes independent problem-solving and critical thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What else might you need to consider about the shape of an isosceles trapezoid?",
+      "reason": "The tutor provides a hint about considering the properties of an isosceles trapezoid, which is a form of scaffolding. They also ask the student to identify the mistake, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means the total of the two non-parallel sides and the shorter base is 7 + 7 + 2 = 16 cm.",
+      "reason": "The tutor performs the addition for the student, which the student had already done correctly in their erased work. This is overhelping as the student demonstrated the ability to sum the known sides."
+    }
+  ],
+  "trace_sha256": "9ffd186af10078c660deda8c15f7489f804ab3b19e3c5f2e69f89d033937fc5b"
+}

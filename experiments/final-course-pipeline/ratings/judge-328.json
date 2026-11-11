@@ -1,0 +1,45 @@
+{
+  "case_index": 328,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start by choosing a word from the word bank that you feel represents success to you. Once you've selected a word, we can talk about why you chose it and what it means to you. What word would you like to start with?",
+      "reason": "The tutor provides a clear prompt for the student to begin the activity, breaking down the task into a manageable first step (choosing one word) and immediately linking it to the required discussion, which is a good scaffold. It also promotes rigor by asking the student to explain their reasoning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Okay, can you tell me why you chose the words you did? What do those words mean to you?",
+      "reason": "This response is premature. The student has not yet chosen any words from the new slide. The question asks for an explanation of choices that haven't been made, making it out of sync with the current stage of the activity."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me which words from the list you think best describe what success looks like for you? Let’s start with one or two and talk about why they matter.",
+      "reason": "This response effectively prompts the student to begin the activity by selecting words from the list, and then immediately sets up the discussion aspect of the task. It scaffolds by suggesting starting with 'one or two' words, making the task less daunting, and promotes rigor by asking for the 'why'."
+    }
+  ],
+  "trace_sha256": "fb77911a51ebeb21d8dc8851f1ffb5d3e6ef4c237c40655032952e0287c1f34b"
+}

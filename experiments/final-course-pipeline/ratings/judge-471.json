@@ -1,0 +1,45 @@
+{
+  "case_index": 471,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number represents the groups, and what number represents how many are in each group?",
+      "reason": "The tutor asks the student to identify the components of the multiplication problem, which encourages the student to apply the concept of 'groups' that was just discussed, rather than just stating the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how would you write the multiplication problem to find the total number of fish?",
+      "reason": "This is a direct question asking for the multiplication problem, which is appropriate given the student's previous confusion about whether it was multiplication or addition."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many groups of four fish do you have? What would you do with that number to find the total fish?",
+      "reason": "The tutor guides the student by explicitly asking about the number of groups, reinforcing the concept of multiplication as 'groups of,' and then prompts for the next step in solving the problem."
+    }
+  ],
+  "trace_sha256": "08572f560a6a80633535c4c0571fd75e9852c4373e0c76913c4cd7d3d90dfa76"
+}

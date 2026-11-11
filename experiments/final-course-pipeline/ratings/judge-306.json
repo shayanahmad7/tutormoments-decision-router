@@ -1,0 +1,45 @@
+{
+  "case_index": 306,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you find the part of the story that tells us what happened at midnight?",
+      "reason": "The tutor prompts the student to re-read the relevant part of the story to find the answer, which is a good scaffolding technique. It also promotes rigor by asking the student to locate the evidence themselves."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me point to the part of the story that tells us this. \"During the night, Jamal woke up three times. At midnight, he woke up because he heard his dad snoring.\"",
+      "reason": "The tutor directly provides the relevant text from the story, which the student could have found themselves. This is overhelping as the student just needed to be directed to re-read the story."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me ask you—why is B the correct answer for question 5? Can you explain how the story supports that?",
+      "reason": "The tutor asks the student to justify their answer, which promotes rigor by requiring them to explain their reasoning and connect it back to the text."
+    }
+  ],
+  "trace_sha256": "3a2c529e8df5c0fcbce3d5bad03b35d7eca2f6149a53eb7806dfc1bd5761f25e"
+}

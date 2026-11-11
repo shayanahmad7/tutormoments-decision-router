@@ -1,0 +1,45 @@
+{
+  "case_index": 101,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the ones place: 13 - 4. What is 13 minus 4?",
+      "reason": "The student is struggling with the subtraction in the ones place. The tutor provides a direct question to help the student focus on that specific calculation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should the result be in the ones place after subtracting 4 from 13? What does that tell you about the final answer?",
+      "reason": "The tutor guides the student to focus on the specific calculation in the ones place and then prompts them to consider the implication for the overall answer, which is a good scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the ones place first: 13 - 4. What is 13 minus 4?",
+      "reason": "The student is struggling with the subtraction in the ones place. The tutor provides a direct question to help the student focus on that specific calculation."
+    }
+  ],
+  "trace_sha256": "c73cecc517b3260df56dfd880b077953c2627e2bab6a1f1273df00c29040c755"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 403,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's try one more time. Here's a new problem: `4 + 3 = 7`. Is this one true or false?",
+      "reason": "The tutor is moving on to the next problem in the game, which is appropriate. They are also providing a specific problem for the student to evaluate."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Before we start the next round, pick one of the problems we just saw and explain why it's correct. For example, why is 9 + 8 = 17 true?",
+      "reason": "The tutor is asking the student to justify their answer, which increases rigor. This is a good way to check for understanding beyond just getting the correct answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's try again. Here's the first problem: is \"7 - 9 = -2\" correct, or is \"9 + 9 = 23\" correct? Which one makes sense?",
+      "reason": "The tutor is restarting the game and presenting the first problem again, which is appropriate given the 'Too Slow!!!' message. They are also providing clear options for the student to choose from."
+    }
+  ],
+  "trace_sha256": "46405e212e4f224214ab3f7b87e386273765d0e6f4179ba3c3800a02376ec12c"
+}

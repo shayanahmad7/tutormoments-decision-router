@@ -1,0 +1,45 @@
+{
+  "case_index": 447,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you need to do next to reel it in?",
+      "reason": "The tutor clarifies the timer display and then prompts the student to recall the next step in the game, which involves answering a math question, thus promoting active engagement and problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "Let me know when you're ready to start fishing — and then think about what you need to do first to catch a fish and answer a question.",
+      "reason": "The tutor asks the student to think about the next step, which is good for rigor, but doesn't directly address the student's question about the timer, making the context fit weaker."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Because the game timer is set to 30 minutes, not 30 seconds. Let’s see if you can catch a fish before the time runs out! What should you do first?",
+      "reason": "The tutor directly answers the student's question about the timer and then immediately prompts them to recall the first step of the game, which involves a math question, combining scaffolding with rigor."
+    }
+  ],
+  "trace_sha256": "0e38fe6007b76651968a1bf28b3acab303d1a1dc29f2d5dcfb6ac11cd7efdc7b"
+}

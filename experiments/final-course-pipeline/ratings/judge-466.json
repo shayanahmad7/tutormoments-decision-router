@@ -1,0 +1,45 @@
+{
+  "case_index": 466,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how the idea of \"times as many\" connects to the equation?",
+      "reason": "The student has correctly identified the answer. The tutor asks for an explanation, which promotes rigor by requiring the student to articulate their understanding of the mathematical concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option B is correct using your own words?",
+      "reason": "The tutor confirms the correct answer and then asks the student to explain their reasoning in their own words, which adds rigor by requiring justification and articulation of understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "[SCREEN_INTERACTION: student - selecting answer] The student's cursor moves to option B (45 = 9 x 5) and clicks it. The student then clicks the \"Check\" button.",
+      "reason": "The tutor's reply only describes the student's action of selecting the answer and clicking 'Check'. This is overhelp because the student has already indicated their answer and the tutor is simply performing the action for them without adding any instructional value or requiring further thought from the student."
+    }
+  ],
+  "trace_sha256": "d7b3b9fccaecf5d3665f2204f6178e2cdc2fe9babfcf1ab41514592f687a009e"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 192,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what two fractions could you use to fill that same space? Think about how they add up to one-fourth.",
+      "reason": "The tutor's previous question was about filling the space left by removing a 1/4 piece. This candidate rephrases that question and adds a hint about addition."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what two fractions you could add together to equal 1/3. For example, could you use smaller pieces like 1/6 or 1/12? What combination might work? Try one and see what happens.",
+      "reason": "The tutor's previous question was 'what two fractions would you put together to make another third?'. This candidate directly addresses that question, provides a hint about smaller pieces, and encourages experimentation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you want to make another third using two different fractions, what two pieces could you combine to match the same length as one-third? Try dragging a couple of smaller strips and see if they fit together to match the one-third strip. What do you notice?",
+      "reason": "The tutor's previous question was 'what two fractions would you put together to make another third?'. This candidate rephrases the question and provides clear instructions for using the tool to explore the answer."
+    }
+  ],
+  "trace_sha256": "8b37c9610fcb6ac66d2221fdf029d245465bd108aaabfb48278f89cce4ee6178"
+}

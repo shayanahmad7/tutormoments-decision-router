@@ -1,0 +1,45 @@
+{
+  "case_index": 402,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can you figure out what thirty divided by ten is? Think about what division means.",
+      "reason": "The tutor asks the student to think about the meaning of division, which is a good way to scaffold the problem without giving away the answer. This also promotes rigor by asking the student to recall the definition of division."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have thirty candies and you want to divide them equally among ten friends, how many candies would each friend get?",
+      "reason": "The tutor provides a real-world analogy to help the student understand the division problem. This is a good scaffolding technique."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 10 times 3?",
+      "reason": "The tutor uses the inverse operation (multiplication) to help the student solve the division problem. This is a good scaffolding technique."
+    }
+  ],
+  "trace_sha256": "806a898037d0f49ca83b673512b822d466b9512345965ab11ce4e3edf91ced9b"
+}

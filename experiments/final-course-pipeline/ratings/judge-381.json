@@ -1,0 +1,45 @@
+{
+  "case_index": 381,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me how to find the total number of ice-creams sold first?",
+      "reason": "The tutor redirects the student to the correct problem and provides a hint by suggesting they find the total number of ice-creams first, which is a necessary step to solve the problem. This is scaffolding because it breaks down the problem into a more manageable first step. It also promotes rigor by asking the student to figure out how to find the total."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out the total number of ice-creams sold and then use that to find the number of strawberry ice-creams?",
+      "reason": "The tutor redirects the student to the correct problem and provides a hint by suggesting they find the total number of ice-creams first, which is a necessary step to solve the problem. This is scaffolding because it breaks down the problem into a more manageable first step. It also promotes rigor by asking the student to figure out how to find the total and then use that information."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "There's a group of 5 tally marks (the \"gate\") and one more line. So that's 5 plus 1. What does that total to?",
+      "reason": "The tutor correctly identifies the current problem and provides scaffolding by breaking down the tally marks into a simple addition problem (5 + 1). This helps the student count the tally marks correctly."
+    }
+  ],
+  "trace_sha256": "c912b3f4d1d9956c0fc7ab7a4f6b627b1d967c86e61a17006e3eebeb9839ba7b"
+}

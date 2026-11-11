@@ -1,0 +1,45 @@
+{
+  "case_index": 77,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think the answer is A? Let's look at the numbers 436 and 460. What do you notice about the digits in each place?",
+      "reason": "The tutor asks the student to justify their answer, which promotes rigor. The follow-up question about comparing digits in each place provides scaffolding for how to approach the problem without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If 436 is being compared to 460, which number is bigger? What should the symbol be?",
+      "reason": "The tutor asks a generic question that doesn't provide specific guidance on how to compare the numbers, nor does it ask the student to explain their reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Both start with 4, so we compare the next digit. The 3 in 436 and the 6 in 460. Which is smaller, 3 or 6? That tells us which number is smaller.",
+      "reason": "The tutor provides too much of the comparison strategy, essentially walking the student through the first two steps of comparing the numbers digit by digit. The student could productively supply this reasoning."
+    }
+  ],
+  "trace_sha256": "022a7ce8361267ca2214ccf2d0c34f714653ad550a040a7d380650cacc28c38e"
+}

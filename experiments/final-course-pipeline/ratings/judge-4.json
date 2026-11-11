@@ -1,0 +1,45 @@
+{
+  "case_index": 4,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if three is three over one, how can we multiply that by three over four?",
+      "reason": "The tutor provides the correct fraction form for 3 and then asks the student to apply that knowledge to the multiplication problem, which is a helpful next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if we write 3 as a fraction with denominator 1, it's $ \\frac{3}{1} $. Now, how can we multiply $ \\frac{3}{4} $ by 3 (or $ \\frac{3}{1} $) to find the result? What happens when you multiply the numerators and denominators?",
+      "reason": "The tutor explicitly states how to write 3 as a fraction and then prompts the student on the next steps for multiplying fractions, which is a clear scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you're saying three is the same as 3/1. That's right! Now, if we want to multiply 3/1 by 3/4, how can we start? What do we need to do with the numerators and denominators?",
+      "reason": "The tutor affirms the student's implicit understanding of writing 3 as a fraction and then guides them to the next step of multiplying fractions by asking about numerators and denominators."
+    }
+  ],
+  "trace_sha256": "122b538bf4f456b7ff2951ba8da5c3856bf25572a4616dc19b5546184936bbbf"
+}

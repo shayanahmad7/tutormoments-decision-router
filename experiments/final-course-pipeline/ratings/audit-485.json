@@ -1,0 +1,45 @@
+{
+  "case_index": 485,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "So you're starting at 452 and skip counting by hundreds",
+      "reason": "The student has already answered 'Oh, it's C' so the problem is resolved; this reply ignores that and re-poses the question as if the student hasn't answered yet."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said it's C. Can you explain why you chose that number?",
+      "reason": "Acknowledges the student's answer and asks for justification, appropriately increasing cognitive demand by requiring explanation of the reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "C is correct! Can you explain why adding 100 to 452 gives us that answer?",
+      "reason": "Confirms the answer and asks the student to explain the digit-level reasoning, which is appropriate follow-up rigor after the student arrives at the correct answer."
+    }
+  ],
+  "trace_sha256": "66d9faee2b6fc2a9a08fb8b6ddc754b2c95b53e0fa4f893737b64f333b5537dd"
+}

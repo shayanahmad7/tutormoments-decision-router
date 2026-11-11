@@ -1,0 +1,45 @@
+{
+  "case_index": 382,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number comes right after 60 when counting by fives?",
+      "reason": "The tutor reminds the student of the previous correct numbers and then asks a guiding question to help them identify the next number in the sequence, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got from sixty to seventy?",
+      "reason": "The tutor identifies the student's error and asks them to explain their reasoning, which promotes rigor by requiring justification. This is also scaffolding as it helps the student identify their own mistake."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": true,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Seventy. Yep, that's right.",
+      "reason": "The student incorrectly stated 'Sixty plus five, seventy.' The tutor affirms this incorrect answer, which is a mathematical error and overhelp as it validates a mistake."
+    }
+  ],
+  "trace_sha256": "13353a914571cd371226122ba28b56c93d3f99a97f13e570068eac366753a938"
+}

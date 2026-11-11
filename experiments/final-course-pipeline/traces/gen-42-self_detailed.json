@@ -1,0 +1,1116 @@
+{
+  "tag": "gen-42-self_detailed",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [PROBLEM_CHANGE: p1 - 'Goals' (start)] The whiteboard is initially black, then loads a page with the title \"What are the goal(s) you can work towards this semester?\"\nTurn 1. TUTOR: [PAUSE: 12 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor's video feed disappears and a notification \"Diane has left\" appears on the screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The student's video feed disappears and a notification \"Kayla has left\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 8 seconds]\nTurn 1. STUDENT: All right. You can go ahead and make it big.\nTurn 2. STUDENT: And then you just hit exit, and then you go to this one. Bye. All right.\nTurn 3. STUDENT: All right.\nTurn 4. STUDENT: So you can make it big right there. Bye.\nTurn 5. TUTOR: [PAUSE: 24 seconds]\nTurn 5. TUTOR: [PAUSE: 18 seconds] The tutor joins the session. The screen layout changes to show the tutor's and student's video feeds next to the whiteboard.\nTurn 5. TUTOR: Hello?\nTurn 6. STUDENT: Hi.\nTurn 7. TUTOR: Hi, Kayla. How's your weekend?\nTurn 8. STUDENT: What?\nTurn 9. TUTOR: How was your weekend?\nTurn 10. STUDENT: It was good.\nTurn 11. TUTOR: Nice.\nTurn 12. TUTOR: [PROBLEM_CHANGE: p2 - '2143 ÷ 4' (start)] Tutor navigates to a new whiteboard. The problem is \"What is the remainder when you work out the answer to this division? 2143 ÷ 4\". Multiple choice options are A: 3, B: 1, C: 3/4, D: 0.\nTurn 12. TUTOR: Um, let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it? Let's see if you still remember.\nTurn 13. STUDENT: All right.\nTurn 14. TUTOR: Do you wanna write on the whiteboard or?\nTurn 15. TUTOR: [PAUSE: 7 seconds]\nTurn 15. STUDENT: I'll write on the whiteboard.\nTurn 16. TUTOR: Okay.\nTurn 17. TUTOR: [PAUSE: 13 seconds]\nTurn 17. TUTOR: [SCREEN_INTERACTION: student - writing] Student uses the pen tool to write out the long division problem \"2143 ÷ 4\". He writes 4 outside the division symbol and 2143 inside. He then solves the problem:\n1. Writes 5 above the 1 in 2143.\n2. Writes 20 below 21.\n3. Subtracts to get 1.\n4. Brings down the 4 to make 14.\n5. Writes 3 above the 4 in 2143.\n6. Writes 12 below 14.\n7. Subtracts to get 2.\n8. Brings down the 3 to make 23.\n9. Writes 5 above the 3 in 2143.\n10. Writes 20 below 23.\n11. Subtracts to get a remainder of 3.\nTurn 17. STUDENT: The remainder's three.\nTurn 18. TUTOR: Yes, good job.\nTurn 19. TUTOR: [PROBLEM_CHANGE: p3 - 'Perimeter and Area' (start)] Tutor navigates to a new whiteboard showing a worksheet with various perimeter and area problems that were worked on previously.\nTutor clears the current whiteboard and pastes a new problem.\nTurn 19. TUTOR: Okay, thank you. I have a hundred percent you get it. Um, uh, I think I assigned you four quizzes last week, right?\nTurn 20. STUDENT: Yeah.\nTurn 21. TUTOR: And for the last one, I think you were struggling a little bit.\nTurn 22. STUDENT: Yeah.\nTurn 23. TUTOR: Okay, let's see. Let me put it on this whiteboard.\nTurn 24. TUTOR: [PROBLEM_CHANGE: p4 - 'Pizza Problem' (start)] The new problem shows a picture of a rectangular pizza with dimensions 26cm by 45cm. The text reads: \"Helena is making pizzas with the dimensions shown. How many pizzas of this size will she need to make for 15 people if each person will eat approximately 300cm² of pizza?\". The options are A: 4500, B: 32, C: 3, D: 4.\nTurn 24. TUTOR: It's this one, right? This question.\nTurn 25. STUDENT: Yeah.\nTurn 26. TUTOR: Can you tell me why you thought the answer was B?\nTurn 27. STUDENT: B? Um...\nTurn 28. TUTOR: Mhm.\nTurn 29. STUDENT: I forgot what I did. Um...\nTurn 30. TUTOR: That's okay. Let's read it together. How about that?\nTurn 31. TUTOR: [PAUSE: 3 seconds] Tutor writes \"15 x 300\" in red on the whiteboard.\nTurn 31. TUTOR: You wanna read the question?\nTurn 32. STUDENT: Yeah. Helena is making pizzas with her with the dimensions shown. How many pizzas of the size will she need to make for 15 people if each person will eat approximately 300 and six 300 centimeters of pizza?\nTurn 33. TUTOR: So to find the number of pizzas, right, we first work out the amount of pizza we need to feed 15 people. So,\nTurn 34. TUTOR: so it's going to be, each person gets 300, right?\nTurn 35. STUDENT: Yeah.\nTurn 36. TUTOR: Do you agree?\nTurn 37. STUDENT: Yeah.\nTurn 38. TUTOR: Okay. So that's going to be 15 times 300, right?\nTurn 39. STUDENT: Yeah.\nTurn 40. TUTOR: [PAUSE: 5 seconds] Tutor adds an equals sign after \"15 x 300\".\nTurn 40. TUTOR: So, what is 15 times 300?\nTurn 41. TUTOR: [PAUSE: 40 seconds] Tutor writes \"4,500\" after the equals sign.\nTutor writes \"26 x 45 =\" below the previous calculation.\nTurn 41. STUDENT: 4,500?\nTurn 42. TUTOR: Mhm. Correct. 4,500.\nTurn 43. TUTOR: So, next we have to find the area of the pizza. So this is a rectangle, right? So how do you calculate the area of a rectangle? Do you remember?\nTurn 44. STUDENT: Length times width.\nTurn 45. TUTOR: Mhm. So in this shape, what do we do?\nTurn 46. STUDENT: Twenty-six times 45.\nTurn 47. TUTOR: Yes, absolutely correct. So let's calculate that. How about that?\nTurn 48. TUTOR: [PAUSE: 3 seconds]\nTurn 48. TUTOR: Wanna calculate 26 times 45?\nTurn 49. STUDENT: Yeah.\nTurn 50. TUTOR: [PAUSE: 48 seconds]\nTurn 50. STUDENT: 117.\nTurn 51. TUTOR: [PAUSE: 2 seconds]\nTurn 51. TUTOR: You said 117?\nTurn 52. STUDENT: Yeah.\nTurn 53. TUTOR: Um, it's a little bit larger than that.\nTurn 54. TUTOR: [PAUSE: 69 seconds] Tutor scrolls down to a blank area on the whiteboard and writes a multiplication problem with 26 on top and x 45 below it.\nTurn 54. STUDENT: I'm not sure.\nTurn 55. TUTOR: It's okay. Let's do it together. Twenty-six times 45, right?\nTurn 56. STUDENT: Yeah.\nTurn 57. TUTOR: [SCREEN_INTERACTION: tutor - drawing] Tutor draws a red line below the multiplication problem \"26 x 45\".\nTurn 57. TUTOR: Can you show me what you did first?\nTurn 58. STUDENT: I did. You were very close.\nTurn 59. STUDENT: I did five times six.\nTurn 60. TUTOR: Okay.\nTurn 61. STUDENT: So that's thirty.\nTurn 62. TUTOR: [PAUSE: 2 seconds] Tutor writes a \"0\" below the line in the ones place and a small \"3\" above the \"2\" in \"26\".\nTurn 62. TUTOR: Uh, yes.\nTurn 63. TUTOR: [PAUSE: 2 seconds]\nTurn 63. TUTOR: Mm.\nTurn 64. TUTOR: [PAUSE: 1 second]\nTurn 64. TUTOR: Do you want to write on the whiteboard what you did so I can see which part you did wrong?\nTurn 65. STUDENT: Yeah.\nTurn 66. TUTOR: Okay.\nTurn 67. STUDENT: Okay.\nTurn 68. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes a \"3\" above the \"2\" in \"26\". Then, below the line, student writes \"130\".\nTurn 68. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes \"104\" below \"130\", draws a line underneath, and adds a plus sign to the left of \"104\".\nTurn 68. TUTOR: Mm.\nTurn 69. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes \"1170\" as the sum below the line.\nTutor draws a checkmark next to the \"1170\".\nTutor circles \"1170\".\nTurn 69. TUTOR: So, 1170, right?\nTurn 70. STUDENT: Yeah.\nTurn 71. TUTOR: That's correct.\nTurn 72. TUTOR: 'Cause just now you said 170 or like, was it 115?\nTurn 73. STUDENT: Oh.\nTurn 74. TUTOR: Yeah.\nTurn 75. TUTOR: [PAUSE: 1 second] Tutor writes \"32\" on the right side of the whiteboard.\nTurn 75. TUTOR: Um, let's just make sure and let's just like calculate another one just in case, okay?\nTurn 76. STUDENT: All right.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nFor this next reply, decide privately which of the following teaching policies fits the current learner evidence, then apply it. Use the current mathematical task and recent student work in the context of the full conversation. Agreement with a tutor-supplied answer is not proof of understanding. An independently corrected earlier error does not by itself justify more help.\nSCAFFOLDING: Provide targeted scaffolding now. Identify the specific unresolved obstacle in the student's current mathematical work. Offer only the smallest useful hint, representation, or clarification that makes the next step accessible. Use the learner's actual numbers and ideas when available. Leave the key calculation or inference for the student and invite one manageable next step. Do not give a full solution, stack several leading questions, repeat an explanation the learner already understands, or invent unseen worksheet details.\nRIGOR: Push for appropriate rigor now. Build on what the learner has actually demonstrated, not an answer the tutor supplied. Invite the student to justify a step, connect representations, check a claim, generalize, or take the next step independently. Choose one opportunity that fits the current problem. Do not give the reasoning before asking for it, turn the challenge into a sequence of tiny leading hints, or introduce unrelated difficulty. Keep the mathematical work with the learner; rigor is not simply saying why after every answer.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "fe3e78c7b30d12eb73b10ae219b153b23a563d294d145bdff7db5250df56bdac",
+  "reserve_usd": 0.0012684799999999998,
+  "started_utc": "2026-11-11T19:57:21Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "Okay, so we know each pizza has an area of 1170 cm² and we need a total of 4500 cm² of pizza. Now, how can we figure out how many pizzas Helena needs to make? What should we do with these two numbers?",
+  "first_answer_ms": 581.0002499999882,
+  "usage": {
+    "prompt_tokens": 3158,
+    "completion_tokens": 59,
+    "total_tokens": 3217,
+    "cost": 0.00026916,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00026916,
+      "upstream_inference_prompt_cost": 0.00025264,
+      "upstream_inference_completions_cost": 1.652e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Okay,",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " so w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e know",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " eac",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h p",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "izza ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "has",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "rea",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "of 1",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "170",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " cm² ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "an",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "d we n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "eed",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "o",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "tal",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "of ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "4500 c",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "m",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "² of",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "pizz",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a. N",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ow,",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " how ca",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n we",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " fig",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ure o",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ut how ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "many pi",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "zzas H",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ele",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "na ne",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ds to",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " make? ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Wha",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t s",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "hould",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " we do",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " wit",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h these ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "wo numbers?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427041-WCTaMirxEyvmNTVEuYlm",
+      "object": "chat.completion.chunk",
+      "created": 1794427041,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 3158,
+        "completion_tokens": 59,
+        "total_tokens": 3217,
+        "cost": 0.00026916,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00026916,
+          "upstream_inference_prompt_cost": 0.00025264,
+          "upstream_inference_completions_cost": 1.652e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.00026916,
+  "elapsed_ms": 3474.4367499999953
+}

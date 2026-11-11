@@ -1,0 +1,45 @@
+{
+  "case_index": 323,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you arrive at 32 centimeters for the perimeter of the T-shaped figure? Can you walk me through your steps?",
+      "reason": "The student has given an answer, and the tutor asks them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know how you arrived at your answer. What steps did you take to find the perimeter of this T-shaped figure?",
+      "reason": "The student has given an answer, and the tutor asks them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s look at the sides again. Starting from the top of the T, we have 8 cm, then two sides of 3 cm each going down. Then the bottom part has two sides of 3 cm each going out, and a final vertical side of 5 cm. Can you add up the lengths of all the sides you can see? What’s the total so far?",
+      "reason": "The tutor breaks down the problem by listing the visible side lengths and asks the student to sum them, providing scaffolding for finding the perimeter."
+    }
+  ],
+  "trace_sha256": "2463fc93c5d26654b6c84d5272089d025d207409e6031fa05eab547fbcca4a36"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 110,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit is in the ones place each time? What digit would you expect in the ones place of any number you say when counting in 10s?",
+      "reason": "The tutor is guiding the student to identify the pattern in the ones place when skip counting by 10s, which is a key concept for this problem. This is scaffolding. It also asks the student to articulate the pattern, which is rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is 789 not a number you would say when skip counting in 10s from 780?",
+      "reason": "The tutor asks the student to justify their correct answer, which promotes deeper understanding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What pattern do the numbers follow in the ones place? What about the tens and hundreds?",
+      "reason": "The tutor rephrases the question and then prompts the student to identify the patterns in the digits, which is a scaffolded approach to understanding skip counting by 10s. Asking about the patterns also adds rigor."
+    }
+  ],
+  "trace_sha256": "1cc0884dde3afc3a38c81adc23ec35866f2665436973518e96fb0c5c621b4d61"
+}

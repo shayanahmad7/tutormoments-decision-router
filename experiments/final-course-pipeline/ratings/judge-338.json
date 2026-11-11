@@ -1,0 +1,45 @@
+{
+  "case_index": 338,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You mentioned carrying a 4 — can you explain why that is?",
+      "reason": "The tutor asks the student to explain their reasoning for carrying the 4, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You wrote down the five and carried the four. That's correct. Now, what's nine times nine, and how does the carried four affect that?",
+      "reason": "The tutor confirms the student's correct step and then prompts them for the next step, including how to use the carried number."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is nine times five? That will give us the ones place. Then we'll take care of the next part.",
+      "reason": "The tutor prompts the student for the first step of the multiplication problem, focusing on the ones place."
+    }
+  ],
+  "trace_sha256": "fbcb5fd899d6d106c21b91d0d843340aebc74abdbd613fc48e64b98d7447f032"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 258,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that makes sense? What does dividing 80 by 4 tell us about the pink flowers?",
+      "reason": "The tutor asks the student to explain their reasoning for the answer, which promotes deeper understanding and justification. This is a good example of rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the first step to find that?",
+      "reason": "The tutor prompts the student for the next step in the calculation, which is a form of scaffolding. It helps the student recall the process without giving away the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you check if these numbers make sense together? What should the total of red, purple, and pink flowers add up to?",
+      "reason": "The tutor asks the student to check their work and consider the overall problem, which encourages critical thinking and self-correction. This is a good example of rigor."
+    }
+  ],
+  "trace_sha256": "2ded09b33071484efc7707741dc997a8538a85ee6cd42f5dc1829a4dc1e749fb"
+}

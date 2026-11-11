@@ -1,0 +1,45 @@
+{
+  "case_index": 346,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Where would 3/8 and 5/8 fall on the number line? Which one is greater, and why?",
+      "reason": "The tutor confirms the student's correct answer and then asks a new question that requires the student to apply the concept of comparing fractions on a number line, including placing the fractions and justifying the comparison. This provides scaffolding by guiding the student to use the number line and promotes rigor by asking for an explanation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What about 3/8 and 3/4? Which one is greater?",
+      "reason": "The tutor asks about 3/8 and 3/4, which was the *previous* problem the student already answered correctly. This shows a lack of attention to the current problem and the student's progress."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 8/8 is more than 7/8 on the number line?",
+      "reason": "The tutor asks the student to explain their reasoning for why 8/8 is greater than 7/8. This increases rigor by requiring justification of their answer, which is appropriate given the student's previous correct responses."
+    }
+  ],
+  "trace_sha256": "fe98e2e6e79a819c3c86316a571e4570863931fb5f79af7903c660094d5e9154"
+}

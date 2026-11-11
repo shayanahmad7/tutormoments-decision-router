@@ -1,0 +1,45 @@
+{
+  "case_index": 144,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you start by telling me what each digit represents? For example, what does the 4 stand for in this number?",
+      "reason": "The tutor asks the student to break down the number by place value, providing an example to guide them without giving away the answer. This scaffolds the process while maintaining student responsibility."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think it should be?",
+      "reason": "This is a generic prompt that asks the student for the answer without providing any specific guidance or scaffolding for the task of writing in expanded form."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "4,268 has 4 thousands, 2 hundreds, 6 tens, and 8 ones.",
+      "reason": "The tutor provides the breakdown of the number by place value, which is a key step the student could productively do themselves. This is overhelping as it gives too much information."
+    }
+  ],
+  "trace_sha256": "b8646d9b11d2690d3a5aaeed161536c9a571ac6a61c581adfe462de68776fc2a"
+}

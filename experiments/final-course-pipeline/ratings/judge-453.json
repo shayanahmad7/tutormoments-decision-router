@@ -1,0 +1,45 @@
+{
+  "case_index": 453,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why Katie is correct in saying we can't compare the decimals just by looking at the colored parts of the grids? What does the size of the grid have to do with comparing 0.8 and 0.59?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing Katie, which promotes rigor. The follow-up question about the size of the grid provides scaffolding by directing the student's attention to the core issue of the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s look at the numbers: 0.8 and 0.59. If we line them up by place value, what do we see? \n0.80 \n0.59 \n\nNow, if the grids were the same size, would 0.80 represent more color than 0.59? Why or why not?",
+      "reason": "The tutor provides scaffolding by lining up the decimals and adding a zero to 0.8, which is a helpful strategy for comparing decimals. The subsequent question about comparing the colored parts if the grids were the same size promotes rigor by asking the student to justify their reasoning and connect it back to the visual representation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the size of the grids matters when comparing 0.8 and 0.59?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. It directly addresses the core concept of the problem and encourages the student to articulate their understanding."
+    }
+  ],
+  "trace_sha256": "63c099375cb861a4c11b9d8daaa0e6a8bd1e20a2b48099e25f45733dd8d32de3"
+}

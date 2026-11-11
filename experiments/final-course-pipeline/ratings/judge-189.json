@@ -1,0 +1,45 @@
+{
+  "case_index": 189,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is there a number that divides evenly into both 13 and 24?",
+      "reason": "The tutor provides a direct hint about what to look for (a common divisor) to determine if the fraction can be reduced, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why no common factor exists for 13 and 24?",
+      "reason": "The tutor asks the student to justify their answer, which increases rigor by requiring explanation and deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you check if there's a common factor between 13 and 24?",
+      "reason": "The tutor asks the student to check for a common factor, which is a guided step (scaffolding) while also requiring the student to perform the check independently (rigor)."
+    }
+  ],
+  "trace_sha256": "f2f002425a6ca60ce9e8dbbe347cc8298ec6e7b7e7a97b257343d85768cbbf27"
+}

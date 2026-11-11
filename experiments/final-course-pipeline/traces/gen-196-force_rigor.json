@@ -1,0 +1,486 @@
+{
+  "tag": "gen-196-force_rigor",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A loading screen is shown, then a notification appears: \"Ms. Rivera has joined\".\nTurn 1. TUTOR: [PAUSE: 22 seconds] A loading spinner is visible on a dark screen.\nTurn 1. TUTOR: [SCREEN_UPDATE] The screen changes to a blank white whiteboard.\nTurn 1. TUTOR: [PAUSE: 279 seconds] The whiteboard remains blank. The tutor is visible in the webcam feed but does not speak.\nTurn 1. TUTOR: [PAUSE: 310 seconds] The screen shows a blank whiteboard. The tutor's camera is on, but she appears to be having a conversation with someone off-screen. The audio is muffled and not part of the tutoring session. No student is visible or audible.\nTurn 1. TUTOR: [PAUSE: 209 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears on the screen that says \"Keisha has joined\".\nTurn 1. TUTOR: [PAUSE: 3 seconds]\nTurn 1. TUTOR: [PAUSE: 3 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Keisha has left.\" The student's video feed disappears.\nTurn 1. TUTOR: [PAUSE: 2 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Ms. Rivera has left.\" The tutor's video feed disappears.\nTurn 1. TUTOR: [PAUSE: 4 seconds]\nTurn 1. STUDENT: Hi.\nTurn 2. TUTOR: Hi, Keisha. How are you?\nTurn 3. STUDENT: Good. How are you?\nTurn 4. TUTOR: [PAUSE: 2 seconds]\nTurn 4. TUTOR: I'm good too. I played cards last night. What did you do yesterday?\nTurn 5. STUDENT: Uh, I got new bed sheets.\nTurn 6. TUTOR: You got what?\nTurn 7. STUDENT: I got new bed sheets.\nTurn 8. TUTOR: Oh, you did. Oh, hang on just one minute. I've I've got to bring something.\nTurn 9. TUTOR: [PAUSE: 18 seconds]\nTurn 9. TUTOR: Okay. So, so you went shopping?\nTurn 10. STUDENT: Yes.\nTurn 11. TUTOR: Yeah. And then what kind of sheets did you get?\nTurn 12. STUDENT: Uh, new comforters.\nTurn 13. TUTOR: Oh.\nTurn 14. TUTOR: Uh, what color?\nTurn 15. STUDENT: It's uh a checker kind, but it's a reversible, so if you turn the side, it's a different um pattern.\nTurn 16. TUTOR: Oh, that's pretty cool. Okay.\nTurn 17. TUTOR: [PAUSE: 4 seconds]\nTurn 17. TUTOR: Today we're gonna um, just do a little practice with fractions and with three-digit multiplication. And then we're gonna see, um, what the program, what the learning platform has recommended for you.\nTurn 18. TUTOR: So let's start though with, uh, a game here. It's, but it's about fractions.\nTurn 19. TUTOR: [SCREEN_UPDATE] The screen changes from a blank whiteboard to a dark gray screen, then back to the whiteboard, and then to a black screen.\nThe screen shows the \"Fun Learning\" website homepage.\nTutor scrolls down the page, showing various math games.\nTurn 19. TUTOR: strips, it's called.\nTurn 20. STUDENT: Mmm.\nTurn 21. TUTOR: Oops, I just saw it and lost it.\nTurn 22. TUTOR: [SCREEN_INTERACTION: tutor - scrolling] Tutor scrolls up and down the page of math games, looking for a specific game.\nTurn 22. TUTOR: Maybe I have to do a search.\nTurn 23. TUTOR: [PAUSE: 7 seconds] Tutor continues scrolling through the games.\nTurn 23. TUTOR: Okay, let me\nTurn 24. TUTOR: [SCREEN_INTERACTION: tutor - scrolling] Tutor scrolls through different categories of games, including \"Language Arts,\" before returning to the \"Math Games\" section.\nTurn 24. TUTOR: Do you see any place where it says search?\nTurn 25. STUDENT: Um, no.\nTurn 26. TUTOR: I don't, I don't see it either.\nTurn 27. TUTOR: [SCREEN_INTERACTION: tutor - scrolling] Tutor scrolls up and down the \"Math Games\" page again.\nTurn 27. TUTOR: Okay, well it was there a minute ago. Let me go out and come back in and then go a little slower before I go searching.\nTurn 28. TUTOR: [PAUSE: 5 seconds]\nTurn 28. TUTOR: [SCREEN_UPDATE] Screen shows a \"POWERED BY STREAMLINK\" logo.\nTurn 28. TUTOR: [SCREEN_UPDATE] Screen returns to the Fun Learning homepage.\nTutor clicks on the \"Fraction Strips\" game icon.\nTurn 28. TUTOR: Okay, there it is right there. I don't know why it didn't show up.\nTurn 29. TUTOR: [PROBLEM_CHANGE: p1 - 'Fraction Strips' (start)] The screen changes to the \"Fraction Strips\" game. It shows a large empty rectangle divided into four horizontal sections. Below are fraction tiles (1, 1/2, 1/3, 1/4, 1/5, 1/6, 1/8, 1/10) and tool buttons.\nTurn 29. TUTOR: Okay, so let's see how you play this. Um, click and drag the strips onto the canvas. You can drag as many of each fraction as you like, or you could drag 'em back off.\nTurn 30. TUTOR: Um, so this is to see different combinations, um, different fractions that make up the whole one.\nTurn 31. TUTOR: So go ahead and drag some fractions up there.\nTurn 32. TUTOR: [PAUSE: 4 seconds] Student drags a blue 1/10 fraction tile into the top section of the large rectangle.\nTurn 32. TUTOR: Is it gonna let you?\nTurn 33. STUDENT: Um, yes.\nTurn 34. TUTOR: Okay.\nTurn 35. TUTOR: One tenth. Okay.\nTurn 36. TUTOR: So the idea is to make one a total.\nTurn 37. STUDENT: So like there's multiple squares in one?\nTurn 38. TUTOR: You can use whatever you like in each one.\nTurn 39. TUTOR: [PAUSE: 2 seconds]\nTurn 39. TUTOR: So whatever combination you can think of that'll make a total of one.\nTurn 40. TUTOR: [PAUSE: 9 seconds]\nTurn 40. TUTOR: You started with a tough one. But that's good. You like a challenge, I think.\nTurn 41. TUTOR: [PAUSE: 15 seconds]\nTurn 41. STUDENT: Do I put it in the same one I already\nTurn 42. TUTOR: Yes. Put it in the same one.\nTurn 43. TUTOR: [PAUSE: 6 seconds]\nTurn 43. TUTOR: Wouldn't it go in? Oh.\nTurn 44. TUTOR: [PAUSE: 30 seconds] The screen shows a fraction strip tool. A 1/6 fraction piece is in the top row of a four-row container.\nTurn 44. TUTOR: Did that work or is that a little too big?\nTurn 45. STUDENT: Um, I'm not sure.\nTurn 46. STUDENT: Am I supposed to-\nTurn 47. TUTOR: what happens when you when you put in, like, up on top put in a half and a half and let's see if it gives you some kind of message or if it just... No, I guess if it fits, it fits. Okay.\nTurn 48. TUTOR: [PAUSE: 19 seconds]\nTurn 48. TUTOR: Okay, good.\nTurn 49. TUTOR: [PAUSE: 14 seconds]\nTurn 49. TUTOR: Clear the canvas. Yes. Okay. See if you can get another combination.\nTurn 50. TUTOR: [PAUSE: 5 seconds]\nTurn 50. TUTOR: Okay, good.\nTurn 51. TUTOR: [PAUSE: 7 seconds]\nTurn 51. TUTOR: Super.\nTurn 52. TUTOR: [PAUSE: 9 seconds]\nTurn 52. TUTOR: Okay. Now, suppose I take one of those out. Besides one-fourth, what could you put in there to fill it up?\nTurn 53. TUTOR: Oh, good for you. Okay.\nTurn 54. TUTOR: How about thirds?\nTurn 55. TUTOR: [PAUSE: 10 seconds]\nTurn 55. TUTOR: Oops.\nTurn 56. TUTOR: [PAUSE: 16 seconds]\nTurn 56. TUTOR: what two fractions would you put together to make another third?\nTurn 57. STUDENT: Um.\nTurn 58. TUTOR: [PAUSE: 13 seconds]\nTurn 58. TUTOR: Yeah, there you go. So, I don't know, I don't know why they don't tell you when it's right or wrong, but that's that's good. No problem there. You got that worked out.\nTurn 59. TUTOR: [SCREEN_UPDATE] The tutor closes the browser tab with the fraction tool and the screen shows a blank whiteboard.\nTurn 59. TUTOR: Okay. Okay. How do we stop the browser? I always forget. Okay. Let's, um,\nTurn 60. TUTOR: [PROBLEM_CHANGE: p1 - reducing fractions (start)] The tutor opens a document on the whiteboard showing a list of fractions to be reduced. The problems are: 12/16, 3/15, 8/10, 2/4, 2/24, 14/21, 4/16, 6/9, 7/28, 20/25.\nTurn 60. TUTOR: this is just a little practice reducing fractions. So see if you can work those out.\nTurn 61. TUTOR: [PAUSE: 18 seconds] Tutor writes \"6/8\" next to \"12/16 =\". Then, the tutor writes \"3/4\" next to \"6/8\".\nTurn 61. TUTOR: You can write on the whiteboard if you want, or do you have a paper there you're writing on or just thinking about it?\nTurn 62. STUDENT: Yeah.\nTurn 63. STUDENT: Uh, could could you explain like how to do it? 'Cause I think I've done it before, but I forgot.\nTurn 64. TUTOR: Yes. So we're gonna simplify it. So, when you have, um, what am I trying to... even even numbers, so like twelve and sixteen are even, you could always reduce, divide each one by two, right? So you could reduce this first one to six eighths, but that's still not in the simplest form because you could reduce the six, divide again by two, and that would make it three fourths.\nTurn 65. TUTOR: And then there's no way you could reduce that any further. That's the simplest form. So if you happen to see that four will go into twelve and a sixteen evenly, four into twelve is three, four into sixteen is four.\nTurn 66. TUTOR: But you could always start by just using two when they're even numbers. Now, when they're odd numbers, um, so like let's look at at three fifteenths. Does three go into fifteen evenly?\nTurn 67. STUDENT: No.\nTurn 68. TUTOR: So fifteen can't be divided by three without a remainder?\nTurn 69. STUDENT: Yeah.\nTurn 70. TUTOR: It can be.\nTurn 71. STUDENT: It needs a remainder.\nTurn 72. TUTOR: So, so what would fifteen divided by three be?\nTurn 73. TUTOR: [PAUSE: 9 seconds]\nTurn 73. STUDENT: Four remainder two.\nTurn 74. TUTOR: [PAUSE: 5 seconds] Tutor writes a long division problem on the left side of the whiteboard: 3 into 15. Tutor then writes a 4 above the 5.\nTutor writes 12 below the 15 and draws a line underneath it.\nTurn 74. TUTOR: Okay, hang on. So let's, so fifteen divided by three. What's four times three?\nTurn 75. STUDENT: Twelve.\nTurn 76. TUTOR: Twelve. And then that would leave...\nTurn 77. STUDENT: Remainder two.\nTurn 78. TUTOR: [PAUSE: 3 seconds] Tutor writes a 3 below the line as the result of subtracting 12 from 15.\nTutor erases the previous long division work. Tutor rewrites the long division problem for 15 divided by 3. Tutor writes 5 above the 5 in 15, then writes 15 below the original 15.\nTurn 78. STUDENT: Two and two would be four. I mean three.\nTurn 79. TUTOR: Okay. So since it's three, it wouldn't be a remainder, would it? Because three over three is another one.\nTurn 80. STUDENT: Yes.\nTurn 81. TUTOR: So actually... fifteen divided by three... oops... fifteen divided by three would be five. Oops, let me put it up here. Because five times three is fifteen.\nTurn 82. STUDENT: Okay.\nTurn 83. TUTOR: Okay.\nTurn 84. TUTOR: Okay. So if if the denominator can be divided by the numerator evenly, that's the best way to do those. So, so what was the answer to the first one?\nTurn 85. STUDENT: Three-fourths.\nTurn 86. TUTOR: Three-fourths. Okay.\nTurn 87. TUTOR: [PAUSE: 4 seconds] Tutor writes \"3/4\" as the answer for 12/16. Tutor then writes \"1/5\" as the answer for 3/15.\nTurn 87. TUTOR: So... that's... I oops, I can't... I can't draw with my... And the answer to the second one would be one-fifth. So those are equivalent fractions. Three-fifteenths is exactly the same amount as one-fifth, but one-fifth is the simplest form of the fraction. It can't be reduced anymore.\nTurn 88. TUTOR: So, try eight-tenths.\nTurn 89. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes \"= 4/5\" next to the \"8/10\" problem.\nTurn 89. TUTOR: Okay. Four-fifths. So what did you divide by?\nTurn 90. STUDENT: I divided by two.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nPush for appropriate rigor now. Build on what the learner has actually demonstrated, not an answer the tutor supplied. Invite the student to justify a step, connect representations, check a claim, generalize, or take the next step independently. Choose one opportunity that fits the current problem. Do not give the reasoning before asking for it, turn the challenge into a sequence of tiny leading hints, or introduce unrelated difficulty. Keep the mathematical work with the learner; rigor is not simply saying why after every answer.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "608a8444d22bd5b8fc817b30e4f83516b81420559c7ff24ccd0527b11ad00b0c",
+  "reserve_usd": 0.0015335359999999998,
+  "started_utc": "2026-11-11T20:16:30Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "Great! Now, can you explain why dividing both the numerator and denominator by 2 gives you an equivalent fraction?",
+  "first_answer_ms": 769.1589159999808,
+  "usage": {
+    "prompt_tokens": 3961,
+    "completion_tokens": 24,
+    "total_tokens": 3985,
+    "cost": 0.0003236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003236,
+      "upstream_inference_prompt_cost": 0.00031688,
+      "upstream_inference_completions_cost": 6.72e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Grea",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t! N",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ow, can ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "you ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "explain w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "hy di",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "vidi",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ng both th",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e nu",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "merator and ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "den",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "o",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "m",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "inator",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " by ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "2 g",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ives you an",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " equivale",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t fraction?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428191-DgsgYLZ2dHP2EAJJuJS7",
+      "object": "chat.completion.chunk",
+      "created": 1794428191,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 3961,
+        "completion_tokens": 24,
+        "total_tokens": 3985,
+        "cost": 0.0003236,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0003236,
+          "upstream_inference_prompt_cost": 0.00031688,
+          "upstream_inference_completions_cost": 6.72e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.0003236,
+  "elapsed_ms": 1238.6862910000218
+}

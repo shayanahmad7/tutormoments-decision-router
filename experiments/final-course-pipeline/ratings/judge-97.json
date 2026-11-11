@@ -1,0 +1,45 @@
+{
+  "case_index": 97,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we start at 5 and move 9 units to the left, where do we land?",
+      "reason": "The tutor's previous reply included a number line explanation, so this candidate scaffolds the student's thinking by asking them to apply that explanation. It also promotes rigor by asking the student to explain their reasoning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why subtracting 9 from 5 gives -4?",
+      "reason": "This candidate promotes rigor by asking the student to explain their reasoning. It also asks a follow-up question that encourages deeper thinking about the concept of subtracting a larger number from a smaller one."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why subtracting 9 from 5 moves you 9 units left on the number line?",
+      "reason": "This candidate promotes rigor by asking the student to explain their reasoning, specifically referencing the number line explanation provided by the tutor in the previous turn."
+    }
+  ],
+  "trace_sha256": "c47f1f7843b6be0510328f294270cceb704b1ba4412bf3046ad96a2d78262769"
+}

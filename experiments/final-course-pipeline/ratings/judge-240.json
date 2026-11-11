@@ -1,0 +1,45 @@
+{
+  "case_index": 240,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If two times eight is the same as eight plus eight, how many fingers do you need to use to count that out? What does that give you?",
+      "reason": "The tutor is scaffolding by reminding the student of the repeated addition strategy and prompting them to use their fingers, which the student mentioned using previously."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If two times seven is fourteen, and we're counting by twos, what would the next number in the pattern be?",
+      "reason": "The tutor is scaffolding by connecting the current problem to the previous correct answer and the pattern of adding two, which they just discussed."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If two times seven is fourteen, and we’re counting by twos, what number comes right after fourteen when you count by twos? What would that make two times eight?",
+      "reason": "The tutor is scaffolding by reminding the student of the previous correct answer and the pattern of adding two, which was just discussed, to help them find the next answer."
+    }
+  ],
+  "trace_sha256": "506c9bc9f438a3d1222ec1c5b4c6f6a3794fccae8535ba2e0b0e96ef6309e60c"
+}

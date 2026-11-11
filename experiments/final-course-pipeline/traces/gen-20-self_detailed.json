@@ -1,0 +1,378 @@
+{
+  "tag": "gen-20-self_detailed",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [PAUSE: 42 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The student joins the call. Both the tutor and student have their webcams on.\nTutor shares their screen. The whiteboard shows a circle divided into four parts, with one part shaded in. To the left of the circle is the fraction 1/8.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears saying \"Kevin has left\". The tutor's video feed disappears.\nTurn 1. TUTOR: [PAUSE: 5 seconds]\nTurn 1. STUDENT: Hmm. Okay. Hmm.\nTurn 2. TUTOR: Hello.\nTurn 3. STUDENT: Hey. Shushut khmi.\nTurn 4. STUDENT: Hmm.\nTurn 5. TUTOR: Can you hear me?\nTurn 6. STUDENT: Hi `Kevin`, how are you?\nTurn 7. TUTOR: I'm good, how are you?\nTurn 8. STUDENT: Good, thank you.\nTurn 9. STUDENT: Okay. Es ants ches kpnelu verevits, menak es tabit het, okay? Inch verev e? Aysinqn labelneri het gorts chunes, srants es sghmes. Okay.\nTurn 10. STUDENT: Okay. Okay. Alagat sha. Yep, gorts chunes.\nTurn 11. TUTOR: How are you doing, `Lina`?\nTurn 12. STUDENT: Good.\nTurn 13. STUDENT: I made a craft.\nTurn 14. TUTOR: You made a craft?\nTurn 15. STUDENT: Heh.\nTurn 16. TUTOR: Whoa. Oh, it looks good.\nTurn 17. STUDENT: Heh.\nTurn 18. TUTOR: What is that supposed to be?\nTurn 19. STUDENT: Heh.\nTurn 20. STUDENT: Just thing but another color.\nTurn 21. TUTOR: Whoa.\nTurn 22. TUTOR: Is that a Labubu?\nTurn 23. STUDENT: Yeah.\nTurn 24. TUTOR: Pink one.\nTurn 25. STUDENT: Fake one.\nTurn 26. TUTOR: Fake one. I can't really tell.\nTurn 27. STUDENT: Too expensive.\nTurn 28. TUTOR: Yeah, Labubus are expensive.\nTurn 29. TUTOR: Okay.\nTurn 30. STUDENT: Ready.\nTurn 31. TUTOR: What was that?\nTurn 32. STUDENT: Ready.\nTurn 33. TUTOR: You're ready? All right.\nTurn 34. STUDENT: How was Portland?\nTurn 35. TUTOR: Portland is good. I saw the Hawthorne Bridge.\nTurn 36. STUDENT: What is now Hawthorne Bridge?\nTurn 37. TUTOR: You don't know the Hawthorne Bridge?\nTurn 38. TUTOR: It's a big red bridge.\nTurn 39. STUDENT: Oh, I know.\nTurn 40. TUTOR: Yeah, it's very cloudy in there. Portland.\nTurn 41. TUTOR: But sometimes it's sunny, but it's a lot of clouds.\nTurn 42. STUDENT: Oh.\nTurn 43. TUTOR: Okay. I will share my screen. Actually, first we will do the check-in activity.\nTurn 44. STUDENT: I remember that drawing.\nTurn 45. TUTOR: You remember this? The one-eighth.\nTurn 46. TUTOR: You wanna do more fractions today?\nTurn 47. STUDENT: I don't know.\nTurn 48. TUTOR: Don't know? All right, we'll figure it out.\nTurn 49. STUDENT: We'll do something interesting.\nTurn 50. TUTOR: Fractions are pretty interesting.\nTurn 51. STUDENT: No.\nTurn 52. TUTOR: [PAUSE: 16 seconds]\nTurn 52. TUTOR: [SCREEN_UPDATE] The screen changes to show the student's camera feed full screen.\nTutor shares their screen, which is black with a YouTube URL at the top: \"6OWVvTt6Bx7jErtgAXVCW\".\nTurn 52. TUTOR: Okay. Um, so you're feeling good today?\nTurn 53. STUDENT: Mhm.\nTurn 54. TUTOR: Do you have any goals you want to work on this week?\nTurn 55. STUDENT: Uh-uh. No.\nTurn 56. TUTOR: What about for math? Is there anything in particular you want to improve on this week?\nTurn 57. STUDENT: Uh-uh. No.\nTurn 58. TUTOR: Okay. Well, we can figure it out.\nTurn 59. STUDENT: Okay.\nTurn 60. TUTOR: Here, I'll share my screen now.\nTurn 61. TUTOR: Boom.\nTurn 62. STUDENT: Video.\nTurn 63. STUDENT: Huh?\nTurn 64. TUTOR: Why is it... Okay, there we go.\nTurn 65. TUTOR: [PAUSE: 9 seconds] Tutor's screen share shows a small window of their previous screen share, which has the fraction drawing.\nTurn 65. TUTOR: Okay. I'm trying to find something. Give me one second. In the meantime, you can draw on this.\nTurn 66. STUDENT: Like, yeah.\nTurn 67. TUTOR: [PAUSE: 47 seconds]\nTurn 67. TUTOR: Okay.\nTurn 68. TUTOR: We can start now.\nTurn 69. TUTOR: [PAUSE: 4 seconds]\nTurn 69. TUTOR: Okay.\nTurn 70. TUTOR: You can just do, I guess, more fractions today.\nTurn 71. STUDENT: No.\nTurn 72. TUTOR: No?\nTurn 73. TUTOR: [PAUSE: 2 seconds]\nTurn 73. STUDENT: Something something more interesting.\nTurn 74. TUTOR: Fractions are interesting.\nTurn 75. STUDENT: I promise you. Okay, then.\nTurn 76. TUTOR: Do you want something challenging, like interesting or\nTurn 77. STUDENT: Remember when I said you didn't do extreme math master problem?\nTurn 78. TUTOR: We'll do a fraction extreme problem.\nTurn 79. TUTOR: No. That one, that one's easier to make an extreme problem. With addition, you can do it easily because you're just adding numbers, but with fractions, it's more complicated.\nTurn 80. STUDENT: Oak.\nTurn 81. TUTOR: Oak.\nTurn 82. TUTOR: [PAUSE: 3 seconds]\nTurn 82. TUTOR: You do anything fun this weekend? Or last weekend?\nTurn 83. TUTOR: [SCREEN_UPDATE] The screen changes to a \"POWERED BY STREAMVIEW\" logo.\nThe screen changes to the the learning platform website homepage.\nTurn 83. TUTOR: Yeah, you did craft. And you got the, I guess, the boo boo.\nTurn 84. STUDENT: La fufu.\nTurn 85. TUTOR: Fufu.\nTurn 86. TUTOR: There's actually a lot of La Booboos in Denver.\nTurn 87. STUDENT: I did not know.\nTurn 88. TUTOR: Uh, okay. Grab your login.\nTurn 89. TUTOR: [PAUSE: 7 seconds]\nTurn 89. TUTOR: [SCREEN_INTERACTION: tutor - logging in] Tutor types a username \"<Username>\" and a password into the login fields on the the learning platform website and clicks \"Log in\".\nTurn 89. TUTOR: [SCREEN_UPDATE] The screen shows \"Signing you into the learning platform... Please wait...\"\nTurn 89. TUTOR: [SCREEN_UPDATE] The the learning platform dashboard loads with a \"Welcome to the learning platform Summer Club!\" pop-up. The tutor closes the pop-up.\nTurn 89. TUTOR: [SCREEN_INTERACTION: tutor - navigating website] Tutor clicks on the \"Topics\" tab.\nTurn 89. TUTOR: [SCREEN_UPDATE] The \"Topics\" page loads, displaying \"Welcome Lina J. Here is your next recommended topic.\" and a list of math topics.\nTurn 89. TUTOR: Okay.\nTurn 90. STUDENT: I think you're\nTurn 91. TUTOR: I think you're\nTurn 92. STUDENT: How we\nTurn 93. STUDENT: whole number.\nTurn 94. TUTOR: I think you're good with adding and subtracting.\nTurn 95. STUDENT: Mhm.\nTurn 96. TUTOR: You say so?\nTurn 97. STUDENT: Uh huh.\nTurn 98. TUTOR: Like a scale of one to ten, how confident are you with addition and subtraction?\nTurn 99. STUDENT: Each one?\nTurn 100. TUTOR: Just in general.\nTurn 101. STUDENT: Like adding and subtracting. Good.\nTurn 102. TUTOR: Good?\nTurn 103. TUTOR: Can you add like a thousand plus nine hundred fifty-eight?\nTurn 104. STUDENT: Huh?\nTurn 105. TUTOR: Can you add one thousand plus nine hundred fifty-eight?\nTurn 106. STUDENT: No. One two five. I didn't learn that. Wait.\nTurn 107. TUTOR: Okay, then we'll\nTurn 108. STUDENT: 1,000 minus what?\nTurn 109. TUTOR: 1,000 plus 958.\nTurn 110. STUDENT: 958. 9 5 8. No.\nTurn 111. TUTOR: No?\nTurn 112. STUDENT: Do you know or not know?\nTurn 113. TUTOR: No.\nTurn 114. TUTOR: Plus?\nTurn 115. STUDENT: 1 0 5 8.\nTurn 116. TUTOR: Not quite.\nTurn 117. STUDENT: I know.\nTurn 118. TUTOR: You're adding 958 to 1,000.\nTurn 119. STUDENT: Yes.\nTurn 120. TUTOR: Okay, how did you on the whiteboard?\nTurn 121. STUDENT: I add only.\nTurn 122. TUTOR: I'm not that good at that.\nTurn 123. TUTOR: That's okay. Show me how you did it on the whiteboard.\nTurn 124. STUDENT: What? Oh.\nTurn 125. STUDENT: What is this?\nTurn 126. TUTOR: Oh, die later.\nTurn 127. TUTOR: [SCREEN_INTERACTION: student - writing] Student writes \"1000\" on the whiteboard. Then writes a plus sign and \"58\" underneath it.\nTurn 127. STUDENT: It's slippery.\nTurn 128. TUTOR: [SCREEN_INTERACTION: student - writing] Student continues to write \"58\" under \"1000\".\nTutor switches the screen from the whiteboard to a shared browser tab showing a list of topics on an educational website. Tutor clicks on \"Start topic\" for \"Addition and subtraction within a 1000\".\nTurn 128. STUDENT: Done.\nTurn 129. TUTOR: Okay. So we're going to work on this.\nTurn 130. STUDENT: Yeah.\nTurn 131. TUTOR: So when you add, wait, let's um, we'll come back to this problem, but let's start the topic on the learning platform.\nTurn 132. TUTOR: [SCREEN_UPDATE] The screen loads the first problem. The title is \"Addition and subtraction within a 1000\". The problem is \"998 + 2 =\". The options are A: 9982, B: 2998, C: 100, D: 1000.\nTurn 132. TUTOR: So, can you do, can you do this problem?\nTurn 133. STUDENT: Uh-huh.\nTurn 134. TUTOR: [PAUSE: 21 seconds]\nTurn 134. TUTOR: [SCREEN_INTERACTION: student - selecting answer] Student clicks on option D, \"1000\", and then clicks the \"Check\" button.\nThe screen shows \"D is correct! Counting on 2 from 998 we get 999, 1000.\"\nStudent clicks the \"Next\" button.\nTurn 134. STUDENT: Yay.\nTurn 135. TUTOR: Okay, next problem.\nTurn 136. STUDENT: Next.\nTurn 137. TUTOR: [PROBLEM_CHANGE: p2 - 'What number should replace the star in this calculation?' (start)] The screen shows a new problem. The problem is \"What number should replace the star in this calculation?\". A subtraction problem is shown: 534 - 28 = 50*. The star is in the ones place of the answer. The options are A: 6, B: 4, C: 2, D: 3.\nTurn 137. STUDENT: Can I do it on paper?\nTurn 138. TUTOR: Yeah.\nTurn 139. STUDENT: 'Cause I think we need to regroup.\nTurn 140. TUTOR: [PAUSE: 32 seconds]\nTurn 140. STUDENT: Six?\nTurn 141. TUTOR: [PAUSE: 3 seconds]\nTurn 141. TUTOR: [SCREEN_INTERACTION: student - selecting answer] Student clicks on option A, \"6\", and then clicks the \"Check\" button.\nThe screen shows \"A is correct! In the units column, we cannot calculate 4 - 8, so we would need to borrow from the tens column. 1 ten is regrouped into 10 units. We then have 14 - 8 = 6 in the units column, so the star would be 6.\"\nStudent clicks the \"Next\" button.\nTurn 141. TUTOR: All right, okay.\nTurn 142. STUDENT: I knew we need to regroup.\nTurn 143. TUTOR: Yep.\nTurn 144. STUDENT: Next.\nTurn 145. TUTOR: [PROBLEM_CHANGE: p3 - '338 + 586 = 924' (start)] The screen shows a new problem. It states \"338 + 586 = 924\" and then asks \"So 924 - 586 = ?\". The options are A: 338, B: 586, C: 924, D: 1510.\nTurn 145. STUDENT: What?\nTurn 146. TUTOR: [PAUSE: 20 seconds]\nTurn 146. TUTOR: For this problem, you don't need to work out the math. You can solve it without having to write anything.\nTurn 147. STUDENT: Huh?\nTurn 148. TUTOR: So for this problem, right? You don't need to like do any math to get the answer, technically. There's a shortcut.\nTurn 149. STUDENT: Oh, I know how you do it.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nFor this next reply, decide privately which of the following teaching policies fits the current learner evidence, then apply it. Use the current mathematical task and recent student work in the context of the full conversation. Agreement with a tutor-supplied answer is not proof of understanding. An independently corrected earlier error does not by itself justify more help.\nSCAFFOLDING: Provide targeted scaffolding now. Identify the specific unresolved obstacle in the student's current mathematical work. Offer only the smallest useful hint, representation, or clarification that makes the next step accessible. Use the learner's actual numbers and ideas when available. Leave the key calculation or inference for the student and invite one manageable next step. Do not give a full solution, stack several leading questions, repeat an explanation the learner already understands, or invent unseen worksheet details.\nRIGOR: Push for appropriate rigor now. Build on what the learner has actually demonstrated, not an answer the tutor supplied. Invite the student to justify a step, connect representations, check a claim, generalize, or take the next step independently. Choose one opportunity that fits the current problem. Do not give the reasoning before asking for it, turn the challenge into a sequence of tiny leading hints, or introduce unrelated difficulty. Keep the mathematical work with the learner; rigor is not simply saying why after every answer.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "b6dacd8f40295862554422afc68f22b9e2ed3d4c7fe441e3b6f99e5151464784",
+  "reserve_usd": 0.00155744,
+  "started_utc": "2026-11-11T20:13:48Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "Can you explain how the first equation helps you figure out the second one?",
+  "first_answer_ms": 1218.6576670000022,
+  "usage": {
+    "prompt_tokens": 4196,
+    "completion_tokens": 16,
+    "total_tokens": 4212,
+    "cost": 0.00034016,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00034016,
+      "upstream_inference_prompt_cost": 0.00033568,
+      "upstream_inference_completions_cost": 4.48e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Can ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "you ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "expl",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ain ho",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "w the fir",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "st equ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "atio",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n helps",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " you",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " fig",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ure out",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " the",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "second one?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428029-r91okgCheaaK8wwqr585",
+      "object": "chat.completion.chunk",
+      "created": 1794428029,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 4196,
+        "completion_tokens": 16,
+        "total_tokens": 4212,
+        "cost": 0.00034016,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00034016,
+          "upstream_inference_prompt_cost": 0.00033568,
+          "upstream_inference_completions_cost": 4.48e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.00034016,
+  "elapsed_ms": 1460.149959000006
+}

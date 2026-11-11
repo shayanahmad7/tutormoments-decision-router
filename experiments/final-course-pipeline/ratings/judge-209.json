@@ -1,0 +1,45 @@
+{
+  "case_index": 209,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number do you need to divide 9450 by 450 to get?",
+      "reason": "The tutor asks a direct question about the missing number, which is a form of scaffolding. The hint to think about previous problems is also scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What pattern do you see?",
+      "reason": "The tutor asks a direct question about the answer and then provides a hint to look for a pattern, which is scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number did we multiply 450 by to get 9450?",
+      "reason": "The tutor asks a direct question about the answer and then provides a specific hint by rephrasing the multiplication, which is scaffolding."
+    }
+  ],
+  "trace_sha256": "f4d7fb50cf37257f9bd3b56754ebcd950671fd3776ab8d90bb3929c31ff41cb9"
+}

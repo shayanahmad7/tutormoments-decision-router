@@ -1,0 +1,45 @@
+{
+  "case_index": 218,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how to make 22 using the keys that are available?",
+      "reason": "The tutor is guiding the student to think about how to create the number 22, which is a necessary step for the student's proposed solution of 22x2, given that the number 4 is missing from the calculator."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What if you tried using 22 and 2 in a different way?",
+      "reason": "The tutor has already typed '22x2' into the calculator and gotten 44. The student has not yet had a chance to respond to this. The tutor is asking the student to try a different operation, but the current operation already worked. This is overhelping because the tutor is suggesting a different path when the current one was successful, and it's not context-fit because it ignores the tutor's own action of typing 22x2."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that works? How does multiplying 22 by 2 give you the target number?",
+      "reason": "The tutor asks the student to explain their reasoning for the correct answer, which promotes deeper understanding and justification, increasing rigor."
+    }
+  ],
+  "trace_sha256": "e97173c2ad71bed908acff9851d3f4e31c2b89febf71b624527ebb8c670fa435"
+}

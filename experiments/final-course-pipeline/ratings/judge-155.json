@@ -1,0 +1,45 @@
+{
+  "case_index": 155,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about the zero in the tens place? What does that mean?",
+      "reason": "The tutor is guiding the student to interpret the value of the digit in the tens place, which is a scaffolded step in understanding place value."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about the zero in the tens place? What does that tell us?",
+      "reason": "The tutor prompts the student to consider the meaning of the zero in the tens place, providing a scaffold for understanding place value."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what about the 0 in the middle? What place is that in, and what does it represent?",
+      "reason": "The tutor scaffolds the student's thinking by asking about both the place and the representation of the digit, building on the student's previous correct identification of the hundreds place."
+    }
+  ],
+  "trace_sha256": "074ae5f8d019b096bacc27342d928c6d488a7909060f77c47399936687095e7f"
+}

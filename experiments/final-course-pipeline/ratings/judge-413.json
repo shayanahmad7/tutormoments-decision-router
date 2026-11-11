@@ -1,0 +1,45 @@
+{
+  "case_index": 413,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you tell me why option C is the correct answer here?",
+      "reason": "The tutor asks the student to explain why option C is correct, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number do you get?",
+      "reason": "The tutor prompts the student to perform the calculation by moving the decimal point, which is a direct application of the rule just taught."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, looking at the options, which one matches 17%? Can you pick the correct one?",
+      "reason": "The tutor provides the correct conversion and then asks the student to identify the corresponding option, which is a direct and helpful prompt."
+    }
+  ],
+  "trace_sha256": "02917a3c81052b682c41c5a11a8f63c7125e2e1dfa1d72292646d0ad20484a36"
+}

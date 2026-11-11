@@ -1,0 +1,45 @@
+{
+  "case_index": 187,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number do you think we can divide both 20 and 25 by to simplify this fraction?",
+      "reason": "The tutor provides a hint by asking the student to identify the common divisor, which is a scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number can you divide both 20 and 25 by evenly?",
+      "reason": "The tutor provides a hint by asking the student to identify the common divisor, which is a scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you're thinking in terms of multiples of 5, what happens when you divide both the numerator and denominator by 5?",
+      "reason": "The tutor explicitly tells the student to think in terms of multiples of 5 and then asks what happens when dividing by 5, which is a strong scaffold."
+    }
+  ],
+  "trace_sha256": "be07b87b6a5a4302bb44c4c2b8cb5fc0f11b986e5db09a1aad3692c418fd754a"
+}

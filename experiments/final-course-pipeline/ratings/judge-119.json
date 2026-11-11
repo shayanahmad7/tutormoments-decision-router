@@ -1,0 +1,45 @@
+{
+  "case_index": 119,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which of these numbers is even: 13 or 14? How can you tell?",
+      "reason": "The tutor asks the student to apply the concept of even numbers to a new set of numbers, requiring them to explain their reasoning, which promotes deeper understanding and independent thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why answer choice B wouldn't show that 8 is even?",
+      "reason": "The student previously dismissed option B as \"too many\" without fully articulating why it didn't demonstrate evenness. This question prompts the student to elaborate on their reasoning, increasing rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should you look for?",
+      "reason": "The tutor provides a new problem and then offers a guiding question to help the student approach it, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "01ee8eca39eb228b31112a314fd6d86148cd48b1e88a961562b2d5cbbe5e5260"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 66,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If multiplying by 11 gives a negative number, what must be true about the missing number? Is it positive or negative? Why?",
+      "reason": "The tutor provides a hint by stating the known multiplication fact and then asks the student to consider the sign of the missing number, prompting them to think about the rules of multiplication with negative numbers. The 'why' question adds rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the answer when we multiply a positive number by a negative number? What do you think needs to change about 15 to make the result negative?",
+      "reason": "The tutor reminds the student of the core multiplication fact and then guides them to consider the effect of multiplying by a negative number, which is a relevant conceptual hint. The second question encourages the student to apply this understanding to the specific problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if we have a negative times a positive, like -2 times 3, what happens? Do we go to the left or the right on the number line? What does that tell us about the sign of the answer?",
+      "reason": "The tutor connects the problem to the number line concept they were just discussing, providing a concrete example to help the student understand the rules of multiplying with negative numbers. The questions encourage the student to think about the direction on the number line and its implication for the sign of the product."
+    }
+  ],
+  "trace_sha256": "3499b571c8bb86b39bb1858a6795bfc837b9335f5d0a4a3ce9a53ad86df8a208"
+}

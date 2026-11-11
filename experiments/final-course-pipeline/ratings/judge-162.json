@@ -1,0 +1,45 @@
+{
+  "case_index": 162,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's write that out: (6/7) × (6/7). Now, what do you think we do next to find the answer?",
+      "reason": "The tutor defines squaring and then writes out the multiplication problem, which is a helpful scaffold. They then ask the student to identify the next step, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, for (6/7)², you need to calculate 6/7 times 6/7. What do you think the next step is?",
+      "reason": "The tutor defines squaring and then writes out the multiplication problem, which is a helpful scaffold. They then ask the student to identify the next step, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, $(\\frac{6}{7})^2$ is the same as $\\frac{6}{7} \\times \\frac{6}{7}$. What do you think the next step is?",
+      "reason": "The tutor defines squaring and then writes out the multiplication problem using LaTeX, which is a helpful scaffold. They then ask the student to identify the next step, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "878e122a9910b818fbcfa7b1c4adfb115e298d0830c1156e23d8f162dffe029e"
+}

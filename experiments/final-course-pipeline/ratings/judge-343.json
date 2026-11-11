@@ -1,0 +1,45 @@
+{
+  "case_index": 343,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Look at the inner numbers on the protractor. Is it going to be on the left side or the right side of the 0-degree line?",
+      "reason": "The tutor is scaffolding the student's understanding of how to read the protractor by directing them to the inner numbers and asking them to consider the direction of the angle."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know your reasoning.",
+      "reason": "The tutor is asking the student to explain their thinking, which promotes deeper understanding and responsibility for their learning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the other line needs to be at the 80-degree mark. Can you find that on the protractor and draw the second line there?",
+      "reason": "The tutor tells the student exactly where the second line should be, which is an overhelp as the student could productively figure this out with less direct guidance."
+    }
+  ],
+  "trace_sha256": "56ba403a1bc564a48e5f157c82166136a53b86b69c5987d835241a7b5b140a8b"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 241,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you add those two 1s together? What does that represent in the total?",
+      "reason": "The tutor breaks down the addition problem by place value, guiding the student through the tens place after they correctly answered the ones place."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Tutor writes \"12\" above the \"2\" to form a vertical addition problem:  \n```\n  12  \n+ 12  \n```  \nTutor points to the ones place.  \nWhat's 2 + 2?",
+      "reason": "The tutor sets up the vertical addition problem visually and then prompts the student for the first step, which is appropriate scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's twelve plus twelve in total?",
+      "reason": "The student just answered 'four' for the ones place (2+2). Asking for the total 'twelve plus twelve' immediately after is overhelping, as it skips the step of adding the tens place, which the student is being guided through."
+    }
+  ],
+  "trace_sha256": "be05a7affa8f802e9987b32deb30bdd3036a8eb5c1528cd7151eaf1dd2a7473d"
+}

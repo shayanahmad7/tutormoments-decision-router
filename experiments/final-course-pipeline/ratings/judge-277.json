@@ -1,0 +1,45 @@
+{
+  "case_index": 277,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you figure out that 10 minus nine equals one? Can you explain your thinking?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and metacognition."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain how you figured out that nine is the answer?",
+      "reason": "The tutor asks the student to explain their thinking, which encourages justification and deeper engagement with the math."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain how you figured out that 10 minus 9 equals 1?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and metacognition."
+    }
+  ],
+  "trace_sha256": "564a3c23b4dd4e384da4e0cba5b9d101105c12499b95064249474bb9da6cc721"
+}

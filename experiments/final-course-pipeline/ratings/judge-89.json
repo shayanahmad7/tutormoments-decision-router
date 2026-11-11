@@ -1,0 +1,45 @@
+{
+  "case_index": 89,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how much more do we need to add to 872 to get to 910?",
+      "reason": "The tutor clarifies the student's error and then provides a hint to guide them toward the correct operation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we subtract 872 from 910, we can find the missing number. Can you try calculating 910 - 872?",
+      "reason": "The tutor directly tells the student the correct operation to use and asks them to perform it."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s the difference between 920 and 910?",
+      "reason": "The tutor clarifies the student's error and then provides a hint to guide them toward the correct operation."
+    }
+  ],
+  "trace_sha256": "1bc08d09a58e0d44eb9c2b3b15a7b0116566247413968c458c7eb1bc08a0cbf9"
+}

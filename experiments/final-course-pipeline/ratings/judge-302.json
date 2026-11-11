@@ -1,0 +1,45 @@
+{
+  "case_index": 302,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you get twelve? Let's think through it step by step. We know the area is 132m² and the length is 22m. What do we need to do to find the height?",
+      "reason": "The tutor asks the student to explain their answer, then provides the known values from the problem and asks what operation is needed to find the height. This is a good scaffold to guide the student through the problem-solving process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Yeah, twelve? Okay, let's see. She has enough paint to cover 132 square meters, and the length of the wall is 22 meters. So how would you find the height? What's the relationship between area, length, and height?",
+      "reason": "The tutor acknowledges the student's answer, then restates the given information from the problem. They then prompt the student to recall the relationship between area, length, and height, which is a helpful scaffold for solving the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the formula for the area of a rectangle, and how can you use it to find the height if you know the area and the length?",
+      "reason": "The tutor asks the student to recall the formula for the area of a rectangle, which is a good way to prompt them to use their prior knowledge. They then ask how that formula can be applied to find the height, which adds rigor by requiring the student to connect the formula to the specific problem."
+    }
+  ],
+  "trace_sha256": "7800f8d2cee5a1fc15aab95ffaea96cdc954633e9f3de1983f549ef10932519f"
+}

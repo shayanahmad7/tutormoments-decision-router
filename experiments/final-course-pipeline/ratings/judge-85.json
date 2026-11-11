@@ -1,0 +1,45 @@
+{
+  "case_index": 85,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about how the answers change as the numbers get bigger? Can you use that to fill in the rest of the boxes?",
+      "reason": "The tutor asks the student to identify a pattern and then apply it to solve the remaining problems, which is a good way to encourage independent thinking and problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you know that?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and justification of their answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What pattern do you notice in the answers for these addition problems? How might that help you figure out the next one?",
+      "reason": "The tutor prompts the student to identify a pattern and then consider how that pattern can be used to solve subsequent problems, which is a form of scaffolding that also encourages rigor."
+    }
+  ],
+  "trace_sha256": "1637304a96f07e0ff20c3c3c5f1b13a9e83c91bbfdaedbbd61f521275f5df668"
+}

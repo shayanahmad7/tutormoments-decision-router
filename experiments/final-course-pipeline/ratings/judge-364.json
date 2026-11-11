@@ -1,0 +1,45 @@
+{
+  "case_index": 364,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 34 minus 10? Then subtract 9 more. What do you get?",
+      "reason": "The tutor breaks down the subtraction into two simpler steps, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If 34 minus 19 is supposed to be 15, then 19 plus 15 should equal 34. But 19 + 15 = 34? What is 19 + 15?",
+      "reason": "The tutor suggests using the inverse operation (addition) to check the subtraction, which is a helpful strategy for the student."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But how can you use that to figure out the rule for the table? What would you need to do to the input to get the output each time?",
+      "reason": "The tutor prompts the student to connect the subtraction to the overall goal of finding the rule for the table, increasing cognitive demand."
+    }
+  ],
+  "trace_sha256": "16acacc22b374460b9f3b4d0cab37a9d0c8ebb4607a70f81a16c3d08a3ead875"
+}

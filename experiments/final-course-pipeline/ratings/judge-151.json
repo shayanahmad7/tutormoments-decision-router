@@ -1,0 +1,45 @@
+{
+  "case_index": 151,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you find the shape on the number line that’s closest to zero but still negative? What shape is at that point?",
+      "reason": "The tutor provides a clear hint by directing the student to a specific location on the number line and asking them to identify the shape there, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose that shape and how you know it matches -1/4 on the number line?",
+      "reason": "The tutor asks the student to explain their reasoning and justify their choice, which increases cognitive demand and promotes deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the number you chose for -1/4 is the correct one? How does its position on the number line help you decide?",
+      "reason": "The tutor asks the student to explain their reasoning and connect their choice to the number line, which promotes justification and deeper understanding."
+    }
+  ],
+  "trace_sha256": "4de5362451f7075d67835b193a4d92e517532afcd5275ea0c53a3999eb27c886"
+}

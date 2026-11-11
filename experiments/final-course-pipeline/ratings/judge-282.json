@@ -1,0 +1,45 @@
+{
+  "case_index": 282,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's go back to the rectangles. If I have one half of the whole rectangle, and you have three eighths, who has more? Why?",
+      "reason": "The tutor brings the student back to the visual representation, which is a good scaffold, and then asks 'Why?' which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if I have one whole bag of Skittles and you have three individual Skittles, who has more? Why?",
+      "reason": "The tutor asks 'Why?' which promotes rigor by asking the student to justify their answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, who has more Skittles — three individual Skittles or one whole bag? Why?",
+      "reason": "The tutor asks 'Why?' which promotes rigor by asking the student to justify their answer."
+    }
+  ],
+  "trace_sha256": "ccadfa58a95482e84ca614f9a0901d30a2fcdf9061ee13dac8185f3c4af9a5fd"
+}

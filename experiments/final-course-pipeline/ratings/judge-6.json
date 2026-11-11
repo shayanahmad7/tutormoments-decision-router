@@ -1,0 +1,45 @@
+{
+  "case_index": 6,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try moving them in a way that makes sense?",
+      "reason": "The tutor provides a hint about moving digits, which is a common strategy for multiplying by powers of 10. This is a specific and helpful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that happens?",
+      "reason": "The tutor asks the student to explain the 'why' behind the pattern, which promotes deeper understanding and justification, adding rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a pattern or rule that helps you figure out the answer?",
+      "reason": "The tutor prompts the student to identify a pattern or rule, which is a good scaffold for this type of problem and encourages the student to articulate their understanding, adding rigor."
+    }
+  ],
+  "trace_sha256": "492057a545e4219e1418c47232c5ddf817a3d128befec0a527d76d69fc0ce9d0"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 303,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the first step to figure out how many each child gets?",
+      "reason": "The tutor asks for the first step in the division problem, which is a scaffold to guide the student through the calculation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s try one more problem like that. Here’s the next one: ... Take a moment to think it through. What’s the first step?",
+      "reason": "The tutor provides a new, similar problem, which encourages transfer of learning (rigor). They also scaffold by asking for the first step, similar to the previous problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would figure out how many sweets each child gets?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes justification and deeper understanding (rigor)."
+    }
+  ],
+  "trace_sha256": "1501103ea940ff854009040b0ff64c4f322935e5cf1c0a8aa9177cbd168f7e54"
+}

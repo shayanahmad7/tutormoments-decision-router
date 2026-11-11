@@ -1,0 +1,45 @@
+{
+  "case_index": 462,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start by comparing the digits in the hundreds place.",
+      "reason": "The tutor provides a specific hint to compare the hundreds place, which is a helpful first step for comparing three-digit numbers."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is 599 less than 801? What part of the numbers helps you decide?",
+      "reason": "The tutor asks the student to justify their answer and identify the relevant part of the numbers, promoting deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 599 is less than 801? What part of the numbers helps you decide?",
+      "reason": "The tutor asks the student to explain their reasoning and identify the key numerical feature, which encourages justification and critical thinking."
+    }
+  ],
+  "trace_sha256": "f9a957666602635bcfe34c00e6a1c86a74dc092625086ecc602290313cdeb49f"
+}

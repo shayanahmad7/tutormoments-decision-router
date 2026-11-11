@@ -1,0 +1,45 @@
+{
+  "case_index": 512,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why that symbol is the right choice? What part of the numbers helps you decide?",
+      "reason": "The tutor asks the student to explain their reasoning for a correct answer, which promotes deeper understanding and justification. This is a good example of rigor. The question is targeted to the specific problem the student just completed."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the hundreds place first. What do you notice?",
+      "reason": "The tutor provides a specific hint by directing the student to look at the hundreds place, which is a helpful scaffold for comparing three-digit numbers. This is a good example of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that's true just by looking at the digits? What part of the number tells you for sure it's smaller?",
+      "reason": "The tutor asks the student to explain their reasoning for a previously correct answer, which encourages justification and deeper understanding. This is a good example of rigor. The question is targeted to a specific problem the student completed earlier in the session."
+    }
+  ],
+  "trace_sha256": "8f275ad6a24f4ba3f767ca103c75982494f28bada1ef3dc9c9021f19100a0212"
+}

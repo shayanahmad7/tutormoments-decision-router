@@ -1,0 +1,45 @@
+{
+  "case_index": 31,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have the fraction 1/2, what is one way you could show an equivalent fraction using a drawing or a model?",
+      "reason": "The tutor introduces the topic of equivalent fractions and asks the student to represent 1/2 and an equivalent fraction using a drawing or model, which is appropriate for the stated topic."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "If you have 3 pizzas and each pizza is cut into 4 equal slices, how many total slices do you have?",
+      "reason": "The tutor introduces a multiplication problem, which is not aligned with the stated topic of 'Represent equivalent fractions'."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you draw a picture or model to show why 1/2 is the same as 2/4? What does it mean for two fractions to be equivalent?",
+      "reason": "The tutor directly addresses the topic of equivalent fractions by asking the student to model 1/2 and 2/4 and then asks a conceptual question about the meaning of equivalent fractions, which is appropriate for the stated topic."
+    }
+  ],
+  "trace_sha256": "df220361ad7ffd34648fb8551d495c6fa457a5d0abe6faa3e2fa2835a1117512"
+}

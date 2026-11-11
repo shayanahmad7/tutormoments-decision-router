@@ -1,0 +1,45 @@
+{
+  "case_index": 71,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "which vertical line the star is being reflected in?",
+      "reason": "The tutor correctly identifies the topic and then asks a guiding question to help the student begin the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain what a reflection means in math terms?",
+      "reason": "The tutor asks the student to define a key mathematical concept, which promotes deeper understanding and responsibility for their learning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain what a reflection means in math?",
+      "reason": "The tutor asks the student to define a key mathematical concept, which promotes deeper understanding and responsibility for their learning."
+    }
+  ],
+  "trace_sha256": "e553e4a3c6cab7a9a8b037c0172ff5061aa0f943f1b9b3cb256b15ba28ed84c4"
+}

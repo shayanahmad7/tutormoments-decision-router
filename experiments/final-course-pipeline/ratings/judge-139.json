@@ -1,0 +1,45 @@
+{
+  "case_index": 139,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a time when you felt anxious or seen someone else feel anxious? What does that feeling involve?",
+      "reason": "The tutor asks the student to recall a personal experience or observation related to the word 'anxious,' which is a form of scaffolding. The follow-up question, 'What does that feeling involve?', encourages the student to articulate the meaning in their own words, promoting rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try to explain what \"anxious\" means in your own words?",
+      "reason": "This question directly asks the student to define the word, which is a good way to encourage them to retrieve and articulate their understanding, thus promoting rigor. It does not provide any additional support or hints, so it is not scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a time when you felt anxious? What was that feeling like?",
+      "reason": "Asking the student to recall a personal experience is a form of scaffolding, as it helps them connect the word to a concrete situation. The follow-up question, 'What was that feeling like?', encourages them to describe the emotion, which promotes rigor by asking for a deeper explanation."
+    }
+  ],
+  "trace_sha256": "cedafc61a8c0e42cbde24fcacf47c268cfeccac083ea8c7fc32b5443a6d0062f"
+}

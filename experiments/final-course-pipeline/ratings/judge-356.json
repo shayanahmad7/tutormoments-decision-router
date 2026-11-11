@@ -1,0 +1,45 @@
+{
+  "case_index": 356,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about the size of each slice when there are more slices (like 8) versus fewer slices (like 6)?",
+      "reason": "The tutor asks the student to consider the visual representation of the fractions and guides them to think about the size of the individual slices, which is a key concept for comparing fractions with the same numerator but different denominators. This scaffolds the student's thinking while still requiring them to articulate the reasoning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think 5/6 is greater than 5/8? What about the size of the pieces or how many are shaded makes that true?",
+      "reason": "The tutor asks the student to justify their answer and specifically prompts them to consider the 'size of the pieces or how many are shaded,' which directly relates to the visual models provided and the concept of comparing fractions. This promotes rigor by asking for an explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think 5/6 is greater than 5/8? Can you explain how the size of the pieces affects the comparison?",
+      "reason": "The tutor asks the student to explain their reasoning for comparing the fractions, specifically prompting them to consider 'how the size of the pieces affects the comparison.' This encourages the student to articulate their understanding of fraction comparison, promoting rigor."
+    }
+  ],
+  "trace_sha256": "b8d6768a49c4954859ab9187a035dfad2fc4fbfd06ba14166ac77bebd3f3031a"
+}

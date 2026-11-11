@@ -1,0 +1,45 @@
+{
+  "case_index": 296,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the next step?",
+      "reason": "The tutor asks for the next step, which is a form of scaffolding to guide the student without giving the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got your answer?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. It also provides scaffolding by restating the relevant information."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many does that leave her with?",
+      "reason": "The tutor restates the relevant information and asks a direct question to prompt the student for the final calculation, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "bff3142a3bcb06076f2039cc1813a8d6b8d5ce0dbd58e2e2556139c92c893b30"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 374,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the remainder when you subtract 6 from 7? That will help us move to the next digit.",
+      "reason": "The tutor asks a direct question about the next step in the long division process, which is to find the remainder after the subtraction the student just performed. This is a guided substep."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the remainder after dividing seven by six, and what do we do next?",
+      "reason": "The tutor asks for the remainder and then immediately asks for the next step, providing a guided substep for the student."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the remainder after subtracting 6 from 7?",
+      "reason": "The tutor asks a direct question about the remainder, which is the immediate next step in the long division problem. This is a guided substep."
+    }
+  ],
+  "trace_sha256": "abbd5e55c6f44554414d660355228ae3938305556de14ef3fae11e80f36a3f44"
+}

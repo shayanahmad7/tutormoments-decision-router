@@ -1,0 +1,45 @@
+{
+  "case_index": 254,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why adding those three numbers gives the total amount spilled?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got that total? Let me see if your steps make sense.",
+      "reason": "The tutor asks the student to explain their steps, which encourages justification and critical thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "First, add 12 and 16. What is 12 + 16?",
+      "reason": "The tutor breaks down the addition problem into smaller, more manageable steps, providing scaffolding for the student."
+    }
+  ],
+  "trace_sha256": "753d2d1ecebcecace4574c7b9b54165306aa2dd11d81a31214c83feec4c71735"
+}

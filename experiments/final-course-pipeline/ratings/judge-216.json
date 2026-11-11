@@ -1,0 +1,45 @@
+{
+  "case_index": 216,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of another way to make 44 using the keys that are available on the broken calculator?",
+      "reason": "The tutor acknowledges the student's correct answer and then prompts them to find another solution, which encourages further problem-solving and critical thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose to start with 33?",
+      "reason": "The tutor asks the student to explain their reasoning, promoting deeper understanding and justification of their mathematical choices."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how to type 33 and 10 using the numbers that are available on the broken calculator?",
+      "reason": "The tutor guides the student to consider the constraints of the 'broken calculator' (missing the number 4), which is a key aspect of the game, making the next step more accessible."
+    }
+  ],
+  "trace_sha256": "3f550bb53daa6a15f8d32a168ad3dbcfc564cb565cb1fe00535f257372590668"
+}

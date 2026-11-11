@@ -1,0 +1,45 @@
+{
+  "case_index": 270,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "A prime factor is a factor that is also a prime number. So, is 9 a prime number? Why or why not? What about 2?",
+      "reason": "The tutor provides a definition of a prime factor and then asks the student to apply that definition to the numbers in the problem, prompting for justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The number in question is 18, not 19. ... Can you explain why 2 is or isn't a prime factor of 18? And what about 9? What does it mean for a number to be a prime factor?",
+      "reason": "The tutor corrects the student's misreading of the number (18 vs 19) and then prompts the student to explain their reasoning for both numbers, asking for the definition of a prime factor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The question is about prime factors of 18, not 19. ... A prime factor is a factor that is also a prime number. A prime number is a number greater than 1 that has no positive divisors other than 1 and itself. So, is 2 a prime number? Is 9 a prime number? What does that tell you about who is correct?",
+      "reason": "The tutor corrects the student's misreading of the number, provides definitions for both 'prime factor' and 'prime number,' and then asks the student to apply these definitions to the problem, promoting deeper understanding and independent reasoning."
+    }
+  ],
+  "trace_sha256": "9e566b3744e7555aaf8c3388233351787dfa241db33ad7315c7ab882650f1de3"
+}

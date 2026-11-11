@@ -1,0 +1,45 @@
+{
+  "case_index": 511,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the largest two-digit number you can make using the digits 9 and 6? Is that number even? Why or why not?",
+      "reason": "The tutor asks the student to construct the largest two-digit number from the given digits, then asks if it's even and why, which encourages the student to think about the properties of even numbers and apply them to the number they created."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is 599 less than 801? What part of the numbers tells you that?",
+      "reason": "The tutor asks the student to explain their reasoning for why 599 is less than 801, prompting them to articulate their understanding of comparing three-digit numbers."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Less than, right? Because 599 is less than 801. Let me know when you're ready to move on.",
+      "reason": "The tutor confirms the answer and provides the reasoning without giving the student an opportunity to explain their own thinking, which is overhelping."
+    }
+  ],
+  "trace_sha256": "95e678dfa94c724abf90858577745a8adb390cb8093e8ddf73dac0583bcddabc"
+}

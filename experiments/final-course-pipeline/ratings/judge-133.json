@@ -1,0 +1,45 @@
+{
+  "case_index": 133,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is 13 odd or even? How do you know?",
+      "reason": "The tutor asks the student to apply the definition of odd/even to a specific number, which is a good scaffold. The 'how do you know' part adds a small amount of rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which digit do we check to see if it’s odd or even? The 1 or the 3? Why?",
+      "reason": "This candidate directly addresses the tutor's previous question about which digit to check for multi-digit numbers, providing a specific example (13) and asking for justification ('Why?'), which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which digit do we check to see if it's odd or even? The 1 or the 3? Why?",
+      "reason": "This candidate directly addresses the tutor's previous question about which digit to check for multi-digit numbers, providing a specific example (13) and asking for justification ('Why?'), which promotes rigor."
+    }
+  ],
+  "trace_sha256": "e5b88757097a46fdf948c3701f4ce67e5792d49c3e5345f5dc7a8cfd9b844fbb"
+}

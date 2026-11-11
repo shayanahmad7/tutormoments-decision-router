@@ -1,0 +1,45 @@
+{
+  "case_index": 140,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total when you add these together?",
+      "reason": "The tutor has already broken down the expanded form into individual values. This prompt asks the student to combine them, which is the next logical step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total of these?",
+      "reason": "The tutor has already broken down the expanded form into individual values. This prompt asks the student to combine them, which is the next logical step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you add those together?",
+      "reason": "The tutor has already broken down the expanded form into individual values. This prompt asks the student to combine them, which is the next logical step."
+    }
+  ],
+  "trace_sha256": "27cb578e3da1e595ff40abaf96d019a558c165351f0111070ecaee5eba5961b9"
+}

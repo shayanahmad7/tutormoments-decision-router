@@ -1,0 +1,45 @@
+{
+  "case_index": 366,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you get when you subtract the numerators?",
+      "reason": "The tutor asks the student to perform the first step of the operation, which is to subtract the numerators. This is a direct hint to the next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since the denominators are the same, you just subtract the numerators. So what is 5 - 3? You can write that in the numerator and keep the denominator the same.",
+      "reason": "The tutor provides all the steps and the reasoning for solving the problem, leaving very little for the student to do independently. This is overhelping as the student could productively supply some of this information."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would solve this and why the method works?",
+      "reason": "The tutor asks the student to explain both the 'how' and the 'why' of the solution, which increases cognitive demand and promotes deeper understanding rather than just finding an answer."
+    }
+  ],
+  "trace_sha256": "91e56b04ecbac88328759071e279412b67abb10ced918414839bc41af94ae4e3"
+}

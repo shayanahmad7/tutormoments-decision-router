@@ -1,0 +1,45 @@
+{
+  "case_index": 394,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the first step when subtracting with base-ten blocks?",
+      "reason": "The tutor restates the problem and then asks a guiding question that prompts the student to recall the first step in subtracting with base-ten blocks, which is a good scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think is the next step?",
+      "reason": "The tutor clearly explains the problem in terms of numbers and then asks the student to identify the next step, which is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What subtraction problem are these base-ten blocks showing? Let's start by writing the numbers in digits.",
+      "reason": "The tutor prompts the student to identify the subtraction problem and suggests writing the numbers in digits, which is a helpful first step and encourages active participation."
+    }
+  ],
+  "trace_sha256": "73927c70ec2c86802bbf878be30f8df3981f499bb60c5c0cb4e6dfc809fab697"
+}

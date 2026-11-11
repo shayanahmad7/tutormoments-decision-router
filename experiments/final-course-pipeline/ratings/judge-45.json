@@ -1,0 +1,45 @@
+{
+  "case_index": 45,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would the equation look like after subtracting 3 from both sides?",
+      "reason": "The tutor provides a clear next step and then asks the student to perform the calculation and state the resulting equation, which is a good level of rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since 3 is being **added**, what operation do we do to both sides to remove it?",
+      "reason": "The tutor reminds the student of the operation being performed on the 3 and then asks what operation is needed to remove it, which is a good prompt for the student to recall the inverse operation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation should we perform on both sides?",
+      "reason": "The tutor clearly states the goal (move the 3 to the left side) and then asks the student to identify the operation needed, which is a good way to prompt their thinking."
+    }
+  ],
+  "trace_sha256": "055ac797d98b62db6e35bd55d10aa97c8ae8298f1353309565ef268592ae2ff6"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 451,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you decided that D (372) and E (368) round to the same number when rounded to the nearest 10?",
+      "reason": "The student has given an answer, and the tutor asks them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you get when you round each of these to the nearest 10? What’s the key digit you need to check for rounding?",
+      "reason": "The tutor provides scaffolding by asking the student to round each number individually and then prompts them to identify the key digit for rounding, which is a helpful hint."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you decided that D (383) and E (368) would round to the same number when rounded to the nearest 10?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. The tutor also correctly identifies the student's choices, even though the student misidentified D as 372 in the previous turn, the tutor correctly uses 383 for D, which is the correct number from the problem."
+    }
+  ],
+  "trace_sha256": "fc5f0aa1b148a5b6258899a99c10b41d371aed115175c90470767a47e005a62a"
+}

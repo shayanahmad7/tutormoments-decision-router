@@ -1,0 +1,45 @@
+{
+  "case_index": 337,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's a quick way to think about 11 times 7, using what you know about 10 times 7?",
+      "reason": "The tutor provides a hint to use a known multiplication fact (10x7) to solve 11x7, which is scaffolding. It also encourages the student to think about a 'quick way' to solve it, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 10 times 7, and how can that help you figure out 11 times 7?",
+      "reason": "The tutor provides a specific hint (10x7) to help the student solve 11x7, which is scaffolding. It also asks the student to explain 'how' it can help, promoting a deeper understanding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's break it down. What is 10 times 7? And what is 1 times 7? Add those two results together to find the answer. What do you get?",
+      "reason": "The tutor breaks down the problem into very small, explicit steps (10x7, 1x7, then add), which is overhelping as the student could likely figure out the breakdown with a less direct hint."
+    }
+  ],
+  "trace_sha256": "a4ffbce2c6962b7fa296d6ceb302f598808b436f57528a2d78d97c328070cd01"
+}

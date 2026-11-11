@@ -1,0 +1,45 @@
+{
+  "case_index": 273,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what happens when you subtract those two results? What is 70 minus 7?",
+      "reason": "The tutor asks the student to perform the subtraction, which is the next logical step in the problem. This is a direct question that guides the student to the next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if we subtract 7 from 70, what do we get? Can you figure out the final answer?",
+      "reason": "The tutor explicitly states the operation (subtract 7 from 70) and then asks for the result, which is the immediate next step in the problem. This is a direct prompt for the student to perform the calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that mean for the final step? What should we do with those two numbers to finish solving the problem?",
+      "reason": "The tutor prompts the student to identify the next operation needed to solve the problem, which is to subtract the two numbers. This is a guiding question that helps the student determine the next step."
+    }
+  ],
+  "trace_sha256": "0538585ed3feeb062dc6cb02d45a58964aed3151e56317670857b2ed2906a231"
+}

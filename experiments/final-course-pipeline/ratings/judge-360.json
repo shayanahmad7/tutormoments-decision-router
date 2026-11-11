@@ -1,0 +1,45 @@
+{
+  "case_index": 360,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think is the first step to find the total he saved?",
+      "reason": "The tutor confirms the student's correct identification of the operation and then asks the student to identify the first step, promoting independent problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with January and February: 25 dollars in January and 47 dollars in February. What is 25 + 47?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by suggesting to add only two of the three numbers first. This is a helpful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s the first step you’d take to find the total he saved?",
+      "reason": "The tutor confirms the student's correct identification of the operation and then asks the student to identify the first step, promoting independent problem-solving."
+    }
+  ],
+  "trace_sha256": "117392ca6f4d39453722ed7440bc424600852ba3830c207be50ed99a3fdce458"
+}

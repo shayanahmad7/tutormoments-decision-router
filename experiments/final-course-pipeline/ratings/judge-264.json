@@ -1,0 +1,45 @@
+{
+  "case_index": 264,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why adding ten to 5990 causes the thousands, hundreds, and tens digits to change, and how this is similar to the smaller examples we looked at earlier?",
+      "reason": "The tutor asks the student to explain the mathematical reasoning behind the example, which promotes deeper understanding and justification. It also connects to previous examples, encouraging the student to make connections."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if we want the thousands, hundreds, and tens digits to all change when we add 10, we need a number where the hundreds and tens digits are both 9.",
+      "reason": "The tutor provides a clear hint about the structure of the number needed, which is a form of scaffolding. The follow-up question is a direct prompt for the next step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, so you noticed that when we had 5990 and added 10, it became 6000. That means the 9 in the hundreds and tens place turned into 0s, and the 5 in the thousands place turned into a 6.",
+      "reason": "The tutor summarizes the outcome of the example, which is helpful scaffolding. The subsequent question asks the student to apply this understanding to find a new number."
+    }
+  ],
+  "trace_sha256": "4c0d8383e2632a1f9c2beafcebe0f5336e0d0b01bb7ec657e5e64d8c00c69186"
+}

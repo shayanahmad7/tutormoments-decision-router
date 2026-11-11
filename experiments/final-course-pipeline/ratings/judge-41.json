@@ -1,0 +1,45 @@
+{
+  "case_index": 41,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me how you would find the area of this triangle?",
+      "reason": "The tutor asks the student to recall the formula for the area of a triangle, which is a scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you need to calculate first?",
+      "reason": "The tutor prompts the student to identify the first step in calculating the area or perimeter of the triangle, which is a scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "For the perimeter, you need to add all the side lengths: 8.06 inches, 7 inches, and 4 inches. Can you add those three numbers together?",
+      "reason": "The tutor provides the exact numbers to add for the perimeter, which the student had already correctly identified in the previous turn. This is overhelping as the student already knew what to do."
+    }
+  ],
+  "trace_sha256": "ff44cb4ef635e1a4307c73fcdf9d3c36912a0d929bc5bffe70da955fab8a26fa"
+}

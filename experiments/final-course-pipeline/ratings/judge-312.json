@@ -1,0 +1,45 @@
+{
+  "case_index": 312,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you found the value of y in the last problem?",
+      "reason": "The student correctly solved for x and y. The tutor asks the student to explain their reasoning for finding y, which promotes rigor by asking for justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how did you figure out that x is two-thirds of y? Can you explain the reasoning behind that step?",
+      "reason": "The student correctly solved for x and y. The tutor asks the student to explain their reasoning for a specific step, which promotes rigor by asking for justification and scaffolding by targeting a specific part of the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you combine the terms with y in them first? What would 2/3y + y become?",
+      "reason": "The student has already solved the problem correctly and submitted the answer. This reply overhelps by guiding them through a step they have already successfully completed."
+    }
+  ],
+  "trace_sha256": "083d883b7a5a26d83fb9406d11d6e1e65061a50b1b3d4eaaecb912cfd1b3f51a"
+}

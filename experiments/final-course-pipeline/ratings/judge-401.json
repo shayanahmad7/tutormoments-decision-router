@@ -1,0 +1,45 @@
+{
+  "case_index": 401,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the game is going to give us a problem, and we have to solve it",
+      "reason": "The tutor explains the basic premise of the game, which is helpful scaffolding for a new game."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's try subtraction. I'll start the game and we'll see how it goes. Ready?",
+      "reason": "The tutor acknowledges the student's choice and prepares to start the game."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, let's try subtraction. You ready?",
+      "reason": "The tutor acknowledges the student's choice and asks if they are ready to proceed."
+    }
+  ],
+  "trace_sha256": "e994a7c0c009a555eccdef31528c3136c5304ab475d4c0373a20c04a4ac611ae"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 261,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if you start at 456, how many hundreds do you have? What happens when you take one of them away?",
+      "reason": "The tutor breaks down the problem by asking the student to identify the hundreds digit and consider the effect of subtracting 100, which is a helpful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the digits?",
+      "reason": "The tutor provides a hint to focus on the digits, which is a useful scaffold for mental math with hundreds."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how did you figure out the answer earlier when it was \"10 less than 345\"? What pattern or strategy could you use here?",
+      "reason": "The tutor prompts the student to recall a previous successful strategy and apply it to the current problem, which is both scaffolding and rigor."
+    }
+  ],
+  "trace_sha256": "064f58f1bc3ab5ebc2b70065b96ac86ea2ef486964b21f4a759a6d9b604bbae0"
+}

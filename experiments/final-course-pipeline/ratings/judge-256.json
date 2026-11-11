@@ -1,0 +1,45 @@
+{
+  "case_index": 256,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, let’s make sure everything adds up. If we add the red, purple, and pink flowers together, what should we get? Does it match the total number of flowers in the garden?",
+      "reason": "The tutor provides a summary of the student's work and then asks a question that prompts the student to check their work and ensure it aligns with the problem's initial conditions. This is a good way to encourage the student to verify their solution."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 80 divided by 4?",
+      "reason": "The tutor correctly identifies the next step and asks the student to perform the division, which is appropriate scaffolding given the student's previous struggles with division."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we add those together, what do we get? Does that total match the original number of flowers in the garden?",
+      "reason": "The tutor provides a summary of the student's work and then asks a question that prompts the student to check their work and ensure it aligns with the problem's initial conditions. This is a good way to encourage the student to verify their solution."
+    }
+  ],
+  "trace_sha256": "68ec65e18ede286b09cde465281ce9cc43f9969097898015d254c2d65306a55e"
+}

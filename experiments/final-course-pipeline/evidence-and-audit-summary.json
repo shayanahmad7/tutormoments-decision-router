@@ -1,0 +1,57 @@
+{
+  "note": "No scores changed. Normalization removes whitespace, Markdown emphasis and quote glyph/case differences. Explicit ellipses checked as ordered verbatim segments. Wording differences remain flagged.",
+  "quote_mismatches": {
+    "primary": {
+      "formatting_or_case_only": 26,
+      "wording_changed_or_omitted": 1,
+      "explicit_ellipsis_with_verbatim_segments": 3
+    },
+    "audit": {
+      "formatting_or_case_only": 7,
+      "wording_changed_or_omitted": 2
+    }
+  },
+  "same_32_case_condition_counts": {
+    "self_detailed": {
+      "n": 32,
+      "primary_pass": 20,
+      "audit_pass": 16
+    },
+    "jev_directed": {
+      "n": 32,
+      "primary_pass": 19,
+      "audit_pass": 22
+    },
+    "decisions_directed": {
+      "n": 32,
+      "primary_pass": 21,
+      "audit_pass": 22
+    },
+    "always_scaffolding": {
+      "n": 32,
+      "primary_pass": 16,
+      "audit_pass": 15
+    },
+    "always_rigor": {
+      "n": 32,
+      "primary_pass": 24,
+      "audit_pass": 22
+    },
+    "teacher_directed": {
+      "n": 32,
+      "primary_pass": 26,
+      "audit_pass": 23
+    },
+    "opposite_teacher": {
+      "n": 32,
+      "primary_pass": 14,
+      "audit_pass": 14
+    }
+  },
+  "pass_agreement_96_replies": {
+    "n": 96,
+    "same": 75,
+    "rate": 0.78125,
+    "cohen_kappa": 0.5508021390374331
+  }
+}

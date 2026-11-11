@@ -1,0 +1,45 @@
+{
+  "case_index": 221,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 78?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s break it down. If each class has 30 students, and there are 90 students total, how many classes are there?",
+      "reason": "The tutor provides a guided substep to help the student approach the word problem, breaking it down into smaller, more manageable parts."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 78 for the student problem? Let me know your thinking.",
+      "reason": "The tutor asks the student to explain their reasoning, which encourages the student to articulate their thought process and justify their answer."
+    }
+  ],
+  "trace_sha256": "69914e922a252949456f8500fe7e90b4afa66a6787b90397e3877e45e63922e2"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 314,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you subtracted those numbers? What do they represent in the shape?",
+      "reason": "The tutor asks the student to explain their reasoning for the previous problem, which was incorrect. This encourages the student to reflect on their process and identify potential misconceptions, providing scaffolding by focusing on the 'why' and rigor by asking for justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you write an expression for the perimeter of the rectangle in terms of w?",
+      "reason": "The tutor breaks down the complex word problem into smaller, manageable steps. They help the student set up the variables for width and height, then ask the student to write the expression for the perimeter. This is scaffolding by providing a starting point and rigor by asking the student to formulate the expression independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out where the mistake might be? What’s different about the shape of an isosceles trapezoid that might affect the calculation?",
+      "reason": "The tutor points out the student's previous incorrect answer and asks them to identify the mistake, specifically prompting them to consider the properties of an isosceles trapezoid. This provides scaffolding by narrowing the focus and rigor by requiring the student to analyze the geometric properties and their impact on the calculation."
+    }
+  ],
+  "trace_sha256": "a0c854b99bda91c42c1ffc94149d39d437ccc5be26b5676610f54c0814aa6b14"
+}

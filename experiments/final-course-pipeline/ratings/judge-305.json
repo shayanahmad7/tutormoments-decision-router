@@ -1,0 +1,45 @@
+{
+  "case_index": 305,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know how you know by pointing to the part of the story that tells us.",
+      "reason": "The tutor asks the student to justify their answer by pointing to the text, which promotes rigor. The tutor also provides the first part of the question, which is a small scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me hear you read the question and the choices.",
+      "reason": "The tutor provides the first part of the question and then asks the student to read the rest, which is a small scaffold. The tutor then asks for the answer, which is appropriate."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know what the question is asking, and then look back at the story to find the answer.",
+      "reason": "The tutor provides the first part of the question and then asks the student to identify what the question is asking, which is a good scaffold. The tutor then asks the student to look back at the story to find the answer, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "ba7a482f9f23612701a08334fc8c8233dae21c7ecd5ff9e4b607ecf3d154ee3d"
+}

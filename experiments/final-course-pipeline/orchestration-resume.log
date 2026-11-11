@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/tmp/finish_final_stages.py", line 14, in <module>
+    subprocess.run([sys.executable,str(H/'run.py'),'run','--stage',stage,'--workers',str(workers)],stdout=f,stderr=subprocess.STDOUT,check=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Library/Developer/CommandLineTools/usr/bin/python3', 'experiments/final-course-pipeline/run.py', 'run', '--stage', 'audit', '--workers', '2']' returned non-zero exit status 2.

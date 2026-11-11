@@ -1,0 +1,45 @@
+{
+  "case_index": 178,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how would you write an expression for the total number of candy bars? What operation would you use to find the total?",
+      "reason": "The tutor asks the student to write an expression and identify the operation, which is a good scaffold for setting up the equation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how would you write the total number of candy bars using multiplication?",
+      "reason": "The tutor explicitly asks the student to use multiplication, which is a strong hint but still requires the student to formulate the expression."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How do we find the total number of candy bars? What operation would we use to find the total when we have equal groups?",
+      "reason": "The tutor prompts the student to think about how to find the total and specifically mentions 'equal groups,' which is a good scaffold for multiplication."
+    }
+  ],
+  "trace_sha256": "587eb46b649d3ab1bd5ef029a5783d4cf6d05f7daaf4df74a908ffa041401332"
+}

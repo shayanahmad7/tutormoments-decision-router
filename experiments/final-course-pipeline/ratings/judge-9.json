@@ -1,0 +1,45 @@
+{
+  "case_index": 9,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if the pattern continued, what would the fourth term be? Can you write the rule as a mathematical expression using the previous term?",
+      "reason": "The tutor asks the student to extend the pattern and to express the rule mathematically, which increases the cognitive demand and encourages a deeper understanding of the sequence."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would find the next term in the sequence if we continued it?",
+      "reason": "The tutor asks the student to explain how to find the next term, which promotes deeper understanding and articulation of the pattern."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the next step to confirm that 0.25 is the correct third term in the sequence?",
+      "reason": "The student has already correctly identified and explained how to get to 0.25. Asking for the 'next step to confirm' is redundant and over-scaffolds, as the student has already demonstrated understanding."
+    }
+  ],
+  "trace_sha256": "7a8a9042a9c3039a760f102e10fb4d87e674f79cea5679bffab6c9d89a9dfa0d"
+}

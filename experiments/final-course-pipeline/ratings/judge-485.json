@@ -1,0 +1,45 @@
+{
+  "case_index": 485,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose that number?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you add 100 to 452, what number do you land on? Try writing it out if it helps.",
+      "reason": "The tutor provides a hint to write out the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why adding 100 to 452 gives us that answer? What happens to each digit in the number?",
+      "reason": "The tutor asks the student to explain their reasoning and consider the place value, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "3e868e61510ffb9deddddec8d23849542f35d881a64c4c3241c30063b0b9b1bf"
+}

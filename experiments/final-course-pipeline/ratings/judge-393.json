@@ -1,0 +1,45 @@
+{
+  "case_index": 393,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 44 minus 26?",
+      "reason": "The tutor clearly states the problem in numerical form, which is helpful scaffolding for the student. It then asks a question to prompt the student to think about the next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What subtraction problem is shown here?",
+      "reason": "The tutor asks the student to identify the subtraction problem, which encourages the student to interpret the base-ten blocks independently. This promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the first step when subtracting with base-ten blocks?",
+      "reason": "The tutor clearly states the numerical problem, which is helpful scaffolding. It then asks a specific question about the first step in subtracting with base-ten blocks, guiding the student's thinking."
+    }
+  ],
+  "trace_sha256": "ab022194f170fed99ba56381727c063f19c5459ad9b06566de63a04577411e31"
+}

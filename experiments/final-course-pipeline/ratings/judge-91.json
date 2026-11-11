@@ -1,0 +1,45 @@
+{
+  "case_index": 91,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that number represent in the context of the circle?",
+      "reason": "The tutor asks the student to interpret the meaning of the calculated area, which promotes deeper understanding and connection to the real-world context of the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What digit is in the hundredths place here?",
+      "reason": "The tutor provides a clear hint about which digit to look at for rounding to the nearest tenth, guiding the student through the rounding process."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what should the final answer be?",
+      "reason": "The tutor asks a direct question for the final answer without providing any further guidance on how to round, which is a missed opportunity to scaffold the rounding process."
+    }
+  ],
+  "trace_sha256": "265fe231755d0d30e6287a09cdb18ce1e56222cdfa86ce6f589cda3cce86f50d"
+}

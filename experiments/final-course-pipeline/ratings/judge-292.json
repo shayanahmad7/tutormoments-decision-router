@@ -1,0 +1,45 @@
+{
+  "case_index": 292,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if a number has only two factors — one and itself — it's a prime number. If it has more than two factors, it's not prime. Based on that, can you tell me why 1 isn't considered a prime number?",
+      "reason": "The tutor summarizes the definition of a prime number, which the student was struggling to articulate, and then asks a rigorous question about the number 1, which is a common misconception related to prime numbers."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you're saying that a prime number is a number that only has two factors, right? And a non-prime number has more than two. Let me check your reasoning with another example. Take the number 12. Can you list all the factors of 12 and then decide if it's prime or not? Try to explain your reasoning.",
+      "reason": "The tutor asks the student to apply their understanding to a new example (12) and explain their reasoning, which promotes rigor. The tutor also correctly restates the student's definition of a prime number."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if a prime number has exactly two factors, like seventeen (1 and 17), what about the number thirteen? Can you list its factors and decide if it’s prime? Let’s start with 1. What do you multiply 1 by to get 13?",
+      "reason": "The tutor provides a scaffold by reminding the student of the definition of a prime number and giving an example. They then ask the student to apply this understanding to a new number (13) and guide them to start with the factor 1, which is a good scaffold for finding factors."
+    }
+  ],
+  "trace_sha256": "e7ce7e0c0e56566fab1c2ab5e2a1ca0130f08727298f19ee43f7644dcabb1b53"
+}

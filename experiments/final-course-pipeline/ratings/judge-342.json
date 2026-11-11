@@ -1,0 +1,45 @@
+{
+  "case_index": 342,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know your reasoning.",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Look at the inner numbers on the protractor. Is it closer to 150° or somewhere else?",
+      "reason": "The tutor provides a hint to look at the inner numbers, which is a specific piece of scaffolding relevant to the student's current confusion."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain why the inner scale of the protractor shows 150° and not the outer scale? What makes the inner scale the correct one to use here?",
+      "reason": "The tutor asks the student to explain their reasoning for using the inner scale, which promotes justification and deeper understanding."
+    }
+  ],
+  "trace_sha256": "15f154f0349b9b799fa28c7cabad4f20cf0f4a70805072c3864afa1d94d6f36b"
+}

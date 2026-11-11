@@ -1,0 +1,720 @@
+{
+  "tag": "gen-328-force_scaffolding",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Rachel has joined\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 58 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A document is opened on the whiteboard. It is titled \"Bright Futures Tutoring First Session Guide Grades 2-4\". Below the title is \"www.BrightFuturesTutoring.org\". A heading reads \"Welcome to your first tutoring session! Here's what we're going to do today\". A table is visible with \"Welcome & Introductions\" and \"10 minutes\".\nTurn 1. TUTOR: [PAUSE: 227 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Lily has joined\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 33 seconds]\nTurn 1. TUTOR: [PAUSE: 19 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The student leaves the session. The screen shows a message \"Lily has left\". The tutor's video feed is now the only one visible.\nTurn 1. TUTOR: [PAUSE: 24 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] The tutor leaves the session. The screen shows a message \"Rachel has left\".\nTurn 1. TUTOR: [PAUSE: 10 seconds]\nTurn 1. TUTOR: [PROBLEM_CHANGE: First Session Guide (start)] Screen displays a document titled \"Bright Futures Tutoring First Session Guide Grades 2-4\". Below the title is a table with the heading \"Welcome to your first tutoring session! Here's what we're going to do today\". The table lists: \"Welcome & Introductions - 10 minutes\", \"Introduction to Tutoring and Norms - 5 minutes\", \"Learning Portal Scavenger Hunt - 5 minutes\", \"Growth Mindset - 5 minutes\".\nTurn 1. TUTOR: [PAUSE: 84 seconds]\nTurn 1. TUTOR: Hi Lily, can you hear me?\nTurn 2. STUDENT: Yeah.\nTurn 3. TUTOR: Okay. Is it still glitching or is it okay now?\nTurn 4. TUTOR: [PAUSE: 13 seconds] Scrolls down the page. The new content shows a table with \"Welcome & Introductions\", \"Introduction to Tutoring and Norms\", \"Learning Portal Scavenger Hunt\", \"Growth Mindset\", and \"Closing\" with their corresponding times.\nTurn 4. STUDENT: It's better.\nTurn 5. TUTOR: Perfect.\nTurn 6. TUTOR: Can you see the slides on your screen?\nTurn 7. STUDENT: Yeah.\nTurn 8. TUTOR: Okay. So, because the last session that we had was really glitchy, we're just going to start fresh today. So we'll just do the first welcome session today and then we'll start on the actual content next week.\nTurn 9. STUDENT: Okay.\nTurn 10. TUTOR: Um, okay. So,\nTurn 11. TUTOR: can you see it when I like when I move the slides down?\nTurn 12. TUTOR: [PAUSE: 6 seconds] Scrolls down the page to a new section titled \"Introductions!\". It lists four questions: \"1. What's your name?\", \"2. Where do you live?\", \"3. What are your interests? What do you like to do for fun?\", \"4. Is there something or someone who is important to you?\".\nScrolls down the page to a new section titled \"Draw a picture\".\nTurn 12. STUDENT: I can see it.\nTurn 13. TUTOR: Okay, what does the slide right now say for you?\nTurn 14. STUDENT: Welcome to your first tutoring session. Here's what we're going to do today.\nTurn 15. TUTOR: Okay, good. Okay, good.\nTurn 16. TUTOR: Um, yeah, so we're just going to start by getting to know each other. And um, wait, let me move the slides down.\nTurn 17. TUTOR: Okay. So I'll go first. So my name is Rachel. I live in San Diego. If you know where if you know what UCSD is, I live around UCSD because I go to school here. And my interests are I love to play the piano and I love to ski and hang out with my friends and family. And my cats and my friends and family are very important to me.\nTurn 18. TUTOR: Okay, do you want to answer the questions on the screen?\nTurn 19. STUDENT: Okay. My name is Lily. I live in California. But I like to make bracelets and learn new languages and call my friends and my cousin. And my uh something that is important to me is my family and my friends.\nTurn 20. TUTOR: You said you like to learn new languages?\nTurn 21. STUDENT: Mhm.\nTurn 22. TUTOR: What languages are you learning?\nTurn 23. STUDENT: Vietnamese and I'm learning Korean with my cousin so we can talk to each other on call in Korean.\nTurn 24. TUTOR: Oh, wow. It's yeah, it's really important to try and learn new languages because then you can travel to Korea and Vietnam and speak the languages there. That's really interesting.\nTurn 25. STUDENT: I'm going to Vietnam in um I'm going to Vietnam and Japan in February.\nTurn 26. TUTOR: Which one do you like better?\nTurn 27. STUDENT: No, I haven't been there before. It's my first time.\nTurn 28. TUTOR: Oh, okay. I've been to Korea and I really like it there. I really like the food there. They have really good barbecue.\nTurn 29. TUTOR: I don't know if you've tried that.\nTurn 30. STUDENT: I tried it here but and it's really good.\nTurn 31. TUTOR: Yeah. Did you get the all you can eat, like the buffet one?\nTurn 32. STUDENT: Yeah, it's so good.\nTurn 33. TUTOR: Okay. So since your mom already confirmed everything, um, I will just skip this slide for now.\nTurn 34. TUTOR: So in this slide, we're going to use the pen in the learning portal. I don't know if you can can you see the tools in the top of the screen?\nTurn 35. TUTOR: [SCREEN_INTERACTION: student - drawing] Student draws a smiley face on the whiteboard.\nTutor erases the smiley face.\nTurn 35. TUTOR: Oh, okay, perfect.\nTurn 36. TUTOR: So just draw a picture of something special to you and I'll draw it on the right side and you can draw on the left side.\nTurn 37. STUDENT: Okay.\nTurn 38. TUTOR: I'm really bad at drawing, so...\nTurn 39. STUDENT: Me too.\nTurn 40. TUTOR: Yeah, that was supposed to be a circle, but it's not. I'm just going to draw my cat.\nTurn 41. TUTOR: [SCREEN_INTERACTION: tutor & student - drawing] Tutor draws a cat head in the \"Tutor Drawing\" box. Student begins drawing a bracelet in the \"Student Drawing\" box.\nTurn 41. TUTOR: Oh my gosh, this is so bad.\nTurn 42. TUTOR: Is that a bracelet?\nTurn 43. STUDENT: Yeah, making bracelets.\nTurn 44. TUTOR: [SCREEN_INTERACTION: tutor & student - drawing] Tutor finishes drawing the cat's face. Student finishes drawing the bracelet and writes \"Bracelet\" underneath it.\nTurn 44. TUTOR: Okay, there's it kind of looks evil.\nTurn 45. TUTOR: Oh yeah, can I see your bracelets again? I think you tried to show me um last time, but it was really blurry and glitching, so I didn't get to see it properly.\nTurn 46. STUDENT: Do what colors?\nTurn 47. TUTOR: Um, do you have like a a blue one or a purple one?\nTurn 48. STUDENT: Okay.\nTurn 49. TUTOR: [PAUSE: 1 second] Tutor erases the mouth of the cat drawing and redraws it with a smile.\nTurn 49. STUDENT: Here are these.\nTurn 50. TUTOR: Oh my gosh. How long does it take you to make a bracelet?\nTurn 51. STUDENT: Like about five minutes.\nTurn 52. TUTOR: Only five minutes?\nTurn 53. STUDENT: Yeah.\nTurn 54. TUTOR: Well, I guess you're an expert at making the bracelets.\nTurn 55. TUTOR: Okay. Um, let me Oh, that's so bad. Okay. Let me just fix this cat right here. Okay.\nTurn 56. TUTOR: [SCREEN_UPDATE] Tutor scrolls down the page to a new section titled \"Introduction to Tutoring\".\nTurn 56. TUTOR: So, we're going to go really briefly go over just an introduction to tutoring. So, um, tutoring is a time for us to work together and learn cool things and have fun. So you'll get to try out new skills, ask as many questions as you want to ask, and make mistakes because that's how we grow.\nTurn 57. TUTOR: And I'll be here to help you and encourage you the on the whole time. So, just think of me like, like your teammate. You can ask me any questions you have. And, um, yeah, you can you can talk to me about anything if you feel comfortable. And I'm here to just help you learn.\nTurn 58. TUTOR: Um, do you have any questions for me right now or do you have any goals that you have for the tutoring sessions?\nTurn 59. STUDENT: Um, no.\nTurn 60. TUTOR: [PAUSE: 5 seconds]\nTurn 60. TUTOR: [PROBLEM_CHANGE: p1 - 'Quick Question!' (start)] Tutor scrolls down to a new slide. The slide is titled \"Quick Question!\" and asks \"How do you know if you're doing well in a tutoring session? Use the pen tool to circle the answer(s) that apply!\". There are four options with images: \"You answer quickly\", \"You answer correctly\", \"You explain your thinking\", and \"You don't give up when stuck\".\nTurn 60. TUTOR: So, how do you know if you're doing well in a tutoring session? So just use the pen tool to circle the answers that you think apply. And you can pick more than one as well.\nTurn 61. STUDENT: Okay.\nTurn 62. TUTOR: [SCREEN_INTERACTION: student - drawing] Student circles the \"You answer correctly\" option.\nTurn 62. TUTOR: [SCREEN_INTERACTION: student - drawing] Student circles the \"You explain your thinking\" option.\nTurn 62. TUTOR: [PAUSE: 3 seconds]\nTurn 62. TUTOR: Yeah, those are great answers.\nTurn 63. TUTOR: [SCREEN_INTERACTION: student - drawing] Student circles the \"You don't give up when stuck\" option.\nTurn 63. TUTOR: So, answering quickly, that's good, but also thinking carefully is really important. So just because you're answering quickly doesn't mean that you're necessarily thinking the correct way. So we're going to make sure that we're thinking carefully when we answer questions. And answering correctly is always nice. And we're going to try to explain our thinking behind our answer. And um, not giving up, of course, when things get tricky is really important as well.\nTurn 64. TUTOR: [PROBLEM_CHANGE: p2 - 'What does success look like?' (start)] Tutor scrolls down to a new slide titled \"What does success look like?\". It contains a word bank and the instruction: \"Using the pen tool, circle the words that represent what success looks like for you! Talk about what these words mean together. How can the words you didn't circle look like success?\".\nTurn 64. TUTOR: So, what does success look like? So using the pen tool, you're just going to circle the words that what you think success looks like for you. And then we're going to talk about like the words that you chose and some of the words that you didn't choose.\nTurn 65. STUDENT: Okay.\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nProvide targeted scaffolding now. Identify the specific unresolved obstacle in the student's current mathematical work. Offer only the smallest useful hint, representation, or clarification that makes the next step accessible. Use the learner's actual numbers and ideas when available. Leave the key calculation or inference for the student and invite one manageable next step. Do not give a full solution, stack several leading questions, repeat an explanation the learner already understands, or invent unseen worksheet details.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "3fe947eac9ecdf88449649682dddb0953c6fef93a6eab23d0f74178ea535efe8",
+  "reserve_usd": 0.001429664,
+  "started_utc": "2026-11-11T20:15:55Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "Can you tell me which words from the list you think best describe what success looks like for you? Let’s start with one or two and talk about why they matter.",
+  "first_answer_ms": 1386.862165999986,
+  "usage": {
+    "prompt_tokens": 3258,
+    "completion_tokens": 35,
+    "total_tokens": 3293,
+    "cost": 0.00027044,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00027044,
+      "upstream_inference_prompt_cost": 0.00026064,
+      "upstream_inference_completions_cost": 9.8e-06
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "C",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "an ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "you te",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ll me ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "which",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " wor",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ds fr",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "om t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "he lis",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t you",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " think be",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "st de",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "scribe w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "hat su",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ccess",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " loo",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ks l",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "i",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ke f",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "or",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " you? ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Let’s",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " sta",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "rt ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "with",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " one",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " or t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "wo and",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " tal",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "k abo",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ut why ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "hey matter.",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794428155-TFEfzP1WYOmdSd0ef5pc",
+      "object": "chat.completion.chunk",
+      "created": 1794428155,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 3258,
+        "completion_tokens": 35,
+        "total_tokens": 3293,
+        "cost": 0.00027044,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00027044,
+          "upstream_inference_prompt_cost": 0.00026064,
+          "upstream_inference_completions_cost": 9.8e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.00027044,
+  "elapsed_ms": 2506.897124999995
+}

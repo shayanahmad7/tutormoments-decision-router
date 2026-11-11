@@ -1,0 +1,45 @@
+{
+  "case_index": 96,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "To find the missing number before 456, what do you get when you subtract 5 from 456?",
+      "reason": "The tutor provides a clear hint by reminding the student of the operation needed to find the preceding number in a skip-counting sequence."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 446 as the missing number in the sequence?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification of their answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what do we get when you subtract 5 from 456?",
+      "reason": "The tutor provides a direct hint by telling the student the operation to perform to find the correct answer."
+    }
+  ],
+  "trace_sha256": "ae465863ad96b953e4592eb3da4ff4fea349488647e1d53e9d1451b986f3f3c9"
+}

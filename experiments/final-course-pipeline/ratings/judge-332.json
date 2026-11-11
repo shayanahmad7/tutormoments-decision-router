@@ -1,0 +1,45 @@
+{
+  "case_index": 332,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you multiply 3/4 by 3, you're really just adding 3/4 three times, right? So 3/4 + 3/4 + 3/4. Can you figure out what that adds up to?",
+      "reason": "The tutor provides a conceptual explanation of multiplication as repeated addition, which is a helpful scaffold for understanding fraction multiplication. They then ask the student to apply this understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said three times three is nine, right? And one times four is four. So the answer should be nine over four.",
+      "reason": "The tutor states the correct answer (9/4) and the reasoning for it, which the student could have productively supplied themselves, especially after the previous hint from the tutor about only multiplying the top part."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you have three times three on top, which is nine, and one times four on the bottom, which is four. What does that make the answer?",
+      "reason": "The tutor provides the results of the multiplication (nine and four) and then asks the student to state the final fraction. The student could have performed the multiplication themselves, making this overhelp."
+    }
+  ],
+  "trace_sha256": "f4f8880cd92635b5d65d62d01b9e1a804183104d56f89d449b3abc43e62cc8ff"
+}

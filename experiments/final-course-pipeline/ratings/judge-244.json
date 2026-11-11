@@ -1,0 +1,45 @@
+{
+  "case_index": 244,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you try explaining to me how you would figure out three times four using the same idea of repeated addition or an array? What would that look like?",
+      "reason": "The tutor confirms the correct answer and then asks the student to apply the learned concept to a new problem, promoting independent thinking and transfer of knowledge."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So what does that tell us about the value of 2 times 3? What conclusion can you draw from the array?",
+      "reason": "The tutor prompts the student to connect the visual representation (the array) to the multiplication problem, encouraging them to articulate the conclusion themselves."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, what does that tell us about the value of 2 x 3?",
+      "reason": "The tutor asks the student to draw a conclusion from the visual aid, promoting active reasoning rather than just stating the answer."
+    }
+  ],
+  "trace_sha256": "e7fc2fecb8048aa1f617d22c59c66d49ec2509f82d6c078d5bb963ef14e0af99"
+}

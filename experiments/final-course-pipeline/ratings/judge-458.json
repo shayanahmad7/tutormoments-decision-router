@@ -1,0 +1,45 @@
+{
+  "case_index": 458,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why does dividing both numbers by two not change the fact that one is smaller than the other?",
+      "reason": "The tutor asks a question that prompts the student to think about the properties of inequalities and how operations affect them, which is a good way to build conceptual understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what symbol should go between 30 and 60? Should it be less than, greater than, or equal to?",
+      "reason": "The tutor guides the student to the final step of comparing the two calculated values, which is appropriate scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You're right — thirty is smaller than sixty. So the symbol that goes in the circle is the \"less than\" symbol. Can you explain why the symbol points toward the larger number?",
+      "reason": "The tutor provides the answer to the comparison (less than symbol) before asking the student to explain, which is overhelping. The follow-up question is rigorous but comes after the answer has been given."
+    }
+  ],
+  "trace_sha256": "8d092668ded5d72ad2d8fa47990ea0bcd484a6065539e731aee0ba56f98edd66"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 243,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why two times three is the same as three times two?",
+      "reason": "The tutor asks the student to explain the commutative property of multiplication, which requires the student to justify their reasoning and make a connection between two related concepts."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if two times three is the same as two added three times, what would three times two be? How could we show that?",
+      "reason": "The tutor scaffolds the student's thinking by reminding them of the definition of multiplication (repeated addition) and then asks them to apply this understanding to a new, related problem (commutative property), which also promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think of it as adding two four times.",
+      "reason": "The tutor provides a clear hint by explicitly stating how to approach the problem (repeated addition), which makes the next step more accessible for the student."
+    }
+  ],
+  "trace_sha256": "bc47a6f79fc7d9ef439de19f5311ebdf96a50c0b8b86ecfdbee8e68c16d90709"
+}

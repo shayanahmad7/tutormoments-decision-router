@@ -1,0 +1,45 @@
+{
+  "case_index": 161,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what the dividend, divisor, and quotient would be in this problem: 6 ÷ 2 = 3?",
+      "reason": "The tutor provides clear definitions and then asks the student to apply them to a new problem, which promotes understanding and active learning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what each part of the division problem 12 ÷ 3 = 4 means in your own words?",
+      "reason": "The tutor asks the student to explain the terms in their own words, which is a good way to check for understanding and encourage deeper processing. However, it might be too rigorous given the student just said they are not familiar with the terms."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what each part is called in the problem 6 ÷ 2 = 3?",
+      "reason": "The tutor provides clear definitions and then asks the student to identify the parts in a new problem, which is a good balance of scaffolding and rigor."
+    }
+  ],
+  "trace_sha256": "203b9509f03919cad9104ebf82c4a8c76e30b3b295a4c5e33ab0546a1e5acce0"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 420,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you have 14 blocks and you try to split them into two equal groups, will each group have the same number of blocks?",
+      "reason": "The tutor provides a concrete example to help the student determine if 14 is odd or even, which is a helpful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The first question is: Is 14 an odd or even number? Take a moment to think, and then type in your answer. I’ll do the same!",
+      "reason": "The tutor states the first question and instructs the student to answer, which is appropriate for starting the game."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "we can discuss how you know if you’d like after!",
+      "reason": "The tutor encourages the student to think through the problem and offers to discuss the reasoning afterward, promoting deeper understanding and justification."
+    }
+  ],
+  "trace_sha256": "8c85512e5564a7c3a6ae83b789892205e5319ca33fc5962bf191c3a71d8cf96d"
+}

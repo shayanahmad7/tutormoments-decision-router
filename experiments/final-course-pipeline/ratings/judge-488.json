@@ -1,0 +1,45 @@
+{
+  "case_index": 488,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since the patio is a square and one side is 6 meters, what would the other side be?",
+      "reason": "The tutor asks a question that guides the student to recall the properties of a square, which is a helpful scaffold for the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So the patio is a square, and one side is six meters. What does that tell you about the other side?",
+      "reason": "The tutor prompts the student to use the definition of a square to determine the length of the other side, providing a useful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if the patio is a square and one side is six meters, what should the other side be?",
+      "reason": "The tutor's question helps the student recall the properties of a square, which is a relevant scaffold for the problem."
+    }
+  ],
+  "trace_sha256": "741d89fb961fb109b59220afd31044162c6446354920e6adc526dc0bbebbd318"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 106,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what happens to the product when you multiply both numbers by 10? Why does that matter for the answer?",
+      "reason": "The tutor asks the student to consider the effect of multiplying by 10 on the product, which is a relevant conceptual step. The 'why does that matter' question adds rigor by asking for justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how does multiplying by 10 change each number? What would 70 x 60 be in terms of 7 x 6?",
+      "reason": "The tutor guides the student to break down the multiplication by considering the effect of multiplying by 10 on each factor, then asks them to relate it back to the original product, which promotes deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is that the same as 7 times 6 times 100? Why or why not?",
+      "reason": "The tutor provides a specific hint by suggesting a way to decompose the multiplication (7x6x100) and then asks for justification, which adds rigor."
+    }
+  ],
+  "trace_sha256": "41f77c91f1af2b8b0105513c1fa032d5fa53f0df275037cc8b8d5c38b4bd1e47"
+}

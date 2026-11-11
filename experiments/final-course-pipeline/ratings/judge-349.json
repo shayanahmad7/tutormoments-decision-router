@@ -1,0 +1,45 @@
+{
+  "case_index": 349,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you had to explain to a friend why 5/6 is greater than 5/8, how would you describe it using the idea of \"size of the pieces\"?",
+      "reason": "The tutor asks the student to explain the concept of comparing fractions with the same numerator using the 'size of the pieces' idea, which was just covered in the video. This promotes deeper understanding and verbalization of the concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We know both fractions have the same numerator, 2. That means we’re looking at the same number of pieces — 2 pieces in each case. But the denominators are different: 5 and 3.",
+      "reason": "The tutor provides a significant amount of the explanation and reasoning for the student, breaking down the problem into very small, leading steps. The student could productively contribute more to this explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let’s go back to the problem we were working on earlier: 3/4 = y/8.",
+      "reason": "The tutor attempts to revert to a problem from much earlier in the session, which was part of a video the tutor played for the student, not an interactive problem the student solved. The current context is comparing fractions with the same numerator, which was just explained in a video."
+    }
+  ],
+  "trace_sha256": "0e37010557ee7fcfd489ea1bf1c56395378fd473b36ea3143f02f4bc0b55b033"
+}

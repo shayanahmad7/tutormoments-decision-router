@@ -1,0 +1,45 @@
+{
+  "case_index": 249,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 7 times 7? Then, think about how that helps you with 27 times 7. Can you break it down?",
+      "reason": "The tutor breaks down the multiplication problem into smaller, more manageable parts, which is a form of scaffolding. It also encourages the student to think about how to use the smaller parts to solve the larger problem, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "7 times 7 is 49. What is 20 times 7?",
+      "reason": "The tutor provides the answer to the first part of the problem (7 times 7 is 49) when the student could have productively supplied it, making it overhelpful. It does scaffold by breaking down the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 20 times 7, and then 7 times 7? Add those together to get 27 times 7. What do you get?",
+      "reason": "The tutor scaffolds by breaking down the multiplication problem into two parts (20x7 and 7x7) and then guides the student to add them. This also promotes rigor by asking the student to perform both calculations independently."
+    }
+  ],
+  "trace_sha256": "d24dcd73df5d28c7afbb3ef7a65743c42feaf21db29ceda1339e82e566e0cb4e"
+}

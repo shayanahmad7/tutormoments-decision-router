@@ -1,0 +1,45 @@
+{
+  "case_index": 490,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Wait, let me check that subtraction again. You had 240 minus 56. Can you try that one more time? What is 240 minus 56?",
+      "reason": "The student made a subtraction error (240 - 56 = 184, not 194). The tutor prompts the student to re-check their work, which is a good scaffolding technique. It also promotes rigor by asking the student to self-correct."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So far, you've calculated the total area of the garden as 240 m², subtracted the area of the patio (36 m²) and the shed (20 m²), and found that the area to be covered with turf is 184 m². Now, each piece of turf measures 1.5 m by 0.5 m. How would you find out how many pieces of turf Peter will need to cover the 184 m²?",
+      "reason": "The tutor provides a helpful summary of the student's progress, which is good scaffolding. They then ask a question that guides the student to the next step without giving away the answer, promoting rigor. The student's last calculation was 240 - 56 = 184, so the tutor's summary is accurate to the student's current work."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You're very close! Let's check the subtraction step again: 240 minus 56. What is that equal to?",
+      "reason": "The student made a subtraction error (240 - 56 = 184, not 194). The tutor points out the error and asks the student to re-calculate, which is a good scaffolding technique. It also promotes rigor by asking the student to self-correct."
+    }
+  ],
+  "trace_sha256": "9bbd79d4e9b54b01ead1094e093b327528f87a82c2c5a71f899f63e2001c3728"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 133,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which digit do we check to see if it's odd or even? The 1 or the 3? Why?",
+      "reason": "Directly addresses the student's confusion about which digit determines odd/even in a multi-digit number, using a concrete example from the problem. Asks 'Why?' adds rigor by requiring justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which digit do we check to see if it's odd or even? The 1 or the 3? Why?",
+      "reason": "Identical to C1 - uses 13 from the problem set, scaffolds by narrowing to digit-level checking, and asks for reasoning, which is appropriate given the student's demonstrated confusion."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Is 13 odd or even? How do you know?",
+      "reason": "Uses a concrete example from the problem and asks the student to reason, but is less targeted than C1/C2 because it doesn't focus the student on which digit to check, which is the specific conceptual gap the tutor was probing."
+    }
+  ],
+  "trace_sha256": "ade8732cc58126bc8602d23c82ca0f12180f93327d142ffc12da4f6504ff21f0"
+}

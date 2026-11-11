@@ -1,0 +1,45 @@
+{
+  "case_index": 46,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would you do next?",
+      "reason": "The tutor provides scaffolding by restating the goal and identifying the first number to address. It then asks the student to identify the operation, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do to both sides to remove the 3?",
+      "reason": "The tutor provides scaffolding by restating the goal and identifying the first number to address. It then asks the student to identify the operation, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation should we do to both sides to remove it?",
+      "reason": "The tutor provides scaffolding by restating the goal and identifying the first number to address. It then asks the student to identify the operation, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "d8a88847c8f49f0c0c584524901b62cdd23b9fc1a396881088696d483fc77cb3"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 86,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What pattern do you notice in how the numbers change from one pair to the next?",
+      "reason": "The tutor acknowledges the student's observation and then provides a scaffold by restating the pairs found. They then ask a rigorous question about the pattern of change between the pairs, prompting the student to analyze the relationship between the numbers."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about how the numbers in each pair change as you move from one pair to the next? How might that help you find more pairs?",
+      "reason": "The tutor asks a rigorous question that prompts the student to identify a pattern in the number pairs. The second part of the question encourages the student to think about how this pattern can be used to find more pairs, promoting deeper understanding and application."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why one number is increasing while the other is decreasing?",
+      "reason": "The tutor asks a rigorous question that pushes the student to explain the underlying mathematical reason for the pattern they observed, rather than just stating the pattern. This promotes deeper conceptual understanding."
+    }
+  ],
+  "trace_sha256": "0df5d407c5dc48b18302adca57f2e986b918a92c20a88d5eb40e6aa295c7d958"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 59,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why we multiply by $\\frac{1}{2}$ in the trapezoid formula? How is that similar to or different from the triangle formula?",
+      "reason": "The student successfully recalled the formula. This response asks them to justify a part of the formula and make a connection to another formula, increasing rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Just do the first step: add the bases together.",
+      "reason": "The student has just recalled the formula. This response provides a concrete example and breaks down the first step, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you explain why we multiply by 1/2 in the trapezoid area formula? Think about how it connects to the area of a triangle or a rectangle.",
+      "reason": "The tutor first writes down the complete formula, which is a form of scaffolding. Then, they ask the student to explain the 'why' behind a part of the formula and connect it to other shapes, which adds rigor."
+    }
+  ],
+  "trace_sha256": "dfd16bb7220890cda57be55b2284fef5fd2da0d4c284cb6137b55999b2676275"
+}

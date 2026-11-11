@@ -1,0 +1,45 @@
+{
+  "case_index": 491,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If the total shaded area is 19 square units, and the bottom rectangle has an area of 10 (5 x 2), what does that tell you about the area of the top green rectangle?",
+      "reason": "The tutor guides the student to use the total area and the area of one part to find the area of the other, which is a logical next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If the total area of the green shape is 19, and we know the bottom part is 10, what does that tell us about the top part? What number plus 10 gives us 19?",
+      "reason": "The tutor provides a guided question that helps the student deduce the area of the top rectangle, which is a necessary step."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If the total height of the whole shape is 5 units and the bottom part is 2 units, how long is the remaining part? That will help you find the height of the top green rectangle.",
+      "reason": "The tutor provides a hint to find the missing dimension of the top rectangle, which is a key piece of information needed to solve for x."
+    }
+  ],
+  "trace_sha256": "607a517660e87a48c907a630ebbd2ed45cc6ddc6f3690fd46a7b6180b2d4c8f7"
+}

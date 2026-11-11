@@ -1,0 +1,45 @@
+{
+  "case_index": 431,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the space between 0 and 1 is divided into parts. How many equal parts is it divided into? Can you count them?",
+      "reason": "Builds directly on the student's correct answer that the star is bigger than zero, scaffolds by explaining why it's a fraction (between 0 and 1, divided into parts), then asks the student to count the parts independently—appropriate cognitive demand."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The whole from 0 to 1 is divided into three equal parts.",
+      "reason": "Tells the student the number of parts (three) rather than letting the student count them, which is the key step the student needs to do; this over-helps by supplying information the student could productively discover."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "From 0 to 1, how many equal parts is the line divided into? Count the spaces between the marks.",
+      "reason": "Concisely directs the student to count the equal parts between 0 and 1, which is the productive next step without giving away the answer; appropriate scaffolding with student responsibility maintained."
+    }
+  ],
+  "trace_sha256": "8d38b1b07dfc6d197b6c6de3c467fea689dc78c7afae53164a58533eb95523fb"
+}

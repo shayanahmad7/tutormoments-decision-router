@@ -1,0 +1,45 @@
+{
+  "case_index": 369,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how do you know multiplying 12 by 9 gives the number of rooms Robin can clean in 9 days? Can you explain why that makes sense in terms of the rate?",
+      "reason": "The student has the correct numerical answer but is still incorrectly adding 'percent' to it. This response asks the student to justify their multiplication, which increases rigor by asking for conceptual understanding rather than just the next step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The problem is asking how many rooms Robin can clean in 9 days, not a percentage. So, if Robin cleans 12 rooms in 1 day, how many rooms would she clean in 9 days? What’s the next step?",
+      "reason": "The tutor reminds the student about the units and then rephrases the question to guide them to the correct interpretation of their calculation, which is scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the question is asking how many rooms Robin can clean in 9 days, not a percentage. So what does 108 represent here? What’s the next step to answer the question?",
+      "reason": "The tutor corrects the unit error and then asks what the number 108 represents, which is a form of scaffolding to help the student connect their calculation to the problem's context."
+    }
+  ],
+  "trace_sha256": "d21d673967a7e2e012c6532b4c712b3f3a21a7c1e0e6de27c001500cacd8d773"
+}

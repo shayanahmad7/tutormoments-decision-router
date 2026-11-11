@@ -1,0 +1,45 @@
+{
+  "case_index": 266,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about what the dog howls when the violin is being done.",
+      "reason": "The tutor provides a hint to help the student choose the correct word for the blank, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is \"expert\" the right word to complete that sentence?",
+      "reason": "The tutor asks the student to justify their answer, promoting deeper thinking and responsibility for their learning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you try filling in the blank for sentence 3: \"Our dog howls when my sister ____ the violin.\" Use one of the vocabulary words to make the sentence make sense.",
+      "reason": "The tutor directs the student to the next task without providing additional help or asking for justification, which is appropriate for moving the activity forward."
+    }
+  ],
+  "trace_sha256": "fde5aabf79dc867ad298750e4e3270b47bf60e5a95d211481024053348c6ee46"
+}

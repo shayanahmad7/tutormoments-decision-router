@@ -1,0 +1,45 @@
+{
+  "case_index": 24,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that makes sense, using the idea of addition and subtraction being opposites?",
+      "reason": "The student correctly answered the previous problem, but the tutor moved on without asking for an explanation. This candidate brings the student back to the problem and asks for an explanation, which increases rigor. It also provides a hint about using the idea of addition and subtraction being opposites, which is scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 56 as your answer? What steps did you take?",
+      "reason": "The student has just read a new problem and stated an answer. This candidate asks the student to explain their reasoning, which increases rigor. It does not provide any scaffolding, but it is not overhelping because the student has not yet shown their work."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you need to do with these two numbers to find the answer?",
+      "reason": "The student has just read a new problem. This candidate provides scaffolding by breaking down the problem and asking the student to identify the operation needed to solve it."
+    }
+  ],
+  "trace_sha256": "320401dbd5d207370fae4de5120acb62b25de40042f3cea4a7d12c37490a4659"
+}

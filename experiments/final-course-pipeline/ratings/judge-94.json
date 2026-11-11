@@ -1,0 +1,45 @@
+{
+  "case_index": 94,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 4 tens and 1 hundred equals 14 tens?",
+      "reason": "The student chose D, which is 410, not 14 tens. The tutor's question is based on an incorrect assumption about the student's answer or a misunderstanding of the problem. The student did not say 14 tens."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "One hundred is the same as 10 tens. So if you have 10 tens (which is 100) and 4 more tens, how many tens is that in total? What's 10 + 4?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable steps, first converting hundreds to tens and then combining the tens. This is a good example of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If 1 hundred is 10 tens, then 1 hundred and 4 tens is how many tens?",
+      "reason": "The tutor provides a key conversion (1 hundred = 10 tens) and then asks the student to apply it to the problem, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "5db61b2179b2b543cc3fe08f1a9c60c4f98c10edf6b311a69b609d3aa91cb961"
+}

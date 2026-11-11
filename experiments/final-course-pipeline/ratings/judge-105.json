@@ -1,0 +1,45 @@
+{
+  "case_index": 105,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what digit should change when we add 100 to 700?",
+      "reason": "The tutor reminds the student of the current topic (counting in hundreds) and then asks a question that prompts the student to identify the relevant place value, which encourages independent thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So instead of the tens place changing, which one would change?",
+      "reason": "The tutor corrects the student's implicit assumption about counting in tens and then asks a guiding question to help the student identify the correct place value for counting in hundreds, promoting active recall."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "the hundreds place changes",
+      "reason": "The tutor directly provides the answer to which place value changes, which the student could have figured out with a more open-ended prompt."
+    }
+  ],
+  "trace_sha256": "f866b5ebbc06f81ccb34a265a873f745cb796ab53ebe8bcd27845aa85b673f36"
+}

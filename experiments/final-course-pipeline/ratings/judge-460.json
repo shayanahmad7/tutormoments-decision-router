@@ -1,0 +1,45 @@
+{
+  "case_index": 460,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would you like to show me?",
+      "reason": "The student just said 'I want to show something' and this reply directly addresses that."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "What is the result of subtracting 4,321 from 9,876? Let me know how you would start solving this.",
+      "reason": "The student explicitly stated 'I want to show something' immediately before this reply. The tutor completely ignores this and tries to push forward with the math problem, which is not appropriate to the current student action."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Sure, go ahead and show me what you'd like to share.",
+      "reason": "The student just said 'I want to show something' and this reply directly addresses that, giving permission to proceed."
+    }
+  ],
+  "trace_sha256": "9140047affc79a5e6c480cf10419ca7048cacf17054afd998fbaf7955c138959"
+}

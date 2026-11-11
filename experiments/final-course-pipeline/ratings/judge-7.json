@@ -1,0 +1,45 @@
+{
+  "case_index": 7,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation turns 2 into 6? If you triple the previous term, what do you get when you triple 6?",
+      "reason": "The tutor asks the student to identify the operation between 2 and 6, which is a good way to check understanding of 'tripling'. Then, it asks the student to apply the rule to the second term to find the third, promoting independent calculation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we triple it, what do we get for the second term? Can you calculate that?",
+      "reason": "The tutor guides the student to apply the rule to the first term to find the second, which is a good scaffolding step. However, the second term (6) is already given in the problem, so this step is redundant and slightly over-scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would you do to find the next term in the sequence?",
+      "reason": "The tutor reminds the student of the rule and the meaning of 'tripling' before asking how to find the next term. This is a good scaffolding step, but it could be more specific about which term to find."
+    }
+  ],
+  "trace_sha256": "edac60375e0262c1af84d8b4bc49613fdfb92513a7928d9f7f099ecfdb858161"
+}

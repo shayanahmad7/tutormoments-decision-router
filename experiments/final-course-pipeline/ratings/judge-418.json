@@ -1,0 +1,45 @@
+{
+  "case_index": 418,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what does that tell us about the statement \"You can pair them all up with none over\"? Does that describe an odd number or an even number?",
+      "reason": "The tutor connects the student's correct identification of an odd number (5) to the first statement in the problem, prompting them to apply their understanding to the problem's context. This is a good scaffold that also promotes rigor by asking the student to make the connection."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We saw that if you can pair everything up with none left over, that means the number is even. So, which of the statements is the one that does *not* show that the apples are even? Let's look at the options again and see which one is different.",
+      "reason": "The tutor reiterates the key takeaway from the previous activity and directly connects it to the problem's question. This is a good scaffold to help the student re-engage with the problem after the whiteboard activity."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you can split the apples into two equal piles, does that show an even number? Why or why not?",
+      "reason": "The tutor reminds the student of the question's core (what *will not* help show an even number) and then guides them to consider another option from the problem, asking for justification. This is a good scaffold that also promotes rigor by asking the student to explain their reasoning."
+    }
+  ],
+  "trace_sha256": "5e9509fbecb1e407360ba9e103ceb914f24138fa89e48411c2da9681aaefd009"
+}

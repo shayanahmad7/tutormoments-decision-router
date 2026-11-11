@@ -1,0 +1,45 @@
+{
+  "case_index": 180,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do we divide 24 by 4 to solve this problem?",
+      "reason": "The student has already written the correct division problem. This question asks them to justify their choice, which promotes deeper understanding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing 24 by 4 gives the number of students in each group?",
+      "reason": "The student has already written the correct division problem. This question asks them to explain their reasoning, which promotes deeper understanding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 24 divided by 4?",
+      "reason": "The student has already written '24 ÷ 4 = 6' on the whiteboard, so asking for the answer is overhelping as they've already provided it."
+    }
+  ],
+  "trace_sha256": "64a229e76b2db16414d712f1e4d5e83d76f75f289411e32d4f92fcdb0fedfba5"
+}

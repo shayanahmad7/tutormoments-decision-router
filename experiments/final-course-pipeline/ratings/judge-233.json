@@ -1,0 +1,45 @@
+{
+  "case_index": 233,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So we're breaking 48 into two parts. The 8 is in the ones place, and the 4 is in the tens place. That means the 4 is really 40, right? So we can write 48 as 40 + 8.",
+      "reason": "The tutor re-explains the distributive method in the context of the problem, breaking down 48 into 40 and 8, which is a helpful scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, here's your turn: What number should go in the star to make the equation 48 x 3 = (star + 8) x 3 true? Think about how 48 is broken into two parts.",
+      "reason": "The tutor reiterates the problem and the concept of breaking down the number, then asks the student to apply this understanding to find the star, promoting independent thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, 27 times 4 would be the same as (20 + 7) times 4. Now, if we were to distribute the 4, what would we multiply it by first?",
+      "reason": "The tutor uses the student's previous example (27 x 4) to guide them through the distributive method, breaking down 27 and then asking a targeted question to prompt the next step."
+    }
+  ],
+  "trace_sha256": "47e96e980be44bdc3364d23b49b66ec2b3a6114f213b4c811a898ce336eeeaa3"
+}

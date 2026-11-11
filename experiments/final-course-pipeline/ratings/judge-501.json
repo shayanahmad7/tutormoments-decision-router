@@ -1,0 +1,45 @@
+{
+  "case_index": 501,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What two numbers multiply to give 24? Let's start with one possible pair of side lengths.",
+      "reason": "The tutor breaks down the problem into a more manageable first step, asking the student to identify factors of 24, which is a necessary prerequisite for finding side lengths."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If one side is 6 meters, what would the other side need to be to give an area of 24 square meters?",
+      "reason": "The tutor provides one of the side lengths (6 meters), which the student could productively determine on their own. This is an overhelp."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What are two different pairs of side lengths that could give an area of 24 m², and what would the perimeter be for each pair?",
+      "reason": "The tutor restates the problem, asking the student to independently come up with two pairs of side lengths and their corresponding perimeters, which increases the cognitive demand."
+    }
+  ],
+  "trace_sha256": "a0079b35aa541170a1a25c874fdee500843f1a9d3e6b06e1e4b1a964c4684ee4"
+}

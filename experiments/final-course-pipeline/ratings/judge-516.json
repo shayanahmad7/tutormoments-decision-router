@@ -1,0 +1,45 @@
+{
+  "case_index": 516,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you write that final answer on the whiteboard?",
+      "reason": "The tutor summarizes the student's correct calculations and then asks the student to write the final answer, which promotes active participation and reinforces the concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you write the final answer as a fraction and explain why that makes sense?",
+      "reason": "The tutor acknowledges the student's correct calculations and then asks them to write the answer as a fraction and explain their reasoning, which adds rigor by requiring justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what is the final answer when you put those together as a fraction?",
+      "reason": "The tutor summarizes the student's correct calculations and then prompts them to state the final answer as a fraction, which is a direct next step."
+    }
+  ],
+  "trace_sha256": "67e93b2a47c393034e580c1520a2378839dca5f1eef5c2b7ab8cc8b562959451"
+}

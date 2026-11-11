@@ -1,0 +1,45 @@
+{
+  "case_index": 262,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What calculation can you do to undo adding 10?",
+      "reason": "The tutor asks a guiding question to help the student think about the inverse operation, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation can you use to find the missing number? What number do you get when you undo the addition?",
+      "reason": "The tutor explicitly states the equation and then asks about the inverse operation, providing a clear hint without giving the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number do you get when you take 10 away from 403?",
+      "reason": "The tutor directly tells the student the operation to perform (subtract 10 from 403), which is a strong hint and a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "18bdbc13891a68cbc93d2131a91e7c8ea6e5f7ff704ec42bebd8baf0544323a6"
+}

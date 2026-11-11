@@ -1,0 +1,45 @@
+{
+  "case_index": 135,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What makes one of them different?",
+      "reason": "The tutor prompts the student to identify the unique characteristic of one shape, encouraging deeper thinking beyond just counting angles."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start with the rectangle. How many angles does it have?",
+      "reason": "The tutor breaks down the task by guiding the student to start with a specific shape, making the problem more manageable."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you look at the shapes and tell me what you notice about the number of angles each one has?",
+      "reason": "The tutor asks an open-ended question that encourages the student to observe and analyze the shapes independently, promoting rigor."
+    }
+  ],
+  "trace_sha256": "50d8b572dc43d990db387bc73fe88ee3cea3b50734802c4b365145768cf5eb4b"
+}

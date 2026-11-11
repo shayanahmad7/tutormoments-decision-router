@@ -1,0 +1,45 @@
+{
+  "case_index": 415,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which diagram shows parts being added together? Can you point to the one that matches 15 and 12 as the parts?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable steps by asking the student to identify the operation and then relate it to the diagrams. This is a good example of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which part of the problem do you think represents the total number of birds in the tree after the 12 flew in? How can you use that to decide which diagram matches the story?",
+      "reason": "The tutor guides the student to identify the 'total' in the problem and then connect that understanding to the diagrams, which is a helpful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you point to the part of the diagram that shows the 15 birds already in the tree and the 12 that flew in? Then, which part shows the total?",
+      "reason": "The tutor provides scaffolding by asking the student to identify specific parts of the problem within the diagrams, helping them to break down the visual information."
+    }
+  ],
+  "trace_sha256": "696466537bada045eef0ac0207521b8e70585c2ac8afd0b8f1e8829f871053ab"
+}

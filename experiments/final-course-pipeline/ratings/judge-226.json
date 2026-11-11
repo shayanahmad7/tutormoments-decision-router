@@ -1,0 +1,45 @@
+{
+  "case_index": 226,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think of a time when you dedicated yourself to something, like practicing an instrument or studying for a test. What does it mean to you to be dedicated?",
+      "reason": "The tutor provides a concrete example to help the student connect the abstract concept of 'dedicate' to their own experience, which is scaffolding. Asking 'What does it mean to you to be dedicated?' promotes deeper understanding and personal connection, adding rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a sentence using \"dedicate\" to describe something you're really committed to?",
+      "reason": "The tutor asks the student to apply the word 'dedicate' in a sentence, which is a good way to check for understanding and adds rigor. The prompt also provides a hint about the meaning ('something you're really committed to'), which is helpful without being overhelpful."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a sentence using \"dedicate\" that shows you understand what it means?",
+      "reason": "The tutor asks the student to use the word in a sentence to demonstrate understanding, which is a rigorous task. It directly addresses the vocabulary word the tutor was just discussing."
+    }
+  ],
+  "trace_sha256": "2cafdf4e891708912b9d9ee980371bdc1c07cc8ebaa6e40845aed3f8cd15300c"
+}

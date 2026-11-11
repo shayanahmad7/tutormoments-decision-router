@@ -1,0 +1,45 @@
+{
+  "case_index": 419,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you split thirteen apples into two piles, how many would be in each pile?",
+      "reason": "The tutor is asking the student to perform the action of splitting 13 into two piles, which is a direct application of the concept being discussed."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why or why not?",
+      "reason": "The tutor asks the student to justify their answer, which promotes deeper thinking and understanding of the concept of odd and even numbers in relation to splitting into equal piles."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does that tell you about whether thirteen is odd or even?",
+      "reason": "The tutor prompts the student to connect the action of splitting the apples to the definition of odd and even numbers, reinforcing the conceptual understanding."
+    }
+  ],
+  "trace_sha256": "3d51ac019353306e51016a6cb6bca9feddb409c6aec3bebcfe630129eb20c05b"
+}

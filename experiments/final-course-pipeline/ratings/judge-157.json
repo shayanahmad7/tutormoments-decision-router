@@ -1,0 +1,45 @@
+{
+  "case_index": 157,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 2 divided by 1/5 equals 10? What does this mean in terms of how many fifths are in 2 wholes?",
+      "reason": "The tutor confirms the correct answer and then asks the student to explain their reasoning, which promotes deeper understanding and rigor. The question is specific to the problem and provides a hint about relating it to the previous model, which is scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since one whole has five one-fifths, how many one-fifths would be in two wholes? Can you figure out the next step?",
+      "reason": "The tutor confirms the answer and then provides a very leading question that almost gives away the explanation. The student already provided the correct answer, so this level of guidance is overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing by a unit fraction like 1/5 gives a result that is larger than the original number?",
+      "reason": "The tutor confirms the correct answer and then asks a rigorous question that prompts the student to explain the underlying mathematical concept of dividing by a unit fraction. This encourages deeper thinking without overhelping."
+    }
+  ],
+  "trace_sha256": "8980f3eb9a73b1f92693b5c74a1589a991abfea517c5e3a13d19b469ee5316ed"
+}

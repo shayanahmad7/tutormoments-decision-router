@@ -1,0 +1,45 @@
+{
+  "case_index": 88,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What part of the problem makes carrying seem necessary?",
+      "reason": "The tutor prompts the student to consider the structure of the problem and identify the specific elements that might lead to carrying, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you find a case where he wouldn’t have to carry?",
+      "reason": "The tutor asks the student to test the claim by finding a counterexample, which promotes deeper thinking and problem-solving (rigor). It also restates the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the smallest total value this number could be?",
+      "reason": "The tutor breaks down the problem by focusing on one part of the addition and asking for the smallest possible value, which is a scaffolding technique to help the student analyze the problem."
+    }
+  ],
+  "trace_sha256": "fd6bf791269305ac4e606f5583695a64c2e97dd6e8e9ccfeb52e660e08caa37b"
+}

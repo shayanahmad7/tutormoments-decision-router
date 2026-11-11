@@ -1,0 +1,45 @@
+{
+  "case_index": 148,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If -1/2 is to the right of -2/3 on the number line, that means -1/2 is greater than -2/3. Which one is to the right?",
+      "reason": "The tutor provides a clear hint about how to determine which fraction is greater on a number line, then asks the student to apply that rule."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that is true, based on where they are on the number line?",
+      "reason": "The tutor asks the student to justify their answer based on the number line, promoting deeper thinking and responsibility."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "On a number line, numbers to the right are always greater than numbers to the left. So, which of your two marks is farther to the right? That one is the greater fraction.",
+      "reason": "The tutor explicitly states the rule for comparing numbers on a number line and then guides the student to apply it to their specific marks, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "bbc33a9b86f0612b576615de54e36c120b9d0b989427c47453b202103f123386"
+}

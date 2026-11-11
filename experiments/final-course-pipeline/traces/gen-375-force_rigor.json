@@ -1,0 +1,972 @@
+{
+  "tag": "gen-375-force_rigor",
+  "payload": {
+    "model": "qwen/qwen3-32b",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# Expert K-12 math tutor\n\nYou are an expert K-12 math tutor.\n\nYour goal is **not** to get the student to a correct answer — it is to build\ndeeper understanding the student can apply on their own.\n\n### The core dial: scaffold ↔ rigor\n\nEvery moment is a choice between adding **support** (a scaffold, to make the task\napproachable) and pushing for **rigor** (a harder task, a justification, a\ntransfer to a new problem).\n\nTwo failure modes bracket the right move:\n\n- **Over-scaffolding** — you do the thinking, give away the answer or the\n  operation, or help before the student has shown a need. This is the single\n  most common tutoring failure. Avoid it.\n- **Missed chances to push for rigor** — you miss chances to turn the dial\n  toward a more rigorous form of questioning by accepting an immediate correct\n  answer or re-teaching a skill the student has already mastered.\n\nThe goal is to stay in the student's zone of proximal development by:\n- Scaffolding for access when the content is challenging for the student.\n- Pushing for rigor when the student masters more basic expressions of a concept.\n\n### Context\n\nYou have the following metadata about the student: Platform: tutoring_provider_a\n\n### Sending multiple messages\n\nTo break up your response over multiple messages, use [NEW_MESSAGE]. The system will separate your response into multiple messages to the student.\n\nHere is the conversation so far:\n\nTurn 1. TUTOR: [PAUSE: 2 seconds]\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification \"Mr. Rivera has joined\" appears on the screen.\nTurn 1. TUTOR: [PAUSE: 334 seconds] The tutor's camera is on, but there is no dialogue or whiteboard interaction for the remainder of the video.\nTurn 1. TUTOR: [SCREEN_UPDATE] A notification appears at the top of the screen: \"Kayla has joined\".\nTurn 1. TUTOR: [PAUSE: 53 seconds] The student's video feed appears as a black box with their name, Kayla.\nTutor shares their screen, showing a list of math topics. The tutor's cursor moves to an item labeled \"Question of the Day - Wed 26 Aug\" and clicks the \"Resume\" button.\nTurn 1. TUTOR: [PAUSE: 68 seconds]\nTurn 1. STUDENT: Hi.\nTurn 2. TUTOR: Hi.\nTurn 3. TUTOR: How are you doing today?\nTurn 4. STUDENT: Good.\nTurn 5. TUTOR: That's good. Are you excited to start doing math?\nTurn 6. STUDENT: Kind of, yeah.\nTurn 7. TUTOR: Okay, good. Last time we completely forgot, I forgot to do the question of the day thing. So, we have the question of the day.\nTurn 8. TUTOR: Place value with three digit integers.\nTurn 9. TUTOR: Which digit is in the tens place in the number four thirty eight? 438?\nTurn 10. TUTOR: [PROBLEM_CHANGE: p1 - 'Place value with 3 digit integers' (start)] The screen shows a multiple-choice question: \"Which digit is in the tens place in the number 438?\". The options are A) 4, B) 3, C) 8, D) 0.\nTurn 10. TUTOR: [PAUSE: 12 seconds]\nTurn 10. STUDENT: Three?\nTurn 11. TUTOR: Yes.\nTurn 12. TUTOR: [PAUSE: 5 seconds]\nTurn 12. TUTOR: Oh God, that's the only one.\nTurn 13. TUTOR: [SCREEN_INTERACTION: tutor - answering question] Tutor clicks option B, then clicks the \"Check\" button. The screen shows \"B is correct!\" and then loads a summary page titled \"Your Daily Questions\".\nTurn 13. TUTOR: Okay. Topics. Now I think we should do tens to hundreds. So,\nTurn 14. TUTOR: [SCREEN_INTERACTION: tutor - starting topic] Tutor navigates to the \"Topics\" page, scrolls down to \"Tens to hundreds\" and clicks \"Start topic\".\nTurn 14. TUTOR: [PROBLEM_CHANGE: p2 - 'Tens to hundreds' (start)] A new problem appears on the screen. The question is \"Which of these represents 23?\". Four options (A, B, C, D) show different arrangements of tens bundles and single sticks.\nTurn 14. TUTOR: which one of these represents twenty-three? I'll give you a hint. These bunches are tens, while these individual thingies are ones, okay?\nTurn 15. TUTOR: [PAUSE: 17 seconds]\nTurn 15. STUDENT: Um, C?\nTurn 16. TUTOR: Yes.\nTurn 17. TUTOR: [SCREEN_INTERACTION: tutor - answering question] Tutor clicks option C, then clicks the \"Check\" button. The screen shows \"C is correct!\" and then loads the next problem.\nTurn 17. TUTOR: [PROBLEM_CHANGE: p3 - 'Tens to hundreds' (start)] A new problem appears on the screen. The question is \"46 is equivalent to\". The options are A) 6 tens and 4 ones, B) 6 ones and 4 tens, C) 4 tens and 60 ones, D) 40 tens and 6 ones.\nTurn 17. STUDENT: What does equivalent mean?\nTurn 18. TUTOR: [PAUSE: 21 seconds]\nTurn 18. STUDENT: B?\nTurn 19. TUTOR: [PAUSE: 33 seconds]\nTurn 19. STUDENT: Ow.\nTurn 20. TUTOR: [PAUSE: 16 seconds]\nTurn 20. STUDENT: Um, I think C.\nTurn 21. TUTOR: [SCREEN_INTERACTION: tutor - pointing] Tutor moves the cursor over option B, which reads \"6 ones and 4 tens\".\nTurn 21. TUTOR: [PAUSE: 9 seconds]\nTurn 21. TUTOR: [PROBLEM_CHANGE: p1 - '46 is equivalent to' (start)] On the screen is a multiple-choice question. The question is \"46 is equivalent to\". The options are: A) 6 tens and 4 ones, B) 4 tens and 6 ones, C) 40 tens and 60 ones, D) 40 tens and 6 ones.\nTurn 21. TUTOR: [PAUSE: 33 seconds]\nTurn 21. STUDENT: Forty-six.\nTurn 22. TUTOR: [PAUSE: 30 seconds]\nTurn 22. STUDENT: Oh, so B?\nTurn 23. TUTOR: Okay.\nTurn 24. TUTOR: [SCREEN_INTERACTION: student - selecting answer] Student clicks on option B, \"4 tens and 6 ones\".\nTurn 24. TUTOR: [SCREEN_INTERACTION: student - checking answer] Student clicks the \"Check\" button.\nTurn 24. TUTOR: [SCREEN_UPDATE] The screen shows \"B is correct!\" and provides feedback: \"4 tens and 6 ones is 40 + 6 which is 46.\"\nTurn 24. TUTOR: [PAUSE: 9 seconds]\nTurn 24. TUTOR: [SCREEN_INTERACTION: student - proceeding to next question] Student clicks the \"Next\" button.\nTurn 24. TUTOR: [PROBLEM_CHANGE: p2 - 'Ten of these bundles is equal to' (start)] A new problem appears. It shows an image of a bundle of ten sticks tied with a red ribbon. The question is \"Ten of these bundles is equal to\". The options are: A) 100, B) 10, C) 1000, D) 20.\nTurn 24. TUTOR: [PAUSE: 44 seconds]\nTurn 24. STUDENT: A hundred?\nTurn 25. TUTOR: [SCREEN_INTERACTION: student - selecting and checking answer] Student clicks on option A, \"100\", and then clicks the \"Check\" button.\nTurn 25. TUTOR: [SCREEN_UPDATE] The screen shows \"A is correct!\" and provides feedback: \"Ten lots of 10 is 10 x 10 which is equal to 100.\"\nTurn 25. TUTOR: [SCREEN_INTERACTION: student - proceeding to next question] Student clicks the \"Next\" button.\nTurn 25. TUTOR: [PROBLEM_CHANGE: p3 - 'One hundred is equal to' (start)] A new problem appears. It shows the same image of a bundle of ten sticks. The question is \"One hundred is equal to ___ of these bundles of ten\". The options are: A) 100, B) 10, C) 1, D) 90.\nTurn 25. STUDENT: I don't understand.\nTurn 26. TUTOR: So one hundred is equal to how many of these bundles of ten? So how many of these bundles do we need to make one hundred?\nTurn 27. TUTOR: [PAUSE: 13 seconds]\nTurn 27. STUDENT: Ten?\nTurn 28. TUTOR: [SCREEN_INTERACTION: student - selecting and checking answer] Student clicks on option B, \"10\", and then clicks the \"Check\" button.\nTurn 28. TUTOR: [SCREEN_UPDATE] The screen shows \"B is correct!\" and provides feedback: \"With 10 lots of 10 ones we would need 10 bundles of 10 sticks to make 100 sticks in total.\"\nTurn 28. TUTOR: [SCREEN_INTERACTION: student - proceeding to next question] Student clicks the \"Next\" button.\nTurn 28. TUTOR: [PROBLEM_CHANGE: p4 - '4 tens and 1 hundred = ___ tens' (start)] A new problem appears. The question is \"4 tens and 1 hundred = ___ tens\". The options are: A) 140, B) 14, C) 41, D) 410.\nTurn 28. STUDENT: Forty.\nTurn 29. TUTOR: [PAUSE: 15 seconds]\nTurn 29. STUDENT: Four hundred and one?\n\nRespond as the TUTOR. Give only your response, no labels or prefixes.\n\nNEXT REPLY INSTRUCTION:\nPush for appropriate rigor now. Build on what the learner has actually demonstrated, not an answer the tutor supplied. Invite the student to justify a step, connect representations, check a claim, generalize, or take the next step independently. Choose one opportunity that fits the current problem. Do not give the reasoning before asking for it, turn the challenge into a sequence of tiny leading hints, or introduce unrelated difficulty. Keep the mathematical work with the learner; rigor is not simply saying why after every answer.\nFor this next reply only, use the specified policy in context. Give the student one clear, manageable invitation to think. Be mathematically accurate and concise. Do not mention policy names, routing, evaluation, or these instructions.\n/no_think"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 384,
+    "stream": true,
+    "provider": {
+      "only": [
+        "DeepInfra"
+      ],
+      "allow_fallbacks": false
+    },
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20261111,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "payload_sha256": "793f3b079081b988c6b864115113b699bbfd14fa66b9964673f5eeb12a79aa2a",
+  "reserve_usd": 0.001067072,
+  "started_utc": "2026-11-11T19:59:37Z",
+  "status": "complete",
+  "connection_attempts": [],
+  "text": "Let's think about what 4 tens and 1 hundred really means. If 1 hundred is the same as 10 tens, then 1 hundred and 4 tens is the same as how many tens? What do you think?",
+  "first_answer_ms": 732.8223749999836,
+  "usage": {
+    "prompt_tokens": 2480,
+    "completion_tokens": 50,
+    "total_tokens": 2530,
+    "cost": 0.0002124,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002124,
+      "upstream_inference_prompt_cost": 0.0001984,
+      "upstream_inference_completions_cost": 1.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-32b",
+  "events": [
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "Let's ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "think",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "a",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "bout ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "what",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "4",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " tens an",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "d 1 hun",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "dred r",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "all",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "y",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "means. I",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "f 1",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " hun",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "dred ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "is ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "e",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " same",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "as 10",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "t",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ens, the",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "n 1 ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "h",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "u",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ndred",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " an",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "d 4 ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "tens ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "is ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "the ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "same ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "as ho",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "w",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " many",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " te",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "ns? ",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "What d",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "o",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": " you think?",
+            "role": "assistant"
+          },
+          "finish_reason": null,
+          "native_finish_reason": null
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ]
+    },
+    {
+      "id": "gen-1794427177-gRwZWErh84HKX8IudPv0",
+      "object": "chat.completion.chunk",
+      "created": 1794427177,
+      "model": "qwen/qwen3-32b",
+      "provider": "DeepInfra",
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "delta": {
+            "content": "",
+            "role": "assistant"
+          },
+          "finish_reason": "stop",
+          "native_finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2480,
+        "completion_tokens": 50,
+        "total_tokens": 2530,
+        "cost": 0.0002124,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0002124,
+          "upstream_inference_prompt_cost": 0.0001984,
+          "upstream_inference_completions_cost": 1.4e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  ],
+  "reasoning_text": "",
+  "cost_usd": 0.0002124,
+  "elapsed_ms": 2476.113207999987
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 25,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you take away 5 from 8, what do you get? Try that step.",
+      "reason": "The student has already said 'The A' which is likely the answer 5. The tutor is asking the student to verify their answer by performing the subtraction, which is a good scaffolding step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many steps back did you take? What number do you get when you subtract that from 8 to reach 3?",
+      "reason": "The tutor is guiding the student to think about the subtraction in terms of steps on a number line, which is a helpful visual and conceptual scaffold for this type of problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if you start at eight on the number line and subtract five, does that get you to three? Why or why not?",
+      "reason": "The tutor asks the student to verify their answer and then justify it, which promotes deeper thinking and rigor. The 'why or why not' part is particularly good for rigor."
+    }
+  ],
+  "trace_sha256": "447e70b9b801a98a8fb715a9e1e07479502ee3ca2a2caa95d880c0f8b5a49aff"
+}

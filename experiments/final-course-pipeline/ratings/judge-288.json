@@ -1,0 +1,45 @@
+{
+  "case_index": 288,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, how can you use that to find how many are *not* wearing hats? What operation would you use next?",
+      "reason": "The tutor provides a clear hint by asking what operation to use next, which is a form of scaffolding. It directly addresses the student's current point of confusion."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let's take a moment to look at problem 9 again",
+      "reason": "The student has just finished problem 10 and the tutor has confirmed the answer. This candidate attempts to go back to problem 9, which is out of sync with the current conversation flow. The student has already correctly solved problem 9 and moved on."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation helps you find the rest?",
+      "reason": "The tutor provides a clear hint by asking what operation to use next, which is a form of scaffolding. It directly addresses the student's current point of confusion."
+    }
+  ],
+  "trace_sha256": "f8e94d611947bbb9ce62c1fd79b530761c7af551f53add23158fb87df52336a6"
+}

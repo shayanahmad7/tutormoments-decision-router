@@ -1,0 +1,45 @@
+{
+  "case_index": 509,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How does that help us figure out if the total number of apples is even or not?",
+      "reason": "The tutor asks a question that prompts the student to consider the relevance of the statement to the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How does that help us figure out if the total number of apples is even or not?",
+      "reason": "The tutor asks a question that prompts the student to consider the relevance of the statement to the problem, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How does that help us figure out if the total number of apples is even or odd?",
+      "reason": "The tutor asks a question that prompts the student to consider the relevance of the statement to the problem, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "be412a5c5dc4b70f5f18bdd4b37a8b5a8384eeb9b0d66e616b6b9312ecce2d3d"
+}

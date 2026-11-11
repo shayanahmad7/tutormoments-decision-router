@@ -1,0 +1,45 @@
+{
+  "case_index": 469,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try to visualize or write out what one row looks like, and then think about what you would do to find the total for 6 rows?",
+      "reason": "The tutor prompts the student to visualize or write out the problem, which is a helpful scaffolding strategy. It also encourages the student to think about the next step independently, promoting rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, how would you figure out how many squares are on 6 rows if each row has 3 squares? What could you do first?",
+      "reason": "The tutor asks a direct question that encourages the student to think about the problem-solving process, promoting rigor. It doesn't offer specific scaffolding but prompts the student to initiate the solution."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would figure this out using multiplication?",
+      "reason": "The tutor directly asks the student to explain their reasoning using multiplication, which promotes rigor by requiring them to articulate their understanding of the concept in the context of the problem."
+    }
+  ],
+  "trace_sha256": "6c173517fed99a933bc2f669541ee3feea9a29896c84ddbd534e32d502879efe"
+}

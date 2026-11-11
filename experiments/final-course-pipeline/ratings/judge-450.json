@@ -1,0 +1,45 @@
+{
+  "case_index": 450,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we convert 1/2 to twelfths, how many twelfths would that be?",
+      "reason": "The tutor is guiding the student through the process of finding a common denominator by starting with a specific conversion, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What denominator could we use to compare them?",
+      "reason": "The tutor is prompting the student to identify a common denominator, which is a scaffolded step in comparing fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the smallest number that 12, 2, 6, and 4 all divide into evenly?",
+      "reason": "The tutor is asking the student to find the least common multiple (LCM) of all denominators, which is a more rigorous approach to finding a common denominator and requires the student to apply their knowledge independently."
+    }
+  ],
+  "trace_sha256": "f1ef9a8ed87eb7d7db5213f0641404dca52b7e6308bbf163d45963cbdb042167"
+}

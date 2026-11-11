@@ -1,0 +1,45 @@
+{
+  "case_index": 125,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But which diagram shows 68 as the total and 23 and 45 as the parts? Let’s look at the diagrams again. What do you notice about the numbers in each one?",
+      "reason": "The tutor guides the student to re-examine the diagrams and the relationship between the numbers, prompting them to connect their calculation to the visual representation. This is a good scaffold that also promotes rigor by asking the student to analyze the diagrams."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How does this help us see why diagram B is the correct one?",
+      "reason": "The tutor acknowledges the student's correct calculation and then prompts them to explain the connection between their calculation and the correct diagram. This scaffolds the student's understanding of bar models while also promoting rigor by asking for justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means the correct diagram is B, where the bottom bar is 68 and the top bars are 23 and 45. Good job figuring that out! Can you explain why the other diagrams wouldn’t work?",
+      "reason": "The tutor provides the answer (diagram B) and the explanation for why it's correct, which the student could have productively supplied. While asking the student to explain why other diagrams wouldn't work adds rigor, the initial overhelp detracts from the overall quality."
+    }
+  ],
+  "trace_sha256": "bc2aabca32bacaac4a2c634fdf354651c7ffb866c46f7b968894e26606835075"
+}

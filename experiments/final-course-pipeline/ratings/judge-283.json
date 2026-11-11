@@ -1,0 +1,45 @@
+{
+  "case_index": 283,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what could we say about the relationship between the numerators and denominators of these two fractions?",
+      "reason": "The tutor asks the student to explain the relationship between the numerators and denominators, which encourages deeper thinking about equivalent fractions."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why they're the same size, even though the numbers look different? What's happening with the pieces?",
+      "reason": "The tutor asks the student to explain their reasoning for why the fractions are the same size, promoting deeper understanding and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what happens if we simplify four-sixths? How could we make it look like two-thirds? What do you think we need to do to the numerator and denominator?",
+      "reason": "The tutor guides the student towards the concept of simplifying fractions by asking how to make four-sixths look like two-thirds, providing a clear path for the next step."
+    }
+  ],
+  "trace_sha256": "025e8125303591cbf5258d41d49a6d1267eee0b71dd9de0025c222c4fd6ef207"
+}

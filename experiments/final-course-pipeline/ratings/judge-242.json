@@ -1,0 +1,45 @@
+{
+  "case_index": 242,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is three times four? And can you explain how you could show that using addition?",
+      "reason": "The tutor asks the student to apply the concept of multiplication as repeated addition to a new problem, which promotes independent thinking and understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So two plus two plus two. What does that equal? Let me know when you get the sum.",
+      "reason": "The tutor prompts the student to complete the addition problem they just set up, which is a direct next step in the current explanation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If 2 x 3 is the same as 2 + 2 + 2, what is that equal to? Can you add those up for me?",
+      "reason": "The tutor directly asks the student to solve the addition problem that was just explained, reinforcing the concept of multiplication as repeated addition."
+    }
+  ],
+  "trace_sha256": "b7aafe9958c31f70bb0b4a98584743129eb9c1bb77a92e96b0e33e912f316376"
+}

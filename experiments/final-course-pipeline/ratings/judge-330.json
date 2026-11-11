@@ -1,0 +1,45 @@
+{
+  "case_index": 330,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how many fives are in forty.",
+      "reason": "The tutor provides a hint that helps the student recall multiplication facts or use division to solve the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how you can figure it out.",
+      "reason": "The tutor asks the student to consider their strategy, which promotes independent problem-solving."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about your 5 times table.",
+      "reason": "The tutor provides a specific hint to guide the student towards using their knowledge of multiplication tables."
+    }
+  ],
+  "trace_sha256": "5e10a016f87a1047c9cd1e65f769bc1f88aca93036dca0a96d60152fdac3d3a6"
+}

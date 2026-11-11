@@ -1,0 +1,45 @@
+{
+  "case_index": 203,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how you added the angles together and figured out what to subtract from 180°",
+      "reason": "The tutor asks the student to explain their process, specifically mentioning the steps of adding and subtracting from 180 degrees, which is a good scaffold for the student to articulate their thinking. It also promotes rigor by asking for an explanation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you walk me through how you calculated the size of angle n?",
+      "reason": "This is a good prompt for rigor, asking the student to explain their reasoning. It is not overhelping as it doesn't provide any steps or hints."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The total of all the angles on a straight line is 180°. You have one angle of 132° and another of 31.2°. What do you get if you add those two together? Then, what do you need to do to find the size of angle n?",
+      "reason": "The tutor provides all the necessary information and breaks down the problem into very small, leading steps, which is overhelping. The student already got the correct answer, so this level of scaffolding is not needed."
+    }
+  ],
+  "trace_sha256": "b500a0a81f61ab6859bb5f0ec5f57e42a54619717af3e6bb32265f2fbd138f56"
+}

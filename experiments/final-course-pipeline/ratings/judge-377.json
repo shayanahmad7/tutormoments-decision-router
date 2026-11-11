@@ -1,0 +1,45 @@
+{
+  "case_index": 377,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number is 5 less than 203?",
+      "reason": "The tutor provides a direct hint by asking the student to subtract 5, which is appropriate given the student's previous request for help and the nature of skip counting by 5s."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 203 minus 5?",
+      "reason": "The tutor explicitly states the operation (203 minus 5), which is overhelping as the student could productively determine this operation with a slightly less direct hint."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 5 less than 203?",
+      "reason": "The tutor provides a useful hint by connecting 'before' in skip counting by 5s to finding a number that is '5 less', which is appropriate scaffolding."
+    }
+  ],
+  "trace_sha256": "62e7da5e9697d9525d5f34a57fc8b8e0b6702076bd90fcfa9c2e4fdf4574a4f2"
+}

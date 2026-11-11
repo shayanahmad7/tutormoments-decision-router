@@ -1,0 +1,45 @@
+{
+  "case_index": 16,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 10 is a factor of this number?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. It also provides scaffolding by directing the student to focus on '10'."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you check if each of these numbers can be made using only the prime factors 3, 5, and 7? Start with 10. Is it possible to make 10 using just 3s, 5s, and 7s?",
+      "reason": "The tutor provides scaffolding by breaking down the problem into smaller steps and directing the student to start with 10. It also promotes rigor by asking the student to check if the numbers can be made using the given prime factors."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What prime factors make up 10? Can you find them in the expression?",
+      "reason": "The tutor provides scaffolding by guiding the student to break down 10 into its prime factors and then check if those factors are present in the given expression. This also promotes rigor by asking the student to perform these steps independently."
+    }
+  ],
+  "trace_sha256": "fc1d4b4f14039bae1f8ca606e8bd306f6e9adba6b34d986d6e213494a585f562"
+}

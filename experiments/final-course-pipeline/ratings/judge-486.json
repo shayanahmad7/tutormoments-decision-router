@@ -1,0 +1,45 @@
+{
+  "case_index": 486,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you subtract 100 from 438?",
+      "reason": "The tutor reminds the student of the operation and provides the next step in the sequence to help them find the missing number."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation are you using, and what should the next number be?",
+      "reason": "The tutor asks the student to identify the operation and then apply it to find the next number, which promotes deeper understanding and responsibility."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out that it's B?",
+      "reason": "The tutor asks the student to explain their reasoning, which encourages justification and critical thinking."
+    }
+  ],
+  "trace_sha256": "08f119b12a2c355f013f71ad495ab549f75301e482923260f4aa0175e50bb7af"
+}

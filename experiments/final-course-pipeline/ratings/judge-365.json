@@ -1,0 +1,45 @@
+{
+  "case_index": 365,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would that give me for the new numerator?",
+      "reason": "The tutor asks the student to perform the addition of the numerators, which is the next logical step in the problem. This is a good scaffold because it guides the student to the next step without giving away the answer. It also promotes rigor by asking the student to perform the calculation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what should I do next to find the sum?",
+      "reason": "The tutor asks the student to identify the next step in solving the problem. This promotes rigor by asking the student to recall the procedure for adding like fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would the result be?",
+      "reason": "The tutor asks the student to perform the addition of the numerators and state the result. This is a good scaffold because it guides the student to the next step without giving away the answer. It also promotes rigor by asking the student to perform the calculation."
+    }
+  ],
+  "trace_sha256": "a021525530e8565b6f475e6dd86d0c61ce2b45eebd5179eb13489b0752a410af"
+}

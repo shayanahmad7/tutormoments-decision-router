@@ -1,0 +1,45 @@
+{
+  "case_index": 248,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the base ten blocks again. How does subtracting two first and then eight show up in the blocks? Can you point to the blocks and explain how your steps match what's happening there?",
+      "reason": "The tutor asks the student to connect their verbal strategy to the visual representation of the base ten blocks, which is a form of scaffolding. It also promotes rigor by asking the student to explain their reasoning and make connections."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "when you subtracted 3 from one of the tens, how did that help you with the 8? Can you explain that part again?",
+      "reason": "The tutor asks a specific question about the student's strategy, prompting them to elaborate on their reasoning. This increases rigor by requiring the student to justify their steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you decided to subtract 3 from a ten? What made you choose that step?",
+      "reason": "The tutor asks the student to explain their decision-making process for a specific step in their strategy, which promotes rigor by requiring justification and deeper thinking about their method."
+    }
+  ],
+  "trace_sha256": "28c00d69080563efc66a168eba862d8bd2e00abeb70e3b8dcf611f3a8b2852d3"
+}

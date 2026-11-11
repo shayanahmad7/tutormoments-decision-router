@@ -1,0 +1,45 @@
+{
+  "case_index": 176,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You already know that six times three is eighteen. If you add one more group of six to that, what do you get? What is eighteen plus six?",
+      "reason": "The tutor provides a specific hint by relating the current problem to a previously solved one (6x3=18) and guides the student to use addition to find the answer, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's focus. What is six times four? Think about what you know about multiplication facts.",
+      "reason": "The tutor prompts the student to think about what they already know, which encourages independent problem-solving and increases cognitive demand without providing direct steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out what it is by using something you already know? Maybe think about six times two or six times three?",
+      "reason": "The tutor offers a hint by suggesting the student use related multiplication facts (6x2 or 6x3) to solve 6x4, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "82170581666b4c5d954a88f0dbfbb376122d837780caa4bc21c9e0ce167dd7c6"
+}

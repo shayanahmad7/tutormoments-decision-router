@@ -1,0 +1,45 @@
+{
+  "case_index": 170,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me which one 641 is closer to and why?",
+      "reason": "The tutor provides the key numbers and then asks the student to explain their reasoning, which promotes rigor. It's scaffolding because it provides the numbers."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you point to where 641 would be on this number line I'm drawing?",
+      "reason": "The tutor is drawing a number line and asking the student to interact with it, which is a form of scaffolding. It helps visualize the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How far is 641 from 625? Write that number down. Then, how far is 641 from 650? Write that one down too. Once you have both distances, we can compare them to see which one is closer. Let's start with the first one: 641 minus 625. What do you get?",
+      "reason": "The tutor breaks down the problem into smaller, manageable steps (scaffolding) and asks the student to perform calculations and write them down, which promotes rigor. It also directly addresses the student's previous confusion about the distances."
+    }
+  ],
+  "trace_sha256": "d2a2248caf80563658191cc1ff2db38cb5245821245a64985204e4472eab0fbd"
+}

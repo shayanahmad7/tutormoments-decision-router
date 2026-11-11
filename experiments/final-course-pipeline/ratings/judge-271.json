@@ -1,0 +1,45 @@
+{
+  "case_index": 271,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's focus on the definition of a prime factor—it has to be both a factor of the number and a prime number.",
+      "reason": "The tutor provides a clear definition of a prime factor, which is scaffolding. They then ask the student to apply this definition to 2 and 9, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "A prime factor must be both: 1. A factor of the number (in this case, 18), and 2. A prime number.",
+      "reason": "The tutor provides a clear, bulleted definition of a prime factor, which is good scaffolding. They then ask the student to apply this definition to both numbers, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what exactly is a prime factor? How does that differ from just being a factor? Can you explain why 2 is a prime factor of 18 but 9 is not?",
+      "reason": "The tutor prompts the student to define 'prime factor' and differentiate it from a regular factor, which is scaffolding. They then ask the student to apply this understanding to the specific numbers in the problem, which promotes rigor."
+    }
+  ],
+  "trace_sha256": "d7efb3a5973706c080bee279daf8a0d06c291e48f790cffe99e2cf7c7fc8ee1d"
+}

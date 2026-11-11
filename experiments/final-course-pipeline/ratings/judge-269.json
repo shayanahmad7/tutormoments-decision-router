@@ -1,0 +1,45 @@
+{
+  "case_index": 269,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think the band was creative and tried new ways to play jazz? What in the text supports that idea?",
+      "reason": "The student is reading a question and options. The tutor asks a question that prompts the student to justify their answer with evidence from the text, which is a good way to encourage deeper thinking and understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The text says the band blended Afro-Cuban rhythms with jazz, used both types of instruments, and even made up solos on the spot. What does that tell you about how they approached their music? What word might describe that kind of creativity?",
+      "reason": "The tutor provides the evidence from the text, which the student could have found themselves. This is overhelping as it removes the opportunity for the student to locate and interpret the evidence independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why do you think the band was creative and tried new ways to play jazz? What in the text supports that idea?",
+      "reason": "The student is reading a question and options. The tutor asks a question that prompts the student to justify their answer with evidence from the text, which is a good way to encourage deeper thinking and understanding."
+    }
+  ],
+  "trace_sha256": "d2527cf2f89223da6d89ed43ebae60a4a56a03f71713531e4d603235b95391e2"
+}

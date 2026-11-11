@@ -1,0 +1,45 @@
+{
+  "case_index": 396,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How about 9 + 38? Can you walk me through how you'd solve this one?",
+      "reason": "The tutor asks the student to explain their process for a problem they previously struggled with, which promotes rigor. It's also scaffolding because it's a specific problem to work through together."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how that helps you figure out 9 x 5?",
+      "reason": "The tutor acknowledges the student's strategy and then asks them to elaborate on their thinking, which promotes rigor by asking for justification and scaffolding by guiding them to connect their known strategy to the current problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's one less group of five than ten groups of five?",
+      "reason": "The tutor provides a direct hint that guides the student towards the solution using a known strategy (related to 10x5), which is scaffolding. It doesn't require the student to explain their thinking, so it's not rigorous."
+    }
+  ],
+  "trace_sha256": "de173fcf7c18cb1b2cf7135de1fff899a3a80f851d74d5cb26907066fc3b7371"
+}

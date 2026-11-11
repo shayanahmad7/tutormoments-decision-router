@@ -1,0 +1,45 @@
+{
+  "case_index": 169,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What steps did you take to figure out 312 minus 78?",
+      "reason": "The student has been asked to solve a subtraction problem. The tutor asks the student to explain their thinking, which promotes rigor by encouraging the student to articulate their process rather than just providing an answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What was your process for solving 312 minus 78? Let's walk through it together.",
+      "reason": "The tutor asks the student to explain their process for solving the problem, which encourages the student to articulate their mathematical thinking and promotes rigor. The offer to 'walk through it together' provides support without overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we take 312 and subtract 78, how much do we need to subtract from 312 to get to 300? That might help us simplify the problem. What is 312 minus 12?",
+      "reason": "The tutor provides a specific hint by suggesting a strategy to simplify the subtraction problem (subtracting to get to 300), which is a form of scaffolding. This makes the mathematical step more accessible."
+    }
+  ],
+  "trace_sha256": "11418c8c1e7fae480abe8890307f6f451e6125a82d3f0c6167408750e50a0afe"
+}

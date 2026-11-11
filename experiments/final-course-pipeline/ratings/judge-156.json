@@ -1,0 +1,45 @@
+{
+  "case_index": 156,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 30 for 5 ÷ 1/6? What does that number represent in terms of the problem?",
+      "reason": "The tutor asks the student to explain their reasoning and what the answer represents, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 5 ÷ 1/6 equals 30? How does this connect to what we saw in the earlier problems with models?",
+      "reason": "The tutor asks for an explanation and prompts the student to connect the current problem to previous examples, which encourages transfer of learning and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 30 for 5 ÷ 1/6? What does that answer represent in terms of the problem?",
+      "reason": "The tutor asks the student to explain their reasoning and what the answer represents, which promotes deeper understanding and justification."
+    }
+  ],
+  "trace_sha256": "f436b1be1b307dfff8a805e1ad55f8234b219d1f8d813aa4ee2f33aa10f9810b"
+}

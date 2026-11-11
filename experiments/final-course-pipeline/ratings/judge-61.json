@@ -1,0 +1,45 @@
+{
+  "case_index": 61,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing by 100 and then multiplying by 5 gives the same result as dividing by 20? What's the connection between 100, 5, and 20?",
+      "reason": "This prompt asks the student to explain the mathematical equivalence of two division strategies, which promotes deeper understanding and justification. It also provides a hint by asking about the connection between the numbers involved."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you calculated that? What steps did you take to multiply 21 by itself three times?",
+      "reason": "This question asks the student to articulate their calculation process for a multi-step multiplication problem, which encourages metacognition and justification of their work. It increases rigor by asking for the 'how' rather than just the 'what'."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Try it with another number, like 200. What is 200 ÷ 20? What is 200 ÷ 100 × 5? Do you get the same answer?",
+      "reason": "This reply scaffolds the student's understanding of Katie's division strategy by suggesting they test it with a new number. It then asks them to perform the calculations and compare the results, which promotes active learning and verification of the concept."
+    }
+  ],
+  "trace_sha256": "1b3209550c36662726338133de8c74b68f37d979fce276c4671572d3baf85d6c"
+}

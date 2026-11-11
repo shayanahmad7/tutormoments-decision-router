@@ -1,0 +1,45 @@
+{
+  "case_index": 289,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why subtracting gives the number of students not wearing hats?",
+      "reason": "The student correctly solved problem 10, and the tutor is asking them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain how you would check your answer to make sure it's correct? What would you do first?",
+      "reason": "The student correctly solved problem 9, and the tutor is asking them to explain how they would check their answer, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number times 3 gives you 12?",
+      "reason": "The student already correctly solved problem 9, so the tutor is overhelping by guiding them through the steps again and giving a leading question."
+    }
+  ],
+  "trace_sha256": "f4f5a52e770f8554a156243fab43ba6f7678e6ed3d325ee568a0e2ed2efb8fd9"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 214,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number comes after twenty when we skip count by five? Can you write it on the whiteboard?",
+      "reason": "The tutor asks the student to continue the pattern and write the answer on the whiteboard, which promotes independent work and application of the concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What pattern do you notice that’s similar or different between the two? Can you explain why skip counting by fives works the way it does?",
+      "reason": "The tutor connects the current topic to previously learned material (skip counting by twos) and asks the student to identify patterns and explain the underlying concept, which increases cognitive demand and encourages deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we start at 2, what comes next when we skip count by twos? Just tell me the next number after 2.",
+      "reason": "The tutor provides a guided substep by asking for the next number in skip counting by twos, which is a simpler task than the current one and helps scaffold the student's understanding."
+    }
+  ],
+  "trace_sha256": "6ca1756c5b18b9871377a963468f394f0930dc17569cf27aee0f403759ed0a64"
+}

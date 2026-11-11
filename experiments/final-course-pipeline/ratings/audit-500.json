@@ -1,0 +1,45 @@
+{
+  "case_index": 500,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What multiplication do you need to do to find the area in square meters?",
+      "reason": "Prompts the student to identify the operation and set up the multiplication themselves, appropriate scaffolding that maintains cognitive demand without giving away the calculation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "you multiply the height by the length. So, you need to calculate 5.1 times 7.5",
+      "reason": "Supplies both the operation and the specific expression to compute, leaving the student only the arithmetic to perform; this is overhelp given the student has been successfully setting up and solving problems independently throughout the session."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What multiplication expression can we use to find the area of the rectangle in square meters?",
+      "reason": "Asks the student to formulate the expression themselves, maintaining appropriate cognitive demand consistent with the student's demonstrated ability; slight scaffolding by specifying 'multiplication expression'."
+    }
+  ],
+  "trace_sha256": "2f46d265fda5cffb6d1c115f675798b3e0bbcd91d8b6171355666fb191b961b9"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 443,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number multiplied by 7 gives 91?",
+      "reason": "The tutor reminds the student of the definition of product and then asks a guiding question that prompts the student to apply that knowledge to the problem, without giving away the operation or answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "so the equation is 7 times j equals 91.",
+      "reason": "The tutor provides the equation, which the student could have formulated independently after being reminded of the definition of 'product'."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you try dividing 91 by 7 to find j?",
+      "reason": "The tutor tells the student exactly what operation to perform, which the student could have figured out with a more open-ended prompt."
+    }
+  ],
+  "trace_sha256": "fb3b3184030eeb051c3fd71cf2f06dfbdc19d5222f0abce8f60fbd6e2d34fdf6"
+}

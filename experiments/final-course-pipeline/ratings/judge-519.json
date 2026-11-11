@@ -1,0 +1,45 @@
+{
+  "case_index": 519,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why multiplying 24 by 1/4 gives the total area in square meters?",
+      "reason": "The student has already provided the correct answer and the tutor has confirmed it. This question asks the student to justify their reasoning, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s one way to multiply a whole number by a fraction?",
+      "reason": "The student has already provided the correct answer. This question scaffolds the process of multiplying a whole number by a fraction, which the student has already demonstrated they can do. It's not strictly overhelp because it's asking for a method rather than the answer, but it's also not necessary given the student's correct calculation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why multiplying the number of tiles by the area of one tile gives the total floor area?",
+      "reason": "The student has already provided the correct answer. This question asks the student to justify their reasoning, which increases rigor."
+    }
+  ],
+  "trace_sha256": "d405c3c2122e312655080852720ce36875d177697270379d18b142de5b402992"
+}

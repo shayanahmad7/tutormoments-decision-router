@@ -1,0 +1,45 @@
+{
+  "case_index": 406,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with the total number of students at first. Can you figure out how many students are on the buses before any leave?",
+      "reason": "The tutor breaks down the multi-step problem into a more manageable first step and asks the student to calculate it, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means before any students leave, there are 40 times 3 students total, right?",
+      "reason": "The tutor provides the first operation (multiplication) and the numbers to use, which the student could have productively figured out."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If each bus has 40 students and there are 3 buses, what do you think we should do first?",
+      "reason": "The tutor acknowledges the student's previous idea and then guides them to focus on the first step of the problem, prompting them to identify the operation and numbers."
+    }
+  ],
+  "trace_sha256": "18299d73699bc1aea3652157308f5f35b9ea66191846188d91e38e1861e729ed"
+}

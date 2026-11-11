@@ -1,0 +1,45 @@
+{
+  "case_index": 55,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should you do first to isolate the term with the variable?",
+      "reason": "The tutor provides positive feedback and then asks a guiding question to prompt the student to begin the next problem independently, which is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What steps would you take to solve for z?",
+      "reason": "The tutor provides positive feedback and then asks a guiding question to prompt the student to begin the next problem independently, which is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What will you do first?",
+      "reason": "The tutor provides positive feedback and then asks a guiding question to prompt the student to begin the next problem independently, which is a good balance of scaffolding and rigor."
+    }
+  ],
+  "trace_sha256": "7f0ad714fe0b0cc1fff3f1244fe622712c44edaa8c248e88abc56cd7bab919f0"
+}

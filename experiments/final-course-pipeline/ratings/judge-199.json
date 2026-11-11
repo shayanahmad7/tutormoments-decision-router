@@ -1,0 +1,45 @@
+{
+  "case_index": 199,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you know about the relationship between angles formed when two lines intersect?",
+      "reason": "The tutor acknowledges the student's idea and then prompts them to recall relevant geometric principles about intersecting lines, which is a good scaffold to help them analyze the diagram more deeply. This also promotes rigor by asking the student to apply their knowledge."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Angle P looks like it’s less than 90 degrees — what do we call that kind of angle? And Angle Q looks like it’s more than 90 degrees — what do we call *that* kind of angle?",
+      "reason": "The tutor guides the student to identify the types of angles P and Q, which is a helpful scaffold given the student's recent review of angle definitions. This helps the student connect prior knowledge to the current problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Angle P looks like it's less than 90 degrees — that's acute. Angle Q looks like it's more than 90 degrees — that's obtuse.",
+      "reason": "The tutor identifies the angle types (acute and obtuse) for the student, which the student could have productively identified themselves, especially after just reviewing angle definitions. This is a form of overhelp."
+    }
+  ],
+  "trace_sha256": "b15295b4ad3caa0b89c4639ee8d24a5a8b1203823a9f974cbc69110473ac4e6c"
+}

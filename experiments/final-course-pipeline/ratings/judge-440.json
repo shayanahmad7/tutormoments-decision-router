@@ -1,0 +1,45 @@
+{
+  "case_index": 440,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start counting from zero, just like we did before. How many equal parts is the number line divided into? That will be your denominator.",
+      "reason": "The tutor provides a clear, guided step for the student to follow, directly referencing the previous problem's method. This is a helpful hint without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start counting from zero. How many equal parts is the number line divided into? That will be your denominator. Then count how many parts the star is away from zero. That will be your numerator. What do you get?",
+      "reason": "The tutor breaks down the process into two clear, sequential steps (finding the denominator, then the numerator) and explicitly asks for the result. This is a well-scaffolded approach."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number are you starting from when you count the parts between 0 and 1? Let me see your thinking.",
+      "reason": "The tutor asks the student to articulate their starting point and thinking process, which encourages the student to take responsibility for their reasoning rather than just providing an answer. This promotes deeper understanding."
+    }
+  ],
+  "trace_sha256": "5aa3498b6f837dede0ee8372d9f7c71e4d18dec8450dfa1761429050e83c88fd"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 120,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Show me how that works with the red dots.",
+      "reason": "The tutor asks the student to demonstrate their thinking using the visual aid provided, which is a good way to check for understanding and encourage active participation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 3 is the right number to show that 6 is even?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and justification of their answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you look at the red dots and see how many would go in each box if you split them into two equal groups?",
+      "reason": "The tutor guides the student to use the visual aid (red dots) to help them determine the correct number, providing a clear hint without giving the answer."
+    }
+  ],
+  "trace_sha256": "b6754d9b41fa15729ee1ad2d672206fdd1ddf1618c338c94cd38e73b775f797c"
+}

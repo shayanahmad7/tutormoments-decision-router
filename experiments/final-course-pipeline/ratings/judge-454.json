@@ -1,0 +1,45 @@
+{
+  "case_index": 454,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why just knowing the decimals isn't enough?",
+      "reason": "The tutor asks the student to explain their reasoning, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we *need* to know to be sure who ate more pizza?",
+      "reason": "The tutor provides a guided substep by rephrasing the core issue and then asks a question that promotes deeper thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s test this idea: suppose Kiera’s pizza was huge, and Lucas’s was tiny. Could Lucas have eaten more *total* pizza even though 0.65 < 0.7? What would you need to know to be sure?",
+      "reason": "The tutor provides a concrete example to help the student understand the concept, which is scaffolding, and then asks a question to promote deeper thinking."
+    }
+  ],
+  "trace_sha256": "2da21da4db4179ee9f1514b307c75063de9d67c164c444a2f3a439076cf31cc3"
+}

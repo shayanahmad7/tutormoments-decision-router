@@ -1,0 +1,45 @@
+{
+  "case_index": 436,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how would you write that as a fraction? And what whole number does that represent?",
+      "reason": "The tutor asks two questions, one about writing the fraction and one about the whole number it represents. This scaffolds the student's thinking by breaking down the task while still requiring them to apply their knowledge."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain what that means in terms of the whole circle? What whole number does \"four fourths\" represent?",
+      "reason": "The tutor acknowledges the student's previous answer and then asks for an explanation, promoting deeper understanding. It then asks for the whole number, which is a direct application of the concept being taught."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what whole number does that represent? Can you explain why?",
+      "reason": "The tutor asks the student to identify the whole number and then explain their reasoning, which increases rigor by requiring justification."
+    }
+  ],
+  "trace_sha256": "fcc5bdf454e88b65857b64615c430f5fcc73921d5c3268f9d15e45e7beb8d93a"
+}

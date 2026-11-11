@@ -1,0 +1,45 @@
+{
+  "case_index": 15,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, since an arithmetic sequence is one where the difference between terms is constant, which one of these fits that definition — Tom's or Katie's? Why?",
+      "reason": "The tutor provides a definition of an arithmetic sequence and then asks the student to apply it to the given sequences, prompting for justification. This scaffolds the student's understanding of the new term while maintaining rigor by asking for reasoning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But let me push a bit — why does multiplying not count as an arithmetic sequence? What’s the key difference between adding and multiplying in this context?",
+      "reason": "The tutor acknowledges the student's correct identification and then pushes for deeper understanding by asking why multiplication doesn't fit the definition of an arithmetic sequence. This encourages the student to articulate the core concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Exactly, so Katie's sequence is adding two each time, which is a constant difference. That makes it an arithmetic (or linear) sequence. Tom's sequence is multiplying by two each time, which is not a constant difference. That makes it a non-linear sequence. So, who is correct? What should we choose?",
+      "reason": "The tutor provides the full explanation for why Katie's sequence is arithmetic and Tom's is not, essentially giving the answer and the reasoning before asking the student to choose the option. This is overhelping as the student could have articulated this reasoning themselves."
+    }
+  ],
+  "trace_sha256": "92d9ece698cc9143c4cc4e575976bc9cc59cf3cf97acc291850010fad6019094"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 212,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we take one ten away from the six, what does the six become? And how does that help us finish the problem?",
+      "reason": "The tutor asks a guiding question that helps the student apply the borrowing concept to the tens place, and then asks how that helps finish the problem, which promotes independent problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we take five from the six, what number is left in the tens place? Can you write that down and then try the subtraction again?",
+      "reason": "The tutor addresses the student's potential misunderstanding (borrowing five instead of one ten) and then prompts the student to write down the new number and attempt the subtraction, which is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means the six becomes a five.",
+      "reason": "The tutor directly provides the result of borrowing from the six, which the student could have productively figured out with a guiding question."
+    }
+  ],
+  "trace_sha256": "78f5036593b8be319726ca7c396b9b3f0320bd5b233c67b0725299e24bbd5d2b"
+}

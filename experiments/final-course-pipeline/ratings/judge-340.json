@@ -1,0 +1,45 @@
+{
+  "case_index": 340,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 25 minus 21?",
+      "reason": "The student has just written 21 below 25 in a long division problem. The tutor asks the student to perform the subtraction, which is the next logical step in the long division process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 25 minus 21? That will tell us the remainder after dividing 25 by 7. What number do you get?",
+      "reason": "The student has just written 21 below 25 in a long division problem. The tutor prompts the student to perform the subtraction and explains the purpose of this step (finding the remainder), which is appropriate scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the next step after subtracting 21 from 25?",
+      "reason": "The student has just written 21 below 25 in a long division problem. The tutor asks for the next step, which is to perform the subtraction, providing appropriate scaffolding for the long division process."
+    }
+  ],
+  "trace_sha256": "99859fd9466827778be5a1dd11601a3e76e2e9108e16ed248e2b41dadb7f3869"
+}

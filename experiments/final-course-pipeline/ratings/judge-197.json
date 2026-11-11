@@ -1,0 +1,45 @@
+{
+  "case_index": 197,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you get from 2/24 to 3/4? Let me see your steps — did you divide both numbers by the same value?",
+      "reason": "The student stated an answer for 18/24, but the tutor misheard it as 2/24. The tutor asks the student to explain their steps, which promotes rigor. The question about dividing by the same value is a scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what number you might divide both the numerator and denominator by to simplify this fraction? What do you notice about 14 and 21?",
+      "reason": "The tutor moves on to the next problem, which is appropriate. The questions about what number to divide by and what the student notices about 14 and 21 are good scaffolds that encourage the student to think about common factors, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you get three-fourths for 18/24? Can you explain your steps?",
+      "reason": "The tutor asks the student to explain their steps, which is a good way to promote rigor and check for understanding. This is appropriate given the student's previous struggles with division."
+    }
+  ],
+  "trace_sha256": "bbe2dd7bb0190253641a053d86a059559824fc7cc80e4b6f91553b34d780dd3f"
+}

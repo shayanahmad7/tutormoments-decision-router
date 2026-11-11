@@ -1,0 +1,45 @@
+{
+  "case_index": 487,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 819 wouldn't be said when counting by tens from 780?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you name the first few numbers in that pattern?",
+      "reason": "The tutor provides a guided substep by asking the student to list numbers in the pattern, which helps them approach the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you name the first three numbers in that pattern?",
+      "reason": "The tutor provides a guided substep by asking the student to list numbers in the pattern, which helps them approach the problem."
+    }
+  ],
+  "trace_sha256": "2babfc6c43c4fd15158cf6323460160e42edc02a0f32861cc27c3fd117be4fc6"
+}

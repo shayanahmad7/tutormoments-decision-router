@@ -1,0 +1,45 @@
+{
+  "case_index": 174,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You know 6 times 8 is 48, and 6 times 10 is 60. How can those help you find 6 times 9?",
+      "reason": "The tutor provides specific, relevant information (6x8=48 and 6x10=60) that the student has already encountered or could easily deduce from the worksheet, and then asks a question that prompts the student to connect this information to the current problem (6x9). This scaffolds the problem-solving process by providing useful starting points while still requiring the student to do the cognitive work of figuring out the relationship."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "you know 6 times 10 is 60. If you take away one group of 6, what do you get?",
+      "reason": "The tutor provides a very direct hint by giving the student 6x10=60 and then explicitly telling them to \"take away one group of 6.\" This is a strong scaffold that almost gives away the method, but still requires the student to perform the subtraction. It's less rigorous than C1 because it doesn't ask the student to identify the helpful facts themselves."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how can you use the answers you already know on the sheet to figure it out?",
+      "reason": "The tutor asks a rigorous question that prompts the student to think about how to use prior knowledge (answers on the sheet) to solve the current problem. It doesn't provide any specific hints or numbers, placing the full responsibility on the student to identify relevant facts and apply them."
+    }
+  ],
+  "trace_sha256": "9c6318630a5626c13d608f7cd74e5573e79e26d10e8d29e847505c56ce42b064"
+}

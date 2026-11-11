@@ -1,0 +1,45 @@
+{
+  "case_index": 308,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So how would you find the number that is 9 more than 29? What’s your next step?",
+      "reason": "The tutor confirms the student's correct operation and then asks them to articulate the next step, promoting independent problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what 29 + 9 is?",
+      "reason": "The tutor immediately asks for the answer to the addition problem, which the student could have been prompted to set up or solve themselves."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start with 29 and count up 1: 29 + 1 = 30. Can you count up 8 more from 30 to find the total?",
+      "reason": "The tutor provides a specific counting-on strategy and initiates the first step, then asks the student to complete the remaining steps."
+    }
+  ],
+  "trace_sha256": "27f145b82d5bcd02bda4bd211e74515083e15761d575faa1233683213d775e05"
+}

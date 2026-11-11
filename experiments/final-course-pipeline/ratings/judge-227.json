@@ -1,0 +1,45 @@
+{
+  "case_index": 227,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about a time when you really focused on something, like practicing an instrument or studying for a test. What does it mean to give your time and energy to something? How could you use \"dedicate\" in a sentence?",
+      "reason": "The tutor provides a clear example of a situation where the word 'dedicate' would be used, which helps the student understand the context. They then ask the student to use the word in a sentence, which promotes active learning and checks for understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a sentence using dedicate to describe something you do with a lot of time or effort?",
+      "reason": "The tutor reminds the student of the word and then prompts them to use it in a sentence, providing a hint about the meaning ('something you do with a lot of time or effort') to guide their response."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a sentence using \"dedicate\" that shows you understand what it means?",
+      "reason": "The tutor asks the student to use the word in a sentence to demonstrate understanding, which is a good way to check for comprehension. However, it offers no additional scaffolding beyond the prompt itself."
+    }
+  ],
+  "trace_sha256": "93114c3d8abde1e07e83e1055a52e85cb1d9acf38fa7a06eec0b19ee4dad1999"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 479,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you try adding eight repeatedly to figure out how many times it takes to reach seventy-two?",
+      "reason": "The tutor asks the student to apply the repeated addition strategy to solve the problem, which is a good way to build on previous work and encourage independent problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, let's start with eight. What's eight plus eight?",
+      "reason": "The tutor provides a clear starting point for the repeated addition, which is helpful scaffolding given the student's previous struggles with the counting method."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, let's start with eight. What's eight plus eight?",
+      "reason": "The tutor provides a clear starting point for the repeated addition, which is helpful scaffolding given the student's previous struggles with the counting method."
+    }
+  ],
+  "trace_sha256": "07329fa0b4d09905f19d576dabe64d788417ec029eedb2aed2947e62c47e6fd5"
+}

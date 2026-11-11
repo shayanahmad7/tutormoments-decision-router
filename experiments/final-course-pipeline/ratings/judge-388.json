@@ -1,0 +1,45 @@
+{
+  "case_index": 388,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation connects the total amount, the amount each worker gets, and the number of workers?",
+      "reason": "The tutor asks the student to identify the operation, which is a good way to prompt them to think about the relationship between the numbers without giving away the answer. This is a good scaffold and promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation would help us figure out how many times 75 fits into 600?",
+      "reason": "The tutor provides a good hint by rephrasing the question to focus on 'how many times 75 fits into 600', which directly points to division without giving the answer. This is a good scaffold and promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What operation do you use to find the number of workers?",
+      "reason": "The tutor rephrases the problem and then asks the student to identify the operation needed, which is a good way to guide them without giving the answer. This is a good scaffold and promotes rigor."
+    }
+  ],
+  "trace_sha256": "7254a6db0b9c5ef23c78b14b36ae15b2ebd96df0bb47139719b3cc215070e8fa"
+}

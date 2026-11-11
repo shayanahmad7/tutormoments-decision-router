@@ -1,0 +1,45 @@
+{
+  "case_index": 470,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think it's six times six?",
+      "reason": "The student has just stated their proposed multiplication problem. The tutor asks them to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me clarify the problem: it says there are 3 squares on one row, and we need to find how many squares are on 6 rows. So how many squares are in each row? And how many rows are there? What multiplication problem does that create?",
+      "reason": "The tutor clarifies the problem statement, which the student misread earlier, and then breaks down the multiplication problem into smaller, guided questions about the number of squares per row and the number of rows, leading the student to the correct multiplication setup."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how many groups you have and how many are in each group. What number represents the number of squares in each row? What number represents the number of rows?",
+      "reason": "The tutor provides a hint by reminding the student of the 'groups of' concept for multiplication, which was just discussed, and then asks specific questions to help the student identify the numbers for the multiplication problem."
+    }
+  ],
+  "trace_sha256": "b80b1b5d54a1562685e6bc3ce5ebe9cfde3e40543ff018b65424510970e8bdee"
+}

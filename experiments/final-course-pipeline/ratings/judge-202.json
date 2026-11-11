@@ -1,0 +1,45 @@
+{
+  "case_index": 202,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if the reflex angle p was labeled as 240°, what would the measure of angle q be? Can you figure that out?",
+      "reason": "The student correctly identified the relationship between p and q. This question asks them to apply that understanding to a specific numerical example, increasing rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "You mentioned that angles on a straight line add up to 180°, which is correct.",
+      "reason": "The student's explanation was a bit muddled, but they did correctly identify that the sum is 180. The tutor then overhelps by re-explaining the concept and asking the student to draw a sketch, which isn't clearly needed given the student's correct answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if the reflex angle p is 240°, what would the measure of angle q be? Can you calculate it using the relationship you just described?",
+      "reason": "The student correctly identified the relationship between p and q. This question asks them to apply that understanding to a specific numerical example, increasing rigor."
+    }
+  ],
+  "trace_sha256": "30c497ea82d27572f61268c490b9bf97ffc23d4f1fe01730d77e81d43b4138e9"
+}

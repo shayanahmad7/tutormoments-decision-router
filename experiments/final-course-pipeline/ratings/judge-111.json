@@ -1,0 +1,45 @@
+{
+  "case_index": 111,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how would you describe what’s happening on the right side of the equals sign? What’s the connection between the 5, 2, and 7?",
+      "reason": "The tutor asks the student to describe the relationship between the numbers, prompting them to articulate the distributive property without giving away the answer. This encourages deeper thinking and engagement with the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you see how the 7 is split into 5 and 2? What math property allows us to split a number like that and still get the same result when we multiply?",
+      "reason": "The tutor explicitly points out how the 7 is split into 5 and 2, which is a key observation the student should make independently. This overhelps by providing too much of the analysis."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you notice about how the left side (7 x 9) is broken down on the right side? How is the 7 being split up? What operation connects the two parts on the right?",
+      "reason": "The tutor asks guiding questions that direct the student's attention to the relevant parts of the equation, encouraging them to discover the relationship themselves. This scaffolds the problem-solving process while maintaining student responsibility."
+    }
+  ],
+  "trace_sha256": "a31937577dcf9aa353c47fd285dcc67d2d100355fd3d1da1be6b4dcebaa558e4"
+}

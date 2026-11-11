@@ -1,0 +1,45 @@
+{
+  "case_index": 229,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if we add two more to seven, what number do we get?",
+      "reason": "The tutor is trying to help the student recall the odd numbers by having them add two to the last odd number mentioned (seven)."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's say there are three students. How many counters would they take in total?",
+      "reason": "The tutor provides a concrete example to help the student understand the concept of even numbers when dealing with groups of two."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if every student takes two counters, what do we know about the number of counters they took in total?",
+      "reason": "The tutor prompts the student to think about the properties of numbers when they are taken in groups of two, which is directly relevant to understanding even numbers."
+    }
+  ],
+  "trace_sha256": "9af5272ef31839607d6a8444018149147eb33c043fcf12440b04efabc68451b4"
+}

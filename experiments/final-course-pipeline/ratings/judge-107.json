@@ -1,0 +1,45 @@
+{
+  "case_index": 107,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how did you use the fact that 7 × 6 = 42 to help you with 70 × 60? Can you explain that part?",
+      "reason": "The student correctly identified the answer. This response asks the student to explain their reasoning, which promotes deeper understanding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how did you figure out that 70 times 60 is 4200? What’s the pattern or reasoning you used to connect 7 x 6 = 42 to this?",
+      "reason": "The student correctly identified the answer. This response asks the student to explain their reasoning and the pattern they used, which promotes deeper understanding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we multiply both numbers by 10, what happens to the product? What would 70 x 60 be?",
+      "reason": "The student already selected the correct answer. This response provides leading questions that overhelp by guiding the student to the reasoning they should have used, rather than asking them to explain their own process."
+    }
+  ],
+  "trace_sha256": "c51b2906af9e916a783cf8dee9538ed1a134c53d0f014183d4ef741b40d93339"
+}

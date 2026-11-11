@@ -1,0 +1,45 @@
+{
+  "case_index": 64,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What makes you think that number is the right choice? Can you explain how you know?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification. However, the student has not yet made a choice for the current problem, so the question is a bit premature and generic."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 24 divided by 4?",
+      "reason": "The tutor provides a direct hint that helps the student solve the multiplication problem by reframing it as a division problem, which is appropriate given the previous division game."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let’s start with the first part of the question: Tom says 9 is a composite number. Do you agree with Tom? Why or why not?",
+      "reason": "The tutor refers to a previous problem ('Tom and Katie are discussing the number 9') that was skipped, rather than the current problem ('4 x ? = 24'). This shows a lack of context fit."
+    }
+  ],
+  "trace_sha256": "fb1e0e739c681a64d7b94357cf7c4e3c798695c2ff39b6508be2c6b0c8adac4f"
+}

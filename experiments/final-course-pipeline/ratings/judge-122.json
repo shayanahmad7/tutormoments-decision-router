@@ -1,0 +1,45 @@
+{
+  "case_index": 122,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If every student takes 2 counters, how many counters are given out? What’s left over? What does that tell you about the total?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable questions, guiding the student to consider the implications of the '2 counters per student' and the '3 left over' on the total number of counters."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Miss Smith gives out counters in pairs, and there are three left over. How can we use what we know about even and odd numbers to figure out if the total is even or odd? What do you think?",
+      "reason": "The tutor rephrases the problem in simpler terms and prompts the student to apply their knowledge of even and odd numbers to the situation, which is a helpful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If every student gets 2 counters, what can you say about the number of counters given out? Is that even or odd? And what about the 3 left over? How does that affect the total?",
+      "reason": "The tutor breaks down the problem into two key components (counters given out and counters left over) and asks specific questions about each, guiding the student's thinking towards the solution."
+    }
+  ],
+  "trace_sha256": "97d0cb6ccbe2b75a4b372160beb11b1c81f5f87f80c9d4ad9dd969439107581f"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 297,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got to 5?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. It's a good open-ended question to understand the student's thought process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Hmm, 5 is the difference between Monday and Tuesday, but the question is asking how many shells Amy has altogether. Can you explain how you got 5 and how we can find the total?",
+      "reason": "The tutor identifies the student's partial correct calculation (the difference) and then redirects them to the actual question, which is about the total. This provides scaffolding by clarifying the goal and promotes rigor by asking for an explanation and how to find the total."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, how many shells did she collect on Tuesday?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step, focusing on calculating the number of shells collected on Tuesday. This is a good scaffolding technique."
+    }
+  ],
+  "trace_sha256": "2cb0589a8e7bf804fe079c07700ae9f4ecc2bda0fa7e801b7defd54c81f8ef4e"
+}

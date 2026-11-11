@@ -1,0 +1,45 @@
+{
+  "case_index": 385,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got thirteen? What did you subtract first?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. The follow-up question about what was subtracted first provides scaffolding by guiding the student's explanation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out twenty-eight minus fifteen so quickly?",
+      "reason": "The tutor asks the student to explain their thinking, which adds rigor by requiring justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Did you break it down into smaller steps, or did you use a trick?",
+      "reason": "The tutor asks the student to explain their method, which promotes rigor. The suggestions of 'smaller steps' or 'a trick' provide scaffolding by giving the student ideas for how to articulate their strategy."
+    }
+  ],
+  "trace_sha256": "265f857a23a4a9e9b7c42f0c64cdd048d424eced702f857fdd5a5f48bab3045b"
+}

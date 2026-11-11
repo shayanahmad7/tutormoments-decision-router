@@ -1,0 +1,45 @@
+{
+  "case_index": 84,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got 6 as the answer",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. This is a good question to ask after a correct answer to ensure understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out that the ⭐ is 6?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. This is a good question to ask after a correct answer to ensure understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That’s right! The ⭐ is 6 because 2 + 6 = 8. Let’s try the next one together. Here’s the question: Amy and John are making bracelets using beads in the pattern shown. Two copies of their pattern are needed to make a bracelet. John says his bracelet will be 1 cm longer. Is he correct? Let’s start by asking: What is the length of one copy of John’s pattern?",
+      "reason": "The tutor confirms the correct answer and provides the explanation, which the student could have provided. The tutor then immediately moves to the next problem and provides the first step, which is overhelping as the student has not indicated any difficulty with this type of problem."
+    }
+  ],
+  "trace_sha256": "21e33d9614302121572fb3f25464395255fc273bb2b1310c771cc976dcf040e4"
+}

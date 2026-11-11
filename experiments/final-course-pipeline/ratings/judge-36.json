@@ -1,0 +1,45 @@
+{
+  "case_index": 36,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how much pizza one person eats in square centimeters, and then how much total pizza Helena needs to make for 15 people?",
+      "reason": "The tutor breaks down the problem into two manageable steps, guiding the student towards the necessary calculations without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the area of one pizza? You can use the formula for the area of a rectangle: length × width.",
+      "reason": "The tutor provides a clear first step and reminds the student of the relevant formula, which is helpful scaffolding for a multi-step problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "let's start by figuring out the area of one pizza. Can you calculate that for me?",
+      "reason": "The tutor provides a clear first step for the student to begin solving the problem, which is appropriate scaffolding."
+    }
+  ],
+  "trace_sha256": "409d8fe6d1ccff7ca86b6b36a738d2d2567b7794aa521a159625a9bc5a2ec17e"
+}

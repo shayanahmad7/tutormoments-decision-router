@@ -1,0 +1,45 @@
+{
+  "case_index": 99,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 402 minus 9? See if you can use the same borrowing steps as before.",
+      "reason": "The tutor provides a new problem that requires the same skill, and explicitly asks the student to apply the previously discussed steps, promoting independent application of the learned method."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How about 402 minus 6? Can you write that out and solve it step by step?",
+      "reason": "The tutor provides a new problem and asks the student to demonstrate their understanding by writing out and solving it step-by-step, which encourages independent practice and application of the borrowing method."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 305 minus 7 gives 298? Walk me through how you subtracted the 7 from the 5 in the ones place.",
+      "reason": "The tutor asks the student to explain their reasoning for the previous problem, which promotes deeper understanding and verbalization of the mathematical process, rather than just solving another problem."
+    }
+  ],
+  "trace_sha256": "e84205c9b77fa71ab7b7cfe4a911e015bb3efb9dd8eb81f26e5664b0120aee1e"
+}

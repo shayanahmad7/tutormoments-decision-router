@@ -1,0 +1,45 @@
+{
+  "case_index": 357,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "In the top circle, you have 4 out of 3 parts shaded — that means the shaded part is more than the whole. In the bottom circle, you have 4 out of 8 parts shaded — that’s less than the whole.",
+      "reason": "The tutor provides a clear explanation of what each fraction represents visually, which is a helpful scaffold for the student to compare them."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that is true, using the pictures or your own reasoning?",
+      "reason": "The tutor asks the student to justify their answer, which promotes deeper understanding and critical thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that's true, using the pictures or the idea of parts of a whole?",
+      "reason": "The tutor asks the student to explain their reasoning, which encourages them to articulate their understanding of fraction comparison."
+    }
+  ],
+  "trace_sha256": "8049a81f37d0799345ae2efb45bb9f55fe6b0f3ed3ab29a460d5768b66b30621"
+}

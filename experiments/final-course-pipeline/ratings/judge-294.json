@@ -1,0 +1,45 @@
+{
+  "case_index": 294,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, how much does she spend in one week altogether? What do you think?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking the student to calculate the spending for one week, which is a clear scaffolding strategy."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How much does she spend in one week?",
+      "reason": "The tutor scaffolds the problem by guiding the student to calculate the spending for a single week first, making the overall problem more accessible."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How much does Cara spend in one week? Once you know that, how can you find the total for four weeks?",
+      "reason": "The tutor scaffolds by breaking the problem into two distinct steps. It also adds rigor by asking the student to identify the next step themselves, rather than just providing it."
+    }
+  ],
+  "trace_sha256": "97a52971ec0e63db2ae77c7b083e569e392716d49afb3538594e512792ae91d0"
+}

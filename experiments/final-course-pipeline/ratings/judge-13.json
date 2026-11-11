@@ -1,0 +1,45 @@
+{
+  "case_index": 13,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you check if the same rule works for the next step — does 10 times 3 minus 2 give you 28?",
+      "reason": "The tutor asks the student to verify the rule for the next step, which is a guided substep that promotes rigor by having the student apply the rule independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option D works for the entire sequence? Let's test it step by step using the rule.",
+      "reason": "The tutor asks the student to explain their reasoning and then provides a scaffold by suggesting to test it step by step, which encourages independent application of the rule."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we start with 4, what do we get when we multiply by 3 and subtract 2? What about when we apply the same rule to the next term, 10?",
+      "reason": "The tutor provides a guided substep by asking the student to apply the rule to the first term and then the second term, which helps the student verify the rule independently."
+    }
+  ],
+  "trace_sha256": "a31854764b0dfafb15aa6c37c044e42c248ba7aa530660a1a8619c5f4a727ec4"
+}

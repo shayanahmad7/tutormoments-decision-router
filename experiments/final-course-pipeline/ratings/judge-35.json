@@ -1,0 +1,45 @@
+{
+  "case_index": 35,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what 120 times 20 is?",
+      "reason": "The tutor breaks down the multiplication problem into a more manageable step, which is a form of scaffolding. This is appropriate given the student's previous struggles with multiplication."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start by multiplying 120 by 4. What is 120 x 4?",
+      "reason": "The tutor provides a clear first step for the multiplication problem, which is a form of scaffolding. This is appropriate given the student's previous struggles with multiplication."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let's start with going over, um, the last question. Like, finding the remainder. Remember we were struggling on it?",
+      "reason": "This response is a direct copy of a previous tutor statement from earlier in the conversation, which was used to introduce the remainder problem. It is not relevant to the current context, which is about a new multiplication problem."
+    }
+  ],
+  "trace_sha256": "b6bcca2832e6660c45187f6d620bfe1a303dd7699936c37fee70ea6f0da03a3e"
+}

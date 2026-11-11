@@ -1,0 +1,45 @@
+{
+  "case_index": 150,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how far is -1/4 from zero? Is there a shape that’s placed in that same spot? What shape is closest to zero but still negative?",
+      "reason": "The tutor asks guiding questions that prompt the student to analyze the number line and the position of the shapes relative to -1/4 and zero, encouraging independent reasoning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain what you mean by that? How does the star’s position on the number line help you decide it’s not the right shape for -1/4?",
+      "reason": "The tutor asks the student to elaborate on their reasoning, promoting justification and deeper thinking about the number line and the shapes' positions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "But why is it the square and not the star? What do you notice about the square’s position compared to the star?",
+      "reason": "The tutor acknowledges the student's correct observation about -1/4 being close to zero, then prompts them to compare the positions of the square and the star to justify their choice, adding rigor."
+    }
+  ],
+  "trace_sha256": "37a51c07f357f7fbff33efa58a318c6126f0b792953a85d7374a0d5257ded4b8"
+}

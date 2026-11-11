@@ -1,0 +1,45 @@
+{
+  "case_index": 499,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you used the area formula to find the missing length?",
+      "reason": "The student has already found the answer. This question asks them to explain their reasoning, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you knew to divide 256 by 8 to find x?",
+      "reason": "The student has already found the answer. This question asks them to explain their reasoning, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the formula for the area of a rectangle, and how can you use it to find the missing length $ x $?",
+      "reason": "The student has already found the answer. This question provides a hint (the area formula) that the student has already implicitly used, making it a form of scaffolding rather than rigor."
+    }
+  ],
+  "trace_sha256": "6d3bd2205ea50c9d98766e05b25416e48339d50ae508253da304b3d5ed2075fe"
+}

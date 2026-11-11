@@ -1,0 +1,45 @@
+{
+  "case_index": 477,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Pick one circle and count them. What do you get?",
+      "reason": "The tutor is guiding the student to count the dots in a single circle to find the missing number, which is a direct next step in the problem-solving process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how many pink dots are in the first circle? Count them for me.",
+      "reason": "The tutor provides a clear, specific instruction to count the dots in one circle, which is the immediate next step to solve the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, to figure out how many dots are in each group, you just need to count how many dots are in one of the circles. Let's pick the first one — how many pink dots do you see in that circle?",
+      "reason": "The tutor clearly explains the purpose of counting the dots in one circle (to find how many are in each group) and then directs the student to do so, providing appropriate scaffolding."
+    }
+  ],
+  "trace_sha256": "64329ffd5d1918ccc62503dbc8c9dc6f5a42405ceb05bf88bf327623c5a157c6"
+}

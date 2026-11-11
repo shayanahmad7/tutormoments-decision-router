@@ -1,0 +1,45 @@
+{
+  "case_index": 397,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me how you might break this down to make it easier?",
+      "reason": "The tutor asks the student to explain their strategy for solving the problem, which promotes deeper thinking and responsibility. The suggestion to 'break this down' provides a helpful hint without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me how you would solve this?",
+      "reason": "The tutor asks the student to explain their solution method, which encourages rigor. However, it lacks specific scaffolding to help the student approach the problem if they are unsure."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would figure this out?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. However, it lacks specific scaffolding to help the student approach the problem if they are unsure."
+    }
+  ],
+  "trace_sha256": "28f7b0b248acdc4f3e39b2d0017c999e1990b16e0e3fb53e3e40923732159780"
+}

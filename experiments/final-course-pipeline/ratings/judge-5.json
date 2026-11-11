@@ -1,0 +1,45 @@
+{
+  "case_index": 5,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What part of the number changed?",
+      "reason": "The tutor asks the student to identify what changed in the number, which is a good scaffolding question. It also promotes rigor by asking the student to explain the mathematical operation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What has to happen to keep the answer the same?",
+      "reason": "This question prompts the student to think about the relationship between the numbers and how changes in one part affect the others to maintain equality, promoting deeper understanding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What changes from the first problem to the second one that still gives the same result?",
+      "reason": "The tutor acknowledges the student's observation and then asks a follow-up question that encourages the student to analyze the changes between the two problems and how they lead to the same result, which is good scaffolding and rigor."
+    }
+  ],
+  "trace_sha256": "519e220001b0e5f982ac53329fb488cd35be116b00cc23ea35d87f0f7fde461d"
+}

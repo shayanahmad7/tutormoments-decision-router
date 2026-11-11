@@ -1,0 +1,45 @@
+{
+  "case_index": 505,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why multiplying 6.8 by 1000 gives the amount of paint in milliliters?",
+      "reason": "The student wrote '6.8 x 1000' on the board, and the tutor asks them to explain their reasoning, which promotes rigor. The question is targeted to the student's work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, since 1 liter is 1000 milliliters, how many milliliters is 0.4 liters?",
+      "reason": "The tutor provides the conversion factor and then asks the student to apply it, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since 1 liter is 1000 milliliters, how would you convert 0.4 liters to milliliters? What’s the next step?",
+      "reason": "The tutor reminds the student of the conversion factor and then asks them to perform the conversion, which is a scaffolded prompt."
+    }
+  ],
+  "trace_sha256": "227a86388b739f3f4e055108b4f8cb8d886598ca9e19519b97a922202ef26fa3"
+}

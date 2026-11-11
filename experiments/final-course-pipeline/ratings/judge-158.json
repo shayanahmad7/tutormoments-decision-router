@@ -1,0 +1,45 @@
+{
+  "case_index": 158,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let’s look at the two-way table again. The question is asking how many students are in a certain category. Start by finding the total number of students in the table. What number do you see at the bottom right of the table?",
+      "reason": "The tutor and student are currently on a 'Question of the Day' problem which is a two-way table. The student has already given an answer (C) and the tutor has confirmed it as correct. The tutor is not asking the student to re-evaluate the problem or find a total number of students. This candidate's response is out of sync with the current state of the conversation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let’s look at this two-way table again. The question is asking how many students are right-handed and play a sport. Can you find that number in the table?",
+      "reason": "The tutor and student are currently on a 'Question of the Day' problem which is a two-way table. The student has already given an answer (C) and the tutor has confirmed it as correct. The tutor is not asking the student to re-evaluate the problem or find a specific number of students. This candidate's response is out of sync with the current state of the conversation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Can you explain why flipping the fraction and multiplying works when dividing by a unit fraction? Let's use 2 ÷ 1/5 as an example.",
+      "reason": "The conversation has moved past the division of whole numbers by unit fractions. The student and tutor are now working on a 'Question of the Day' problem involving two-way tables. This candidate's response is out of context with the current problem."
+    }
+  ],
+  "trace_sha256": "da403caac0c4cef7c2c2c7d31b6213577b28a53932a73074a2e6bcc013ac3c9a"
+}

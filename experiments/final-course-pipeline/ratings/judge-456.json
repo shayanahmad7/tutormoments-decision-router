@@ -1,0 +1,45 @@
+{
+  "case_index": 456,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is half of 60? What is half of 120? How do these two results compare?",
+      "reason": "The tutor provides a clear hint by rephrasing '0.5 of' as 'half of', which is scaffolding. They then ask the student to calculate and compare, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you calculate them and then compare?",
+      "reason": "The tutor provides a useful hint by explaining that '0.5 of' means 'half of', which is scaffolding. They then ask the student to calculate and compare, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens when you take half of each number?",
+      "reason": "The tutor clarifies the options, which is helpful. They then provide a strong hint by asking 'What happens when you take half of each number?', which is scaffolding. However, it doesn't explicitly ask the student to perform the calculation or justify their answer, so it lacks rigor."
+    }
+  ],
+  "trace_sha256": "5e6476654d4e1a1e6496be141859e8d27af0dbab09d4b97e1b42afbf17becb7c"
+}

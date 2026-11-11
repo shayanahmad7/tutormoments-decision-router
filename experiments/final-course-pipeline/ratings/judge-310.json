@@ -1,0 +1,45 @@
+{
+  "case_index": 310,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the correct answer is 7 mm instead of 6 mm?",
+      "reason": "The tutor asks the student to explain the correct answer, which promotes deeper understanding and justification. This is a good way to encourage rigor after the student has already provided the correct answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total of those three sides? What do we need to do to find the missing side?",
+      "reason": "The tutor breaks down the problem into smaller, manageable steps by asking for the sum of the known sides and then how to find the missing side. This provides scaffolding for the student to re-evaluate their work."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out what the total of the three known sides is, and then see what the missing side should be?",
+      "reason": "The tutor guides the student by suggesting two clear steps: first, find the sum of the known sides, and then use that to find the missing side. This provides scaffolding to help the student correct their previous error."
+    }
+  ],
+  "trace_sha256": "063c6ff4cdbc38c6c7948e28c7a5b68512e0b3a19aabceafa192f2157098ed81"
+}

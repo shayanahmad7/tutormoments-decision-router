@@ -1,0 +1,45 @@
+{
+  "case_index": 351,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since a minute and an hour are different amounts of time, the fractions are parts of different wholes. So, can we really say they're the same? Let's think: which is longer, a minute or an hour? And what does that tell us about the time it takes to harvest versus to build?",
+      "reason": "The tutor clarifies the core concept of comparing fractions of different wholes and then asks a guiding question to prompt the student to apply this understanding to the problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which is longer: a whole minute or a whole hour? How does that affect the time for each task?",
+      "reason": "The tutor highlights the key difference in the problem (units of time) and then asks a question that guides the student to compare the wholes and consider its impact on the fractions."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "A minute is much shorter than an hour. So, which one is actually longer: five-sixths of a minute or five-sixths of an hour? Why?",
+      "reason": "The tutor points out the difference in the wholes and then asks a direct question about which duration is longer, prompting the student to justify their reasoning."
+    }
+  ],
+  "trace_sha256": "ee9c7de26ca42e461268e94884adedcff8a991d62a5ff43ad4c0f7d855daef27"
+}

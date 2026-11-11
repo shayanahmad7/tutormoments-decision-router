@@ -1,0 +1,45 @@
+{
+  "case_index": 347,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you chose option C?",
+      "reason": "The tutor asks the student to justify their answer, which promotes deeper thinking and responsibility."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does the model show about multiplication?",
+      "reason": "The tutor asks for justification (rigor) and then provides a specific prompt about the model's connection to multiplication, which is a helpful scaffold."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option C, 4 x 7, represents the model?",
+      "reason": "The tutor asks for justification (rigor) and explicitly names the chosen option, which is a slight scaffold to focus the student's explanation."
+    }
+  ],
+  "trace_sha256": "839ee64b0a4560ab49e24300445c5190d96a9307c14f907b6b580ddc1e8a5411"
+}

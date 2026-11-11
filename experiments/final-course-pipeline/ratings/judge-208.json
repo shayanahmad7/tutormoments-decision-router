@@ -1,0 +1,45 @@
+{
+  "case_index": 208,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why both of those statements are connected? How does the multiplication help you know the division fact?",
+      "reason": "The student has just correctly identified the number for the boxes. This reply asks them to explain the connection between multiplication and division, which is the core concept of the problem set. This promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since 3 times 7 is 21, that means 21 divided by 7 gives us 3. So, the number that goes in both boxes is the same. Can you tell me why 7 is the correct number for both equations?",
+      "reason": "The tutor confirms the correct answer and explicitly states the connection between the multiplication and division facts, which is the concept the student is working on. It then asks the student to explain 'why 7 is the correct number for both equations,' which is a slightly redundant question given the prior explanation, but still prompts for reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing 21 by 7 gives 3, using the array shown?",
+      "reason": "The student has just correctly identified 'seven' as the answer. This reply asks the student to justify their answer using the visual array, which is a good way to connect the abstract numbers to a concrete representation and deepen understanding."
+    }
+  ],
+  "trace_sha256": "62e207b3237619f78b302d8b5961fde8374ac06163a554b4a5a009b658e606dd"
+}

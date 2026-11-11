@@ -1,0 +1,45 @@
+{
+  "case_index": 472,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with the first ladybug. If one ladybug has 6 legs, how many legs do two ladybugs have? Can you write that out as an addition problem?",
+      "reason": "The tutor breaks down the problem into a smaller, more manageable step by asking about two ladybugs instead of eight, and then asks the student to write it as an addition problem, which is a strategy they've used before."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we were to write this as an addition problem, how many sixes would we add together?",
+      "reason": "The tutor prompts the student to connect the multiplication problem to repeated addition, a strategy the student has used successfully in previous problems, making the next step more accessible."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, how could you show that eight times six is the same as adding six eight times? Can you write that out as an addition problem?",
+      "reason": "The tutor explicitly connects the multiplication problem to repeated addition, a method the student has used, and asks them to write it out, which is a direct and helpful prompt for the next step."
+    }
+  ],
+  "trace_sha256": "6833de974855d5342ddc36b05a69daae94ce562bb982e9c2ca7f67357986c186"
+}

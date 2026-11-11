@@ -1,0 +1,45 @@
+{
+  "case_index": 194,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, good. Four-fifths. So what did you divide by?",
+      "reason": "The tutor acknowledges the correct answer and asks the student to explain their process, which is appropriate given the student's earlier confusion."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's move on to the next one. What about 2/4? What's the simplest form of that?",
+      "reason": "The tutor moves the student to the next problem without asking them to explain their reasoning for the previous correct answer, which would have been a good opportunity for rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can you simplify that, and how do you know it's in its simplest form?",
+      "reason": "The tutor asks the student to simplify the next fraction and also to justify their answer, which promotes deeper understanding and rigor."
+    }
+  ],
+  "trace_sha256": "ce229d9fe684e6e425661665a044e6d843281767ce3775c93c3e6e3f0d6f8dd9"
+}

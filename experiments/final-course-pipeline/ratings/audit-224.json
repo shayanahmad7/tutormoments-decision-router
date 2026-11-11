@@ -1,0 +1,45 @@
+{
+  "case_index": 224,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What is the main idea or message of the story so far?",
+      "reason": "This is a thematic/analytical question that adds cognitive demand, but it is generic and not well-targeted to the summarization task the tutor just asked about, nor to the specific chapters just read. It also shifts away from the summary task mid-stream when the student was just beginning to respond."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "In chapter six, the students gave the tree a name. What was the name they chose",
+      "reason": "This is a targeted, accessible sub-question that helps the student recall a specific detail from chapter six as a scaffold toward building a summary, directly relevant to the chapters just read and the ongoing summarization task."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what happened in chapter six? What was the main event?",
+      "reason": "This directly follows the tutor's stated goal of asking for a summary of the last two chapters and the student's partial response, prompting the student to address chapter six specifically. It is appropriately targeted scaffolding for the summarization task."
+    }
+  ],
+  "trace_sha256": "2b1cb296d4402f766dc095f37d2312de2ca705905a38d6aabcf6672fadeab944"
+}

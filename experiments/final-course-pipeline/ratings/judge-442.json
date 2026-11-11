@@ -1,0 +1,45 @@
+{
+  "case_index": 442,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if each part is one fifth, and you need to find two fifths, how many parts from zero do you need to count?",
+      "reason": "The tutor provides a clear hint by reminding the student that each part is one fifth and then asks a question that guides the student to count the correct number of parts to find two fifths. This scaffolds the problem-solving process while still requiring the student to perform the counting and identify the answer independently."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you've counted five parts from zero to one, and each part is one fifth. If the star is on the second part, how many one-fifths have we moved from zero? What number would that be?",
+      "reason": "The tutor provides scaffolding by reiterating the total number of parts and the value of each part. The question then guides the student to connect the position of the star to the fractional value, promoting independent thinking and application of the concept."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So you said this is two fifths. Can you explain how you know that? What step did you take to figure that out?",
+      "reason": "The student has not yet said the answer is two fifths. The tutor is asking the student to explain something they haven't stated, which is not appropriate to the current exchange. The student is still trying to figure out the answer."
+    }
+  ],
+  "trace_sha256": "d95be305b705ca81dd7ed4868d5a7c54867361da212e14644f26de54ade94d1a"
+}

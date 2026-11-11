@@ -1,0 +1,45 @@
+{
+  "case_index": 318,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's one way you could check if your answer makes sense for the farmer's field problem?",
+      "reason": "This question prompts the student to think about verifying their answer, which promotes deeper understanding and responsibility for their work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you get when you add 30, 51, and 20?",
+      "reason": "The tutor breaks down the problem into a clear, manageable first step, guiding the student towards the solution without giving the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the total of the three sides that are labeled?",
+      "reason": "This is a direct and appropriate hint for the first step in solving the problem, guiding the student to sum the known side lengths."
+    }
+  ],
+  "trace_sha256": "6f1804f2cb14b1147643221ec44a4e798db03db91664df49811e6282772dda33"
+}

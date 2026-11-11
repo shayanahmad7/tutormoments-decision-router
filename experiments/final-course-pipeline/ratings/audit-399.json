@@ -1,0 +1,45 @@
+{
+  "case_index": 399,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Once you have that, how can you use it to find twenty-three minus thirty?",
+      "reason": "Asks the student to compute 30-23 first (scaffolding the two-step trick already introduced) then connect it to the original problem, requiring the student to supply both the arithmetic and the reasoning step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "if thirty minus twenty-three is seven, what should twenty-three minus thirty be? Think about the trick we just talked about",
+      "reason": "Builds on the tutor's established trick and the student's correct answer of seven, prompting the student to apply the negative-sign step independently without giving it away."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "thirty minus twenty-three is seven. That means twenty-three minus thirty is...?",
+      "reason": "Confirms the intermediate answer and then essentially completes the reasoning chain, leaving only a fill-in-the-blank for the student; the student's productive work is largely done for them."
+    }
+  ],
+  "trace_sha256": "fcd3d5f2cd92bff02d83eea4d00d6d259337bb3435591c3a8e660736b47733d6"
+}

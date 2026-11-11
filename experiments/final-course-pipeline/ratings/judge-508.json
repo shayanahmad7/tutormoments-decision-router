@@ -1,0 +1,45 @@
+{
+  "case_index": 508,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me clarify the question: we're looking for the fact that **does not** help show the number of apples is even. So, which of these options **does not** give a reason why 12 is even? Let’s look at each one. What do you think about option D: \"There are 3 apples in each column\"? Does that help show the number is even?",
+      "reason": "The tutor clarifies the question and then guides the student to consider option D, which is a good way to scaffold the student's thinking without giving away the answer. It also promotes rigor by asking the student to justify their reasoning."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we count in 2s and reach 12, that means we can pair up all the apples with none left over, right? So how does that help us decide if the number is even or not? What does this fact actually tell us?",
+      "reason": "The tutor prompts the student to think about the implications of counting in 2s, which is a good way to scaffold the student's understanding of even numbers. It also promotes rigor by asking the student to explain their reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So which one is the correct answer, and why do you think that fact doesn't help show the number is even?",
+      "reason": "The tutor asks the student to identify the correct answer and justify their reasoning, which promotes rigor. However, it does not provide any scaffolding to help the student arrive at the answer."
+    }
+  ],
+  "trace_sha256": "6e7017ee90c33eb1661fc066180262a08cffaf506868f8cb7b3f4ef08abd233a"
+}

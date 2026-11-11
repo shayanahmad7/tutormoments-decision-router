@@ -1,0 +1,45 @@
+{
+  "case_index": 103,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should the last digit be?",
+      "reason": "The tutor provides a hint about the last digit, which is a key characteristic of skip counting by 10s, making the problem more accessible."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is 10 less than 501? You can subtract 10 or count backward one step on the number line.",
+      "reason": "The tutor rephrases the question as a subtraction problem and suggests counting backward, providing two different strategies to approach the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what number comes right before 501 if you're counting down by 10? What would you subtract 10 from to get 501?",
+      "reason": "The tutor clarifies the meaning of 'before' in the context of skip counting down by 10, and then rephrases the question as a subtraction problem, which is a helpful scaffold."
+    }
+  ],
+  "trace_sha256": "0f6b0584c3ded721c2c471ca543093f5f0702744c883143618867815d9fb5088"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 400,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how does that help you figure out what seven plus seven is?",
+      "reason": "The tutor asks the student to explain the connection between the two facts, which increases rigor by asking for justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Thirteen. Okay, so six plus seven is thirteen. So the equation \"6 + 7 = 13\" is correct.",
+      "reason": "The tutor provides the answer and then states that the equation is correct, which the student could have determined."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Thirteen. Okay, so if six plus seven is thirteen, then is thirteen equal to thirteen?",
+      "reason": "The tutor guides the student to connect their calculated answer to the equation presented in the game, which is a helpful scaffold."
+    }
+  ],
+  "trace_sha256": "aacab4b1620a83f4ed3a31142aa3c8325cbb6530ec18e983b3577f105598488d"
+}

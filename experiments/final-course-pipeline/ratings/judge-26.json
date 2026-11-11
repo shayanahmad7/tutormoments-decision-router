@@ -1,0 +1,45 @@
+{
+  "case_index": 26,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Since the denominators are the same, you just add the numerators. What is 3 plus 1?",
+      "reason": "The tutor provides a clear hint about how to add fractions with common denominators, which is appropriate given the student's previous question about whether the denominators need to be the same."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what would 2/4 plus 2/4 equal? Can you explain why?",
+      "reason": "The tutor asks the student to apply the concept to a new problem and to explain their reasoning, which increases cognitive demand."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what would happen if we added 2/4 to 2/4? What would that equal?",
+      "reason": "The tutor asks the student to apply the learned concept to a new problem, which promotes independent thinking and application."
+    }
+  ],
+  "trace_sha256": "13352f060ee9acc4403aa6b256e45defda248adc9eb0a67cb3f71c0487d0114f"
+}

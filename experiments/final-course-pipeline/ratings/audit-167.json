@@ -1,0 +1,45 @@
+{
+  "case_index": 167,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "we're increasing the tens place by 1",
+      "reason": "The tutor over-breaks the problem by telling the student exactly which digit to focus on and what operation to perform on it, removing the cognitive work the student could do independently after correctly identifying addition."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would figure out what 10 more than 248 is in your head?",
+      "reason": "Confirms the student's correct identification of addition and then asks the student to independently work through and explain their mental math process, increasing cognitive demand without providing unneeded scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "we can focus on the tens place. What happens to the tens digit when you add 10?",
+      "reason": "Similar to C1, directs the student to the tens place and asks what happens to that digit, breaking the problem into leading sub-steps that the student could productively work out on their own after correctly identifying addition."
+    }
+  ],
+  "trace_sha256": "a73f10eb37334c96555ec3f464f8ea44efdf9b96122576e7011846f1fcdfa766"
+}

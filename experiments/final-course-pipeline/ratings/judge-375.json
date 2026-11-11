@@ -1,0 +1,45 @@
+{
+  "case_index": 375,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 10 tens plus 4 tens?",
+      "reason": "The tutor breaks down the problem by first converting 1 hundred to tens, then asks the student to combine that with the existing 4 tens. The final question is a direct calculation, making it scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If 1 hundred is the same as 10 tens, then 1 hundred and 4 tens is the same as how many tens?",
+      "reason": "The tutor provides a key conversion (1 hundred = 10 tens) and then asks the student to apply this to the problem, which is a helpful scaffold. The final question is open-ended, but the preceding information is a strong hint."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If 1 hundred is the same as 10 tens, then 1 hundred and 4 tens is the same as how many tens total?",
+      "reason": "The tutor provides the crucial conversion (1 hundred = 10 tens) which directly addresses the student's potential confusion. This is a clear scaffold to help the student reframe the problem."
+    }
+  ],
+  "trace_sha256": "a9563b982f3b27a013cc5c1340f5d274e32c515413f33ff8675db6a1a331a735"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 430,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How would you find the answer using the blocks?",
+      "reason": "The tutor asks the student to explain their thinking using the blocks, which promotes rigor by asking for justification and a specific strategy."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you take away twenty from thirty-four, what do you get?",
+      "reason": "The tutor breaks down the subtraction problem into a smaller, more manageable step, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we take away twenty from thirty, what do we have left?",
+      "reason": "The tutor breaks down the subtraction problem into a smaller, more manageable step, which is a form of scaffolding. This is a good hint for the student to start with the tens place."
+    }
+  ],
+  "trace_sha256": "f58c66b5d0c9893fbdd470f915c6a5d1d5babccad99bf9be88f455ea86380e33"
+}

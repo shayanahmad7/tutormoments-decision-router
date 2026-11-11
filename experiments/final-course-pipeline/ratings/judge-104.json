@@ -1,0 +1,45 @@
+{
+  "case_index": 104,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about how the digits change when you subtract 10. What should the number look like?",
+      "reason": "The tutor provides a hint about how the digits change when subtracting 10, which is a relevant strategy for skip counting in tens."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 10 less than 501?",
+      "reason": "The tutor explains the entire concept of skip counting backward by 10 and then directly asks for the result of 501 - 10, which is overhelping the student who has already demonstrated understanding of subtraction in the previous problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is 10 less than 501? You can subtract 10 or count backward one step on the number line.",
+      "reason": "The tutor reminds the student of the operation needed (subtract 10) and offers two methods (subtraction or counting backward), which is appropriate scaffolding without giving away the answer."
+    }
+  ],
+  "trace_sha256": "c167d16a72f2eb7dc8e74d7d2108cc0ac896459a039e85838bffa7877ac4598d"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 65,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with something simpler. What is 165 ÷ 11? Just do that division first.",
+      "reason": "The tutor simplifies the problem by removing the negative sign, which is a good scaffolding technique. They then ask the student to perform the division."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know what you get when you divide 165 by 11. You can do it step by step if that helps.",
+      "reason": "The tutor provides scaffolding by suggesting the student divide 165 by 11, which is a direct hint to solve the problem. They also offer a strategy for doing so."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If you divide -165 by 11, what do you get? Try to figure it out and let me know.",
+      "reason": "The tutor asks the student to perform the division with the negative number, maintaining the rigor of the original problem. They prompt the student to figure it out independently."
+    }
+  ],
+  "trace_sha256": "42ee3b3f79104e738e64fed48a496523ec3f664fbd8e0036e39ad8976facba94"
+}

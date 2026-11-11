@@ -1,0 +1,45 @@
+{
+  "case_index": 389,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many groups of 8 are in 32? Can you figure out the answer by thinking about multiplication? What times 8 gives you 32?",
+      "reason": "The tutor provides a clear rephrasing of division as 'how many groups' and then directly connects it to multiplication, which is a helpful scaffold for this type of problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can thinking about ten times eight help us figure out thirty-two divided by eight?",
+      "reason": "The tutor prompts the student to apply a previously successful strategy (using 10x facts as a reference) to the current problem, which is a good scaffolding technique."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If I have 32 and I want to divide it into 8 equal groups, how many would be in each group? What number times 8 gives you 32?",
+      "reason": "The tutor rephrases the division problem in two different ways, first as sharing into equal groups and then as a missing factor multiplication problem, providing scaffolding for understanding."
+    }
+  ],
+  "trace_sha256": "fca485620c69fb3f98836501da220294fc1fc235eda996de825bfb99562bf9ea"
+}

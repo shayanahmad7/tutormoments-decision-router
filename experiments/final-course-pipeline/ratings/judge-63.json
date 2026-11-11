@@ -1,0 +1,45 @@
+{
+  "case_index": 63,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many sides are there in total on the shape? Let's count them first.",
+      "reason": "The student is struggling to count the perimeter. The tutor has already started counting with the student, and this candidate continues that scaffolding by asking the student to count the sides."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You counted 12 sides, and each side is 3 centimeters. So how do we find the total perimeter? What should we do with the 12 and the 3?",
+      "reason": "The student has typed '4' as the answer, which is incorrect. This candidate acknowledges the student's previous counting (12 sides) and then prompts them to consider the given information that each side is 3 cm, guiding them towards the correct operation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "One, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve. Let's count together. What number do we end on?",
+      "reason": "The tutor has just started counting with the student. This candidate continues the counting, providing direct scaffolding to help the student correctly identify the number of sides."
+    }
+  ],
+  "trace_sha256": "08efb0f433de7072b9c3e6dd913a53a42f87bedde087184db365e462e0d06997"
+}

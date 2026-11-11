@@ -1,0 +1,45 @@
+{
+  "case_index": 52,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If p = 3 and q = 5, and r = 4, what would Tom’s expression become?",
+      "reason": "The tutor provides specific values for the variables, which scaffolds the student's understanding of the expression. This also adds rigor by asking the student to apply the expression with concrete numbers and then interpret the result."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why both expressions give the same result? How does Tom’s method relate to Katie’s?",
+      "reason": "This prompt encourages the student to synthesize their understanding of both expressions and articulate the mathematical relationship between them, promoting deeper conceptual understanding and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens if you simplify Tom’s expression, pr/2 + qr/2? Can you show that it becomes the same as Katie’s expression?",
+      "reason": "The tutor provides a clear hint to simplify Tom's expression, which scaffolds the student's approach. This also adds rigor by asking the student to perform algebraic manipulation to demonstrate the equivalence of the two expressions."
+    }
+  ],
+  "trace_sha256": "5fd12d467282797dfce07815d0e76da61dc4b7f9e734f921634c82efac6bb945"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 457,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "0.5 of 60 is 30. What about 0.5 of 120?",
+      "reason": "Confirms the result just reached and asks the student to apply the same reasoning to the second value, maintaining the notation from the problem while prompting independent work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "half of 60 is 30. What about half of 120? How could you figure that out?",
+      "reason": "Confirms the result and asks the student to apply the same method to 0.5 of 120, using the 'half' language the tutor just established; asking 'how could you figure that out' adds a mild process-level demand."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "half of 60 is 30. What about half of 120? What do you think that would be?",
+      "reason": "Confirms the result and prompts the student to compute the parallel value, fitting naturally into the ongoing comparison problem; slightly less process-oriented than C2 but still asks for independent calculation."
+    }
+  ],
+  "trace_sha256": "f8e5825f26b8425b6a86dbf5f49cc3eace3109c878364e6ca849d87e9c5ef3d7"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 437,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "how would you write that as a fraction? And what whole number does that represent?",
+      "reason": "The tutor asks two questions, one about writing the fraction and one about the whole number it represents. This provides a clear path for the student to follow."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what whole number does that represent? Can you explain why?",
+      "reason": "The tutor asks the student to explain their reasoning, which increases cognitive demand and promotes deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what whole number does that represent? How do you know?",
+      "reason": "The tutor asks the student to explain their reasoning, which increases cognitive demand and promotes deeper understanding."
+    }
+  ],
+  "trace_sha256": "7b3974a0d4acc973170eaca62c02ebdef9a6a011b1a0e5eb9d249f34f683c997"
+}

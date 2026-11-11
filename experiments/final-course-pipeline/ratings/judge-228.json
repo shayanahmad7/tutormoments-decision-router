@@ -1,0 +1,45 @@
+{
+  "case_index": 228,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happened first?",
+      "reason": "The tutor provides a definition of a summary and then scaffolds the student by asking them to recall the beginning of the chapter, which is a good starting point for summarizing."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think is the main idea or the most important part of the chapter?",
+      "reason": "The tutor provides a definition of a summary by asking about the main idea, which is a good way to prompt the student to think about the core content of the chapter. It also encourages the student to take responsibility for identifying key information."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "A summary is when you take the main ideas from a story or chapter and explain them in your own words, keeping it short and simple. Let me know if you'd like to try summarizing what you remember from the chapter.",
+      "reason": "The tutor provides a clear definition of a summary and then gives the student the option to try summarizing, which encourages independent work and responsibility."
+    }
+  ],
+  "trace_sha256": "33dfa7bd1d20657f86c690a1d98d29f671657729d191ec17aaad27a3784fbdc9"
+}

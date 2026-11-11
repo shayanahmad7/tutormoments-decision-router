@@ -1,0 +1,45 @@
+{
+  "case_index": 12,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think the second term is?",
+      "reason": "The tutor provides a new problem that extends the student's thinking and then scaffolds the problem by asking for the second term first, rather than immediately asking for the fourth term."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think the second term is?",
+      "reason": "The tutor provides a new problem and then scaffolds it by asking for the second term, which is a direct application of the rule."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What would the fourth term in this sequence be? Take a moment to work it out, and then explain your steps.",
+      "reason": "The tutor provides a new problem that requires multiple steps and asks the student to explain their reasoning, increasing rigor."
+    }
+  ],
+  "trace_sha256": "f24f75814cf7db473f4fd99b63a13207bff9b7d0fa9c921509ee89eb17f4d45a"
+}

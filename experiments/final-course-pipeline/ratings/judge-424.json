@@ -1,0 +1,45 @@
+{
+  "case_index": 424,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What if we had to increase 80 by 25%? What would be the first step?",
+      "reason": "The tutor provides a similar problem and asks for the first step, which is a scaffolded approach to check for understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s try a similar problem on your own: Increase 80 by 25%. What steps will you take, and what will you calculate first?",
+      "reason": "The tutor asks the student to try a similar problem independently and explain their steps, which promotes rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me see if you can explain why we add the 48 back to the original 120. Why do we do that instead of just keeping the 48 as the answer?",
+      "reason": "The tutor asks the student to justify a specific step in the problem, which increases cognitive demand and promotes deeper understanding."
+    }
+  ],
+  "trace_sha256": "9455494dde12595a3e304015e25eb2b52e12924af3d2b931420a34fddd7cd1d5"
+}

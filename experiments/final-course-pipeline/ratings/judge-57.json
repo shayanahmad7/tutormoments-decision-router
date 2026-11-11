@@ -1,0 +1,45 @@
+{
+  "case_index": 57,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the formula for the area of a triangle? Let’s start by writing that down for this problem.",
+      "reason": "The tutor asks the student to recall the formula for the area of a triangle, which is a direct and appropriate next step given the student's previous difficulty with this specific formula."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What’s the formula for the area of a triangle, and how does it relate to the formula for the area of a trapezoid?",
+      "reason": "The tutor asks for the triangle formula and then prompts the student to make a connection to the trapezoid formula, which adds a layer of rigor by encouraging relational thinking."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "For problem five, which is a triangle, can you tell me what formula you're using to find the area?",
+      "reason": "The tutor asks the student to state the formula they will use, which is a good way to check their understanding before they begin calculations."
+    }
+  ],
+  "trace_sha256": "69b266e0941f3a9043460a169f025707f5787fb868b242e02e50e659b21ec61c"
+}

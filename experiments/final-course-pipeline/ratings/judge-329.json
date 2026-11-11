@@ -1,0 +1,45 @@
+{
+  "case_index": 329,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a time when explaining something helped you understand it better?",
+      "reason": "The tutor scaffolds by connecting to the student's previous answer and then asks a rigorous question that encourages reflection and deeper understanding of the concept."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you think of a time when you explained something to someone else and realized you didn’t fully understand it? Or maybe a time when explaining helped you understand better?",
+      "reason": "The tutor scaffolds by connecting to the student's previous answer and then asks a rigorous question that encourages reflection and deeper understanding of the concept, offering two different scenarios for the student to consider."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you think of a time when explaining something helped you understand it better?",
+      "reason": "The tutor scaffolds by connecting to the student's previous answer and then asks a rigorous question that encourages reflection and deeper understanding of the concept."
+    }
+  ],
+  "trace_sha256": "033fb13500cf0f07a1c64cf294ae7094cae8c3a20c062ed122caa69003a4432d"
+}

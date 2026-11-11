@@ -1,0 +1,45 @@
+{
+  "case_index": 434,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said six out of six is one sixth — but wait, isn't six out of six the whole box? What number represents the whole box?",
+      "reason": "The tutor identifies the student's error and then asks a question that prompts the student to recall the concept of a whole, which was just discussed, without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You said six out of six is one sixth. Let me see if that makes sense. If I take all six parts of the box, that should be the whole box, right? So what number should six sixths be equal to?",
+      "reason": "The tutor directly addresses the student's error and then guides them to think about the meaning of 'the whole box' in relation to the fraction, prompting them to provide the correct numerical representation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So we know that 1/6 represents one part of the whole box. If I take all six parts, that would be 6/6. And we just said that 6/6 is the same as the whole box. So what number is the same as 6/6?",
+      "reason": "The tutor reviews the previous correct statement about 1/6, connects it to 6/6 representing the whole, and then asks the student to identify the numerical value of the whole, which is a good scaffold to help the student correct their error."
+    }
+  ],
+  "trace_sha256": "d8f8a6a683d5691c907217e655cb62f69b97ff75cec4f3dc25a51b2f14126a2c"
+}

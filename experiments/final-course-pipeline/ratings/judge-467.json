@@ -1,0 +1,45 @@
+{
+  "case_index": 467,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How does that connect to the equation? What does “4 times as many as 3” mean in numbers?",
+      "reason": "The tutor acknowledges the student's choice and then provides scaffolding by asking the student to connect the phrasing in the problem to the given equation, which encourages deeper thinking about the meaning of '4 times as many as 3'."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is 4 times as many as 3? Can you calculate that?",
+      "reason": "The tutor provides scaffolding by rephrasing the key part of the sentence and then asks the student to perform the calculation, which is a good balance of support and rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think the star should be 12? What does \"4 times as many as 3\" mean in this case?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor by requiring justification. It also asks for the meaning of the phrase, which is a good way to check understanding."
+    }
+  ],
+  "trace_sha256": "b59b415f722fe17f15a9eab7aad7b9994a3d778548d3366e967ff4c60c3f8c00"
+}

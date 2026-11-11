@@ -1,0 +1,45 @@
+{
+  "case_index": 235,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What about 7 times 80? How would you figure that out?",
+      "reason": "The tutor acknowledges the student's chosen strategy and the part they've already solved. They then prompt the student to solve the next part of the problem, which requires them to apply the concept of multiplying by a multiple of ten, thereby increasing rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what's the next part of 84? It's the 8 in the tens place, right? But remember, that's not just 8 — it's actually 80. So what's 7 times 80?",
+      "reason": "The tutor guides the student by explicitly stating that the '8' in 84 represents '80', which is a key conceptual step for the distributive property. This is scaffolding as it makes the next mathematical step more accessible."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's start with the 7 times 4. What is 7 times 4?",
+      "reason": "The tutor validates the student's chosen strategy and then prompts them to start with the first part of the calculation, which is a direct question that helps the student begin the problem-solving process."
+    }
+  ],
+  "trace_sha256": "8e7bcf4566d8887789280fe15593cdf22b178547966d533bf5f9220bb17f632d"
+}

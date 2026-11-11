@@ -1,0 +1,45 @@
+{
+  "case_index": 438,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the correct answer is 1/3, using what we just talked about with the pizza and the box?",
+      "reason": "The tutor asks the student to explain their reasoning using the previous examples, which promotes deeper understanding and justification. This is a good way to check for understanding and apply new knowledge."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How many equal parts is the whole (from 0 to 1) divided into? What does that tell you about the denominator of the fraction? Can you name the fraction now?",
+      "reason": "The tutor provides a series of guided questions that break down the problem into smaller, manageable steps. This is a good example of scaffolding, as it helps the student arrive at the answer without giving it away."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you count how many equal parts the number line is divided into? That will help you figure out the denominator of the fraction.",
+      "reason": "The tutor provides a direct hint to help the student identify the denominator, which is a form of scaffolding. It's a helpful prompt without giving the answer directly."
+    }
+  ],
+  "trace_sha256": "1b2677c3873a6cf9d3dbfc64523f485c8141e0cac9e50f44f215e9e1b447e0b3"
+}

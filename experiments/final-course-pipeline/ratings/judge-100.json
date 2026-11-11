@@ -1,0 +1,45 @@
+{
+  "case_index": 100,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the digit in the thousands place went from 4 to 3?",
+      "reason": "The tutor asks the student to explain their reasoning for a step in the subtraction problem, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me see if you can explain why the answer is 3995. What happens in each place value when you subtract 8 from 4003?",
+      "reason": "The tutor asks the student to explain the entire process of subtraction, focusing on place value, which encourages the student to articulate their understanding and provides an opportunity for the tutor to assess their comprehension."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the 4 when the second 0 borrows from it? What number does it become?",
+      "reason": "The tutor provides a guided question that focuses on a specific step in the borrowing process, making the next step more accessible for the student."
+    }
+  ],
+  "trace_sha256": "6261f34faef2f038e0578d93ed2bcfdac450d518186256353bb95bcf78f3775d"
+}

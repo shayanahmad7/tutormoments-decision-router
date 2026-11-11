@@ -1,0 +1,45 @@
+{
+  "case_index": 344,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why that position is correct?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Where should the second ray be placed on the protractor to form a 90° angle?",
+      "reason": "This is a direct question asking for the next step, which is appropriate given the student has drawn one ray."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Okay, you've drawn one ray at 0 degrees. Now, where should the other ray be to make a 90-degree angle?",
+      "reason": "The tutor acknowledges the student's correct action and then asks for the next step, which is appropriate."
+    }
+  ],
+  "trace_sha256": "43ba440a8245cf21d5242a9749c27826dd78d97176d434491b634429eb532f07"
+}

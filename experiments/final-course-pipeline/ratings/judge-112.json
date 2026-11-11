@@ -1,0 +1,45 @@
+{
+  "case_index": 112,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start at -3 and move 2 steps to the right. Where do you end up?",
+      "reason": "The tutor provides a clear, guided substep using a number line analogy to help the student visualize the addition of a negative and a positive number, which is a common point of confusion."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "When you have -3 + 2, you're starting at -3 on the number line and moving 2 steps to the right. What number do you land on?",
+      "reason": "The tutor provides a clear, guided substep using a number line analogy to help the student visualize the addition of a negative and a positive number, which is a common point of confusion."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, what is -3 + 2? Can you explain how you get the answer?",
+      "reason": "The tutor asks the student to explain their reasoning, which increases cognitive demand and responsibility."
+    }
+  ],
+  "trace_sha256": "d8144a14f8017506b1a46d18eaac683c016cb53d91b521f268390862ef080eed"
+}

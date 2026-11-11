@@ -1,0 +1,45 @@
+{
+  "case_index": 391,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you would figure out whether 398 is greater than or less than 389, just like the first problem showed?",
+      "reason": "The student correctly answered the problem but then immediately stated they forget the symbols. This response asks the student to explain their reasoning, which is a good way to check for understanding and encourage them to articulate their thought process before directly addressing the symbols. It also references the previous problem's explanation, which is a good scaffold."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The \"greater than\" symbol (>) opens toward the larger number, and the \"less than\" symbol (<) points toward the smaller number. For example, 5 < 8 means 5 is less than 8. Can you use this idea to decide which symbol fits in the gap for 398 ___ 389?",
+      "reason": "The student stated they forgot the symbols. This response directly provides the definition and an example of how to use the symbols. While it addresses the student's stated need, it is overhelping by giving the full explanation rather than prompting the student to recall or figure it out with a hint."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Both start with 3, so we move to the next digit. The second digit in 398 is 9, and in 389 it's 8. Which is bigger, 9 or 8? What does that tell you about the whole numbers?",
+      "reason": "The student correctly answered the problem but then immediately stated they forget the symbols. This response overhelps by walking the student through the comparison of the numbers, which the student already demonstrated they could do. The student's confusion was about the symbols, not the comparison logic itself."
+    }
+  ],
+  "trace_sha256": "3a8a596c608bdc796f31fb05a0acb1563e8d835a870e1bed95b70a6652cab053"
+}

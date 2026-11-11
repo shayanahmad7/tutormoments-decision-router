@@ -1,0 +1,45 @@
+{
+  "case_index": 359,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the 3 in 34 when we borrow 1 ten? What does the 4 become?",
+      "reason": "The tutor provides a guided substep for the student to follow, which is appropriate given the student's previous struggles with this type of subtraction."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got that? What steps did you take to subtract 26 from 34?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is thirty-four minus twenty-six?",
+      "reason": "The tutor repeats the question the student just answered, which is overhelping as the student already provided the correct answer."
+    }
+  ],
+  "trace_sha256": "5a489a5ce7f32b2f0a7c1826eb73bcb42ffe7bd52bca898988e8e27a1be56991"
+}

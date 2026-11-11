@@ -1,0 +1,45 @@
+{
+  "case_index": 371,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 20 times 4?",
+      "reason": "The student has just said 'Twenty' in response to the tutor's question 'Probably twenty.' The tutor's question 'What's 20 times 4?' is a direct follow-up to confirm the multiplication step in long division."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you think 20 times 4 is?",
+      "reason": "The student has just said 'Twenty' in response to the tutor's question 'Probably twenty.' The tutor's question 'What do you think 20 times 4 is?' is a direct follow-up to confirm the multiplication step in long division."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does the 5 above the second 2 represent in our division?",
+      "reason": "The tutor has written '5' above the second '2' in '2284'. This question asks the student to explain the meaning of that digit in the context of long division, which promotes understanding of the process rather than just finding the next number."
+    }
+  ],
+  "trace_sha256": "7f7127028f1f4b69bbba642b9d8d04496dc3286db5a2f18994e00342300e8479"
+}

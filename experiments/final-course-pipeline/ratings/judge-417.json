@@ -1,0 +1,45 @@
+{
+  "case_index": 417,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "can you explain why option A is the correct diagram and not the others?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and critical thinking. This is a good way to check for understanding without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which one has the two smaller bars (15 and 12) on top and the bigger bar (the total) at the bottom? That’s the one we want. Can you find that one?",
+      "reason": "The tutor provides a clear hint by describing the structure of the correct bar model, which helps the student identify the correct option. This is a good scaffolding technique."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, which of the diagrams shows the two parts (15 and 12) being added to make the bigger total? Can you point to the one that matches that idea?",
+      "reason": "The tutor reiterates the core concept of adding parts to make a whole and then asks the student to identify the diagram that represents this. This is a good way to guide the student without giving the answer directly."
+    }
+  ],
+  "trace_sha256": "e49a5a4a046f620d2a49e7889095970d2fe9a878228cdd18e29be53d38d315e9"
+}

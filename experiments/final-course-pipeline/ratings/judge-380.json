@@ -1,0 +1,45 @@
+{
+  "case_index": 380,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me how many that represents and explain how you know?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper understanding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you count how many tally marks are in this group? I'll wait while you count.",
+      "reason": "The tutor provides a clear, guided next step for the student to count the tally marks."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you count how many tally marks it shows and tell me what number it represents?",
+      "reason": "The tutor clearly directs the student to count the tally marks and state the total, which is a direct next step in the problem."
+    }
+  ],
+  "trace_sha256": "004bc4e5cb3ec704a42c6d858e30774230ae3d6a50166fa647ca744ca8ae6136"
+}

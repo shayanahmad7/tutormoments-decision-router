@@ -1,0 +1,45 @@
+{
+  "case_index": 284,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you tell me what number you could subtract 3 from to get 4?",
+      "reason": "The tutor provides a specific hint for problem 14, rephrasing the equation as a question to guide the student towards the solution without giving the answer directly."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the question asking you to find for number 14? Let me know what you're trying to solve for, and we can start from there.",
+      "reason": "The tutor asks a clarifying question specific to problem 14, prompting the student to articulate their understanding of the problem's goal, which is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 1,
+      "evidence": "What is the question asking you to find? Let's start there.",
+      "reason": "This is a generic scaffolding question that could apply to any problem. While it's not wrong, it's less targeted than C1 or C2, which specifically mention problem 14."
+    }
+  ],
+  "trace_sha256": "6c9c3083979fb8efde28c93e37f8d2437c5c2bf75cba88f21225e386bd055283"
+}

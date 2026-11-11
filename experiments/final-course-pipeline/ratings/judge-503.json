@@ -1,0 +1,45 @@
+{
+  "case_index": 503,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the total area of the wall before we subtract the window and door?",
+      "reason": "The tutor provides a clear next step for the student, prompting them to calculate the total area of the wall before considering the subtractions, which aligns with the problem-solving strategy for this type of composite shape problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the total area of the wall before we subtract the areas of the window and the door?",
+      "reason": "This response provides a clear and appropriate next step, guiding the student to calculate the total area of the wall before subtracting the window and door, which is a necessary step in solving the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the total area of the wall before we subtract the window and door?",
+      "reason": "The tutor provides a clear next step for the student, prompting them to calculate the total area of the wall before considering the subtractions, which aligns with the problem-solving strategy for this type of composite shape problem."
+    }
+  ],
+  "trace_sha256": "af4acc915f3c84d7655df87d4e9cfb76c5fec107093564f7b9662bc15ce2ece5"
+}

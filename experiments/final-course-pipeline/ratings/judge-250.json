@@ -1,0 +1,45 @@
+{
+  "case_index": 250,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we do to continue the division and turn this into a decimal?",
+      "reason": "The tutor asks the student to recall the next step in converting a remainder to a decimal, which promotes independent thinking and problem-solving."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What should we do next to keep dividing and turn this into a decimal?",
+      "reason": "The tutor prompts the student to identify the next step in the division process to convert the remainder into a decimal, encouraging active recall and application of knowledge."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "We can turn that remainder into a decimal by adding a decimal point and a zero to 189. Let me add that to our problem.",
+      "reason": "The tutor provides the exact steps for converting the remainder to a decimal, which the student could have potentially figured out with a more open-ended prompt."
+    }
+  ],
+  "trace_sha256": "61852f461b9e04fa6561862d6e2b5070ab1930dd1a961383d2b52b889522ec00"
+}

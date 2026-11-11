@@ -1,0 +1,45 @@
+{
+  "case_index": 32,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the first step you'd take to find the remainder when dividing 2143 by 4?",
+      "reason": "The tutor asks the student to identify the first step, which promotes independent thinking. It also explicitly mentions finding the remainder, aligning with the problem's goal."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the first step you can take to divide 2,143 by 4?",
+      "reason": "This is a good open-ended question that prompts the student to initiate the division process. It doesn't provide too much guidance, allowing the student to demonstrate their understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you write out the first step of the long division and explain what it represents?",
+      "reason": "This reply scaffolds by suggesting long division and asks for both the step and its representation, which adds rigor by requiring explanation."
+    }
+  ],
+  "trace_sha256": "c38225b4078e3678ad5eb66f2f18e77940e6871e73c7f4d7318109dd7d8be4a5"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 50,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you solved problem 1, which is 3x = 12? What step did you take to find the value of x?",
+      "reason": "The tutor asks the student to explain their process for solving the problem, which promotes rigor by requiring justification. It also provides scaffolding by reminding the student of the specific problem and asking for the first step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s start with problem 1: 3x = 12. Can you explain how you would solve for x?",
+      "reason": "The tutor directs the student to a specific problem and asks them to explain their solution process, which encourages rigor and provides scaffolding by focusing the student's attention."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you share your answer for problem 1 (3x = 12)? Let’s start there.",
+      "reason": "The tutor provides scaffolding by directing the student to a specific problem to start with. However, it only asks for the answer, not the process, which limits rigor."
+    }
+  ],
+  "trace_sha256": "ce1267b0c2411a431848dda5a1e0a83ba3da1ec2055f1db475fb896788f73b00"
+}

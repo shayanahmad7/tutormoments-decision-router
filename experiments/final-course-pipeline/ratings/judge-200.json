@@ -1,0 +1,45 @@
+{
+  "case_index": 200,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what do we need to do to find the value of a?",
+      "reason": "The tutor asks the student to identify the next step in solving the equation, which promotes active problem-solving and critical thinking. This is a good balance of scaffolding and rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Subtract 62 from both sides to solve for a.",
+      "reason": "The tutor tells the student the exact operation to perform, which the student could have productively figured out on their own. This is overhelping."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what do you need to do to find the value of a?",
+      "reason": "The tutor asks the student to identify the next step in solving the equation, which promotes active problem-solving and critical thinking. This is a good balance of scaffolding and rigor."
+    }
+  ],
+  "trace_sha256": "93fdb1a652f1167856b41eef20522b84de9bd984be165b02c00137ef35d8f4d4"
+}

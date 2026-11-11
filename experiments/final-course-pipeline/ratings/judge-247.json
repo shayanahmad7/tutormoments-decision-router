@@ -1,0 +1,45 @@
+{
+  "case_index": 247,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Could you explain that part again?",
+      "reason": "The tutor acknowledges the student's strategy and then asks for clarification on a specific part, which is a good way to encourage the student to articulate their thinking more deeply. This provides scaffolding by breaking down the explanation, and rigor by asking for justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So that would leave you with 38, right? Then you subtracted 8 more. What would 38 minus 8 be?",
+      "reason": "The tutor breaks down the student's explanation and performs the first step of the subtraction for them, then asks for the next step. This is overhelping as the student could productively perform these steps themselves."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you took away 3 more at the end?",
+      "reason": "The tutor acknowledges the student's strategy and then asks for clarification on a specific part, which encourages the student to articulate their thinking more deeply. This is a good way to encourage rigor by asking for justification."
+    }
+  ],
+  "trace_sha256": "0a567796f87bb891699ee324f5576a2f66863aeca76af1c6b3f8d66e922fb182"
+}

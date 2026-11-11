@@ -1,0 +1,45 @@
+{
+  "case_index": 513,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Why is twenty-two thousand and twenty-six greater than twenty-two thousand and twenty-nine?",
+      "reason": "The student has just drawn a less than symbol, which is incorrect. The tutor asks a question that challenges the student's answer and requires them to justify their reasoning, promoting rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let's look at the numbers carefully. Both have twenty-two thousand. What about the rest of the number? Which is bigger: twenty-six or twenty-nine?",
+      "reason": "The tutor breaks down the comparison into smaller, more manageable steps, guiding the student to focus on the relevant parts of the numbers. This is a form of scaffolding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let’s look at the numbers again. The first one is twenty-two thousand and twenty-six, and the second is twenty-two thousand and twenty-nine. Which is more? What should go in the box between them?",
+      "reason": "The tutor restates the numbers clearly and then asks a guiding question to help the student re-evaluate their answer. This provides scaffolding by clarifying the problem and prompting reconsideration."
+    }
+  ],
+  "trace_sha256": "01bbcbc01227855435733998080bd238b3db587dde872d97a7e354e07fa4ccb9"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 185,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Think about a straight line — it’s like a straight angle. What is the total number of degrees in a straight line?",
+      "reason": "The tutor provides a hint by relating a straight line to a straight angle, which helps the student recall the relevant angle measure without giving the answer directly."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Let me know why you changed your answer from B to C. What made you think it was 180° instead of 90°?",
+      "reason": "The tutor asks the student to explain their reasoning for changing their answer, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You're right that adjacent angles on a straight line sum to 180°, so B is the correct answer.",
+      "reason": "The tutor gives away the correct answer (180° and B) before asking the student to explain their reasoning, which is overhelping."
+    }
+  ],
+  "trace_sha256": "0a722d8700f5af43e5267f7cc104d3c0d46f679728dda51637044e537303b8cd"
+}

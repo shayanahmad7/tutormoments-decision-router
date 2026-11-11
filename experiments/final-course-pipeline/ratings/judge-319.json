@@ -1,0 +1,45 @@
+{
+  "case_index": 319,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do these add up to? Once you have that, think about how it relates to the total perimeter of 152 yards. What do you need to do next?",
+      "reason": "The tutor provides a clear hint to sum the known sides and then asks the student to determine the next step, which promotes independent thinking."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got A for this one? I'd love to hear your thinking.",
+      "reason": "The tutor asks the student to explain their reasoning, which encourages justification and deeper engagement with the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we add 30, 51, and 20, what do we get? Then we can see what's left to reach 152. What would be the next step?",
+      "reason": "The tutor guides the student through the first step of adding the known side lengths and then prompts for the subsequent action, providing targeted support."
+    }
+  ],
+  "trace_sha256": "8e056c04a144c13779aa7df83bead52b023fd7bf426cf2ea37cb92593c888f50"
+}

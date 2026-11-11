@@ -1,0 +1,45 @@
+{
+  "case_index": 322,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you add up the sides step by step?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. The suggestion to add the sides step by step provides scaffolding without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How did you figure out the perimeter? Let me know your steps.",
+      "reason": "The tutor asks the student to explain their steps, which promotes rigor by requiring them to articulate their thought process."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you add up the side lengths again and check your total? Remember, the perimeter is the sum of all the sides. What do you get when you add 4 cm, 5 cm, 7 cm, and 3 cm?",
+      "reason": "The tutor asks the student to re-evaluate their calculation, promoting rigor. The reminder of the definition of perimeter and listing the side lengths provides scaffolding to help the student re-calculate."
+    }
+  ],
+  "trace_sha256": "72b9385edcaac5bccb43984bba217d6cdb234fea363530800e3c58f506ebe3b0"
+}

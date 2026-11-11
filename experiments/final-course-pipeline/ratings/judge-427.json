@@ -1,0 +1,45 @@
+{
+  "case_index": 427,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think the total number of counters is odd?",
+      "reason": "The student has given an answer, and the tutor is asking them to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think the total number of counters is odd?",
+      "reason": "The student has given an answer, and the tutor is asking them to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Each student gets 2, which is even. The leftover is 3, which is odd. What happens when you add an even number and an odd number? Is the total even or odd?",
+      "reason": "The tutor breaks down the problem into smaller, more manageable parts by identifying the even and odd components and then asks a guiding question about their sum, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "6f81fc2d449928c8eac578b65dcc3a924c634ea37a87d49ff6d780fecafa801d"
+}

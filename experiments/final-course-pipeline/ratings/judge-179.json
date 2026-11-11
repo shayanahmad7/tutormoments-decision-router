@@ -1,0 +1,45 @@
+{
+  "case_index": 179,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What times 5 gives 40?",
+      "reason": "The tutor provides a hint by rephrasing the problem in a way that directly leads to the correct equation, but still requires the student to identify the unknown variable."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So how can we write an equation that says \"5 times c equals 40\"?",
+      "reason": "The tutor explicitly states the equation in words, which is too leading and overhelps the student in forming the equation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What part of the equation represents the total?",
+      "reason": "The tutor prompts the student to identify a key component of the equation (the total), which helps them construct the equation without giving away the answer."
+    }
+  ],
+  "trace_sha256": "121041d268af1dfca02ead5dbcdd429d529fd7ec5432e5e56cd554894809a72c"
+}

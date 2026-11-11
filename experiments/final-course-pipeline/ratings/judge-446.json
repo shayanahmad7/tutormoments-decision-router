@@ -1,0 +1,45 @@
+{
+  "case_index": 446,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What does the negative sign mean in this case? How does it affect the value of C?",
+      "reason": "The tutor asks the student to explain the meaning of the negative sign, which encourages deeper thinking about the concept of opposites and how it applies to the given problem. This is a good prompt for the student to articulate their understanding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What number is the same distance from 0 but on the opposite side?",
+      "reason": "The tutor reminds the student of the definition of an opposite number, which was just reviewed in the lesson. This provides a direct hint to help the student solve the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think that's the case? What does the negative sign mean in relation to the point C on the number line?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper engagement and understanding. It also directly addresses the student's previous statement, making it contextually relevant."
+    }
+  ],
+  "trace_sha256": "053a294f518567ff871998576a1474d788bb93c6c4e97aad472202d9431e353e"
+}

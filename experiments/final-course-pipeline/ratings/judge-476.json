@@ -1,0 +1,45 @@
+{
+  "case_index": 476,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we start by putting one dot in each group, how many dots do we have so far?",
+      "reason": "The tutor has just placed one dot in each of the eight circles. This question prompts the student to count these dots, which is a logical next step in a division-as-sharing strategy."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you figure out how many dots we need to put in each group so that all the dots together add up to 72?",
+      "reason": "The tutor has just placed one dot in each of the eight circles. This prompt asks the student to determine the number of dots per group to reach 72, which is the core of the problem. It increases rigor by asking the student to take the lead on the next steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If we put one dot in each group, that’s eight total. How many more dots do we need to add to each group to reach 72?",
+      "reason": "The tutor has just placed one dot in each of the eight circles. This reply correctly states the current total (8) and then prompts the student to think about how many more dots are needed, which is a scaffolded approach to the division problem."
+    }
+  ],
+  "trace_sha256": "36ed742e0cd7899159071f9ce29ce00695ceef24e45b52ec1961cd09746f96fb"
+}

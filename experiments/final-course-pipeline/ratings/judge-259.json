@@ -1,0 +1,45 @@
+{
+  "case_index": 259,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out that 10 more than 248 is 258?",
+      "reason": "The student has already provided the correct answer. This question asks them to explain their reasoning, which promotes rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figure out what 10 more than 248 is? What happens to the digits when you add 10?",
+      "reason": "The first question promotes rigor by asking for an explanation. The second question provides a scaffold by directing the student's attention to the digits, which is a useful hint for mental math with tens."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you got from 248 to 258 in your head? What part of the number changed, and how did you figure it out?",
+      "reason": "The first question promotes rigor by asking for an explanation. The subsequent questions provide scaffolding by guiding the student to think about which part of the number changed and how, which is helpful for mental math strategies."
+    }
+  ],
+  "trace_sha256": "7375241efae5e5462db34027342a7a3c356c4b4e0909b3de6dcbfcf00ac2f736"
+}

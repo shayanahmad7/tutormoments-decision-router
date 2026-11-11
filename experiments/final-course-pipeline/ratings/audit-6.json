@@ -1,0 +1,45 @@
+{
+  "case_index": 6,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to a number when you multiply it by 10? Can you think of a pattern or rule",
+      "reason": "Directly addresses the displayed problem 103 x 10, prompts student to recall or derive the multiply-by-10 rule independently without giving it away."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what happens to the digits of 103? Can you try moving them in a way that makes sense?",
+      "reason": "Addresses the current problem appropriately, but 'moving them in a way that makes sense' hints at the digit-shift procedure, over-directing the student's approach before they've had a chance to think."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What happens to the digits in 103 when you multiply it by 10? Can you explain why that happens?",
+      "reason": "Targets the current problem, asks student to identify the pattern and then justify it, adding a layer of conceptual rigor without supplying the answer or procedure."
+    }
+  ],
+  "trace_sha256": "66d7caaf4f61df3aae75981378ee48f145f17158809bf105fa4053366a32e9a1"
+}

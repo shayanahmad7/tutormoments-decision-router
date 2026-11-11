@@ -1,0 +1,45 @@
+{
+  "case_index": 514,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why the second number can only be 3 or higher in that case?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. The question is targeted to the specific part of the problem the student is working on."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why if the first missing number is 3, the second missing number has to be 3 through 9?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. It's a direct question about the student's previous answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Start by comparing the numbers 6,0**3**4,232 and 6,034,23_. What do you notice about the digits so far? What do you need for the second blank to make the left number still less than the right?",
+      "reason": "The tutor provides guided substeps to help the student approach the problem, which is a form of scaffolding. They break down the comparison process."
+    }
+  ],
+  "trace_sha256": "4fbce064c26dd9440c8f66340a57c7b2dd828dbb32aaa82cc4302778600db9da"
+}

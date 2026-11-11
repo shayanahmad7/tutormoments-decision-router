@@ -1,0 +1,45 @@
+{
+  "case_index": 372,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "and why does that make sense as our first step?",
+      "reason": "The tutor asks the student to justify their step, which promotes deeper understanding and rigor. It also provides scaffolding by reminding the student of the current step."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is eighteen divided by five?",
+      "reason": "The tutor asks a direct question that aligns with the student's previous statement, but it doesn't offer additional scaffolding or rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's 1 (thousand) divided by 5? That's our first digit. What do you think goes in the thousands place?",
+      "reason": "The tutor overhelps by breaking down the first step into smaller, leading questions, essentially telling the student how to start the division rather than letting them figure it out. It also introduces the concept of 'thousands place' which wasn't explicitly discussed in the previous problem's steps."
+    }
+  ],
+  "trace_sha256": "4ad75399f2aa6fd639cf4451810cc402cdd086adea763d0e6a123d263b76fc5e"
+}

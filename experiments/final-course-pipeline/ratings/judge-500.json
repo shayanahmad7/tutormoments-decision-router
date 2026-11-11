@@ -1,0 +1,45 @@
+{
+  "case_index": 500,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_scaffolding",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What multiplication do you need to do to find the area in square meters?",
+      "reason": "The tutor asks the student to identify the operation needed to find the area, which is a helpful prompt without giving away the answer."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "To find the area in square meters, you multiply the height by the length. So, you need to calculate 5.1 times 7.5.",
+      "reason": "The tutor tells the student the operation and the specific numbers to multiply, which the student could likely determine independently given their previous success with area problems."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What multiplication expression can we use to find the area of the rectangle in square meters?",
+      "reason": "The tutor prompts the student to formulate the multiplication expression, guiding them towards the solution without providing it directly."
+    }
+  ],
+  "trace_sha256": "32bfd409cfda2d2751cc4e18e981988f1554149881295f85f455afc67843ed8d"
+}

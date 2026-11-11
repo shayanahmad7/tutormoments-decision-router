@@ -1,0 +1,45 @@
+{
+  "case_index": 40,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Now, can you add these up to find the total perimeter?",
+      "reason": "The conversation already shows the student correctly identified the answer as A (34 cm) and the tutor confirmed it by drawing a line to option A. The problem is already solved. This reply restarts the problem as if it hasn't been completed, and also lists the sides in a way that over-scaffolds a finished problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why subtracting 4 from 7 gives us the missing horizontal side, and subtracting 3 from 10 gives us the missing vertical side?",
+      "reason": "After the student correctly found the missing sides and the perimeter, this reply asks for justification of the subtraction method used to find missing sides, promoting conceptual understanding and connection. This is appropriate rigor at the end of the problem."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you arrived at 34 cm for the perimeter? Let's go through the steps to make sure we understand the process.",
+      "reason": "The student just answered A (34 cm) correctly. Asking the student to explain their process promotes justification and consolidation of understanding, which is appropriate rigor following a correct answer."
+    }
+  ],
+  "trace_sha256": "a55ac2ba804ea17c71319428261f2256f30cf18b3296c75dab678090a87562a0"
+}

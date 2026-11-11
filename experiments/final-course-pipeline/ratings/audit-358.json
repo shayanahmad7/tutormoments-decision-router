@@ -1,0 +1,45 @@
+{
+  "case_index": 358,
+  "model": "anthropic/claude-sonnet-4.6",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "The tall block represents 10, and the small cube represents 1. If you count the tall blocks first, how many tens do you see?",
+      "reason": "Directly addresses the current problem about counting blocks by providing a representation hint (tall block = 10, small cube = 1) and asking the student to count tens first, which is appropriate scaffolding for the block-counting task the student is confused about."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 0,
+      "evidence": "Let's go back to the input-output table. The input is 34, and the output is 15.",
+      "reason": "The conversation has moved past the input-output table problem; the current task involves counting blocks. This reply ignores the current problem and returns to a previously completed problem, contradicting the flow of the conversation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": true,
+      "context_fit": 2,
+      "evidence": "If each tall block represents 10, and there are two of them, what number do they represent together?",
+      "reason": "Addresses the current block-counting problem with a scaffolding hint about what tall blocks represent, but assumes there are two tall blocks which cannot be verified from the transcript, introducing uncertainty. Still clearly appropriate to the current task."
+    }
+  ],
+  "trace_sha256": "5e43ba3bb0ab99edab0303f3a38d4549ff4499ae1aa96f3ce1721c02297d7e4a"
+}

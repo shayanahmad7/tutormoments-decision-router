@@ -1,0 +1,45 @@
+{
+  "case_index": 463,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option C is correct? What makes the two statements in option C true?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option C, which promotes rigor by requiring justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why option C is correct for the last question? What makes both statements in option C true?",
+      "reason": "The tutor asks the student to explain their reasoning for choosing option C, which promotes rigor by requiring justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you compare the hundreds digits first to see if this is true?",
+      "reason": "The tutor provides a specific hint by directing the student to compare the hundreds digits first, which is a scaffolding technique for comparing multi-digit numbers."
+    }
+  ],
+  "trace_sha256": "eac09344e54b31501c6937ef03a39ca30a92d9738bccd8cfdaa4b2f881b1f858"
+}

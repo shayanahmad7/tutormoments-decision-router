@@ -2,7 +2,26 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-## Latest: fresh Astra agents and a complete decision-error casebook
+## Latest: complete 520-moment first-reply experiment, 11 November 2026
+
+The final course experiment generated **1,560 Qwen3-32B replies**: detailed self-choice, forced scaffolding, and forced rigor for every moment. Archived Jev and OpenAI Decisions choices selected between the two forced-policy replies. Gemini 2.5 Flash rated all three anonymous replies per case; Claude Sonnet 4.6 rated a fixed 32-case audit. All 520 cases completed, with no truncated replies. New accounted cost was **$3.0029**, including evaluator calls and conservative interrupted-call reservations.
+
+| Policy | All 520 moments | Strict matched math frame, 346 |
+|---|---:|---:|
+| Detailed self-choice | 357 (68.7%) | 249 (72.0%) |
+| Jev-directed | 379 (72.9%) | 252 (72.8%) |
+| Decisions-directed | 382 (73.5%) | 260 (75.1%) |
+| Always scaffold | 294 (56.5%) | 207 (59.8%) |
+| Always rigor | 385 (74.0%) | 263 (76.0%) |
+| Assigned-label diagnostic | 438 (84.2%) | 299 (86.4%) |
+
+**Neither router beat the fixed rigor policy.** Jev improved on self-choice by 4.2 percentage points in the full preview (95% student-cluster interval -1.0 to 9.2), but only 0.9 points in the matched math frame (-5.3 to 6.5). Routing increased rigor passes while sacrificing some scaffolding passes. Matching the source category did not guarantee a good reply: even correct routes could return to an obsolete problem or give inappropriate help. The matched math frame has additional eligibility requirements for conversational cuts, duplicate cases and usable replies across 15 original response conditions; it is not simply all mathematical moments.
+
+Evaluator sensitivity remains material. On the same 32 audit cases, Gemini rated self-choice/Jev at 20/19 passes, whereas Claude rated them at 16/22. Pass/fail agreement across 96 replies was 78.1% (kappa .551). This is not human validation. These are exploratory internal first-reply scores under our rubric, not the publisher's multi-turn leaderboard or a held-out generalization test. Archived routing and concurrent generation also do not establish a deployment latency gain.
+
+Start with the [experiment guide](experiments/final-course-pipeline/README.md), [complete results](experiments/final-course-pipeline/RESULTS.md), [all actual replies and ratings](experiments/final-course-pipeline/replies-and-ratings.csv), [all seven paired policy results](experiments/final-course-pipeline/case-results.csv), and [evaluator audit](experiments/final-course-pipeline/Evidence%20and%20Evaluator%20Audit.md). Frozen prompts, exact API traces, source/input checks, interrupted attempts and offline reproduction code are retained. The prior pilots and negative prompt revisions below remain separate.
+
+## Earlier: fresh Astra agents and a complete decision-error casebook
 
 Twenty fresh Astra subagents, run sequentially without inherited conversation or reference answers, scored **14/20 (70%)** using exactly the earlier publisher-adapted API input text. The same-input API test also scored 14/20; two predictions changed, one in each direction. This is a small diagnostic in a different system/tool environment, not an independent held-out benchmark or a reproduction of the website metric. No new paid API calls were made.
 

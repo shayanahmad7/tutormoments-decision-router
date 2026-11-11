@@ -1,0 +1,45 @@
+{
+  "case_index": 496,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you found the area of the bottom rectangle?",
+      "reason": "The student has already written out the calculation for the bottom rectangle, so asking them to explain it promotes rigor by having them articulate their process."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you added 35 and 16 together?",
+      "reason": "The student has already completed the calculation and stated the answer. Asking them to explain their reasoning for adding the two areas together promotes rigor by requiring justification of their steps."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do we need to do with those two numbers to find the total area?",
+      "reason": "The student has already calculated the areas of both rectangles. This question guides them to the next step (addition) without giving away the answer, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "281ace9c119e37873707716e009f832d9b4e9046102cca6cc93c7aee74e3fd71"
+}

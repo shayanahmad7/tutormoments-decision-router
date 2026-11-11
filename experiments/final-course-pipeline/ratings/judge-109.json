@@ -1,0 +1,45 @@
+{
+  "case_index": 109,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Try writing them out if it helps.",
+      "reason": "The tutor provides a clear strategy for the student to test the options and find the correct answer, which is scaffolding. It also encourages the student to work independently, which is rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why 990 wouldn't be said when skip counting in 10s from 780?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes rigor. However, it doesn't offer any scaffolding to help the student if they are unsure."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What pattern or rule helps you know that?",
+      "reason": "The tutor asks the student to explain their reasoning and also prompts them to think about the underlying pattern or rule, which provides a hint (scaffolding) while still maintaining rigor."
+    }
+  ],
+  "trace_sha256": "a0b5b55c2f14527cdc6923f005d9209fec5999edde4e82bcad074d8530e912ff"
+}

@@ -1,0 +1,45 @@
+{
+  "case_index": 171,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, can you do the same for 555? What is the hundreds digit, and what is the tens digit? What does that tell you about rounding 555?",
+      "reason": "The tutor provides a clear explanation and example for rounding 715, then asks the student to apply the same process to 555, promoting independent work."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Now, let's think: when rounding 715 to the nearest hundred, we look at the tens digit. What number is in the tens place here?",
+      "reason": "The tutor corrects the student's identification of the hundreds digit and then guides them to the correct digit to consider for rounding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why you think it's one?",
+      "reason": "The tutor asks the student to explain their reasoning, which promotes deeper thinking and justification."
+    }
+  ],
+  "trace_sha256": "f52423c3510bb80c05a1bc3383bc8ba8177f594ec4cd0129f66bee6f203e16b8"
+}

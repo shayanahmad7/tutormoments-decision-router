@@ -1,0 +1,45 @@
+{
+  "case_index": 58,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Forty-eight divided by eight. What is that equal to?",
+      "reason": "The tutor asks the student to perform the division, which is the next logical step in solving the equation."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Forty-eight divided by eight. What is that equal to?",
+      "reason": "The tutor asks the student to perform the division, which is the next logical step in solving the equation."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "You're right, forty-eight comes first. So what is forty-eight divided by eight?",
+      "reason": "The tutor affirms the student's previous correct statement about the order of division and then prompts them to perform the calculation."
+    }
+  ],
+  "trace_sha256": "1ed17b0dea3bbfa64603d398ffb7deb2751def6d56fdf7f32c591bfb21a61f49"
+}

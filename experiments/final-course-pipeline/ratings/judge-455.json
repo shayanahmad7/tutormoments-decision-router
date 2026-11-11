@@ -1,0 +1,45 @@
+{
+  "case_index": 455,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What do you get when you find half of each number?",
+      "reason": "The tutor breaks down the problem into two simpler calculations and asks the student to perform them, which is a form of scaffolding."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is 0.5 the same as in fraction form? And if one is 0.5 of 60 and the other is 0.5 of 120, which one do you think would be bigger? Why?",
+      "reason": "The tutor provides scaffolding by asking the student to convert the decimal to a fraction, which simplifies the problem. The tutor also promotes rigor by asking the student to justify their reasoning."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": true,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If both calculations are 0.5 of something, that means we're looking at half of each number. So 0.5 of 60 is half of 60, and 0.5 of 120 is half of 120.",
+      "reason": "The tutor explicitly states that 0.5 of a number is the same as half of that number, which the student could have deduced or been prompted to deduce themselves. This is overhelping."
+    }
+  ],
+  "trace_sha256": "a196dac1ada7bad3d0ca93c48d0c43b04bcd52c6ae62730ec6ba235275704526"
+}

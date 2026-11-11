@@ -1,0 +1,45 @@
+{
+  "case_index": 83,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain how you figured out the value of the star?",
+      "reason": "The student has given an answer, and the tutor asks them to explain their reasoning, which promotes deeper thinking and justification."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If the star plus 8 equals 10, what number must the star be?",
+      "reason": "The tutor breaks down the problem by focusing on the first jump on the number line and provides a specific question to guide the student to the answer."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What is the value of the triangle?",
+      "reason": "The tutor asks for the value of the triangle, which is the next logical step in solving the problem, but doesn't provide any scaffolding for how to find it."
+    }
+  ],
+  "trace_sha256": "f0a2200d8412ea4a3dd81272fa4fe54c45f50417f4464e969ac196b5f5c81209"
+}

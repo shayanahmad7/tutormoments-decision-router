@@ -1,0 +1,45 @@
+{
+  "case_index": 484,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "force_scaffolding",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How can we figure out what number comes before 501 when counting by tens?",
+      "reason": "The tutor asks a guiding question that prompts the student to think about the operation needed without giving it away."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "If 501 is the number after, what number would you get if you subtract 10 from 501? Can you try that?",
+      "reason": "The tutor explicitly states the operation (subtract 10) that the student needs to perform, which is scaffolding but reduces the cognitive load of figuring out the operation independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So if 501 is the number after, what would the number before be? What do you think?",
+      "reason": "The tutor provides a hint about adding or subtracting 10 and then asks a direct question about the number before, which is a form of scaffolding. However, the tutor does not explicitly state the operation to perform."
+    }
+  ],
+  "trace_sha256": "9e55ae6af05c653afecfde9a1007fc97b14a0fc65a86acf0d3c1b95028ad5881"
+}

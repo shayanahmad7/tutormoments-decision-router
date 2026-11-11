@@ -1,0 +1,45 @@
+{
+  "case_index": 348,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Which one has more parts shaded out of the same number of total parts?",
+      "reason": "The tutor provides a hint by reminding the student to consider the number of shaded parts when comparing fractions with the same denominator, which is relevant to the current problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Explain how you know using the idea of shaded parts or the number line.",
+      "reason": "The tutor asks the student to explain their reasoning using specific models (shaded parts or number line), which promotes deeper understanding and justification."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Explain how you know.",
+      "reason": "The tutor asks the student to explain their reasoning, which encourages justification and deeper thinking."
+    }
+  ],
+  "trace_sha256": "0ab842dcbbbd46b0fdfb4b9c00a1af2f989c293411bd548c3718ce6df1fb858c"
+}

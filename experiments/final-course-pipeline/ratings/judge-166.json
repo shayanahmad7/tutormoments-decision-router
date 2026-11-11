@@ -1,0 +1,45 @@
+{
+  "case_index": 166,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "self_detailed",
+    "C2": "force_rigor",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "How would you figure out the answer? What operation would you use, and why?",
+      "reason": "The tutor asks the student to explain their thinking and justify their choice of operation, which promotes rigor. It also provides scaffolding by reminding the student of the problem and asking specific questions to guide their response."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "explain to me why this situation calls for subtraction. What is the timeline of events, and how does that help you decide the operation?",
+      "reason": "The tutor directly asks the student to explain why subtraction is the correct operation, which is a strong prompt for rigor. It also provides scaffolding by referencing the 'timeline of events' strategy discussed in the videos."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Try writing a sentence like: “To find how much it grew, I need to ______ the starting height and the ending height.” What goes in the blank?",
+      "reason": "The tutor provides a sentence frame to guide the student's thinking, which is a form of scaffolding. While it asks the student to fill in a blank, it doesn't necessarily increase cognitive demand beyond recalling the operation, so it's not particularly rigorous."
+    }
+  ],
+  "trace_sha256": "1ea5efd842aee33a2bb340f21b55c5ba3969c937a72821130b5eaf8740b170d6"
+}

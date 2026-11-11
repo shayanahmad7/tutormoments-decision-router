@@ -1,0 +1,45 @@
+{
+  "case_index": 193,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "force_rigor",
+    "C3": "self_detailed"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "That means fifteen divided by three is five, right? Because five times three is fifteen. So, three goes into fifteen exactly five times.",
+      "reason": "The tutor corrects the student's division error and then guides them to apply this understanding to simplifying the fraction."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if we divide 15 by 3, and we get a remainder, does that mean we can simplify 3/15? Why or why not?",
+      "reason": "The tutor asks a question that requires the student to think about the implications of a remainder in the context of simplifying fractions, promoting deeper understanding."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So, if we divide 15 by 3, and we get 5 with no remainder, what would that mean for simplifying 3/15?",
+      "reason": "The tutor provides the correct division result and then prompts the student to consider its meaning for simplifying the fraction, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "5ff11f1d468ad45196384acd7e00650c360a57811a0ec6136b71bcdba778cdff"
+}

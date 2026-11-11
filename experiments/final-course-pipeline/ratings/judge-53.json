@@ -1,0 +1,45 @@
+{
+  "case_index": 53,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_rigor",
+    "C2": "self_detailed",
+    "C3": "force_scaffolding"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Can you explain why dividing by 10 gives you the correct value for x? What does it mean in terms of the equation?",
+      "reason": "The student has just correctly solved the problem. The tutor asks the student to explain their reasoning, which increases rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Yes, 110 divided by 10 is 11. So x equals 11. Great job figuring that out! Can you explain why dividing both sides by 10 gives us the correct answer?",
+      "reason": "The student has just correctly solved the problem. The tutor asks the student to explain their reasoning, which increases rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So now you have x = 110 ÷ 10. What is 110 divided by 10?",
+      "reason": "The student has correctly identified the operation but made a calculation error. The tutor provides the setup for the calculation and asks for the final answer, which is a form of scaffolding."
+    }
+  ],
+  "trace_sha256": "822d285b4c7851eede5d0d0ad1fbda4de41dd3f4d6a2089142c99ee27a38c422"
+}

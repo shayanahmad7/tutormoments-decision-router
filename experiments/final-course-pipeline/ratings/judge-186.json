@@ -1,0 +1,45 @@
+{
+  "case_index": 186,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Adjacent angles are angles that are next to each other and share a common side. In Tom’s diagram, the angles are touching along the straight line. In Katie’s diagram, the angles are not touching. Who do you agree with now?",
+      "reason": "The tutor defines 'adjacent angles' and then applies the definition to both Tom's and Katie's diagrams, highlighting the key difference. This scaffolds the student's understanding. It then asks the student to re-evaluate, promoting rigor."
+    },
+    {
+      "id": "C2",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "Adjacent means the angles are next to each other and share a common side. In Tom’s diagram, the angles are touching and share a side — that’s adjacent. In Katie’s diagram, the angles are on the same straight line but not touching. So, who do you agree with now?",
+      "reason": "The tutor defines 'adjacent' and then explicitly applies this definition to both diagrams, clarifying why Tom's is correct and Katie's is not. This is good scaffolding. It then asks the student to re-evaluate, promoting rigor."
+    },
+    {
+      "id": "C3",
+      "scaffolding": true,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "So in the problem, Katie's angles are on a straight line but not touching. Based on what we just talked about, who do you think is correct now — Tom, Katie, or neither?",
+      "reason": "The tutor reminds the student of the key point about Katie's diagram (not touching) and then prompts them to re-evaluate their answer based on the previous discussion. This scaffolds by focusing the student's attention and promotes rigor by asking them to apply the concept."
+    }
+  ],
+  "trace_sha256": "d5cbb827252ae68a65904d17665ff36be0ee8d6a4b60b164ecd2fe473caeb848"
+}

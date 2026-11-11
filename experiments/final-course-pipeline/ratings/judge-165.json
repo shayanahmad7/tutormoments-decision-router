@@ -1,0 +1,45 @@
+{
+  "case_index": 165,
+  "model": "google/gemini-2.5-flash",
+  "mapping": {
+    "C1": "force_scaffolding",
+    "C2": "self_detailed",
+    "C3": "force_rigor"
+  },
+  "ratings": [
+    {
+      "id": "C1",
+      "scaffolding": true,
+      "rigor": false,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "What's the opposite of multiplying by seven?",
+      "reason": "The tutor is scaffolding the student's thinking by explicitly asking for the opposite operation, which was a key concept discussed in the previous problem."
+    },
+    {
+      "id": "C2",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what operation do we use to find the mystery number?",
+      "reason": "The tutor asks the student to identify the operation needed, which requires the student to apply their understanding of inverse operations independently."
+    },
+    {
+      "id": "C3",
+      "scaffolding": false,
+      "rigor": true,
+      "overhelp": false,
+      "math_error": false,
+      "uncertain": false,
+      "context_fit": 2,
+      "evidence": "what equation can we use to find the mystery number?",
+      "reason": "The tutor asks the student to formulate an equation, which is a higher-level cognitive demand than simply identifying an operation."
+    }
+  ],
+  "trace_sha256": "2e5972ef485f502cc03aba347290a4b72e0a21dfa6f7aef693bb83785cdfc65a"
+}
