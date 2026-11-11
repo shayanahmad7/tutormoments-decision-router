@@ -1,0 +1,112 @@
+% Overleaf entry point: compile with XeLaTeX; latexmk runs Biber automatically.
+% Content mirrors main.tex; references.bib is the canonical bibliography.
+\documentclass[10pt,a4paper]{article}
+\usepackage[left=1in,right=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{TeX Gyre Termes}}
+\IfFontExistsTF{Arial}{\setsansfont{Arial}}{\setsansfont{TeX Gyre Heros}}
+\usepackage{amsmath,booktabs,tabularx,array,graphicx}
+\usepackage{titlesec}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,natbib=true,maxbibnames=20,minbibnames=19,maxcitenames=2,mincitenames=1,eprint=false]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{references.bib}
+\setlength{\bibitemsep}{0pt}
+\setlength{\bibparsep}{0pt}
+\setlength{\bibhang}{0.5in}
+\renewcommand*{\bibfont}{\fontsize{10}{12}\selectfont}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\setlength{\parindent}{0.5in}
+\setlength{\parskip}{0pt}
+\setlength{\textfloatsep}{9pt}
+\setlength{\intextsep}{9pt}
+\titleformat{\section}{\sffamily\bfseries\fontsize{12}{14}\selectfont}{}{0pt}{}
+\titleformat{\subsection}{\sffamily\fontsize{12}{14}\selectfont}{}{0pt}{}
+\titlespacing*{\section}{0pt}{9pt}{3pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\pagestyle{empty}
+\setlength{\emergencystretch}{2em}
+\newcommand{\supporturl}{https://drive.google.com/drive/folders/1BjS3toqoV5py_ZhA1HjCcs162TQ6f7-t}
+\begin{document}
+\begin{center}
+{\sffamily\bfseries\fontsize{14}{16}\selectfont What Mathematical Work Do AI Tutors Leave for Learners?\\Prompting and Decision Routing in TutorMoments\par}
+\vspace{8pt}
+Jingying He, Jiawei Ni, Peilin Ying, Duc Le, and Shayan Ahmad\\
+University of Pennsylvania
+\end{center}
+\vspace{2pt}
+\begin{quotation}\noindent
+\textbf{Abstract:} \input{abstract.tex}
+\end{quotation}
+
+\section{Problem and theoretical grounding}
+A mathematically correct tutor response can still do the work a learner needs to practice. It may supply the next calculation, explain the decisive relationship, or choose a strategy before the student has a chance to contribute. The assistance dilemma concerns how much support to provide and when to withhold it \citep{koedinger2007assistance}. Research on teacher questioning similarly directs attention to how questions elicit and develop students' mathematical thinking \citep{franke2009questioning}. For AI tutoring, this raises a design question: what remains for the learner to do after the tutor responds?
+
+TutorMoments-Preview operationalizes this tension through teacher-identified situations calling for scaffolding or a push for rigor \citep{zhang2026tutormoments}. Explicit instructions about the trade-off improve the benchmark's tutoring scores, but neither a situation label nor the presence of a question tells us exactly what mathematical work remains. A tutor can ask a question after supplying its answer. Conversely, a hint can make a demanding task accessible while preserving the learner's reasoning. Scaffolding and rigor can also occur together: the benchmark permits a generated exchange classified as both to satisfy either reference category, provided it does not over-scaffold.
+
+We connect two analyses of this design problem. First, a qualitative comparison examines the work left by archived plain and evaluation-aware responses. Second, a technical extension asks whether a separate decision model can guide a small tutor more effectively than detailed instructions alone. StratL steers a tutor through expert-defined teaching intents \citep{puech2025stratl}, and DICE separates intervention choices from response generation \citep{pal2026dice}. Eduardo trains smaller tutors with reinforcement learning and evaluates them on TutorMoments \citep{macina2026eduardo}. We test an inference-time alternative: a frozen binary router with matched self-selected and fixed guidance, examining whether any improvement requires a router. We ask: (1) How do tutoring instructions change the mathematical work left for learners? (2) Does explicit decision routing improve a small model's response relative to self-selected and fixed guidance, and what overhead does it introduce?
+
+\section{Data and qualitative analysis}
+TutorMoments-Preview contains 462 de-identified transcripts of remote human tutoring with students in grades 2--7, including spoken dialogue and descriptions of shared-screen activity. Experienced teachers identify instructional moments and describe the situation, tutor action, and result; a language model maps these annotations to task categories, which are combined by majority vote. The published balanced evaluation uses 520 moments, with 260 scaffolding and 260 rigor conditions \citep{zhang2026tutormoments}. We used the released histories and continuations without collecting new classroom data. For qualitative analysis, we locked 40 situations from an initial 370-situation mathematics comparison frame. Excluding students used in earlier pilots left 226 eligible situations. Seeded sampling selected 20 per category and one per student. A subsequent speech/event audit reduced the overall matched frame to 346, requiring usable first replies, clear turn boundaries, and complete source-response availability. It also excluded two locked cases because additional learner events preceded the observed human reply. Neither was replaced. The final sample comprised 38 students and 38 moments, evenly divided between scaffolding and rigor situations. Each contributed the human continuation and released GPT-5.5 continuations under plain and evaluation-aware prompts. The primary comparison therefore involved 76 AI response blocks forming 38 matched pairs; 38 human blocks provided a naturalistic reference, not a third controlled prompt condition.
+
+A response block combines consecutive spoken tutor utterances and ends at the next learner utterance or observable action. Screen descriptions and pauses were retained in the context but excluded from spoken response text. Following a theory-informed content-analysis approach \citep{hsieh2005content}, we developed two separate codes. \emph{Work Left} (W) identifies the most substantive unsupplied mathematical demand: no new work or repetition (W0), a specified calculation or heavily cued recognition (W1), a connection or explanation within a narrowed path (W2), or a strategy, argument, or diagnosis with meaningful discretion (W3). \emph{Information Supplied} (R) describes what the tutor has already provided, from no answer information (R0) to the complete active answer (R3). Unclear cases receive NA. These are study-specific descriptions, not validated scales of teaching quality; more remaining work is not always appropriate for a particular learner.
+
+We report the first archived AI-assisted coding pass, conducted on source-masked responses with preceding context. Each judgment includes a rationale and literal evidence excerpt. A second archived pass is retained as a sensitivity analysis. All 114 response texts and evidence quotations in the reported pass were checked against their source packets. The full codebook, both code sets, sampling record, and exclusions accompany the paper.
+
+\section{Technical extension: choosing a direction before replying}
+The technical analysis uses all 520 released benchmark moments, with 260 reference labels of each type. It is separate from the 38-case qualitative sample. We also report a sensitivity analysis on the strict matched mathematics frame described above; this subset differs in response eligibility as well as subject matter. The full conversation before each stopping point is retained. Teacher labels, annotation hints, future continuations, and learner personas are excluded from tutor and router inputs.
+
+Prior decision-only tests asked Jev 1.14.0 \citep{almeida2026jev} and OpenAI Decisions with GPT-6 Luna \citep{openai2026decisions} to choose scaffolding or rigor. Their strongest archived configurations matched 376/520 (72.3\%) and 386/520 (74.2\%) reference labels, respectively. A later prompt revision reduced these scores to 367 and 372. We freeze the earlier configurations for the extension and preserve all runs in the supporting materials. These are exploratory, reused-benchmark results: previous errors informed prompt development, so they are not held-out generalization estimates. Three pairs share the same context and student metadata but have opposite reference labels, illustrating ambiguity in treating the category as a unique next-action target.
+
+All response arms retain the publisher's evaluation-aware prompt, with additional next-reply guidance. For the response experiment, Qwen3-32B \citep{qwen2025model} generates three first replies at every moment: one that selects its own direction under detailed instructions, one given scaffold guidance, and one given rigor guidance. The scaffold and rigor branches form a paired set of potential responses. Cached Jev and Decisions choices select the corresponding branch afterward, allowing both routers, fixed-scaffold and fixed-rigor policies, and a reference-label policy to be compared on identical generated responses. This isolates branch selection from generation variation. The reference-label policy is a diagnostic control and is never an input to either router. It is not an upper bound on pedagogical quality.
+
+Gemini 2.5 Flash receives the context and randomly ordered replies without condition names or reference labels. Primary response success requires the assigned-direction behavior, no detected over-helping or mathematical error, full context fit, and valid generation. Replies expressing both directions can satisfy either condition. A secondary rate uses direction and over-helping alone. A fixed, balanced subset of 32 distinct students is also assessed by Claude Sonnet 4.6. We retain disagreement between evaluators and use paired comparisons with student-cluster resampling. The prompts, sample, providers, and analysis are frozen before the final judgments.
+
+This is a first-response evaluation, not the publisher's multi-turn replay with a simulated learner. Its scores cannot be ranked directly against the website leaderboard. Generator time to first answer is measured from streamed calls; cached routing costs and timings are reported separately. Adding historical router duration gives an estimated serial first-answer time, not an observed end-to-end pipeline latency. All Qwen generation calls use a fixed provider, temperature zero, non-thinking mode, and a 384-token output cap; incomplete or invalid replies count as failures.
+
+\section{Findings}
+\subsection{Explicit instructions changed the work left}
+Evaluation-aware responses more often left an unsupplied mathematical action (Table~\ref{tab:work}). Sixteen of 38 invited a connection, explanation, or strategy-level contribution (W2/W3), compared with two plain responses. Complete active answers (R3) appeared in 21/38 plain responses and 5/38 evaluation-aware responses; one plain response was unassessable for R. The codes capture different features: supplying an answer and inviting an explanation can coexist, so R3 does not by definition imply W0.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Work left in the first archived coding pass ($n=38$ per column).}
+\label{tab:work}
+\begin{tabular}{@{}p{7.1cm}rrr@{}}
+\toprule
+Work left & Plain & Evaluation-aware & Human reference\\
+\midrule
+W0: No new mathematical work or repetition &21&2&20\\
+W1: Specified calculation or cued recognition &15&20&12\\
+W2: Connection or explanation &2&14&1\\
+W3: Strategy, argument, or diagnosis &0&2&0\\
+NA: Unclear active demand &0&0&5\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Case E01 illustrates a modest but consequential difference. For $25\times14=25\times(2\times\star)$, the plain response states, ``So the star should be 7,'' and verifies the equality (W0/R3). The evaluation-aware response asks, ``What number times 2 makes 14?'' (W1/R2). It supplies the decisive relationship but leaves the calculation. This is not automatically deep reasoning, but it preserves a contribution that the plain reply completes.
+
+The second pass preserved the direction of the comparison but assigned W2/W3 to five plain and 23 evaluation-aware responses. In E22-B, a tutor states ``84 seven times'' and asks for multiplication notation. One pass treated this as cued recognition (W1); the other treated it as connecting a story to a representation (W2). The comparison is consistent across passes, but these boundary judgments affect its magnitude.
+
+\subsection{Routing and response quality}
+\input{technical_results.tex}
+
+\section{Discussion and implications}
+The qualitative and technical analyses address different parts of the same instructional decision. W/R coding asks what the learner can still contribute after a reply; a router chooses a broad direction before a reply exists. Agreement with a situation label therefore cannot substitute for examining the generated response. A scaffold can preserve a difficult inference, while a request for explanation can merely ask the learner to repeat reasoning already supplied.
+
+\input{technical_discussion.tex}
+
+For designers, the relevant comparison is whether a separate decision step improves responses beyond equally detailed self-selection and simple fixed guidance. A gain over a weak prompt would not isolate the value of routing. Likewise, low router latency alone does not establish a faster system, because a sequential router adds a request before generation. The practical goal is to preserve accessible mathematical work while controlling total response cost and delay.
+
+The study is limited by purposive benchmark construction, exploratory use of previously inspected data, AI-assisted coding, and automated response evaluation. The human continuations are naturalistic references; the generated branches are not observed interventions with learners. Neither analysis measures student uptake, retention, or learning gains. The next validation step is independent human coding and evaluation on previously unseen students and moments, followed by studies of what learners actually do with the resulting support. The present contribution is a reproducible account of opportunities in tutor text and a controlled test of whether explicit routing improves first-response tutoring behavior.
+
+\section{Supporting materials and disclosure}
+The \href{\supporturl}{course submission folder} contains the codebook, source-linked coding data, both coding passes, exclusions, frozen experiment instructions, response-level results, and reproducibility files. AI tools assisted coding, implementation, response evaluation, and drafting; no independent human coding validation is claimed. Original dataset labels and all completed experimental conditions are retained.
+
+\clearpage
+\printbibliography[heading=bibliography,title={References}]
+\end{document}
