@@ -2,6 +2,10 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
+## Original-protocol replication: prepared, credit blocked
+
+The previous 65% result used our binary-decision prompt, not the publisher's original tutoring prompt. It cannot be compared directly with the website's approximately 92.7% tutoring-replay score. A [20-case original-protocol replication](experiments/astra-publisher-replay/README.md) now preserves their tutor prompt, five-speaking-call exchange, Claude Opus 4.6 student and scorer, and original scoring rule. The first Astra reply completed; OpenRouter then rejected the student request because the balance could not cover the original 128,000-token output ceiling. **No complete replay score is available yet.** Completed-call token cost is $0.1411. The run awaits the user's credit update.
+
 ## Latest: small Astra decision pilot and routing assessment
 
 A frozen **20-moment decision-only pilot** compared GPT-6 Astra with high reasoning against the same latest prompt and saved cheap-model predictions. The sample contains ten scaffolding and ten rigor moments from different students, selected without using prediction correctness.

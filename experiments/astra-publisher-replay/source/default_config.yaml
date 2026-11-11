@@ -1,0 +1,104 @@
+# Released benchmark dataset. `id` is the Hugging Face dataset id (override with
+# --dataset, or --data_path for a local release dir); `revision` pins a dataset
+# commit/tag for reproducibility; `config` names the dataset config that holds
+# the runnable moments set.
+dataset:
+  id: allenai/tutormoments-preview
+  revision: null
+  config: moments
+
+providers:
+  anthropic: { env: ANTHROPIC_API_KEY }
+  openai:    { env: OPENAI_API_KEY }
+  gemini:    { env: GEMINI_API_KEY }
+  together:  { env: TOGETHER_API_KEY }
+  meta:      { env: META_API_KEY }
+
+# Tutor roster: each key is an ARM -- a benchmark condition. `model` names the
+# provider model id, provider-native keys state the exact request parameters,
+# and `condition` is the grouping label written into run outputs. The same
+# model may appear under several arms with different parameters, e.g.:
+#   gemini-2.5-low: { model: gemini-2.5-pro, thinking_budget: 4096, condition: low }
+#   gpt-5.5-low:   { model: gpt-5.5-2026-04-23, reasoning: low, condition: low }
+benchmark_models:
+  claude-opus-4-8:         { model: claude-opus-4-8, thinking: { type: adaptive }, effort: xhigh, condition: xhigh }
+  claude-sonnet-4-6:       { model: claude-sonnet-4-6, thinking: { type: adaptive }, effort: high, condition: high }
+  # Sonnet 5: first Sonnet model with an xhigh effort option.
+  claude-sonnet-5:         { model: claude-sonnet-5, thinking: { type: adaptive }, effort: xhigh, condition: xhigh }
+  # Claude 5.x range. Thinking can't be disabled on any of the three
+  # ({type: disabled} is a 400), so effort is the only knob. Opus 5.5
+  # defaults to medium, so effort is always stated. Sonnet 5.5's effort
+  # levels are recalibrated from Sonnet 5; low is its lowest level.
+  # Haiku 5.5, unlike the three above, accepts {type: disabled}; this arm
+  # runs it with thinking off, keeping effort low (the default is medium).
+  claude-opus-5-5:         { model: claude-opus-5-5, thinking: { type: adaptive }, effort: high, condition: high }
+  claude-fable-5-1:        { model: claude-fable-5-1, thinking: { type: adaptive }, effort: high, condition: high }
+  claude-sonnet-5-5:       { model: claude-sonnet-5-5, thinking: { type: adaptive }, effort: low, condition: low }
+  claude-haiku-5-5-none:   { model: claude-haiku-5-5, thinking: { type: disabled }, effort: low, condition: none }
+  # Gemini 2.5 Pro / 3.5 Flash run model-paced thinking (thinking_budget -1).
+  gemini-2.5-pro:          { model: gemini-2.5-pro, include_thoughts: true, thinking_budget: -1, condition: dynamic }
+  gemini-3.5-flash:        { model: gemini-3.5-flash, include_thoughts: true, thinking_budget: -1, condition: dynamic }
+  # Later 3.x Flash arms use thinking_level (Google's replacement for
+  # thinking_budget). 3.8 Flash accepts low/medium/high (no minimal); 3.6
+  # Flash is the newest Flash that still accepts minimal. See docs/thinking.md.
+  gemini-3.8-flash:        { model: gemini-3.8-flash, include_thoughts: true, thinking_level: high, condition: high }
+  gemini-3.6-flash:        { model: gemini-3.6-flash, include_thoughts: true, thinking_level: minimal, condition: minimal }
+  # Gemini 4 Argon accepts low/medium/high (default medium); no off level.
+  gemini-4-argon:          { model: gemini-4-argon, include_thoughts: true, thinking_level: high, condition: high }
+  gpt-5.4-mini-2026-03-17: { model: gpt-5.4-mini-2026-03-17, reasoning: high, condition: high }
+  gpt-5.5-2026-04-23:      { model: gpt-5.5-2026-04-23, reasoning: high, condition: high }
+  # Same model with reasoning off (reasoning_effort=none); smoke asserts zero
+  # reasoning tokens for this condition.
+  gpt-5.5-2026-04-23-none: { model: gpt-5.5-2026-04-23, reasoning: none, condition: none }
+  # GPT-6 range: top-tier Astra at high; mid-tier Sol and cheapest/fastest
+  # Luna with reasoning off. Undated ids -- OpenAI publishes no dated snapshots for GPT-6 yet, so
+  # the alias may move; config.json records the run date.
+  gpt-6-astra:             { model: gpt-6-astra, reasoning: high, condition: high }
+  gpt-6-sol-none:          { model: gpt-6-sol, reasoning: none, condition: none }
+  gpt-6-luna-none:         { model: gpt-6-luna, reasoning: none, condition: none }
+  # DeepSeek-V4-Pro-0813 (thinking on by default) at Together's documented
+  # top effort tier. Replaces the DeepSeek-V4-Pro arm, which Together no
+  # longer serves serverless. See docs/thinking.md for observed behaviour.
+  deepseek-v4-pro-0813:    { model: deepseek-ai/DeepSeek-V4-Pro-0813, reasoning_effort: max, condition: max }
+  # Muse Wonder (Meta Model API). It always reasons: reasoning_effort none is
+  # a 400, and an omitted effort runs at a model-chosen level, so it is
+  # always stated. Levels run minimal..max.
+  muse-wonder-1.0:         { model: muse-wonder-1.0, reasoning_effort: high, condition: high }
+
+# Role blocks state provider-native thinking parameters the same way arms do.
+# "Off" is stated explicitly ({type: disabled}) rather than by omitting the
+# param: what omission means depends on the model generation (no thinking on
+# Anthropic 4.x, adaptive on Sonnet 5+), so an explicit block keeps the
+# condition stable under model swaps and lets smoke assert it.
+student: { model: claude-opus-4-6, mode: oracle, thinking: { type: disabled } }
+scorer:  { model: claude-opus-4-6, thinking: { type: adaptive } }
+
+# Action-taxonomy classification. Runs on every `tutormoments run` (writes
+# results/<run_id>/taxonomy/classified.csv + a taxonomy block in summary.json)
+# and backs the dev `tutormoments taxonomy` command. Pinned to opus-4-8 with
+# thinking off for reproducibility of the published action distribution.
+taxonomy: { model: claude-opus-4-8, thinking: { type: disabled }, batch_size: 50 }
+
+defaults: { trials: 1, max_turns: 5 }
+retry:    { max_retries: 5, base_delay: 5 }
+batch:    { timeout: 86400 }
+
+# Execution knobs. replay_concurrency fans out per-moment replays within a cell
+# across threads (result-preserving: same model/params/prompts, only network
+# round-trips overlap). Default 4 for painless replication; --concurrency
+# overrides. Lower it on smaller API tiers that hit rate limits.
+# max_student_concurrency caps in-flight student calls across every cell of a
+# sweep (they all share one student account); null = no cap.
+# --max-student-concurrency overrides. Timing only, like replay_concurrency.
+execution: { replay_concurrency: 4, max_student_concurrency: null }
+
+# Ground-truth build phase (dev-only `tutormoments dataset build-ground-truth`).
+# The paper's ground truth was built on opus-4-8 with adaptive (model-paced)
+# thinking; keep this pinned for reproducibility.
+groundtruth:
+  model: claude-opus-4-8
+  poll_interval: 60
+  thinking: { type: adaptive }
+  labeller:                 # per-annotation_type effectiveness templates (hybrid routing)
+    scaffolding: classify_scaffolding
+    rapport: classify_rapport

@@ -1,0 +1,25 @@
+{
+  "status": "incomplete",
+  "planned_cases": 20,
+  "scored_cases": 0,
+  "completed_api_calls": 1,
+  "failed_api_calls": 1,
+  "completed_call_token_cost_usd": 0.1410575,
+  "failed_call_reservations_not_observed_charges_usd": 3.47235,
+  "publisher_full520": {
+    "scaffolding": 0.938,
+    "rigor": 0.915,
+    "avoids_over": 0.96,
+    "overall_mean_from_rounded_rates": 0.9265
+  },
+  "metrics": null,
+  "errors": [
+    "HTTP 402: {\"type\":\"error\",\"error\":{\"type\":\"billing_error\",\"message\":\"This request requires more credits, or fewer max_tokens. You requested up to 128000 tokens, but can only afford 98572. To increase, visit https://openrouter.ai/settings/credits and add more credits\",\"error_type\":\"payment_required\"},\"request_id\":\"gen-1794367629-rJ75ad7F2snkNrCoafy0\",\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\",\"provider_name\":null},\"openrouter_metadata\":{\"requested\":\"anthropic/claude-opus-4.6\",\"strategy\":\"direct\",\"region\":\"EWR\",\"summary\":\"available=1\",\"attempt\":0,\"is_byok\":false,\"e"
+  ],
+  "limitations": [
+    "Same 20 moments as earlier classification pilot, not a new held-out test.",
+    "Claude via OpenRouter pinned Anthropic rather than direct Anthropic.",
+    "Synchronous non-streaming calls; judge not batch. No comparable timing claim.",
+    "Undated model aliases can change since original leaderboard run."
+  ]
+}
