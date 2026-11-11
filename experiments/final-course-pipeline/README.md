@@ -13,6 +13,10 @@ This experiment asks whether choosing scaffolding or rigor before generation hel
 
 The full preview contains 520 moments across 89 students, 260 per assigned category. The pre-existing strict matched mathematics frame contains 346; it also requires suitable conversational cuts and usable replies across 15 original conditions and excludes duplicates. The 174 other records must not be described as all non-mathematical.
 
+## Prior selection
+
+Qwen3-32B and the detailed policies were selected after the earlier 32-case Qwen3-14B/32B tutoring pilot. Archived routing configurations were selected after full-preview decision prompt exploration. The final design was frozen before its new responses, but this is not an unseen test set. See [model-selection history](MODEL-SELECTION.md).
+
 ## Interpretation
 
 Jev-directed selection passed 379/520 and detailed self-choice 357/520, but fixed rigor passed 385/520. In the matched math frame these were 252/346, 249/346 and 263/346. Neither tested router established an advantage over the fixed rigor policy. This is useful evidence about the need to evaluate routing, actual tutoring moves and fixed-instruction controls separately.

@@ -1,0 +1,11 @@
+# Prior exploration and model selection
+
+This full-preview experiment was designed after an earlier 32-case tutoring pilot compared Qwen3-14B and Qwen3-32B with multiple prompting conditions. Qwen3-32B was selected for the final course run on the basis of that pilot, its low cost and available context window. The detailed self-choice and forced scaffolding/rigor policies were carried forward from the pilot. This is a selected follow-up experiment, not an independent held-out test of a model or prompt chosen without seeing this corpus.
+
+The pilot generated 320 replies across 32 distinct students. Four stopping points concerned non-math tasks, leaving 28 cases in its math summary. On those 28 cases, Qwen3-32B self-choice/Jev-directed/always-rigor passes were 17/23/20 under Gemini and 14/19/21 under Claude. Qwen3-14B counts were 14/17/19 and 15/19/19 respectively. The small positive routed contrasts motivated the full-preview follow-up but were already evaluator-dependent and did not establish superiority to a fixed policy. The pilot's source indices and replies remain separate from the newly generated final-run replies.
+
+Cached Jev prompt C was selected from six prompt configurations examined on all 520 source moments (376/520 raw category matches). OpenAI Decisions used the earlier 386/520 configuration. A later prompt revision scored 367/520 for Jev and 372/520 for Decisions and was not substituted for these earlier configurations. These exploratory choices used the same preview labels. No routing threshold was fitted or changed for the final first-reply study; saved raw choices selected the corresponding forced-policy replies.
+
+The frozen final plan preceded the new 1,560 replies and their evaluations. No prompt or model was changed in response to the final-run outcomes. This freeze prevents within-run adaptation but does not erase prior model selection or make the source preview an unseen test set.
+
+The review bundle includes prior pilot plans, findings, exact case-level results and all 320 generated replies/ratings under Prior Prompt Exploration/Earlier Tutoring Pilot. Earlier six-prompt Jev and later-revision results are retained alongside them. Full historical scripts and raw traces remain in the private project repository.
