@@ -15,12 +15,15 @@ The Drive copies are viewable by anyone with the link, so a reviewer does not ne
 
 ## What we tested
 
-The proposed system has two stages:
+A decision model selects an action from predefined options using the available context. Its choice can guide another part of a system. TypeSafe introduced Jev for fast structured choices ([original announcement](https://typesafe.ai/blog/introducing-system-one-models-and-jev)); OpenAI Decisions is an interface for requesting choices from a language model ([documentation](https://developers.openai.com/api/docs/guides/decisions)).
 
-1. A decision model reads the conversation and chooses **scaffolding** (make the next step accessible) or **rigor** (invite explanation, justification, or independent work).
-2. That choice selects detailed instructions for **Qwen3-32B**, which writes the tutor's reply using the same conversation.
+We designed a controlled experiment to test whether a separate teaching decision could improve a smaller tutor's responses. The proposed pipeline has three steps:
 
-A decision model selects from predefined actions instead of writing the student-facing reply. TypeSafe introduced Jev for fast structured choices ([original announcement](https://typesafe.ai/blog/introducing-system-one-models-and-jev)); OpenAI Decisions is a software interface for requesting choices from a model ([documentation](https://developers.openai.com/api/docs/guides/decisions)).
+1. A decision system reads the conversation and chooses **scaffolding** (make the next step accessible) or **rigor** (invite explanation, justification, or independent work).
+2. That choice selects detailed teaching instructions written for the chosen approach.
+3. **Qwen3-32B**, the language model serving as the tutor, writes its reply using those instructions and the full conversation.
+
+The experiment tests whether this extra decision adds value beyond giving the tutor detailed instructions directly, and what it adds in cost and delay.
 
 ![Proposed tutoring design and controlled test](paper/course-draft/pipeline_design.png)
 
