@@ -7,7 +7,7 @@ This EDUC 6181 course study uses TutorMoments-Preview, a public dataset of real 
 ## Paper and study materials
 
 - [Final paper, four pages plus references](paper/course-draft/Conference%20Paper%20Draft.pdf) and [LaTeX source](paper/course-draft/main.tex).
-- [Qualitative analysis folder](https://drive.google.com/drive/folders/1PRhd04y0frYdvlDwIcqd27XcJX7hLSpD): three-tab workbook, coding manual, readable casebook, and complete records.
+- [Qualitative analysis folder](https://drive.google.com/drive/folders/1PRhd04y0frYdvlDwIcqd27XcJX7hLSpD): two-tab workbook with final coded responses, rationales, and the codebook.
 - [Technical analysis folder](https://drive.google.com/drive/folders/1Oqy731wJQkNdRJABpMrL6EE4DM9BPZ5B): methods and results, all 520 case results, and the complete reproducibility package.
 - [Project literature in Zotero](https://www.zotero.org/groups/6740618).
 
@@ -56,9 +56,9 @@ These are automated ratings of the first reply, not the publisher's multi-turn l
 
 ## Qualitative study
 
-We coded **114 response blocks from 38 mathematics moments**, comparing human continuations with GPT-5.5 under general and explicit pedagogical instructions. The codebook distinguishes **work left for the learner** from **information already supplied by the tutor**. In the reported AI-assisted coding pass, explicit instructions left a connection, explanation, or strategy in 16/38 replies, versus 2/38 general-instruction replies. The paper illustrates the code distinctions with three source-verified cases: missing-factor calculation (E01), explaining a fraction denominator (E06), and explaining an incorrect percentage after the answer is supplied (E11). Both coding passes and their disagreements are preserved.
+We coded **114 response blocks from 38 mathematics moments**, comparing human continuations with GPT-5.5 under general and explicit pedagogical instructions. The codebook distinguishes **work left for the learner** from **information already supplied by the tutor**. In the final coding, explicit instructions left a connection, explanation, or strategy in 16/38 replies, versus 2/38 general-instruction replies. The paper illustrates the code distinctions with three source-verified cases: missing-factor calculation (E01), explaining a fraction denominator (E06), and explaining an incorrect percentage after the answer is supplied (E11). Team members reviewed the coded responses and rationales, discussed their interpretations, and agreed on the final codes. Cohen's kappa was not calculated because this was consensus review rather than independent team coding.
 
-See the [workbook](paper/qualitative-study/Qualitative%20Coding%20and%20Results.xlsx), [coding manual](paper/qualitative-study/Qualitative%20Coding%20Manual.pdf), and [casebook](paper/qualitative-study/Qualitative%20Cases%20and%20Coding.pdf). The human continuations are a naturalistic reference. Higher work-left codes are not automatically better teaching, and no independent human coding validation is claimed.
+See the [two-tab Google Sheet](https://docs.google.com/spreadsheets/d/1c1M8iS5TUapMh4C96j5OOcxBn6TDH_WA3Cdb7I6UnyA/edit) or [Excel copy](paper/qualitative-study/Qualitative%20Coding%20and%20Results.xlsx) for the final coded responses, rationales, and codebook. Earlier coding records remain in this repository for traceability. The human continuations are a naturalistic reference. Higher work-left codes are not automatically better teaching. Initial coding used AI assistance; the team subsequently reviewed and agreed the reported codes.
 
 ## Inspect and reproduce
 

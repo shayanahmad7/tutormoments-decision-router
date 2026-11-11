@@ -62,14 +62,14 @@ We held the AI model constant, comparing GPT-5.5 under the plain and evaluation-
 
 The unit was the first \emph{tutor response block}: consecutive tutor utterances ending when the learner next spoke or acted. Following a theory-informed content-analysis approach \citep{hsieh2005content}, we developed two codes. \emph{Work Left} records the most demanding mathematical contribution requested but not already supplied: no new work or repetition (W0), calculation or heavily cued recognition (W1), connection or explanation within a narrowed path (W2), or strategy, argument, or diagnosis with meaningful discretion (W3). \emph{Information Supplied} records how much of the current answer the tutor gives: none (R0), general guidance (R1), a specific step or relationship (R2), or the complete answer (R3). NA means the demand or answer information was unclear. These codes describe the response, not whether its demand suits the learner.
 
-Two separate AI coding sessions applied the same codebook to responses with their human/AI identities hidden. Each had preceding dialogue and access to the full history, and recorded a code, supporting quotation, and rationale. We report the first pass and retain the second to examine interpretive differences. All 114 texts and evidence excerpts were checked against the source records. The main comparison is between the 38 pairs of AI replies. Human continuations provide a naturalistic reference rather than a controlled prompt comparison.
+Team members reviewed the coded responses and rationales, discussed their interpretations, and agreed on the final codes. The preceding dialogue and full conversation history informed the coding. We did not calculate Cohen's kappa: the team used consensus review rather than independent coding for an inter-rater reliability estimate. All 114 texts and evidence excerpts were checked against the source records. The main comparison is between the 38 pairs of AI replies. Human continuations provide a naturalistic reference rather than a controlled prompt comparison.
 
 \subsection{Qualitative findings}
 Evaluation-aware replies more often left a connection, explanation, or strategy for the learner: 16/38 received W2 or W3, compared with 2/38 plain replies (Table~\ref{tab:work}). Plain replies supplied the complete active answer in 21/38 cases, versus 5/38 evaluation-aware replies; one plain reply was unclear on this measure.
 
 \begin{table}[ht]
 \centering\small
-\caption{Mathematical work left in the first coding pass ($n=38$ per column).}
+\caption{Mathematical work left in the final coding ($n=38$ per column).}
 \label{tab:work}
 \begin{tabularx}{\linewidth}{@{}Xrrr@{}}
 \toprule
@@ -84,13 +84,13 @@ NA: Unclear demand &0&0&5\\
 \end{tabularx}
 \end{table}
 
-Three cases from the accompanying casebook show what these codes capture. In E01, the task was $25\times14=25\times(2\times\star)$. The plain reply supplied 7 and verified the equality (W0, R3). The evaluation-aware reply asked, \enquote{What number times 2 makes 14?} It supplied the relationship but left the calculation (W1, R2). A question alone therefore did not indicate substantial reasoning.
+Three cases from the coded responses show what these codes capture. In E01, the task was $25\times14=25\times(2\times\star)$. The plain reply supplied 7 and verified the equality (W0, R3). The evaluation-aware reply asked, \enquote{What number times 2 makes 14?} It supplied the relationship but left the calculation (W1, R2). A question alone therefore did not indicate substantial reasoning.
 
 In E06, both replies rewrote $5/7-3/7$ as $(5-3)/7$. The plain reply asked for $5-3$ and the final answer (W1, R2). The evaluation-aware reply additionally asked, \enquote{And why do we keep the denominator as 7?} The subtraction rule was supplied, but its mathematical explanation remained for the learner (W2, R2).
 
 In E11, both replies gave $17\%$ as the conversion of 0.17 (R3). The plain reply only asked the learner to select that answer (W0). The evaluation-aware reply also asked why it was not $170\%$ (W2). Giving the numerical answer can therefore coexist with leaving a new explanation to the learner. This is why we coded supplied information and remaining work separately.
 
-The second pass also favored evaluation-aware replies, assigning W2/W3 to 23 rather than five plain replies. Different counts show that distinguishing calculation from explanation requires judgment; the examples illustrate coding decisions, not measured student learning.
+Distinguishing a calculation from an explanation requires attention to what the learner still has to supply. These examples illustrate the agreed coding, not measured student learning.
 
 \section{Study 2: Can a separate decision improve the next tutor reply?}
 \subsection{What a decision model does}
@@ -138,7 +138,7 @@ Our contribution is a codebook separating supplied answers from remaining mathem
 
 \section{Supplementary materials}
 \noindent\href{https://drive.google.com/drive/folders/1BjS3toqoV5py_ZhA1HjCcs162TQ6f7-t}{\textbf{Complete study materials on Google Drive}}: paper, data, and analysis files, viewable without sign-in.\\[3pt]
-\href{https://drive.google.com/drive/folders/1PRhd04y0frYdvlDwIcqd27XcJX7hLSpD}{\textbf{Qualitative analysis}}: coding manual, workbook, all 38 cases, both coding passes, and selection records.\\[3pt]
+\href{https://docs.google.com/spreadsheets/d/1c1M8iS5TUapMh4C96j5OOcxBn6TDH_WA3Cdb7I6UnyA/edit}{\textbf{Qualitative analysis}}: two-tab workbook containing all 114 coded responses, brief rationales, and the codebook.\\[3pt]
 \href{https://drive.google.com/drive/folders/1Oqy731wJQkNdRJABpMrL6EE4DM9BPZ5B}{\textbf{Technical analysis}}: prompts, all 520 decisions and response results, evaluator records, and runnable code.\\[3pt]
 \href{https://github.com/shayanahmad7/tutormoments-decision-router}{\textbf{GitHub repository}}: maintained implementation and results. The repository is private; the technical Drive folder provides the complete review package without GitHub access.
 \end{document}
