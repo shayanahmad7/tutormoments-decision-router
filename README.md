@@ -2,7 +2,15 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-## Latest: all six decision prompts on all 520 records
+## Latest: OpenAI Decisions versus a one-word LLM
+
+The [matched decision comparison](experiments/openai-decision-comparison/README.md) is complete on **all 520 moments**. OpenAI Decisions scored **386/520 (74.2%)**, GPT-6 Luna returning a one-word answer scored **373/520 (71.7%)**, and the saved Jev prompt C run scored **376/520 (72.3%)**. Every condition receives the full preceding conversation and the same decision criteria. These are raw decisions, with no new threshold fitting and no tutor-response generation.
+
+Decisions gained 13 matches over the ordinary LLM and 10 over Jev. Its median request latency was 0.333 seconds versus 0.922 seconds for the one-word LLM. Jev's earlier median was 0.192 seconds. Jev recognized the most rigor cases (195/260), while the ordinary LLM recognized the most scaffolding cases (213/260); Decisions provided the highest overall match rate (204 scaffolding, 182 rigor).
+
+The observed accuracy gaps are small: student-cluster uncertainty intervals cross zero, so this run does not establish a reliable accuracy advantage on new students. The 520-record corpus was previously used for prompt exploration. **New cost for both OpenAI runs: $0.7026**, calculated from recorded API usage. All 1,040 new responses were valid, with no retries, no cache tokens and no LLM reasoning tokens. [All 520 predictions](experiments/openai-decision-comparison/All%20520%20decisions.csv), exact requests/responses, the frozen plan and offline verification are included.
+
+## Earlier: all six decision prompts on all 520 records
 
 The [full-520 Jev search](experiments/jev-all-520-search/README.md) is complete: **520 decisions for each of six prompts**, or 3,120 candidate-record decisions. This extension completed the previously untested records for B, D and E and ran the new F prompt on every record. It added 1,666 Jev calls, costing **$0.45**, with no tutor generation or model judging.
 

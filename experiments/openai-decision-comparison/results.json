@@ -1,0 +1,167 @@
+{
+  "methods": {
+    "jev": {
+      "n": 520,
+      "correct": 376,
+      "accuracy": 0.7230769230769231,
+      "scaffolding_correct": 181,
+      "rigor_correct": 195,
+      "invalid": 0,
+      "macro_f1": 0.7228760492072657,
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 181,
+          "rigor": 79,
+          "invalid": 0
+        },
+        "rigor": {
+          "scaffolding": 65,
+          "rigor": 195,
+          "invalid": 0
+        }
+      },
+      "cost_usd": 0.16860404399999987,
+      "input_tokens": 4014382,
+      "output_tokens": 19732,
+      "median_seconds": 0.1921037710000002,
+      "p95_seconds": 0.27870474374999776,
+      "clean_median_seconds": 0.1921037710000002,
+      "retried_requests": 0,
+      "prior_split": {
+        "development_indices": {
+          "n": 138,
+          "correct": 102
+        },
+        "evaluation_indices": {
+          "n": 382,
+          "correct": 274
+        }
+      }
+    },
+    "decisions": {
+      "n": 520,
+      "correct": 386,
+      "accuracy": 0.7423076923076923,
+      "scaffolding_correct": 204,
+      "rigor_correct": 182,
+      "invalid": 0,
+      "macro_f1": 0.7418456112271966,
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 204,
+          "rigor": 56,
+          "invalid": 0
+        },
+        "rigor": {
+          "scaffolding": 78,
+          "rigor": 182,
+          "invalid": 0
+        }
+      },
+      "cost_usd": 0.3503266999999997,
+      "input_tokens": 3503267,
+      "output_tokens": 0,
+      "median_seconds": 0.3331364995000001,
+      "p95_seconds": 0.6180953723000114,
+      "clean_median_seconds": 0.3331364995000001,
+      "retried_requests": 0,
+      "prior_split": {
+        "development_indices": {
+          "n": 138,
+          "correct": 91
+        },
+        "evaluation_indices": {
+          "n": 382,
+          "correct": 295
+        }
+      }
+    },
+    "llm": {
+      "n": 520,
+      "correct": 373,
+      "accuracy": 0.7173076923076923,
+      "scaffolding_correct": 213,
+      "rigor_correct": 160,
+      "invalid": 0,
+      "macro_f1": 0.7143401683913135,
+      "confusion_matrix": {
+        "scaffolding": {
+          "scaffolding": 213,
+          "rigor": 47,
+          "invalid": 0
+        },
+        "rigor": {
+          "scaffolding": 100,
+          "rigor": 160,
+          "invalid": 0
+        }
+      },
+      "cost_usd": 0.35225209999999996,
+      "input_tokens": 3505356,
+      "output_tokens": 3433,
+      "median_seconds": 0.9218364379999855,
+      "p95_seconds": 2.4200892422999942,
+      "clean_median_seconds": 0.9218364379999855,
+      "retried_requests": 0,
+      "prior_split": {
+        "development_indices": {
+          "n": 138,
+          "correct": 93
+        },
+        "evaluation_indices": {
+          "n": 382,
+          "correct": 280
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "decisions_minus_llm": {
+      "additional_correct": 13,
+      "difference_percentage_points": 2.5,
+      "a_only_correct": 48,
+      "b_only_correct": 35,
+      "both_correct": 338,
+      "neither_correct": 99,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -0.8639308855291578,
+        6.3140380815520025
+      ]
+    },
+    "decisions_minus_jev": {
+      "additional_correct": 10,
+      "difference_percentage_points": 1.9230769230769231,
+      "a_only_correct": 61,
+      "b_only_correct": 51,
+      "both_correct": 325,
+      "neither_correct": 83,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -1.9314031097201585,
+        6.081145308806906
+      ]
+    },
+    "llm_minus_jev": {
+      "additional_correct": -3,
+      "difference_percentage_points": -0.576923076923077,
+      "a_only_correct": 47,
+      "b_only_correct": 50,
+      "both_correct": 326,
+      "neither_correct": 97,
+      "student_cluster_bootstrap_95ci_percentage_points": [
+        -3.8461538461538463,
+        2.736986453475459
+      ]
+    }
+  },
+  "student_clusters": 89,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261110,
+  "new_cost_usd": 0.7025787999999997,
+  "notes": [
+    "Raw returned choices only; no probability threshold fitted in this round.",
+    "One pass per API per record. Prompt C was previously explored on these data; exploratory benchmark comparison, not new generalization validation.",
+    "Jev timings are from a prior run. OpenAI runs interleaved with four HTTP workers and caching disabled.",
+    "Costs computed from recorded API token usage and published prices, not a billing invoice.",
+    "Student-cluster intervals address within-student dependence, not prompt-selection bias or reference-label uncertainty."
+  ]
+}
