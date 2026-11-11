@@ -20,6 +20,10 @@ The proposed system has two stages:
 1. A decision model reads the conversation and chooses **scaffolding** (make the next step accessible) or **rigor** (invite explanation, justification, or independent work).
 2. That choice selects detailed instructions for **Qwen3-32B**, which writes the tutor's reply using the same conversation.
 
+A decision model selects from predefined actions instead of writing the student-facing reply. TypeSafe introduced Jev for fast structured choices ([original announcement](https://typesafe.ai/blog/introducing-system-one-models-and-jev)); OpenAI Decisions is a software interface for requesting choices from a model ([documentation](https://developers.openai.com/api/docs/guides/decisions)).
+
+![Proposed tutoring design and controlled test](paper/course-draft/pipeline_design.png)
+
 We tested **Jev 1.14.0** and **OpenAI Decisions using GPT-6 Luna** as decision systems. We first measured whether their choices matched the dataset's assigned category, then separately evaluated the replies those choices selected. We did not fine-tune any model.
 
 ## How the response experiment worked
@@ -28,7 +32,7 @@ We used all 520 evaluation moments, 260 per assigned category. At every moment, 
 
 The decisions had been recorded in earlier experiments. We reused them to select the matching scaffold or rigor reply. This lets both decision systems and the fixed-instruction controls use exactly the same candidate text. It is a controlled comparison of response selection, not a timed deployment of a live sequential pipeline.
 
-All models received the complete preceding conversation. Neither decision system received the assigned category, teacher explanation, or future turns. Qwen additionally received publisher student metadata. Gemini 2.5 Flash evaluated the replies anonymously; Claude Sonnet 4.6 repeated the evaluation on 32 cases.
+All models received the complete preceding conversation. Neither decision system received the assigned category, teacher explanation, or future turns. Qwen's original prompt also included a tutoring-platform identifier, the same value in all 520 cases. Gemini 2.5 Flash evaluated the replies anonymously; Claude Sonnet 4.6 repeated the evaluation on 32 cases.
 
 ## Results
 
@@ -52,7 +56,7 @@ These are automated ratings of the first reply, not the publisher's multi-turn l
 
 ## Qualitative study
 
-We coded **114 response blocks from 38 mathematics moments**, comparing human continuations with GPT-5.5 under general and explicit pedagogical instructions. The codebook distinguishes **work left for the learner** from **information already supplied by the tutor**. In the reported AI-assisted coding pass, explicit instructions left a connection, explanation, or strategy in 16/38 replies, versus 2/38 general-instruction replies. Both coding passes and their disagreements are preserved.
+We coded **114 response blocks from 38 mathematics moments**, comparing human continuations with GPT-5.5 under general and explicit pedagogical instructions. The codebook distinguishes **work left for the learner** from **information already supplied by the tutor**. In the reported AI-assisted coding pass, explicit instructions left a connection, explanation, or strategy in 16/38 replies, versus 2/38 general-instruction replies. The paper illustrates the code distinctions with three source-verified cases: missing-factor calculation (E01), explaining a fraction denominator (E06), and explaining an incorrect percentage after the answer is supplied (E11). Both coding passes and their disagreements are preserved.
 
 See the [workbook](paper/qualitative-study/Qualitative%20Coding%20and%20Results.xlsx), [coding manual](paper/qualitative-study/Qualitative%20Coding%20Manual.pdf), and [casebook](paper/qualitative-study/Qualitative%20Cases%20and%20Coding.pdf). The human continuations are a naturalistic reference. Higher work-left codes are not automatically better teaching, and no independent human coding validation is claimed.
 
