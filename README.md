@@ -2,7 +2,18 @@
 
 This project asks a practical question about AI math tutoring: **does deciding how to teach before generating a reply improve a small tutor?** Jev reads the conversation, chooses scaffolding or rigor, and selects detailed instructions for the tutor. We use real tutoring conversations from TutorMoments and evaluate the actual generated replies, alongside our earlier decision-only experiment.
 
-## Latest: four original-prompt Astra tutoring replays completed
+## Latest: requested decision-only test with the publisher prompt
+
+We retained the publisher's evaluation-aware teaching guidance, replaced the message-writing instruction with a one-word **scaffolding or rigor** request, and supplied the full pre-cut conversation. Astra used the official OpenAI API with high reasoning. No tutoring response, simulated student or judge was generated in this experiment.
+
+| Decision prompt | Correct on the same 20 moments | Scaffolding /10 | Rigor /10 |
+|---|---:|---:|---:|
+| Publisher prompt adapted for one decision | **14/20 (70%)** | 6 | 8 |
+| Previous revised prompt | 13/20 (65%) | 5 | 8 |
+
+One error was corrected with no regressions. New token cost was **$1.2145**; every output was valid and complete. This small exploratory result is not evidence of a general five-point accuracy gain. The website's tutoring-replay percentage is a different outcome. [Report and exact prompt](experiments/astra-publisher-prompt-decisions/README.md), [all 20 decisions](experiments/astra-publisher-prompt-decisions/All%2020%20decisions.csv).
+
+## Earlier: four tutoring replays, outside the clarified decision-only request
 
 Astra ran through the **official OpenAI API** with the publisher's unchanged evaluation-aware tutoring instructions. The original Claude Opus 4.6 student and judge were retained through OpenRouter, pinned to Anthropic. **Three of four replays passed** the publisher's scoring rule: scaffolding 2/2, rigor 1/2. One rigor replay contained both action types but failed because the judge found over-scaffolding.
 
