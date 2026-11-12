@@ -11,7 +11,7 @@ This EDUC 6181 course study uses TutorMoments-Preview, a public dataset of real 
 - [Technical analysis folder](https://drive.google.com/drive/folders/1Oqy731wJQkNdRJABpMrL6EE4DM9BPZ5B): methods and results, all 520 case results, and the complete reproducibility package.
 - [Project literature in Zotero](https://www.zotero.org/groups/6740618).
 
-The Drive copies are viewable by anyone with the link, so a reviewer does not need access to this private repository. This is a course draft, not a conference submission.
+This repository is public, and the Drive copies are viewable by anyone with the link. This is a course draft, not a conference submission.
 
 The expanded discussion connects the two studies. The coding shows that explicit pedagogical instructions leave more explanations and connections for learners, although many replies still narrow their work to a calculation. The technical experiment tests whether a separate chooser improves a smaller tutor beyond those instructions. It did not beat fixed rigor guidance or demonstrate a cost or speed advantage. The shared benchmark and codebook make it possible to test more specific teaching decisions, smaller-model training, and stronger direct prompts in future work.
 
