@@ -50,21 +50,21 @@ We use TutorMoments-Preview, a public collection of tutoring conversations and A
 
 Separating instructional planning from language generation has precedents. StratL uses teaching goals to guide tutor replies \citep{puech2025stratl}; DICE distinguishes whether help is needed from the model's ability to answer \citep{pal2026dice}. Eduardo instead trains smaller tutors using feedback on tutoring exchanges \citep{macina2026eduardo}. We test an additional decision step without retraining. Our questions are: \textbf{(1)} How do tutoring instructions change the mathematical work left for learners? \textbf{(2)} Does a separate scaffold-or-rigor decision improve tutor replies beyond detailed instructions alone, and what does it add in cost and delay?
 
-\section{What TutorMoments contains and how we use it}
+\section{TutorMoments dataset and study scope}
 TutorMoments-Preview contains 462 de-identified transcripts of remote tutoring with students in grades 2--7. Transcripts include dialogue and descriptions of shared-screen activity. A \emph{moment} is a stopping point where the tutor must decide what to do next. Experienced teachers described important situations, the human tutor's action, and what followed. The dataset authors used language models to map these descriptions to categories and combined annotations by majority vote. Their evaluation set contains 520 moments, balanced between 260 scaffolding and 260 rigor opportunities \citep{zhang2026tutormoments}.
 
 The original benchmark asks an AI tutor to continue each conversation with a simulated learner. Its \emph{plain prompt} gives general tutoring guidance. Its \emph{evaluation-aware prompt} explains scaffolding, rigor, and over-scaffolding, and asks the tutor to respond appropriately without revealing the assigned category. Explicit guidance improved performance, but models still tended to give too much help and miss opportunities for challenge. The scoring can credit responses combining scaffolding and rigor. The labels therefore describe instructional opportunities, not mutually exclusive forms of good teaching.
 
 Our qualitative study uses released human and AI continuations. Our technical study generates new tutor replies from the same histories. We examine the first response, not the original multi-turn exchange. Our scores consequently measure a different outcome from the published leaderboard.
 
-\section{Study 1: What work does the tutor leave for the learner?}
+\section{Study 1: Qualitative analysis of tutor responses}
 We held the AI model constant, comparing GPT-5.5 under the plain and evaluation-aware prompts, alongside the observed human continuation. We randomly selected 40 mathematics moments from 226 eligible situations after excluding students used in earlier pilots: one moment per student and 20 per category. Two were excluded because additional learner activity occurred before the human reply, making it unsuitable for comparison with the AI reply at the selected stopping point. The final sample contained 38 moments, 19 per category, and 114 responses.
 
 The unit was the first \emph{tutor response block}: consecutive tutor utterances ending when the learner next spoke or acted. Following a theory-informed content-analysis approach \citep{hsieh2005content}, we developed two codes. \emph{Work Left} records the most demanding mathematical contribution requested but not already supplied: no new work or repetition (W0), calculation or heavily cued recognition (W1), connection or explanation within a narrowed path (W2), or strategy, argument, or diagnosis with meaningful discretion (W3). \emph{Information Supplied} records how much of the current answer the tutor gives: none (R0), general guidance (R1), a specific step or relationship (R2), or the complete answer (R3). NA means the demand or answer information was unclear. These codes describe the response, not whether its demand suits the learner.
 
 Team members reviewed the coded responses and rationales, discussed interpretations, and agreed on final codes. Coding used the preceding dialogue with access to the full history. Cohen's kappa was not calculated because the team used consensus review rather than independent coding. All 114 texts and evidence excerpts were checked against source records. The main comparison is between the 38 pairs of AI replies; human continuations provide a naturalistic reference.
 
-\subsection{Qualitative findings}
+\subsection{Qualitative results}
 Evaluation-aware replies more often left a connection, explanation, or strategy for the learner: 16/38 received W2 or W3, compared with 2/38 plain replies (Table~\ref{tab:work}). Plain replies supplied the complete active answer in 21/38 cases, versus 5/38 evaluation-aware replies; one plain reply was unclear on this measure.
 
 \begin{table}[ht]
@@ -92,13 +92,13 @@ In E11, both replies gave $17\%$ as the conversion of 0.17 (R3). The plain reply
 
 Distinguishing a calculation from an explanation requires attention to what the learner still has to supply. These examples illustrate the agreed coding, not measured student learning.
 
-\section{Study 2: Testing a decision-guided tutoring pipeline}
-\subsection{Decision models and the motivation for our experiment}
+\section{Study 2: Evaluation of decision-guided tutoring}
+\subsection{Decision models and study rationale}
 A \emph{decision model} is a model used to select an action from a predefined set of options, given some context. Its output is a choice that another part of a system can act on. TypeSafe introduced Jev for fast, structured decisions and probabilities \citep{almeida2026jev}. OpenAI's Decisions interface serves a similar role by requesting choices from a language model \citep{openai2026decisions}. These systems can therefore select a teaching approach without composing the tutor's reply.
 
 We designed an experiment to test whether this separation could improve mathematics tutoring. A tutor must both decide what kind of help the learner needs and express that help appropriately. Our proposed \emph{pipeline}, a sequence of connected steps, assigns the first task to a decision model and the second to a language model. The motivation was to give a smaller tutor explicit direction while using a fast decision step to limit added delay. We tested whether this improved responses beyond giving the tutor detailed instructions directly.
 
-\subsection{Our proposed pipeline}
+\subsection{Pipeline design}
 The pipeline has three steps (Figure~\ref{fig:pipeline}). First, a decision system reads the conversation so far and chooses \emph{scaffolding} or \emph{rigor}. We tested Jev 1.14.0 and OpenAI Decisions using GPT-6 Luna as alternative decision systems. Second, that choice selects one of two instruction sets we wrote. Scaffolding guidance asks for the smallest useful hint while leaving the key calculation to the learner. Rigor guidance asks for a justification, connection, or independent step without giving the reasoning first. Third, Qwen3-32B, the language model serving as the tutor, receives the selected instructions and the full conversation and writes the reply \citep{qwen2025model}. Both instruction sets require attention to the current task and permit context-sensitive support.
 
 \begin{figure}[ht]
@@ -117,15 +117,15 @@ Self-choice tests whether a separate decision improves on the tutor choosing for
 
 Exact inputs, prompts, and settings are in the supporting materials.
 
-\subsection{How replies were evaluated}
+\subsection{Response evaluation}
 Gemini 2.5 Flash, a separate AI evaluator, rated the three anonymous replies in randomized order, without condition names or dataset labels. It assessed scaffolding, rigor, over-helping, mathematical errors, and fit to the conversation. We then compared those judgments with the assigned category. Passing required the relevant behavior, no over-helping or mathematical error, and full context fit. A reply containing both scaffolding and rigor could satisfy either label.
 
 Claude Sonnet 4.6 repeated the ratings for 32 moments, one per student and balanced by category. Comparisons paired replies from the same moment. We estimated uncertainty by repeatedly resampling students, keeping each student's moments together. This avoids treating several moments from one student as independent observations.
 
-\subsection{Technical findings}
+\subsection{Technical results}
 \input{technical_results.tex}
 
-\section{Discussion and contribution}
+\section{Discussion}
 \input{technical_discussion.tex}
 
 \clearpage
