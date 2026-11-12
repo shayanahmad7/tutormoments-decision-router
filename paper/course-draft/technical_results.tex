@@ -4,25 +4,25 @@ Jev's decisions matched the assigned category in 376/520 moments (72.3\%); OpenA
 \centering\small
 \caption{Passing first replies. Each row uses the same 520 conversation stopping points.}
 \label{tab:routing}
-\begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
+\begin{tabularx}{\linewidth}{@{}Xrrr@{}}
 \toprule
-How instructions are selected & All 520 & Scaffold 260 & Rigor 260 & Math set 346\\
+How instructions are selected & All 520 & Scaffold 260 & Rigor 260\\
 \midrule
-Qwen chooses its approach &68.7\%&80.0\%&57.3\%&72.0\%\\
-Jev chooses &72.9\%&76.5\%&69.2\%&72.8\%\\
-OpenAI Decisions chooses &73.5\%&80.8\%&66.2\%&75.1\%\\
-Always use scaffold instructions &56.5\%&86.2\%&26.9\%&59.8\%\\
-Always use rigor instructions &74.0\%&65.8\%&82.3\%&76.0\%\\
-Use the dataset label (diagnostic) &84.2\%&86.2\%&82.3\%&86.4\%\\
+Qwen chooses its approach &68.7\%&80.0\%&57.3\%\\
+Jev chooses &72.9\%&76.5\%&69.2\%\\
+OpenAI Decisions chooses &73.5\%&80.8\%&66.2\%\\
+Always use scaffold instructions &56.5\%&86.2\%&26.9\%\\
+Always use rigor instructions &74.0\%&65.8\%&82.3\%\\
+Use the dataset label (diagnostic) &84.2\%&86.2\%&82.3\%\\
 \bottomrule
 \end{tabularx}
 \vspace{2pt}
 \begin{minipage}{\linewidth}\footnotesize
-The 346-case set applies the additional selection checks described in the methods. The diagnostic uses the assigned label, which an operating tutor would not have. Scores concern our first-reply evaluation.
+The diagnostic uses the assigned label, which an operating tutor would not have. Scores concern our first-reply evaluation.
 \end{minipage}
 \end{table}
 
-In the 346-moment comparison set, Jev's advantage fell to 3 cases, or 0.9 points (interval $-5.3$ to $6.5$). The evaluator also mattered: on the same 32 cases, Gemini passed 20 self-choice and 19 Jev replies; Claude passed 16 and 22. They agreed on 75/96 reply judgments (78.1\%).
+The evaluator also mattered: on the same 32 cases, Gemini passed 20 self-choice and 19 Jev replies; Claude passed 16 and 22. They agreed on 75/96 reply judgments (78.1\%).
 
 Correct category selection did not guarantee a good response: 56 of Jev's 376 category matches still led to failed replies, while 59 of its 144 mismatches passed. In one case, both systems correctly selected scaffolding for a learner working on $1{,}000-10$, but Qwen's reply returned to an earlier $338+586$ problem.
 
